@@ -1,0 +1,61 @@
+# Local Netlify folder
+.netlify
+
+# Virtual environment
+venv/
+
+# Data files (large)
+data/
+*.parquet
+*.csv
+
+# Model files (large binaries)
+models/
+models_*/
+*.pkl
+*.joblib
+
+# Database files
+*.db
+
+# Logs (large)
+logs/
+*.log
+
+# Backups (large)
+backups/
+
+# Results (generated)
+results/
+results_*/
+
+# Position/state files
+*_positions.json
+btc_ensemble_config.json
+mnq_global_position.json
+
+# Signal logs
+signal_logs/
+
+# Status page build
+status_page/status.json
+
+# Notebooks checkpoints
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Misc state files
+.btc_price
+\#
+
+# IDE
+.vscode/
+.idea/
