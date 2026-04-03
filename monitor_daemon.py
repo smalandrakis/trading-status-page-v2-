@@ -153,6 +153,24 @@ BOT_CONFIG = {
         'enabled_short': True,
         'db_path': 'tpsl_trades.db',
     },
+    'BTC_V3': {
+        'SL_PCT': 0.50,
+        'TP_PCT': 1.00,
+        'TS_ACT': 0.60,
+        'TS_TRAIL': 0.10,
+        'model': 'V3 Ensemble (22-feature RF, 2h/4h/6h)',
+        'threshold_long': 0.60,
+        'threshold_short': 0.30,
+        'features': 22,
+        'entry_long': 'Avg prob > 60% (3-model ensemble)',
+        'entry_short': 'Avg prob < 30% (3-model ensemble)',
+        'max_positions': 2,
+        'enabled_long': True,
+        'enabled_short': True,
+        'db_path': 'v3_predictor_trades.db',
+        'position_file': 'btc_v3_positions.json',
+        'backtest': '1,612 trades, 42.7% WR, +$4,430 (2yr), PF 1.11',
+    },
 }
 
 
@@ -1078,6 +1096,9 @@ class MonitorDaemon:
         # Check BTC TP/SL Multi-Strategy bot
         self.status['bots']['BTC_TPSL'] = self._check_tpsl_bot()
         
+        # Check BTC V3 Predictor bot
+        self.status['bots']['BTC_V3'] = self._check_v3_bot()
+        
     def _check_single_bot(self, script_name: str, bot_name: str) -> Dict:
         """Check a single bot's status."""
         result = {
@@ -1361,11 +1382,128 @@ class MonitorDaemon:
         
         return result
     
+    def _check_v3_bot(self) -> Dict:
+        """Check BTC V3 Predictor bot status, positions, and weekly stats."""
+        result = {
+            'running': False,
+            'pid': None,
+            'probabilities': {},
+            'positions': 0,
+            'max_positions': 2,
+            'last_price': None,
+            'last_log_time': None,
+            'position_detail': [],
+        }
+        
+        try:
+            # Check if process is running
+            ps_result = subprocess.run(
+                ['pgrep', '-f', 'btc_v3_predictor_bot.py'],
+                capture_output=True, text=True
+            )
+            if ps_result.returncode == 0:
+                result['running'] = True
+                result['pid'] = ps_result.stdout.strip().split('\n')[0]
+            
+            # Get latest signal log data
+            import glob
+            log_files = sorted(glob.glob('signal_logs/btc_v3_signals_*.csv'))
+            if log_files:
+                latest_log = log_files[-1]
+                df = pd.read_csv(latest_log)
+                if len(df) > 0:
+                    last_row = df.iloc[-1]
+                    result['last_log_time'] = last_row.get('timestamp', None)
+                    if 'price' in df.columns:
+                        result['last_price'] = round(last_row['price'], 2)
+                    if 'confidence' in df.columns:
+                        result['probabilities']['confidence'] = round(float(last_row['confidence']) * 100, 1)
+                    if 'avg_prob' in df.columns:
+                        result['probabilities']['avg_prob'] = round(float(last_row['avg_prob']) * 100, 1)
+                    for col in ['prob_2h', 'prob_4h', 'prob_6h']:
+                        if col in df.columns:
+                            result['probabilities'][col] = round(float(last_row[col]) * 100, 1)
+                    if 'positions' in df.columns:
+                        result['positions'] = int(last_row['positions'])
+            
+            # Check open positions from JSON
+            position_file = 'btc_v3_positions.json'
+            if os.path.exists(position_file):
+                with open(position_file, 'r') as f:
+                    positions = json.load(f)
+                if positions:
+                    result['positions'] = len(positions)
+                    for pos_id, pos in positions.items():
+                        result['position_detail'].append({
+                            'model_id': pos_id,
+                            'direction': pos.get('direction', ''),
+                            'entry_price': pos.get('entry_price', 0),
+                            'target_price': pos.get('target_price', 0),
+                            'stop_price': pos.get('stop_price', 0),
+                            'entry_time': pos.get('entry_time', ''),
+                            'confidence': pos.get('entry_confidence', 0),
+                        })
+            
+            # Get last log line for latest status
+            log_file = 'logs/btc_v3_predictor.log'
+            if os.path.exists(log_file):
+                tail_result = subprocess.run(
+                    ['tail', '-5', log_file],
+                    capture_output=True, text=True
+                )
+                if tail_result.returncode == 0:
+                    lines = tail_result.stdout.strip().split('\n')
+                    if lines:
+                        result['last_log_time'] = lines[-1][:19] if len(lines[-1]) >= 19 else result['last_log_time']
+            
+            # Get recent trades from shared trades.db (bot_type='BTC_V3')
+            import sqlite3
+            db_path = 'trades.db'
+            if os.path.exists(db_path):
+                conn = sqlite3.connect(db_path)
+                cursor = conn.cursor()
+                cursor.execute("""
+                    SELECT COUNT(*) FROM trades 
+                    WHERE bot_type = 'BTC_V3'
+                    AND datetime(exit_time) > datetime('now', '-7 days')
+                """)
+                week_trades = cursor.fetchone()[0]
+                
+                cursor.execute("""
+                    SELECT COUNT(*) FROM trades 
+                    WHERE bot_type = 'BTC_V3'
+                    AND datetime(exit_time) > datetime('now', '-7 days')
+                    AND pnl_dollar > 0
+                """)
+                week_wins = cursor.fetchone()[0]
+                
+                cursor.execute("""
+                    SELECT COALESCE(SUM(pnl_dollar), 0) FROM trades 
+                    WHERE bot_type = 'BTC_V3'
+                    AND datetime(exit_time) > datetime('now', '-7 days')
+                """)
+                week_pnl = cursor.fetchone()[0]
+                
+                result['week_stats'] = {
+                    'trades': week_trades,
+                    'wins': week_wins,
+                    'losses': week_trades - week_wins,
+                    'win_rate': round(week_wins / week_trades * 100, 1) if week_trades > 0 else 0,
+                    'pnl': round(week_pnl, 2),
+                }
+                conn.close()
+                
+        except Exception as e:
+            logger.error(f"Error checking BTC_V3 bot: {e}")
+            result['error'] = str(e)
+        
+        return result
+    
     def calculate_pnl(self):
         """Calculate P&L for last 24 hours from position logs."""
         logger.info("Calculating P&L...")
         
-        for bot_name in ['BTC', 'BTC_TICK', 'BTC_TICK_REVERSE', 'MNQ_GLOBAL', 'BTC_TPSL']:
+        for bot_name in ['BTC', 'BTC_TICK', 'BTC_TICK_REVERSE', 'MNQ_GLOBAL', 'BTC_TPSL', 'BTC_V3']:
             if bot_name in self.status['bots']:
                 self.status['bots'][bot_name]['pnl_24h'] = self._calculate_bot_pnl(bot_name)
     
@@ -1463,6 +1601,7 @@ class MonitorDaemon:
                 'MNQ': 'ensemble_positions.json',  # MNQ bot uses ensemble_positions.json
                 'SPY': 'spy_positions.json',
                 'MNQ_GLOBAL': 'mnq_global_position.json',
+                'BTC_V3': 'btc_v3_positions.json',
             }
             position_file = position_files.get(bot_name, f"{bot_name.lower()}_positions.json")
             
@@ -1494,7 +1633,7 @@ class MonitorDaemon:
                             unrealized = (entry_price - current_price) * size
                         
                         # For BTC futures, multiply by 0.1 (contract multiplier)
-                        if bot_name == 'BTC':
+                        if bot_name in ('BTC', 'BTC_V3'):
                             unrealized *= 0.1
                         # For MNQ, multiply by 2 ($2/point)
                         elif bot_name == 'MNQ_GLOBAL':
@@ -1519,7 +1658,7 @@ class MonitorDaemon:
     def _get_current_price(self, bot_name: str) -> Optional[float]:
         """Get current price for a bot's instrument."""
         try:
-            if bot_name in ('BTC', 'BTC_TICK', 'BTC_TICK_REVERSE', 'BTC_TREND'):
+            if bot_name in ('BTC', 'BTC_TICK', 'BTC_TICK_REVERSE', 'BTC_TREND', 'BTC_V3', 'BTC_TPSL'):
                 response = requests.get(f"{BINANCE_API}/ticker/price", 
                                        params={'symbol': 'BTCUSDT'}, timeout=5)
                 return float(response.json()['price'])

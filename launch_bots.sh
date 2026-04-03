@@ -1,5 +1,5 @@
 #!/bin/bash
-# Launch all 3 BTC bots sequentially after confirming IB Gateway is available.
+# Launch all 4 BTC bots sequentially after confirming IB Gateway is available.
 # Waits patiently (2 min between checks) to avoid hammering IB.
 
 cd "$(dirname "$0")"
@@ -31,6 +31,7 @@ log "Cleaning up any leftover bot processes..."
 pkill -9 -f "python3.*btc_ensemble_bot" 2>/dev/null
 pkill -9 -f "python3.*btc_tick_bot" 2>/dev/null
 pkill -9 -f "python3.*btc_trend_bot" 2>/dev/null
+pkill -9 -f "python3.*btc_v3_predictor_bot" 2>/dev/null
 sleep 5
 
 # Step 3: Start ensemble bot
@@ -66,13 +67,21 @@ log "Starting btc_trend_bot.py (clientId=402)..."
 nohup caffeinate -disu python3 btc_trend_bot.py >> logs/btc_trend_bot.log 2>&1 &
 TREND_PID=$!
 log "Trend PID: $TREND_PID"
+sleep 10
+
+# Step 7: Start V3 predictor bot
+log "Starting btc_v3_predictor_bot.py (clientId=404)..."
+nohup caffeinate -disu python3 btc_v3_predictor_bot.py >> logs/btc_v3_predictor.log 2>&1 &
+V3_PID=$!
+log "V3 Predictor PID: $V3_PID"
 sleep 15
 
-# Step 7: Final status
+# Step 8: Final status
 log "=== FINAL STATUS ==="
 log "Ensemble PID: $ENSEMBLE_PID"
 log "Tick PID: $TICK_PID"
 log "Trend PID: $TREND_PID"
+log "V3 Predictor PID: $V3_PID"
 
 log "--- Ensemble last 3 lines ---"
 tail -3 logs/btc_ensemble_bot.log >> "$LOG" 2>&1
@@ -85,6 +94,10 @@ tail -3 logs/btc_tick_bot.log
 log "--- Trend last 3 lines ---"
 tail -3 logs/btc_trend_bot.log >> "$LOG" 2>&1
 tail -3 logs/btc_trend_bot.log
+
+log "--- V3 Predictor last 3 lines ---"
+tail -3 logs/btc_v3_predictor.log >> "$LOG" 2>&1
+tail -3 logs/btc_v3_predictor.log
 
 log "Active caffeinate processes:"
 ps aux | grep "caffeinate.*python3" | grep -v grep | awk '{print $2, $11, $12, $13}' | tee -a "$LOG"
