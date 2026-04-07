@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-04-07T07:10:00.875006",
+  "generated_at": "2026-04-07T08:50:01.058961",
   "bots": [
     {
-      "name": "BTC Swing Bot (3.0/1.5)",
+      "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-07 07:09:24,633",
+      "last_update": "2026-04-07 08:49:42,881",
       "config": {
-        "tp_pct": 3.0,
-        "sl_pct": 1.5,
+        "tp_pct": 2.5,
+        "sl_pct": 1.0,
         "long_threshold": 0.65,
         "short_threshold": 0.25,
         "expected_trades_per_week": "5-6",
@@ -96,12 +96,12 @@
       ]
     },
     {
-      "name": "BTC High Frequency (1.5/0.3)",
+      "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-07 07:09:28,311",
+      "last_update": "2026-04-07 08:49:53,227",
       "config": {
-        "tp_pct": 1.5,
-        "sl_pct": 0.3,
+        "tp_pct": 1.0,
+        "sl_pct": 0.5,
         "long_threshold": 0.65,
         "short_threshold": 0.25,
         "expected_trades_per_week": "7-8",
