@@ -1,122 +1,169 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>BTC Trading Bots Status</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTC Trading Bots - Live Status</title>
     <style>
-        body { font-family: monospace; max-width: 1200px; margin: 20px auto; background: #1a1a1a; color: #e0e0e0; }
-        h1 { text-align: center; color: #4CAF50; }
-        .bot { border: 1px solid #444; padding: 20px; margin: 20px 0; background: #2a2a2a; border-radius: 8px; }
-        .running { border-left: 5px solid #4CAF50; }
-        .stopped { border-left: 5px solid #f44336; }
-        .status-badge { display: inline-block; padding: 5px 10px; border-radius: 4px; font-weight: bold; margin-left: 10px; }
-        .status-running { background: #4CAF50; color: white; }
-        .status-stopped { background: #f44336; color: white; }
-        .trades { font-size: 12px; margin-top: 10px; }
-        .trade-row { padding: 5px; margin: 2px 0; border-radius: 3px; }
-        .win { background: rgba(76, 175, 80, 0.2); color: #4CAF50; }
-        .loss { background: rgba(244, 67, 54, 0.2); color: #f44336; }
-        .config-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
-        .config-item { background: #333; padding: 8px; border-radius: 4px; }
-        .perf-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin: 10px 0; }
-        .perf-item { background: #333; padding: 10px; border-radius: 4px; text-align: center; }
-        .perf-value { font-size: 24px; font-weight: bold; color: #4CAF50; }
-        .perf-label { font-size: 12px; color: #888; }
-        .last-update { text-align: center; color: #888; font-size: 14px; margin-bottom: 20px; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #ffffff;
+            color: #000000;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+        h1 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+        }
+        .timestamp {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 2em;
+        }
+        .bot {
+            margin-bottom: 3em;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 2em;
+        }
+        .bot:last-child {
+            border-bottom: none;
+        }
+        .bot-header {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 0.3em;
+        }
+        .status-badge {
+            display: inline-block;
+            background: #4CAF50;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-size: 0.7em;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        .last-update {
+            color: #888;
+            font-size: 0.85em;
+            margin-bottom: 1.5em;
+        }
+        .section-title {
+            font-weight: bold;
+            margin-top: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .config-line, .trade-line {
+            margin: 0.3em 0;
+            font-size: 0.95em;
+        }
+        .perf-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 1em 0;
+        }
+        .perf-box {
+            text-align: center;
+        }
+        .perf-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 0.2em 0;
+        }
+        .perf-label {
+            font-size: 0.85em;
+            color: #666;
+        }
+        .perf-sub {
+            font-size: 0.8em;
+            color: #888;
+        }
+        .positive { color: #4CAF50; }
+        .negative { color: #f44336; }
+        .trade-line {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-size: 0.85em;
+        }
     </style>
 </head>
 <body>
     <h1>🤖 BTC Trading Bots - Live Status</h1>
-    <div class="last-update" id="lastUpdate">Loading...</div>
-    <div id="bots"></div>
+    <div id="lastUpdate" class="timestamp">Loading...</div>
+    <div id="botsContainer">Loading bot status...</div>
 
     <script>
         async function loadStatus() {
             try {
-                const res = await fetch('bot_status.json');
-                const data = await res.json();
+                const response = await fetch('bot_status.json');
+                const data = await response.json();
 
-                document.getElementById('lastUpdate').textContent =
-                    `Last Updated: ${new Date(data.generated_at).toLocaleString()}`;
+                // Update timestamp
+                const timestamp = new Date(data.generated_at).toLocaleString('en-US');
+                document.getElementById('lastUpdate').textContent = `Last Updated: ${timestamp}`;
 
-                const botsDiv = document.getElementById('bots');
-                botsDiv.innerHTML = '';
+                // Render bots
+                const container = document.getElementById('botsContainer');
+                container.innerHTML = data.bots.map(bot => {
+                    const totalPnlClass = bot.performance.total_pnl >= 0 ? 'positive' : 'negative';
+                    const totalPnlSign = bot.performance.total_pnl >= 0 ? '+' : '';
 
-                data.bots.forEach(bot => {
-                    const statusClass = bot.status === 'running' ? 'running' : 'stopped';
-                    const statusBadgeClass = bot.status === 'running' ? 'status-running' : 'status-stopped';
-
-                    const recentTrades = bot.recent_trades.length > 0
-                        ? bot.recent_trades.map(t => `
-                            <div class="trade-row ${t.pnl > 0 ? 'win' : 'loss'}">
-                                ${t.time} | ${t.direction} | ${t.pnl > 0 ? '+' : ''}$${t.pnl.toFixed(2)} (${t.pnl_pct > 0 ? '+' : ''}${t.pnl_pct.toFixed(2)}%) | ${t.hold_minutes}min
-                            </div>
-                        `).join('')
-                        : '<div style="color: #888; padding: 10px;">No trades yet</div>';
-
-                    botsDiv.innerHTML += `
-                        <div class="bot ${statusClass}">
-                            <h2>
+                    return `
+                        <div class="bot">
+                            <div class="bot-header">
                                 ${bot.name}
-                                <span class="status-badge ${statusBadgeClass}">${bot.status.toUpperCase()}</span>
-                            </h2>
-                            <p style="color: #888; font-size: 12px;">Last Update: ${bot.last_update}</p>
-
-                            <h3 style="margin-top: 20px;">⚙️ Configuration</h3>
-                            <div class="config-grid">
-                                <div class="config-item">
-                                    <strong>TP/SL:</strong> ${bot.config.tp_pct}% / ${bot.config.sl_pct}%
-                                </div>
-                                <div class="config-item">
-                                    <strong>Thresholds:</strong> L=${bot.config.long_threshold} / S=${bot.config.short_threshold}
-                                </div>
-                                <div class="config-item">
-                                    <strong>Expected Frequency:</strong> ${bot.config.expected_trades_per_week} trades/week
-                                </div>
-                                <div class="config-item">
-                                    <strong>Expected Win Rate:</strong> ${bot.config.expected_win_rate}%
-                                </div>
+                                <span class="status-badge">${bot.status.toUpperCase()}</span>
                             </div>
-                            <div style="background: #333; padding: 8px; border-radius: 4px; margin-top: 5px;">
-                                <strong>Expected P&L (2yr):</strong> $${bot.config.expected_pnl_2yr.toLocaleString()}
-                            </div>
+                            <div class="last-update">Last Update: ${bot.last_update}</div>
 
-                            <h3 style="margin-top: 20px;">📊 Performance</h3>
+                            <div class="section-title">⚙️ Configuration</div>
+                            <div class="config-line">TP/SL: ${bot.config.tp_pct}% / ${bot.config.sl_pct}%</div>
+                            <div class="config-line">Thresholds: L=${bot.config.long_threshold} / S=${bot.config.short_threshold}</div>
+                            <div class="config-line">Expected Frequency: ${bot.config.expected_trades_per_week} trades/week</div>
+                            <div class="config-line">Expected Win Rate: ${bot.config.expected_win_rate}%</div>
+                            <div class="config-line">Expected P&L (2yr): $${bot.config.expected_pnl_2yr.toLocaleString()}</div>
+
+                            <div class="section-title">📊 Performance</div>
                             <div class="perf-grid">
-                                <div class="perf-item">
+                                <div class="perf-box">
                                     <div class="perf-value">${bot.performance.total_trades}</div>
                                     <div class="perf-label">Total Trades</div>
                                 </div>
-                                <div class="perf-item">
-                                    <div class="perf-value" style="color: ${bot.performance.win_rate >= 50 ? '#4CAF50' : '#f44336'}">
-                                        ${bot.performance.win_rate.toFixed(1)}%
-                                    </div>
-                                    <div class="perf-label">Win Rate (${bot.performance.wins}W / ${bot.performance.losses}L)</div>
+                                <div class="perf-box">
+                                    <div class="perf-value">${bot.performance.win_rate.toFixed(1)}%</div>
+                                    <div class="perf-label">Win Rate</div>
+                                    <div class="perf-sub">(${bot.performance.wins}W / ${bot.performance.losses}L)</div>
                                 </div>
-                                <div class="perf-item">
-                                    <div class="perf-value" style="color: ${bot.performance.total_pnl >= 0 ? '#4CAF50' : '#f44336'}">
-                                        $${bot.performance.total_pnl.toFixed(2)}
-                                    </div>
-                                    <div class="perf-label">Total P&L (Avg: $${bot.performance.avg_pnl.toFixed(2)})</div>
+                                <div class="perf-box">
+                                    <div class="perf-value ${totalPnlClass}">${totalPnlSign}$${bot.performance.total_pnl.toFixed(2)}</div>
+                                    <div class="perf-label">Total P&L</div>
+                                    <div class="perf-sub">(Avg: $${bot.performance.avg_pnl.toFixed(2)})</div>
                                 </div>
                             </div>
 
-                            <h3 style="margin-top: 20px;">📝 Recent Trades (Last 10)</h3>
-                            <div class="trades">${recentTrades}</div>
+                            <div class="section-title">📝 Recent Trades (Last 10)</div>
+                            ${bot.recent_trades.map(trade => {
+                                const pnlClass = trade.pnl >= 0 ? 'positive' : 'negative';
+                                const pnlSign = trade.pnl >= 0 ? '+' : '';
+                                return `<div class="trade-line">${trade.time} | ${trade.direction} | <span class="${pnlClass}">${pnlSign}$${trade.pnl.toFixed(2)} (${pnlSign}${trade.pnl_pct.toFixed(2)}%)</span> | ${trade.hold_minutes.toFixed(0)}min</div>`;
+                            }).join('')}
                         </div>
                     `;
-                });
+                }).join('');
+
             } catch (error) {
-                document.getElementById('bots').innerHTML = `
-                    <div style="color: #f44336; text-align: center; padding: 40px;">
-                        <h2>⚠️ Error Loading Status</h2>
-                        <p>${error.message}</p>
-                    </div>
-                `;
+                console.error('Error loading status:', error);
+                document.getElementById('botsContainer').innerHTML = `<div class="bot">Error loading bot status: ${error.message}</div>`;
             }
         }
 
+        // Load immediately and refresh every 2 minutes
         loadStatus();
-        setInterval(loadStatus, 60000); // Refresh every minute
+        setInterval(loadStatus, 120000);
     </script>
 </body>
 </html>
