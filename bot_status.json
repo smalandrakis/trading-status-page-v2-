@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-04-07T06:27:09.312266",
+  "bots": [
+    {
+      "name": "BTC Swing Bot (3.0/1.5)",
+      "status": "running",
+      "last_update": "2026-04-07 06:25:16,405",
+      "config": {
+        "tp_pct": 3.0,
+        "sl_pct": 1.5,
+        "long_threshold": 0.65,
+        "short_threshold": 0.25,
+        "expected_trades_per_week": "5-6",
+        "expected_win_rate": 52.6,
+        "expected_pnl_2yr": 16577
+      },
+      "performance": {
+        "total_trades": 13,
+        "wins": 12,
+        "losses": 1,
+        "win_rate": 92.3,
+        "total_pnl": 2518.01,
+        "avg_pnl": 193.69
+      },
+      "recent_trades": [
+        {
+          "time": "2026-04-06 04:24:11",
+          "direction": "LONG",
+          "pnl": 220.96,
+          "pnl_pct": 3.3,
+          "hold_minutes": 1040.0
+        },
+        {
+          "time": "2026-04-06 05:11:12",
+          "direction": "LONG",
+          "pnl": 225.52,
+          "pnl_pct": 3.37,
+          "hold_minutes": 1087.0
+        },
+        {
+          "time": "2026-04-06 05:58:20",
+          "direction": "LONG",
+          "pnl": 211.41,
+          "pnl_pct": 3.16,
+          "hold_minutes": 1134.0
+        },
+        {
+          "time": "2026-04-06 06:25:16",
+          "direction": "LONG",
+          "pnl": 204.29,
+          "pnl_pct": 3.05,
+          "hold_minutes": 1161.0
+        },
+        {
+          "time": "2026-04-06 07:11:00",
+          "direction": "LONG",
+          "pnl": 221.04,
+          "pnl_pct": 3.3,
+          "hold_minutes": 1207.0
+        },
+        {
+          "time": "2026-04-06 08:05:46",
+          "direction": "LONG",
+          "pnl": 218.98,
+          "pnl_pct": 3.27,
+          "hold_minutes": 1261.0
+        },
+        {
+          "time": "2026-04-06 08:11:17",
+          "direction": "LONG",
+          "pnl": 231.5,
+          "pnl_pct": 3.46,
+          "hold_minutes": 1267.0
+        },
+        {
+          "time": "2026-04-06 09:49:34",
+          "direction": "LONG",
+          "pnl": 202.36,
+          "pnl_pct": 3.02,
+          "hold_minutes": 1365.0
+        },
+        {
+          "time": "2026-04-06 11:13:46",
+          "direction": "LONG",
+          "pnl": 259.04,
+          "pnl_pct": 3.87,
+          "hold_minutes": 1449.0
+        },
+        {
+          "time": "2026-04-06 12:15:17",
+          "direction": "LONG",
+          "pnl": 286.4,
+          "pnl_pct": 4.28,
+          "hold_minutes": 1511.0
+        }
+      ]
+    },
+    {
+      "name": "BTC High Frequency (1.5/0.3)",
+      "status": "running",
+      "last_update": "2026-04-07 06:25:19,223",
+      "config": {
+        "tp_pct": 1.5,
+        "sl_pct": 0.3,
+        "long_threshold": 0.65,
+        "short_threshold": 0.25,
+        "expected_trades_per_week": "7-8",
+        "expected_win_rate": 33.7,
+        "expected_pnl_2yr": 11689
+      },
+      "performance": {
+        "total_trades": 17,
+        "wins": 14,
+        "losses": 3,
+        "win_rate": 82.4,
+        "total_pnl": 2532.52,
+        "avg_pnl": 148.97
+      },
+      "recent_trades": [
+        {
+          "time": "2026-04-06 05:11:22",
+          "direction": "LONG",
+          "pnl": 225.11,
+          "pnl_pct": 3.36,
+          "hold_minutes": 1087.0
+        },
+        {
+          "time": "2026-04-06 05:58:24",
+          "direction": "LONG",
+          "pnl": 211.0,
+          "pnl_pct": 3.15,
+          "hold_minutes": 1134.0
+        },
+        {
+          "time": "2026-04-06 06:25:20",
+          "direction": "LONG",
+          "pnl": 203.88,
+          "pnl_pct": 3.04,
+          "hold_minutes": 1161.0
+        },
+        {
+          "time": "2026-04-06 07:11:04",
+          "direction": "LONG",
+          "pnl": 219.87,
+          "pnl_pct": 3.28,
+          "hold_minutes": 1206.0
+        },
+        {
+          "time": "2026-04-06 08:05:51",
+          "direction": "LONG",
+          "pnl": 219.17,
+          "pnl_pct": 3.27,
+          "hold_minutes": 1261.0
+        },
+        {
+          "time": "2026-04-06 08:11:21",
+          "direction": "LONG",
+          "pnl": 234.96,
+          "pnl_pct": 3.51,
+          "hold_minutes": 1267.0
+        },
+        {
+          "time": "2026-04-06 09:49:38",
+          "direction": "LONG",
+          "pnl": 201.95,
+          "pnl_pct": 3.02,
+          "hold_minutes": 1365.0
+        },
+        {
+          "time": "2026-04-06 11:13:50",
+          "direction": "LONG",
+          "pnl": 258.63,
+          "pnl_pct": 3.86,
+          "hold_minutes": 1449.0
+        },
+        {
+          "time": "2026-04-06 12:15:21",
+          "direction": "LONG",
+          "pnl": 286.42,
+          "pnl_pct": 4.28,
+          "hold_minutes": 1511.0
+        },
+        {
+          "time": "2026-04-07 04:52:59",
+          "direction": "SHORT",
+          "pnl": -108.83,
+          "pnl_pct": -0.53,
+          "hold_minutes": 458.0
+        }
+      ]
+    }
+  ]
+}
