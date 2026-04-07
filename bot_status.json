@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-07T06:27:09.312266",
+  "generated_at": "2026-04-07T06:37:03.143052",
   "bots": [
     {
       "name": "BTC Swing Bot (3.0/1.5)",
       "status": "running",
-      "last_update": "2026-04-07 06:25:16,405",
+      "last_update": "2026-04-07 06:35:18,303",
       "config": {
         "tp_pct": 3.0,
         "sl_pct": 1.5,
@@ -98,7 +98,7 @@
     {
       "name": "BTC High Frequency (1.5/0.3)",
       "status": "running",
-      "last_update": "2026-04-07 06:25:19,223",
+      "last_update": "2026-04-07 06:35:20,988",
       "config": {
         "tp_pct": 1.5,
         "sl_pct": 0.3,
