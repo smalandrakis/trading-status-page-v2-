@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-08T07:40:00.598566",
+  "generated_at": "2026-04-08T08:00:00.866168",
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-08 07:38:52,903",
+      "last_update": "2026-04-08 07:58:57,233",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -98,7 +98,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-08 07:38:49,506",
+      "last_update": "2026-04-08 07:58:54,005",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -192,7 +192,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-08 07:38:49,499",
+      "last_update": "2026-04-08 07:58:58,595",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -215,7 +215,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-08 07:39:22,390",
+      "last_update": "2026-04-08 07:59:31,511",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
