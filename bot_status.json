@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-08T01:10:00.463799",
+  "generated_at": "2026-04-08T01:30:00.294991",
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-08 01:09:38,736",
+      "last_update": "2026-04-08 01:29:43,471",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -98,7 +98,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-08 01:09:32,588",
+      "last_update": "2026-04-08 01:29:37,930",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -109,21 +109,14 @@
         "expected_pnl_2yr": 11689
       },
       "performance": {
-        "total_trades": 18,
+        "total_trades": 19,
         "wins": 14,
-        "losses": 4,
-        "win_rate": 77.8,
-        "total_pnl": 2462.05,
-        "avg_pnl": 136.78
+        "losses": 5,
+        "win_rate": 73.7,
+        "total_pnl": 2355.48,
+        "avg_pnl": 123.97
       },
       "recent_trades": [
-        {
-          "time": "2026-04-06 05:58:24",
-          "direction": "LONG",
-          "pnl": 211.0,
-          "pnl_pct": 3.15,
-          "hold_minutes": 1134.0
-        },
         {
           "time": "2026-04-06 06:25:20",
           "direction": "LONG",
@@ -186,13 +179,20 @@
           "pnl": -70.47,
           "pnl_pct": -0.51,
           "hold_minutes": 104.0
+        },
+        {
+          "time": "2026-04-08 01:15:33",
+          "direction": "SHORT",
+          "pnl": -106.57,
+          "pnl_pct": -0.5,
+          "hold_minutes": 74.0
         }
       ]
     },
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-08 01:09:57,111",
+      "last_update": "2026-04-08 01:28:05,703",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -215,7 +215,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-08 01:08:27,231",
+      "last_update": "2026-04-08 01:28:36,584",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
