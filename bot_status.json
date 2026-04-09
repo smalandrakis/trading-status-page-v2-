@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-09T04:30:01.291593",
+  "generated_at": "2026-04-09T04:50:00.653879",
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-09 04:28:57,350",
+      "last_update": "2026-04-09 04:49:01,089",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -16,8 +16,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.8,
-        "time": "2026-04-09 04:28:57,350"
+        "confidence": 45.3,
+        "time": "2026-04-09 04:49:01,089"
       },
       "open_position": {
         "direction": "SHORT",
@@ -112,7 +112,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-09 04:28:56,618",
+      "last_update": "2026-04-09 04:49:01,330",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,34 +124,19 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.8,
-        "time": "2026-04-09 04:28:56,618"
+        "confidence": 45.3,
+        "time": "2026-04-09 04:49:01,330"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 70773.71,
-        "tp_price": 70065.97290000001,
-        "sl_price": 71127.57855,
-        "entry_time": "unknown",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 20,
+        "total_trades": 21,
         "wins": 14,
-        "losses": 6,
-        "win_rate": 70.0,
-        "total_pnl": 2119.26,
-        "avg_pnl": 105.96
+        "losses": 7,
+        "win_rate": 66.7,
+        "total_pnl": 2009.23,
+        "avg_pnl": 95.68
       },
       "recent_trades": [
-        {
-          "time": "2026-04-06 07:11:04",
-          "direction": "LONG",
-          "pnl": 219.87,
-          "pnl_pct": 3.28,
-          "hold_minutes": 1206.0
-        },
         {
           "time": "2026-04-06 08:05:51",
           "direction": "LONG",
@@ -214,13 +199,20 @@
           "pnl": -236.22,
           "pnl_pct": -0.56,
           "hold_minutes": 77.0
+        },
+        {
+          "time": "2026-04-09 04:38:58",
+          "direction": "SHORT",
+          "pnl": -110.04,
+          "pnl_pct": -0.52,
+          "hold_minutes": 217.0
         }
       ]
     },
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-09 04:28:24,964",
+      "last_update": "2026-04-09 04:48:34,786",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -232,17 +224,17 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.4,
-        "time": "2026-04-09 04:28:24,964"
+        "confidence": 42.1,
+        "time": "2026-04-09 04:48:34,786"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 1,
-        "wins": 0,
+        "total_trades": 2,
+        "wins": 1,
         "losses": 1,
-        "win_rate": 0.0,
-        "total_pnl": 0.0,
-        "avg_pnl": 0.0
+        "win_rate": 50.0,
+        "total_pnl": 18544.85,
+        "avg_pnl": 9272.42
       },
       "recent_trades": [
         {
@@ -251,13 +243,20 @@
           "pnl": -0.0,
           "pnl_pct": -100.0,
           "hold_minutes": 0.0
+        },
+        {
+          "time": "2026-04-09 04:40:30",
+          "direction": "LONG",
+          "pnl": 18544.85,
+          "pnl_pct": 663.37,
+          "hold_minutes": 0.0
         }
       ]
     },
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-09 04:28:22,119",
+      "last_update": "2026-04-09 04:48:30,920",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -269,8 +268,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.4,
-        "time": "2026-04-09 04:28:22,119"
+        "confidence": 42.1,
+        "time": "2026-04-09 04:48:30,920"
       },
       "open_position": null,
       "performance": {
