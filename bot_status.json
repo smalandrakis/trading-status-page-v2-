@@ -1,10 +1,10 @@
 {
-  "generated_at": "2026-04-08T22:20:01.251324",
+  "generated_at": "2026-04-08T22:40:00.287464",
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-08 22:19:22,434",
+      "last_update": "2026-04-08 22:40:00,168",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -15,9 +15,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "NEUTRAL",
+        "signal": "UNKNOWN",
         "confidence": 0,
-        "time": "2026-04-08 22:19:22,434"
+        "time": null
       },
       "open_position": {
         "direction": "SHORT",
@@ -112,7 +112,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-08 22:19:26,332",
+      "last_update": "2026-04-08 22:39:46,674",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,33 +125,18 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-08 22:19:26,332"
+        "time": "2026-04-08 22:39:46,674"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 70662.94,
-        "tp_price": 69956.3106,
-        "sl_price": 71016.25469999999,
-        "entry_time": "unknown",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 19,
+        "total_trades": 20,
         "wins": 14,
-        "losses": 5,
-        "win_rate": 73.7,
-        "total_pnl": 2355.48,
-        "avg_pnl": 123.97
+        "losses": 6,
+        "win_rate": 70.0,
+        "total_pnl": 2119.26,
+        "avg_pnl": 105.96
       },
       "recent_trades": [
-        {
-          "time": "2026-04-06 06:25:20",
-          "direction": "LONG",
-          "pnl": 203.88,
-          "pnl_pct": 3.04,
-          "hold_minutes": 1161.0
-        },
         {
           "time": "2026-04-06 07:11:04",
           "direction": "LONG",
@@ -214,13 +199,20 @@
           "pnl": -106.57,
           "pnl_pct": -0.5,
           "hold_minutes": 74.0
+        },
+        {
+          "time": "2026-04-08 22:27:42",
+          "direction": "SHORT",
+          "pnl": -236.22,
+          "pnl_pct": -0.56,
+          "hold_minutes": 77.0
         }
       ]
     },
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-08 22:19:23,245",
+      "last_update": "2026-04-08 22:39:52,247",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -257,7 +249,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-08 22:19:29,707",
+      "last_update": "2026-04-08 22:38:18,488",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
