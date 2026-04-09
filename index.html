@@ -85,9 +85,58 @@
         }
         .positive { color: #4CAF50; }
         .negative { color: #f44336; }
+        .neutral { color: #888; }
         .trade-line {
             font-family: 'Monaco', 'Courier New', monospace;
             font-size: 0.85em;
+        }
+        .signal-box {
+            background: #2a2a2a;
+            border: 1px solid #444;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .signal-display {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin: 5px 0;
+        }
+        .confidence-bar {
+            width: 100%;
+            height: 20px;
+            background: #1a1a1a;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 5px 0;
+        }
+        .confidence-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #4CAF50, #2196F3);
+            transition: width 0.3s ease;
+        }
+        .position-box {
+            background: rgba(76, 175, 80, 0.1);
+            border-left: 3px solid #4CAF50;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 4px;
+        }
+        .position-short {
+            background: rgba(244, 67, 54, 0.1);
+            border-left-color: #f44336;
+        }
+        .position-info {
+            font-size: 0.9em;
+            margin: 3px 0;
+        }
+        .adopted-badge {
+            background: #FF9800;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.7em;
+            margin-left: 5px;
         }
     </style>
 </head>
@@ -112,6 +161,26 @@
                     const totalPnlClass = bot.performance.total_pnl >= 0 ? 'positive' : 'negative';
                     const totalPnlSign = bot.performance.total_pnl >= 0 ? '+' : '';
 
+                    // Current signal
+                    const signal = bot.current_signal || {};
+                    const signalClass = signal.signal === 'LONG' ? 'positive' :
+                                       signal.signal === 'SHORT' ? 'negative' : 'neutral';
+                    const confidence = signal.confidence || 0;
+
+                    // Open position
+                    const position = bot.open_position;
+                    const positionHtml = position ? `
+                        <div class="position-box ${position.direction === 'SHORT' ? 'position-short' : ''}">
+                            <div style="font-weight: bold; margin-bottom: 5px;">
+                                📍 OPEN POSITION: ${position.direction} ${position.size}x
+                                ${position.adopted ? '<span class="adopted-badge">ADOPTED</span>' : ''}
+                            </div>
+                            <div class="position-info">Entry: $${position.entry_price.toFixed(2)}</div>
+                            <div class="position-info">TP: $${position.tp_price.toFixed(2)} | SL: $${position.sl_price.toFixed(2)}</div>
+                            <div class="position-info" style="color: #888; font-size: 0.85em;">Opened: ${position.entry_time}</div>
+                        </div>
+                    ` : '<div style="color: #888; padding: 10px 0;">No open position</div>';
+
                     return `
                         <div class="bot">
                             <div class="bot-header">
@@ -119,6 +188,23 @@
                                 <span class="status-badge">${bot.status.toUpperCase()}</span>
                             </div>
                             <div class="last-update">Last Update: ${bot.last_update}</div>
+
+                            <div class="section-title">🎯 Current Signal</div>
+                            <div class="signal-box">
+                                <div class="signal-display">
+                                    <span class="${signalClass}">${signal.signal || 'UNKNOWN'}</span>
+                                    <span style="color: #888; font-size: 0.8em; margin-left: 10px;">${confidence.toFixed(1)}%</span>
+                                </div>
+                                <div class="confidence-bar">
+                                    <div class="confidence-fill" style="width: ${confidence}%"></div>
+                                </div>
+                                <div style="font-size: 0.75em; color: #666; margin-top: 5px;">
+                                    LONG ≥ ${bot.config.long_threshold * 100}% | SHORT ≤ ${bot.config.short_threshold * 100}%
+                                </div>
+                            </div>
+
+                            <div class="section-title">💼 Position Status</div>
+                            ${positionHtml}
 
                             <div class="section-title">⚙️ Configuration</div>
                             <div class="config-line">TP/SL: ${bot.config.tp_pct}% / ${bot.config.sl_pct}%</div>
@@ -146,11 +232,11 @@
                             </div>
 
                             <div class="section-title">📝 Recent Trades (Last 10)</div>
-                            ${bot.recent_trades.map(trade => {
+                            ${bot.recent_trades.length > 0 ? bot.recent_trades.map(trade => {
                                 const pnlClass = trade.pnl >= 0 ? 'positive' : 'negative';
                                 const pnlSign = trade.pnl >= 0 ? '+' : '';
                                 return `<div class="trade-line">${trade.time} | ${trade.direction} | <span class="${pnlClass}">${pnlSign}$${trade.pnl.toFixed(2)} (${pnlSign}${trade.pnl_pct.toFixed(2)}%)</span> | ${trade.hold_minutes.toFixed(0)}min</div>`;
-                            }).join('')}
+                            }).join('') : '<div style="color: #888; padding: 10px 0;">No trades yet</div>'}
                         </div>
                     `;
                 }).join('');
