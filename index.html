@@ -80,6 +80,7 @@
 <body>
     <h1>🤖 BTC Trading Bots - Live Status</h1>
     <div class="last-update" id="lastUpdate">Loading...</div>
+    <div id="binanceStatus" style="text-align: center; padding: 10px; margin: 10px 0; border-radius: 4px;"></div>
     <div id="bots"></div>
 
     <script>
@@ -90,6 +91,19 @@
 
                 document.getElementById('lastUpdate').textContent =
                     `Last Updated: ${new Date(data.generated_at).toLocaleString()}`;
+
+                // Display Binance connection status
+                const binanceDiv = document.getElementById('binanceStatus');
+                const binance = data.binance_connection;
+                if (binance.status === 'connected') {
+                    binanceDiv.style.background = 'rgba(76, 175, 80, 0.2)';
+                    binanceDiv.style.border = '1px solid #4CAF50';
+                    binanceDiv.innerHTML = '✓ Binance API Connected';
+                } else {
+                    binanceDiv.style.background = 'rgba(244, 67, 54, 0.2)';
+                    binanceDiv.style.border = '1px solid #f44336';
+                    binanceDiv.innerHTML = `⚠️ Binance API ${binance.status.toUpperCase()}: ${binance.message}<br><small>Bots cannot generate signals without Binance connection</small>`;
+                }
 
                 const botsDiv = document.getElementById('bots');
                 botsDiv.innerHTML = '';
