@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-09T14:10:00.740238",
+  "generated_at": "2026-04-09T14:30:02.802152",
   "binance_connection": {
-    "status": "disconnected",
-    "message": "HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ping (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10570aa90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    "status": "error",
+    "message": "HTTP 451"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-09 14:10:00",
+      "last_update": "2026-04-09 14:30:00,794",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -108,7 +108,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-09 14:10:00",
+      "last_update": "2026-04-09 14:30:00,794",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -208,7 +208,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-09 14:10:00",
+      "last_update": "2026-04-09 14:30:02",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -237,7 +237,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-09 14:10:00",
+      "last_update": "2026-04-09 14:30:02",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
