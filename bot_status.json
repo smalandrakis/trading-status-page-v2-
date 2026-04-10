@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-10T01:47:05.183232",
+  "generated_at": "2026-04-10T12:00:01.284973",
   "binance_connection": {
-    "status": "disconnected",
-    "message": "HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ping (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x108512a90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    "status": "connected",
+    "message": "Binance API accessible"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-10 01:46:56,085",
+      "last_update": "2026-04-10 11:58:07,429",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -19,9 +19,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "NEUTRAL",
+        "confidence": 30.3,
+        "time": "2026-04-10 11:58:07,429"
       },
       "open_position": null,
       "performance": {
@@ -108,7 +108,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-10 01:46:56,085",
+      "last_update": "2026-04-10 11:58:07,429",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -119,9 +119,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "NEUTRAL",
+        "confidence": 30.3,
+        "time": "2026-04-10 11:58:07,429"
       },
       "open_position": null,
       "performance": {
@@ -208,7 +208,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-10 01:47:05",
+      "last_update": "2026-04-10 11:58:36,140",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -219,9 +219,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "NEUTRAL",
+        "confidence": 30.4,
+        "time": "2026-04-10 11:58:36,140"
       },
       "open_position": null,
       "performance": {
