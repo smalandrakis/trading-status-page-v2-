@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-10T13:00:02.072771",
+  "generated_at": "2026-04-10T13:20:01.942021",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-10 12:59:41,290",
+      "last_update": "2026-04-10 13:19:44,506",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 61.6,
-        "time": "2026-04-10 12:59:41,290"
+        "confidence": 54.1,
+        "time": "2026-04-10 13:19:44,506"
       },
       "open_position": {
         "direction": "LONG",
@@ -116,7 +116,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-10 12:59:44,177",
+      "last_update": "2026-04-10 13:19:47,406",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -128,8 +128,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 61.8,
-        "time": "2026-04-10 12:59:44,177"
+        "confidence": 52.9,
+        "time": "2026-04-10 13:19:47,406"
       },
       "open_position": {
         "direction": "LONG",
@@ -224,7 +224,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-10 12:59:59,179",
+      "last_update": "2026-04-10 13:18:09,527",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -236,10 +236,18 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 61.6,
-        "time": "2026-04-10 12:59:59,179"
+        "confidence": 52.2,
+        "time": "2026-04-10 13:18:09,527"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 1,
+        "entry_price": 0,
+        "tp_price": 73958.875,
+        "sl_price": 71433.45,
+        "entry_time": "unknown",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 0,
         "wins": 0,
@@ -253,7 +261,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-10 12:58:01,404",
+      "last_update": "2026-04-10 13:18:12,898",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -265,10 +273,18 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 63.2,
-        "time": "2026-04-10 12:58:01,404"
+        "confidence": 52.2,
+        "time": "2026-04-10 13:18:12,898"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 1,
+        "entry_price": 0,
+        "tp_price": 72815.95,
+        "sl_price": 71734.525,
+        "entry_time": "unknown",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 0,
         "wins": 0,
