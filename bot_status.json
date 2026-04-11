@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-11T21:25:56.516338",
+  "generated_at": "2026-04-11T23:10:02.884795",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-11 20:36:19,500",
+      "last_update": "2026-04-11 23:09:36,269",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -19,9 +19,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 77.7,
-        "time": "2026-04-11 20:36:19,500"
+        "signal": "NEUTRAL",
+        "confidence": 60.0,
+        "time": "2026-04-11 23:09:36,269"
       },
       "open_position": {
         "direction": "LONG",
@@ -116,7 +116,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-11 20:36:04,555",
+      "last_update": "2026-04-11 23:09:22,985",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -127,35 +127,20 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 76.7,
-        "time": "2026-04-11 20:36:04,555"
+        "signal": "NEUTRAL",
+        "confidence": 60.0,
+        "time": "2026-04-11 23:09:22,985"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 2,
-        "entry_price": 72880.33,
-        "tp_price": 73609.1333,
-        "sl_price": 72515.92835,
-        "entry_time": "unknown",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 22,
-        "wins": 15,
+        "total_trades": 23,
+        "wins": 16,
         "losses": 7,
-        "win_rate": 68.2,
-        "total_pnl": 2160.66,
-        "avg_pnl": 98.21
+        "win_rate": 69.6,
+        "total_pnl": 2308.37,
+        "avg_pnl": 100.36
       },
       "recent_trades": [
-        {
-          "time": "2026-04-06 08:11:21",
-          "direction": "LONG",
-          "pnl": 234.96,
-          "pnl_pct": 3.51,
-          "hold_minutes": 1267.0
-        },
         {
           "time": "2026-04-06 09:49:38",
           "direction": "LONG",
@@ -218,13 +203,20 @@
           "pnl": 151.43,
           "pnl_pct": 1.05,
           "hold_minutes": 199.0
+        },
+        {
+          "time": "2026-04-11 22:16:09",
+          "direction": "LONG",
+          "pnl": 147.72,
+          "pnl_pct": 1.01,
+          "hold_minutes": 488.0
         }
       ]
     },
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-11 20:36:05,476",
+      "last_update": "2026-04-11 23:09:22,221",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -235,9 +227,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 78.4,
-        "time": "2026-04-11 20:36:05,476"
+        "signal": "NEUTRAL",
+        "confidence": 59.3,
+        "time": "2026-04-11 23:09:22,221"
       },
       "open_position": {
         "direction": "LONG",
@@ -261,7 +253,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-11 20:36:09,743",
+      "last_update": "2026-04-11 23:09:28,052",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -272,26 +264,18 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 78.4,
-        "time": "2026-04-11 20:36:06,736"
+        "signal": "NEUTRAL",
+        "confidence": 59.4,
+        "time": "2026-04-11 23:09:28,052"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 3,
-        "entry_price": 0,
-        "tp_price": 0.0,
-        "sl_price": 0.0,
-        "entry_time": "unknown",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 1,
+        "total_trades": 2,
         "wins": 1,
-        "losses": 0,
-        "win_rate": 100.0,
-        "total_pnl": 81.09,
-        "avg_pnl": 81.09
+        "losses": 1,
+        "win_rate": 50.0,
+        "total_pnl": NaN,
+        "avg_pnl": NaN
       },
       "recent_trades": [
         {
@@ -300,6 +284,13 @@
           "pnl": 81.09,
           "pnl_pct": 1.12,
           "hold_minutes": 201.0
+        },
+        {
+          "time": "2026-04-11 23:00:21",
+          "direction": "LONG",
+          "pnl": NaN,
+          "pnl_pct": Infinity,
+          "hold_minutes": 144.0
         }
       ]
     }
