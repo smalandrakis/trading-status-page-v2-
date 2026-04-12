@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-12T22:00:02.545753",
+  "generated_at": "2026-04-12T22:10:01.951085",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-12 22:00:02",
+      "last_update": "2026-04-12 22:10:01",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 82.8,
-        "time": "2026-04-12 21:59:58,659"
+        "confidence": 82.7,
+        "time": "2026-04-12 22:08:01,338"
       },
       "open_position": {
         "direction": "LONG",
@@ -116,7 +116,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-12 21:58:08,023",
+      "last_update": "2026-04-12 22:08:10,077",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -128,8 +128,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 86.3,
-        "time": "2026-04-12 21:58:08,022"
+        "confidence": 82.7,
+        "time": "2026-04-12 22:08:10,076"
       },
       "open_position": {
         "direction": "SHORT",
@@ -224,7 +224,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-12 21:59:33,141",
+      "last_update": "2026-04-12 22:09:03,339",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -261,7 +261,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-12 21:59:56,126",
+      "last_update": "2026-04-12 22:09:56,295",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
