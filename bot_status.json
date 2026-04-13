@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T22:20:01.285030",
+  "generated_at": "2026-04-13T22:30:02.135247",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-13 22:18:09,989",
+      "last_update": "2026-04-13 22:28:16,516",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 55.7,
-        "time": "2026-04-13 22:18:09,989"
+        "confidence": 59.0,
+        "time": "2026-04-13 22:28:16,516"
       },
       "open_position": null,
       "performance": {
@@ -37,7 +37,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-13 22:19:17,875",
+      "last_update": "2026-04-13 22:29:20,272",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -49,8 +49,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.9,
-        "time": "2026-04-13 22:19:17,875"
+        "confidence": 58.4,
+        "time": "2026-04-13 22:29:20,272"
       },
       "open_position": null,
       "performance": {
@@ -66,7 +66,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 22:19:46,345",
+      "last_update": "2026-04-13 22:28:16,759",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -78,8 +78,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.9,
-        "time": "2026-04-13 22:19:46,345"
+        "confidence": 59.0,
+        "time": "2026-04-13 22:28:16,759"
       },
       "open_position": null,
       "performance": {
@@ -153,7 +153,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-13 22:20:01",
+      "last_update": "2026-04-13 22:30:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -225,132 +225,5 @@
         }
       ]
     }
-  ],
-  "mirofish_predictions": {
-    "updated_at": "2026-04-13T22:25:58.348795",
-    "signals": {
-      "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.1735,
-        "confidence": 0.6544,
-        "bullish_pct": 0.3488,
-        "bearish_pct": 0.1289,
-        "neutral_pct": 0.5223,
-        "agent_count": 12,
-        "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.2835,
-        "key_arguments": {
-          "bullish": [
-            "[DiamondHands420] $72.5K is the ultimate battleground and we\u2019re *this close* \u2014 Iran\u2019s Bitcoin toll demand is FUD turned fuel, and MSTR dropping another $1B like it\u2019s nothing is pure diamond-handed dominance. Extreme Fe",
-            "[FadeTheCrowd] Price rejection at $72.5K with extreme fear (12) and weak volume is the perfect setup for a spring\u2014MSTR\u2019s $1B buy and Iran\u2019s strategic Bitcoin demand are non-consensus, high-conviction signals being d",
-            "[StackingSats] $72K is still a steal pre-halving\u2014MSTR\u2019s $1B buy isn\u2019t noise, it\u2019s a war cry. Iran\u2019s Bitcoin toll and sovereign adoption are early dominos; the market is mispricing structural demand. Extreme fear at ",
-            "[CryptoKaleo] $72.5K isn\u2019t resistance\u2014it\u2019s a psychological breaking point. MSTR\u2019s $1B buy isn\u2019t just accumulation, it\u2019s a signal flare to the market that institutions are playing for keeps, while Iran\u2019s BTC toll de",
-            "[TrendRider] Price is retesting $72.5K\u2014a key structural level now acting as resistance\u2014on weak volume, despite MSTR\u2019s massive $1B buy and Iran\u2019s strategic Bitcoin demand. This divergence suggests accumulation is h"
-          ],
-          "bearish": [
-            "[BearishBob] Another fakeout forming at $72.5K\u2014zero follow-through volume, same as every time. MSTR\u2019s $1B buy is debt-fueled share dilution, not organic demand, and Iran\u2019s Bitcoin toll is geopolitical noise with n",
-            "[DeltaNeutral] Price at $72.1K remains trapped below the $72.3K sell wall with declining delta and no volume follow-through, indicating lack of institutional absorption. MSTR's $1B buy is offset by equity dilution a"
-          ]
-        },
-        "timestamp": "2026-04-13T17:10:00.291609+00:00",
-        "metadata": {
-          "role_weights": {
-            "whale": 2.0,
-            "institutional": 2.0,
-            "macro_analyst": 1.8,
-            "on_chain_analyst": 1.5,
-            "quant": 1.5,
-            "market_maker": 1.3,
-            "contrarian": 1.2,
-            "momentum_trader": 1.2,
-            "ct_influencer": 0.8,
-            "retail_bull": 0.6,
-            "retail_bear": 0.6,
-            "hodler": 0.5
-          },
-          "round_weight_decay": 0.6,
-          "run_duration_sec": 2398.8,
-          "num_agents": 12,
-          "num_rounds": 3,
-          "total_posts": 36,
-          "market_data_summary": {
-            "price": 72166,
-            "change_24h": 1.71,
-            "fear_greed": 12
-          }
-        },
-        "age_minutes": 136.0,
-        "is_fresh": true
-      },
-      "groq": {
-        "direction": "NEUTRAL",
-        "strength": 0.7666,
-        "confidence": 0.5347,
-        "bullish_pct": 0.0909,
-        "bearish_pct": 0.0516,
-        "neutral_pct": 0.8575,
-        "agent_count": 12,
-        "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.7863,
-        "key_arguments": {
-          "bullish": [
-            "[DiamondHands420] The Fear & Greed Index is at 12, Extreme Fear, which is a great buying opportunity. I'm seeing a lot of FUD around quantum computing, but I believe the devs will find a solution. The recent dip to $70",
-            "[StackingSats] The Fear & Greed Index at 12, Extreme Fear, is music to my ears - a perfect buying opportunity. I'm not concerned about the FUD surrounding quantum computing, as I believe the devs will find a solutio"
-          ],
-          "bearish": [
-            "[BearishBob] The Fear & Greed Index at 12, Extreme Fear, is nothing but a trap, a cleverly disguised bounce before the next leg down. The recent dip to $70.6K and the overall 43.8% decline from ATH are clear indic"
-          ]
-        },
-        "timestamp": "2026-04-13T06:03:40.131274+00:00",
-        "metadata": {
-          "role_weights": {
-            "whale": 2.0,
-            "institutional": 2.0,
-            "macro_analyst": 1.8,
-            "on_chain_analyst": 1.5,
-            "quant": 1.5,
-            "market_maker": 1.3,
-            "contrarian": 1.2,
-            "momentum_trader": 1.2,
-            "ct_influencer": 0.8,
-            "retail_bull": 0.6,
-            "retail_bear": 0.6,
-            "hodler": 0.5
-          },
-          "round_weight_decay": 0.6,
-          "run_duration_sec": 218.1,
-          "num_agents": 12,
-          "num_rounds": 3,
-          "total_posts": 36,
-          "market_data_summary": {
-            "price": 70855,
-            "change_24h": -1.24,
-            "fear_greed": 12
-          }
-        },
-        "age_minutes": 802.3,
-        "is_fresh": true
-      },
-      "mirofish_full": {
-        "timestamp": "2026-04-13T19:01:47.061496+00:00",
-        "direction": "LONG",
-        "strength": 0.6,
-        "confidence": 0.7,
-        "reasoning": "Positive price action with +1.79% gain, strong trading volume above $40B suggests buying momentum. Price above $72K indicates potential continuation of bullish trend, though caution advised near ATH levels.",
-        "source": "mirofish-simple",
-        "model_id": "claude-3.5-sonnet",
-        "market_data": {
-          "price": 72445,
-          "change_24h": 1.7880337197891811,
-          "volume_24h": 40522666786.94687
-        },
-        "actionable": true,
-        "age_minutes": 24.2,
-        "is_fresh": true
-      }
-    },
-    "status": "active"
-  }
+  ]
 }
