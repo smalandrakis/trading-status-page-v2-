@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T23:10:01.442016",
+  "generated_at": "2026-04-13T23:20:01.797353",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-13 23:08:37,986",
+      "last_update": "2026-04-13 23:19:31,935",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,10 +20,18 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.3,
-        "time": "2026-04-13 23:08:37,986"
+        "confidence": 49.4,
+        "time": "2026-04-13 23:19:31,935"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 1,
+        "entry_price": 73234.71,
+        "tp_price": 75065.57775,
+        "sl_price": 72502.36290000001,
+        "entry_time": "unknown",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 0,
         "wins": 0,
@@ -37,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-13 23:09:41,612",
+      "last_update": "2026-04-13 23:19:43,509",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -49,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.3,
-        "time": "2026-04-13 23:09:41,612"
+        "confidence": 49.4,
+        "time": "2026-04-13 23:19:43,509"
       },
       "open_position": null,
       "performance": {
@@ -66,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 23:09:58,886",
+      "last_update": "2026-04-13 23:19:35,827",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -77,9 +85,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "NEUTRAL",
+        "confidence": 49.4,
+        "time": "2026-04-13 23:19:35,827"
       },
       "open_position": null,
       "performance": {
@@ -153,7 +161,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-13 23:10:01",
+      "last_update": "2026-04-13 23:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -235,7 +243,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-13T23:14:58.610977",
+    "updated_at": "2026-04-13T23:20:02.039259",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -288,7 +296,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 185.0,
+        "age_minutes": 190.0,
         "is_fresh": true
       },
       "groq": {
@@ -338,24 +346,24 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 851.3,
+        "age_minutes": 856.4,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-13T20:14:41.724758+00:00",
+        "timestamp": "2026-04-13T20:15:04.905641+00:00",
         "direction": "LONG",
-        "strength": 0.7,
+        "strength": 0.8,
         "confidence": 0.75,
-        "reasoning": "Strong positive price action (+3.10%) with robust trading volume indicates bullish momentum. BTC maintaining position above $73K suggests continued buyer interest and potential further upside.",
+        "reasoning": "Strong positive price action (+3.07%) with high trading volume indicates bullish momentum. BTC maintaining position above $73K suggests strong support levels and continued institutional interest.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 73230,
-          "change_24h": 3.1005347612514433,
-          "volume_24h": 46198544924.82363
+          "price": 73209,
+          "change_24h": 3.0711437600434355,
+          "volume_24h": 46263372498.10672
         },
         "actionable": true,
-        "age_minutes": 0.3,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
