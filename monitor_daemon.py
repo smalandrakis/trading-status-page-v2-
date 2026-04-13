@@ -1937,43 +1937,46 @@ class MonitorDaemon:
             logger.error(f"Error saving status: {e}")
     
     def deploy_to_github(self):
-        """Deploy status page to GitHub Pages."""
-        github_repo_path = '/Users/smalandrakis/Documents/WindSurf/trading-status-page'
-        try:
-            # Copy status.json and index.html to GitHub repo
-            import shutil
-            shutil.copy('status_page/status.json', f'{github_repo_path}/status.json')
-            shutil.copy('status_page/index.html', f'{github_repo_path}/index.html')
-            
-            # Git add, commit, push
-            result = subprocess.run(
-                ['git', 'add', 'status.json', 'index.html'],
-                capture_output=True, text=True, timeout=30,
-                cwd=github_repo_path
-            )
-            
-            result = subprocess.run(
-                ['git', 'commit', '-m', f'Update status {datetime.now().strftime("%Y-%m-%d %H:%M")}'],
-                capture_output=True, text=True, timeout=30,
-                cwd=github_repo_path
-            )
-            
-            if 'nothing to commit' in result.stdout or 'nothing to commit' in result.stderr:
-                logger.info("GitHub: No changes to deploy")
-                return
-            
-            result = subprocess.run(
-                ['git', 'push'],
-                capture_output=True, text=True, timeout=60,
-                cwd=github_repo_path
-            )
-            
-            if result.returncode == 0:
-                logger.info("Deployed to GitHub Pages successfully")
-            else:
-                logger.warning(f"GitHub push failed: {result.stderr[:200]}")
-        except Exception as e:
-            logger.warning(f"GitHub deploy error: {e}")
+        """Deploy status page to GitHub Pages (project-freedom only)."""
+        repos = [
+            '/Users/smalandrakis/Documents/WindSurf/project-freedom',
+        ]
+        for github_repo_path in repos:
+            try:
+                import shutil
+                # Copy status.json to GitHub repo
+                shutil.copy('status_page/status.json', f'{github_repo_path}/status.json')
+                
+                # Git add, commit, push
+                result = subprocess.run(
+                    ['git', 'add', '-A'],
+                    capture_output=True, text=True, timeout=30,
+                    cwd=github_repo_path
+                )
+                
+                result = subprocess.run(
+                    ['git', 'commit', '-m', f'Update status {datetime.now().strftime("%Y-%m-%d %H:%M")}'],
+                    capture_output=True, text=True, timeout=30,
+                    cwd=github_repo_path
+                )
+                
+                if 'nothing to commit' in result.stdout or 'nothing to commit' in result.stderr:
+                    logger.info(f"GitHub ({os.path.basename(github_repo_path)}): No changes to deploy")
+                    continue
+                
+                result = subprocess.run(
+                    ['git', 'push'],
+                    capture_output=True, text=True, timeout=60,
+                    cwd=github_repo_path
+                )
+                
+                repo_name = os.path.basename(github_repo_path)
+                if result.returncode == 0:
+                    logger.info(f"Deployed to GitHub Pages ({repo_name}) successfully")
+                else:
+                    logger.warning(f"GitHub push failed ({repo_name}): {result.stderr[:200]}")
+            except Exception as e:
+                logger.warning(f"GitHub deploy error ({os.path.basename(github_repo_path)}): {e}")
 
 
 def main():

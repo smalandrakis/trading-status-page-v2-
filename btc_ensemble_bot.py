@@ -75,8 +75,11 @@ BTC_ENSEMBLE_MODELS_LONG = [
 ]
 
 # BTC Ensemble configuration - SHORT models (V2: 2h, 4h horizons)
-# Updated Jan 7, 2026: Enabled ALL SHORT models - 2h adds unique signals (43% overlap with 4h)
-# Using SL=0.70%, TP=1.40% from backtest table
+# Apr 1, 2026: RE-ENABLED SHORTs. Previous -$385 was from corrupted MBT ticker data.
+# Retrained on clean 4-week Binance data:
+#   SHORT 2h: AUC=0.952, WR@50%=72%, WR@70%=86%
+#   SHORT 4h: AUC=0.963, WR@50%=79%, WR@70%=93%
+#   SHORT positive rates (19.5%, 26.5%) actually slightly higher than LONG (18.1%, 23.6%)
 BTC_ENSEMBLE_MODELS_SHORT = [
     {'horizon': '2h', 'threshold': 0.5, 'horizon_bars': 24, 'priority': 2, 'direction': 'SHORT'},
     {'horizon': '4h', 'threshold': 0.5, 'horizon_bars': 48, 'priority': 1, 'direction': 'SHORT'},
@@ -97,8 +100,8 @@ TIMEOUT_MULTIPLIER = 2.0
 # Activation: +0.30% (only activate when trade is solidly profitable)
 # Trail: 0.10% (Feb 27: tightened from 0.20% - tick sim shows +$16.73 on 49 trades, 0 whipsaws)
 # Most TS wins barely cross 0.30% activation, so 0.10% trail locks in ~0.20% vs ~0.10% minimum
-TRAILING_STOP_PCT = 0.25  # Mar 13 v2: widened from 0.15% — wider trail gives room to run toward 1.0% TP without premature exit on minor pullbacks
-TRAILING_STOP_ACTIVATION_PCT = 0.50  # Mar 13 v2: raised from 0.35% — only lock in once clearly profitable; pairs with new TP=1.0% target
+TRAILING_STOP_PCT = 0.05  # Mar 28: ultra-tight trail after late activation — locks in ~0.65% per TS win, improving R:R vs SL=0.70%
+TRAILING_STOP_ACTIVATION_PCT = 0.70  # Mar 28: raised from 0.50% — only trail after a strong +0.70% move, then 0.05% trail locks in nearly all of it
 
 # Stop loss percentage (updated Jan 22, 2026)
 # Using SL=0.70%, TP=1.00% - adjusted Jan 12, 2026 based on live trading analysis:
@@ -108,8 +111,8 @@ TRAILING_STOP_ACTIVATION_PCT = 0.50  # Mar 13 v2: raised from 0.35% — only loc
 # Jan 20, 2026: Reduced SL from 0.70% to 0.60% based on MAE analysis
 # Jan 22, 2026: Reduced SL from 0.60% to 0.40% - analysis shows 78.6% of SL trades never went positive
 # Feb 17, 2026: Reverted to 0.40% - 0.20% too tight, hit on 75% of trades
-STOP_LOSS_PCT = 0.50  # Mar 13 v2: widened from 0.30% — analysis: SL=0.50%/TP=1.0% at 4h EV=+0.138% vs SL=0.30%/TP=0.50% EV=+0.065%. R:R = 2:1
-TAKE_PROFIT_PCT = 1.00  # Mar 13 v2: reduced from 3.0% (unreachable) to 1.0% — data shows 57.5% of bars hit +1% within 4h; hard TP now acts as real exit target
+STOP_LOSS_PCT = 0.50  # Mar 28: tightened from 0.70% — 2wk tick sweep (TS=0.70/0.05): SL=0.50 +$246 vs SL=0.70 +$148, loses only 1 winner
+TAKE_PROFIT_PCT = 3.00  # Mar 23: raised from 1.0% — TS handles most exits; high TP acts as ceiling for rare runners (TP rarely hit, TS does the work)
 
 # =============================================================================
 # SL COOLDOWN (Feb 19, 2026)
@@ -189,8 +192,8 @@ MAX_SHORT_POSITIONS = 2  # ML V2 SHORT positions
 # Filter: Skip SHORT entries if price rose >0.4% in last hour (12 bars)
 # This would have saved $573-683 with 0 winning trades filtered out
 # Jan 21, 2026: Added LONG filter after 14 SL losses in downtrend (-$885)
-TREND_FILTER_ENABLED = True
-TREND_FILTER_SHORT_THRESHOLD = 0.4  # Skip SHORT if 1-hour trend > +0.4%
+TREND_FILTER_ENABLED = False  # Mar 31: DISABLED — calibrated on biased data (Binance vs MBT). Will re-evaluate after collecting clean data.
+TREND_FILTER_SHORT_THRESHOLD = 0.3  # Mar 23: tightened from 0.4% — loser analysis: SHORT losers avg trend +0.6% vs winners +0.04%. Blocks ~3 extra losing SHORTs
 TREND_FILTER_LONG_THRESHOLD = -0.4  # Skip LONG if 1-hour trend < -0.4%
 TREND_FILTER_LOOKBACK_BARS = 12  # 1 hour of 5-min bars
 
@@ -199,7 +202,7 @@ TREND_FILTER_LOOKBACK_BARS = 12  # 1 hour of 5-min bars
 # =============================================================================
 # Feb analysis (18 LONG trades): RSI < 40 = 0W/8L (0% WR), RSI >= 40 = 8W/2L (80% WR)
 # Feb analysis (24 SHORT trades): RSI > 70 = 0W/2L (0% WR)
-RSI_FILTER_ENABLED = True
+RSI_FILTER_ENABLED = False  # Mar 31: DISABLED — calibrated on biased data. LONGs appeared to lose at low RSI due to phantom -0.3% basis offset.
 RSI_FILTER_LONG_MIN = 50   # Skip LONG if RSI < 50 (Feb 27: tightened from 42 - blocks 2W/6L, net +$126, RSI<50 = buying into weakness)
 RSI_FILTER_SHORT_MAX = 70  # Skip SHORT if RSI > 70 (uptrend, not a reversal)
 RSI_FILTER_SHORT_MIN = 40  # Mar 17: Skip SHORT if RSI < 40 (oversold, mean-reversion risk — sim: blocks 1W/2L, +$14)
@@ -209,16 +212,26 @@ RSI_FILTER_SHORT_MIN = 40  # Mar 17: Skip SHORT if RSI < 40 (oversold, mean-reve
 # =============================================================================
 # Feb analysis (18 LONG): BB% < 0.20 = 0W/7L (0% WR), BB% >= 0.60 = 6W/0L (100% WR)
 # Feb analysis (24 SHORT): BB% > 0.80 = 0W/2L (0% WR), BB% <= 0.10 = 3W/0L (100% WR)
-BB_FILTER_ENABLED = True
+BB_FILTER_ENABLED = False  # Mar 31: DISABLED — calibrated on biased data. BB% thresholds derived from contaminated LONG WR.
 BB_FILTER_LONG_MIN = 0.40   # Mar 2: tightened from 0.25 - BB%<0.40 LONGs: 8% WR (1W/11L), -$411 net
 BB_FILTER_SHORT_MAX = 0.80  # Skip SHORT if BB% > 0.80 (price at upper band = uptrend)
+
+# =============================================================================
+# LONG CROSS-MODEL AGREEMENT FILTER (Mar 28, 2026)
+# =============================================================================
+# Require ≥2 of the 3 LONG models (2h, 4h, 6h) to have prob > threshold.
+# 3-week tick sim (74 trades): Agreement only → 10W/4L LONG (71% WR, +$298)
+# vs no filter: 15W/17L (47% WR, +$114). Blocks 5W/13L, net +$184.
+LONG_AGREEMENT_ENABLED = True
+LONG_AGREEMENT_MIN_MODELS = 2     # need at least 2 models above threshold
+LONG_AGREEMENT_THRESHOLD = 0.55   # each model must have prob > 55%
 
 # =============================================================================
 # MACD FILTER (Feb 19, 2026) - New
 # =============================================================================
 # Feb analysis (18 LONG): MACD < -10 = 0W/6L (0% WR), MACD >= 0 = 5W/1L (83% WR)
 # Feb analysis (24 SHORT): MACD > 10 = 3W/5L (38% WR, negative avg P&L)
-MACD_FILTER_ENABLED = True
+MACD_FILTER_ENABLED = False  # Mar 31: DISABLED — calibrated on biased data. MACD<0 LONGs only looked bad due to basis penalty.
 MACD_FILTER_LONG_MIN = 0     # Feb 26: Tightened from -10 to 0. MACD<0 LONGs: 15% WR, -$389 net vs MACD>=0: 59% WR, +$84 net
 MACD_FILTER_SHORT_MAX = 10   # Skip SHORT if MACD > 10 (bullish momentum)
 
@@ -243,8 +256,31 @@ MACRO_TREND_LOOKBACK_BARS = 288  # 24h of 5-min bars (24 * 60 / 5)
 # =============================================================================
 # 6h LONG must have at least one shorter model (2h or 4h) above this threshold.
 # Simulation: blocks 0W/1L, saves $39.93 (prevents isolated 6h entries with no support)
-CROSS_TF_ENABLED = True
+CROSS_TF_ENABLED = False  # Mar 31: DISABLED — negligible impact (blocked 0W/1L), calibrated on biased data.
 CROSS_TF_6H_LONG_MIN = 0.40  # 2h or 4h LONG prob must be >= 40% for 6h LONG to enter
+
+# =============================================================================
+# MIROFISH SWARM INTELLIGENCE FILTER (Mar 26, 2026)
+# =============================================================================
+# Multi-agent LLM simulation that debates BTC direction using 12 diverse
+# market participants (whales, institutions, quants, retail, etc.).
+# Dual-provider: Gemini Flash (hourly) + Groq Llama 3.3 70B (daily deep).
+# Bot reads both and picks the freshest valid signal.
+# Modes:
+#   'filter'  — Block entries that disagree with MiroFish consensus
+#   'boost'   — Allow all entries but log MiroFish agreement (monitoring only)
+MIROFISH_FILTER_ENABLED = True
+MIROFISH_FILTER_MODE = 'boost'  # 'filter' = block disagreeing trades, 'boost' = log only (data collection phase)
+MIROFISH_SIGNAL_PATHS = [
+    os.path.join(os.path.expanduser('~'), 'CascadeProjects', 'mirofish-signal', 'output', 'latest_signal_cerebras.json'),  # hourly (Cerebras Llama 3.3 70B)
+    os.path.join(os.path.expanduser('~'), 'CascadeProjects', 'mirofish-signal', 'output', 'latest_signal_groq.json'),     # daily (Groq Llama 3.3 70B)
+    os.path.join(os.path.expanduser('~'), 'CascadeProjects', 'mirofish-signal', 'output', 'latest_signal_gemini.json'),   # disabled (Gemini — quota too low)
+    os.path.join(os.path.expanduser('~'), 'CascadeProjects', 'mirofish-signal', 'output', 'latest_signal.json'),          # legacy fallback
+]
+MIROFISH_MIN_STRENGTH = 0.20  # Minimum signal strength to act on (below = treat as NEUTRAL)
+MIROFISH_MAX_AGE_MINUTES = 1440  # Ignore signal if older than 24 hours (daily signal)
+MIROFISH_BLOCK_OPPOSITE = True  # Block LONG if MiroFish says SHORT (and vice versa)
+MIROFISH_REQUIRE_AGREEMENT = False  # If True, also block NEUTRAL (only enter when MiroFish agrees)
 
 TREND_FOLLOW_ENABLED = True
 TREND_FOLLOW_LONG_THRESHOLD = 4.0   # Activate if 24h change > +4%
@@ -262,7 +298,7 @@ TREND_FOLLOW_REQUIRE_MACD = True  # Require MACD > signal for trend mode
 #   LONG: 53% WR → 60% WR at >50% threshold, -$188 → +$131
 #   SHORT: 54% WR → 64% WR at >50% threshold, +$227 → +$387
 # Adds non-linear interaction effects on top of manual filters.
-ENTRY_GATE_ENABLED = True
+ENTRY_GATE_ENABLED = False  # Mar 31: DISABLED — GBM trained on 352 biased trades. Model learned LONGs 'never win' due to basis offset.
 ENTRY_GATE_THRESHOLD = 0.50  # Only enter if gate model probability >= this
 ENTRY_GATE_LONG_MODEL = 'models/entry_filter_long.pkl'
 ENTRY_GATE_SHORT_MODEL = 'models/entry_filter_short.pkl'
@@ -385,6 +421,7 @@ class Position:
     entry_trend_1h: float = 0.0  # 1-hour trend at entry
     entry_macro_trend_24h: float = 0.0  # 24h macro trend at entry
     entry_all_probs: Optional[dict] = None  # All model probabilities at entry
+    entry_mirofish: Optional[dict] = None  # MiroFish signal at entry (direction, strength, confidence)
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -653,6 +690,13 @@ class BTCEnsembleBot:
         # but IB updatePortfolio callbacks still provide MBT marketPrice)
         self.ib_mbt_price = None
         self.ib_mbt_price_time = None
+        
+        # IB real-time MBT ticker for position monitoring (Mar 30, 2026 fix)
+        # Bug: Binance spot ≠ MBT futures price. Entry uses IB fill, so SL/TP/TS
+        # monitoring must also use IB MBT price to avoid phantom 0.2-0.3% offset.
+        self.ib_mbt_ticker = None  # ib_insync Ticker object from reqMktData
+        self.ib_mbt_realtime_price = None  # Latest IB MBT last/close price
+        self.ib_mbt_realtime_time = None  # Time of last IB MBT price update
         
         # Last known price for emergency stop-loss only mode
         # When ALL price sources fail, use last known price for SL checks only
@@ -1063,8 +1107,11 @@ class BTCEnsembleBot:
             port = IB_PORT if self.paper_trading else 7496
             self.ib.connect(IB_HOST, port, clientId=IB_CLIENT_ID, timeout=20)
             
-            # Request delayed data
-            self.ib.reqMarketDataType(3)
+            # Request delayed-frozen data (type 4)
+            # On paper accounts, type 4 provides real-time streaming prices for MBT
+            # Type 1 (live) requires paid CME subscription; type 3 is 15-min delayed
+            # Type 4 tested Mar 30: confirmed real-time bid/ask/last updates every ~2s
+            self.ib.reqMarketDataType(4)
             
             # Qualify contract
             self.ib.qualifyContracts(self.contract)
@@ -1076,6 +1123,20 @@ class BTCEnsembleBot:
             # Subscribe to portfolio updates for MBT price fallback (Feb 26 fix)
             # IB sends updatePortfolio with marketPrice even when Binance is down
             self.ib.updatePortfolioEvent += self._on_portfolio_update
+            
+            # Subscribe to IB real-time MBT market data for SL/TP monitoring (Mar 30 fix)
+            # Binance spot ≠ MBT futures: using Binance for monitoring caused phantom
+            # -0.3% offset on every LONG entry, halving the effective SL budget.
+            try:
+                self.ib_mbt_ticker = self.ib.reqMktData(self.contract, '', False, False)
+                self.ib.sleep(3)  # Wait for first tick to arrive
+                mbt_test = self.ib_mbt_ticker.marketPrice()
+                if mbt_test and mbt_test > 10000:
+                    logger.info(f"IB MBT real-time ticker active: ${mbt_test:.2f} (for SL/TP monitoring)")
+                else:
+                    logger.warning(f"IB MBT ticker subscribed but no price yet (mp={mbt_test}) — will use portfolio fallback")
+            except Exception as e:
+                logger.warning(f"Failed to subscribe to IB MBT market data: {e} — will use portfolio price")
             
             return True
             
@@ -1350,6 +1411,85 @@ class BTCEnsembleBot:
         
         return None
 
+    def get_mbt_monitoring_price(self) -> Optional[float]:
+        """Get IB MBT futures price for position SL/TP/TS monitoring (Mar 30, 2026).
+        
+        CRITICAL: Entry price comes from IB MBT fill. Monitoring MUST use MBT price too.
+        Bug found Mar 30: Binance spot was ~0.2-0.3% below MBT futures, so every LONG
+        appeared -0.3% underwater instantly, halving effective SL budget.
+        
+        Mar 31 fix: Detect frozen ticker. Paper account type 4 data can freeze —
+        ticker returns same stale price (e.g. previous session close) indefinitely.
+        If price hasn't changed in >120s, reject it. Today's bug: ticker stuck at
+        $67,835 while real fills were at $66,875-67,100, causing phantom -1.4% SL exits.
+        
+        Fallback: 1) IB reqMktData ticker (with staleness check), 2) IB portfolio price, 3) None
+        """
+        # Tier 1: IB reqMktData real-time ticker (updates every ~250ms)
+        if self.ib_mbt_ticker is not None:
+            # Try last, then close, then marketPrice
+            ticker_price = None
+            for attr in ['last', 'close']:
+                val = getattr(self.ib_mbt_ticker, attr, None)
+                if val and val > 10000:
+                    ticker_price = val
+                    break
+            if ticker_price is None:
+                mp = self.ib_mbt_ticker.marketPrice()
+                if mp and mp > 10000:
+                    ticker_price = mp
+            
+            if ticker_price:
+                # STALENESS CHECK (Mar 31 fix): detect frozen ticker
+                # Track when ticker price last CHANGED (not just when we read it)
+                if not hasattr(self, '_mbt_ticker_last_value'):
+                    self._mbt_ticker_last_value = None
+                    self._mbt_ticker_last_change = datetime.now()
+                
+                if ticker_price != self._mbt_ticker_last_value:
+                    # Price changed — ticker is alive
+                    self._mbt_ticker_last_value = ticker_price
+                    self._mbt_ticker_last_change = datetime.now()
+                    self.ib_mbt_realtime_price = ticker_price
+                    self.ib_mbt_realtime_time = datetime.now()
+                    return ticker_price
+                else:
+                    # Price unchanged — check how long it's been frozen
+                    frozen_secs = (datetime.now() - self._mbt_ticker_last_change).total_seconds()
+                    if frozen_secs < 120:
+                        # Still within acceptable range (MBT can be illiquid)
+                        self.ib_mbt_realtime_price = ticker_price
+                        self.ib_mbt_realtime_time = datetime.now()
+                        return ticker_price
+                    else:
+                        # Ticker frozen >120s — likely died during CME maintenance break
+                        if frozen_secs < 125 or int(frozen_secs) % 300 == 0:  # Log once then every 5min
+                            logger.warning(f"MBT ticker FROZEN at ${ticker_price:.0f} for {frozen_secs:.0f}s — "
+                                         f"rejecting stale price, falling through to portfolio/Binance")
+                        # Re-subscribe every 5 minutes to try to recover
+                        if not hasattr(self, '_mbt_ticker_last_resubscribe'):
+                            self._mbt_ticker_last_resubscribe = datetime.min
+                        if (datetime.now() - self._mbt_ticker_last_resubscribe).total_seconds() > 300:
+                            try:
+                                self._mbt_ticker_last_resubscribe = datetime.now()
+                                self.ib.cancelMktData(self.contract)
+                                self.ib.sleep(1)
+                                self.ib_mbt_ticker = self.ib.reqMktData(self.contract, '', False, False)
+                                self.ib.sleep(2)
+                                logger.info("Re-subscribed MBT reqMktData after frozen ticker detected")
+                            except Exception as e:
+                                logger.warning(f"Failed to re-subscribe MBT ticker: {e}")
+        
+        # Tier 2: IB portfolio price (updates every ~3 min)
+        if self.ib_mbt_price and self.ib_mbt_price_time:
+            age = (datetime.now() - self.ib_mbt_price_time).total_seconds()
+            if age < 300:  # Mar 31: relaxed from 60s to 300s — portfolio updates are infrequent
+                return self.ib_mbt_price
+        
+        # Tier 3: No IB price available — return None
+        # Caller should fall back to Binance spot (better than nothing for SL)
+        return None
+
     def add_features(self, df: pd.DataFrame) -> pd.DataFrame:
         """Add technical indicators and features matching training data."""
         if len(df) < 50:
@@ -1487,6 +1627,9 @@ class BTCEnsembleBot:
                 
                 # Use different thresholds for LONG vs SHORT
                 threshold = self.probability_threshold_long if direction == 'LONG' else self.probability_threshold_short
+                # Mar 23: Disable 2h LONG — 0W/2L in last 8 days, 1W/3L overall, no edge
+                if model_name == '2h_0.5pct' and direction == 'LONG':
+                    continue
                 if proba >= threshold:
                     signals.append({
                         'model_id': model_name,
@@ -1813,7 +1956,18 @@ class BTCEnsembleBot:
             # Log to console (like MNQ/SPY bots do)
             prob_str = " | ".join([f"{k}:{v*100:.0f}%" for k, v in probabilities.items()])
             n_pos = self.position_manager.count_positions()
-            logger.info(f"BTC: ${self.current_price:.2f} | Pos: {n_pos}/{self.max_positions} | {prob_str}")
+            
+            # Append MiroFish signal if available
+            mf_str = ""
+            if MIROFISH_FILTER_ENABLED:
+                mf_signal = self._load_mirofish_signal()
+                if mf_signal:
+                    mf_dir = mf_signal.get('direction', '?')
+                    mf_str_val = mf_signal.get('strength', 0)
+                    mf_age = mf_signal.get('_age_minutes', 0)
+                    mf_str = f" | MF:{mf_dir}({mf_str_val:.0%},{mf_age:.0f}m)"
+            
+            logger.info(f"BTC: ${self.current_price:.2f} | Pos: {n_pos}/{self.max_positions} | {prob_str}{mf_str}")
             
             # Log to CSV
             self.signal_logger.log_signals(
@@ -1824,7 +1978,73 @@ class BTCEnsembleBot:
                 active_positions=self.position_manager.count_positions(),
                 indicators=indicators
             )
+            
+            # Log MiroFish signal history (once per new signal, ~hourly)
+            if MIROFISH_FILTER_ENABLED and mf_signal:
+                self._log_mirofish_signal_history(mf_signal)
+            
             self.last_signal_log_time = now
+
+    def _log_mirofish_signal_history(self, mf_signal: dict) -> None:
+        """Log MiroFish signal to CSV for post-hoc WR analysis.
+        
+        Only logs once per unique signal timestamp (deduplicates hourly cron signals).
+        File: signal_logs/mirofish_signal_history.csv
+        """
+        try:
+            import csv
+            
+            mf_ts = mf_signal.get('timestamp', '')
+            if not mf_ts:
+                return
+            
+            # Deduplicate: only log each signal once (survives restarts)
+            if not hasattr(self, '_last_mf_ts_logged'):
+                self._last_mf_ts_logged = ''
+                # On first call, read last logged timestamp from CSV to avoid re-logging after restart
+                log_file_check = os.path.join("signal_logs", "mirofish_signal_history.csv")
+                if os.path.exists(log_file_check):
+                    try:
+                        with open(log_file_check, 'r') as fcheck:
+                            lines = fcheck.readlines()
+                            if len(lines) > 1:
+                                self._last_mf_ts_logged = lines[-1].split(',')[0]
+                    except Exception:
+                        pass
+            if mf_ts == self._last_mf_ts_logged:
+                return
+            self._last_mf_ts_logged = mf_ts
+            
+            log_dir = "signal_logs"
+            os.makedirs(log_dir, exist_ok=True)
+            log_file = os.path.join(log_dir, "mirofish_signal_history.csv")
+            file_exists = os.path.exists(log_file)
+            
+            with open(log_file, 'a', newline='') as f:
+                writer = csv.writer(f)
+                if not file_exists:
+                    writer.writerow([
+                        'signal_time', 'logged_time', 'btc_price',
+                        'direction', 'strength', 'confidence',
+                        'bullish_pct', 'bearish_pct', 'neutral_pct',
+                        'agent_count', 'age_minutes'
+                    ])
+                writer.writerow([
+                    mf_ts,
+                    datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                    f"{self.current_price:.2f}" if self.current_price else "0",
+                    mf_signal.get('direction', 'N/A'),
+                    f"{mf_signal.get('strength', 0):.4f}",
+                    f"{mf_signal.get('confidence', 0):.4f}",
+                    f"{mf_signal.get('bullish_pct', 0):.4f}",
+                    f"{mf_signal.get('bearish_pct', 0):.4f}",
+                    f"{mf_signal.get('neutral_pct', 0):.4f}",
+                    mf_signal.get('agent_count', 0),
+                    f"{mf_signal.get('_age_minutes', 0):.0f}",
+                ])
+                logger.debug(f"[MIROFISH] Logged signal to history: {mf_signal.get('direction')} str={mf_signal.get('strength', 0):.0%}")
+        except Exception as e:
+            logger.debug(f"Error logging MiroFish history: {e}")
 
     def place_order(self, direction: str, size: int) -> Optional[tuple]:
         """Place a market order. Returns (order_id, fill_price) or None."""
@@ -1880,7 +2100,9 @@ class BTCEnsembleBot:
                 # Clear pending close tracking
                 if position.model_id in self.pending_close_orders:
                     del self.pending_close_orders[position.model_id]
-                return True
+                # Mar 31 fix: Return actual fill price so check_exits() can use it for DB recording
+                # Previously returned True, causing DB to record stale self.current_price instead
+                return exit_price
             
             elif status in ['PreSubmitted', 'Submitted', 'Inactive', 'PendingSubmit']:
                 # Order is pending (market closed or queued)
@@ -1964,7 +2186,8 @@ class BTCEnsembleBot:
                 if close_result == 'FLAT':
                     self.position_manager.remove_position(pos.model_id)
                     logger.info(f"Removed phantom position [{pos.model_id}] — IB was already flat")
-                elif close_result:
+                elif close_result and close_result is not False:
+                    # Mar 31: BINANCE-ONLY — use self.current_price (Binance) for DB
                     pnl_dollar = (pnl_pct / 100) * self.current_price * BTC_CONTRACT_VALUE - 2.02
                     try:
                         market_context = self._get_market_context_for_logging(pos)
@@ -2096,7 +2319,15 @@ class BTCEnsembleBot:
                 if close_result == 'FLAT':
                     self.position_manager.remove_position(pos.model_id)
                     logger.info(f"Removed phantom position [{pos.model_id}] — IB was already flat (NO trade logged)")
-                elif close_result:
+                elif close_result and close_result is not False:
+                    # Mar 31: BINANCE-ONLY ARCHITECTURE — record Binance price for exit.
+                    # Both entry_price and exit_price use Binance → P&L is consistent.
+                    # Log IB fill for debugging only.
+                    ib_fill = float(close_result) if isinstance(close_result, (int, float)) and close_result > 10000 else None
+                    if ib_fill and abs(ib_fill - self.current_price) / self.current_price > 0.003:
+                        logger.info(f"[{pos.model_id}] IB exit fill ${ib_fill:.0f} vs Binance ${self.current_price:.0f} "
+                                   f"(basis {(ib_fill/self.current_price - 1)*100:+.2f}%)")
+                    
                     # Log trade to database for performance tracking
                     if 'TAKE PROFIT' in reason:
                         exit_reason_db = 'TAKE_PROFIT'
@@ -2250,6 +2481,17 @@ class BTCEnsembleBot:
                 else:  # SHORT
                     context['max_favorable_excursion'] = round((1 - trough / pos.entry_price) * 100, 4)
                     context['max_adverse_excursion'] = round((1 - peak / pos.entry_price) * 100, 4)
+            
+            # ── MiroFish signal at entry time (Mar 26, 2026) ─────────────
+            # Stored from Position if captured at entry, otherwise read current
+            if hasattr(pos, 'entry_mirofish') and pos.entry_mirofish:
+                mf = pos.entry_mirofish
+                context['mirofish_direction'] = mf.get('direction', 'N/A')
+                context['mirofish_strength'] = mf.get('strength', 0)
+                context['mirofish_confidence'] = mf.get('confidence', 0)
+                context['mirofish_bullish_pct'] = mf.get('bullish_pct', 0)
+                context['mirofish_bearish_pct'] = mf.get('bearish_pct', 0)
+                context['mirofish_agrees'] = 1 if mf.get('direction') == pos.direction else 0
             
             return context
         except Exception as e:
@@ -2702,6 +2944,16 @@ class BTCEnsembleBot:
         if TRAILING_STOP_PCT is None:
             return  # Trailing stop disabled
         
+        # Track absolute peak/trough on every tick for MFE/MAE (Mar 28, 2026)
+        if pos.peak_price == 0.0:
+            pos.peak_price = pos.entry_price
+        if pos.trough_price == 0.0:
+            pos.trough_price = pos.entry_price
+        if current_price > pos.peak_price:
+            pos.peak_price = current_price
+        if current_price < pos.trough_price:
+            pos.trough_price = current_price
+        
         if pos.direction == 'LONG':
             profit_pct = (current_price / pos.entry_price - 1) * 100
             
@@ -3027,6 +3279,28 @@ class BTCEnsembleBot:
                         continue
             
             # =================================================================
+            # LONG CROSS-MODEL AGREEMENT FILTER (Mar 28, 2026)
+            # Require ≥2 of 3 LONG models (2h, 4h, 6h) to have prob > 55%.
+            # 3-week sim: blocks 5W/13L LONGs, net +$184. LONG WR: 47%→71%.
+            # =================================================================
+            if LONG_AGREEMENT_ENABLED and direction == 'LONG':
+                probs = getattr(self, '_last_model_probs', {})
+                agree_count = 0
+                agree_details = []
+                for mname in ['2h_0.5pct', '4h_0.5pct', '6h_0.5pct']:
+                    mp = probs.get(mname)
+                    if mp is not None and mp > LONG_AGREEMENT_THRESHOLD:
+                        agree_count += 1
+                        agree_details.append(f"{mname}={mp*100:.0f}%✓")
+                    elif mp is not None:
+                        agree_details.append(f"{mname}={mp*100:.0f}%✗")
+                if agree_count < LONG_AGREEMENT_MIN_MODELS:
+                    logger.info(f"[AGREEMENT FILTER] LONG blocked: only {agree_count}/{LONG_AGREEMENT_MIN_MODELS} models agree ({', '.join(agree_details)}) - skipping {model_id}")
+                    continue
+                else:
+                    logger.info(f"[AGREEMENT FILTER] LONG passed: {agree_count} models agree ({', '.join(agree_details)}) - allowing {model_id}")
+            
+            # =================================================================
             # MACRO TREND FILTER (Feb 24, 2026)
             # Block LONG in persistent bearish trend, SHORT in persistent bullish
             # 24h change < -2% blocks LONG (80% precision, +$422 net in backtest)
@@ -3040,6 +3314,16 @@ class BTCEnsembleBot:
                     elif direction == 'SHORT' and chg_24h > MACRO_TREND_SHORT_MAX:
                         logger.info(f"[MACRO TREND] SHORT blocked: 24h change {chg_24h:+.2f}% > +{MACRO_TREND_SHORT_MAX}% - skipping {model_id}")
                         continue
+            
+            # =================================================================
+            # MIROFISH SWARM INTELLIGENCE FILTER (Mar 26, 2026)
+            # Block entries that disagree with multi-agent LLM consensus.
+            # Reads latest signal from JSON file (produced by separate process).
+            # =================================================================
+            if MIROFISH_FILTER_ENABLED and not is_indicator_signal:
+                mf_passed, mf_info = self._check_mirofish_filter(direction)
+                if not mf_passed:
+                    continue
             
             # =================================================================
             # PULLBACK ENTRY (Feb 23, 2026)
@@ -3140,25 +3424,40 @@ class BTCEnsembleBot:
         
         if order_result:
             order_id, fill_price = order_result
-            # Use actual IB fill price for SL/TP; fall back to current_price if unavailable
-            actual_entry = fill_price if fill_price and fill_price > 0 else self.current_price
-            # Recompute target/stop from actual fill price (corrects for slippage)
-            if model_id not in ('indicator_long', 'indicator_meanrev', 'indicator_trend'):
-                if direction == 'LONG':
-                    target_price = actual_entry * (1 + TAKE_PROFIT_PCT / 100)
-                    stop_price   = actual_entry * (1 - STOP_LOSS_PCT / 100)
-                else:
-                    target_price = actual_entry * (1 - TAKE_PROFIT_PCT / 100)
-                    stop_price   = actual_entry * (1 + STOP_LOSS_PCT / 100)
+            # Mar 31: BINANCE-ONLY ARCHITECTURE — use Binance price for entry, SL/TP, and DB.
+            # IB fill logged for debugging but NOT used for position tracking.
+            # Reason: IB MBT ticker freezes during CME maintenance breaks. Using one
+            # consistent price source (Binance) for everything eliminates basis/staleness bugs.
+            # The MBT-Binance basis (~0.1-0.3%) shifts both entry and exit equally → P&L% matches.
+            if fill_price and fill_price > 0 and abs(fill_price - entry_price) / entry_price > 0.005:
+                logger.info(f"[{model_id}] IB fill ${fill_price:.0f} vs Binance ${entry_price:.0f} "
+                           f"(basis {(fill_price/entry_price - 1)*100:+.2f}%) — using Binance for tracking")
+            # entry_price stays as Binance self.current_price (set at top of method)
+            # target_price and stop_price already computed from entry_price (Binance) above
             entry_features = self._get_current_features()
             entry_prob = signal.get('probability', 0)
             
             macro_trend_val = self._calculate_macro_trend()
+            
+            # Capture MiroFish signal at entry time for post-hoc WR analysis
+            mf_entry = None
+            if MIROFISH_FILTER_ENABLED:
+                mf_signal = self._load_mirofish_signal()
+                if mf_signal:
+                    mf_entry = {
+                        'direction': mf_signal.get('direction', 'N/A'),
+                        'strength': mf_signal.get('strength', 0),
+                        'confidence': mf_signal.get('confidence', 0),
+                        'bullish_pct': mf_signal.get('bullish_pct', 0),
+                        'bearish_pct': mf_signal.get('bearish_pct', 0),
+                        'age_minutes': mf_signal.get('_age_minutes', 0),
+                    }
+            
             position = Position(
                 symbol=self.symbol,
                 direction=direction,
                 size=self.position_size,
-                entry_price=actual_entry,  # Actual IB fill price (not stale WebSocket price)
+                entry_price=entry_price,  # Binance price (Mar 31: consistent with SL/TP/exit monitoring)
                 entry_time=datetime.now().isoformat(),
                 model_horizon=signal['horizon'],
                 model_threshold=signal['threshold'],
@@ -3173,6 +3472,7 @@ class BTCEnsembleBot:
                 entry_trend_1h=trend_pct,
                 entry_macro_trend_24h=macro_trend_val,
                 entry_all_probs=getattr(self, '_last_model_probs', None),
+                entry_mirofish=mf_entry,
             )
             self.position_manager.add_position(position)
             
@@ -3195,6 +3495,9 @@ class BTCEnsembleBot:
                 logger.info(f"Target: ${target_price:.2f} (-{tp_pct}%)")
                 logger.info(f"Stop: ${stop_price:.2f} (+{sl_pct}%)")
             logger.info(f"Max hold: {signal['target_bars']} bars ({signal['horizon']})")
+            if mf_entry:
+                mf_agree = "AGREES" if mf_entry['direction'] == direction else ("OPPOSES" if mf_entry['direction'] in ('LONG','SHORT') else "NEUTRAL")
+                logger.info(f"MiroFish: {mf_entry['direction']} ({mf_entry['strength']:.0%} str) — {mf_agree}")
             logger.info("="*50)
             return True
         return False
@@ -3235,6 +3538,129 @@ class BTCEnsembleBot:
         except Exception as e:
             logger.warning(f"Entry gate error: {e} — allowing trade")
             return True, None
+
+    def _load_mirofish_signal(self) -> Optional[dict]:
+        """Load the freshest valid MiroFish signal from multiple provider files.
+        
+        Checks Gemini (hourly), Groq (daily), and legacy files in order.
+        Returns the freshest non-stale signal, or None if all unavailable.
+        Caches for 60 seconds to avoid repeated disk reads.
+        """
+        if not MIROFISH_FILTER_ENABLED:
+            return None
+        
+        # Cache: re-read at most every 60 seconds
+        now = datetime.now()
+        if hasattr(self, '_mirofish_cache') and self._mirofish_cache is not None:
+            cache_age = (now - self._mirofish_cache_time).total_seconds()
+            if cache_age < 60:
+                return self._mirofish_cache
+        
+        best_signal = None
+        best_age = float('inf')
+        
+        for signal_path in MIROFISH_SIGNAL_PATHS:
+            try:
+                if not os.path.exists(signal_path):
+                    continue
+                
+                with open(signal_path, 'r') as f:
+                    signal = json.load(f)
+                
+                # Check age
+                ts = signal.get('timestamp', '')
+                if not ts:
+                    continue
+                
+                from datetime import timezone
+                signal_time = datetime.fromisoformat(ts)
+                if signal_time.tzinfo is not None:
+                    age_minutes = (datetime.now(timezone.utc) - signal_time).total_seconds() / 60
+                else:
+                    age_minutes = (now - signal_time).total_seconds() / 60
+                
+                if age_minutes > MIROFISH_MAX_AGE_MINUTES:
+                    continue
+                
+                signal['_age_minutes'] = age_minutes
+                signal['_source'] = os.path.basename(signal_path)
+                
+                # Pick the freshest valid signal
+                if age_minutes < best_age:
+                    best_age = age_minutes
+                    best_signal = signal
+                    
+            except Exception as e:
+                logger.debug(f"[MIROFISH] Error reading {signal_path}: {e}")
+                continue
+        
+        if best_signal:
+            logger.debug(f"[MIROFISH] Using {best_signal.get('_source', '?')} (age {best_age:.0f}m)")
+        
+        self._mirofish_cache = best_signal
+        self._mirofish_cache_time = now
+        return best_signal
+
+    def _check_mirofish_filter(self, direction: str) -> tuple:
+        """Check MiroFish swarm intelligence filter.
+        
+        Returns:
+            (passed: bool, info: str) — True if filter passes or is disabled.
+        """
+        if not MIROFISH_FILTER_ENABLED:
+            return True, None
+        
+        signal = self._load_mirofish_signal()
+        if signal is None:
+            # No signal available — allow trade (don't block on missing data)
+            return True, "no signal"
+        
+        mf_direction = signal.get('direction', 'NEUTRAL')  # LONG, SHORT, NEUTRAL
+        mf_strength = signal.get('strength', 0)
+        mf_confidence = signal.get('confidence', 0)
+        mf_bull_pct = signal.get('bullish_pct', 0)
+        mf_bear_pct = signal.get('bearish_pct', 0)
+        mf_age = signal.get('_age_minutes', 0)
+        
+        info = f"MF:{mf_direction} str={mf_strength:.0%} conf={mf_confidence:.0%} bull/bear={mf_bull_pct:.0%}/{mf_bear_pct:.0%} age={mf_age:.0f}m"
+        
+        # If signal strength is below threshold, treat as neutral (no opinion)
+        if mf_strength < MIROFISH_MIN_STRENGTH:
+            logger.info(f"[MIROFISH] Weak signal ({mf_strength:.0%} < {MIROFISH_MIN_STRENGTH:.0%}) — treating as NEUTRAL, allowing {direction}")
+            return True, info
+        
+        # In 'boost' mode, just log and allow
+        if MIROFISH_FILTER_MODE == 'boost':
+            agrees = (direction == 'LONG' and mf_direction == 'LONG') or \
+                     (direction == 'SHORT' and mf_direction == 'SHORT')
+            tag = "AGREES" if agrees else "DISAGREES"
+            logger.info(f"[MIROFISH BOOST] {tag} with {direction}: {info}")
+            return True, info
+        
+        # In 'filter' mode, block opposing trades
+        if MIROFISH_BLOCK_OPPOSITE:
+            if direction == 'LONG' and mf_direction == 'SHORT':
+                logger.info(f"[MIROFISH FILTER] LONG blocked: MiroFish says SHORT — {info}")
+                return False, info
+            if direction == 'SHORT' and mf_direction == 'LONG':
+                logger.info(f"[MIROFISH FILTER] SHORT blocked: MiroFish says LONG — {info}")
+                return False, info
+        
+        # Optionally require agreement (block NEUTRAL too)
+        if MIROFISH_REQUIRE_AGREEMENT:
+            if mf_direction == 'NEUTRAL':
+                logger.info(f"[MIROFISH FILTER] {direction} blocked: MiroFish is NEUTRAL — {info}")
+                return False, info
+            if direction == 'LONG' and mf_direction != 'LONG':
+                logger.info(f"[MIROFISH FILTER] LONG blocked: MiroFish is {mf_direction} — {info}")
+                return False, info
+            if direction == 'SHORT' and mf_direction != 'SHORT':
+                logger.info(f"[MIROFISH FILTER] SHORT blocked: MiroFish is {mf_direction} — {info}")
+                return False, info
+        
+        # Signal agrees or is neutral — allow
+        logger.info(f"[MIROFISH] {direction} allowed: {info}")
+        return True, info
 
     def _check_entry_filters(self, model_id: str, direction: str) -> tuple:
         """Re-check RSI/BB%/MACD filters using current market data.
@@ -3282,6 +3708,21 @@ class BTCEnsembleBot:
                     reasons.append(f"24h chg {chg_24h:+.1f}%<{MACRO_TREND_LONG_MIN}%")
                 elif direction == 'SHORT' and chg_24h > MACRO_TREND_SHORT_MAX:
                     reasons.append(f"24h chg {chg_24h:+.1f}%>+{MACRO_TREND_SHORT_MAX}%")
+        
+        if LONG_AGREEMENT_ENABLED and direction == 'LONG':
+            probs = getattr(self, '_last_model_probs', {})
+            agree_count = 0
+            for mname in ['2h_0.5pct', '4h_0.5pct', '6h_0.5pct']:
+                mp = probs.get(mname)
+                if mp is not None and mp > LONG_AGREEMENT_THRESHOLD:
+                    agree_count += 1
+            if agree_count < LONG_AGREEMENT_MIN_MODELS:
+                reasons.append(f"Agreement {agree_count}/{LONG_AGREEMENT_MIN_MODELS} models")
+        
+        if MIROFISH_FILTER_ENABLED:
+            mf_passed, mf_info = self._check_mirofish_filter(direction)
+            if not mf_passed:
+                reasons.append(f"MiroFish:{mf_info}")
         
         return len(reasons) == 0, reasons
 
@@ -3423,18 +3864,28 @@ class BTCEnsembleBot:
         """Fast price check for trailing stops and pullback fills (runs every 1-2 seconds).
         
         Feb 26 fix: 3-tier price fallback + emergency SL-only mode.
-        If all price sources fail but last price is <60s old, still check stop losses.
+        Mar 31 fix: BINANCE-ONLY ARCHITECTURE. All price references (signals, entry, SL/TP
+        monitoring, exit recording) use Binance BTCUSDT spot price. IB MBT is only the
+        execution layer — we place orders through IB but never reference IB prices for logic.
+        
+        Why: IB reqMktData ticker freezes during CME maintenance breaks and returns stale
+        prices for hours. The MBT-Binance basis (~0.1-0.3%) shifts both entry and exit
+        equally, so P&L% calculated from Binance is accurate. Using one consistent price
+        source eliminates all basis/staleness issues.
         """
-        price = self.get_realtime_price()
-        if price:
-            self.current_price = price
+        # Update Binance spot price (single source of truth for everything)
+        binance_price = self.get_realtime_price()
+        if binance_price:
+            self.current_price = binance_price
             self.last_price_time = datetime.now()
-            # Log tick to CSV for replay/simulation
+            # Log Binance tick to CSV for replay/simulation
             try:
                 src = 'WS' if (self.ws_price and self.ws_price_time and (datetime.now() - self.ws_price_time).total_seconds() < 5) else 'REST'
-                self.tick_log_file.write(f'{self.last_price_time.strftime("%Y-%m-%d %H:%M:%S.%f")},{price:.2f},{src}\n')
+                self.tick_log_file.write(f'{self.last_price_time.strftime("%Y-%m-%d %H:%M:%S.%f")},{binance_price:.2f},{src}\n')
             except Exception:
                 pass
+        
+        if self.current_price:
             # Check trailing stops on open positions
             if self.position_manager.count_positions() > 0:
                 self.check_exits()
@@ -3443,10 +3894,9 @@ class BTCEnsembleBot:
                 self.check_pending_pullbacks()
         elif self.current_price and self.last_price_time:
             # Emergency SL-only mode: all price sources failed, use last known price
-            # Only for stop-loss protection — don't activate trailing stops on stale data
             stale_secs = (datetime.now() - self.last_price_time).total_seconds()
             if stale_secs < 60 and self.position_manager.count_positions() > 0:
-                if stale_secs > 10:  # Only log after 10s to avoid spam
+                if stale_secs > 10:
                     logger.warning(f"EMERGENCY SL MODE: No fresh price for {stale_secs:.0f}s, "
                                  f"using last known ${self.current_price:.2f} for SL checks only")
                 self.check_exits()

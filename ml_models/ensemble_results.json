@@ -1,0 +1,65 @@
+[
+  {
+    "strategy": "Individual 2h",
+    "trades": 3663,
+    "wins": 1957,
+    "losses": 1706,
+    "win_rate": 0.5342615342615342,
+    "total_pnl": 569.5,
+    "avg_pnl": 0.15547365547365546
+  },
+  {
+    "strategy": "Individual 4h",
+    "trades": 3663,
+    "wins": 1957,
+    "losses": 1706,
+    "win_rate": 0.5342615342615342,
+    "total_pnl": 569.5,
+    "avg_pnl": 0.15547365547365546
+  },
+  {
+    "strategy": "Individual 6h",
+    "trades": 3663,
+    "wins": 1957,
+    "losses": 1706,
+    "win_rate": 0.5342615342615342,
+    "total_pnl": 569.5,
+    "avg_pnl": 0.15547365547365546
+  },
+  {
+    "strategy": "All 3 Agree",
+    "trades": 3663,
+    "wins": 1957,
+    "losses": 1706,
+    "win_rate": 0.5342615342615342,
+    "total_pnl": 569.5,
+    "avg_pnl": 0.15547365547365546
+  },
+  {
+    "strategy": "Majority (2/3)",
+    "trades": 3663,
+    "wins": 1957,
+    "losses": 1706,
+    "win_rate": 0.5342615342615342,
+    "total_pnl": 569.5,
+    "avg_pnl": 0.15547365547365546
+  },
+  {
+    "strategy": "Confidence Weighted",
+    "trades": 2780,
+    "wins": 1505,
+    "losses": 1275,
+    "win_rate": 0.5413669064748201,
+    "total_pnl": 541.5,
+    "avg_pnl": 0.1947841726618705
+  },
+  {
+    "strategy": "Near Support/Resistance",
+    "trades": 3633,
+    "wins": 1936,
+    "losses": 1697,
+    "win_rate": 0.5328929259565097,
+    "total_pnl": 553.0,
+    "avg_pnl": 0.15221579961464354
+  }
+]

@@ -1,164 +1,210 @@
-"""Train TP/SL model v4 — larger dataset, chunked label computation."""
-import numpy as np, pandas as pd, pickle, time, os
-from sklearn.ensemble import RandomForestClassifier
+"""
+Train XGBoost Model for BTC TP/SL Direction Prediction
 
-TP, SL = 1.0, 0.5
-MODEL_DIR = 'models/tpsl_v1'
-os.makedirs(MODEL_DIR, exist_ok=True)
+Trains a binary classifier to predict whether LONG or SHORT direction
+will hit TP/SL first (1% TP vs 0.5% SL).
 
-# ── Step 1: Load data ──
-print("Step 1: Loading data...")
-t0 = time.time()
-feat = pd.read_parquet('data/archive/tick_features_archive.parquet')
-bars = pd.read_parquet('data/archive/tick_bars_16sec.parquet')
-print(f"  Loaded: {len(feat)} feature rows, {len(bars)} bars in {time.time()-t0:.1f}s")
+Uses 80/20 time-based train/test split with StandardScaler.
+"""
 
-# Align lengths
-n = min(len(feat), len(bars))
-feat = feat.iloc[:n]
-p = bars['close'].values[:n]
-cols = list(feat.columns)
-print(f"  Aligned: {n} rows, {len(cols)} features")
-print(f"  Date range: {feat.index[0]} → {feat.index[-1]}")
+import pandas as pd
+import numpy as np
+import joblib
+import json
+from pathlib import Path
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import accuracy_score, classification_report, confusion_matrix
+from sklearn.ensemble import GradientBoostingClassifier
 
-# ── Step 2: Build TP/SL labels (chunked) ──
-print("\nStep 2: Building TP/SL labels (chunked)...")
-t0 = time.time()
-tp_pct, sl_pct = TP / 100, SL / 100
-labels = np.zeros(n, dtype=np.int8)  # 0=no result, 1=LONG_TP, 2=SHORT_TP, 3=LONG_SL, 4=SHORT_SL
-CHUNK = 10000
-MAX_FWD = 600  # ~2.5 hours
-for start in range(0, n, CHUNK):
-    end = min(start + CHUNK, n)
-    for i in range(start, end):
-        entry = p[i]
-        tp_long = entry * (1 + tp_pct)
-        sl_long = entry * (1 - sl_pct)
-        tp_short = entry * (1 - tp_pct)
-        sl_short = entry * (1 + sl_pct)
-        # Track LONG and SHORT outcomes independently
-        long_result = 0   # 0=none, 1=TP, 3=SL
-        long_bar = MAX_FWD + 1
-        short_result = 0  # 0=none, 2=TP, 4=SL
-        short_bar = MAX_FWD + 1
-        limit = min(i + MAX_FWD, n)
-        for j in range(i + 1, limit):
-            if p[j] >= tp_long:
-                long_result = 1; long_bar = j - i; break
-            if p[j] <= sl_long:
-                long_result = 3; long_bar = j - i; break
-        for j in range(i + 1, limit):
-            if p[j] <= tp_short:
-                short_result = 2; short_bar = j - i; break
-            if p[j] >= sl_short:
-                short_result = 4; short_bar = j - i; break
-        # Pick whichever outcome hit first
-        if long_result and short_result:
-            labels[i] = long_result if long_bar <= short_bar else short_result
-        elif long_result:
-            labels[i] = long_result
-        elif short_result:
-            labels[i] = short_result
-    pct = end / n * 100
-    print(f"  Chunk {start//CHUNK + 1}: {start}-{end} ({pct:.0f}%) done")
+USE_SKLEARN_GBM = True
+print("Using scikit-learn GradientBoostingClassifier")
 
-np.save('data/archive/tpsl_labels.npy', labels)
-print(f"  Labels built in {time.time()-t0:.1f}s")
-print(f"  LONG_TP={np.sum(labels==1)}, SHORT_TP={np.sum(labels==2)}, "
-      f"LONG_SL={np.sum(labels==3)}, SHORT_SL={np.sum(labels==4)}, "
-      f"No result={np.sum(labels==0)}")
+# Constants
+TRAIN_SPLIT = 0.8
+RANDOM_STATE = 42
 
-# ── Step 3: Forward return labels + train ──
-print("\nStep 3: Training RF model...")
-N_FWD = 20
-fwd_ret = np.zeros(n)
-for i in range(n - N_FWD):
-    fwd_ret[i] = (p[i + N_FWD] - p[i]) / p[i] * 100
-y_up = np.where(fwd_ret > 0.05, 1, 0)
-X = feat.fillna(0).values
 
-split = int(n * 0.75)
-X_tr, X_te = X[:split], X[split:]
-y_tr, y_te = y_up[:split], y_up[split:]
-labels_te = labels[split:]
+def prepare_data(df):
+    """Prepare features and labels, split into train/test"""
+    print("\nPreparing data...")
 
-print(f"  Train: {split} rows ({y_tr.sum()} up = {y_tr.mean()*100:.1f}%)")
-print(f"  Test:  {n - split} rows")
+    # Separate features and label
+    # Exclude original OHLCV columns and label
+    exclude_cols = ['open', 'high', 'low', 'close', 'volume', 'trades', 'label']
+    feature_cols = [col for col in df.columns if col not in exclude_cols]
 
-t0 = time.time()
-rf = RandomForestClassifier(n_estimators=100, max_depth=6, min_samples_leaf=30,
-                             random_state=42, n_jobs=-1)
-rf.fit(X_tr, y_tr)
-print(f"  Trained in {time.time()-t0:.1f}s")
+    X = df[feature_cols]
+    y = df['label']
 
-probs = rf.predict_proba(X_te)[:, 1]
+    print(f"Features: {len(feature_cols)} columns")
+    print(f"Total samples: {len(X):,}")
+    print(f"  LONG (1):  {(y == 1).sum():,}")
+    print(f"  SHORT (0): {(y == 0).sum():,}")
 
-# ── Step 4: Evaluate ──
-print("\nStep 4: Evaluation (OOS)")
-vol_idx = cols.index('vol_1h')
-vol_te = X_te[:, vol_idx]
-vol_med = np.median(X[:, vol_idx])  # full dataset median
+    # Calculate class imbalance
+    class_counts = y.value_counts()
+    majority_count = class_counts.max()
+    minority_count = class_counts.min()
+    imbalance_ratio = majority_count / (majority_count + minority_count)
 
-print(f"  vol_1h median: {vol_med:.6f}")
-print(f"  {'Thr':>5} {'VolFlt':>7} | {'Trades':>6} | {'Wins':>4} {'Loss':>4} | {'WR%':>5} | {'EV%':>8} | Beat?")
-print("  " + "-" * 70)
-for thr in [0.55, 0.60, 0.65, 0.70]:
-    for vol_min_mult in [0, 1.0, 1.5, 2.0, 2.5]:
-        vol_min = vol_med * vol_min_mult if vol_min_mult > 0 else 0
-        wins = losses = 0
-        for i in range(len(X_te)):
-            if vol_min > 0 and vol_te[i] < vol_min:
-                continue
-            if probs[i] > thr:
-                if labels_te[i] == 1: wins += 1
-                elif labels_te[i] > 0: losses += 1
-            elif probs[i] < (1 - thr):
-                if labels_te[i] == 2: wins += 1
-                elif labels_te[i] > 0: losses += 1
-        tot = wins + losses
-        if tot < 5: continue
-        wr = wins / tot * 100
-        ev = (wr / 100 * TP) - ((100 - wr) / 100 * SL)
-        vl = f"{vol_min_mult:.1f}x" if vol_min_mult > 0 else "none"
-        beat = "YES ✓" if wr > 33.3 else "no"
-        print(f"  {thr:5.0%} {vl:>7} | {tot:6d} | {wins:4d} {losses:4d} | {wr:5.1f} | {ev:+7.3f}% | {beat}")
+    print(f"\nClass imbalance: {imbalance_ratio*100:.1f}% majority class")
 
-print(f"\n  Vol-only strategies:")
-print(f"  {'VolFlt':>7} {'Lookback':>8} | {'Trades':>6} | {'Wins':>4} {'Loss':>4} | {'WR%':>5} | Beat?")
-print("  " + "-" * 65)
-for vol_mult in [1.5, 2.0, 2.5]:
-    for lb_col in ['ret_1m', 'ret_5m', 'ret_15m']:
-        lb_idx = cols.index(lb_col)
-        vol_min = vol_med * vol_mult
-        wins = losses = 0
-        for i in range(len(X_te)):
-            if vol_te[i] < vol_min: continue
-            ret = X_te[i, lb_idx]
-            if ret > 0:
-                if labels_te[i] == 1: wins += 1
-                elif labels_te[i] > 0: losses += 1
-            elif ret < 0:
-                if labels_te[i] == 2: wins += 1
-                elif labels_te[i] > 0: losses += 1
-        tot = wins + losses
-        if tot < 5: continue
-        wr = wins / tot * 100
-        beat = "YES ✓" if wr > 33.3 else "no"
-        print(f"  {vol_mult:.1f}x    {lb_col:>8} | {tot:6d} | {wins:4d} {losses:4d} | {wr:5.1f} | {beat}")
+    # Calculate scale_pos_weight for XGBoost
+    # scale_pos_weight = (negative class count) / (positive class count)
+    scale_pos_weight = (y == 0).sum() / (y == 1).sum()
+    print(f"Calculated scale_pos_weight: {scale_pos_weight:.2f}")
 
-print("\nTop 10 features:")
-imp = rf.feature_importances_
-for j in np.argsort(imp)[::-1][:10]:
-    print(f"  {cols[j]:30s} {imp[j]:.4f}")
+    # Time-based split (no shuffle)
+    split_idx = int(len(X) * TRAIN_SPLIT)
+    X_train = X.iloc[:split_idx]
+    X_test = X.iloc[split_idx:]
+    y_train = y.iloc[:split_idx]
+    y_test = y.iloc[split_idx:]
 
-# ── Step 5: Save model ──
-print("\nStep 5: Saving model...")
-with open(f'{MODEL_DIR}/rf_fwd_return.pkl', 'wb') as f:
-    pickle.dump(rf, f)
-with open(f'{MODEL_DIR}/feature_cols.pkl', 'wb') as f:
-    pickle.dump(cols, f)
-with open(f'{MODEL_DIR}/vol_stats.pkl', 'wb') as f:
-    pickle.dump({'vol_1h_median': vol_med}, f)
-print(f"  Saved to {MODEL_DIR}/")
-print(f"  Model: {rf.n_estimators} trees, {len(cols)} features, trained on {split} rows")
-print("DONE.")
+    print(f"\nTrain/Test Split (80/20):")
+    print(f"  Train: {len(X_train):,} samples")
+    print(f"  Test:  {len(X_test):,} samples")
+
+    return X_train, X_test, y_train, y_test, feature_cols, scale_pos_weight
+
+
+def scale_features(X_train, X_test):
+    """Apply StandardScaler to features"""
+    print("\nScaling features...")
+    scaler = StandardScaler()
+    X_train_scaled = scaler.fit_transform(X_train)
+    X_test_scaled = scaler.transform(X_test)
+
+    # Convert back to DataFrames to preserve column names
+    X_train_scaled = pd.DataFrame(X_train_scaled, columns=X_train.columns, index=X_train.index)
+    X_test_scaled = pd.DataFrame(X_test_scaled, columns=X_test.columns, index=X_test.index)
+
+    print("✓ Scaling complete")
+    return X_train_scaled, X_test_scaled, scaler
+
+
+def train_model(X_train, y_train, X_test, y_test, scale_pos_weight):
+    """Train Gradient Boosting classifier"""
+    print("\nTraining Gradient Boosting model...")
+
+    # Calculate sample_weight to handle class imbalance
+    sample_weight = np.where(y_train == 1, scale_pos_weight, 1.0)
+
+    params = {
+        'n_estimators': 200,
+        'max_depth': 6,
+        'learning_rate': 0.1,
+        'random_state': RANDOM_STATE,
+        'verbose': 1,
+        'subsample': 0.8,
+        'max_features': 'sqrt'
+    }
+    print(f"Parameters: {params}")
+    print(f"Using sample_weight to handle class imbalance (scale={scale_pos_weight:.2f})")
+
+    model = GradientBoostingClassifier(**params)
+    model.fit(X_train, y_train, sample_weight=sample_weight)
+
+    print("\n✓ Training complete")
+    return model
+
+
+def evaluate_model(model, X_train, y_train, X_test, y_test):
+    """Quick evaluation on train and test sets"""
+    print("\nQuick Evaluation:")
+
+    # Train accuracy
+    y_train_pred = model.predict(X_train)
+    train_acc = accuracy_score(y_train, y_train_pred)
+    print(f"  Train Accuracy: {train_acc:.4f}")
+
+    # Test accuracy
+    y_test_pred = model.predict(X_test)
+    test_acc = accuracy_score(y_test, y_test_pred)
+    print(f"  Test Accuracy:  {test_acc:.4f}")
+
+    # Check for overfitting
+    if train_acc - test_acc > 0.05:
+        print(f"  ⚠️  Warning: Possible overfitting (train-test gap: {(train_acc - test_acc)*100:.1f}%)")
+
+    return y_test_pred
+
+
+def save_model_artifacts(model, scaler, feature_cols):
+    """Save model, scaler, features, and feature importance"""
+    print("\nSaving model artifacts...")
+
+    # Create ml_models directory if it doesn't exist
+    models_dir = Path(__file__).parent / 'ml_models'
+    models_dir.mkdir(exist_ok=True)
+
+    # Save model
+    model_path = models_dir / 'btc_tpsl_model.pkl'
+    joblib.dump(model, model_path)
+    print(f"  ✓ Model saved: {model_path}")
+
+    # Save scaler
+    scaler_path = models_dir / 'btc_tpsl_scaler.pkl'
+    joblib.dump(scaler, scaler_path)
+    print(f"  ✓ Scaler saved: {scaler_path}")
+
+    # Save feature names
+    features_path = models_dir / 'btc_tpsl_features.json'
+    with open(features_path, 'w') as f:
+        json.dump(list(feature_cols), f, indent=2)
+    print(f"  ✓ Features saved: {features_path}")
+
+    # Save feature importance
+    importance_df = pd.DataFrame({
+        'feature': feature_cols,
+        'importance': model.feature_importances_
+    }).sort_values('importance', ascending=False)
+
+    importance_path = models_dir / 'btc_tpsl_feature_importance.csv'
+    importance_df.to_csv(importance_path, index=False)
+    print(f"  ✓ Feature importance saved: {importance_path}")
+
+    # Show top 10 features
+    print("\nTop 10 Most Important Features:")
+    for i, row in importance_df.head(10).iterrows():
+        print(f"  {i+1:2d}. {row['feature']:30s} {row['importance']:.6f}")
+
+
+def main():
+    # File paths
+    data_dir = Path(__file__).parent / 'data'
+    input_file = data_dir / 'btc_1m_tpsl_features.parquet'
+
+    print("="*60)
+    print("XGBoost Training for BTC TP/SL Direction Prediction")
+    print("="*60)
+
+    # Load features
+    print(f"\nLoading features from: {input_file}")
+    df = pd.read_parquet(input_file)
+    print(f"Loaded {len(df):,} rows with {len(df.columns)} columns")
+
+    # Prepare data
+    X_train, X_test, y_train, y_test, feature_cols, scale_pos_weight = prepare_data(df)
+
+    # Scale features
+    X_train_scaled, X_test_scaled, scaler = scale_features(X_train, X_test)
+
+    # Train model
+    model = train_model(X_train_scaled, y_train, X_test_scaled, y_test, scale_pos_weight)
+
+    # Quick evaluation
+    y_test_pred = evaluate_model(model, X_train_scaled, y_train, X_test_scaled, y_test)
+
+    # Save artifacts
+    save_model_artifacts(model, scaler, feature_cols)
+
+    print("\n" + "="*60)
+    print("✓ Training Complete!")
+    print("="*60)
+    print("\nNext step: Run 'python3 evaluate_tpsl_model.py' for detailed evaluation")
+
+
+if __name__ == '__main__':
+    main()

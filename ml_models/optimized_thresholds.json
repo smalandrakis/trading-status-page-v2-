@@ -1,0 +1,10 @@
+{
+  "strategy": "LONG only (almost)",
+  "long_threshold": 0.5,
+  "short_threshold": 0.3,
+  "trades": 17039,
+  "win_rate": 0.5105933446798521,
+  "avg_pnl": 0.16139444803098774,
+  "long_pct": 0.7910088620224192,
+  "short_pct": 0.20899113797758084
+}

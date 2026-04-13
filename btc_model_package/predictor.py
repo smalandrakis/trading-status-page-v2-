@@ -117,42 +117,49 @@ class BTCPredictor:
         features_dict['resistance_96'] = df['high'].rolling(96).max().iloc[-1]
         features_dict['support_96'] = df['low'].rolling(96).min().iloc[-1]
 
-        # Distance to support/resistance
+        # Distance to support/resistance (× 100 to match training pipeline)
         features_dict['dist_to_resistance_48'] = ((features_dict['resistance_48'] - current_price) /
-                                                  current_price)
+                                                  current_price) * 100
         features_dict['dist_to_support_48'] = ((current_price - features_dict['support_48']) /
-                                              current_price)
+                                              current_price) * 100
         features_dict['dist_to_resistance_96'] = ((features_dict['resistance_96'] - current_price) /
-                                                  current_price)
+                                                  current_price) * 100
         features_dict['dist_to_support_96'] = ((current_price - features_dict['support_96']) /
-                                              current_price)
+                                              current_price) * 100
 
         # Volume moving averages
         features_dict['volume_ma_12'] = df['volume'].rolling(12).mean().iloc[-1]
         features_dict['volume_ma_24'] = df['volume'].rolling(24).mean().iloc[-1]
         features_dict['volume_ma_48'] = df['volume'].rolling(48).mean().iloc[-1]
 
-        # Volatility - ATR (Average True Range)
+        # Volatility - ATR (H-L range, matching training pipeline)
         high_low = df['high'] - df['low']
-        high_close = abs(df['high'] - df['close'].shift())
-        low_close = abs(df['low'] - df['close'].shift())
-        true_range = pd.concat([high_low, high_close, low_close], axis=1).max(axis=1)
 
-        atr_12 = true_range.rolling(12).mean().iloc[-1]
-        atr_24 = true_range.rolling(24).mean().iloc[-1]
-        atr_48 = true_range.rolling(48).mean().iloc[-1]
-
-        features_dict['atr_12'] = atr_12
-        features_dict['atr_24'] = atr_24
-        features_dict['atr_48_pct'] = atr_48 / current_price
+        features_dict['atr_12'] = high_low.rolling(12).mean().iloc[-1]
+        features_dict['atr_24'] = high_low.rolling(24).mean().iloc[-1]
+        features_dict['atr_48_pct'] = high_low.rolling(48).mean().iloc[-1] / current_price * 100
 
         # Range (4h = 48 bars)
         range_4h = (df['high'].rolling(48).max().iloc[-1] -
                    df['low'].rolling(48).min().iloc[-1])
-        features_dict['range_4h'] = range_4h / current_price
+        features_dict['range_4h'] = range_4h / current_price * 100
 
-        # ADX proxy (volatility momentum)
-        features_dict['adx_proxy'] = df['close'].rolling(14).std().iloc[-1] / current_price
+        # ADX proxy (matching training pipeline: DM+/DM-, DX, smoothed)
+        tr = pd.DataFrame({
+            'hl': df['high'] - df['low'],
+            'hc': (df['high'] - df['close'].shift()).abs(),
+            'lc': (df['low'] - df['close'].shift()).abs()
+        }).max(axis=1)
+
+        plus_dm = df['high'].diff().clip(lower=0)
+        minus_dm = -df['low'].diff().clip(upper=0)
+
+        dm_plus = plus_dm.rolling(14).mean()
+        dm_minus = minus_dm.rolling(14).mean()
+
+        dm_sum = dm_plus + dm_minus + 1e-8
+        dx = (dm_plus - dm_minus).abs() / dm_sum * 100
+        features_dict['adx_proxy'] = dx.rolling(14).mean().iloc[-1]
 
         # Trend (2h = 24 bars)
         close_24_ago = df['close'].iloc[-24] if len(df) >= 24 else df['close'].iloc[0]
@@ -187,8 +194,16 @@ class BTCPredictor:
         features_dict['hour_cos'] = np.cos(2 * np.pi * hour / 24)
         features_dict['day_of_week'] = day_of_week
 
-        # Volume hour median (simplified - use recent median)
-        features_dict['volume_hour_median'] = df['volume'].rolling(20).median().iloc[-1]
+        # Volume hour median (per-hour grouped rolling median, matching training pipeline)
+        if hasattr(df.index, 'hour'):
+            current_hour = df.index[-1].hour
+            hour_mask = df.index.hour == current_hour
+            hour_volumes = df.loc[hour_mask, 'volume']
+            features_dict['volume_hour_median'] = hour_volumes.rolling(
+                window=min(len(hour_volumes), 20), min_periods=1
+            ).median().iloc[-1]
+        else:
+            features_dict['volume_hour_median'] = df['volume'].rolling(20).median().iloc[-1]
 
         return features_dict
 
@@ -241,9 +256,9 @@ class BTCPredictor:
             confidence = 1 - avg_proba
         else:
             signal = 'NEUTRAL'
-            confidence = 0
+            confidence = avg_proba  # Show actual probability even when NEUTRAL
 
-        # Details
+        # Details with feature values for full reproducibility
         details = {
             'probabilities': probas,
             'avg_probability': avg_proba,
@@ -252,7 +267,8 @@ class BTCPredictor:
                 'short': self.SHORT_THRESHOLD
             },
             'current_price': df['close'].iloc[-1],
-            'missing_features': missing_features
+            'missing_features': missing_features,
+            'features': dict(zip(self.features, X[0].tolist()))  # Log all feature values
         }
 
         return signal, confidence, details

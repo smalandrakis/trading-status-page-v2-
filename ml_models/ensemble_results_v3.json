@@ -1,0 +1,38 @@
+[
+  {
+    "strategy": "V3 Individual 2h",
+    "trades": 16308,
+    "wins": 8708,
+    "losses": 7600,
+    "win_rate": 0.5339710571498651,
+    "total_pnl": 330.0,
+    "avg_pnl": 0.020235467255334805
+  },
+  {
+    "strategy": "V3 Individual 4h",
+    "trades": 16308,
+    "wins": 8860,
+    "losses": 7448,
+    "win_rate": 0.5432916360068678,
+    "total_pnl": -171.0,
+    "avg_pnl": -0.010485651214128035
+  },
+  {
+    "strategy": "V3 Individual 6h",
+    "trades": 16308,
+    "wins": 8930,
+    "losses": 7378,
+    "win_rate": 0.5475840078489085,
+    "total_pnl": 482.0,
+    "avg_pnl": 0.029556046112337503
+  },
+  {
+    "strategy": "V3 Confidence Weighted",
+    "trades": 7900,
+    "wins": 4533,
+    "losses": 3367,
+    "win_rate": 0.5737974683544304,
+    "total_pnl": 376.0,
+    "avg_pnl": 0.04759493670886076
+  }
+]

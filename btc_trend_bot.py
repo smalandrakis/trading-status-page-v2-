@@ -160,6 +160,9 @@ class TrendBot:
         self.position: Optional[Position] = None
         self.current_price: Optional[float] = None
 
+        # IB MBT real-time ticker for SL/TP monitoring (Mar 30, 2026 fix)
+        self.ib_mbt_ticker = None
+
         # 5-min bar state
         self._bar_open:   Optional[float]    = None
         self._bar_high:   float              = 0.0
@@ -193,6 +196,7 @@ class TrendBot:
                     pass
                 logger.info(f"Connecting IB {IB_HOST}:{IB_PORT} clientId={IB_CLIENT_ID} (attempt {attempt})")
                 self.ib.connect(IB_HOST, IB_PORT, clientId=IB_CLIENT_ID, timeout=20)
+                self.ib.reqMarketDataType(4)
                 self.contract = Future(
                     symbol='MBT',
                     lastTradeDateOrContractMonth=MBT_EXPIRY,
@@ -201,6 +205,17 @@ class TrendBot:
                 )
                 self.ib.qualifyContracts(self.contract)
                 logger.info(f"IB connected — {self.contract.localSymbol}")
+                # Subscribe to IB MBT ticker for SL/TP monitoring (Mar 30 fix)
+                try:
+                    self.ib_mbt_ticker = self.ib.reqMktData(self.contract, '', False, False)
+                    self.ib.sleep(3)
+                    mp = self.ib_mbt_ticker.marketPrice()
+                    if mp and mp > 10000:
+                        logger.info(f"IB MBT ticker active: ${mp:.2f}")
+                    else:
+                        logger.warning(f"IB MBT ticker no price yet (mp={mp})")
+                except Exception as e:
+                    logger.warning(f"IB MBT ticker failed: {e}")
                 return
             except Exception as e:
                 logger.error(f"IB connection attempt {attempt} failed: {e}")
@@ -409,11 +424,25 @@ class TrendBot:
     # ------------------------------------------------------------------
     # Exit logic (called every 2 sec from main loop)
     # ------------------------------------------------------------------
+    def _get_mbt_price(self):
+        """Get IB MBT futures price for SL/TP monitoring (Mar 30 fix)."""
+        if self.ib_mbt_ticker is not None:
+            for attr in ['last', 'close']:
+                v = getattr(self.ib_mbt_ticker, attr, None)
+                if v and v > 10000:
+                    return v
+            mp = self.ib_mbt_ticker.marketPrice()
+            if mp and mp > 10000:
+                return mp
+        return None
+
     def _check_exits(self):
         pos = self.position
         if pos is None or self.current_price is None:
             return
 
+        # Mar 31: BINANCE-ONLY — use Binance price for all SL/TP monitoring.
+        # MBT ticker freezes during CME maintenance breaks → stale price catastrophe.
         price = self.current_price
         self._update_ts(pos, price)
 

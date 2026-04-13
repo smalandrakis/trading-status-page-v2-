@@ -1,0 +1,48 @@
+{
+  "accuracy": 0.3723790988873793,
+  "precision_macro": 0.5058702960542256,
+  "recall_macro": 0.504386614474482,
+  "f1_macro": 0.3661065609790193,
+  "backtest_results": [
+    {
+      "strategy": "All Signals",
+      "trades": 54466,
+      "wins": 20282,
+      "losses": 34184,
+      "win_rate": 0.3723790988873793,
+      "total_pnl": -1966.0,
+      "avg_pnl": -0.03609591304667132,
+      "expected_value": 0.05856864833106895
+    },
+    {
+      "strategy": "Confidence >= 60%",
+      "trades": 46397,
+      "wins": 16483,
+      "losses": 29914,
+      "win_rate": 0.35526003836454945,
+      "total_pnl": -1908.0,
+      "avg_pnl": -0.04112334849235942,
+      "expected_value": 0.03289005754682417
+    },
+    {
+      "strategy": "Confidence >= 70%",
+      "trades": 37364,
+      "wins": 12795,
+      "losses": 24569,
+      "win_rate": 0.3424419227063484,
+      "total_pnl": -1484.0,
+      "avg_pnl": -0.039717375013381864,
+      "expected_value": 0.01366288405952265
+    },
+    {
+      "strategy": "Confidence >= 80%",
+      "trades": 26644,
+      "wins": 9146,
+      "losses": 17498,
+      "win_rate": 0.3432667767602462,
+      "total_pnl": -668.0,
+      "avg_pnl": -0.02507131061402192,
+      "expected_value": 0.014900165140369293
+    }
+  ]
+}

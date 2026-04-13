@@ -1,0 +1,47 @@
+[
+  {
+    "period": "Train 2022-2023 \u2192 Test 2024 Q1",
+    "test_start": "2024-01-01",
+    "test_end": "2024-03-31",
+    "trades": 4640,
+    "win_rate": 0.4939655172413793,
+    "avg_pnl": -0.23168103448275862,
+    "total_pnl": -1075.0
+  },
+  {
+    "period": "Train 2022-2024Q1 \u2192 Test 2024 Q2",
+    "test_start": "2024-04-01",
+    "test_end": "2024-06-30",
+    "trades": 2642,
+    "win_rate": 0.605223315669947,
+    "avg_pnl": 0.32929598788796366,
+    "total_pnl": 870.0
+  },
+  {
+    "period": "Train 2022-2024Q2 \u2192 Test 2024 Q3",
+    "test_start": "2024-07-01",
+    "test_end": "2024-09-30",
+    "trades": 1990,
+    "win_rate": 0.5256281407035176,
+    "avg_pnl": 0.16884422110552763,
+    "total_pnl": 336.0
+  },
+  {
+    "period": "Train 2022-2024Q3 \u2192 Test 2024 Q4",
+    "test_start": "2024-10-01",
+    "test_end": "2024-12-31",
+    "trades": 3824,
+    "win_rate": 0.5130753138075314,
+    "avg_pnl": -0.20149058577405857,
+    "total_pnl": -770.5
+  },
+  {
+    "period": "Train 2022-2024 \u2192 Test 2025-2026",
+    "test_start": "2025-01-01",
+    "test_end": "2026-03-20",
+    "trades": 7694,
+    "win_rate": 0.5688848453340265,
+    "avg_pnl": 0.05556277618923837,
+    "total_pnl": 427.5
+  }
+]

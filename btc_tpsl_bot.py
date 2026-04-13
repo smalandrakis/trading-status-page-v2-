@@ -47,7 +47,7 @@ IB_PORT = 4002
 IB_CLIENT_ID = 403
 
 # Contract
-MBT_EXPIRY = '20260327'
+MBT_EXPIRY = '20260424'
 BTC_CONTRACT_VALUE = 0.1  # MBT = 0.1 BTC
 
 # Position management
@@ -253,6 +253,10 @@ class BTCTPSLBot:
         self.current_price = None
         self.current_price_time = None
 
+        # IB MBT real-time ticker for SL/TP monitoring (Mar 30, 2026 fix)
+        # Entry uses IB fill price — monitoring must use same source
+        self.ib_mbt_ticker = None
+
         # Tick data (price + volume from Binance WS)
         self.tick_prices = deque(maxlen=200000)
         self.tick_volumes = deque(maxlen=200000)
@@ -320,6 +324,8 @@ class BTCTPSLBot:
                     pass
                 self.ib.connect(IB_HOST, IB_PORT, clientId=IB_CLIENT_ID, timeout=20)
                 logger.info("Connected to IB (port=%d, clientId=%d)" % (IB_PORT, IB_CLIENT_ID))
+                # Type 4: real-time streaming on paper accounts (type 1 needs paid CME sub)
+                self.ib.reqMarketDataType(4)
                 self.contract = Future(
                     symbol='MBT',
                     lastTradeDateOrContractMonth=MBT_EXPIRY,
@@ -327,6 +333,17 @@ class BTCTPSLBot:
                 )
                 self.ib.qualifyContracts(self.contract)
                 logger.info("Contract: %s" % self.contract)
+                # Subscribe to IB MBT real-time ticker for SL/TP monitoring (Mar 30 fix)
+                try:
+                    self.ib_mbt_ticker = self.ib.reqMktData(self.contract, '', False, False)
+                    self.ib.sleep(3)
+                    mp = self.ib_mbt_ticker.marketPrice()
+                    if mp and mp > 10000:
+                        logger.info("IB MBT ticker active: $%.2f (for SL/TP monitoring)" % mp)
+                    else:
+                        logger.warning("IB MBT ticker no price yet (mp=%s)" % mp)
+                except Exception as e:
+                    logger.warning("IB MBT ticker failed: %s" % e)
                 return True
             except Exception as e:
                 logger.error("IB attempt %d failed: %s" % (attempt + 1, e))
@@ -557,10 +574,24 @@ class BTCTPSLBot:
     # =================================================================
     # EXIT LOGIC (pure TP/SL)
     # =================================================================
+    def _get_mbt_price(self):
+        """Get IB MBT futures price for SL/TP monitoring (Mar 30 fix)."""
+        if self.ib_mbt_ticker is not None:
+            for attr in ['last', 'close']:
+                v = getattr(self.ib_mbt_ticker, attr, None)
+                if v and v > 10000:
+                    return v
+            mp = self.ib_mbt_ticker.marketPrice()
+            if mp and mp > 10000:
+                return mp
+        return None
+
     def check_exits(self):
         if self.current_price is None:
             return
 
+        # Mar 31: BINANCE-ONLY — use Binance price for all SL/TP monitoring.
+        # MBT ticker freezes during CME maintenance breaks → stale price catastrophe.
         price = self.current_price
         closed = []
 

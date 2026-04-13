@@ -1,23 +1,21 @@
 #!/usr/bin/env python3
 """
-BTC Tick ML Bot — Uses 2-sec tick data with RF models trained on tick features.
+BTC Tick ML Bot — VIRTUAL MODE (Mar 31, 2026)
+==============================================
+Uses 2-sec tick data with RF models trained on tick features.
+Generates signals and logs trade_events, but does NOT place IB orders.
+The reverse bot reads trade_events and trades the opposite direction.
 
 Models:
   LONG:  L1_full_wide (any signal) + L3_mom_wide (any signal) → take any
   SHORT: S1_full_cur + S3_mr_cur + S4_full_tight → require 2+ agreement
 
-SL/TS:
+Virtual SL/TS (for signal timing only):
   LONG:  SL=0.45%, TS activation=0.50%, TS trail=0.15%
   SHORT: SL=0.20%, TS activation=0.25%, TS trail=0.05%
 
-Safety:
-  Trend filter: block LONG if ret_1h < -0.30%, block SHORT if ret_1h > +0.30%
-  SL cooldown: 10 min after any stop loss
-  Consecutive loss pause: 30 min after 3 straight losses
-  Max 1 LONG position at a time
-
 Reads Binance WebSocket for 2-sec ticks, computes 16-sec bar features,
-runs RF models, executes via IB Gateway on MBT (Micro Bitcoin Futures).
+runs RF models. No IB orders — signals consumed by btc_tick_bot_reverse.py.
 """
 
 import pandas as pd
@@ -55,7 +53,7 @@ IB_PORT = 4002
 IB_CLIENT_ID = 401  # stable ID
 
 # Contract
-MBT_EXPIRY = '20260327'
+MBT_EXPIRY = '20260424'
 BTC_CONTRACT_VALUE = 0.1  # MBT = 0.1 BTC
 
 # Position management
@@ -327,6 +325,9 @@ class BTCTickBot:
         self.current_price = None
         self.current_price_time = None
 
+        # IB MBT real-time ticker for SL/TP monitoring (Mar 30, 2026 fix)
+        self.ib_mbt_ticker = None
+
         # Tick data storage
         self.tick_prices = deque(maxlen=200000)  # ~4.5 days of 2-sec ticks
         self.tick_times = deque(maxlen=200000)
@@ -420,6 +421,8 @@ class BTCTickBot:
                 port = IB_PORT
                 self.ib.connect(IB_HOST, port, clientId=IB_CLIENT_ID, timeout=20)
                 logger.info("Connected to IB Gateway (port=%d, clientId=%d)" % (port, IB_CLIENT_ID))
+                # Type 4: real-time streaming on paper accounts
+                self.ib.reqMarketDataType(4)
 
                 # Set up MBT contract
                 self.contract = Future(
@@ -431,6 +434,17 @@ class BTCTickBot:
                 )
                 self.ib.qualifyContracts(self.contract)
                 logger.info("Contract: %s" % self.contract)
+                # Subscribe to IB MBT real-time ticker for SL/TP monitoring (Mar 30 fix)
+                try:
+                    self.ib_mbt_ticker = self.ib.reqMktData(self.contract, '', False, False)
+                    self.ib.sleep(3)
+                    mp = self.ib_mbt_ticker.marketPrice()
+                    if mp and mp > 10000:
+                        logger.info("IB MBT ticker active: $%.2f (for SL/TP monitoring)" % mp)
+                    else:
+                        logger.warning("IB MBT ticker no price yet (mp=%s)" % mp)
+                except Exception as e:
+                    logger.warning("IB MBT ticker failed: %s" % e)
                 return True
 
             except Exception as e:
@@ -731,32 +745,10 @@ class BTCTickBot:
             ts_act = price * (1 - SHORT_TS_ACT_PCT / 100)
             ts_trail = SHORT_TS_TRAIL_PCT
 
-        # Place order via IB
+        # VIRTUAL MODE: no IB order, use Binance price as virtual fill
         order_id = None
-        if self.ib.isConnected():
-            try:
-                action = 'BUY' if direction == 'LONG' else 'SELL'
-                order = MarketOrder(action, POSITION_SIZE)
-                trade = self.ib.placeOrder(self.contract, order)
-                self.ib.sleep(2)
-                if trade.orderStatus.status == 'Filled':
-                    price = trade.orderStatus.avgFillPrice
-                    order_id = trade.order.orderId
-                    logger.info("Order filled: %s %d @ $%.2f" % (action, POSITION_SIZE, price))
-                else:
-                    logger.warning("Order status: %s — not filled, aborting entry" % trade.orderStatus.status)
-                    return
-            except Exception as e:
-                logger.error("Order error: %s" % e)
-                return
-
-        # Bug fix: recalculate SL/TS if IB fill price differs
-        if direction == 'LONG':
-            sl = price * (1 - LONG_SL_PCT / 100)
-            ts_act = price * (1 + LONG_TS_ACT_PCT / 100)
-        else:
-            sl = price * (1 + SHORT_SL_PCT / 100)
-            ts_act = price * (1 - SHORT_TS_ACT_PCT / 100)
+        logger.info("VIRTUAL ENTRY: %s %d @ $%.2f (no IB order)" % (
+            'BUY' if direction == 'LONG' else 'SELL', POSITION_SIZE, price))
 
         pos = Position(
             model_id=model_id,
@@ -810,11 +802,25 @@ class BTCTickBot:
     # =================================================================
     # EXIT LOGIC
     # =================================================================
+    def _get_mbt_price(self):
+        """Get IB MBT futures price for SL/TP monitoring (Mar 30 fix)."""
+        if self.ib_mbt_ticker is not None:
+            for attr in ['last', 'close']:
+                v = getattr(self.ib_mbt_ticker, attr, None)
+                if v and v > 10000:
+                    return v
+            mp = self.ib_mbt_ticker.marketPrice()
+            if mp and mp > 10000:
+                return mp
+        return None
+
     def check_exits(self):
         """Check SL and trailing stops for all positions."""
         if self.current_price is None:
             return
 
+        # Mar 31: BINANCE-ONLY — use Binance price for all SL/TP monitoring.
+        # MBT ticker freezes during CME maintenance breaks → stale price catastrophe.
         price = self.current_price
         closed = []
 
@@ -877,25 +883,9 @@ class BTCTickBot:
 
         pnl_dollar = pnl_pct / 100 * pos.entry_price * BTC_CONTRACT_VALUE * pos.size
 
-        # Close via IB
-        if self.ib.isConnected():
-            try:
-                action = 'SELL' if pos.direction == 'LONG' else 'BUY'
-                order = MarketOrder(action, pos.size)
-                trade = self.ib.placeOrder(self.contract, order)
-                self.ib.sleep(2)
-                if trade.orderStatus.status == 'Filled':
-                    exit_price = trade.orderStatus.avgFillPrice
-                    # Recalculate PnL with actual fill
-                    if pos.direction == 'LONG':
-                        pnl_pct = (exit_price / pos.entry_price - 1) * 100
-                    else:
-                        pnl_pct = (pos.entry_price / exit_price - 1) * 100
-                    pnl_dollar = pnl_pct / 100 * pos.entry_price * BTC_CONTRACT_VALUE * pos.size
-                else:
-                    logger.warning("Close order status: %s — not filled" % trade.orderStatus.status)
-            except Exception as e:
-                logger.error("Close order error: %s" % e)
+        # VIRTUAL MODE: no IB close order, use monitored price as exit
+        logger.info("VIRTUAL EXIT: %s %d @ $%.2f (no IB order)" % (
+            'SELL' if pos.direction == 'LONG' else 'BUY', pos.size, exit_price))
 
         bars_held = int((now - pos.entry_time).total_seconds() / 16)
 

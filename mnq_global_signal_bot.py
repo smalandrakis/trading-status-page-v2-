@@ -232,21 +232,24 @@ class MNQGlobalSignalBot:
     # ── PRICE ─────────────────────────────────────────────────────────
 
     def get_price(self) -> Optional[float]:
-        """Get current MNQ price from IB."""
+        """Get current MNQ price from IB using historical data (no market data subscription needed)."""
         if not self.connected or self.contract is None:
             return None
         try:
-            ticker = self.ib.reqMktData(self.contract, '', False, False)
-            self.ib.sleep(2)
-            price = ticker.marketPrice()
-            self.ib.cancelMktData(self.contract)
-            if price and price > 0 and not np.isnan(price):
-                self.current_price = price
-                return price
-            # Fallback: try last price
-            if ticker.last and ticker.last > 0:
-                self.current_price = ticker.last
-                return ticker.last
+            bars = self.ib.reqHistoricalData(
+                self.contract,
+                endDateTime='',
+                durationStr='60 S',
+                barSizeSetting='1 min',
+                whatToShow='TRADES',
+                useRTH=False,
+                formatDate=1,
+            )
+            if bars:
+                price = bars[-1].close
+                if price and price > 0:
+                    self.current_price = price
+                    return price
             return None
         except Exception as e:
             logger.error(f"Error getting price: {e}")

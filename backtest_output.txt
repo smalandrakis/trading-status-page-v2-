@@ -1,0 +1,31 @@
+================================================================================
+QUICK BACKTEST: V3 Models on 0.3%/0.1% Micro-Movement Strategy
+================================================================================
+
+Loading data from /Users/smalandrakis/Documents/WindSurf/DS:ML trade model playground/CascadeProjects/windsurf-project/data/BTC_5min_8years.parquet...
+Loaded 839,344 rows
+Testing on 2025-2026 data: 97,585 rows
+
+Loading V3 models...
+Loading V3 models...
+  ✓ Loaded 2h model
+  ✓ Loaded 4h model
+  ✓ Loaded 6h model
+  ✓ Loaded 22 features
+============================================================
+
+================================================================================
+Running backtest...
+================================================================================
+
+================================================================================
+BACKTEST RESULTS
+================================================================================
+Traceback (most recent call last):
+  File "/Users/smalandrakis/Documents/WindSurf/DS:ML trade model playground/CascadeProjects/windsurf-project/quick_micro_backtest.py", line 145, in <module>
+    wins = (trades_df['pnl'] > 0).sum()
+  File "/Users/smalandrakis/Library/Python/3.9/lib/python/site-packages/pandas/core/frame.py", line 4113, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/Users/smalandrakis/Library/Python/3.9/lib/python/site-packages/pandas/core/indexes/range.py", line 417, in get_loc
+    raise KeyError(key)
+KeyError: 'pnl'

@@ -1,0 +1,114 @@
+{
+  "volatility": [
+    {
+      "regime": "Low",
+      "samples": 1209,
+      "trades": 1209,
+      "wins": 650,
+      "win_rate": 0.5376344086021505,
+      "avg_pnl": 0.0880893300248139
+    },
+    {
+      "regime": "Medium",
+      "samples": 1245,
+      "trades": 1245,
+      "wins": 646,
+      "win_rate": 0.5188755020080321,
+      "avg_pnl": 0.1530120481927711
+    },
+    {
+      "regime": "High",
+      "samples": 1209,
+      "trades": 1209,
+      "wins": 661,
+      "win_rate": 0.5467328370554178,
+      "avg_pnl": 0.22539288668320925
+    }
+  ],
+  "session": [
+    {
+      "regime": "Asian",
+      "samples": 1005,
+      "trades": 1005,
+      "wins": 558,
+      "win_rate": 0.5552238805970149,
+      "avg_pnl": 0.1517412935323383
+    },
+    {
+      "regime": "European",
+      "samples": 875,
+      "trades": 875,
+      "wins": 478,
+      "win_rate": 0.5462857142857143,
+      "avg_pnl": 0.16114285714285714
+    },
+    {
+      "regime": "US",
+      "samples": 854,
+      "trades": 854,
+      "wins": 419,
+      "win_rate": 0.49063231850117095,
+      "avg_pnl": 0.12704918032786885
+    },
+    {
+      "regime": "EU-US Overlap",
+      "samples": 705,
+      "trades": 705,
+      "wins": 384,
+      "win_rate": 0.5446808510638298,
+      "avg_pnl": 0.18581560283687942
+    }
+  ],
+  "trend": [
+    {
+      "regime": "Uptrend",
+      "samples": 1207,
+      "trades": 1207,
+      "wins": 660,
+      "win_rate": 0.5468102734051367,
+      "avg_pnl": 0.18516984258492128
+    },
+    {
+      "regime": "Sideways",
+      "samples": 1296,
+      "trades": 1296,
+      "wins": 704,
+      "win_rate": 0.5432098765432098,
+      "avg_pnl": 0.11535493827160494
+    },
+    {
+      "regime": "Downtrend",
+      "samples": 1160,
+      "trades": 1160,
+      "wins": 593,
+      "win_rate": 0.5112068965517241,
+      "avg_pnl": 0.16939655172413792
+    }
+  ],
+  "volume": [
+    {
+      "regime": "Low",
+      "samples": 1209,
+      "trades": 1209,
+      "wins": 636,
+      "win_rate": 0.5260545905707196,
+      "avg_pnl": 0.1435070306038048
+    },
+    {
+      "regime": "Medium",
+      "samples": 1245,
+      "trades": 1245,
+      "wins": 666,
+      "win_rate": 0.5349397590361445,
+      "avg_pnl": 0.1534136546184739
+    },
+    {
+      "regime": "High",
+      "samples": 1209,
+      "trades": 1209,
+      "wins": 655,
+      "win_rate": 0.5417700578990902,
+      "avg_pnl": 0.1695616211745244
+    }
+  ]
+}
