@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T19:00:01.418060",
+  "generated_at": "2026-04-13T19:10:01.317240",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-13 18:59:07,758",
+      "last_update": "2026-04-13 19:09:12,304",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 48.8,
-        "time": "2026-04-13 18:59:07,758"
+        "confidence": 48.2,
+        "time": "2026-04-13 19:09:12,304"
       },
       "open_position": null,
       "performance": {
@@ -108,7 +108,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-13 18:59:08,654",
+      "last_update": "2026-04-13 19:09:12,345",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -120,8 +120,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 48.8,
-        "time": "2026-04-13 18:59:08,654"
+        "confidence": 48.2,
+        "time": "2026-04-13 19:09:12,345"
       },
       "open_position": null,
       "performance": {
@@ -208,7 +208,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 18:59:02,881",
+      "last_update": "2026-04-13 19:09:12,666",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -220,8 +220,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 48.8,
-        "time": "2026-04-13 18:59:02,881"
+        "confidence": 48.2,
+        "time": "2026-04-13 19:09:12,666"
       },
       "open_position": null,
       "performance": {
@@ -252,7 +252,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 18:59:53,759",
+      "last_update": "2026-04-13 19:08:04,351",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -264,8 +264,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 48.8,
-        "time": "2026-04-13 18:59:53,759"
+        "confidence": 47.1,
+        "time": "2026-04-13 19:08:04,351"
       },
       "open_position": null,
       "performance": {
@@ -317,7 +317,7 @@
     {
       "name": "BTC Micro-Movement (0.3/0.1) [Adaptive Learning]",
       "status": "running",
-      "last_update": "2026-04-13 18:59:19,837",
+      "last_update": "2026-04-13 19:09:45,988",
       "config": {
         "tp_pct": 0.3,
         "sl_pct": 0.1,
@@ -329,8 +329,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 48.8,
-        "time": "2026-04-13 18:59:19,837"
+        "confidence": 47.8,
+        "time": "2026-04-13 19:09:45,988"
       },
       "open_position": null,
       "performance": {
@@ -346,7 +346,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-13 18:59:55,466 - INFO -   SHORT",
+      "last_update": "2026-04-13 19:09:53,235 - INFO -   SHORT",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -367,42 +367,21 @@
       "open_position": {
         "direction": "SHORT",
         "size": 3,
-        "entry_price": 71866.59,
-        "tp_price": 71507.25705,
-        "sl_price": 71974.389885,
+        "entry_price": 71893.64,
+        "tp_price": 71534.1718,
+        "sl_price": 72001.48046,
         "entry_time": "unknown",
         "adopted": false
       },
       "performance": {
-        "total_trades": 38,
-        "wins": 12,
-        "losses": 26,
-        "win_rate": 31.6,
-        "total_pnl": -284.99,
-        "avg_pnl": -7.5
+        "total_trades": 41,
+        "wins": 14,
+        "losses": 27,
+        "win_rate": 34.1,
+        "total_pnl": -253.54,
+        "avg_pnl": -6.18
       },
       "recent_trades": [
-        {
-          "time": "2026-04-13T18:40:31.166376",
-          "direction": "SHORT",
-          "pnl": 4.84,
-          "pnl_pct": 0.02,
-          "hold_minutes": 160
-        },
-        {
-          "time": "2026-04-13T18:42:27.653609",
-          "direction": "SHORT",
-          "pnl": -0.68,
-          "pnl_pct": -0.0,
-          "hold_minutes": 150
-        },
-        {
-          "time": "2026-04-13T18:45:04.245640",
-          "direction": "LONG",
-          "pnl": 1.39,
-          "pnl_pct": 0.01,
-          "hold_minutes": 240
-        },
         {
           "time": "2026-04-13T18:45:38.394794",
           "direction": "SHORT",
@@ -451,6 +430,27 @@
           "pnl": -14.07,
           "pnl_pct": -0.07,
           "hold_minutes": 25
+        },
+        {
+          "time": "2026-04-13T19:00:37.556922",
+          "direction": "SHORT",
+          "pnl": -9.98,
+          "pnl_pct": -0.05,
+          "hold_minutes": 155
+        },
+        {
+          "time": "2026-04-13T19:06:34.812810",
+          "direction": "SHORT",
+          "pnl": 34.4,
+          "pnl_pct": 0.16,
+          "hold_minutes": 240
+        },
+        {
+          "time": "2026-04-13T19:08:29.038462",
+          "direction": "SHORT",
+          "pnl": 7.03,
+          "pnl_pct": 0.03,
+          "hold_minutes": 240
         }
       ]
     }
