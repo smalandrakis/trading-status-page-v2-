@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T23:30:01.261538",
+  "generated_at": "2026-04-13T23:40:01.640502",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-13 23:29:33,930",
+      "last_update": "2026-04-13 23:39:36,618",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.0,
-        "time": "2026-04-13 23:29:33,930"
+        "confidence": 51.3,
+        "time": "2026-04-13 23:39:36,618"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-13 23:29:45,608",
+      "last_update": "2026-04-13 23:39:47,706",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.5,
-        "time": "2026-04-13 23:29:45,608"
+        "confidence": 51.3,
+        "time": "2026-04-13 23:39:47,706"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 23:28:41,079",
+      "last_update": "2026-04-13 23:39:45,328",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.0,
-        "time": "2026-04-13 23:28:41,079"
+        "confidence": 51.3,
+        "time": "2026-04-13 23:39:45,328"
       },
       "open_position": null,
       "performance": {
@@ -161,7 +161,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-13 23:30:01",
+      "last_update": "2026-04-13 23:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -243,33 +243,26 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-13T23:30:01.482322",
+    "updated_at": "2026-04-13T23:40:01.842188",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1735,
-        "confidence": 0.6544,
-        "bullish_pct": 0.3488,
-        "bearish_pct": 0.1289,
-        "neutral_pct": 0.5223,
+        "strength": 0.6769,
+        "confidence": 0.6264,
+        "bullish_pct": 0.1434,
+        "bearish_pct": 0.0364,
+        "neutral_pct": 0.8202,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.2835,
+        "consensus_score": 0.7304,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $72.5K is the ultimate battleground and we\u2019re *this close* \u2014 Iran\u2019s Bitcoin toll demand is FUD turned fuel, and MSTR dropping another $1B like it\u2019s nothing is pure diamond-handed dominance. Extreme Fe",
-            "[FadeTheCrowd] Price rejection at $72.5K with extreme fear (12) and weak volume is the perfect setup for a spring\u2014MSTR\u2019s $1B buy and Iran\u2019s strategic Bitcoin demand are non-consensus, high-conviction signals being d",
-            "[StackingSats] $72K is still a steal pre-halving\u2014MSTR\u2019s $1B buy isn\u2019t noise, it\u2019s a war cry. Iran\u2019s Bitcoin toll and sovereign adoption are early dominos; the market is mispricing structural demand. Extreme fear at ",
-            "[CryptoKaleo] $72.5K isn\u2019t resistance\u2014it\u2019s a psychological breaking point. MSTR\u2019s $1B buy isn\u2019t just accumulation, it\u2019s a signal flare to the market that institutions are playing for keeps, while Iran\u2019s BTC toll de",
-            "[TrendRider] Price is retesting $72.5K\u2014a key structural level now acting as resistance\u2014on weak volume, despite MSTR\u2019s massive $1B buy and Iran\u2019s strategic Bitcoin demand. This divergence suggests accumulation is h"
+            "[DiamondHands420] $72.4K? Just a stepping stone! MSTR dropping $1B and Capital B stacking 2,925 BTC is WAR. Weak hands see resistance, I see the ramp before liftoff \u2014 $75K next week easy. This is the accumulation flush"
           ],
-          "bearish": [
-            "[BearishBob] Another fakeout forming at $72.5K\u2014zero follow-through volume, same as every time. MSTR\u2019s $1B buy is debt-fueled share dilution, not organic demand, and Iran\u2019s Bitcoin toll is geopolitical noise with n",
-            "[DeltaNeutral] Price at $72.1K remains trapped below the $72.3K sell wall with declining delta and no volume follow-through, indicating lack of institutional absorption. MSTR's $1B buy is offset by equity dilution a"
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-04-13T17:10:00.291609+00:00",
+        "timestamp": "2026-04-13T20:37:43.965653+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -286,17 +279,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2398.8,
+          "run_duration_sec": 11262.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 22,
           "market_data_summary": {
-            "price": 72166,
-            "change_24h": 1.71,
+            "price": 72390,
+            "change_24h": 1.95,
             "fear_greed": 12
           }
         },
-        "age_minutes": 200.0,
+        "age_minutes": 2.3,
         "is_fresh": true
       },
       "groq": {
@@ -346,7 +339,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 866.4,
+        "age_minutes": 876.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -363,7 +356,7 @@
           "volume_24h": 46263372498.10672
         },
         "actionable": true,
-        "age_minutes": 14.9,
+        "age_minutes": 24.9,
         "is_fresh": true
       }
     },
