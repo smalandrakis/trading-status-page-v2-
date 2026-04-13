@@ -235,7 +235,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-13T23:10:01.667789",
+    "updated_at": "2026-04-13T23:14:58.610977",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -288,7 +288,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 180.0,
+        "age_minutes": 185.0,
         "is_fresh": true
       },
       "groq": {
@@ -338,24 +338,24 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 846.4,
+        "age_minutes": 851.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-13T19:01:47.061496+00:00",
+        "timestamp": "2026-04-13T20:14:41.724758+00:00",
         "direction": "LONG",
-        "strength": 0.6,
-        "confidence": 0.7,
-        "reasoning": "Positive price action with +1.79% gain, strong trading volume above $40B suggests buying momentum. Price above $72K indicates potential continuation of bullish trend, though caution advised near ATH levels.",
+        "strength": 0.7,
+        "confidence": 0.75,
+        "reasoning": "Strong positive price action (+3.10%) with robust trading volume indicates bullish momentum. BTC maintaining position above $73K suggests continued buyer interest and potential further upside.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 72445,
-          "change_24h": 1.7880337197891811,
-          "volume_24h": 40522666786.94687
+          "price": 73230,
+          "change_24h": 3.1005347612514433,
+          "volume_24h": 46198544924.82363
         },
         "actionable": true,
-        "age_minutes": 68.2,
+        "age_minutes": 0.3,
         "is_fresh": true
       }
     },
