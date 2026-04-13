@@ -86,7 +86,7 @@
     <script>
         async function loadStatus() {
             try {
-                const res = await fetch('bot_status.json');
+                const res = await fetch('bot_status.json?t=' + Date.now());
                 const data = await res.json();
 
                 document.getElementById('lastUpdate').textContent =
