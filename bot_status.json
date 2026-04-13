@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T02:10:01.632261",
+  "generated_at": "2026-04-14T02:20:01.669724",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 02:08:15,124",
+      "last_update": "2026-04-14 02:18:18,606",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 56.3,
-        "time": "2026-04-14 02:08:15,124"
+        "confidence": 55.0,
+        "time": "2026-04-14 02:18:18,606"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 02:08:32,434",
+      "last_update": "2026-04-14 02:18:35,516",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.4,
-        "time": "2026-04-14 02:08:32,434"
+        "confidence": 56.4,
+        "time": "2026-04-14 02:18:35,516"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 02:09:07,850",
+      "last_update": "2026-04-14 02:19:13,402",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.5,
-        "time": "2026-04-14 02:09:07,850"
+        "confidence": 53.6,
+        "time": "2026-04-14 02:19:13,402"
       },
       "open_position": null,
       "performance": {
@@ -161,7 +161,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 02:10:01",
+      "last_update": "2026-04-14 02:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -180,11 +180,11 @@
         "time": null
       },
       "open_position": {
-        "direction": "SHORT",
+        "direction": "LONG",
         "size": 3,
-        "entry_price": 74483.01,
-        "tp_price": 74110.59495,
-        "sl_price": 74594.734515,
+        "entry_price": 74661.52,
+        "tp_price": 75034.82759999999,
+        "sl_price": 74549.52772000001,
         "entry_time": "unknown",
         "adopted": false
       },
@@ -243,7 +243,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T02:10:01.850109",
+    "updated_at": "2026-04-14T02:20:01.896069",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -295,7 +295,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 30.7,
+        "age_minutes": 40.7,
         "is_fresh": true
       },
       "groq": {
@@ -345,24 +345,24 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 1026.4,
+        "age_minutes": 1036.4,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-13T22:15:08.567601+00:00",
+        "timestamp": "2026-04-13T23:15:06.005085+00:00",
         "direction": "LONG",
-        "strength": 0.68,
-        "confidence": 0.75,
-        "reasoning": "Strong positive momentum with +3.62% 24h change and high trading volume indicating buyer interest. Price above $73k suggests market confidence, though some caution warranted at these elevated levels.",
+        "strength": 0.6,
+        "confidence": 0.7,
+        "reasoning": "Strong 24h price increase (+5.71%) with high trading volume indicates bullish momentum. Price above 70K psychological level is positive, though profit-taking risk exists at these elevated levels.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 73464,
-          "change_24h": 3.618298391599147,
-          "volume_24h": 46905295886.02853
+          "price": 74714,
+          "change_24h": 5.710551565415605,
+          "volume_24h": 51471557808.19145
         },
         "actionable": true,
-        "age_minutes": 54.9,
+        "age_minutes": 4.9,
         "is_fresh": true
       }
     },
