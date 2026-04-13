@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T17:10:02.142732",
+  "generated_at": "2026-04-13T17:20:01.208998",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-13 17:08:38,169",
+      "last_update": "2026-04-13 17:18:41,512",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.3,
-        "time": "2026-04-13 17:08:38,169"
+        "confidence": 43.0,
+        "time": "2026-04-13 17:18:41,512"
       },
       "open_position": null,
       "performance": {
@@ -108,7 +108,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-13 17:08:40,288",
+      "last_update": "2026-04-13 17:18:42,187",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -120,8 +120,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.5,
-        "time": "2026-04-13 17:08:40,288"
+        "confidence": 43.0,
+        "time": "2026-04-13 17:18:42,187"
       },
       "open_position": {
         "direction": "LONG",
@@ -216,7 +216,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 17:10:02,148",
+      "last_update": "2026-04-13 17:18:11,627",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -228,8 +228,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 41.6,
-        "time": "2026-04-13 17:08:01,353"
+        "confidence": 43.1,
+        "time": "2026-04-13 17:18:11,627"
       },
       "open_position": null,
       "performance": {
@@ -260,7 +260,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 17:08:48,825",
+      "last_update": "2026-04-13 17:18:58,930",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -272,8 +272,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 44.1,
-        "time": "2026-04-13 17:08:48,825"
+        "confidence": 43.0,
+        "time": "2026-04-13 17:18:58,930"
       },
       "open_position": null,
       "performance": {
@@ -325,7 +325,7 @@
     {
       "name": "BTC Micro-Movement (0.3/0.1) [Adaptive Learning]",
       "status": "running",
-      "last_update": "2026-04-13 17:09:33,362",
+      "last_update": "2026-04-13 17:19:43,497",
       "config": {
         "tp_pct": 0.3,
         "sl_pct": 0.1,
@@ -337,10 +337,51 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 43.4,
-        "time": "2026-04-13 17:09:33,362"
+        "confidence": 42.7,
+        "time": "2026-04-13 17:19:43,497"
       },
       "open_position": null,
+      "performance": {
+        "total_trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate": 0,
+        "total_pnl": 0,
+        "avg_pnl": 0
+      },
+      "recent_trades": []
+    },
+    {
+      "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
+      "status": "running",
+      "last_update": "2026-04-13 17:20:00,161 - INFO -   LONG",
+      "config": {
+        "tp_pct": 0.5,
+        "sl_pct": 0.15,
+        "long_threshold": 0.5,
+        "short_threshold": 0.5,
+        "position_sizing": "3x-6x",
+        "expected_trades_per_week": "15",
+        "expected_win_rate": 40.3,
+        "expected_avg_pnl": 18.8,
+        "expected_pnl_annual": 14664,
+        "features": "33 (25 V3 + 8 temporal)",
+        "model": "Separate LONG/SHORT XGBoost"
+      },
+      "current_signal": {
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
+      },
+      "open_position": {
+        "direction": "LONG",
+        "size": 3,
+        "entry_price": 71480.27,
+        "tp_price": 71837.67134999999,
+        "sl_price": 71373.049595,
+        "entry_time": "unknown",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 0,
         "wins": 0,
