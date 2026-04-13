@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T02:30:01.412346",
+  "generated_at": "2026-04-14T02:40:01.199586",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 02:28:21,971",
+      "last_update": "2026-04-14 02:38:24,825",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 58.7,
-        "time": "2026-04-14 02:28:21,971"
+        "confidence": 60.4,
+        "time": "2026-04-14 02:38:24,825"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 02:28:38,684",
+      "last_update": "2026-04-14 02:38:41,782",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 58.6,
-        "time": "2026-04-14 02:28:38,684"
+        "confidence": 60.6,
+        "time": "2026-04-14 02:38:41,782"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 02:29:18,986",
+      "last_update": "2026-04-14 02:39:25,134",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.2,
-        "time": "2026-04-14 02:29:18,986"
+        "confidence": 60.8,
+        "time": "2026-04-14 02:39:25,134"
       },
       "open_position": null,
       "performance": {
@@ -161,7 +161,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 02:30:01",
+      "last_update": "2026-04-14 02:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -180,11 +180,11 @@
         "time": null
       },
       "open_position": {
-        "direction": "LONG",
+        "direction": "SHORT",
         "size": 3,
-        "entry_price": 74661.52,
-        "tp_price": 75034.82759999999,
-        "sl_price": 74549.52772000001,
+        "entry_price": 74704.61,
+        "tp_price": 74331.08695,
+        "sl_price": 74816.66691500001,
         "entry_time": "unknown",
         "adopted": false
       },
@@ -243,32 +243,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T02:30:01.626918",
+    "updated_at": "2026-04-14T02:40:01.404934",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.0432,
-        "confidence": 0.6711,
-        "bullish_pct": 0.4543,
-        "bearish_pct": 0.0482,
-        "neutral_pct": 0.4975,
+        "strength": 0.1725,
+        "confidence": 0.6864,
+        "bullish_pct": 0.3922,
+        "bearish_pct": 0.043,
+        "neutral_pct": 0.5648,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.2463,
+        "stance_shifts": 0,
+        "consensus_score": 0.3471,
         "key_arguments": {
           "bullish": [
-            "[DeepPockets] Price holding near $74K with Extreme Fear (12) and institutional flows from Capital B, Bitmine, and STRC\u2019s ATM volume signal asymmetric accumulation\u2014this is classic pre-run-up behavior while retail re",
-            "[CryptoKaleo] We\u2019re staring at $74.3K resistance \u2014 a brick wall built by fear, but behind the curtain, Capital B, Bitmine, and STRC\u2019s $1B ATM machine are moving *real on-chain supply*. This isn't momentum, it's a s",
-            "[StackingSats] $74K is a steal in the post-halving era\u2014Extreme Fear at this level is a flashing BUY sign. Capital B stacking 2,925 BTC and STRC ATM moving $1B daily proves real institutions are accumulating while th",
-            "[TrendRider] Price retesting $74.3K on strong volume with institutional accumulation\u2014Capital B adding 2,925 BTC and STRC ATM hitting $1B volume\u2014is not noise, it's fuel. Extreme Fear (12) amid this accumulation is ",
-            "[DiamondHands420] Loving this $74K massacre\u2014Extreme Fear at 12 is a screaming bottom! Capital B stacking 2,925 BTC and STRC\u2019s $1B ATM volume aren\u2019t jokes, that\u2019s REAL demand building while weak hands run scared. Kraken"
+            "[StackingSats] $74.7K is nothing \u2014 we\u2019re grinding higher in the halving cycle with STRC ATM hitting $1B daily volume and real treasury demand from Capital B and Bitmine. The $70.6K dip was absorbed instantly, on-cha",
+            "[DiamondHands420] We\u2019re printing $74.7K like it\u2019s nothing \u2014 STRC ATM $1B volume, Capital B & Bitmine *buying hard*, and the Fear & Greed Index at 12?! This is textbook bottom formation, pure accumulation. Dip to $70.6K",
+            "[FadeTheCrowd] Price retesting $74.7K after holding $70.6K with persistent accumulation by Capital B and Bitmine tells me the early bid is holding. Extreme Fear at 12 with no capitulation, strong volume, and institu",
+            "[DeepPockets] Price at $74.7K with volume backing and institutional bids firmly anchored at $70.6K confirms my cost basis is safe for now. STRC ATM's $1B print and Capital B\u2019s continued accumulation signal strong f",
+            "[CryptoKaleo] We\u2019re in the final act of accumulation\u2014$70.6K was the bottom, period. STRC ATM\u2019s $1B volume, Capital B\u2019s relentless buys, and Bitmine stacking ETH like it\u2019s going out of style prove institutions are m"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout dancing below $74.3K\u2014this \"rally\" is built on ATM gimmicks (STRC's $1B non-economic print) and isolated corporate buys while Kraken\u2019s repeated security failures expose crumbling trust "
+            "[BearishBob] Another fakeout at $74.7k on headline noise and pump-and-dump theater from Capital B and Bitmine\u2014zero organic demand, all synthetic. Kraken\u2019s breach and SEC overreach confirm regulatory rot; $75k is a"
           ]
         },
-        "timestamp": "2026-04-13T22:39:19.801340+00:00",
+        "timestamp": "2026-04-13T23:35:01.089719+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -285,17 +285,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 557.6,
+          "run_duration_sec": 299.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74155,
-            "change_24h": 4.94,
+            "price": 74704,
+            "change_24h": 5.61,
             "fear_greed": 12
           }
         },
-        "age_minutes": 50.7,
+        "age_minutes": 5.0,
         "is_fresh": true
       },
       "groq": {
@@ -345,7 +345,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 1046.4,
+        "age_minutes": 1056.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -362,7 +362,7 @@
           "volume_24h": 51471557808.19145
         },
         "actionable": true,
-        "age_minutes": 14.9,
+        "age_minutes": 24.9,
         "is_fresh": true
       }
     },
