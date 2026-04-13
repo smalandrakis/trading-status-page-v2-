@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T07:10:02.432221",
+  "generated_at": "2026-04-13T07:20:01.907270",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-13 07:09:46,539",
+      "last_update": "2026-04-13 07:19:48,660",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.3,
-        "time": "2026-04-13 07:09:46,539"
+        "confidence": 42.1,
+        "time": "2026-04-13 07:19:48,660"
       },
       "open_position": {
         "direction": "SHORT",
@@ -116,7 +116,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-13 07:09:46,659",
+      "last_update": "2026-04-13 07:19:48,663",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -128,8 +128,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.3,
-        "time": "2026-04-13 07:09:46,659"
+        "confidence": 42.1,
+        "time": "2026-04-13 07:19:48,663"
       },
       "open_position": null,
       "performance": {
@@ -216,7 +216,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 07:09:42,374",
+      "last_update": "2026-04-13 07:19:43,572",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -228,8 +228,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.2,
-        "time": "2026-04-13 07:07:41,957"
+        "confidence": 42.0,
+        "time": "2026-04-13 07:19:43,572"
       },
       "open_position": null,
       "performance": {
@@ -253,7 +253,7 @@
     {
       "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 07:09:07,118",
+      "last_update": "2026-04-13 07:19:08,345",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -265,8 +265,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 49.9,
-        "time": "2026-04-13 07:07:06,286"
+        "confidence": 42.0,
+        "time": "2026-04-13 07:19:08,345"
       },
       "open_position": null,
       "performance": {
