@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T01:30:02.055390",
+  "generated_at": "2026-04-14T01:40:01.311920",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 01:28:04,850",
+      "last_update": "2026-04-14 01:38:07,418",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 55.3,
-        "time": "2026-04-14 01:28:04,850"
+        "confidence": 56.6,
+        "time": "2026-04-14 01:38:07,418"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 01:28:20,827",
+      "last_update": "2026-04-14 01:38:23,582",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 55.2,
-        "time": "2026-04-14 01:28:20,827"
+        "confidence": 55.9,
+        "time": "2026-04-14 01:38:23,582"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 01:28:47,015",
+      "last_update": "2026-04-14 01:38:52,241",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 55.2,
-        "time": "2026-04-14 01:28:47,015"
+        "confidence": 55.6,
+        "time": "2026-04-14 01:38:52,241"
       },
       "open_position": null,
       "performance": {
@@ -161,7 +161,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 01:30:02",
+      "last_update": "2026-04-14 01:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -243,26 +243,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T01:30:02.264872",
+    "updated_at": "2026-04-14T01:40:01.535334",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.6769,
-        "confidence": 0.6264,
-        "bullish_pct": 0.1434,
-        "bearish_pct": 0.0364,
-        "neutral_pct": 0.8202,
+        "strength": 0.0432,
+        "confidence": 0.6711,
+        "bullish_pct": 0.4543,
+        "bearish_pct": 0.0482,
+        "neutral_pct": 0.4975,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.7304,
+        "stance_shifts": 1,
+        "consensus_score": 0.2463,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $72.4K? Just a stepping stone! MSTR dropping $1B and Capital B stacking 2,925 BTC is WAR. Weak hands see resistance, I see the ramp before liftoff \u2014 $75K next week easy. This is the accumulation flush"
+            "[DeepPockets] Price holding near $74K with Extreme Fear (12) and institutional flows from Capital B, Bitmine, and STRC\u2019s ATM volume signal asymmetric accumulation\u2014this is classic pre-run-up behavior while retail re",
+            "[CryptoKaleo] We\u2019re staring at $74.3K resistance \u2014 a brick wall built by fear, but behind the curtain, Capital B, Bitmine, and STRC\u2019s $1B ATM machine are moving *real on-chain supply*. This isn't momentum, it's a s",
+            "[StackingSats] $74K is a steal in the post-halving era\u2014Extreme Fear at this level is a flashing BUY sign. Capital B stacking 2,925 BTC and STRC ATM moving $1B daily proves real institutions are accumulating while th",
+            "[TrendRider] Price retesting $74.3K on strong volume with institutional accumulation\u2014Capital B adding 2,925 BTC and STRC ATM hitting $1B volume\u2014is not noise, it's fuel. Extreme Fear (12) amid this accumulation is ",
+            "[DiamondHands420] Loving this $74K massacre\u2014Extreme Fear at 12 is a screaming bottom! Capital B stacking 2,925 BTC and STRC\u2019s $1B ATM volume aren\u2019t jokes, that\u2019s REAL demand building while weak hands run scared. Kraken"
           ],
-          "bearish": []
+          "bearish": [
+            "[BearishBob] Another fakeout dancing below $74.3K\u2014this \"rally\" is built on ATM gimmicks (STRC's $1B non-economic print) and isolated corporate buys while Kraken\u2019s repeated security failures expose crumbling trust "
+          ]
         },
-        "timestamp": "2026-04-13T20:37:43.965653+00:00",
+        "timestamp": "2026-04-13T22:39:19.801340+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -279,17 +285,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 11262.2,
+          "run_duration_sec": 557.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 22,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 72390,
-            "change_24h": 1.95,
+            "price": 74155,
+            "change_24h": 4.94,
             "fear_greed": 12
           }
         },
-        "age_minutes": 112.3,
+        "age_minutes": 0.7,
         "is_fresh": true
       },
       "groq": {
@@ -339,7 +345,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 986.4,
+        "age_minutes": 996.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -356,7 +362,7 @@
           "volume_24h": 46905295886.02853
         },
         "actionable": true,
-        "age_minutes": 14.9,
+        "age_minutes": 24.9,
         "is_fresh": true
       }
     },
