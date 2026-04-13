@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-13T22:30:02.135247",
+  "generated_at": "2026-04-13T22:40:01.343665",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-13 22:28:16,516",
+      "last_update": "2026-04-13 22:38:18,802",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 59.0,
-        "time": "2026-04-13 22:28:16,516"
+        "confidence": 56.8,
+        "time": "2026-04-13 22:38:18,802"
       },
       "open_position": null,
       "performance": {
@@ -37,7 +37,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-13 22:29:20,272",
+      "last_update": "2026-04-13 22:39:22,150",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -49,8 +49,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 58.4,
-        "time": "2026-04-13 22:29:20,272"
+        "confidence": 56.8,
+        "time": "2026-04-13 22:39:22,150"
       },
       "open_position": null,
       "performance": {
@@ -66,7 +66,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-13 22:28:16,759",
+      "last_update": "2026-04-13 22:38:21,229",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -78,8 +78,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 59.0,
-        "time": "2026-04-13 22:28:16,759"
+        "confidence": 56.8,
+        "time": "2026-04-13 22:38:21,229"
       },
       "open_position": null,
       "performance": {
@@ -153,7 +153,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-13 22:30:02",
+      "last_update": "2026-04-13 22:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
