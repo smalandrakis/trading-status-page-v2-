@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-14T18:00:02.349985",
+  "generated_at": "2026-04-14T18:10:01.696596",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-14T18:00:02.350003"
+    "last_health_check": "2026-04-14T18:10:01.696617"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 17:58:06,274",
+      "last_update": "2026-04-14 18:08:08,398",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.8,
-        "time": "2026-04-14 17:58:06,274"
+        "confidence": 49.9,
+        "time": "2026-04-14 18:08:08,398"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 17:59:41,289",
+      "last_update": "2026-04-14 18:09:43,859",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,8 +62,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.3,
-        "time": "2026-04-14 17:59:41,289"
+        "confidence": 50.7,
+        "time": "2026-04-14 18:09:43,859"
       },
       "open_position": null,
       "performance": {
@@ -80,7 +80,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 18:00:02",
+      "last_update": "2026-04-14 18:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -95,17 +95,17 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 62.5,
-        "time": "2026-04-14 17:58:41,571"
+        "confidence": 63.6,
+        "time": "2026-04-14 18:08:47,218"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 8,
+        "total_trades": 9,
         "wins": 3,
-        "losses": 5,
-        "win_rate": 37.5,
-        "total_pnl": -216.52,
-        "avg_pnl": -27.06
+        "losses": 6,
+        "win_rate": 33.3,
+        "total_pnl": -254.44,
+        "avg_pnl": -28.27
       },
       "recent_trades": [
         {
@@ -163,6 +163,13 @@
           "pnl": -224.71,
           "pnl_pct": -1.01,
           "hold_minutes": 23.0
+        },
+        {
+          "time": "2026-04-14T18:08:43.611895",
+          "direction": "LONG",
+          "pnl": -37.92,
+          "pnl_pct": -0.17,
+          "hold_minutes": 2.0
         }
       ],
       "health_status": "HEALTHY"
@@ -170,7 +177,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 17:59:49,148 - INFO - BTC: $75048.49",
+      "last_update": "2026-04-14 18:09:48,633 - INFO - BTC: $74672.75",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -183,7 +190,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 65.0,
-        "time": "2026-04-14 17:59:49,148"
+        "time": "2026-04-14 18:09:48,633"
       },
       "open_position": null,
       "performance": {
@@ -199,7 +206,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T18:00:03.189460",
+    "updated_at": "2026-04-14T18:10:02.405481",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -251,7 +258,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 77.9,
+        "age_minutes": 87.8,
         "is_fresh": true
       },
       "groq": {
@@ -301,7 +308,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 536.3,
+        "age_minutes": 546.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -318,7 +325,7 @@
           "volume_24h": 62000285046.33765
         },
         "actionable": true,
-        "age_minutes": 45.0,
+        "age_minutes": 54.9,
         "is_fresh": true
       }
     },
