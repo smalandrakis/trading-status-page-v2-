@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T01:50:01.029141",
+  "generated_at": "2026-04-15T02:00:01.835086",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T01:50:01.029161"
+    "last_health_check": "2026-04-15T02:00:01.835106"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 01:48:06,322",
+      "last_update": "2026-04-15 01:58:08,147",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 37.6,
-        "time": "2026-04-15 01:48:06,322"
+        "confidence": 45.0,
+        "time": "2026-04-15 01:58:08,147"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 01:49:01,005",
+      "last_update": "2026-04-15 01:59:03,223",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 67.1,
-        "time": "2026-04-15 01:49:01,005"
+        "confidence": 55.1,
+        "time": "2026-04-15 01:59:03,223"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 01:49:37,649 - INFO - [HEARTBEAT] Price: $74,025.75",
+      "last_update": "2026-04-15 01:59:40,031 - INFO - [HEARTBEAT] Price: $74,037.36",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -102,8 +102,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 56.4,
-        "time": "2026-04-15 01:48:01,337"
+        "confidence": 54.8,
+        "time": "2026-04-15 01:58:05,856"
       },
       "open_position": null,
       "performance": {
@@ -191,7 +191,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 01:49:48,069 - INFO - BTC: $74000.01",
+      "last_update": "2026-04-15 02:00:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -203,8 +203,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 60.0,
-        "time": "2026-04-15 01:49:48,069"
+        "confidence": 50.0,
+        "time": "2026-04-15 01:59:47,547"
       },
       "open_position": null,
       "performance": {
@@ -220,26 +220,29 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T01:50:01.823479",
+    "updated_at": "2026-04-15T02:00:02.668858",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.3063,
-        "confidence": 0.658,
-        "bullish_pct": 0.331,
-        "bearish_pct": 0.0317,
-        "neutral_pct": 0.6373,
+        "direction": "LONG",
+        "strength": 0.4968,
+        "confidence": 0.6579,
+        "bullish_pct": 0.5404,
+        "bearish_pct": 0.0436,
+        "neutral_pct": 0.416,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.456,
+        "consensus_score": 0.3105,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Every dip into Extreme Fear at $74.6K is a gift \u2014 $3.5T Goldman Sachs ETF filing and Visa running validators are infrastructural tsunamis, not noise. Institutions are building while weak hands panic; "
+            "[CryptoKaleo] We're sitting at $74K in *extreme fear* while Visa runs a node, Warsh backs Lightning, and the halving clock ticks toward 2028 \u2014 this is the quiet before the explosion. The $75.8K resistance is psycho",
+            "[DeepPockets] Price holding above $72.8K with repeated tests of $75.8K resistance tells me weak hands are being shaken out while institutions quietly accumulate\u2014Visa\u2019s node and Warsh\u2019s Lightning stake aren\u2019t public",
+            "[DiamondHands420] $74K in extreme fear with Visa running a node and Warsh holding Lightning bags? This is the kind of setup we haven\u2019t seen since the 2025 pump. Halving supply crunch building, altcoins like XRP eyeing ",
+            "[TrendRider] Price is testing resistance at $75.8K again, and though volume hasn't exploded, the structural setup is strengthening \u2014 halving midpoint tailwinds, Visa node expansion, and Warsh\u2019s Lightning stake add"
           ],
           "bearish": []
         },
-        "timestamp": "2026-04-14T21:59:36.661802+00:00",
+        "timestamp": "2026-04-14T22:50:48.576819+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -256,17 +259,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 12574.6,
+          "run_duration_sec": 12046.5,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 15,
+          "total_posts": 19,
           "market_data_summary": {
-            "price": 74598,
-            "change_24h": 3.4,
+            "price": 74098,
+            "change_24h": 1.84,
             "fear_greed": 21
           }
         },
-        "age_minutes": 50.4,
+        "age_minutes": 9.2,
         "is_fresh": true
       },
       "groq": {
@@ -316,7 +319,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1006.3,
+        "age_minutes": 1016.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -333,7 +336,7 @@
           "volume_24h": 61689680385.45706
         },
         "actionable": true,
-        "age_minutes": 35.0,
+        "age_minutes": 45.0,
         "is_fresh": true
       }
     },
