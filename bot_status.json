@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T08:30:01.965744",
+  "generated_at": "2026-04-14T08:40:01.918574",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 08:29:54,397",
+      "last_update": "2026-04-14 08:39:57,065",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 49.6,
-        "time": "2026-04-14 08:29:54,397"
+        "confidence": 46.7,
+        "time": "2026-04-14 08:39:57,065"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 08:28:12,829",
+      "last_update": "2026-04-14 08:38:15,004",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 46.2,
-        "time": "2026-04-14 08:28:12,829"
+        "confidence": 47.0,
+        "time": "2026-04-14 08:38:15,004"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 08:28:14,073",
+      "last_update": "2026-04-14 08:39:15,639",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 46.0,
-        "time": "2026-04-14 08:28:14,073"
+        "confidence": 46.8,
+        "time": "2026-04-14 08:37:15,242"
       },
       "open_position": {
         "direction": "LONG",
@@ -169,7 +169,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 08:30:02",
+      "last_update": "2026-04-14 08:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -251,32 +251,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T08:30:02.164930",
+    "updated_at": "2026-04-14T08:40:02.145404",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.288,
-        "confidence": 0.6581,
-        "bullish_pct": 0.1691,
-        "bearish_pct": 0.2715,
-        "neutral_pct": 0.5595,
+        "strength": 0.5941,
+        "confidence": 0.645,
+        "bullish_pct": 0.1793,
+        "bearish_pct": 0.0474,
+        "neutral_pct": 0.7733,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3392,
+        "consensus_score": 0.66,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $74.5K is a springboard, not resistance \u2014 we\u2019re about to blow past $74.8K like it\u2019s nothing! Iran deal optimism + Giancarlo back in crypto = massive regulatory tailwinds, and Foundry expanding to Zcas",
-            "[StackingSats] $74.5K is a proven accumulation zone\u2014every dip to this level gets absorbed. The short squeeze and Iran deal noise are just catalysts; the real driver is the looming halving supply shock and strong has",
-            "[CryptoKaleo] We're surfing a perfect narrative storm \u2014 $74.5K is just warm-up firework before the main event at $75K. Giancarlo back in the crypto lane? That\u2019s regulatory FOMO ignition. Iran deal hopes, Foundry ex"
+            "[DiamondHands420] $75K IS IMMINENT AND WE\u2019RE TAKING OUT THE BEARS \u2014 the short squeeze just blew up $400M in liquidations, Iran deal hopes are pure rocket fuel, and Foundry\u2019s Zcash move proves miners are ALL-IN. I don\u2019t",
+            "[StackingSats] $74.3K is a discount bin ahead of the next halving cycle \u2014 the short squeeze and Iran deal noise are just catalysts exposing the fragility of paper hands. I trust the hash rate, Foundry's dominance sh",
+            "[CryptoKaleo] $74.3K isn\u2019t a top \u2014 it\u2019s a springboard. The $400M short squeeze is just the first tremor; the real quake comes as Foundry\u2019s hash rate dominance flips mining power to pro-Bitcoin infra, while Giancarl"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $74.5K \u2014 this Iran-driven squeeze is textbook bear trap behavior. Volume surge is noise, not conviction, and with South Korea cracking down again and macro still tight (DXY flat, re",
-            "[DeepPockets] Price probing $74.5K again on geopolitical noise and short-covering lacks the macro backing I need to re-enter. I\u2019m anchored to my $68K cost basis and see this as another distribution opportunity \u2014 vo",
-            "[FadeTheCrowd] Price at $74.5K on a short-lived geopolitical narrative and short squeeze, but Fear & Greed still at 21 \u2014 that\u2019s not sustainable momentum. Volume spike and liquidations are noise; the real test is hol"
+            "[BearishBob] Another fakeout rally fueled by geopolitical hopium and a minor short squeeze\u2014this $75K level is a magnet for lambo-margin liquidations, not real demand. Volume/market cap ratio is weak at 3.8%, on-ch"
           ]
         },
-        "timestamp": "2026-04-14T04:37:57.851179+00:00",
+        "timestamp": "2026-04-14T05:32:24.188246+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -293,17 +291,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 476.1,
+          "run_duration_sec": 142.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74500,
-            "change_24h": 4.89,
+            "price": 74356,
+            "change_24h": 4.93,
             "fear_greed": 21
           }
         },
-        "age_minutes": 52.1,
+        "age_minutes": 7.6,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +351,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 1406.4,
+        "age_minutes": 1416.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +368,7 @@
           "volume_24h": 56131835247.15153
         },
         "actionable": true,
-        "age_minutes": 14.9,
+        "age_minutes": 24.9,
         "is_fresh": true
       }
     },
