@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T10:10:01.594257",
+  "generated_at": "2026-04-14T10:20:01.868055",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 10:08:17,778",
+      "last_update": "2026-04-14 10:18:19,913",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 47.9,
-        "time": "2026-04-14 10:08:17,778"
+        "confidence": 50.4,
+        "time": "2026-04-14 10:18:19,913"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 10:08:37,503",
+      "last_update": "2026-04-14 10:18:40,373",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 48.5,
-        "time": "2026-04-14 10:08:37,503"
+        "confidence": 50.0,
+        "time": "2026-04-14 10:18:40,373"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 10:09:30,216",
+      "last_update": "2026-04-14 10:15:31,053",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.5,
-        "time": "2026-04-14 10:07:29,821"
+        "confidence": 51.3,
+        "time": "2026-04-14 10:13:30,657"
       },
       "open_position": {
         "direction": "LONG",
@@ -169,7 +169,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 10:10:01",
+      "last_update": "2026-04-14 10:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -184,8 +184,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 25.6,
-        "time": "2026-04-14 09:59:06,583"
+        "confidence": 49.1,
+        "time": "2026-04-14 10:19:34,050"
       },
       "open_position": {
         "direction": "LONG",
@@ -251,7 +251,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T10:10:01.783208",
+    "updated_at": "2026-04-14T10:20:02.061872",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -303,7 +303,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 15.8,
+        "age_minutes": 25.8,
         "is_fresh": true
       },
       "groq": {
@@ -353,24 +353,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 66.3,
+        "age_minutes": 76.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-14T06:15:04.389726+00:00",
+        "timestamp": "2026-04-14T07:15:04.390929+00:00",
         "direction": "LONG",
-        "strength": 0.68,
-        "confidence": 0.75,
-        "reasoning": "Strong upward momentum with +4.71% 24h gain and high trading volume indicating buyer interest. Recent BTC ETF inflows and positive market sentiment support continued upward movement.",
+        "strength": 0.7,
+        "confidence": 0.8,
+        "reasoning": "Strong 24h price increase (+5.43%) with high trading volume suggests bullish momentum. BTC breaking above $74K resistance level with volume confirmation indicates potential for continued upward movement.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74348,
-          "change_24h": 4.712649656495239,
-          "volume_24h": 54632485527.446106
+          "price": 74753,
+          "change_24h": 5.431421114749622,
+          "volume_24h": 55778266134.45203
         },
         "actionable": true,
-        "age_minutes": 55.0,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
