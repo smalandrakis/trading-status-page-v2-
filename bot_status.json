@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T09:00:01.962107",
+  "generated_at": "2026-04-14T09:10:01.632959",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 09:00:01,308",
+      "last_update": "2026-04-14 09:08:02,986",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 40.5,
-        "time": "2026-04-14 09:00:01,308"
+        "confidence": 33.9,
+        "time": "2026-04-14 09:08:02,986"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 08:58:20,136",
+      "last_update": "2026-04-14 09:08:22,363",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.8,
-        "time": "2026-04-14 08:58:20,136"
+        "confidence": 33.5,
+        "time": "2026-04-14 09:08:22,363"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 08:58:18,504",
+      "last_update": "2026-04-14 09:09:20,698",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 41.3,
-        "time": "2026-04-14 08:58:18,504"
+        "confidence": 30.3,
+        "time": "2026-04-14 09:07:19,996"
       },
       "open_position": {
         "direction": "LONG",
@@ -169,7 +169,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 09:00:02",
+      "last_update": "2026-04-14 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -251,7 +251,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T09:00:02.175549",
+    "updated_at": "2026-04-14T09:10:01.863745",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -301,30 +301,30 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 27.6,
+        "age_minutes": 37.6,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.7666,
-        "confidence": 0.5347,
-        "bullish_pct": 0.0909,
-        "bearish_pct": 0.0516,
-        "neutral_pct": 0.8575,
+        "strength": 0.7478,
+        "confidence": 0.5583,
+        "bullish_pct": 0.1013,
+        "bearish_pct": 0.0495,
+        "neutral_pct": 0.8491,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.7863,
+        "consensus_score": 0.7737,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] The Fear & Greed Index is at 12, Extreme Fear, which is a great buying opportunity. I'm seeing a lot of FUD around quantum computing, but I believe the devs will find a solution. The recent dip to $70",
-            "[StackingSats] The Fear & Greed Index at 12, Extreme Fear, is music to my ears - a perfect buying opportunity. I'm not concerned about the FUD surrounding quantum computing, as I believe the devs will find a solutio"
+            "[StackingSats] The recent short squeeze has pushed Bitcoin above $74,000, and I see this as a perfect opportunity to accumulate more BTC. The Fear & Greed Index's extreme fear reading only confirms my conviction, as",
+            "[DiamondHands420] The FOMO is real and I'm loving every minute of it. Bitcoin surging near $75,000 and short liquidations accelerating is music to my ears. I'm holding strong and shouting 'HODL' as the Fear & Greed Ind"
           ],
           "bearish": [
-            "[BearishBob] The Fear & Greed Index at 12, Extreme Fear, is nothing but a trap, a cleverly disguised bounce before the next leg down. The recent dip to $70.6K and the overall 43.8% decline from ATH are clear indic"
+            "[BearishBob] The recent pump to $74,203 is just a dead cat bounce, fueled by the short squeeze sparked by Iran deal hopes. The Fear & Greed Index is still in extreme fear territory, which I believe is a sign of a "
           ]
         },
-        "timestamp": "2026-04-13T06:03:40.131274+00:00",
+        "timestamp": "2026-04-14T06:03:44.808979+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -341,17 +341,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 218.1,
+          "run_duration_sec": 222.7,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 70855,
-            "change_24h": -1.24,
-            "fear_greed": 12
+            "price": 74203,
+            "change_24h": 4.72,
+            "fear_greed": 21
           }
         },
-        "age_minutes": 1436.4,
+        "age_minutes": 6.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -368,7 +368,7 @@
           "volume_24h": 56131835247.15153
         },
         "actionable": true,
-        "age_minutes": 44.9,
+        "age_minutes": 54.9,
         "is_fresh": true
       }
     },
