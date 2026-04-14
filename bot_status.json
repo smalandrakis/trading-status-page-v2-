@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T01:10:01.912628",
+  "generated_at": "2026-04-15T01:20:02.010914",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T01:10:01.912647"
+    "last_health_check": "2026-04-15T01:20:02.010932"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 01:09:58,790",
+      "last_update": "2026-04-15 01:20:00,823",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 55.4,
-        "time": "2026-04-15 01:09:58,790"
+        "confidence": 48.7,
+        "time": "2026-04-15 01:20:00,823"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 01:08:52,695",
+      "last_update": "2026-04-15 01:18:55,366",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -68,9 +68,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 58.9,
-        "time": "2026-04-15 01:08:52,694"
+        "signal": "SHORT",
+        "confidence": 51.2,
+        "time": "2026-04-15 01:18:55,366"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 01:09:58,552 - INFO - [HEARTBEAT] Price: $74,312.87",
+      "last_update": "2026-04-15 01:20:01,154 - INFO - [HEARTBEAT] Price: $74,113.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -102,8 +102,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 51.8,
-        "time": "2026-04-15 01:09:41,935"
+        "confidence": 55.2,
+        "time": "2026-04-15 01:19:47,014"
       },
       "open_position": null,
       "performance": {
@@ -191,7 +191,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 01:09:50,033 - INFO - BTC: $74294.08",
+      "last_update": "2026-04-15 01:19:49,210 - INFO - BTC: $74134.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -202,9 +202,9 @@
         "expected_pnl_2yr": 18000
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 60.0,
+        "time": "2026-04-15 01:19:49,210"
       },
       "open_position": null,
       "performance": {
@@ -220,7 +220,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T01:10:02.693961",
+    "updated_at": "2026-04-15T01:20:02.712731",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -266,7 +266,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 10.4,
+        "age_minutes": 20.4,
         "is_fresh": true
       },
       "groq": {
@@ -316,24 +316,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 966.3,
+        "age_minutes": 976.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-14T21:15:06.495576+00:00",
+        "timestamp": "2026-04-14T22:15:04.351268+00:00",
         "direction": "LONG",
-        "strength": 0.65,
-        "confidence": 0.75,
-        "reasoning": "Positive price action with 1.30% gain, strong 24h volume indicating buyer interest, BTC maintaining price above 74k resistance level suggests continued bullish momentum in the short term.",
+        "strength": 0.6,
+        "confidence": 0.7,
+        "reasoning": "Positive price action (+1.14%) with strong volume suggests bullish momentum. BTC holding above $74k indicates market strength. Caution warranted due to potential resistance at $75k psychological level.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74241,
-          "change_24h": 1.301161448420989,
-          "volume_24h": 63326063820.98321
+          "price": 74364,
+          "change_24h": 1.141142430102878,
+          "volume_24h": 61689680385.45706
         },
         "actionable": true,
-        "age_minutes": 54.9,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
