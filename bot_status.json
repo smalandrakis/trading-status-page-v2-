@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T12:30:01.648240",
+  "generated_at": "2026-04-14T12:40:01.215758",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 12:28:56,941",
+      "last_update": "2026-04-14 12:38:59,586",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.8,
-        "time": "2026-04-14 12:28:56,941"
+        "confidence": 61.5,
+        "time": "2026-04-14 12:38:59,586"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 12:28:56,700",
+      "last_update": "2026-04-14 12:38:59,165",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.8,
-        "time": "2026-04-14 12:28:56,700"
+        "confidence": 61.5,
+        "time": "2026-04-14 12:38:59,165"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 12:30:01",
+      "last_update": "2026-04-14 12:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -89,8 +89,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.0,
-        "time": "2026-04-14 12:29:04,181"
+        "confidence": 40.7,
+        "time": "2026-04-14 12:39:07,685"
       },
       "open_position": {
         "direction": "LONG",
@@ -157,7 +157,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 12:29:54,160 - INFO - BTC: $74668.35",
+      "last_update": "2026-04-14 12:39:55,889 - INFO - BTC: $74681.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -185,31 +185,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T12:30:02.578324",
+    "updated_at": "2026-04-14T12:40:02.195228",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4393,
-        "confidence": 0.6666,
-        "bullish_pct": 0.2556,
-        "bearish_pct": 0.0496,
-        "neutral_pct": 0.6948,
+        "strength": 0.3612,
+        "confidence": 0.6669,
+        "bullish_pct": 0.2795,
+        "bearish_pct": 0.0798,
+        "neutral_pct": 0.6407,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5422,
+        "stance_shifts": 1,
+        "consensus_score": 0.461,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $74.5K is FOMO fuel\u2014shorts are getting rekt again and we\u2019re about to punch through $75K like it\u2019s nothing! Iran peace vibes, STRC pumping $1B, and DOJ drama just flushes more weak hands while real deg",
-            "[CryptoKaleo] We\u2019re not just riding a short squeeze \u2014 we\u2019re witnessing a structural shift. $74.5K with $57B volume, $400M in shorts vaporized, Iran peace catalyzing risk-on, and Giancarlo going all-in on crypto? Th",
-            "[StackingSats] $74.5K is not resistance\u2014it\u2019s a launchpad. The short squeeze and Iran deal noise are just catalysts; the real story is Bitcoin\u2019s halving-driven scarcity and accelerating adoption via STRC ATMs and reg",
-            "[FadeTheCrowd] $74.5K on extreme fear (21 F&G) with a short squeeze is the perfect setup\u2014weak hands get shaken out while contrarians accumulate. The Iran-driven risk-on and $400M liquidations are catalysts, not the "
+            "[DiamondHands420] $74.8K BREAK CONFIRMED \u2014 this is NOT a trap, it's a tombstone for the weak hands still praying for a $50K flush! With $1B STRC volume and Kraken drama just fueling FUD, institutions are accumulating H",
+            "[StackingSats] $74.8K break with accelerating STRC volume and short liquidations is not noise \u2014 it's the canary in the coal mine for the next leg up. The $50K \"flush\" narrative clings to sentiment, not supply; halvi",
+            "[TrendRider] Price reclaimed $74.8K with strong volume and short liquidations \u2014 yet again, the trend is flushing out weak hands. I trust the momentum and breakout structure over sentiment noise; \"Extreme Fear\" at ",
+            "[CryptoKaleo] $74.6K isn\u2019t a top \u2014 it\u2019s a trap for the weak hands still buying the $50K flush fairytale. The STRC $1B volume surge, short liquidations, and lack of exchange inflows scream accumulation in motion, no"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $74.5K\u2014this Iran peace rally is just a bear trap to lure in the weak hands before the final flush to $50K. The $400M short squeeze is noise, not demand, and with OTC desks quiet and"
+            "[BearishBob] Another fakeout pump to $74.8K on short liquidations \u2014 classic bear trap. Volume is mechanically inflated, not organic demand, and the Fear & Greed at 21 confirms weak sentiment with no real convictio",
+            "[FadeTheCrowd] Price probing $75K again on short squeeze mechanics while Fear & Greed lingers at 21 isn\u2019t sustainable conviction \u2014 it\u2019s noise. The $1B STRC headline is loud, but not yet structural; without on-chain "
           ]
         },
-        "timestamp": "2026-04-14T08:50:13.421201+00:00",
+        "timestamp": "2026-04-14T09:38:52.656823+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -226,17 +227,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1211.8,
+          "run_duration_sec": 530.8,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 74562,
-            "change_24h": 5.43,
+            "price": 74680,
+            "change_24h": 5.49,
             "fear_greed": 21
           }
         },
-        "age_minutes": 39.8,
+        "age_minutes": 1.2,
         "is_fresh": true
       },
       "groq": {
@@ -286,7 +287,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 206.3,
+        "age_minutes": 216.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -303,7 +304,7 @@
           "volume_24h": 58509953178.7798
         },
         "actionable": true,
-        "age_minutes": 14.9,
+        "age_minutes": 24.9,
         "is_fresh": true
       }
     },
