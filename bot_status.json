@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T10:40:01.724202",
+  "generated_at": "2026-04-14T10:50:01.302306",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 10:38:25,321",
+      "last_update": "2026-04-14 10:44:26,604",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 44.8,
-        "time": "2026-04-14 10:38:25,321"
+        "confidence": 45.8,
+        "time": "2026-04-14 10:44:26,604"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 10:38:45,780",
+      "last_update": "2026-04-14 10:44:47,433",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 41.9,
-        "time": "2026-04-14 10:38:45,780"
+        "confidence": 45.8,
+        "time": "2026-04-14 10:44:47,433"
       },
       "open_position": null,
       "performance": {
@@ -169,7 +169,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 10:40:01",
+      "last_update": "2026-04-14 10:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -184,8 +184,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 35.9,
-        "time": "2026-04-14 10:39:42,414"
+        "confidence": 30.5,
+        "time": "2026-04-14 10:49:47,076"
       },
       "open_position": {
         "direction": "LONG",
@@ -251,7 +251,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T10:40:01.957555",
+    "updated_at": "2026-04-14T10:50:01.541390",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -303,7 +303,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 45.8,
+        "age_minutes": 55.7,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +353,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 96.3,
+        "age_minutes": 106.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +370,7 @@
           "volume_24h": 55778266134.45203
         },
         "actionable": true,
-        "age_minutes": 25.0,
+        "age_minutes": 35.0,
         "is_fresh": true
       }
     },
