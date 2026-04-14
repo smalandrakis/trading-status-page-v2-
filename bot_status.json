@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-14T21:00:01.811381",
+  "generated_at": "2026-04-14T21:10:05.921891",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-14T21:00:01.811401"
+    "last_health_check": "2026-04-14T21:10:05.921916"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 20:58:53,918",
+      "last_update": "2026-04-14 21:09:13,582",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 46.1,
-        "time": "2026-04-14 20:58:53,918"
+        "confidence": 39.0,
+        "time": "2026-04-14 21:09:13,582"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 20:58:33,205",
+      "last_update": "2026-04-14 21:08:52,343",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.9,
-        "time": "2026-04-14 20:58:33,205"
+        "confidence": 39.3,
+        "time": "2026-04-14 21:08:52,343"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 21:00:01",
+      "last_update": "2026-04-14 21:10:05",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -102,8 +102,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 64.7,
-        "time": "2026-04-14 20:59:40,012"
+        "confidence": 55.5,
+        "time": "2026-04-14 21:10:01,288"
       },
       "open_position": null,
       "performance": {
@@ -191,7 +191,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 20:59:50,117 - INFO - BTC: $74746.00",
+      "last_update": "2026-04-14 21:10:06",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -204,7 +204,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 65.0,
-        "time": "2026-04-14 20:59:50,117"
+        "time": "2026-04-14 21:09:31,887"
       },
       "open_position": null,
       "performance": {
@@ -220,29 +220,27 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T21:00:02.625346",
+    "updated_at": "2026-04-14T21:10:06.679361",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4327,
-        "confidence": 0.6203,
-        "bullish_pct": 0.2503,
-        "bearish_pct": 0.0667,
-        "neutral_pct": 0.683,
+        "strength": 0.5548,
+        "confidence": 0.6271,
+        "bullish_pct": 0.2157,
+        "bearish_pct": 0.0137,
+        "neutral_pct": 0.7706,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.5245,
+        "stance_shifts": 0,
+        "consensus_score": 0.6558,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price ripped to $75.8K on a short squeeze and noise around X, Nauru, and Kraken \u2014 but Fear & Greed at 21 shows most are still scared. That\u2019s when I get greedy. This rally looks technical, not fundamen",
-            "[CryptoKaleo] $75.8K isn\u2019t just a technical breakout \u2014 it\u2019s a narrative explosion. Deutsche B\u00f6rse\u2019s $200M Kraken stamp, X\u2019s crypto \u201cfix\u201d tease, and Nauru\u2019s Bitcoin diplomacy are converging into a full-blown institu"
+            "[StackingSats] $74.9K is a gift. Dip? What dip? We\u2019re still -40% from ATH and stacking continues. Fake apps stealing bags don\u2019t change Bitcoin\u2019s fundamentals\u2014self-custody wins long-term. Tether launching a custodial",
+            "[CryptoKaleo] We're cooking with gas here\u2014$76K smashed, extreme fear at 21, and now Deutsche B\u00f6rse drops a $200M bomb on Kraken? This is institutional FOMO phase one. Tether launching self-custodial with cloud back"
           ],
-          "bearish": [
-            "[DeltaNeutral] Price at $75,801 with strong volume and a flush through liquidations above $74K confirms mechanical squeeze dynamics. Order book depth remains skewed long-heavy near $76K, and gamma exposure flips neg"
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-04-14T15:55:21.578846+00:00",
+        "timestamp": "2026-04-14T18:09:39.059658+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -259,17 +257,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 5119.9,
+          "run_duration_sec": 9577.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 32,
+          "total_posts": 24,
           "market_data_summary": {
-            "price": 75801,
-            "change_24h": 5.79,
+            "price": 74905,
+            "change_24h": 4.05,
             "fear_greed": 21
           }
         },
-        "age_minutes": 124.7,
+        "age_minutes": 0.5,
         "is_fresh": true
       },
       "groq": {
@@ -319,7 +317,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 716.3,
+        "age_minutes": 726.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -336,7 +334,7 @@
           "volume_24h": 65224173920.3276
         },
         "actionable": true,
-        "age_minutes": 44.9,
+        "age_minutes": 55.0,
         "is_fresh": true
       }
     },
