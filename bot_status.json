@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T17:10:01.665323",
+  "generated_at": "2026-04-14T17:20:01.141790",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 17:10:01",
+      "last_update": "2026-04-14 17:20:01",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 17:09:23,885",
+      "last_update": "2026-04-14 17:19:26,678",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.2,
-        "time": "2026-04-14 17:09:23,885"
+        "confidence": 52.7,
+        "time": "2026-04-14 17:19:26,678"
       },
       "open_position": null,
       "performance": {
@@ -157,7 +157,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 17:09:49,854 - INFO - BTC: $75548.32",
+      "last_update": "2026-04-14 17:19:50,084 - INFO - BTC: $75568.44",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -168,9 +168,9 @@
         "expected_pnl_2yr": 18000
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 65.0,
+        "time": "2026-04-14 17:19:50,084"
       },
       "open_position": null,
       "performance": {
@@ -185,7 +185,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T17:10:02.459079",
+    "updated_at": "2026-04-14T17:20:01.987773",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -237,7 +237,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 27.8,
+        "age_minutes": 37.8,
         "is_fresh": true
       },
       "groq": {
@@ -287,24 +287,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 486.3,
+        "age_minutes": 496.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-14T13:15:06.320046+00:00",
+        "timestamp": "2026-04-14T14:15:05.482075+00:00",
         "direction": "LONG",
-        "strength": 0.68,
+        "strength": 0.65,
         "confidence": 0.75,
-        "reasoning": "Strong 24h price increase (+4.79%) with robust volume suggesting bullish momentum. Market sentiment appears positive following recent consolidation. Monitor for potential profit-taking at psychological $75K level.",
+        "reasoning": "Strong positive price action (+5.55%) with high trading volume suggests bullish momentum. Price above $75k psychological level with volume supporting the move indicates potential for continued upward trend.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74577,
-          "change_24h": 4.7867523879808065,
-          "volume_24h": 58813801035.28061
+          "price": 75585,
+          "change_24h": 5.554013704369599,
+          "volume_24h": 62000285046.33765
         },
         "actionable": true,
-        "age_minutes": 54.9,
+        "age_minutes": 4.9,
         "is_fresh": true
       }
     },
