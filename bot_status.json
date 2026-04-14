@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T14:50:02.569248",
+  "generated_at": "2026-04-14T15:00:02.188012",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 14:48:43,476",
+      "last_update": "2026-04-14 14:58:46,582",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.5,
-        "time": "2026-04-14 14:48:43,476"
+        "confidence": 44.7,
+        "time": "2026-04-14 14:58:46,582"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 14:48:43,328",
+      "last_update": "2026-04-14 14:58:46,341",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.5,
-        "time": "2026-04-14 14:48:43,328"
+        "confidence": 44.7,
+        "time": "2026-04-14 14:58:46,341"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 14:24:43,359 - INFO -   LONG",
+      "last_update": "2026-04-14 14:54:43,577 - INFO -   LONG",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -157,7 +157,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 14:50:03",
+      "last_update": "2026-04-14 14:59:50,132 - INFO - BTC: $74381.24",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -168,9 +168,9 @@
         "expected_pnl_2yr": 18000
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 80.0,
-        "time": "2026-04-14 14:49:45,268"
+        "signal": "SHORT",
+        "confidence": 30.0,
+        "time": "2026-04-14 14:59:50,132"
       },
       "open_position": null,
       "performance": {
@@ -185,32 +185,35 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T14:50:03.307203",
+    "updated_at": "2026-04-14T15:00:03.002151",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.2731,
-        "confidence": 0.6672,
-        "bullish_pct": 0.339,
-        "bearish_pct": 0.0489,
-        "neutral_pct": 0.6121,
+        "direction": "SHORT",
+        "strength": 0.2998,
+        "confidence": 0.6624,
+        "bullish_pct": 0.1869,
+        "bearish_pct": 0.4867,
+        "neutral_pct": 0.3264,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.4182,
+        "stance_shifts": 4,
+        "consensus_score": 0.23,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $74.6K isn\u2019t resistance \u2014 it\u2019s a springboard. The $1B STRC ATM volume and cascading short liquidations confirm institutional accumulation amid fear-driven capitulation. \"Extreme Fear\" at $74K with acc",
-            "[CryptoKaleo] This $74.6K print isn\u2019t just a bounce \u2014 it\u2019s a violent institutional repositioning masked as fear. The $1B STRC ATM volume isn\u2019t noise, it\u2019s war fuel. Shorts are getting vaporized, weak hands dumped i",
-            "[FadeTheCrowd] Price grinding toward $74.8K on extreme fear (21) and cascading short liquidations confirms the shakeout is climaxing. The $50K bear narrative is a fading echo\u2014liquidity is being swept, and the $1B ST",
-            "[DiamondHands420] We're LITERALLY printing $75K with $1B STRC ATM volume and short liquidations FUELING the rocket \u2014 this is what capitulation looks like for weak hands! All this $50K fear porn is just FUD from bears g",
-            "[TrendRider] Price at $74.6K is testing a well-established resistance zone, but the confluence of strong volume, short liquidations, and $1B STRC ATM activity shows momentum is accelerating. RSI rising from neutra"
+            "[DiamondHands420] LMAO, ETF outflows? Just weak hands getting rekt while real adoption HODLs strong! Deutsche B\u00f6rse drops $200M into Kraken and STRC ATM hits $1B volume \u2014 that\u2019s not noise, that\u2019s infrastructure ignitin",
+            "[StackingSats] $74.4K is a discount bin \u2014 every dollar down is a gift from the weak hands to those who understand 1 BTC = 1 BTC. ETF outflows on rallies? Classic capitulation play \u2014 institutions sell into the noise ",
+            "[FadeTheCrowd] Extreme Fear at 21 with $291M in ETF outflows as price spikes to $74.8K is a textbook institutional sell-off into a short-squeeze rally \u2014 weak hands getting washed out. I'm still watching $70.8K as cr",
+            "[CryptoKaleo] The $291M ETF outflow is noise \u2014 FBTC dumping on price spikes is expected, but Deutsche B\u00f6rse\u2019s $200M Kraken play and STRC ATM\u2019s $1B volume are *infrastructure earthquakes*. This is institutional war "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $75K\u2014this pump is textbook bear trap material. Short liquidations and that sketchy $1B STRC ATM volume reek of late-stage manipulation, not real demand, while hacks ($464M lost), po"
+            "[GlassnodeGuru] Price rejection at $74.8K on $291M of ETF outflows\u2014led by FBTC\u2014confirms distribution, not accumulation. STRC ATM and Deutsche B\u00f6rse are positive long-term signals, but on-chain shows weak hands are bu",
+            "[DeltaNeutral] Price rejected into $74.8K on thin order book depth and accelerating short liquidations, while $291M in ETF outflows\u2014led by FBTC\u2014signals institutional distribution. The rally lacks structural buying s",
+            "[DeepPockets] Price probing $74.8K again on thin momentum while ETFs bleed $291M\u2014this is distribution, not conviction. I\u2019m anchored below $68K, and though Deutsche B\u00f6rse and STRC ATM signal long-term strength, I wo",
+            "[TrendRider] Price rejected at $74.8K twice on strong volume and $291M ETF outflows \u2014 a clear distribution signal. The short squeeze fueled the pump, but institutions are exiting while retail chases. Until we clea",
+            "[BearishBob] $74.8K rejection again on $291M ETF outflows? This isn't a rally \u2014 it's a short-squeeze trap with institutions like FBTC clearly distributing to retail. STRC ATM noise and Deutsche B\u00f6rse headlines won"
           ]
         },
-        "timestamp": "2026-04-14T10:44:14.214170+00:00",
+        "timestamp": "2026-04-14T11:54:36.265962+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -227,17 +230,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 852.3,
+          "run_duration_sec": 1474.8,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 34,
           "market_data_summary": {
-            "price": 74594,
-            "change_24h": 5.39,
+            "price": 74431,
+            "change_24h": 5.03,
             "fear_greed": 21
           }
         },
-        "age_minutes": 65.8,
+        "age_minutes": 5.4,
         "is_fresh": true
       },
       "groq": {
@@ -287,7 +290,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 346.3,
+        "age_minutes": 356.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -304,7 +307,7 @@
           "volume_24h": 58168512259.858864
         },
         "actionable": true,
-        "age_minutes": 35.0,
+        "age_minutes": 45.0,
         "is_fresh": true
       }
     },
