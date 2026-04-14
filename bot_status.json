@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T12:50:02.145016",
+  "generated_at": "2026-04-14T13:00:01.571054",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 12:49:02,295",
+      "last_update": "2026-04-14 12:59:04,821",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.5,
-        "time": "2026-04-14 12:49:02,295"
+        "confidence": 60.9,
+        "time": "2026-04-14 12:59:04,821"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 12:49:01,661",
+      "last_update": "2026-04-14 12:59:04,273",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.5,
-        "time": "2026-04-14 12:49:01,661"
+        "confidence": 60.9,
+        "time": "2026-04-14 12:59:04,273"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 12:50:02",
+      "last_update": "2026-04-14 13:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -89,8 +89,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 39.4,
-        "time": "2026-04-14 12:49:26,655"
+        "confidence": 44.8,
+        "time": "2026-04-14 12:59:32,643"
       },
       "open_position": {
         "direction": "LONG",
@@ -157,7 +157,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 12:49:56,936 - INFO - BTC: $74448.15",
+      "last_update": "2026-04-14 12:59:56,454 - INFO - BTC: $74499.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -185,7 +185,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T12:50:03.162565",
+    "updated_at": "2026-04-14T13:00:02.711129",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -237,7 +237,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 11.2,
+        "age_minutes": 21.2,
         "is_fresh": true
       },
       "groq": {
@@ -287,7 +287,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 226.3,
+        "age_minutes": 236.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -304,7 +304,7 @@
           "volume_24h": 58509953178.7798
         },
         "actionable": true,
-        "age_minutes": 35.0,
+        "age_minutes": 44.9,
         "is_fresh": true
       }
     },
