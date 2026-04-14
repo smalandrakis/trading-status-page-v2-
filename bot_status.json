@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T15:30:01.928529",
+  "generated_at": "2026-04-14T15:40:01.624075",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 15:28:54,813",
+      "last_update": "2026-04-14 15:38:57,585",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.2,
-        "time": "2026-04-14 15:28:54,813"
+        "confidence": 43.5,
+        "time": "2026-04-14 15:38:57,585"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 15:28:54,807",
+      "last_update": "2026-04-14 15:38:57,685",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.2,
-        "time": "2026-04-14 15:28:54,807"
+        "confidence": 43.5,
+        "time": "2026-04-14 15:38:57,685"
       },
       "open_position": null,
       "performance": {
@@ -157,7 +157,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 15:29:51,972 - INFO - BTC: $74299.99",
+      "last_update": "2026-04-14 15:39:56,730 - INFO - BTC: $74354.89",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -170,7 +170,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 68.0,
-        "time": "2026-04-14 15:29:51,972"
+        "time": "2026-04-14 15:39:56,730"
       },
       "open_position": null,
       "performance": {
@@ -185,7 +185,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T15:30:02.755018",
+    "updated_at": "2026-04-14T15:40:02.466018",
     "signals": {
       "cerebras": {
         "direction": "SHORT",
@@ -240,7 +240,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 35.4,
+        "age_minutes": 45.4,
         "is_fresh": true
       },
       "groq": {
@@ -290,7 +290,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 386.3,
+        "age_minutes": 396.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -307,7 +307,7 @@
           "volume_24h": 59040116729.76406
         },
         "actionable": true,
-        "age_minutes": 15.0,
+        "age_minutes": 25.0,
         "is_fresh": true
       }
     },
