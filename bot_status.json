@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-14T22:40:02.008074",
+  "generated_at": "2026-04-14T22:40:13.875176",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-14T22:40:02.008091"
+    "last_health_check": "2026-04-14T22:40:13.875211"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 22:38:02,900",
+      "last_update": "2026-04-14 22:40:12,908",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 22:38:02,922",
+      "last_update": "2026-04-14 22:40:13,003",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -199,7 +199,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 22:40:02",
+      "last_update": "2026-04-14 22:40:14",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -226,126 +226,5 @@
       "recent_trades": [],
       "health_status": "CRITICAL"
     }
-  ],
-  "mirofish_predictions": {
-    "updated_at": "2026-04-14T22:40:02.976039",
-    "signals": {
-      "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.5548,
-        "confidence": 0.6271,
-        "bullish_pct": 0.2157,
-        "bearish_pct": 0.0137,
-        "neutral_pct": 0.7706,
-        "agent_count": 12,
-        "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6558,
-        "key_arguments": {
-          "bullish": [
-            "[StackingSats] $74.9K is a gift. Dip? What dip? We\u2019re still -40% from ATH and stacking continues. Fake apps stealing bags don\u2019t change Bitcoin\u2019s fundamentals\u2014self-custody wins long-term. Tether launching a custodial",
-            "[CryptoKaleo] We're cooking with gas here\u2014$76K smashed, extreme fear at 21, and now Deutsche B\u00f6rse drops a $200M bomb on Kraken? This is institutional FOMO phase one. Tether launching self-custodial with cloud back"
-          ],
-          "bearish": []
-        },
-        "timestamp": "2026-04-14T18:09:39.059658+00:00",
-        "metadata": {
-          "role_weights": {
-            "whale": 2.0,
-            "institutional": 2.0,
-            "macro_analyst": 1.8,
-            "on_chain_analyst": 1.5,
-            "quant": 1.5,
-            "market_maker": 1.3,
-            "contrarian": 1.2,
-            "momentum_trader": 1.2,
-            "ct_influencer": 0.8,
-            "retail_bull": 0.6,
-            "retail_bear": 0.6,
-            "hodler": 0.5
-          },
-          "round_weight_decay": 0.6,
-          "run_duration_sec": 9577.6,
-          "num_agents": 12,
-          "num_rounds": 3,
-          "total_posts": 24,
-          "market_data_summary": {
-            "price": 74905,
-            "change_24h": 4.05,
-            "fear_greed": 21
-          }
-        },
-        "age_minutes": 90.4,
-        "is_fresh": true
-      },
-      "groq": {
-        "direction": "NEUTRAL",
-        "strength": 0.7478,
-        "confidence": 0.5583,
-        "bullish_pct": 0.1013,
-        "bearish_pct": 0.0495,
-        "neutral_pct": 0.8491,
-        "agent_count": 12,
-        "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.7737,
-        "key_arguments": {
-          "bullish": [
-            "[StackingSats] The recent short squeeze has pushed Bitcoin above $74,000, and I see this as a perfect opportunity to accumulate more BTC. The Fear & Greed Index's extreme fear reading only confirms my conviction, as",
-            "[DiamondHands420] The FOMO is real and I'm loving every minute of it. Bitcoin surging near $75,000 and short liquidations accelerating is music to my ears. I'm holding strong and shouting 'HODL' as the Fear & Greed Ind"
-          ],
-          "bearish": [
-            "[BearishBob] The recent pump to $74,203 is just a dead cat bounce, fueled by the short squeeze sparked by Iran deal hopes. The Fear & Greed Index is still in extreme fear territory, which I believe is a sign of a "
-          ]
-        },
-        "timestamp": "2026-04-14T06:03:44.808979+00:00",
-        "metadata": {
-          "role_weights": {
-            "whale": 2.0,
-            "institutional": 2.0,
-            "macro_analyst": 1.8,
-            "on_chain_analyst": 1.5,
-            "quant": 1.5,
-            "market_maker": 1.3,
-            "contrarian": 1.2,
-            "momentum_trader": 1.2,
-            "ct_influencer": 0.8,
-            "retail_bull": 0.6,
-            "retail_bear": 0.6,
-            "hodler": 0.5
-          },
-          "round_weight_decay": 0.6,
-          "run_duration_sec": 222.7,
-          "num_agents": 12,
-          "num_rounds": 3,
-          "total_posts": 36,
-          "market_data_summary": {
-            "price": 74203,
-            "change_24h": 4.72,
-            "fear_greed": 21
-          }
-        },
-        "age_minutes": 816.3,
-        "is_fresh": true
-      },
-      "mirofish_full": {
-        "timestamp": "2026-04-14T19:15:07.902183+00:00",
-        "direction": "LONG",
-        "strength": 0.6,
-        "confidence": 0.7,
-        "reasoning": "Positive 24h change of 2.76% indicates bullish momentum. Strong trading volume of $65.8B suggests institutional activity. Price above $74K shows resistance breakout. Watch for profit-taking at $75K.",
-        "source": "mirofish-simple",
-        "model_id": "claude-3.5-sonnet",
-        "market_data": {
-          "price": 74352,
-          "change_24h": 2.763338312285613,
-          "volume_24h": 65837471227.919716
-        },
-        "actionable": true,
-        "age_minutes": 24.9,
-        "is_fresh": true
-      }
-    },
-    "status": "active"
-  }
+  ]
 }
