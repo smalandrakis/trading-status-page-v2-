@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-14T18:50:01.883665",
+  "generated_at": "2026-04-14T19:00:02.101236",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-14T18:50:01.883692"
+    "last_health_check": "2026-04-14T19:00:02.101257"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 18:48:19,234",
+      "last_update": "2026-04-14 18:58:22,139",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 59.8,
-        "time": "2026-04-14 18:48:19,234"
+        "confidence": 55.8,
+        "time": "2026-04-14 18:58:22,139"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 18:49:56,139",
+      "last_update": "2026-04-14 18:59:58,850",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 60.6,
-        "time": "2026-04-14 18:49:56,139"
+        "confidence": 55.6,
+        "time": "2026-04-14 18:59:58,850"
       },
       "open_position": null,
       "performance": {
@@ -194,12 +194,12 @@
           "hold_minutes": 4.0
         }
       ],
-      "health_status": "HEALTHY"
+      "health_status": "WARNING"
     },
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 18:49:49,229 - INFO - BTC: $75210.19",
+      "last_update": "2026-04-14 18:59:49,050 - INFO - BTC: $75329.52",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -212,7 +212,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 68.0,
-        "time": "2026-04-14 18:49:49,229"
+        "time": "2026-04-14 18:55:31,362"
       },
       "open_position": null,
       "performance": {
@@ -228,32 +228,29 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T18:50:02.574708",
+    "updated_at": "2026-04-14T19:00:02.860091",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.335,
-        "confidence": 0.6533,
-        "bullish_pct": 0.1815,
-        "bearish_pct": 0.2418,
-        "neutral_pct": 0.5768,
+        "strength": 0.4327,
+        "confidence": 0.6203,
+        "bullish_pct": 0.2503,
+        "bearish_pct": 0.0667,
+        "neutral_pct": 0.683,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.3652,
+        "consensus_score": 0.5245,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] LFG! $74.6K is nothing\u2014Deutsche B\u00f6rse\u2019s $200M Kraken play is a MASSIVE institutional green light, and Nauru\u2019s digital asset push proves nation-states are all-in. ETF outflows? Just noise\u2014probably FBTC",
-            "[StackingSats] $74.6K is a discount as institutions accumulate through regulated channels\u2014Deutsche B\u00f6rse\u2019s $200M Kraken investment and Nauru\u2019s digital asset push reflect irreversible adoption. ETF outflows are tempo",
-            "[CryptoKaleo] This rally is **not** about ETF flows \u2014 it's about institutional *infrastructure* being built in real time. Deutsche B\u00f6rse\u2019s $200M Kraken play is a siren call to global finance: crypto is no longer fr"
+            "[FadeTheCrowd] Price ripped to $75.8K on a short squeeze and noise around X, Nauru, and Kraken \u2014 but Fear & Greed at 21 shows most are still scared. That\u2019s when I get greedy. This rally looks technical, not fundamen",
+            "[CryptoKaleo] $75.8K isn\u2019t just a technical breakout \u2014 it\u2019s a narrative explosion. Deutsche B\u00f6rse\u2019s $200M Kraken stamp, X\u2019s crypto \u201cfix\u201d tease, and Nauru\u2019s Bitcoin diplomacy are converging into a full-blown institu"
           ],
           "bearish": [
-            "[DeepPockets] $74.7K is a trap\u2014short squeeze mechanics explain the spike, not organic demand. $291M in ETF outflows, led by FBTC, confirms institutional and retail weakness, while Deutsche B\u00f6rse\u2019s Kraken move is a ",
-            "[BearishBob] Another short-squeeze pump to $74.7K on the back of zero buying pressure\u2014$291M in ETF outflows, led by FBTC, screams retail exhaustion, not strength. Deutsche B\u00f6rse\u2019s $200M Kraken play is institutiona",
-            "[FadeTheCrowd] Price rejected $70K just days ago and now surges to $74.7K on zero real demand\u2014$291M in ETF outflows, FBTC bleeding, and weak volume behind the move. This is another forced short squeeze, not convicti"
+            "[DeltaNeutral] Price at $75,801 with strong volume and a flush through liquidations above $74K confirms mechanical squeeze dynamics. Order book depth remains skewed long-heavy near $76K, and gamma exposure flips neg"
           ]
         },
-        "timestamp": "2026-04-14T13:42:11.513650+00:00",
+        "timestamp": "2026-04-14T15:55:21.578846+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -270,17 +267,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 729.8,
+          "run_duration_sec": 5119.9,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 32,
           "market_data_summary": {
-            "price": 74668,
-            "change_24h": 4.87,
+            "price": 75801,
+            "change_24h": 5.79,
             "fear_greed": 21
           }
         },
-        "age_minutes": 127.9,
+        "age_minutes": 4.7,
         "is_fresh": true
       },
       "groq": {
@@ -330,7 +327,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 586.3,
+        "age_minutes": 596.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -347,7 +344,7 @@
           "volume_24h": 64852916747.54665
         },
         "actionable": true,
-        "age_minutes": 34.8,
+        "age_minutes": 44.8,
         "is_fresh": true
       }
     },
