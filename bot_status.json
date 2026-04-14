@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T04:10:01.534530",
+  "generated_at": "2026-04-14T04:20:02.064732",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 04:08:51,126",
+      "last_update": "2026-04-14 04:18:53,959",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 56.2,
-        "time": "2026-04-14 04:08:51,126"
+        "confidence": 52.8,
+        "time": "2026-04-14 04:18:53,959"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 04:09:04,429",
+      "last_update": "2026-04-14 04:19:07,163",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 56.2,
-        "time": "2026-04-14 04:09:04,429"
+        "confidence": 52.7,
+        "time": "2026-04-14 04:19:07,163"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 04:08:12,936",
+      "last_update": "2026-04-14 04:18:17,924",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 56.3,
-        "time": "2026-04-14 04:08:12,936"
+        "confidence": 52.4,
+        "time": "2026-04-14 04:18:17,924"
       },
       "open_position": null,
       "performance": {
@@ -161,7 +161,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 03:53:41,401 - INFO -   SHORT",
+      "last_update": "2026-04-14 04:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -243,32 +243,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T04:10:01.751661",
+    "updated_at": "2026-04-14T04:20:02.287809",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1725,
-        "confidence": 0.6864,
-        "bullish_pct": 0.3922,
-        "bearish_pct": 0.043,
-        "neutral_pct": 0.5648,
+        "strength": 0.2296,
+        "confidence": 0.6494,
+        "bullish_pct": 0.2716,
+        "bearish_pct": 0.2272,
+        "neutral_pct": 0.5012,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.3471,
+        "stance_shifts": 1,
+        "consensus_score": 0.2518,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $74.7K is nothing \u2014 we\u2019re grinding higher in the halving cycle with STRC ATM hitting $1B daily volume and real treasury demand from Capital B and Bitmine. The $70.6K dip was absorbed instantly, on-cha",
-            "[DiamondHands420] We\u2019re printing $74.7K like it\u2019s nothing \u2014 STRC ATM $1B volume, Capital B & Bitmine *buying hard*, and the Fear & Greed Index at 12?! This is textbook bottom formation, pure accumulation. Dip to $70.6K",
-            "[FadeTheCrowd] Price retesting $74.7K after holding $70.6K with persistent accumulation by Capital B and Bitmine tells me the early bid is holding. Extreme Fear at 12 with no capitulation, strong volume, and institu",
-            "[DeepPockets] Price at $74.7K with volume backing and institutional bids firmly anchored at $70.6K confirms my cost basis is safe for now. STRC ATM's $1B print and Capital B\u2019s continued accumulation signal strong f",
-            "[CryptoKaleo] We\u2019re in the final act of accumulation\u2014$70.6K was the bottom, period. STRC ATM\u2019s $1B volume, Capital B\u2019s relentless buys, and Bitmine stacking ETH like it\u2019s going out of style prove institutions are m"
+            "[FadeTheCrowd] Price retesting $74.3K on short squeeze energy while Fear & Greed lingers at 21? Classic contrarian setup. The weak hands broke at $70.6K \u2014 that\u2019s the real floor \u2014 and now miners capitulating into ETF",
+            "[DiamondHands420] $74.2K holding STRONG \u2014 this is not just a short squeeze, it's the foundation for the $75K breakout! STRC ATMs doing $1B daily volume, ETFs quietly stacking, and all the fear at 21 F&G is perfect for ",
+            "[StackingSats] $74.2K is a springboard, not resistance\u2014every dip to $70K was a gift for the strong hands. Miner sell pressure is noise; ETFs and STRC ATMs are absorbing supply while the real countdown to halving sca",
+            "[CryptoKaleo] We\u2019re not just riding a short squeeze\u2014we\u2019re igniting a structural breakout. $74.2K is institutional tape, STRC ATMs are printing $1B/day like digital gold foundries, and ETFs are quietly vacuuming up "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $74.7k on headline noise and pump-and-dump theater from Capital B and Bitmine\u2014zero organic demand, all synthetic. Kraken\u2019s breach and SEC overreach confirm regulatory rot; $75k is a"
+            "[BearishBob] Another fakeout toward $75K on a short squeeze? Classic bear trap. Thin order book, weak volume follow-through, and miners still dumping \u2014 this rally\u2019s built on sand. ETF demand won\u2019t save you when ma",
+            "[DeltaNeutral] Price at $74.28k reflects a mechanical short squeeze with limited follow-through\u2014order book depth remains thin above $75k and funding rates are neutral, indicating lack of aggressive long positioning.",
+            "[AlphaQuant] Price at $74,280 reflects a short-term dislocation driven by liquidations, not structural demand. Volume lacks expansion relative to prior breakouts, and miner supply pressure remains unresolved\u2014beari"
           ]
         },
-        "timestamp": "2026-04-13T23:35:01.089719+00:00",
+        "timestamp": "2026-04-14T01:18:28.376728+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -285,17 +286,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 299.6,
+          "run_duration_sec": 2906.4,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 33,
           "market_data_summary": {
-            "price": 74704,
-            "change_24h": 5.61,
-            "fear_greed": 12
+            "price": 74280,
+            "change_24h": 4.58,
+            "fear_greed": 21
           }
         },
-        "age_minutes": 95.0,
+        "age_minutes": 1.6,
         "is_fresh": true
       },
       "groq": {
@@ -345,24 +346,24 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 1146.4,
+        "age_minutes": 1156.4,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-14T00:15:04.688988+00:00",
+        "timestamp": "2026-04-14T01:15:04.740645+00:00",
         "direction": "LONG",
-        "strength": 0.65,
+        "strength": 0.68,
         "confidence": 0.75,
-        "reasoning": "Strong 4.85% 24h gain with high volume indicates bullish momentum. Price above $74K suggests market confidence post-ETF inflows. Near ATH creates upside potential, though caution warranted at these levels.",
+        "reasoning": "Strong positive 24h momentum (+4.34%) with high trading volume indicating sustained buying pressure. Price above key psychological $70k level with potential for continued upward movement in current bullish trend.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74314,
-          "change_24h": 4.8543716282676215,
-          "volume_24h": 53716945326.95516
+          "price": 74251,
+          "change_24h": 4.337258508747256,
+          "volume_24h": 55194983528.23509
         },
         "actionable": true,
-        "age_minutes": 55.0,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
