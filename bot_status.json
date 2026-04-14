@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T16:40:01.936470",
+  "generated_at": "2026-04-14T16:50:01.693302",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 16:40:01",
+      "last_update": "2026-04-14 16:50:01",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -19,9 +19,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 49.0,
-        "time": "2026-04-14 16:35:13,460"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 16:39:14,780",
+      "last_update": "2026-04-14 16:49:17,917",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.7,
-        "time": "2026-04-14 16:39:14,780"
+        "confidence": 55.2,
+        "time": "2026-04-14 16:49:17,917"
       },
       "open_position": null,
       "performance": {
@@ -157,7 +157,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 16:39:49,914 - INFO - BTC: $74879.90",
+      "last_update": "2026-04-14 16:49:50,068 - INFO - BTC: $75107.64",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -170,7 +170,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 68.0,
-        "time": "2026-04-14 16:39:49,914"
+        "time": "2026-04-14 16:42:33,246"
       },
       "open_position": null,
       "performance": {
@@ -185,34 +185,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T16:40:02.762130",
+    "updated_at": "2026-04-14T16:50:02.487458",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1649,
-        "confidence": 0.6778,
-        "bullish_pct": 0.2604,
-        "bearish_pct": 0.2873,
-        "neutral_pct": 0.4523,
+        "strength": 0.335,
+        "confidence": 0.6533,
+        "bullish_pct": 0.1815,
+        "bearish_pct": 0.2418,
+        "neutral_pct": 0.5768,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.1784,
+        "stance_shifts": 1,
+        "consensus_score": 0.3652,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Another dip bought. ETF outflows are noise\u2014Kraken\u2019s institutional validation and Nauru\u2019s sovereign adoption signal long-term accumulation. $74K is a layup before the 2028 halving; I\u2019m stacking steady.",
-            "[CryptoKaleo] This $74.3K print isn\u2019t a breakout \u2014 it\u2019s a *blastoff*. ETF outflows? Dead money fleeing while Deutsche B\u00f6rse\u2019s $200M Kraken shot signals *real* institutional war chest buildup. Nauru\u2019s sovereignty pl",
-            "[DiamondHands420] $74.8K is cracking and we\u2019re about to rocket to $75K+ \u2014 ETF outflows are just weak hands selling into the greatest story ever told! Deutsche B\u00f6rse + Kraken is institutional FOMO ignition, Nauru\u2019s sove",
-            "[TrendRider] Price testing $74.8K again with strong momentum and short liquidations confirms bullish force, even amid $291M ETF outflows \u2014 a classic sign of weak hands exiting as leverage fuels the move. I trust t"
+            "[DiamondHands420] LFG! $74.6K is nothing\u2014Deutsche B\u00f6rse\u2019s $200M Kraken play is a MASSIVE institutional green light, and Nauru\u2019s digital asset push proves nation-states are all-in. ETF outflows? Just noise\u2014probably FBTC",
+            "[StackingSats] $74.6K is a discount as institutions accumulate through regulated channels\u2014Deutsche B\u00f6rse\u2019s $200M Kraken investment and Nauru\u2019s digital asset push reflect irreversible adoption. ETF outflows are tempo",
+            "[CryptoKaleo] This rally is **not** about ETF flows \u2014 it's about institutional *infrastructure* being built in real time. Deutsche B\u00f6rse\u2019s $200M Kraken play is a siren call to global finance: crypto is no longer fr"
           ],
           "bearish": [
-            "[DeltaNeutral] Price at $74.3K into $74.8K resistance with $291M ETF outflows and thin order book depth confirms lack of institutional bid. Short liquidations are mechanical squeeze flows, not sustained accumulation",
-            "[FadeTheCrowd] Price probing $74.8K on weak volume, record ETF outflows ($291M), and extreme fear (21) confirms a liquidity-driven short squeeze, not structural demand. Institutional exit pressure remains high, and ",
-            "[AlphaQuant] Price at $74.3K with $291M in ETF outflows and thin order book depth above confirms a supply zone forming near $74.8K. Short liquidations are mechanical, not directional \u2014 absence of volume-supported ",
-            "[BearishBob] Another fakeout at resistance. $74.8K is a known supply zone, and this pump on *massive* ETF outflows ($291M) reeks of a short squeeze, not real demand. Institutions are exiting while retail chases he"
+            "[DeepPockets] $74.7K is a trap\u2014short squeeze mechanics explain the spike, not organic demand. $291M in ETF outflows, led by FBTC, confirms institutional and retail weakness, while Deutsche B\u00f6rse\u2019s Kraken move is a ",
+            "[BearishBob] Another short-squeeze pump to $74.7K on the back of zero buying pressure\u2014$291M in ETF outflows, led by FBTC, screams retail exhaustion, not strength. Deutsche B\u00f6rse\u2019s $200M Kraken play is institutiona",
+            "[FadeTheCrowd] Price rejected $70K just days ago and now surges to $74.7K on zero real demand\u2014$291M in ETF outflows, FBTC bleeding, and weak volume behind the move. This is another forced short squeeze, not convicti"
           ]
         },
-        "timestamp": "2026-04-14T12:53:41.527141+00:00",
+        "timestamp": "2026-04-14T13:42:11.513650+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -229,17 +227,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1419.8,
+          "run_duration_sec": 729.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74314,
-            "change_24h": 4.83,
+            "price": 74668,
+            "change_24h": 4.87,
             "fear_greed": 21
           }
         },
-        "age_minutes": 46.4,
+        "age_minutes": 7.8,
         "is_fresh": true
       },
       "groq": {
@@ -289,7 +287,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 456.3,
+        "age_minutes": 466.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -306,7 +304,7 @@
           "volume_24h": 58813801035.28061
         },
         "actionable": true,
-        "age_minutes": 24.9,
+        "age_minutes": 34.9,
         "is_fresh": true
       }
     },
