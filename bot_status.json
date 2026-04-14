@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-14T23:10:01.883919",
+  "generated_at": "2026-04-14T23:20:01.043164",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-14T23:10:01.883933"
+    "last_health_check": "2026-04-14T23:20:01.043186"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 23:08:46,485",
+      "last_update": "2026-04-14 23:18:48,188",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.7,
-        "time": "2026-04-14 23:08:46,485"
+        "confidence": 45.2,
+        "time": "2026-04-14 23:18:48,188"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 23:08:47,155",
+      "last_update": "2026-04-14 23:18:49,142",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.7,
-        "time": "2026-04-14 23:08:47,155"
+        "confidence": 45.2,
+        "time": "2026-04-14 23:18:49,142"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 23:10:01",
+      "last_update": "2026-04-14 23:19:34,949 - INFO - [HEARTBEAT] Price: $74,306.57",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -101,35 +101,20 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "NEUTRAL",
+        "confidence": 50.0,
+        "time": "2026-04-14 23:19:08,280"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 74760.28,
-        "tp_price": 74386.4786,
-        "sl_price": 74872.42042000001,
-        "entry_time": "unknown",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 18,
-        "wins": 7,
+        "total_trades": 19,
+        "wins": 8,
         "losses": 11,
-        "win_rate": 38.9,
-        "total_pnl": -140.6,
-        "avg_pnl": -7.81
+        "win_rate": 42.1,
+        "total_pnl": -22.63,
+        "avg_pnl": -1.19
       },
       "recent_trades": [
-        {
-          "time": "2026-04-14T18:08:43.611895",
-          "direction": "LONG",
-          "pnl": -37.92,
-          "pnl_pct": -0.17,
-          "hold_minutes": 2.0
-        },
         {
           "time": "2026-04-14T18:20:25.453404",
           "direction": "SHORT",
@@ -192,6 +177,13 @@
           "pnl": -39.64,
           "pnl_pct": -0.18,
           "hold_minutes": 7.0
+        },
+        {
+          "time": "2026-04-14T23:15:49.843917",
+          "direction": "SHORT",
+          "pnl": 117.97,
+          "pnl_pct": 0.53,
+          "hold_minutes": 113.0
         }
       ],
       "health_status": "WARNING"
@@ -199,7 +191,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 23:10:02",
+      "last_update": "2026-04-14 23:19:57,505 - INFO - BTC: $74306.58",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -210,9 +202,9 @@
         "expected_pnl_2yr": 18000
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 60.0,
+        "time": "2026-04-14 23:16:17,082"
       },
       "open_position": null,
       "performance": {
@@ -228,28 +220,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T23:10:02.751189",
+    "updated_at": "2026-04-14T23:20:01.781421",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4069,
-        "confidence": 0.6348,
-        "bullish_pct": 0.2596,
-        "bearish_pct": 0.0739,
-        "neutral_pct": 0.6665,
+        "strength": 0.1783,
+        "confidence": 0.6405,
+        "bullish_pct": 0.3681,
+        "bearish_pct": 0.0855,
+        "neutral_pct": 0.5464,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.4997,
+        "stance_shifts": 1,
+        "consensus_score": 0.3196,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $75.3K is just a pit stop \u2014 we\u2019re blowing past $76.2K! Goldman\u2019s ETF filing is WALL STREET capitulation, and the short squeeze isn\u2019t even close to over. Weak hands at $70K are already crying, but I\u2019m "
+            "[TrendRider] Price has breached $76K on headline-driven short squeeze momentum, but volume remains sub-cyclical and lacks confirming institutional accumulation. The breakdown of immediate resistance now targets $7",
+            "[FadeTheCrowd] Price kissed $76K on headline-driven shorts, but the real story is the persistent Extreme Fear at $74.7K \u2014 classic late-stage capitulation. Thin volume and lukewarm on-chain accumulation suggest this ",
+            "[CryptoKaleo] $74.7K is a stepping stone, not a stand. The Goldman $3.5T ETF filing isn\u2019t just institutional adoption\u2014it\u2019s a hostile takeover of legacy finance by Bitcoin\u2019s inevitability. Warsh\u2019s Lightning stake? A"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $76K on a short squeeze? Classic trap. PPI relief and Goldman\u2019s ETF filing are just noise\u2014this is distribution by smart money while the greater fools pile in. On-chain shows whales "
+            "[BearishBob] Another fakeout at $76K on headline noise and short-term squeezes\u2014volume is still thin and lacks real institutional accumulation. Goldman\u2019s \"Premium Income ETF\" is just yield harvesting, not organic d"
           ]
         },
-        "timestamp": "2026-04-14T19:56:38.235973+00:00",
+        "timestamp": "2026-04-14T20:16:24.490758+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -266,17 +260,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 12396.8,
+          "run_duration_sec": 9982.5,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 21,
+          "total_posts": 22,
           "market_data_summary": {
-            "price": 75334,
-            "change_24h": 4.44,
+            "price": 74764,
+            "change_24h": 3.25,
             "fear_greed": 21
           }
         },
-        "age_minutes": 13.4,
+        "age_minutes": 3.6,
         "is_fresh": true
       },
       "groq": {
@@ -326,24 +320,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 846.3,
+        "age_minutes": 856.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-14T19:15:07.902183+00:00",
+        "timestamp": "2026-04-14T20:15:06.207892+00:00",
         "direction": "LONG",
         "strength": 0.6,
         "confidence": 0.7,
-        "reasoning": "Positive 24h change of 2.76% indicates bullish momentum. Strong trading volume of $65.8B suggests institutional activity. Price above $74K shows resistance breakout. Watch for profit-taking at $75K.",
+        "reasoning": "Positive price action (+1.65%) with strong volume supporting upward momentum. BTC holding above 70K suggests bullish sentiment. Monitor for resistance near 75K and potential profit-taking.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74352,
-          "change_24h": 2.763338312285613,
-          "volume_24h": 65837471227.919716
+          "price": 74392,
+          "change_24h": 1.6474942467968834,
+          "volume_24h": 64075280252.15639
         },
         "actionable": true,
-        "age_minutes": 54.9,
+        "age_minutes": 4.9,
         "is_fresh": true
       }
     },
