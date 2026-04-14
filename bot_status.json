@@ -1,14 +1,14 @@
 {
-  "generated_at": "2026-04-14T10:50:01.302306",
+  "generated_at": "2026-04-14T11:00:05.763531",
   "binance_connection": {
-    "status": "connected",
-    "message": "Binance API accessible"
+    "status": "disconnected",
+    "message": "HTTPSConnectionPool(host='api.binance.com', port=443): Read timed out. (read timeout=5)"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 10:44:26,604",
+      "last_update": "2026-04-14 10:58:09,901",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.8,
-        "time": "2026-04-14 10:44:26,604"
+        "confidence": 46.3,
+        "time": "2026-04-14 10:58:09,901"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 10:44:47,433",
+      "last_update": "2026-04-14 10:58:09,901",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,103 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.8,
-        "time": "2026-04-14 10:44:47,433"
-      },
-      "open_position": null,
-      "performance": {
-        "total_trades": 0,
-        "wins": 0,
-        "losses": 0,
-        "win_rate": 0,
-        "total_pnl": 0,
-        "avg_pnl": 0
-      },
-      "recent_trades": []
-    },
-    {
-      "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
-      "status": "running",
-      "last_update": "2026-04-14 10:15:31,053",
-      "config": {
-        "tp_pct": 2.5,
-        "sl_pct": 1.0,
-        "long_threshold": 0.65,
-        "short_threshold": 0.25,
-        "expected_trades_per_week": "5-6",
-        "expected_win_rate": 52.6,
-        "expected_pnl_2yr": 16577
-      },
-      "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 51.3,
-        "time": "2026-04-14 10:13:30,657"
-      },
-      "open_position": {
-        "direction": "LONG",
-        "size": 1,
-        "entry_price": 0,
-        "tp_price": 76582.875,
-        "sl_price": 73967.85,
-        "entry_time": "unknown",
-        "adopted": false
-      },
-      "performance": {
-        "total_trades": 0,
-        "wins": 0,
-        "losses": 0,
-        "win_rate": 0,
-        "total_pnl": 0,
-        "avg_pnl": 0
-      },
-      "recent_trades": []
-    },
-    {
-      "name": "BTC High Frequency V2 (1.0/0.5) [Bot-Managed]",
-      "status": "running",
-      "last_update": "2026-04-13 19:22:15,481",
-      "config": {
-        "tp_pct": 1.0,
-        "sl_pct": 0.5,
-        "long_threshold": 0.65,
-        "short_threshold": 0.25,
-        "expected_trades_per_week": "7-8",
-        "expected_win_rate": 33.7,
-        "expected_pnl_2yr": 11689
-      },
-      "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 54.0,
-        "time": "2026-04-13 19:22:15,481"
-      },
-      "open_position": null,
-      "performance": {
-        "total_trades": 0,
-        "wins": 0,
-        "losses": 0,
-        "win_rate": 0,
-        "total_pnl": 0,
-        "avg_pnl": 0
-      },
-      "recent_trades": []
-    },
-    {
-      "name": "BTC Micro-Movement (0.3/0.1) [Adaptive Learning]",
-      "status": "running",
-      "last_update": "2026-04-13 19:23:00,587",
-      "config": {
-        "tp_pct": 0.3,
-        "sl_pct": 0.1,
-        "long_threshold": 0.5,
-        "short_threshold": 0.3,
-        "expected_trades_per_week": "10-15",
-        "expected_win_rate": "TBD (backtest running)",
-        "expected_pnl_2yr": "TBD"
-      },
-      "current_signal": {
-        "signal": "LONG",
-        "confidence": 53.5,
-        "time": "2026-04-13 19:23:00,587"
+        "confidence": 46.3,
+        "time": "2026-04-14 10:58:09,901"
       },
       "open_position": null,
       "performance": {
@@ -169,7 +74,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 10:50:01",
+      "last_update": "2026-04-14 11:00:05",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -184,8 +89,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 30.5,
-        "time": "2026-04-14 10:49:47,076"
+        "confidence": 32.3,
+        "time": "2026-04-14 10:58:05,317"
       },
       "open_position": {
         "direction": "LONG",
@@ -248,10 +153,39 @@
           "hold_minutes": 240
         }
       ]
+    },
+    {
+      "name": "BTC Ensemble Bot (0.5/0.25)",
+      "status": "running",
+      "last_update": "2026-04-14 11:00:06",
+      "config": {
+        "tp_pct": 0.5,
+        "sl_pct": 0.25,
+        "long_threshold": 0.65,
+        "short_threshold": 0.25,
+        "expected_trades_per_week": "10-12",
+        "expected_win_rate": 45.0,
+        "expected_pnl_2yr": 18000
+      },
+      "current_signal": {
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
+      },
+      "open_position": null,
+      "performance": {
+        "total_trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate": 0,
+        "total_pnl": 0,
+        "avg_pnl": 0
+      },
+      "recent_trades": []
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T10:50:01.541390",
+    "updated_at": "2026-04-14T11:00:06.784914",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -303,7 +237,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 55.7,
+        "age_minutes": 65.8,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +287,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 106.3,
+        "age_minutes": 116.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +304,7 @@
           "volume_24h": 55778266134.45203
         },
         "actionable": true,
-        "age_minutes": 35.0,
+        "age_minutes": 45.0,
         "is_fresh": true
       }
     },
