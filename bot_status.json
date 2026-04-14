@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T04:50:02.247566",
+  "generated_at": "2026-04-14T05:00:01.665235",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 04:49:00,600",
+      "last_update": "2026-04-14 04:59:03,341",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.4,
-        "time": "2026-04-14 04:49:00,600"
+        "confidence": 53.0,
+        "time": "2026-04-14 04:59:03,341"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 04:49:15,338",
+      "last_update": "2026-04-14 04:59:17,846",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.4,
-        "time": "2026-04-14 04:49:15,338"
+        "confidence": 53.0,
+        "time": "2026-04-14 04:59:17,846"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 04:48:34,790",
+      "last_update": "2026-04-14 04:58:39,900",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 58.3,
-        "time": "2026-04-14 04:48:34,790"
+        "confidence": 53.0,
+        "time": "2026-04-14 04:58:39,900"
       },
       "open_position": null,
       "performance": {
@@ -243,33 +243,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T04:50:02.476196",
+    "updated_at": "2026-04-14T05:00:01.913156",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2296,
-        "confidence": 0.6494,
-        "bullish_pct": 0.2716,
-        "bearish_pct": 0.2272,
-        "neutral_pct": 0.5012,
+        "strength": 0.6196,
+        "confidence": 0.6463,
+        "bullish_pct": 0.1665,
+        "bearish_pct": 0.0475,
+        "neutral_pct": 0.7861,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.2518,
+        "stance_shifts": 0,
+        "consensus_score": 0.6791,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price retesting $74.3K on short squeeze energy while Fear & Greed lingers at 21? Classic contrarian setup. The weak hands broke at $70.6K \u2014 that\u2019s the real floor \u2014 and now miners capitulating into ETF",
-            "[DiamondHands420] $74.2K holding STRONG \u2014 this is not just a short squeeze, it's the foundation for the $75K breakout! STRC ATMs doing $1B daily volume, ETFs quietly stacking, and all the fear at 21 F&G is perfect for ",
-            "[StackingSats] $74.2K is a springboard, not resistance\u2014every dip to $70K was a gift for the strong hands. Miner sell pressure is noise; ETFs and STRC ATMs are absorbing supply while the real countdown to halving sca",
-            "[CryptoKaleo] We\u2019re not just riding a short squeeze\u2014we\u2019re igniting a structural breakout. $74.2K is institutional tape, STRC ATMs are printing $1B/day like digital gold foundries, and ETFs are quietly vacuuming up "
+            "[DiamondHands420] $74.3K and still FOMOing harder! Short liquidations pumping, ETF demand + STRC ATM hitting $1B volume \u2014 this is the canary in the coal mine for retail explosion. Kraken FUD already priced in, miners c",
+            "[CryptoKaleo] We're at liftoff \u2014 $74.3K on extreme fear (21), massive short liquidations, STRC ATM hitting $1B volume, and ETF demand on fire. Kraken FUD is washed, miners are capitulating, and institutions are qui",
+            "[StackingSats] $74.3K on extreme fear (21) with accelerating short liquidations, $1B STRC ATM volume surge, and ETF demand intensifying is textbook accumulation phase. Miner capitulation is a myth \u2014 hash rate is hol"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout toward $75K on a short squeeze? Classic bear trap. Thin order book, weak volume follow-through, and miners still dumping \u2014 this rally\u2019s built on sand. ETF demand won\u2019t save you when ma",
-            "[DeltaNeutral] Price at $74.28k reflects a mechanical short squeeze with limited follow-through\u2014order book depth remains thin above $75k and funding rates are neutral, indicating lack of aggressive long positioning.",
-            "[AlphaQuant] Price at $74,280 reflects a short-term dislocation driven by liquidations, not structural demand. Volume lacks expansion relative to prior breakouts, and miner supply pressure remains unresolved\u2014beari"
+            "[BearishBob] Another fakeout pumping into $75.2K \u2014 same resistance level holding since last week. Volume fades as price approaches key barrier, short squeezes are temporary, and ETF noise can't hide weak follow-th"
           ]
         },
-        "timestamp": "2026-04-14T01:18:28.376728+00:00",
+        "timestamp": "2026-04-14T01:54:16.992273+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -286,17 +283,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2906.4,
+          "run_duration_sec": 1454.7,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 33,
+          "total_posts": 35,
           "market_data_summary": {
-            "price": 74280,
-            "change_24h": 4.58,
+            "price": 74308,
+            "change_24h": 4.47,
             "fear_greed": 21
           }
         },
-        "age_minutes": 31.6,
+        "age_minutes": 5.7,
         "is_fresh": true
       },
       "groq": {
@@ -346,7 +343,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 1186.4,
+        "age_minutes": 1196.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -363,7 +360,7 @@
           "volume_24h": 55194983528.23509
         },
         "actionable": true,
-        "age_minutes": 35.0,
+        "age_minutes": 45.0,
         "is_fresh": true
       }
     },
