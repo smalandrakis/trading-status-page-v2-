@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T13:40:01.218394",
+  "generated_at": "2026-04-14T13:50:01.908487",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 13:39:28,682",
+      "last_update": "2026-04-14 13:49:32,069",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 44.8,
-        "time": "2026-04-14 13:39:28,682"
+        "confidence": 47.4,
+        "time": "2026-04-14 13:49:32,069"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 13:39:28,772",
+      "last_update": "2026-04-14 13:49:32,081",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 44.8,
-        "time": "2026-04-14 13:39:28,772"
+        "confidence": 47.4,
+        "time": "2026-04-14 13:49:32,081"
       },
       "open_position": null,
       "performance": {
@@ -157,7 +157,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 13:39:58,998 - INFO - BTC: $74400.00",
+      "last_update": "2026-04-14 13:49:51,465 - INFO - BTC: $74390.88",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -185,32 +185,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T13:40:02.216926",
+    "updated_at": "2026-04-14T13:50:02.829893",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3612,
-        "confidence": 0.6669,
-        "bullish_pct": 0.2795,
-        "bearish_pct": 0.0798,
-        "neutral_pct": 0.6407,
+        "strength": 0.2731,
+        "confidence": 0.6672,
+        "bullish_pct": 0.339,
+        "bearish_pct": 0.0489,
+        "neutral_pct": 0.6121,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.461,
+        "consensus_score": 0.4182,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $74.8K BREAK CONFIRMED \u2014 this is NOT a trap, it's a tombstone for the weak hands still praying for a $50K flush! With $1B STRC volume and Kraken drama just fueling FUD, institutions are accumulating H",
-            "[StackingSats] $74.8K break with accelerating STRC volume and short liquidations is not noise \u2014 it's the canary in the coal mine for the next leg up. The $50K \"flush\" narrative clings to sentiment, not supply; halvi",
-            "[TrendRider] Price reclaimed $74.8K with strong volume and short liquidations \u2014 yet again, the trend is flushing out weak hands. I trust the momentum and breakout structure over sentiment noise; \"Extreme Fear\" at ",
-            "[CryptoKaleo] $74.6K isn\u2019t a top \u2014 it\u2019s a trap for the weak hands still buying the $50K flush fairytale. The STRC $1B volume surge, short liquidations, and lack of exchange inflows scream accumulation in motion, no"
+            "[StackingSats] $74.6K isn\u2019t resistance \u2014 it\u2019s a springboard. The $1B STRC ATM volume and cascading short liquidations confirm institutional accumulation amid fear-driven capitulation. \"Extreme Fear\" at $74K with acc",
+            "[CryptoKaleo] This $74.6K print isn\u2019t just a bounce \u2014 it\u2019s a violent institutional repositioning masked as fear. The $1B STRC ATM volume isn\u2019t noise, it\u2019s war fuel. Shorts are getting vaporized, weak hands dumped i",
+            "[FadeTheCrowd] Price grinding toward $74.8K on extreme fear (21) and cascading short liquidations confirms the shakeout is climaxing. The $50K bear narrative is a fading echo\u2014liquidity is being swept, and the $1B ST",
+            "[DiamondHands420] We're LITERALLY printing $75K with $1B STRC ATM volume and short liquidations FUELING the rocket \u2014 this is what capitulation looks like for weak hands! All this $50K fear porn is just FUD from bears g",
+            "[TrendRider] Price at $74.6K is testing a well-established resistance zone, but the confluence of strong volume, short liquidations, and $1B STRC ATM activity shows momentum is accelerating. RSI rising from neutra"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout pump to $74.8K on short liquidations \u2014 classic bear trap. Volume is mechanically inflated, not organic demand, and the Fear & Greed at 21 confirms weak sentiment with no real convictio",
-            "[FadeTheCrowd] Price probing $75K again on short squeeze mechanics while Fear & Greed lingers at 21 isn\u2019t sustainable conviction \u2014 it\u2019s noise. The $1B STRC headline is loud, but not yet structural; without on-chain "
+            "[BearishBob] Another fakeout at $75K\u2014this pump is textbook bear trap material. Short liquidations and that sketchy $1B STRC ATM volume reek of late-stage manipulation, not real demand, while hacks ($464M lost), po"
           ]
         },
-        "timestamp": "2026-04-14T09:38:52.656823+00:00",
+        "timestamp": "2026-04-14T10:44:14.214170+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -227,17 +227,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 530.8,
+          "run_duration_sec": 852.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74680,
-            "change_24h": 5.49,
+            "price": 74594,
+            "change_24h": 5.39,
             "fear_greed": 21
           }
         },
-        "age_minutes": 61.2,
+        "age_minutes": 5.8,
         "is_fresh": true
       },
       "groq": {
@@ -287,7 +287,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 276.3,
+        "age_minutes": 286.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -304,7 +304,7 @@
           "volume_24h": 57478927862.616554
         },
         "actionable": true,
-        "age_minutes": 24.9,
+        "age_minutes": 34.9,
         "is_fresh": true
       }
     },
