@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-14T22:50:01.214780",
+  "generated_at": "2026-04-14T23:00:01.873286",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-14T22:50:01.214798"
+    "last_health_check": "2026-04-14T23:00:01.873304"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 22:48:29,831",
+      "last_update": "2026-04-14 22:58:31,734",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.7,
-        "time": "2026-04-14 22:48:29,831"
+        "confidence": 54.5,
+        "time": "2026-04-14 22:58:31,734"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 22:48:30,307",
+      "last_update": "2026-04-14 22:58:32,752",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.7,
-        "time": "2026-04-14 22:48:30,307"
+        "confidence": 54.5,
+        "time": "2026-04-14 22:58:32,752"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 22:23:28,519 - INFO -   SHORT",
+      "last_update": "2026-04-14 23:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -199,7 +199,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-14 22:50:01",
+      "last_update": "2026-04-14 23:00:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -228,27 +228,28 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T22:50:02.101321",
+    "updated_at": "2026-04-14T23:00:02.807258",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5548,
-        "confidence": 0.6271,
-        "bullish_pct": 0.2157,
-        "bearish_pct": 0.0137,
-        "neutral_pct": 0.7706,
+        "strength": 0.4069,
+        "confidence": 0.6348,
+        "bullish_pct": 0.2596,
+        "bearish_pct": 0.0739,
+        "neutral_pct": 0.6665,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6558,
+        "consensus_score": 0.4997,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $74.9K is a gift. Dip? What dip? We\u2019re still -40% from ATH and stacking continues. Fake apps stealing bags don\u2019t change Bitcoin\u2019s fundamentals\u2014self-custody wins long-term. Tether launching a custodial",
-            "[CryptoKaleo] We're cooking with gas here\u2014$76K smashed, extreme fear at 21, and now Deutsche B\u00f6rse drops a $200M bomb on Kraken? This is institutional FOMO phase one. Tether launching self-custodial with cloud back"
+            "[DiamondHands420] $75.3K is just a pit stop \u2014 we\u2019re blowing past $76.2K! Goldman\u2019s ETF filing is WALL STREET capitulation, and the short squeeze isn\u2019t even close to over. Weak hands at $70K are already crying, but I\u2019m "
           ],
-          "bearish": []
+          "bearish": [
+            "[BearishBob] Another fakeout at $76K on a short squeeze? Classic trap. PPI relief and Goldman\u2019s ETF filing are just noise\u2014this is distribution by smart money while the greater fools pile in. On-chain shows whales "
+          ]
         },
-        "timestamp": "2026-04-14T18:09:39.059658+00:00",
+        "timestamp": "2026-04-14T19:56:38.235973+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -265,17 +266,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 9577.6,
+          "run_duration_sec": 12396.8,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 24,
+          "total_posts": 21,
           "market_data_summary": {
-            "price": 74905,
-            "change_24h": 4.05,
+            "price": 75334,
+            "change_24h": 4.44,
             "fear_greed": 21
           }
         },
-        "age_minutes": 100.4,
+        "age_minutes": 3.4,
         "is_fresh": true
       },
       "groq": {
@@ -325,7 +326,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 826.3,
+        "age_minutes": 836.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -342,7 +343,7 @@
           "volume_24h": 65837471227.919716
         },
         "actionable": true,
-        "age_minutes": 34.9,
+        "age_minutes": 44.9,
         "is_fresh": true
       }
     },
