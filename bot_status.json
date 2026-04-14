@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-14T07:50:01.160487",
+  "generated_at": "2026-04-14T08:00:01.716472",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
@@ -8,7 +8,7 @@
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-14 07:49:44,265",
+      "last_update": "2026-04-14 07:59:46,812",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -20,8 +20,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 49.7,
-        "time": "2026-04-14 07:49:44,265"
+        "confidence": 46.1,
+        "time": "2026-04-14 07:59:46,812"
       },
       "open_position": {
         "direction": "LONG",
@@ -45,7 +45,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-14 07:48:01,703",
+      "last_update": "2026-04-14 07:58:04,111",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -57,8 +57,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 48.8,
-        "time": "2026-04-14 07:48:01,703"
+        "confidence": 46.0,
+        "time": "2026-04-14 07:58:04,111"
       },
       "open_position": null,
       "performance": {
@@ -74,7 +74,7 @@
     {
       "name": "BTC Swing Bot V2 (2.5/1.0) [Bot-Managed]",
       "status": "running",
-      "last_update": "2026-04-14 07:49:07,622",
+      "last_update": "2026-04-14 07:58:08,895",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -86,8 +86,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 49.2,
-        "time": "2026-04-14 07:49:07,622"
+        "confidence": 46.5,
+        "time": "2026-04-14 07:58:08,895"
       },
       "open_position": {
         "direction": "LONG",
@@ -169,7 +169,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-14 07:50:01",
+      "last_update": "2026-04-14 08:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -251,7 +251,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-14T07:50:01.374091",
+    "updated_at": "2026-04-14T08:00:01.922471",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -303,7 +303,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 12.1,
+        "age_minutes": 22.1,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +353,7 @@
             "fear_greed": 12
           }
         },
-        "age_minutes": 1366.4,
+        "age_minutes": 1376.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +370,7 @@
           "volume_24h": 55948816126.93234
         },
         "actionable": true,
-        "age_minutes": 34.9,
+        "age_minutes": 45.0,
         "is_fresh": true
       }
     },
