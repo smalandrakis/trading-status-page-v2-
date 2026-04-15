@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T13:50:01.110029",
+  "generated_at": "2026-04-15T14:00:01.524207",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T13:50:01.110051"
+    "last_health_check": "2026-04-15T14:00:01.524230"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 13:49:55,660",
+      "last_update": "2026-04-15 13:59:57,911",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -23,9 +23,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 47.2,
-        "time": "2026-04-15 13:49:55,660"
+        "signal": "NEUTRAL",
+        "confidence": 37.8,
+        "time": "2026-04-15 13:59:57,911"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 13:48:36,542",
+      "last_update": "2026-04-15 13:58:39,821",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -75,9 +75,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 81.0,
-        "time": "2026-04-15 13:48:36,542"
+        "signal": "SHORT",
+        "confidence": 60.4,
+        "time": "2026-04-15 13:58:39,821"
       },
       "open_position": {
         "direction": "SHORT",
@@ -102,7 +102,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 13:50:00,159 - INFO - [HEARTBEAT] Price: $74,089.70",
+      "last_update": "2026-04-15 14:00:00,252 - INFO - [HEARTBEAT] Price: $73,864.75",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,26 +117,19 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 85.8,
-        "time": "2026-04-15 13:48:05,576"
+        "confidence": 62.0,
+        "time": "2026-04-15 13:52:07,137"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 30,
+        "total_trades": 31,
         "wins": 8,
-        "losses": 22,
-        "win_rate": 26.7,
-        "total_pnl": -404.39,
-        "avg_pnl": -13.48
+        "losses": 23,
+        "win_rate": 25.8,
+        "total_pnl": -441.34,
+        "avg_pnl": -14.24
       },
       "recent_trades": [
-        {
-          "time": "2026-04-15T00:52:00.017953",
-          "direction": "SHORT",
-          "pnl": -33.37,
-          "pnl_pct": -0.15,
-          "hold_minutes": 10.0
-        },
         {
           "time": "2026-04-15T02:05:26.708390",
           "direction": "SHORT",
@@ -199,14 +192,21 @@
           "pnl": -33.44,
           "pnl_pct": -0.15,
           "hold_minutes": 27.0
+        },
+        {
+          "time": "2026-04-15T13:59:05.060983",
+          "direction": "LONG",
+          "pnl": -36.96,
+          "pnl_pct": -0.17,
+          "hold_minutes": 7.0
         }
       ],
-      "health_status": "HEALTHY"
+      "health_status": "WARNING"
     },
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 13:50:01",
+      "last_update": "2026-04-15 14:00:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -235,32 +235,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T13:50:02.019617",
+    "updated_at": "2026-04-15T14:00:02.374453",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2477,
-        "confidence": 0.6461,
-        "bullish_pct": 0.3529,
-        "bearish_pct": 0.0464,
-        "neutral_pct": 0.6007,
+        "strength": 0.3433,
+        "confidence": 0.6633,
+        "bullish_pct": 0.3049,
+        "bearish_pct": 0.047,
+        "neutral_pct": 0.6481,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.401,
+        "stance_shifts": 1,
+        "consensus_score": 0.4722,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $73.6K is the floor \u2014 every dip to this level gets smashed by institutional-sized bids, and the STRC ATM clearing $2.7B in 48 hours is *real* demand, not hopium. MiCA-compliant USDCV on MetaMask is a ",
-            "[DiamondHands420] $73.6K is HOLDING STRONG \u2014 fake apps, hacks, FUD? All washed away by MiCA-compliant USDCV on MetaMask and $2.7B STRC volume in 48H! This is pure accumulation, not distribution \u2014 institutions are loadi",
-            "[FadeTheCrowd] Price holding above $73.6K in Extreme Fear (23) with repeated security FUD and retail panic confirms late-stage capitulation. Institutional infrastructure builds \u2014 MiCA-compliant USDCV on MetaMask, $2",
-            "[TrendRider] Price is respecting $73.6K with strong volume and deep order book support \u2014 classic accumulation behavior amid Extreme Fear (23) and relentless FUD. News like MiCA-compliant USDCV on MetaMask and $2.7",
-            "[StackingSats] $73.6K holds as sacred ground\u2014every dip met with relentless buying fueled by real demand, not speculation. The $2.7B STRC ATM volume in 48h is undeniable proof of accelerating physical adoption, while"
+            "[TrendRider] Price is holding key support at $73.6K with repeated retests, and the $412M ETF inflows plus Goldman\u2019s filing add weight to institutional momentum. However, volume remains muted on uplegs and we\u2019re st",
+            "[CryptoKaleo] We\u2019re in the eye of the storm\u2014$73.6K is holding like a fortress amid extreme fear, and that\u2019s where generational wealth gets built. Goldman Sachs filing for a BTC ETF isn\u2019t theater, it\u2019s a declaration",
+            "[DiamondHands420] $73.6K holding strong again\u2014this is the *perfect* dip to load up! Goldman filing a BTC ETF + $412M inflows on top of back-to-back billion-dollar ATM days? This kind of institutional FOMO doesn\u2019t happe",
+            "[StackingSats] Every dip to $73.6K is a gift\u2014price is holding strong on extreme fear, the exact environment where weak hands sell to the smartest ones entering via ETFs. Goldman\u2019s filing and $412M in inflows aren\u2019t ",
+            "[FadeTheCrowd] $73.6K holding firm amid Extreme Fear (23) and lackluster price action is classic pre-launch compression. Goldman\u2019s ETF filing and $412M inflows aren\u2019t speculative fluff\u2014they\u2019re institutional bids at "
           ],
           "bearish": [
-            "[BearishBob] $73.6K \"support\" is just another liquidity layer \u2014 every dip gets bought because institutions know retail will panic and sell. STRC ATM volume is noise, not conviction, and MiCA hype is just regulator"
+            "[BearishBob] Another fakeout rally fueled by ETF noise and institutional theater. $412M inflows? That's just hot money chasing headlines while the smart money quietly distributes at these levels. Price is still st"
           ]
         },
-        "timestamp": "2026-04-15T09:51:02.369390+00:00",
+        "timestamp": "2026-04-15T10:55:52.752011+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -277,17 +277,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1261.0,
+          "run_duration_sec": 1551.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 73980,
-            "change_24h": -0.94,
+            "price": 73937,
+            "change_24h": -0.88,
             "fear_greed": 23
           }
         },
-        "age_minutes": 59.0,
+        "age_minutes": 4.2,
         "is_fresh": true
       },
       "groq": {
@@ -338,7 +338,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 286.3,
+        "age_minutes": 296.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -355,7 +355,7 @@
           "volume_24h": 49714142978.84516
         },
         "actionable": false,
-        "age_minutes": 34.9,
+        "age_minutes": 45.0,
         "is_fresh": true
       }
     },
