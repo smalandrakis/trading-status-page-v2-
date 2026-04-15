@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T11:10:06.742114",
+  "generated_at": "2026-04-15T11:20:01.229467",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T11:10:06.742140"
+    "last_health_check": "2026-04-15T11:20:01.229487"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 11:09:21,275",
+      "last_update": "2026-04-15 11:19:22,936",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.6,
-        "time": "2026-04-15 11:09:21,275"
+        "confidence": 40.2,
+        "time": "2026-04-15 11:19:22,936"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 11:09:43,081",
+      "last_update": "2026-04-15 11:19:44,681",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,8 +76,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 57.4,
-        "time": "2026-04-15 11:09:43,080"
+        "confidence": 59.8,
+        "time": "2026-04-15 11:19:44,680"
       },
       "open_position": null,
       "performance": {
@@ -94,7 +94,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 11:09:46,361 - INFO - [HEARTBEAT] Price: $73,776.00",
+      "last_update": "2026-04-15 11:19:47,238 - INFO - [HEARTBEAT] Price: $73,857.47",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -109,8 +109,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 37.3,
-        "time": "2026-04-15 11:08:07,058"
+        "confidence": 40.3,
+        "time": "2026-04-15 11:18:17,718"
       },
       "open_position": null,
       "performance": {
@@ -198,7 +198,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 11:10:07",
+      "last_update": "2026-04-15 11:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -227,7 +227,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T11:10:07.601090",
+    "updated_at": "2026-04-15T11:20:02.075567",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -279,7 +279,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 32.9,
+        "age_minutes": 42.8,
         "is_fresh": true
       },
       "groq": {
@@ -330,24 +330,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 126.4,
+        "age_minutes": 136.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-15T07:15:04.571837+00:00",
+        "timestamp": "2026-04-15T08:15:05.097661+00:00",
         "direction": "NEUTRAL",
         "strength": 0.4,
         "confidence": 0.65,
-        "reasoning": "Minor pullback (-1.02%) on high volume suggests consolidation near ATH levels. Price remains strong above 70K but momentum slowing. Wait for clearer signal before new positions.",
+        "reasoning": "Price near ATH but showing slight pullback (-1.01%). Volume remains strong, suggesting consolidation rather than reversal. Market needs catalyst to break decisively in either direction.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 73987,
-          "change_24h": -1.0248618000931233,
-          "volume_24h": 50217448493.491264
+          "price": 73813,
+          "change_24h": -1.0138948887610895,
+          "volume_24h": 52998743879.13669
         },
         "actionable": true,
-        "age_minutes": 55.1,
+        "age_minutes": 4.9,
         "is_fresh": true
       }
     },
