@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T10:10:00.804920",
+  "generated_at": "2026-04-15T10:20:00.949372",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T10:10:00.804936"
+    "last_health_check": "2026-04-15T10:20:00.949400"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 10:09:15,275",
+      "last_update": "2026-04-15 10:19:18,239",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,25 +24,17 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 39.8,
-        "time": "2026-04-15 10:09:15,275"
+        "confidence": 35.5,
+        "time": "2026-04-15 10:19:18,239"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 1,
-        "entry_price": 74425.85,
-        "tp_price": 76286.49625,
-        "sl_price": 73681.59150000001,
-        "entry_time": "unknown",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 2,
+        "total_trades": 3,
         "wins": 1,
-        "losses": 1,
-        "win_rate": 50.0,
-        "total_pnl": -85.57,
-        "avg_pnl": -42.79
+        "losses": 2,
+        "win_rate": 33.3,
+        "total_pnl": -241.54,
+        "avg_pnl": -80.51
       },
       "recent_trades": [
         {
@@ -58,14 +50,21 @@
           "pnl": 146.46,
           "pnl_pct": 2.02,
           "hold_minutes": 69.0
+        },
+        {
+          "time": "2026-04-15 10:19:17",
+          "direction": "LONG",
+          "pnl": -155.97,
+          "pnl_pct": -1.05,
+          "hold_minutes": 196.0
         }
       ],
-      "health_status": "WARNING"
+      "health_status": "HEALTHY"
     },
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 10:08:22,144",
+      "last_update": "2026-04-15 10:18:24,231",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -77,8 +76,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 52.0,
-        "time": "2026-04-15 10:08:22,143"
+        "confidence": 63.7,
+        "time": "2026-04-15 10:18:24,230"
       },
       "open_position": null,
       "performance": {
@@ -95,7 +94,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 10:09:37,519 - INFO - [HEARTBEAT] Price: $73,868.68",
+      "last_update": "2026-04-15 10:19:38,868 - INFO - [HEARTBEAT] Price: $73,663.67",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -110,8 +109,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 34.2,
-        "time": "2026-04-15 10:08:22,482"
+        "confidence": 47.8,
+        "time": "2026-04-15 10:18:26,817"
       },
       "open_position": null,
       "performance": {
@@ -199,7 +198,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 10:09:58,969 - INFO - BTC: $73844.74",
+      "last_update": "2026-04-15 10:19:47,946 - INFO - BTC: $73639.27",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -212,7 +211,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 46.0,
-        "time": "2026-04-15 10:09:58,969"
+        "time": "2026-04-15 10:15:20,796"
       },
       "open_position": null,
       "performance": {
@@ -228,7 +227,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T10:10:01.787368",
+    "updated_at": "2026-04-15T10:20:01.850238",
     "signals": {
       "cerebras": {
         "direction": "LONG",
@@ -280,7 +279,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 34.6,
+        "age_minutes": 44.6,
         "is_fresh": true
       },
       "groq": {
@@ -331,24 +330,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 66.3,
+        "age_minutes": 76.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-15T06:15:04.529073+00:00",
+        "timestamp": "2026-04-15T07:15:04.571837+00:00",
         "direction": "NEUTRAL",
         "strength": 0.4,
-        "confidence": 0.6,
-        "reasoning": "Price near ATH with minor pullback (-0.46%) on high volume suggests consolidation. Without clear breakout/breakdown signals or additional technical indicators, a cautious neutral stance is warranted.",
+        "confidence": 0.65,
+        "reasoning": "Minor pullback (-1.02%) on high volume suggests consolidation near ATH levels. Price remains strong above 70K but momentum slowing. Wait for clearer signal before new positions.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74005,
-          "change_24h": -0.46395077551436636,
-          "volume_24h": 52624763271.8493
+          "price": 73987,
+          "change_24h": -1.0248618000931233,
+          "volume_24h": 50217448493.491264
         },
-        "actionable": false,
-        "age_minutes": 55.0,
+        "actionable": true,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
