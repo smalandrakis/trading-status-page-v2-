@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T07:00:01.157566",
+  "generated_at": "2026-04-15T07:10:01.305219",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T07:00:01.157593"
+    "last_health_check": "2026-04-15T07:10:01.305244"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 06:59:31,917",
+      "last_update": "2026-04-15 07:09:37,952",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,10 +24,18 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.9,
-        "time": "2026-04-15 06:59:31,917"
+        "confidence": 61.5,
+        "time": "2026-04-15 07:09:37,952"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 1,
+        "entry_price": 74425.85,
+        "tp_price": 76286.49625,
+        "sl_price": 73681.59150000001,
+        "entry_time": "unknown",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 2,
         "wins": 1,
@@ -57,7 +65,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 06:58:27,402",
+      "last_update": "2026-04-15 07:08:30,006",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -68,9 +76,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 54.2,
-        "time": "2026-04-15 06:58:27,402"
+        "signal": "LONG",
+        "confidence": 61.5,
+        "time": "2026-04-15 07:08:30,005"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +95,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 06:59:49,826 - INFO - [HEARTBEAT] Price: $74,345.97",
+      "last_update": "2026-04-15 07:09:52,433 - INFO - [HEARTBEAT] Price: $74,360.11",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -101,11 +109,19 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 42.2,
-        "time": "2026-04-15 06:58:00,203"
+        "signal": "LONG",
+        "confidence": 53.5,
+        "time": "2026-04-15 07:02:02,810"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 3,
+        "entry_price": 74383.09,
+        "tp_price": 74755.00544999998,
+        "sl_price": 74271.515365,
+        "entry_time": "2026-04-15 07:02:02",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 27,
         "wins": 8,
@@ -186,12 +202,12 @@
           "hold_minutes": 18.0
         }
       ],
-      "health_status": "HEALTHY"
+      "health_status": "WARNING"
     },
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 07:00:01",
+      "last_update": "2026-04-15 07:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -220,7 +236,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T07:00:02.105097",
+    "updated_at": "2026-04-15T07:10:02.159948",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -271,7 +287,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 25.8,
+        "age_minutes": 35.9,
         "is_fresh": true
       },
       "groq": {
@@ -321,7 +337,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1316.3,
+        "age_minutes": 1326.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -338,7 +354,7 @@
           "volume_24h": 54338305710.98933
         },
         "actionable": false,
-        "age_minutes": 45.0,
+        "age_minutes": 55.0,
         "is_fresh": true
       }
     },
