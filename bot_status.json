@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T03:10:01.495158",
+  "generated_at": "2026-04-15T03:20:01.713136",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
-    "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T03:10:01.495178"
+    "reconciliation": "OK",
+    "last_health_check": "2026-04-15T03:20:01.713158"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 03:08:27,324",
+      "last_update": "2026-04-15 03:18:30,726",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 56.6,
-        "time": "2026-04-15 03:08:27,324"
+        "confidence": 55.8,
+        "time": "2026-04-15 03:18:30,726"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 03:09:23,755",
+      "last_update": "2026-04-15 03:19:26,042",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 55.7,
-        "time": "2026-04-15 03:09:23,754"
+        "confidence": 52.2,
+        "time": "2026-04-15 03:19:26,042"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 03:09:56,206 - INFO - [HEARTBEAT] Price: $74,616.00",
+      "last_update": "2026-04-15 03:19:58,439 - INFO - [HEARTBEAT] Price: $74,400.24",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -102,10 +102,18 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 51.5,
-        "time": "2026-04-15 03:08:31,081"
+        "confidence": 52.8,
+        "time": "2026-04-15 03:18:35,600"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 74435.07,
+        "tp_price": 74062.89465,
+        "sl_price": 74546.72260500002,
+        "entry_time": "2026-04-15 03:18:35",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 23,
         "wins": 8,
@@ -191,7 +199,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 03:09:52,249 - INFO - BTC: $74638.19",
+      "last_update": "2026-04-15 03:19:51,247 - INFO - BTC: $74402.87",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -202,9 +210,9 @@
         "expected_pnl_2yr": 18000
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 55.0,
+        "time": "2026-04-15 03:19:51,247"
       },
       "open_position": null,
       "performance": {
@@ -220,7 +228,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T03:10:02.255195",
+    "updated_at": "2026-04-15T03:20:02.494036",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -270,7 +278,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 34.3,
+        "age_minutes": 44.3,
         "is_fresh": true
       },
       "groq": {
@@ -320,24 +328,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1086.3,
+        "age_minutes": 1096.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-14T23:15:05.919969+00:00",
-        "direction": "NEUTRAL",
-        "strength": 0.4,
-        "confidence": 0.6,
-        "reasoning": "Minor price pullback (-0.84%) with high volume suggests consolidation after recent highs. Market likely awaiting clear catalyst. Current price remains strong overall but momentum indicators show mixed signals.",
+        "timestamp": "2026-04-15T00:15:05.112712+00:00",
+        "direction": "LONG",
+        "strength": 0.55,
+        "confidence": 0.65,
+        "reasoning": "Slight positive momentum with price above 74K, moderate trading volume. Cautiously bullish as BTC maintains position despite market uncertainties. Recent uptrend appears sustainable with steady volume.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74098,
-          "change_24h": -0.8383989915296989,
-          "volume_24h": 58291139838.30335
+          "price": 74566,
+          "change_24h": 0.34118188871011623,
+          "volume_24h": 57522315648.98
         },
-        "actionable": false,
-        "age_minutes": 54.9,
+        "actionable": true,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
