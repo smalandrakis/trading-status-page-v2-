@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T04:30:01.508839",
+  "generated_at": "2026-04-15T04:40:01.114103",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T04:30:01.508857"
+    "last_health_check": "2026-04-15T04:40:01.114121"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 04:28:52,335",
+      "last_update": "2026-04-15 04:38:55,827",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 55.6,
-        "time": "2026-04-15 04:28:52,335"
+        "confidence": 59.2,
+        "time": "2026-04-15 04:38:55,827"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 04:29:47,904",
+      "last_update": "2026-04-15 04:39:50,893",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 55.8,
-        "time": "2026-04-15 04:29:47,903"
+        "confidence": 63.4,
+        "time": "2026-04-15 04:39:50,893"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 04:29:44,530 - INFO - [HEARTBEAT] Price: $74,668.43",
+      "last_update": "2026-04-15 04:39:46,815 - INFO - [HEARTBEAT] Price: $74,573.77",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -102,8 +102,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.8,
-        "time": "2026-04-15 04:29:04,408"
+        "confidence": 46.0,
+        "time": "2026-04-15 04:39:09,205"
       },
       "open_position": null,
       "performance": {
@@ -191,7 +191,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 04:30:02",
+      "last_update": "2026-04-15 04:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -220,32 +220,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T04:30:02.395365",
+    "updated_at": "2026-04-15T04:40:01.858589",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4201,
-        "confidence": 0.6519,
-        "bullish_pct": 0.2387,
-        "bearish_pct": 0.1026,
-        "neutral_pct": 0.6587,
+        "strength": 0.2638,
+        "confidence": 0.6458,
+        "bullish_pct": 0.2683,
+        "bearish_pct": 0.1996,
+        "neutral_pct": 0.5321,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 2,
-        "consensus_score": 0.4881,
+        "consensus_score": 0.2982,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $74.6K is a steal after two clean rejections at $76K\u2014classic whale accumulation zone! Fear & Greed at 23? That's capitulation, not weakness. With on-chain volume pumping and BTC ETF inflows heating up",
-            "[StackingSats] $74.6K is a gift. Two rejections at $76K? Classic accumulation behavior\u2014whales chew through weak hands while the fearful watch from sidelines. On-chain volume and hash rate confirm strength, and with ",
-            "[CryptoKaleo] $74.6K is prime accumulation turf\u2014whales are mopping up panic bags after two clean $76K rejections while Fear & Greed hovers at 23, a textbook emotional flush. The brief run to $75.8K wasn\u2019t a bull tr",
-            "[FadeTheCrowd] Price holding above $73,9k with Extreme Fear (23) and two failed rejections at $76K shows the crowd is still traumatized\u2014classic late-stage capitulation. Volume fading on retests suggests weak longs a"
+            "[DiamondHands420] $74.7K is holding strong as a major accumulation zone \u2014 Extreme Fear at 23 means the weak hands are long gone, and that $2.7B STRC volume isn\u2019t noise, it\u2019s institutions prepping for the next leg! All ",
+            "[StackingSats] Every rejection at $76K is just noise\u2014$74.7K remains a proven accumulation zone with Extreme Fear (23) and $2.7B STRC volume signaling foundational demand. The halving cycle is still in recovery; this",
+            "[CryptoKaleo] $74.7K is not just holding \u2014 it's magnetizing. Extreme Fear at 23? That\u2019s capitulation bottoming out. The $2.7B STRC volume isn\u2019t speculative fluff; it\u2019s institutional rail-building in real time. Ever",
+            "[FadeTheCrowd] Price holding at $74.7K in extreme fear (23) with $2.7B STRC volume confirms quiet accumulation \u2014 the failed $76K breakout is noise, not a reversal. Weak volume on rejection suggests no strong distrib"
           ],
           "bearish": [
-            "[DeepPockets] Price rejection at $76K twice with weak volume and no OTC follow-through confirms this is distribution territory, not accumulation. I'm anchored to my $68K cost basis and see this \"dip\" as a gift for ",
-            "[BearishBob] Another fakeout at $76K on weak volume\u2014classic bull trap setup. Institutions aren't biting, OTC desks are quiet, and all this \"on-chain strength\" noise ignores deteriorating macro liquidity. I'm not b"
+            "[AlphaQuant] Price remains trapped below $76K resistance with declining volume on retests, confirming lack of institutional buying conviction. The $2.7B STRC volume is notable but does not offset the absence of mo",
+            "[DeltaNeutral] Price rejection at $76K on declining volume remains a high-probability bearish signal, with order book depth showing growing short-side liquidation clusters below $73.5K. The $2.7B STRC volume is oper",
+            "[BearishBob] Another fakeout at $76K on weak volume\u2014classic bull trap setup. Every rally since the ATH has been a sell-the-news event, and with macro still shaky and no real catalysts, this \"extreme fear\" bounce i"
           ]
         },
-        "timestamp": "2026-04-15T00:36:07.235363+00:00",
+        "timestamp": "2026-04-15T01:38:20.571480+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -262,17 +263,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 365.7,
+          "run_duration_sec": 499.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74590,
-            "change_24h": 0.43,
+            "price": 74677,
+            "change_24h": 0.48,
             "fear_greed": 23
           }
         },
-        "age_minutes": 53.9,
+        "age_minutes": 1.7,
         "is_fresh": true
       },
       "groq": {
@@ -322,7 +323,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1166.3,
+        "age_minutes": 1176.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -339,7 +340,7 @@
           "volume_24h": 56895153332.433205
         },
         "actionable": true,
-        "age_minutes": 15.0,
+        "age_minutes": 25.0,
         "is_fresh": true
       }
     },
