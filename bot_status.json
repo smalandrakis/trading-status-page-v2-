@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T04:10:00.985467",
+  "generated_at": "2026-04-15T04:20:01.212153",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T04:10:00.985482"
+    "last_health_check": "2026-04-15T04:20:01.212174"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 04:08:45,981",
+      "last_update": "2026-04-15 04:18:49,466",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.2,
-        "time": "2026-04-15 04:08:45,981"
+        "confidence": 51.7,
+        "time": "2026-04-15 04:18:49,466"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 04:09:41,933",
+      "last_update": "2026-04-15 04:19:45,194",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 50.8,
-        "time": "2026-04-15 04:09:41,933"
+        "confidence": 52.2,
+        "time": "2026-04-15 04:19:45,194"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 04:09:39,857 - INFO - [HEARTBEAT] Price: $74,658.94",
+      "last_update": "2026-04-15 04:19:42,402 - INFO - [HEARTBEAT] Price: $74,690.87",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -102,8 +102,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 44.5,
-        "time": "2026-04-15 04:08:54,108"
+        "confidence": 49.3,
+        "time": "2026-04-15 04:18:58,924"
       },
       "open_position": null,
       "performance": {
@@ -191,7 +191,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 04:10:01",
+      "last_update": "2026-04-15 04:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -220,7 +220,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T04:10:01.817679",
+    "updated_at": "2026-04-15T04:20:02.025184",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -272,7 +272,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 33.9,
+        "age_minutes": 43.9,
         "is_fresh": true
       },
       "groq": {
@@ -322,24 +322,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1146.3,
+        "age_minutes": 1156.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-15T00:15:05.112712+00:00",
+        "timestamp": "2026-04-15T01:15:04.683597+00:00",
         "direction": "LONG",
-        "strength": 0.55,
+        "strength": 0.58,
         "confidence": 0.65,
-        "reasoning": "Slight positive momentum with price above 74K, moderate trading volume. Cautiously bullish as BTC maintains position despite market uncertainties. Recent uptrend appears sustainable with steady volume.",
+        "reasoning": "Positive price action with moderate upward momentum (+0.62%). High trading volume indicates strong market participation. BTC holding above 74k suggests continued bullish sentiment despite volatility.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74566,
-          "change_24h": 0.34118188871011623,
-          "volume_24h": 57522315648.98
+          "price": 74718,
+          "change_24h": 0.6186280698229233,
+          "volume_24h": 56895153332.433205
         },
         "actionable": true,
-        "age_minutes": 54.9,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
