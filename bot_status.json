@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T13:10:01.260701",
+  "generated_at": "2026-04-15T13:20:01.600294",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T13:10:01.260721"
+    "last_health_check": "2026-04-15T13:20:01.600311"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 13:09:43,971",
+      "last_update": "2026-04-15 13:19:47,105",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -23,9 +23,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 46.9,
-        "time": "2026-04-15 13:09:43,971"
+        "signal": "NEUTRAL",
+        "confidence": 35.2,
+        "time": "2026-04-15 13:19:47,105"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 13:08:24,929",
+      "last_update": "2026-04-15 13:18:27,778",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -75,9 +75,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 78.8,
-        "time": "2026-04-15 13:08:24,929"
+        "signal": "SHORT",
+        "confidence": 53.5,
+        "time": "2026-04-15 13:18:27,778"
       },
       "open_position": {
         "direction": "SHORT",
@@ -102,7 +102,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 13:09:50,897 - INFO - [HEARTBEAT] Price: $74,134.39",
+      "last_update": "2026-04-15 13:19:59,836 - INFO - [HEARTBEAT] Price: $74,001.77",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,10 +117,18 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 52.4,
-        "time": "2026-04-15 13:08:37,595"
+        "confidence": 55.1,
+        "time": "2026-04-15 13:18:03,856"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 74004.01,
+        "tp_price": 73633.98994999999,
+        "sl_price": 74115.016015,
+        "entry_time": "2026-04-15 13:18:03",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 29,
         "wins": 8,
@@ -206,7 +214,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 13:10:01",
+      "last_update": "2026-04-15 13:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -235,7 +243,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T13:10:02.117081",
+    "updated_at": "2026-04-15T13:20:02.562569",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -287,7 +295,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 19.0,
+        "age_minutes": 29.0,
         "is_fresh": true
       },
       "groq": {
@@ -338,24 +346,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 246.3,
+        "age_minutes": 256.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-15T09:15:05.195030+00:00",
+        "timestamp": "2026-04-15T10:15:05.212990+00:00",
         "direction": "NEUTRAL",
-        "strength": 0.45,
-        "confidence": 0.65,
-        "reasoning": "Price showing minor correction (-1%) with high volume suggesting consolidation after recent highs. Market appears indecisive with balanced buy/sell pressure. Wait for clearer directional signal.",
+        "strength": 0.4,
+        "confidence": 0.6,
+        "reasoning": "Price remains near ATH despite minor 24h pullback. High volume indicates market interest but lack of clear direction. Consolidation phase likely before next significant move.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74051,
-          "change_24h": -0.9987741409517026,
-          "volume_24h": 52706350053.83429
+          "price": 74142,
+          "change_24h": -0.525666671480771,
+          "volume_24h": 49714142978.84516
         },
-        "actionable": true,
-        "age_minutes": 54.9,
+        "actionable": false,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
