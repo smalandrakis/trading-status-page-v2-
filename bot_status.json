@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T22:30:02.162302",
+  "generated_at": "2026-04-15T22:40:01.727042",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T22:30:02.162328"
+    "last_health_check": "2026-04-15T22:40:01.727056"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 22:28:33,589",
+      "last_update": "2026-04-15 22:38:35,405",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 56.2,
-        "time": "2026-04-15 22:28:33,588"
+        "confidence": 58.6,
+        "time": "2026-04-15 22:38:35,404"
       },
       "open_position": null,
       "performance": {
@@ -71,7 +71,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 22:28:03,064",
+      "last_update": "2026-04-15 22:38:05,366",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -83,8 +83,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 75.6,
-        "time": "2026-04-15 22:28:03,064"
+        "confidence": 72.8,
+        "time": "2026-04-15 22:38:05,366"
       },
       "open_position": null,
       "performance": {
@@ -116,7 +116,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 22:30:02",
+      "last_update": "2026-04-15 22:40:01,546 - INFO -   LONG",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -131,10 +131,18 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 76.9,
-        "time": "2026-04-15 22:29:15,795"
+        "confidence": 73.5,
+        "time": "2026-04-15 22:39:24,448"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 4,
+        "entry_price": 75101.33,
+        "tp_price": 75476.83665,
+        "sl_price": 74988.67800500001,
+        "entry_time": "2026-04-15 22:39:25",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 4,
         "wins": 2,
@@ -178,7 +186,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 22:30:02",
+      "last_update": "2026-04-15 22:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -207,32 +215,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T22:30:03.044452",
+    "updated_at": "2026-04-15T22:40:02.718909",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.0494,
-        "confidence": 0.6558,
-        "bullish_pct": 0.4541,
-        "bearish_pct": 0.0425,
-        "neutral_pct": 0.5034,
+        "strength": 0.426,
+        "confidence": 0.6408,
+        "bullish_pct": 0.2641,
+        "bearish_pct": 0.0457,
+        "neutral_pct": 0.6902,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.2552,
+        "consensus_score": 0.5352,
         "key_arguments": {
           "bullish": [
-            "[GlassnodeGuru] Price stabilizing at $73.6K with Extreme Fear (23) confirms retail weakness, while Tether\u2019s $70.5M BTC reserve buildup and L&G\u2019s \u00a350B tokenization via Calastone reflect high-conviction institutional a",
-            "[DiamondHands420] LMAO BearishBob doesn\u2019t understand on-chain vs. vaporware? Tether\u2019s $70M BTC reserve move is ON-CHAIN FACT, not PR fluff \u2014 same with L&G\u2019s \u00a350B tokenized infrastructure LIVE on Calastone. $74K is a st",
-            "[TrendRider] Price is respecting the $73.6K support with volume compression and Extreme Fear (23), signaling emotional exhaustion\u2014classic late-stage consolidation. Tether\u2019s $70.5M on-chain accumulation and L&G\u2019s \u00a3",
-            "[FadeTheCrowd] Price hugging $74K in Extreme Fear (23) while Tether and L&G make quiet, off-radar moves tells me smart money is accumulating as others freeze. The lack of hype, coupled with onchain proof of reserve ",
-            "[CryptoKaleo] This $74K hold in Extreme Fear is institutional accumulation in plain sight\u2014Tether\u2019s $70M+ BTC reserve build and L&G\u2019s \u00a350B onchain move aren\u2019t press releases, they\u2019re *on-chain war declarations*. The"
+            "[StackingSats] $74.7K is not a trap\u2014it\u2019s a springboard. Every dip to this level gets bought, and on-chain proof from Tether\u2019s $70M+ accumulation and L&G\u2019s \u00a350B tokenization confirms institutional demand is accelerat",
+            "[FadeTheCrowd] Price hugging $74.7K on extreme fear (23) with Tether\u2019s $70M buy and L&G\u2019s \u00a350B move isn\u2019t noise\u2014it\u2019s stealth accumulation while retail hesitates. The weak volume bothers me, but this is the kind of p",
+            "[CryptoKaleo] We\u2019re not just holding $74.7K \u2014 we\u2019re loading the cannon. Tether\u2019s $70M buy isn\u2019t a blip, it\u2019s a blueprint: stablecoin issuers are front-running macro demand. L&G moving \u00a350B onchain isn\u2019t hype \u2014 it\u2019s",
+            "[DiamondHands420] $74.7K IS HOLDING LIKE A BRICK HOUSE \u2014 this dip? Just a pit stop! Tether\u2019s $70M+ buy + L&G\u2019s \u00a350B onchain move are *whale-level* accumulation signals, and the FUD around volume is classic pre-run-up s"
           ],
           "bearish": [
-            "[BearishBob] Every \"support hold\" at $73.6K is just slow-motion distribution\u2014Extreme Fear is real, but so is the lack of macro follow-through. L&G\u2019s \u00a350B tokenization is PR theater without onchain settlement proof"
+            "[BearishBob] $74.7K is a well-worn trap \u2014 we keep testing it without conviction, and this \"institutional stacking\" narrative is already priced in. Tether\u2019s $70M buy is rounding error territory against $40B daily v"
           ]
         },
-        "timestamp": "2026-04-15T18:42:46.841068+00:00",
+        "timestamp": "2026-04-15T19:39:03.735709+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -249,17 +256,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 765.2,
+          "run_duration_sec": 541.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74275,
-            "change_24h": -0.41,
+            "price": 74717,
+            "change_24h": 0.63,
             "fear_greed": 23
           }
         },
-        "age_minutes": 47.3,
+        "age_minutes": 1.0,
         "is_fresh": true
       },
       "groq": {
@@ -310,7 +317,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 806.3,
+        "age_minutes": 816.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -327,7 +334,7 @@
           "volume_24h": 40034198230.174286
         },
         "actionable": true,
-        "age_minutes": 14.9,
+        "age_minutes": 24.9,
         "is_fresh": true
       }
     },
