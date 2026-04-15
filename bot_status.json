@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T21:40:01.449612",
+  "generated_at": "2026-04-15T21:50:01.360088",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T21:40:01.449631"
+    "last_health_check": "2026-04-15T21:50:01.360110"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 21:38:23,407",
+      "last_update": "2026-04-15 21:48:25,038",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 52.5,
-        "time": "2026-04-15 21:38:23,407"
+        "confidence": 56.0,
+        "time": "2026-04-15 21:48:25,038"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 21:39:50,818",
+      "last_update": "2026-04-15 21:49:53,156",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,8 +76,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 69.9,
-        "time": "2026-04-15 21:39:50,818"
+        "confidence": 76.1,
+        "time": "2026-04-15 21:49:53,156"
       },
       "open_position": {
         "direction": "SHORT",
@@ -110,7 +110,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 21:39:52,903 - INFO - [HEARTBEAT] Price: $74,257.48",
+      "last_update": "2026-04-15 21:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -168,12 +168,12 @@
           "hold_minutes": 1.0
         }
       ],
-      "health_status": "WARNING"
+      "health_status": "HEALTHY"
     },
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 21:40:02",
+      "last_update": "2026-04-15 21:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -202,32 +202,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T21:40:02.336877",
+    "updated_at": "2026-04-15T21:50:02.177812",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2803,
-        "confidence": 0.6297,
-        "bullish_pct": 0.3345,
-        "bearish_pct": 0.0506,
-        "neutral_pct": 0.6149,
+        "strength": 0.0494,
+        "confidence": 0.6558,
+        "bullish_pct": 0.4541,
+        "bearish_pct": 0.0425,
+        "neutral_pct": 0.5034,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4223,
+        "consensus_score": 0.2552,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price holding above $73.6K with extreme fear (23) and strong volume confirms institutional accumulation \u2014 Pakistan\u2019s regulatory shift and UK\u2019s 2027 framework add structural tailwinds. I\u2019m leaning into",
-            "[DiamondHands420] Tom Lee is spot on\u2014extreme fear at 23 and price holding above $73.6K is textbook accumulation! Pakistan flipping the script on banking and UK rolling out 2027 crypto rules? That\u2019s global adoption acce",
-            "[StackingSats] $74K with Fear & Greed at 23 is peak accumulation\u2014Pakistan opening crypto banking and Virginia holding unclaimed BTC in native form are foundational wins for legitimacy and self-custody. Every dip is ",
-            "[CryptoKaleo] Extreme fear at 23? That\u2019s blood in the streets \u2014 and I love it. With Pakistan flipping the switch on crypto banking and the UK laying groundwork for a 2027 regulatory framework, we\u2019re seeing the earl",
-            "[FadeTheCrowd] Price holding above $73.6K with Fear & Greed stuck at 23 confirms sellers are exhausted\u2014this is the quiet before the move. Pakistan\u2019s banking thaw and UK\u2019s structured 2027 framework are underappreciat"
+            "[GlassnodeGuru] Price stabilizing at $73.6K with Extreme Fear (23) confirms retail weakness, while Tether\u2019s $70.5M BTC reserve buildup and L&G\u2019s \u00a350B tokenization via Calastone reflect high-conviction institutional a",
+            "[DiamondHands420] LMAO BearishBob doesn\u2019t understand on-chain vs. vaporware? Tether\u2019s $70M BTC reserve move is ON-CHAIN FACT, not PR fluff \u2014 same with L&G\u2019s \u00a350B tokenized infrastructure LIVE on Calastone. $74K is a st",
+            "[TrendRider] Price is respecting the $73.6K support with volume compression and Extreme Fear (23), signaling emotional exhaustion\u2014classic late-stage consolidation. Tether\u2019s $70.5M on-chain accumulation and L&G\u2019s \u00a3",
+            "[FadeTheCrowd] Price hugging $74K in Extreme Fear (23) while Tether and L&G make quiet, off-radar moves tells me smart money is accumulating as others freeze. The lack of hype, coupled with onchain proof of reserve ",
+            "[CryptoKaleo] This $74K hold in Extreme Fear is institutional accumulation in plain sight\u2014Tether\u2019s $70M+ BTC reserve build and L&G\u2019s \u00a350B onchain move aren\u2019t press releases, they\u2019re *on-chain war declarations*. The"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building \u2014 $74K is just the top of the trap zone, not support. Volume\u2019s propped by Fireblocks\u2019 yield gimmick pulling in dumb money, not real demand, and Pakistan\u2019s \"open door\" means no"
+            "[BearishBob] Every \"support hold\" at $73.6K is just slow-motion distribution\u2014Extreme Fear is real, but so is the lack of macro follow-through. L&G\u2019s \u00a350B tokenization is PR theater without onchain settlement proof"
           ]
         },
-        "timestamp": "2026-04-15T15:39:39.876539+00:00",
+        "timestamp": "2026-04-15T18:42:46.841068+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -244,17 +244,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 578.1,
+          "run_duration_sec": 765.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74050,
-            "change_24h": -1.13,
+            "price": 74275,
+            "change_24h": -0.41,
             "fear_greed": 23
           }
         },
-        "age_minutes": 180.4,
+        "age_minutes": 7.3,
         "is_fresh": true
       },
       "groq": {
@@ -305,7 +305,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 756.3,
+        "age_minutes": 766.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -322,7 +322,7 @@
           "volume_24h": 40496774599.414795
         },
         "actionable": true,
-        "age_minutes": 25.0,
+        "age_minutes": 35.0,
         "is_fresh": true
       }
     },
