@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T17:40:01.586943",
+  "generated_at": "2026-04-15T17:50:01.585130",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-15T17:40:01.586965"
+    "last_health_check": "2026-04-15T17:50:01.585150"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 17:38:50,753",
+      "last_update": "2026-04-15 17:48:52,772",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 56.8,
-        "time": "2026-04-15 17:38:50,753"
+        "confidence": 55.4,
+        "time": "2026-04-15 17:48:52,772"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 17:39:48,889",
+      "last_update": "2026-04-15 17:49:51,964",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,8 +76,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 55.9,
-        "time": "2026-04-15 17:39:48,889"
+        "confidence": 54.7,
+        "time": "2026-04-15 17:49:51,964"
       },
       "open_position": null,
       "performance": {
@@ -102,7 +102,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 17:39:35,644 - INFO - [HEARTBEAT] Price: $74,054.85",
+      "last_update": "2026-04-15 17:49:35,767 - INFO - [HEARTBEAT] Price: $74,102.41",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,8 +117,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 51.4,
-        "time": "2026-04-15 17:39:23,312"
+        "confidence": 55.7,
+        "time": "2026-04-15 17:49:27,978"
       },
       "open_position": null,
       "performance": {
@@ -150,7 +150,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 17:40:02",
+      "last_update": "2026-04-15 17:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -179,32 +179,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T17:40:02.470589",
+    "updated_at": "2026-04-15T17:50:02.391498",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3094,
-        "confidence": 0.6333,
-        "bullish_pct": 0.3218,
-        "bearish_pct": 0.0469,
-        "neutral_pct": 0.6313,
+        "strength": 0.4082,
+        "confidence": 0.6289,
+        "bullish_pct": 0.2717,
+        "bearish_pct": 0.0484,
+        "neutral_pct": 0.6799,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.4469,
+        "stance_shifts": 0,
+        "consensus_score": 0.5199,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price grinding higher to $74.3K on continued Extreme Fear (23) while volume holds firm tells me selling pressure is exhausted. Pakistan\u2019s banking shift and Fireblocks\u2019 yield rails aren\u2019t noise\u2014they\u2019re",
-            "[TrendRider] Price is holding firm within the $73.6K\u2013$75.8K range with volume sustaining and Extreme Fear (23) persisting\u2014classic late-stage consolidation behavior. The regulatory tailwinds from Pakistan and insti",
-            "[DiamondHands420] Pakistani banks opening up to crypto firms is a MASSIVE green flag for global adoption \u2014 this is 2018 all over again but in reverse! Price holding $73.6K with Extreme Fear at 23? That\u2019s textbook botto",
-            "[StackingSats] Another dip defended at $73.6K\u2014this institutional bid zone holds firm. Extreme Fear (23) amid strong volume confirms quiet accumulation, not weakness. Pakistan\u2019s regulatory shift and Fireblocks\u2019 yield",
-            "[CryptoKaleo] This $73.6K floor is sacred\u2014every dip gets bought harder as institutional rails like Fireblocks Earn and Pakistan\u2019s banking thaw ignite global FOMO. We\u2019re not just consolidating, we\u2019re *rearming*\u2014volu"
+            "[CryptoKaleo] We\u2019re in the final act of capitulation\u2014$74.5K holding with Extreme Fear is a spring-loaded trap for bears. Pakistan opening banks, Virginia holding BTC in-kind, and Fireblocks Earn launching are *not*",
+            "[DiamondHands420] $74.5K holding with Extreme Fear? Pakistan and Virginia flipping pro-crypto? This is capitulation *and* institutional adoption accelerating at the same time \u2014 Fireblocks Earn, STRC $2.7B volume, banks",
+            "[StackingSats] $74.5K in Extreme Fear with nation-state frameworks emerging in Pakistan and Virginia? This is the quiet before the storm. The 4% Danish adoption is noise\u2014real adoption comes through financial repress",
+            "[FadeTheCrowd] Price holding firm at $73.6K in Extreme Fear (23), now confirmed twice, while regulatory momentum builds in Pakistan and Virginia, signals quiet accumulation. The market is dismissing structural progr"
           ],
           "bearish": [
-            "[BearishBob] Another bounce off $73.6K, big surprise. That \"Extreme Fear\" print isn't accumulation\u2014it's trapped buyers again, just like March. Pakistan\u2019s move? Paper over cracks. Institutions aren\u2019t diving in; the"
+            "[BearishBob] Another bounce to $74.5K on nothing but regulatory crumbs and low-volume noise. Pakistan and Virginia aren't catalysts\u2014they're paperwork. $75.8K keeps rejecting, volume is fading, and 4% adoption in D"
           ]
         },
-        "timestamp": "2026-04-15T13:41:56.134814+00:00",
+        "timestamp": "2026-04-15T14:43:14.490849+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -221,17 +220,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 713.8,
+          "run_duration_sec": 793.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74343,
-            "change_24h": -0.41,
+            "price": 74453,
+            "change_24h": -1.82,
             "fear_greed": 23
           }
         },
-        "age_minutes": 58.1,
+        "age_minutes": 6.8,
         "is_fresh": true
       },
       "groq": {
@@ -282,7 +281,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 516.3,
+        "age_minutes": 526.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -299,7 +298,7 @@
           "volume_24h": 47164379466.51612
         },
         "actionable": false,
-        "age_minutes": 25.0,
+        "age_minutes": 35.0,
         "is_fresh": true
       }
     },
