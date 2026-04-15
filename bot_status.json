@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T05:10:01.402305",
+  "generated_at": "2026-04-15T05:20:01.562226",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T05:10:01.402325"
+    "last_health_check": "2026-04-15T05:20:01.562244"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 05:09:02,052",
+      "last_update": "2026-04-15 05:19:03,957",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.5,
-        "time": "2026-04-15 05:09:02,052"
+        "confidence": 56.9,
+        "time": "2026-04-15 05:19:03,957"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 05:09:58,588",
+      "last_update": "2026-04-15 05:20:00,676",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -69,8 +69,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 57.6,
-        "time": "2026-04-15 05:09:58,588"
+        "confidence": 54.5,
+        "time": "2026-04-15 05:20:00,676"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 05:09:53,780 - INFO - [HEARTBEAT] Price: $74,549.39",
+      "last_update": "2026-04-15 05:19:55,863 - INFO - [HEARTBEAT] Price: $74,531.68",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -199,7 +199,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 05:10:01",
+      "last_update": "2026-04-15 05:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -228,7 +228,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T05:10:02.172737",
+    "updated_at": "2026-04-15T05:20:02.317923",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -281,7 +281,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 31.7,
+        "age_minutes": 41.7,
         "is_fresh": true
       },
       "groq": {
@@ -331,24 +331,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1206.3,
+        "age_minutes": 1216.3,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-15T01:15:04.683597+00:00",
+        "timestamp": "2026-04-15T02:15:05.861083+00:00",
         "direction": "LONG",
-        "strength": 0.58,
+        "strength": 0.55,
         "confidence": 0.65,
-        "reasoning": "Positive price action with moderate upward momentum (+0.62%). High trading volume indicates strong market participation. BTC holding above 74k suggests continued bullish sentiment despite volatility.",
+        "reasoning": "Price remains above 70k with positive 24h change suggesting resilience. High trading volume indicates strong market participation. Momentum appears mildly bullish after recent consolidation.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74718,
-          "change_24h": 0.6186280698229233,
-          "volume_24h": 56895153332.433205
+          "price": 74562,
+          "change_24h": 0.13049019612471258,
+          "volume_24h": 53548217085.931915
         },
         "actionable": true,
-        "age_minutes": 55.0,
+        "age_minutes": 4.9,
         "is_fresh": true
       }
     },
