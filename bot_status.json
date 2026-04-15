@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T14:40:01.039988",
+  "generated_at": "2026-04-15T14:50:01.794224",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T14:40:01.040008"
+    "last_health_check": "2026-04-15T14:50:01.794239"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 14:38:05,822",
+      "last_update": "2026-04-15 14:48:07,980",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 50.2,
-        "time": "2026-04-15 14:38:05,822"
+        "confidence": 50.4,
+        "time": "2026-04-15 14:48:07,980"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 14:38:51,958",
+      "last_update": "2026-04-15 14:48:54,984",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,8 +76,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 60.9,
-        "time": "2026-04-15 14:38:51,958"
+        "confidence": 74.6,
+        "time": "2026-04-15 14:48:54,984"
       },
       "open_position": {
         "direction": "SHORT",
@@ -102,7 +102,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 14:40:00,792 - INFO - [HEARTBEAT] Price: $74,012.89",
+      "last_update": "2026-04-15 14:50:00,922 - INFO - [HEARTBEAT] Price: $74,097.89",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -116,9 +116,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 61.1,
-        "time": "2026-04-15 14:38:20,597"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
       "open_position": {
         "direction": "LONG",
@@ -214,7 +214,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 14:40:01",
+      "last_update": "2026-04-15 14:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -243,32 +243,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T14:40:01.898815",
+    "updated_at": "2026-04-15T14:50:02.630761",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3433,
-        "confidence": 0.6633,
-        "bullish_pct": 0.3049,
-        "bearish_pct": 0.047,
-        "neutral_pct": 0.6481,
+        "strength": 0.1465,
+        "confidence": 0.6697,
+        "bullish_pct": 0.4025,
+        "bearish_pct": 0.0486,
+        "neutral_pct": 0.5489,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.4722,
+        "stance_shifts": 0,
+        "consensus_score": 0.3234,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price is holding key support at $73.6K with repeated retests, and the $412M ETF inflows plus Goldman\u2019s filing add weight to institutional momentum. However, volume remains muted on uplegs and we\u2019re st",
-            "[CryptoKaleo] We\u2019re in the eye of the storm\u2014$73.6K is holding like a fortress amid extreme fear, and that\u2019s where generational wealth gets built. Goldman Sachs filing for a BTC ETF isn\u2019t theater, it\u2019s a declaration",
-            "[DiamondHands420] $73.6K holding strong again\u2014this is the *perfect* dip to load up! Goldman filing a BTC ETF + $412M inflows on top of back-to-back billion-dollar ATM days? This kind of institutional FOMO doesn\u2019t happe",
-            "[StackingSats] Every dip to $73.6K is a gift\u2014price is holding strong on extreme fear, the exact environment where weak hands sell to the smartest ones entering via ETFs. Goldman\u2019s filing and $412M in inflows aren\u2019t ",
-            "[FadeTheCrowd] $73.6K holding firm amid Extreme Fear (23) and lackluster price action is classic pre-launch compression. Goldman\u2019s ETF filing and $412M inflows aren\u2019t speculative fluff\u2014they\u2019re institutional bids at "
+            "[DiamondHands420] We\u2019re coiling like a spring at $74K \u2014 $412M inflows and Goldman filing a BTC ETF is FIRE! eToro buying Zengo and calling $250K? That\u2019s not noise, that\u2019s the blueprint. Dip is just FUD for weak hands, ",
+            "[StackingSats] $74K is a fortress\u2014$412M in ETF inflows, Goldman Sachs entering, and eToro acquiring Zengo signal unstoppable institutional adoption. MiCA 2 and regulated European derivatives (OKX, eToro) are acceler",
+            "[DeepPockets] Price holding above $73.6K on $412M ETF inflows with Goldman's entry confirms institutional conviction\u2014this isn't retail speculation. I'm adding modestly into this dip, anchored to my $72K average, as",
+            "[FadeTheCrowd] Price grinds sideways at $74K amid $412M in ETF inflows and Goldman\u2019s entry \u2014 classic quiet before the storm. Extreme fear at 23 with strong institutional accumulation tells me smart money is still lo",
+            "[CryptoKaleo] This dip into $73.6K is a masterclass in institutional accumulation \u2014 $412M in ETF inflows *plus* Goldman Sachs filing a BTC ETF isn't just bullish, it's a full-system reboot of Wall Street\u2019s endgame."
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally fueled by ETF noise and institutional theater. $412M inflows? That's just hot money chasing headlines while the smart money quietly distributes at these levels. Price is still st"
+            "[BearishBob] Another fakeout waiting to happen. $412M in ETF inflows? Great \u2014 institutions are perfectly positioned to dump at these levels. Price is stuck below $76K, volume is bloated with leverage, and every \"b"
           ]
         },
-        "timestamp": "2026-04-15T10:55:52.752011+00:00",
+        "timestamp": "2026-04-15T11:49:30.158041+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -285,17 +285,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1551.3,
+          "run_duration_sec": 1168.4,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 35,
           "market_data_summary": {
-            "price": 73937,
-            "change_24h": -0.88,
+            "price": 74049,
+            "change_24h": -0.49,
             "fear_greed": 23
           }
         },
-        "age_minutes": 44.2,
+        "age_minutes": 0.5,
         "is_fresh": true
       },
       "groq": {
@@ -346,7 +346,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 336.3,
+        "age_minutes": 346.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -363,7 +363,7 @@
           "volume_24h": 51887547845.415146
         },
         "actionable": true,
-        "age_minutes": 25.0,
+        "age_minutes": 35.0,
         "is_fresh": true
       }
     },
