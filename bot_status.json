@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T09:30:01.447674",
+  "generated_at": "2026-04-15T09:40:01.785120",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T09:30:01.447682"
+    "last_health_check": "2026-04-15T09:40:01.785138"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 09:28:18,101",
+      "last_update": "2026-04-15 09:38:21,304",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 33.6,
-        "time": "2026-04-15 09:28:18,101"
+        "confidence": 36.6,
+        "time": "2026-04-15 09:38:21,304"
       },
       "open_position": {
         "direction": "LONG",
@@ -65,7 +65,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 09:29:06,091",
+      "last_update": "2026-04-15 09:39:07,910",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -77,8 +77,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 65.0,
-        "time": "2026-04-15 09:29:06,091"
+        "confidence": 62.6,
+        "time": "2026-04-15 09:39:07,910"
       },
       "open_position": null,
       "performance": {
@@ -95,7 +95,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 09:29:55,566 - INFO - [HEARTBEAT] Price: $73,936.89",
+      "last_update": "2026-04-15 09:39:57,963 - INFO - [HEARTBEAT] Price: $73,975.50",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -110,8 +110,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 26.8,
-        "time": "2026-04-15 09:28:57,431"
+        "confidence": 26.7,
+        "time": "2026-04-15 09:39:01,960"
       },
       "open_position": null,
       "performance": {
@@ -199,7 +199,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 09:30:01",
+      "last_update": "2026-04-15 09:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -210,9 +210,9 @@
         "expected_pnl_2yr": 18000
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 46.0,
+        "time": "2026-04-15 09:39:40,567"
       },
       "open_position": null,
       "performance": {
@@ -228,32 +228,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T09:30:02.118420",
+    "updated_at": "2026-04-15T09:40:02.590264",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.2645,
-        "confidence": 0.6414,
-        "bullish_pct": 0.3425,
-        "bearish_pct": 0.0504,
-        "neutral_pct": 0.6071,
+        "direction": "LONG",
+        "strength": 0.4617,
+        "confidence": 0.6864,
+        "bullish_pct": 0.5096,
+        "bearish_pct": 0.0479,
+        "neutral_pct": 0.4425,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.4106,
+        "stance_shifts": 2,
+        "consensus_score": 0.2644,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $74K holding strong with Extreme Fear at 23? That's a buying opportunity screaming at us! The $2.7B ATM volume is NOT noise \u2014 it's real demand from strategic players loading up. With BTC showing bull ",
-            "[FadeTheCrowd] Price holding above $73.9K in Extreme Fear (23) remains a stealth accumulation signal \u2014 retail is scared, but the $2.7B ATM volume, while opaque, likely reflects strategic bids off-exchange. I trust t",
-            "[TrendRider] Price holding above $73.9K in Extreme Fear (23) with strong volume and a failed $76K breakout fits the late-stage washout pattern \u2014 classic fuel for trend resumption. The $2.7B STRC ATM volume, while ",
-            "[CryptoKaleo] We're seeing institutional-grade accumulation in plain sight \u2014 the $2.7B STRC ATM volume isn't just noise, it's a coordinated signal of demand. Price holding at $74K in Extreme Fear with a $90K techni",
-            "[StackingSats] Another dip to $74K in Extreme Fear (23) is pure accumulation candy \u2014 the $90K target remains locked in by onchain momentum and halving cycle math. The $2.7B STRC volume isn't noise, it's strategic st"
+            "[CryptoKaleo] We\u2019re coiling at the bottom of the rage \u2014 $73.9K is a fortress, not a failure. The STRC $2.7B blast isn't noise, it's signal: institutions are loading while the weak hands panic on quantum FUD and fak",
+            "[GlassnodeGuru] Extreme Fear at 23 persists, yet exchange net outflows continue (+8.4k BTC this week) and LTH accumulation is accelerating on-chain. SOPR now at 0.99 and rising, with NUPL recovering to -0.21 \u2014 strong",
+            "[StackingSats] Dip at $73.9K is a gift \u2014 extreme fear and quantum FUD are perfect conditions to stack. Onchain momentum and STRC volume confirm accumulation; $90K is just the first target in this halving cycle. 1 BT",
+            "[TrendRider] Price testing $73.9K with strong volume, extreme fear, and STRC clearing $2.7B in 48 hours confirms institutional accumulation \u2014 late-phase consolidation. The repeated rejection at $75.8K shows short-",
+            "[DeepPockets] Price holding at $73.9K with extreme fear, strong STRC volume ($2.7B/48h), and persistent outflows confirms institutional accumulation \u2014 this is not a bear market top. I\u2019m adding on dips toward $74K, "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rejection at $76K, now grinding sideways with bloated ATM noise propping up volume \u2014 classic bear trap setup. The $2.7B STRC figure is illusory demand, not real accumulation, and with "
+            "[BearishBob] $73.9K hold means nothing\u2014bulls keep getting slaughtered at $75.8K, now the third failed breakout since March. STRC pumps are just paper hands passing bags while real distribution happens on-chain; vo"
           ]
         },
-        "timestamp": "2026-04-15T05:36:35.069071+00:00",
+        "timestamp": "2026-04-15T06:35:23.124074+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -270,17 +270,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 393.3,
+          "run_duration_sec": 321.4,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74058,
-            "change_24h": -0.4,
+            "price": 73966,
+            "change_24h": -0.64,
             "fear_greed": 23
           }
         },
-        "age_minutes": 53.5,
+        "age_minutes": 4.7,
         "is_fresh": true
       },
       "groq": {
@@ -331,7 +331,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 26.3,
+        "age_minutes": 36.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -348,7 +348,7 @@
           "volume_24h": 52624763271.8493
         },
         "actionable": false,
-        "age_minutes": 15.0,
+        "age_minutes": 25.0,
         "is_fresh": true
       }
     },
