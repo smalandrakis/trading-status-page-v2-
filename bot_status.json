@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T15:50:01.516635",
+  "generated_at": "2026-04-15T16:00:01.384487",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-15T15:50:01.516656"
+    "last_health_check": "2026-04-15T16:00:01.384510"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 15:48:22,317",
+      "last_update": "2026-04-15 15:58:25,123",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 51.0,
-        "time": "2026-04-15 15:48:22,317"
+        "confidence": 54.4,
+        "time": "2026-04-15 15:58:25,123"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 15:49:14,471",
+      "last_update": "2026-04-15 15:59:19,660",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,10 +76,18 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 74.6,
-        "time": "2026-04-15 15:49:14,471"
+        "confidence": 67.9,
+        "time": "2026-04-15 15:59:17,655"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 1,
+        "entry_price": 74295.62,
+        "tp_price": 75038.5762,
+        "sl_price": 73924.14189999999,
+        "entry_time": "unknown",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 1,
         "wins": 0,
@@ -102,7 +110,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 15:49:31,695 - INFO - [HEARTBEAT] Price: $74,340.58",
+      "last_update": "2026-04-15 15:59:31,814 - INFO - [HEARTBEAT] Price: $74,295.61",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,10 +125,18 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 67.9,
-        "time": "2026-04-15 15:48:31,147"
+        "confidence": 55.3,
+        "time": "2026-04-15 15:52:32,754"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 3,
+        "entry_price": 74300.05,
+        "tp_price": 74671.55025,
+        "sl_price": 74188.599925,
+        "entry_time": "2026-04-15 15:52:32",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 34,
         "wins": 10,
@@ -201,12 +217,12 @@
           "hold_minutes": 33.0
         }
       ],
-      "health_status": "HEALTHY"
+      "health_status": "WARNING"
     },
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 15:50:02",
+      "last_update": "2026-04-15 16:00:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -235,32 +251,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T15:50:02.401968",
+    "updated_at": "2026-04-15T16:00:02.200341",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1465,
-        "confidence": 0.6697,
-        "bullish_pct": 0.4025,
-        "bearish_pct": 0.0486,
-        "neutral_pct": 0.5489,
+        "strength": 0.4077,
+        "confidence": 0.654,
+        "bullish_pct": 0.2711,
+        "bearish_pct": 0.05,
+        "neutral_pct": 0.6788,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3234,
+        "consensus_score": 0.5182,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] We\u2019re coiling like a spring at $74K \u2014 $412M inflows and Goldman filing a BTC ETF is FIRE! eToro buying Zengo and calling $250K? That\u2019s not noise, that\u2019s the blueprint. Dip is just FUD for weak hands, ",
-            "[StackingSats] $74K is a fortress\u2014$412M in ETF inflows, Goldman Sachs entering, and eToro acquiring Zengo signal unstoppable institutional adoption. MiCA 2 and regulated European derivatives (OKX, eToro) are acceler",
-            "[DeepPockets] Price holding above $73.6K on $412M ETF inflows with Goldman's entry confirms institutional conviction\u2014this isn't retail speculation. I'm adding modestly into this dip, anchored to my $72K average, as",
-            "[FadeTheCrowd] Price grinds sideways at $74K amid $412M in ETF inflows and Goldman\u2019s entry \u2014 classic quiet before the storm. Extreme fear at 23 with strong institutional accumulation tells me smart money is still lo",
-            "[CryptoKaleo] This dip into $73.6K is a masterclass in institutional accumulation \u2014 $412M in ETF inflows *plus* Goldman Sachs filing a BTC ETF isn't just bullish, it's a full-system reboot of Wall Street\u2019s endgame."
+            "[DiamondHands420] $74K is a STEAL with Extreme Fear at 23 and back-to-back $2.7B STRC ATM volume screaming capitulation bottom! Fireblocks Earn, Pakistan flipping crypto-friendly, and Virginia holding BTC in-kind are M",
+            "[FadeTheCrowd] Price hugging $73.6K with Extreme Fear (23) and $2.7B STRC ATM volume over 48 hours confirms quiet institutional accumulation \u2014 Fireblocks Earn, Pakistan\u2019s bank access shift, and Virginia\u2019s in-kind cu",
+            "[StackingSats] $74K is a fortress\u2014Extreme Fear at 23, back-to-back $2.7B STRC ATM days, and institutional infrastructure like Fireblocks Earn confirm this is a major accumulation zone. Every dip is a gift; the halvi",
+            "[CryptoKaleo] Extreme Fear at 23? That\u2019s the sound of weak hands getting rekt while the smart money quietly builds. Fireblocks Earn, STRC hitting $2.7B in 48 hours, and Pakistan flipping from ban to regulation \u2014 th"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $412M in ETF inflows? Great \u2014 institutions are perfectly positioned to dump at these levels. Price is stuck below $76K, volume is bloated with leverage, and every \"b"
+            "[BearishBob] Another fakeout building\u2014$74K is just the new trap zone. All this \"STRC volume\" and Fireblocks Earn noise is retail distraction; institutions are using stables to recycle yield, not buy BTC. Extreme F"
           ]
         },
-        "timestamp": "2026-04-15T11:49:30.158041+00:00",
+        "timestamp": "2026-04-15T12:55:13.376998+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -277,17 +292,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1168.4,
+          "run_duration_sec": 1511.4,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 35,
           "market_data_summary": {
-            "price": 74049,
-            "change_24h": -0.49,
+            "price": 74203,
+            "change_24h": -0.15,
             "fear_greed": 23
           }
         },
-        "age_minutes": 60.5,
+        "age_minutes": 4.8,
         "is_fresh": true
       },
       "groq": {
@@ -338,7 +353,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 406.3,
+        "age_minutes": 416.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -355,7 +370,7 @@
           "volume_24h": 49784751074.9321
         },
         "actionable": true,
-        "age_minutes": 34.9,
+        "age_minutes": 44.9,
         "is_fresh": true
       }
     },
