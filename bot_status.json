@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T23:40:01.377457",
+  "generated_at": "2026-04-15T23:50:01.064732",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-15T23:40:01.377471"
+    "last_health_check": "2026-04-15T23:50:01.064749"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 23:38:49,509",
+      "last_update": "2026-04-15 23:48:51,161",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 51.6,
-        "time": "2026-04-15 23:38:49,509"
+        "confidence": 51.8,
+        "time": "2026-04-15 23:48:51,161"
       },
       "open_position": {
         "direction": "LONG",
@@ -79,7 +79,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 23:38:25,121",
+      "last_update": "2026-04-15 23:48:27,408",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -91,8 +91,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.4,
-        "time": "2026-04-15 23:38:25,121"
+        "confidence": 58.9,
+        "time": "2026-04-15 23:48:27,408"
       },
       "open_position": {
         "direction": "SHORT",
@@ -139,7 +139,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 23:39:54,127 - INFO - [HEARTBEAT] Price: $74,684.65",
+      "last_update": "2026-04-15 23:49:54,245 - INFO - [HEARTBEAT] Price: $74,773.60",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -153,9 +153,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 60.0,
-        "time": "2026-04-15 23:38:16,227"
+        "signal": "LONG",
+        "confidence": 58.9,
+        "time": "2026-04-15 23:48:19,255"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 23:40:02",
+      "last_update": "2026-04-15 23:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -251,31 +251,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T23:40:02.377882",
+    "updated_at": "2026-04-15T23:50:01.920644",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.426,
-        "confidence": 0.6408,
-        "bullish_pct": 0.2641,
-        "bearish_pct": 0.0457,
-        "neutral_pct": 0.6902,
+        "strength": 0.2579,
+        "confidence": 0.6267,
+        "bullish_pct": 0.3471,
+        "bearish_pct": 0.0479,
+        "neutral_pct": 0.605,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5352,
+        "consensus_score": 0.4075,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $74.7K is not a trap\u2014it\u2019s a springboard. Every dip to this level gets bought, and on-chain proof from Tether\u2019s $70M+ accumulation and L&G\u2019s \u00a350B tokenization confirms institutional demand is accelerat",
-            "[FadeTheCrowd] Price hugging $74.7K on extreme fear (23) with Tether\u2019s $70M buy and L&G\u2019s \u00a350B move isn\u2019t noise\u2014it\u2019s stealth accumulation while retail hesitates. The weak volume bothers me, but this is the kind of p",
-            "[CryptoKaleo] We\u2019re not just holding $74.7K \u2014 we\u2019re loading the cannon. Tether\u2019s $70M buy isn\u2019t a blip, it\u2019s a blueprint: stablecoin issuers are front-running macro demand. L&G moving \u00a350B onchain isn\u2019t hype \u2014 it\u2019s",
-            "[DiamondHands420] $74.7K IS HOLDING LIKE A BRICK HOUSE \u2014 this dip? Just a pit stop! Tether\u2019s $70M+ buy + L&G\u2019s \u00a350B onchain move are *whale-level* accumulation signals, and the FUD around volume is classic pre-run-up s"
+            "[DiamondHands420] $74.7K is a no-brainer BUY zone \u2014 we\u2019ve got war-driven digital gold demand, Tether stacking REAL BTC (not just printing USDT), and CT buzzing with $75K confirmed! That CoinTelegraph target of $84K is ",
+            "[StackingSats] $74.7K is a deep discount amid war-driven risk-off sentiment and premature \u201csell the news\u201d flows. Tether\u2019s $70M onchain accumulation proves real institutions are stockpiling BTC as geopolitical collat",
+            "[FadeTheCrowd] Still holding my bullish stance. We're in Extreme Fear at $74.7K, same level where war premiums already priced in $75K+ \u2014 classic \"buy the rumor, sell the news\" setup. Tether\u2019s $70M buy isn\u2019t noise; i",
+            "[CryptoKaleo] $75K is just the warm-up \u2014 Tether\u2019s $70M+ real BTC reserve build isn\u2019t a side move, it\u2019s a war-chest signal. The Iran conflict + digital gold narrative is live, and with L&G tokenizing \u00a350B in liquidi",
+            "[TrendRider] Price is testing key resistance at $75K on war-driven flows and institutional accumulation, but I need that daily close above $76K to confirm momentum. Volume is supportive and Tether\u2019s $70M buy adds "
           ],
           "bearish": [
-            "[BearishBob] $74.7K is a well-worn trap \u2014 we keep testing it without conviction, and this \"institutional stacking\" narrative is already priced in. Tether\u2019s $70M buy is rounding error territory against $40B daily v"
+            "[BearishBob] Another fake breakout waiting to reverse. $75K is a trap \u2014 no real close above $76K, volume is thin despite the noise, and the \"geopolitical premium\" is just fear-driven FOMO. Tether buying $70M isn\u2019t"
           ]
         },
-        "timestamp": "2026-04-15T19:39:03.735709+00:00",
+        "timestamp": "2026-04-15T20:41:48.517557+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -292,17 +293,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 541.6,
+          "run_duration_sec": 706.7,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74717,
-            "change_24h": 0.63,
+            "price": 74693,
+            "change_24h": 0.65,
             "fear_greed": 23
           }
         },
-        "age_minutes": 61.0,
+        "age_minutes": 8.2,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +354,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 876.3,
+        "age_minutes": 886.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +371,7 @@
           "volume_24h": 40435762480.140495
         },
         "actionable": true,
-        "age_minutes": 25.0,
+        "age_minutes": 35.0,
         "is_fresh": true
       }
     },
