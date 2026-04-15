@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T07:30:01.057403",
+  "generated_at": "2026-04-15T07:40:01.341593",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T07:30:01.057429"
+    "last_health_check": "2026-04-15T07:40:01.341611"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 07:29:45,382",
+      "last_update": "2026-04-15 07:39:48,388",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 44.6,
-        "time": "2026-04-15 07:29:45,382"
+        "confidence": 53.1,
+        "time": "2026-04-15 07:39:48,388"
       },
       "open_position": {
         "direction": "LONG",
@@ -65,7 +65,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 07:28:35,597",
+      "last_update": "2026-04-15 07:38:38,834",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,9 +76,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 55.9,
-        "time": "2026-04-15 07:28:35,597"
+        "signal": "LONG",
+        "confidence": 51.0,
+        "time": "2026-04-15 07:38:38,833"
       },
       "open_position": null,
       "performance": {
@@ -95,7 +95,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 07:29:57,328 - INFO - [HEARTBEAT] Price: $74,303.58",
+      "last_update": "2026-04-15 07:39:59,523 - INFO - [HEARTBEAT] Price: $74,322.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -207,7 +207,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 07:30:01",
+      "last_update": "2026-04-15 07:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -236,31 +236,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T07:30:01.973146",
+    "updated_at": "2026-04-15T07:40:02.126172",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3174,
-        "confidence": 0.6461,
-        "bullish_pct": 0.3164,
-        "bearish_pct": 0.0497,
-        "neutral_pct": 0.6339,
+        "strength": 0.4341,
+        "confidence": 0.6544,
+        "bullish_pct": 0.2582,
+        "bearish_pct": 0.0496,
+        "neutral_pct": 0.6923,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4508,
+        "consensus_score": 0.5384,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $74.3K is a gift. The $76K rejection? Noise. Fear & Greed at 23 means weak hands are sweating \u2014 perfect accumulation conditions. BTC halving cycle is still in recovery phase, stock-to-flow model remai",
-            "[DeepPockets] Price holding above $73.9K aligns with my cost basis anchor from March, and the lack of institutional participation at $76K \u2014 confirmed by thin OTC flows \u2014 reinforces my view that this dip is a contro",
-            "[DiamondHands420] $74.3K is a total steal after that fake $76K rejection \u2014 classic shakeout! CoinTelegraph saying \"bull market behavior\" and $90K targets? That\u2019s confirmation bias I can get behind. Fear & Greed at 23 i",
-            "[CryptoKaleo] The $76K rejection? Just a pit stop. We\u2019re seeing classic accumulation behavior \u2014 F&G at 23 screams panic, but CoinTelegraph\u2019s $90K narrative is gaining steam, and with back-to-back billion-dollar ATM"
+            "[StackingSats] $74.3K on extreme fear (23) is a gift \u2014 every dip into the $73.9K\u2013$74.5K zone is prime stacking territory. The $76K rejection is noise; onchain accumulation, $2.7B STRC ATM volume, and halving-driven ",
+            "[FadeTheCrowd] Extreme Fear at 23 with price grinding near $74K is textbook late-stage accumulation. The $76K rejections are noise \u2014 weak hands get shaken out here, while onchain momentum and STRC volume ($2.7B clea",
+            "[CryptoKaleo] The $76K rejection isn\u2019t failure\u2014It\u2019s *fuel*. Extreme Fear at 23? Perfect. Whales are swallowing supply, STRC ATMs just cleared $2.7B in 48 hours\u2014this is the quiet before the vertical move. $74K is a ",
+            "[DiamondHands420] $74.3K holding strong with Extreme Fear at 23 \u2014 this is the final shakeout before the next leg up! All this \u201crejection\u201d noise at $76K is just whales accumulating off weak hands, and STRC ATMs clearing"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $76K on weak volume\u2014exactly the bull trap I\u2019ve been calling. The so-called \"back-to-back billion-dollar days\" are noise, not conviction, and with real yields rising and DXY holding "
+            "[BearishBob] Another fakeout rejection at $76K and you're citing \"bull market behavior\"? The tape is screaming distribution \u2014 price stuck under resistance, volume fading on rallies, and now grinding sideways in ex"
           ]
         },
-        "timestamp": "2026-04-15T03:34:11.143762+00:00",
+        "timestamp": "2026-04-15T04:34:12.396768+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -277,17 +277,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 249.2,
+          "run_duration_sec": 251.0,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74368,
-            "change_24h": 0.11,
+            "price": 74339,
+            "change_24h": -0.22,
             "fear_greed": 23
           }
         },
-        "age_minutes": 55.8,
+        "age_minutes": 5.8,
         "is_fresh": true
       },
       "groq": {
@@ -337,7 +337,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1346.3,
+        "age_minutes": 1356.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -354,7 +354,7 @@
           "volume_24h": 53565946253.59371
         },
         "actionable": false,
-        "age_minutes": 15.0,
+        "age_minutes": 25.0,
         "is_fresh": true
       }
     },
