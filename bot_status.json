@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T16:40:01.072508",
+  "generated_at": "2026-04-15T16:50:02.107216",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T16:40:01.072531"
+    "last_health_check": "2026-04-15T16:50:02.107237"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 16:38:35,771",
+      "last_update": "2026-04-15 16:48:37,946",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 60.1,
-        "time": "2026-04-15 16:38:35,771"
+        "confidence": 51.1,
+        "time": "2026-04-15 16:48:37,946"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 16:39:31,413",
+      "last_update": "2026-04-15 16:49:37,238",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,41 +76,33 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 58.4,
-        "time": "2026-04-15 16:39:31,413"
+        "confidence": 72.9,
+        "time": "2026-04-15 16:49:37,238"
       },
       "open_position": {
-        "direction": "LONG",
+        "direction": "SHORT",
         "size": 1,
-        "entry_price": 74295.62,
-        "tp_price": 75038.5762,
-        "sl_price": 73924.14189999999,
+        "entry_price": 73999.99,
+        "tp_price": 73259.99010000001,
+        "sl_price": 74369.98995,
         "entry_time": "unknown",
         "adopted": false
       },
       "performance": {
-        "total_trades": 1,
+        "total_trades": 0,
         "wins": 0,
-        "losses": 1,
-        "win_rate": 0.0,
-        "total_pnl": -78.32,
-        "avg_pnl": -78.32
+        "losses": 0,
+        "win_rate": 0,
+        "total_pnl": 0,
+        "avg_pnl": 0
       },
-      "recent_trades": [
-        {
-          "time": "2026-04-15 15:39:09",
-          "direction": "SHORT",
-          "pnl": -78.32,
-          "pnl_pct": -0.53,
-          "hold_minutes": 159.0
-        }
-      ],
+      "recent_trades": [],
       "health_status": "HEALTHY"
     },
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 16:39:32,254 - INFO - [HEARTBEAT] Price: $74,132.68",
+      "last_update": "2026-04-15 16:49:35,128 - INFO - [HEARTBEAT] Price: $73,902.20",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,96 +117,25 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 63.4,
-        "time": "2026-04-15 16:38:47,410"
+        "confidence": 69.2,
+        "time": "2026-04-15 16:43:06,699"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 37,
-        "wins": 10,
-        "losses": 27,
-        "win_rate": 27.0,
-        "total_pnl": -411.36,
-        "avg_pnl": -11.12
+        "total_trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate": 0,
+        "total_pnl": 0,
+        "avg_pnl": 0
       },
-      "recent_trades": [
-        {
-          "time": "2026-04-15T07:48:11.341894",
-          "direction": "LONG",
-          "pnl": -35.05,
-          "pnl_pct": -0.16,
-          "hold_minutes": 46.0
-        },
-        {
-          "time": "2026-04-15T13:07:07.044116",
-          "direction": "SHORT",
-          "pnl": -34.71,
-          "pnl_pct": -0.16,
-          "hold_minutes": 7.0
-        },
-        {
-          "time": "2026-04-15T13:45:31.222144",
-          "direction": "SHORT",
-          "pnl": -33.44,
-          "pnl_pct": -0.15,
-          "hold_minutes": 27.0
-        },
-        {
-          "time": "2026-04-15T13:59:05.060983",
-          "direction": "LONG",
-          "pnl": -36.96,
-          "pnl_pct": -0.17,
-          "hold_minutes": 7.0
-        },
-        {
-          "time": "2026-04-15T14:36:39.872890",
-          "direction": "SHORT",
-          "pnl": -33.33,
-          "pnl_pct": -0.15,
-          "hold_minutes": 16.0
-        },
-        {
-          "time": "2026-04-15T14:54:21.027412",
-          "direction": "LONG",
-          "pnl": 55.96,
-          "pnl_pct": 0.25,
-          "hold_minutes": 16.0
-        },
-        {
-          "time": "2026-04-15T15:39:55.187444",
-          "direction": "LONG",
-          "pnl": 111.6,
-          "pnl_pct": 0.5,
-          "hold_minutes": 33.0
-        },
-        {
-          "time": "2026-04-15T16:02:45.304798",
-          "direction": "LONG",
-          "pnl": -35.18,
-          "pnl_pct": -0.16,
-          "hold_minutes": 10.0
-        },
-        {
-          "time": "2026-04-15T16:33:39.731527",
-          "direction": "SHORT",
-          "pnl": -35.64,
-          "pnl_pct": -0.16,
-          "hold_minutes": 1.0
-        },
-        {
-          "time": "2026-04-15T16:37:10.144162",
-          "direction": "LONG",
-          "pnl": -33.42,
-          "pnl_pct": -0.15,
-          "hold_minutes": 2.0
-        }
-      ],
+      "recent_trades": [],
       "health_status": "HEALTHY"
     },
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 16:40:01",
+      "last_update": "2026-04-15 16:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -243,31 +164,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T16:40:02.098055",
+    "updated_at": "2026-04-15T16:50:02.985941",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4077,
-        "confidence": 0.654,
-        "bullish_pct": 0.2711,
-        "bearish_pct": 0.05,
-        "neutral_pct": 0.6788,
+        "strength": 0.3094,
+        "confidence": 0.6333,
+        "bullish_pct": 0.3218,
+        "bearish_pct": 0.0469,
+        "neutral_pct": 0.6313,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5182,
+        "stance_shifts": 1,
+        "consensus_score": 0.4469,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $74K is a STEAL with Extreme Fear at 23 and back-to-back $2.7B STRC ATM volume screaming capitulation bottom! Fireblocks Earn, Pakistan flipping crypto-friendly, and Virginia holding BTC in-kind are M",
-            "[FadeTheCrowd] Price hugging $73.6K with Extreme Fear (23) and $2.7B STRC ATM volume over 48 hours confirms quiet institutional accumulation \u2014 Fireblocks Earn, Pakistan\u2019s bank access shift, and Virginia\u2019s in-kind cu",
-            "[StackingSats] $74K is a fortress\u2014Extreme Fear at 23, back-to-back $2.7B STRC ATM days, and institutional infrastructure like Fireblocks Earn confirm this is a major accumulation zone. Every dip is a gift; the halvi",
-            "[CryptoKaleo] Extreme Fear at 23? That\u2019s the sound of weak hands getting rekt while the smart money quietly builds. Fireblocks Earn, STRC hitting $2.7B in 48 hours, and Pakistan flipping from ban to regulation \u2014 th"
+            "[FadeTheCrowd] Price grinding higher to $74.3K on continued Extreme Fear (23) while volume holds firm tells me selling pressure is exhausted. Pakistan\u2019s banking shift and Fireblocks\u2019 yield rails aren\u2019t noise\u2014they\u2019re",
+            "[TrendRider] Price is holding firm within the $73.6K\u2013$75.8K range with volume sustaining and Extreme Fear (23) persisting\u2014classic late-stage consolidation behavior. The regulatory tailwinds from Pakistan and insti",
+            "[DiamondHands420] Pakistani banks opening up to crypto firms is a MASSIVE green flag for global adoption \u2014 this is 2018 all over again but in reverse! Price holding $73.6K with Extreme Fear at 23? That\u2019s textbook botto",
+            "[StackingSats] Another dip defended at $73.6K\u2014this institutional bid zone holds firm. Extreme Fear (23) amid strong volume confirms quiet accumulation, not weakness. Pakistan\u2019s regulatory shift and Fireblocks\u2019 yield",
+            "[CryptoKaleo] This $73.6K floor is sacred\u2014every dip gets bought harder as institutional rails like Fireblocks Earn and Pakistan\u2019s banking thaw ignite global FOMO. We\u2019re not just consolidating, we\u2019re *rearming*\u2014volu"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building\u2014$74K is just the new trap zone. All this \"STRC volume\" and Fireblocks Earn noise is retail distraction; institutions are using stables to recycle yield, not buy BTC. Extreme F"
+            "[BearishBob] Another bounce off $73.6K, big surprise. That \"Extreme Fear\" print isn't accumulation\u2014it's trapped buyers again, just like March. Pakistan\u2019s move? Paper over cracks. Institutions aren\u2019t diving in; the"
           ]
         },
-        "timestamp": "2026-04-15T12:55:13.376998+00:00",
+        "timestamp": "2026-04-15T13:41:56.134814+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -284,17 +206,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1511.4,
+          "run_duration_sec": 713.8,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 74203,
-            "change_24h": -0.15,
+            "price": 74343,
+            "change_24h": -0.41,
             "fear_greed": 23
           }
         },
-        "age_minutes": 44.8,
+        "age_minutes": 8.1,
         "is_fresh": true
       },
       "groq": {
@@ -345,7 +267,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 456.3,
+        "age_minutes": 466.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -362,7 +284,7 @@
           "volume_24h": 51910998290.63997
         },
         "actionable": true,
-        "age_minutes": 25.0,
+        "age_minutes": 35.0,
         "is_fresh": true
       }
     },
