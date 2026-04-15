@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-15T05:30:01.668489",
+  "generated_at": "2026-04-15T05:40:01.884099",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-15T05:30:01.668506"
+    "last_health_check": "2026-04-15T05:40:01.884119"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-15 05:29:06,201",
+      "last_update": "2026-04-15 05:39:09,184",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 44.4,
-        "time": "2026-04-15 05:29:06,201"
+        "confidence": 52.4,
+        "time": "2026-04-15 05:39:09,184"
       },
       "open_position": null,
       "performance": {
@@ -57,7 +57,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-15 05:28:02,253",
+      "last_update": "2026-04-15 05:38:04,491",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -68,9 +68,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 52.6,
-        "time": "2026-04-15 05:28:02,252"
+        "signal": "LONG",
+        "confidence": 52.4,
+        "time": "2026-04-15 05:38:04,491"
       },
       "open_position": null,
       "performance": {
@@ -87,7 +87,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-15 05:29:58,437 - INFO - [HEARTBEAT] Price: $74,348.57",
+      "last_update": "2026-04-15 05:40:00,734 - INFO - [HEARTBEAT] Price: $74,198.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -102,8 +102,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 34.1,
-        "time": "2026-04-15 05:29:18,406"
+        "confidence": 40.0,
+        "time": "2026-04-15 05:39:23,974"
       },
       "open_position": null,
       "performance": {
@@ -191,7 +191,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-15 05:30:02",
+      "last_update": "2026-04-15 05:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -220,33 +220,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-15T05:30:02.482148",
+    "updated_at": "2026-04-15T05:40:02.684087",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2638,
-        "confidence": 0.6458,
-        "bullish_pct": 0.2683,
-        "bearish_pct": 0.1996,
-        "neutral_pct": 0.5321,
+        "strength": 0.0901,
+        "confidence": 0.65,
+        "bullish_pct": 0.3865,
+        "bearish_pct": 0.1369,
+        "neutral_pct": 0.4766,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.2982,
+        "stance_shifts": 0,
+        "consensus_score": 0.2149,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $74.7K is holding strong as a major accumulation zone \u2014 Extreme Fear at 23 means the weak hands are long gone, and that $2.7B STRC volume isn\u2019t noise, it\u2019s institutions prepping for the next leg! All ",
-            "[StackingSats] Every rejection at $76K is just noise\u2014$74.7K remains a proven accumulation zone with Extreme Fear (23) and $2.7B STRC volume signaling foundational demand. The halving cycle is still in recovery; this",
-            "[CryptoKaleo] $74.7K is not just holding \u2014 it's magnetizing. Extreme Fear at 23? That\u2019s capitulation bottoming out. The $2.7B STRC volume isn\u2019t speculative fluff; it\u2019s institutional rail-building in real time. Ever",
-            "[FadeTheCrowd] Price holding at $74.7K in extreme fear (23) with $2.7B STRC volume confirms quiet accumulation \u2014 the failed $76K breakout is noise, not a reversal. Weak volume on rejection suggests no strong distrib"
+            "[DiamondHands420] $74.4K is a total steal after that dip\u2014FUD never kills Bitcoin! I see \"bull trap\" talk but nah, this is classic pre-runup consolidation. With back-to-back billion-dollar ATM volumes and halving moment",
+            "[FadeTheCrowd] Price holding above $73.9K in Extreme Fear while clearing $2.7B through STRC ATMs signals silent institutional accumulation. The rejections at $76K are healthy \u2014 they trap weak longs and flush leverag",
+            "[DeepPockets] Price holding above $73.9K in Extreme Fear with back-to-back $2.7B STRC ATM volume confirms quiet institutional absorption\u2014this is not retail behavior. I\u2019m anchored to my $72K cost basis, and the repe",
+            "[CryptoKaleo] The $74.4K hold in *Extreme Fear* with back-to-back $1B+ STRC ATM prints is institutional accumulation on full display \u2014 this isn\u2019t a bull trap, it\u2019s a coiled spring. Weak hands panic, retail sells, b",
+            "[StackingSats] $74.4K is a gift\u2014extreme fear with rejection at $76K is classic pre-halving accumulation. Back-to-back $2.7B STRC ATM prints scream institutional demand while weak hands fret over noise. This range is"
           ],
           "bearish": [
-            "[AlphaQuant] Price remains trapped below $76K resistance with declining volume on retests, confirming lack of institutional buying conviction. The $2.7B STRC volume is notable but does not offset the absence of mo",
-            "[DeltaNeutral] Price rejection at $76K on declining volume remains a high-probability bearish signal, with order book depth showing growing short-side liquidation clusters below $73.5K. The $2.7B STRC volume is oper",
-            "[BearishBob] Another fakeout at $76K on weak volume\u2014classic bull trap setup. Every rally since the ATH has been a sell-the-news event, and with macro still shaky and no real catalysts, this \"extreme fear\" bounce i"
+            "[BearishBob] Another fakeout failure at $76K\u2014same script, different day. The \"billion-dollar ATM\" noise is just retail chasing yield illusions while institutions stand aside; volume's hollow, SOPR's flat, and that",
+            "[DeltaNeutral] Price rejection at $76K remains unbroken with declining bid-side depth, reinforcing distribution-range dynamics. Extreme Fear and STRC ATM volume are noted but not priced in\u2014structural inflows lack co"
           ]
         },
-        "timestamp": "2026-04-15T01:38:20.571480+00:00",
+        "timestamp": "2026-04-15T02:37:16.377236+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -263,17 +263,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 499.3,
+          "run_duration_sec": 434.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74677,
-            "change_24h": 0.48,
+            "price": 74407,
+            "change_24h": -0.15,
             "fear_greed": 23
           }
         },
-        "age_minutes": 51.7,
+        "age_minutes": 2.8,
         "is_fresh": true
       },
       "groq": {
@@ -323,7 +323,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1226.3,
+        "age_minutes": 1236.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -340,7 +340,7 @@
           "volume_24h": 53548217085.931915
         },
         "actionable": true,
-        "age_minutes": 14.9,
+        "age_minutes": 24.9,
         "is_fresh": true
       }
     },
