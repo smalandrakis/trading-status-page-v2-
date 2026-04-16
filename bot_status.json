@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-16T21:00:01.354919",
+  "generated_at": "2026-04-16T21:10:01.798656",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-16T21:00:01.354941"
+    "last_health_check": "2026-04-16T21:10:01.798676"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-16 20:59:02,705",
+      "last_update": "2026-04-16 21:09:05,807",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 28.5,
-        "time": "2026-04-16 20:59:02,705"
+        "confidence": 30.4,
+        "time": "2026-04-16 21:09:05,807"
       },
       "open_position": {
         "direction": "LONG",
@@ -86,7 +86,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-16 20:59:14,746",
+      "last_update": "2026-04-16 21:09:18,272",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -98,8 +98,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.4,
-        "time": "2026-04-16 20:59:14,746"
+        "confidence": 56.5,
+        "time": "2026-04-16 21:09:18,272"
       },
       "open_position": {
         "direction": "SHORT",
@@ -146,7 +146,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-16 20:59:37,126 - INFO - [HEARTBEAT] Price: $74,311.21",
+      "last_update": "2026-04-16 21:09:37,241 - INFO - [HEARTBEAT] Price: $74,285.23",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -161,8 +161,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 64.2,
-        "time": "2026-04-16 20:58:06,625"
+        "confidence": 50.2,
+        "time": "2026-04-16 21:08:11,990"
       },
       "open_position": null,
       "performance": {
@@ -250,7 +250,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-16 21:00:02",
+      "last_update": "2026-04-16 21:10:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -279,28 +279,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-16T21:00:02.325772",
+    "updated_at": "2026-04-16T21:10:02.536070",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5907,
-        "confidence": 0.593,
-        "bullish_pct": 0.1876,
-        "bearish_pct": 0.0341,
-        "neutral_pct": 0.7783,
+        "strength": 0.2806,
+        "confidence": 0.6671,
+        "bullish_pct": 0.3215,
+        "bearish_pct": 0.0763,
+        "neutral_pct": 0.6021,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6675,
+        "consensus_score": 0.4032,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $75K is a steal amid geopolitical firestorms and Tether\u2019s $70M accumulation\u2014nation-states and giants are loading up while weak hands sweat range-bound noise. The halving supply crunch is upon us, hash",
-            "[DiamondHands420] $75K just flipped as support\u2014geopolitical chaos and Tether\u2019s $70M buy are FIRE! Iran news is FOMO fuel and the halving supply crunch is *real*. I\u2019m all in, stacking on every dip, baby! This is the cal",
-            "[CryptoKaleo] $75K is not resistance \u2014 it's the new foundation. Iran chaos ignites the narrative fire, Tether\u2019s $70M buy screams institutional quiet accumulation, and Pakistan\u2019s policy flip proves global adoption i"
+            "[FadeTheCrowd] Price holding at $73.5K with Fear & Greed at 23 signals capitulation amid noise-driven rejection at $75.2K. Tether\u2019s reserve build and Schwab\u2019s spot entry are meaningful, but the market is pricing unc",
+            "[CryptoKaleo] We\u2019re at war levels of uncertainty, Tether is loading the guns with $70M+ in BTC reserves, and Schwab is about to drop a retail nuke. $73.5K isn\u2019t support \u2014 it\u2019s a spring coil. That fake breakout? Mar",
+            "[DiamondHands420] We\u2019re printing money right here at $73.5K \u2014 extreme fear with Tether piling in $70M+ and Schwab flipping the switch on spot trading? This is institutional FOMO setting up the next leg. Iran war = digi"
           ],
-          "bearish": []
+          "bearish": [
+            "[BearishBob] Another fakeout at $75.2k \u2014 same resistance level that\u2019s trapped bulls since January. Every time we approach this level, it\u2019s a textbook liquidity grab before another leg down. Tether's reserve moves "
+          ]
         },
-        "timestamp": "2026-04-16T17:18:45.542509+00:00",
+        "timestamp": "2026-04-16T18:02:56.464079+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -317,17 +319,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 13723.3,
+          "run_duration_sec": 12775.0,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 23,
+          "total_posts": 24,
           "market_data_summary": {
-            "price": 74971,
-            "change_24h": 0.82,
+            "price": 73697,
+            "change_24h": -0.99,
             "fear_greed": 23
           }
         },
-        "age_minutes": 41.3,
+        "age_minutes": 7.1,
         "is_fresh": true
       },
       "groq": {
@@ -378,7 +380,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2156.3,
+        "age_minutes": 2166.3,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -395,7 +397,7 @@
           "volume_24h": 44372221324.830605
         },
         "actionable": true,
-        "age_minutes": 45.0,
+        "age_minutes": 55.0,
         "is_fresh": true
       }
     },
