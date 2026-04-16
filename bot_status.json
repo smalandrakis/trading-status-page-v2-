@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-16T23:10:02.474548",
+  "generated_at": "2026-04-16T23:20:01.601854",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-16T23:10:02.474562"
+    "last_health_check": "2026-04-16T23:20:01.601875"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-16 23:10:02",
+      "last_update": "2026-04-16 23:20:01",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 50.0,
-        "time": "2026-04-16 23:09:52,405"
+        "confidence": 48.8,
+        "time": "2026-04-16 23:19:55,685"
       },
       "open_position": null,
       "performance": {
@@ -85,7 +85,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-16 23:08:23,536",
+      "last_update": "2026-04-16 23:18:31,818",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -97,8 +97,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 61.8,
-        "time": "2026-04-16 23:08:23,536"
+        "confidence": 64.5,
+        "time": "2026-04-16 23:18:31,818"
       },
       "open_position": {
         "direction": "SHORT",
@@ -145,7 +145,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-16 23:09:38,818 - INFO - [HEARTBEAT] Price: $75,253.99",
+      "last_update": "2026-04-16 23:19:38,976 - INFO - [HEARTBEAT] Price: $75,271.46",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -159,11 +159,19 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 69.5,
-        "time": "2026-04-16 23:09:10,299"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 4,
+        "entry_price": 75350.51,
+        "tp_price": 75727.26254999998,
+        "sl_price": 75237.484235,
+        "entry_time": "2026-04-16 23:11:33",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 19,
         "wins": 9,
@@ -249,7 +257,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-16 23:10:03",
+      "last_update": "2026-04-16 23:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -278,30 +286,29 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-16T23:10:03.445166",
+    "updated_at": "2026-04-16T23:20:02.472964",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2806,
-        "confidence": 0.6671,
-        "bullish_pct": 0.3215,
-        "bearish_pct": 0.0763,
-        "neutral_pct": 0.6021,
+        "strength": 0.5344,
+        "confidence": 0.6429,
+        "bullish_pct": 0.2055,
+        "bearish_pct": 0.0547,
+        "neutral_pct": 0.7398,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4032,
+        "consensus_score": 0.6098,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price holding at $73.5K with Fear & Greed at 23 signals capitulation amid noise-driven rejection at $75.2K. Tether\u2019s reserve build and Schwab\u2019s spot entry are meaningful, but the market is pricing unc",
-            "[CryptoKaleo] We\u2019re at war levels of uncertainty, Tether is loading the guns with $70M+ in BTC reserves, and Schwab is about to drop a retail nuke. $73.5K isn\u2019t support \u2014 it\u2019s a spring coil. That fake breakout? Mar",
-            "[DiamondHands420] We\u2019re printing money right here at $73.5K \u2014 extreme fear with Tether piling in $70M+ and Schwab flipping the switch on spot trading? This is institutional FOMO setting up the next leg. Iran war = digi"
+            "[CryptoKaleo] $74.1K is a spring coil \u2014 not a ceiling. The Zonda 4.5K BTC loss is digital scarcity on fire, Tennessee\u2019s sovereign play is domino #2, and Iran war risk turns BTC into a shadow SWIFT alternative. Stea",
+            "[StackingSats] Every dip is a gift \u2014 $74K is just noise in the climb to $126K. The Zonda 4.5K BTC loss amplifies digital scarcity, Tennessee\u2019s reserve move mirrors Wyoming\u2019s precedent, and Iran-driven demand proves "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $75.2k \u2014 same resistance level that\u2019s trapped bulls since January. Every time we approach this level, it\u2019s a textbook liquidity grab before another leg down. Tether's reserve moves "
+            "[BearishBob] Another fakeout at $75K \u2014 no volume, no institutional follow-through, just retail and geopolitical FOMO chasing media headlines. Zonda\u2019s 4.5K BTC loss is a supply shock, not a demand signal, and Tenne"
           ]
         },
-        "timestamp": "2026-04-16T18:02:56.464079+00:00",
+        "timestamp": "2026-04-16T20:13:00.910321+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -318,17 +325,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 12775.0,
+          "run_duration_sec": 9779.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 24,
           "market_data_summary": {
-            "price": 73697,
-            "change_24h": -0.99,
+            "price": 74174,
+            "change_24h": -0.0,
             "fear_greed": 23
           }
         },
-        "age_minutes": 127.1,
+        "age_minutes": 7.0,
         "is_fresh": true
       },
       "groq": {
@@ -379,24 +386,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2286.3,
+        "age_minutes": 2296.3,
         "is_fresh": false
       },
       "mirofish_full": {
-        "timestamp": "2026-04-16T19:15:04.274336+00:00",
+        "timestamp": "2026-04-16T20:15:05.955137+00:00",
         "direction": "LONG",
         "strength": 0.6,
         "confidence": 0.7,
-        "reasoning": "Price maintaining near ATH with positive 24h change shows resilience. High trading volume indicates strong market interest. Approaching potential resistance but momentum remains positive.",
+        "reasoning": "Positive 24h change shows upward momentum. Strong trading volume indicates market interest. Price above $75k psychological level suggests bullish sentiment. However, volatility risk remains near ATH levels.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74800,
-          "change_24h": 0.1384819743137447,
-          "volume_24h": 45063041003.853485
+          "price": 75426,
+          "change_24h": 1.0072862998028793,
+          "volume_24h": 40582093474.48124
         },
         "actionable": true,
-        "age_minutes": 55.0,
+        "age_minutes": 4.9,
         "is_fresh": true
       }
     },
