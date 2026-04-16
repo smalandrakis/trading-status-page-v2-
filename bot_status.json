@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-16T17:10:01.986380",
+  "generated_at": "2026-04-16T17:20:02.042585",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-16T17:10:01.986394"
+    "last_health_check": "2026-04-16T17:20:02.042610"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-16 17:09:55,892",
+      "last_update": "2026-04-16 17:19:58,713",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 29.6,
-        "time": "2026-04-16 17:09:55,892"
+        "confidence": 29.7,
+        "time": "2026-04-16 17:19:58,713"
       },
       "open_position": {
         "direction": "LONG",
@@ -86,7 +86,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-16 17:08:25,952",
+      "last_update": "2026-04-16 17:18:28,579",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -98,8 +98,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 61.5,
-        "time": "2026-04-16 17:08:25,952"
+        "confidence": 61.9,
+        "time": "2026-04-16 17:18:28,579"
       },
       "open_position": {
         "direction": "SHORT",
@@ -146,7 +146,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-16 17:09:33,810 - INFO - [HEARTBEAT] Price: $73,884.33",
+      "last_update": "2026-04-16 17:19:33,939 - INFO - [HEARTBEAT] Price: $73,626.14",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -161,8 +161,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 55.4,
-        "time": "2026-04-16 17:08:17,690"
+        "confidence": 55.2,
+        "time": "2026-04-16 17:18:23,646"
       },
       "open_position": null,
       "performance": {
@@ -250,7 +250,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-16 17:10:02",
+      "last_update": "2026-04-16 17:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -279,7 +279,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-16T17:10:02.979453",
+    "updated_at": "2026-04-16T17:20:03.026130",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -329,7 +329,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 70.6,
+        "age_minutes": 80.6,
         "is_fresh": true
       },
       "groq": {
@@ -380,24 +380,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 1926.3,
+        "age_minutes": 1936.3,
         "is_fresh": false
       },
       "mirofish_full": {
-        "timestamp": "2026-04-16T11:15:04.708286+00:00",
-        "direction": "LONG",
-        "strength": 0.55,
-        "confidence": 0.65,
-        "reasoning": "Positive 24h change with high trading volume indicates buying pressure. Price holding above $74k shows resilience. Momentum appears moderately bullish, though limited upside movement suggests caution.",
+        "timestamp": "2026-04-16T14:15:04.114058+00:00",
+        "direction": "NEUTRAL",
+        "strength": 0.4,
+        "confidence": 0.6,
+        "reasoning": "Price near ATH with minimal 24h change suggests consolidation. Volume remains healthy but price action lacks clear direction. Market appears to be in equilibrium awaiting catalyst.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74334,
-          "change_24h": 0.379618393165317,
-          "volume_24h": 39170988132.72543
+          "price": 73904,
+          "change_24h": -0.135181734589002,
+          "volume_24h": 41848564521.022644
         },
-        "actionable": true,
-        "age_minutes": 175.0,
+        "actionable": false,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
