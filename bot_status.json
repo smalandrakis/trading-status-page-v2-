@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-16T11:40:01.920086",
+  "generated_at": "2026-04-16T11:50:01.644558",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-16T11:40:01.920110"
+    "last_health_check": "2026-04-16T11:50:01.644575"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-16 11:39:11,663",
+      "last_update": "2026-04-16 11:49:13,546",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 41.6,
-        "time": "2026-04-16 11:39:11,663"
+        "confidence": 41.0,
+        "time": "2026-04-16 11:49:13,546"
       },
       "open_position": {
         "direction": "LONG",
@@ -79,7 +79,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-16 11:38:58,007",
+      "last_update": "2026-04-16 11:49:00,421",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -90,9 +90,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 77.7,
-        "time": "2026-04-16 11:38:58,007"
+        "signal": "NEUTRAL",
+        "confidence": 52.7,
+        "time": "2026-04-16 11:49:00,421"
       },
       "open_position": {
         "direction": "LONG",
@@ -139,7 +139,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-16 11:39:52,016 - INFO - [HEARTBEAT] Price: $74,664.36",
+      "last_update": "2026-04-16 11:49:52,101 - INFO - [HEARTBEAT] Price: $74,722.43",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -153,9 +153,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 61.6,
-        "time": "2026-04-16 11:38:51,365"
+        "signal": "LONG",
+        "confidence": 57.5,
+        "time": "2026-04-16 11:48:55,570"
       },
       "open_position": null,
       "performance": {
@@ -229,7 +229,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-16 11:40:02",
+      "last_update": "2026-04-16 11:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -258,33 +258,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-16T11:40:02.909818",
+    "updated_at": "2026-04-16T11:50:02.375804",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1989,
-        "confidence": 0.6564,
-        "bullish_pct": 0.2632,
-        "bearish_pct": 0.269,
-        "neutral_pct": 0.4678,
+        "strength": 0.5944,
+        "confidence": 0.6561,
+        "bullish_pct": 0.1798,
+        "bearish_pct": 0.046,
+        "neutral_pct": 0.7742,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.2017,
+        "consensus_score": 0.6614,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $74.9K in Extreme Fear with geopolitical tailwinds and Tether adding $70M to reserves is a gift. Iran tensions validate Bitcoin as neutral settlement infrastructure, Pakistan\u2019s policy shift confirms g",
-            "[CryptoKaleo] $74.9K is a springboard, not a ceiling \u2014 we\u2019re witnessing a geopolitical *and* institutional convergence. Iran war risk turbocharges BTC as neutral settlement rails, Tether\u2019s $70M reserve move signals",
-            "[FadeTheCrowd] Price holding near $75K on geopolitical stress and Extreme Fear (23) while Tether adds $70M to reserves and Morgan Stanley\u2019s ETF gains traction is classic contrarian fuel. Weak volume and skepticism f",
-            "[DiamondHands420] $74.9K is a launchpad \u2014 Iran war fears + Tether stacking + Pakistan lifting the ban = perfect storm for a breakout! FUD at 23 Fear? That\u2019s my entry signal. Volume doesn\u2019t lie? Nah, whales are loading "
+            "[DiamondHands420] $75K hold confirmed \u2014 this dip is a gift! Iran war risk, Tether\u2019s $70M strategic reserve buy, Pakistan lifting the ban, and Morgan Stanley\u2019s ETF dominance are ALL aligning. Institutions are rotating h",
+            "[StackingSats] $74.6K is accumulation in motion\u2014geopolitical stress, Tether\u2019s $70M reserve buy, Pakistan\u2019s reversal, and Morgan Stanley\u2019s ETF surge are not noise, they\u2019re validation. The Fear & Greed at 23 confirms ",
+            "[CryptoKaleo] $74.6K is a stealth accumulation zone \u2014 Iran\u2019s geopolitical pressure, Tether\u2019s $70M strategic reserve move, and Pakistan flipping from ban to banking access are *not* noise, they\u2019re structural validat"
           ],
           "bearish": [
-            "[TrendRider] Price probing $75K on geopolitical fear with weak volume follow-through is a classic late-stage fakeout setup \u2014 we\u2019ve seen this before in 2022 and Q1 2025. Despite Tether\u2019s $70M move and Morgan Stanle",
-            "[DeepPockets] $74.9K feels like a bear trap \u2014 geopolitical noise is driving price, not fundamentals. Volume remains soft, institutional flows are fragmented, and I\u2019m anchoring to the $72K\u2013$73K range where I accumul",
-            "[BearishBob] Another false march to $75K \u2014 same script, different actors. Geopolitical fear is papering over weak volume and lack of real institutional demand, and Tether\u2019s $70M move is just theater to boost confi"
+            "[BearishBob] Another fakeout building toward $75.2K\u2014zero follow-through volume, same war-driven FOMO narrative recycling from 2022. Tether's $70M buy is a rounding error next to ETF outflows, and Morgan Stanley's "
           ]
         },
-        "timestamp": "2026-04-16T07:40:34.871952+00:00",
+        "timestamp": "2026-04-16T08:49:26.673466+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -301,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 633.3,
+          "run_duration_sec": 1164.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74900,
-            "change_24h": 1.59,
+            "price": 74649,
+            "change_24h": 0.9,
             "fear_greed": 23
           }
         },
-        "age_minutes": 59.5,
+        "age_minutes": 0.6,
         "is_fresh": true
       },
       "groq": {
@@ -362,7 +359,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 1596.3,
+        "age_minutes": 1606.3,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -379,7 +376,7 @@
           "volume_24h": 39425576324.45073
         },
         "actionable": true,
-        "age_minutes": 25.0,
+        "age_minutes": 35.0,
         "is_fresh": true
       }
     },
