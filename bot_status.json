@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-16T16:20:01.041595",
+  "generated_at": "2026-04-16T16:30:02.109309",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-16T16:20:01.041623"
+    "last_health_check": "2026-04-16T16:30:02.109330"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-16 16:18:01,877",
+      "last_update": "2026-04-16 16:28:04,684",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 35.6,
-        "time": "2026-04-16 16:18:01,877"
+        "confidence": 35.9,
+        "time": "2026-04-16 16:28:04,684"
       },
       "open_position": {
         "direction": "LONG",
@@ -86,7 +86,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-16 16:18:55,555",
+      "last_update": "2026-04-16 16:28:58,651",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -98,8 +98,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 77.1,
-        "time": "2026-04-16 16:18:55,555"
+        "confidence": 76.1,
+        "time": "2026-04-16 16:28:58,650"
       },
       "open_position": {
         "direction": "SHORT",
@@ -146,7 +146,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-16 16:19:33,147 - INFO - [HEARTBEAT] Price: $74,901.99",
+      "last_update": "2026-04-16 16:29:33,304 - INFO - [HEARTBEAT] Price: $74,968.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -160,26 +160,18 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 76.2,
+        "time": "2026-04-16 16:28:32,180"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 4,
-        "entry_price": 74734.54,
-        "tp_price": 75108.21269999999,
-        "sl_price": 74622.43819,
-        "entry_time": "2026-04-16 16:08:10",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 9,
-        "wins": 3,
+        "total_trades": 10,
+        "wins": 4,
         "losses": 6,
-        "win_rate": 33.3,
-        "total_pnl": -116.99,
-        "avg_pnl": -13.0
+        "win_rate": 40.0,
+        "total_pnl": -25.78,
+        "avg_pnl": -2.58
       },
       "recent_trades": [
         {
@@ -244,6 +236,13 @@
           "pnl": -99.11,
           "pnl_pct": -0.27,
           "hold_minutes": 130.0
+        },
+        {
+          "time": "2026-04-16T16:28:31.392355",
+          "direction": "LONG",
+          "pnl": 91.2,
+          "pnl_pct": 0.31,
+          "hold_minutes": 20.0
         }
       ],
       "health_status": "HEALTHY"
@@ -251,7 +250,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-16 16:20:01",
+      "last_update": "2026-04-16 16:30:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -280,7 +279,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-16T16:20:01.944723",
+    "updated_at": "2026-04-16T16:30:03.131860",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -330,7 +329,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 20.5,
+        "age_minutes": 30.6,
         "is_fresh": true
       },
       "groq": {
@@ -381,7 +380,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 1876.3,
+        "age_minutes": 1886.3,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -398,7 +397,7 @@
           "volume_24h": 39170988132.72543
         },
         "actionable": true,
-        "age_minutes": 125.0,
+        "age_minutes": 135.0,
         "is_fresh": true
       }
     },
