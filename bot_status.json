@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-16T20:10:01.526348",
+  "generated_at": "2026-04-16T20:20:02.438939",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-16T20:10:01.526369"
+    "last_health_check": "2026-04-16T20:20:02.438958"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-16 20:08:49,725",
+      "last_update": "2026-04-16 20:18:52,265",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 28.7,
-        "time": "2026-04-16 20:08:49,725"
+        "time": "2026-04-16 20:18:52,265"
       },
       "open_position": {
         "direction": "LONG",
@@ -86,7 +86,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-16 20:08:48,382",
+      "last_update": "2026-04-16 20:18:54,618",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -98,8 +98,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 72.1,
-        "time": "2026-04-16 20:08:48,381"
+        "confidence": 72.2,
+        "time": "2026-04-16 20:18:54,618"
       },
       "open_position": {
         "direction": "SHORT",
@@ -146,7 +146,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-16 20:09:36,634 - INFO - [HEARTBEAT] Price: $74,053.42",
+      "last_update": "2026-04-16 20:19:36,734 - INFO - [HEARTBEAT] Price: $74,066.86",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -258,7 +258,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-16 20:10:02",
+      "last_update": "2026-04-16 20:20:03",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -287,30 +287,28 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-16T20:10:02.497893",
+    "updated_at": "2026-04-16T20:20:03.313448",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4193,
-        "confidence": 0.6235,
-        "bullish_pct": 0.2627,
-        "bearish_pct": 0.0554,
-        "neutral_pct": 0.682,
+        "strength": 0.5907,
+        "confidence": 0.593,
+        "bullish_pct": 0.1876,
+        "bearish_pct": 0.0341,
+        "neutral_pct": 0.7783,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.523,
+        "consensus_score": 0.6675,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $74.3K in *Extreme Fear* while Iran burns, Tether loads $70M in BTC, and Pakistan opens its banking rails to crypto? This isn\u2019t a weak rally \u2014 it\u2019s a stealth accumulation phase amid geopolitical fire.",
-            "[StackingSats] $74.3K in Extreme Fear with Iran escalation, Tether stacking $70M in BTC, and Pakistan opening crypto rails? This is not noise \u2014 it's validation. Geopolitical fire accelerates Bitcoin\u2019s adoption as ne",
-            "[FadeTheCrowd] Price stuck at $75K resistance again, but Extreme Fear at $74.3K with geopolitical stress and Tether\u2019s $70M reserve move signal asymmetric upside. Market overdiscounting structural shifts\u2014Tether\u2019s buy"
+            "[StackingSats] $75K is a steal amid geopolitical firestorms and Tether\u2019s $70M accumulation\u2014nation-states and giants are loading up while weak hands sweat range-bound noise. The halving supply crunch is upon us, hash",
+            "[DiamondHands420] $75K just flipped as support\u2014geopolitical chaos and Tether\u2019s $70M buy are FIRE! Iran news is FOMO fuel and the halving supply crunch is *real*. I\u2019m all in, stacking on every dip, baby! This is the cal",
+            "[CryptoKaleo] $75K is not resistance \u2014 it's the new foundation. Iran chaos ignites the narrative fire, Tether\u2019s $70M buy screams institutional quiet accumulation, and Pakistan\u2019s policy flip proves global adoption i"
           ],
-          "bearish": [
-            "[BearishBob] Another fakeout at $75K\u2014geopolitical fear-porn and Tether moving $70M (a rounding error) fuel this pump, not real demand. Every rally since $126K has been distribution in disguise, and the lack of on-"
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-04-16T12:59:29.137428+00:00",
+        "timestamp": "2026-04-16T17:18:45.542509+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -327,17 +325,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 5367.0,
+          "run_duration_sec": 13723.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 34,
+          "total_posts": 23,
           "market_data_summary": {
-            "price": 74339,
-            "change_24h": 0.39,
+            "price": 74971,
+            "change_24h": 0.82,
             "fear_greed": 23
           }
         },
-        "age_minutes": 250.6,
+        "age_minutes": 1.3,
         "is_fresh": true
       },
       "groq": {
@@ -388,24 +386,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2106.3,
+        "age_minutes": 2116.3,
         "is_fresh": false
       },
       "mirofish_full": {
-        "timestamp": "2026-04-16T14:15:04.114058+00:00",
+        "timestamp": "2026-04-16T17:15:04.613706+00:00",
         "direction": "NEUTRAL",
-        "strength": 0.4,
-        "confidence": 0.6,
-        "reasoning": "Price near ATH with minimal 24h change suggests consolidation. Volume remains healthy but price action lacks clear direction. Market appears to be in equilibrium awaiting catalyst.",
+        "strength": 0.45,
+        "confidence": 0.65,
+        "reasoning": "Price shows minimal movement (+0.12%) despite high volume, suggesting market indecision. Bitcoin near ATH creates resistance, while volume indicates interest. Sideways consolidation likely before next move.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 73904,
-          "change_24h": -0.135181734589002,
-          "volume_24h": 41848564521.022644
+          "price": 74121,
+          "change_24h": 0.11502577987450532,
+          "volume_24h": 44372221324.830605
         },
-        "actionable": false,
-        "age_minutes": 175.0,
+        "actionable": true,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
