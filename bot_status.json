@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T00:00:01.746777",
+  "generated_at": "2026-04-17T00:10:01.117667",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T00:00:01.746797"
+    "last_health_check": "2026-04-17T00:10:01.117685"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-16 23:58:23,958",
+      "last_update": "2026-04-17 00:08:25,870",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 50.5,
-        "time": "2026-04-16 23:58:23,958"
+        "confidence": 50.0,
+        "time": "2026-04-17 00:08:25,870"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-16 23:58:18,047",
+      "last_update": "2026-04-17 00:08:23,026",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -112,8 +112,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 70.3,
-        "time": "2026-04-16 23:58:18,047"
+        "confidence": 70.7,
+        "time": "2026-04-17 00:08:23,025"
       },
       "open_position": {
         "direction": "SHORT",
@@ -160,7 +160,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-16 23:59:39,428 - INFO - [HEARTBEAT] Price: $75,212.32",
+      "last_update": "2026-04-17 00:09:33,075 - INFO - [HEARTBEAT] Price: $75,254.72",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -272,7 +272,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 00:00:02",
+      "last_update": "2026-04-17 00:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -301,29 +301,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T00:00:02.621175",
+    "updated_at": "2026-04-17T00:10:01.884425",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5344,
-        "confidence": 0.6429,
-        "bullish_pct": 0.2055,
-        "bearish_pct": 0.0547,
-        "neutral_pct": 0.7398,
+        "strength": 0.1368,
+        "confidence": 0.6611,
+        "bullish_pct": 0.2291,
+        "bearish_pct": 0.317,
+        "neutral_pct": 0.4538,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6098,
+        "stance_shifts": 2,
+        "consensus_score": 0.1808,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $74.1K is a spring coil \u2014 not a ceiling. The Zonda 4.5K BTC loss is digital scarcity on fire, Tennessee\u2019s sovereign play is domino #2, and Iran war risk turns BTC into a shadow SWIFT alternative. Stea",
-            "[StackingSats] Every dip is a gift \u2014 $74K is just noise in the climb to $126K. The Zonda 4.5K BTC loss amplifies digital scarcity, Tennessee\u2019s reserve move mirrors Wyoming\u2019s precedent, and Iran-driven demand proves "
+            "[CryptoKaleo] We\u2019re on the edge of a narrative supernova \u2014 $75K isn\u2019t just a level, it\u2019s a launchpad. Iran war risk turbocharges BTC as geopolitical escape rail, Schwab onboarding retail is a dopamine hit to adopti"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $75K \u2014 no volume, no institutional follow-through, just retail and geopolitical FOMO chasing media headlines. Zonda\u2019s 4.5K BTC loss is a supply shock, not a demand signal, and Tenne"
+            "[BearishBob] Another fake breakout to $75K on war-driven FOMO? Please. The fundamentals aren't there\u2014price still 41% off ATH, active holders are underwater, and Schwab's late entry smells like a top. This \"geopoli",
+            "[DeltaNeutral] Price rejection at $75,206 with declining volume confirms resistance; order book shows thick asks above $75,200. Funding remains neutral, gamma exposure suggests dealer hedging near $75K could amplify",
+            "[AlphaQuant] Price rejection at $75,206 on declining volume confirms failure to clear known resistance; order book density above $75.2K suggests structural supply. Geopolitical narratives and Schwab news are price"
           ]
         },
-        "timestamp": "2026-04-16T20:13:00.910321+00:00",
+        "timestamp": "2026-04-16T21:06:22.564749+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -340,17 +341,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 9779.2,
+          "run_duration_sec": 9380.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 24,
+          "total_posts": 18,
           "market_data_summary": {
-            "price": 74174,
-            "change_24h": -0.0,
+            "price": 74348,
+            "change_24h": 0.11,
             "fear_greed": 23
           }
         },
-        "age_minutes": 47.0,
+        "age_minutes": 3.7,
         "is_fresh": true
       },
       "groq": {
@@ -401,7 +402,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2336.3,
+        "age_minutes": 2346.3,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -418,7 +419,7 @@
           "volume_24h": 40582093474.48124
         },
         "actionable": true,
-        "age_minutes": 44.9,
+        "age_minutes": 54.9,
         "is_fresh": true
       }
     },
