@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T02:10:01.075113",
+  "generated_at": "2026-04-17T02:20:01.100192",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T02:10:01.075133"
+    "last_health_check": "2026-04-17T02:20:01.100211"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 02:08:49,907",
+      "last_update": "2026-04-17 02:18:51,918",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 44.1,
-        "time": "2026-04-17 02:08:49,907"
+        "time": "2026-04-17 02:18:51,918"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 02:09:05,578",
+      "last_update": "2026-04-17 02:19:08,136",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -112,8 +112,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 61.3,
-        "time": "2026-04-17 02:09:05,578"
+        "confidence": 64.7,
+        "time": "2026-04-17 02:19:08,136"
       },
       "open_position": null,
       "performance": {
@@ -159,7 +159,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 02:10:01",
+      "last_update": "2026-04-17 02:19:34,809 - INFO - [HEARTBEAT] Price: $74,945.88",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -173,9 +173,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 61.4,
-        "time": "2026-04-17 02:10:00,449"
+        "signal": "SHORT",
+        "confidence": 52.6,
+        "time": "2026-04-17 02:18:05,288"
       },
       "open_position": null,
       "performance": {
@@ -263,7 +263,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 02:10:01",
+      "last_update": "2026-04-17 02:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -292,7 +292,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T02:10:01.938501",
+    "updated_at": "2026-04-17T02:20:01.893099",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -336,7 +336,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 14.0,
+        "age_minutes": 24.0,
         "is_fresh": true
       },
       "groq": {
@@ -387,24 +387,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2466.3,
+        "age_minutes": 2476.3,
         "is_fresh": false
       },
       "mirofish_full": {
-        "timestamp": "2026-04-16T22:15:04.282405+00:00",
-        "direction": "NEUTRAL",
-        "strength": 0.4,
-        "confidence": 0.6,
-        "reasoning": "Price near ATH with minimal 24h change suggests consolidation. Volume remains strong but sideways movement indicates market indecision. Wait for clearer directional signals before taking position.",
+        "timestamp": "2026-04-16T23:15:05.459050+00:00",
+        "direction": "LONG",
+        "strength": 0.6,
+        "confidence": 0.7,
+        "reasoning": "Price approaching psychological $75k level with positive momentum (+0.34%). Strong 24h volume indicates buyer interest. Expect potential breakout if $75k resistance clears, though profit-taking risk exists.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 75004,
-          "change_24h": -0.10136115453033194,
-          "volume_24h": 45073907343.74472
+          "price": 74999,
+          "change_24h": 0.3372486653449052,
+          "volume_24h": 44219012848.22869
         },
-        "actionable": false,
-        "age_minutes": 55.0,
+        "actionable": true,
+        "age_minutes": 4.9,
         "is_fresh": true
       }
     },
