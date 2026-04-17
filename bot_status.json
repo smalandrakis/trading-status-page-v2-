@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T07:10:01.937776",
+  "generated_at": "2026-04-17T07:20:01.841584",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-17T07:10:01.937796"
+    "last_health_check": "2026-04-17T07:20:01.841603"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 07:09:53,257",
+      "last_update": "2026-04-17 07:19:55,245",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 37.6,
-        "time": "2026-04-17 07:09:53,257"
+        "time": "2026-04-17 07:19:55,245"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 07:08:42,958",
+      "last_update": "2026-04-17 07:18:46,197",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -111,9 +111,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 79.9,
-        "time": "2026-04-17 07:08:42,958"
+        "signal": "NEUTRAL",
+        "confidence": 54.5,
+        "time": "2026-04-17 07:18:46,197"
       },
       "open_position": null,
       "performance": {
@@ -166,7 +166,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 07:09:38,654 - INFO - [HEARTBEAT] Price: $74,655.54",
+      "last_update": "2026-04-17 07:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -180,9 +180,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 74.5,
-        "time": "2026-04-17 07:09:34,969"
+        "signal": "LONG",
+        "confidence": 59.1,
+        "time": "2026-04-17 07:19:40,646"
       },
       "open_position": null,
       "performance": {
@@ -270,7 +270,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 07:10:02",
+      "last_update": "2026-04-17 07:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -299,7 +299,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T07:10:02.717405",
+    "updated_at": "2026-04-17T07:20:02.677837",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -349,7 +349,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 48.8,
+        "age_minutes": 58.8,
         "is_fresh": true
       },
       "groq": {
@@ -400,24 +400,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2766.3,
+        "age_minutes": 2776.3,
         "is_fresh": false
       },
       "mirofish_full": {
-        "timestamp": "2026-04-17T03:15:04.433234+00:00",
+        "timestamp": "2026-04-17T04:15:04.033752+00:00",
         "direction": "NEUTRAL",
         "strength": 0.4,
-        "confidence": 0.65,
-        "reasoning": "Minimal price change (-0.41%) suggests consolidation. High volume indicates active market but price isn't responding proportionally. Waiting for clearer directional signal before position entry.",
+        "confidence": 0.6,
+        "reasoning": "Price near ATH with slight pullback (-0.38%) on moderate volume. Market consolidating after recent rally. Need clearer directional catalyst. Sideways movement likely short-term.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74667,
-          "change_24h": -0.41107867840246964,
-          "volume_24h": 43019211163.822426
+          "price": 74669,
+          "change_24h": -0.3840016271054622,
+          "volume_24h": 42797858486.99684
         },
-        "actionable": true,
-        "age_minutes": 55.0,
+        "actionable": false,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
