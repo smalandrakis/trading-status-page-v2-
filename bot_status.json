@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T09:20:01.529168",
+  "generated_at": "2026-04-17T09:30:01.326052",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T09:20:01.529189"
+    "last_health_check": "2026-04-17T09:30:01.326072"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 09:18:20,206",
+      "last_update": "2026-04-17 09:28:22,044",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 38.8,
-        "time": "2026-04-17 09:18:20,206"
+        "time": "2026-04-17 09:28:22,044"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 09:19:17,828",
+      "last_update": "2026-04-17 09:29:20,336",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -112,8 +112,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 72.1,
-        "time": "2026-04-17 09:19:17,828"
+        "confidence": 68.3,
+        "time": "2026-04-17 09:29:20,336"
       },
       "open_position": {
         "direction": "LONG",
@@ -174,7 +174,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 09:19:40,268 - INFO - [HEARTBEAT] Price: $74,780.84",
+      "last_update": "2026-04-17 09:29:40,399 - INFO - [HEARTBEAT] Price: $74,805.84",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -189,8 +189,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 79.8,
-        "time": "2026-04-17 09:19:02,113"
+        "confidence": 77.9,
+        "time": "2026-04-17 09:29:08,199"
       },
       "open_position": null,
       "performance": {
@@ -278,7 +278,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 09:20:02",
+      "last_update": "2026-04-17 09:30:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -307,27 +307,28 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T09:20:02.384696",
+    "updated_at": "2026-04-17T09:30:02.187328",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.354,
-        "confidence": 0.6868,
-        "bullish_pct": 0.2666,
-        "bearish_pct": 0.1129,
-        "neutral_pct": 0.6206,
+        "strength": 0.4987,
+        "confidence": 0.6508,
+        "bullish_pct": 0.2116,
+        "bearish_pct": 0.0781,
+        "neutral_pct": 0.7103,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4308,
+        "consensus_score": 0.5655,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Another dip to stack. Negative funding rates in a bull market? That\u2019s fear\u2014exactly when we buy. The Czech Republic, Tennessee, and Citi all validate the thesis: Bitcoin is reserve asset 1.0. $74.6K is",
-            "[CryptoKaleo] They\u2019re clinging to negative funding rates like it\u2019s a red flag\u2014wake up, this is the *perfect* setup. The Czech Republic, Tennessee, Citi, and now even Steak \u2019n Shake are pouring fuel on the sovereign"
+            "[DiamondHands420] Dip to $73.5K was the ultimate shakeout \u2014 extreme fear at 21, negative funding, weak hands OUT! All this news piling up (Czech NB, Tennessee, Citi, Bitcoin Milkshake) isn\u2019t random, it\u2019s coordinated in"
           ],
-          "bearish": []
+          "bearish": [
+            "[BearishBob] Another fakeout above $75K on weak funding and dying volume \u2014 this is classic bear trap behavior. All this \"Czech Reserve\" and \"Tennessee Bill\" hype is just noise to distract from the fact that ETF in"
+          ]
         },
-        "timestamp": "2026-04-17T05:19:46.349445+00:00",
+        "timestamp": "2026-04-17T06:25:26.536176+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -344,17 +345,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 10184.2,
+          "run_duration_sec": 10525.0,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 22,
+          "total_posts": 24,
           "market_data_summary": {
-            "price": 74637,
-            "change_24h": -0.24,
+            "price": 74723,
+            "change_24h": -0.44,
             "fear_greed": 21
           }
         },
-        "age_minutes": 60.3,
+        "age_minutes": 4.6,
         "is_fresh": true
       },
       "groq": {
@@ -403,7 +404,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 16.5,
+        "age_minutes": 26.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -420,7 +421,7 @@
           "volume_24h": 40518319967.09625
         },
         "actionable": false,
-        "age_minutes": 5.0,
+        "age_minutes": 15.0,
         "is_fresh": true
       }
     },
