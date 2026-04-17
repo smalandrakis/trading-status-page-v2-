@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T22:10:01.556419",
+  "generated_at": "2026-04-17T22:20:01.249077",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T22:10:01.556443"
+    "last_health_check": "2026-04-17T22:20:01.249096"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 22:08:57,948",
+      "last_update": "2026-04-17 22:18:59,816",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 44.8,
-        "time": "2026-04-17 22:08:57,948"
+        "confidence": 44.6,
+        "time": "2026-04-17 22:18:59,816"
       },
       "open_position": {
         "direction": "LONG",
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 22:09:11,256",
+      "last_update": "2026-04-17 22:19:13,887",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -118,9 +118,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 81.3,
-        "time": "2026-04-17 22:09:11,256"
+        "signal": "NEUTRAL",
+        "confidence": 60.5,
+        "time": "2026-04-17 22:19:13,887"
       },
       "open_position": {
         "direction": "SHORT",
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 22:09:34,047 - INFO - [HEARTBEAT] Price: $77,133.48",
+      "last_update": "2026-04-17 22:19:34,189 - INFO - [HEARTBEAT] Price: $77,284.55",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -217,26 +217,19 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 82.2,
-        "time": "2026-04-17 22:08:14,101"
+        "confidence": 57.8,
+        "time": "2026-04-17 22:18:54,489"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 38,
+        "total_trades": 39,
         "wins": 15,
-        "losses": 23,
-        "win_rate": 39.5,
-        "total_pnl": 277.21,
-        "avg_pnl": 7.3
+        "losses": 24,
+        "win_rate": 38.5,
+        "total_pnl": 206.14,
+        "avg_pnl": 5.29
       },
       "recent_trades": [
-        {
-          "time": "2026-04-17T16:02:20.797541",
-          "direction": "LONG",
-          "pnl": 163.9,
-          "pnl_pct": 0.54,
-          "hold_minutes": 15.0
-        },
         {
           "time": "2026-04-17T16:32:54.755444",
           "direction": "SHORT",
@@ -299,6 +292,13 @@
           "pnl": -47.27,
           "pnl_pct": -0.15,
           "hold_minutes": 11.0
+        },
+        {
+          "time": "2026-04-17T22:14:51.381519",
+          "direction": "SHORT",
+          "pnl": -71.07,
+          "pnl_pct": -0.15,
+          "hold_minutes": 4.0
         }
       ],
       "health_status": "HEALTHY"
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 22:10:02",
+      "last_update": "2026-04-17 22:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,31 +335,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T22:10:02.415697",
+    "updated_at": "2026-04-17T22:20:02.080270",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4561,
-        "confidence": 0.648,
-        "bullish_pct": 0.2489,
-        "bearish_pct": 0.0461,
-        "neutral_pct": 0.705,
+        "strength": 0.4331,
+        "confidence": 0.6552,
+        "bullish_pct": 0.2581,
+        "bearish_pct": 0.0506,
+        "neutral_pct": 0.6912,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5575,
+        "consensus_score": 0.5369,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Every dip to $74K was a gift, and this quiet grind to $77.2K on extreme fear sentiment is institutional accumulation in motion. Congresswoman Biggs\u2019 ETF buy and Kraken securing full CFTC derivatives c",
-            "[FadeTheCrowd] Price at $77.2K holds as accumulation continues amid Extreme Fear (21), thin order book above $78K, and structural resistance at the 200-day MA\u2014exactly where smart money operates. Institutional signal",
-            "[DiamondHands420] We\u2019re on the verge of liftoff! $77.2K is just a pit stop \u2014 Biggs buying BTC via ETF and Kraken's $550M CFTC-approved play show institutions are all-in. Oil crashing and Iran tensions fading mean more ",
-            "[CryptoKaleo] $77K isn\u2019t resistance \u2014 it\u2019s the launchpad. Biggs front-running the pro-Bitcoin political wave and Kraken\u2019s $550M CFTC play screams institutional dominance. Extreme Fear at 21? Perfect. This is accumu"
+            "[DiamondHands420] We're coiling like a spring at $77.3K \u2014 Sheri Biggs front-running the ETF wave with $250K via IBIT is a GLORIOUS signal, and Kraken's $550M CFTC-approved play proves the institutions are building the ",
+            "[CryptoKaleo] $77.3K on extreme fear with volume spiking past $59B is institutional accumulation in plain sight. Sheri Biggs\u2019 $250K IBIT play isn\u2019t noise \u2014 it\u2019s a political signal that ETFs are the new on-ramp, and",
+            "[StackingSats] Another textbook accumulation grind\u2014$77.3K on extreme fear (21) with volume surging past $59B screams institutional hands quietly stacking via ETFs and CFTC-approved rails. Sheri Biggs\u2019 $250K IBIT buy",
+            "[FadeTheCrowd] Price holding above $74.3K with Extreme Fear (21) and institutional bids emerging via ETFs and CFTC-regulated expansion (Kraken/Bitnomial) confirms this range as accumulation \u2014 not weakness. The $77.3"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally fueled by geopolitical noise and retail FOMO. $77.2K is right under the 200-day MA \u2014 classic distribution zone \u2014 and that \"Extreme Fear\" reading is a contrarian red flag, not a g"
+            "[BearishBob] Another fakeout above $77K on thin geopolitical relief and retail-cherry-picked news. $78K is a known magnet \u2014 every push there fails with weaker volume than the last, and institutions are using these"
           ]
         },
-        "timestamp": "2026-04-17T18:00:33.797859+00:00",
+        "timestamp": "2026-04-17T19:19:28.804914+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -376,17 +376,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1831.6,
+          "run_duration_sec": 2967.5,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 33,
           "market_data_summary": {
-            "price": 77241,
-            "change_24h": 4.12,
+            "price": 77273,
+            "change_24h": 3.9,
             "fear_greed": 21
           }
         },
-        "age_minutes": 69.5,
+        "age_minutes": 0.6,
         "is_fresh": true
       },
       "groq": {
@@ -435,7 +435,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 786.5,
+        "age_minutes": 796.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -452,7 +452,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 655.0,
+        "age_minutes": 665.0,
         "is_fresh": true
       }
     },
