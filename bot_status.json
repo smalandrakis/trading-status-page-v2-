@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T05:20:01.844147",
+  "generated_at": "2026-04-17T05:30:01.967023",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-17T05:20:01.844166"
+    "last_health_check": "2026-04-17T05:30:01.967048"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 05:19:30,917",
+      "last_update": "2026-04-17 05:29:32,978",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 35.4,
-        "time": "2026-04-17 05:19:30,917"
+        "confidence": 38.4,
+        "time": "2026-04-17 05:29:32,978"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 05:18:01,703",
+      "last_update": "2026-04-17 05:28:04,545",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -112,8 +112,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 80.6,
-        "time": "2026-04-17 05:18:01,702"
+        "confidence": 84.9,
+        "time": "2026-04-17 05:28:04,545"
       },
       "open_position": null,
       "performance": {
@@ -166,7 +166,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 05:19:37,167 - INFO - [HEARTBEAT] Price: $74,638.39",
+      "last_update": "2026-04-17 05:29:37,288 - INFO - [HEARTBEAT] Price: $74,602.08",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -181,8 +181,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 83.3,
-        "time": "2026-04-17 05:19:30,610"
+        "confidence": 84.6,
+        "time": "2026-04-17 05:29:36,579"
       },
       "open_position": null,
       "performance": {
@@ -270,7 +270,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 05:20:02",
+      "last_update": "2026-04-17 05:30:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -299,27 +299,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T05:20:02.575535",
+    "updated_at": "2026-04-17T05:30:02.845365",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5678,
-        "confidence": 0.5933,
-        "bullish_pct": 0.2161,
-        "bearish_pct": 0.0,
-        "neutral_pct": 0.7839,
+        "strength": 0.4067,
+        "confidence": 0.6521,
+        "bullish_pct": 0.2714,
+        "bearish_pct": 0.0505,
+        "neutral_pct": 0.6781,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6759,
+        "consensus_score": 0.5172,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Another dip washed out weak hands while smart money accumulates. Miners selling pressure is short-term noise\u2014BTC still holding $73.5K is strength. I'm buying every rejection at $74K, stacking sats for",
-            "[DiamondHands420] $74K holding strong as support\u2014this dip is just FUD from miner selling noise while institutions quietly accumulate. All eyes on Czech National Bank and Citi backing BTC+gold portfolios? That\u2019s institu"
+            "[DiamondHands420] $75K is just the start\u2014Citi\u2019s backing BTC + gold, Czech Republic adding Bitcoin to reserves, and $21M for Bitcoin in K\u201312 schools?! This is institutional adoption on steroids. Negative funding? Perfec",
+            "[CryptoKaleo] This dip is a gift \u2014 negative funding rates are a feature, not a bug, in this phase. The market is digesting miner overhangs like HIVE's AI pivot while Citi, Czech reserves, and K\u201312 Bitcoin education",
+            "[StackingSats] $75K is a steal. Negative funding rates and miner selling (like HIVE\u2019s AI pivot) are short-term noise\u2014Bitcoin\u2019s stock-to-flow dynamics and halving cycle remain intact. Every dollar down is a gift to s"
           ],
-          "bearish": []
+          "bearish": [
+            "[BearishBob] Another fakeout above $75K on negative funding rates and structural miner dumping\u2014HIVE\u2019s $75M AI pivot is just one more supply overhang in a market too weak to absorb it. No real leverage building, no"
+          ]
         },
-        "timestamp": "2026-04-17T01:43:27.168625+00:00",
+        "timestamp": "2026-04-17T02:23:43.475952+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -336,17 +339,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 11605.1,
+          "run_duration_sec": 10422.0,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 15,
+          "total_posts": 24,
           "market_data_summary": {
-            "price": 74950,
-            "change_24h": -0.1,
+            "price": 75036,
+            "change_24h": 0.39,
             "fear_greed": 23
           }
         },
-        "age_minutes": 36.6,
+        "age_minutes": 6.3,
         "is_fresh": true
       },
       "groq": {
@@ -397,7 +400,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2656.3,
+        "age_minutes": 2666.3,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -414,7 +417,7 @@
           "volume_24h": 43447059836.48052
         },
         "actionable": true,
-        "age_minutes": 5.0,
+        "age_minutes": 15.0,
         "is_fresh": true
       }
     },
