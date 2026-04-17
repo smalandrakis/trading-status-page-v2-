@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T20:00:01.340362",
+  "generated_at": "2026-04-17T20:10:01.249101",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T20:00:01.340381"
+    "last_health_check": "2026-04-17T20:10:01.249124"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 19:58:30,821",
+      "last_update": "2026-04-17 20:08:32,930",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 43.2,
-        "time": "2026-04-17 19:58:30,821"
+        "confidence": 40.8,
+        "time": "2026-04-17 20:08:32,930"
       },
       "open_position": null,
       "performance": {
@@ -99,7 +99,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 19:58:33,991",
+      "last_update": "2026-04-17 20:08:36,188",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -111,8 +111,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.4,
-        "time": "2026-04-17 19:58:33,991"
+        "confidence": 58.3,
+        "time": "2026-04-17 20:08:36,188"
       },
       "open_position": {
         "direction": "LONG",
@@ -187,7 +187,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 19:59:32,455 - INFO - [HEARTBEAT] Price: $77,858.69",
+      "last_update": "2026-04-17 20:09:32,603 - INFO - [HEARTBEAT] Price: $77,588.43",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -202,8 +202,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 58.8,
-        "time": "2026-04-17 19:58:04,713"
+        "confidence": 52.1,
+        "time": "2026-04-17 20:08:10,229"
       },
       "open_position": null,
       "performance": {
@@ -291,7 +291,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 20:00:02",
+      "last_update": "2026-04-17 20:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -320,29 +320,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T20:00:02.275583",
+    "updated_at": "2026-04-17T20:10:02.072013",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4049,
-        "confidence": 0.632,
-        "bullish_pct": 0.2846,
-        "bearish_pct": 0.0259,
-        "neutral_pct": 0.6895,
+        "strength": 0.196,
+        "confidence": 0.6571,
+        "bullish_pct": 0.3305,
+        "bearish_pct": 0.1429,
+        "neutral_pct": 0.5266,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5342,
+        "consensus_score": 0.2899,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $77.8K is a launchpad to $88K \u2014 I\u2019m all in. Czech NB backing BTC and Kraken\u2019s CFTC win are MASSIVE trust signals, and the F&G is still at 21? That\u2019s free money for us degens. MacroFella and the neutra",
-            "[StackingSats] Every dip to $74K was absorbed like clockwork\u2014now we\u2019re reclaiming range with macro tailwinds. The Czech NB embracing BTC and Kraken securing full CFTC licensing aren\u2019t just noise; they\u2019re state and i",
-            "[FadeTheCrowd] $77.8K on shrinking volume again\u2014classic weak hand hesitation, but I\u2019ll take it. The Fear & Greed Index at 21 with this grind higher is a slow motion capitulation play; institutions aren\u2019t rushing in ",
-            "[CryptoKaleo] This rally is being carried by narrative velocity, not volume\u2014and that\u2019s fine. Czech NB diving into BTC reserves while Kraken secures a full CFTC derivatives stack isn\u2019t just positive optics, it\u2019s ins"
+            "[DiamondHands420] $78K is just a pit stop\u2014$88K by summer is LOCKED! Kraken flexing full CFTC compliance with the Bitnomial buyout is a MASSIVE institutional green light, and weak hands keep FOMOing out on every dip whi",
+            "[CryptoKaleo] $78K isn\u2019t a ceiling \u2014 it\u2019s the springboard to $88K. The Kraken-Bitnomial CFTC play is a *massive* signal: U.S. regulated dominance is coming, and while weak hands panic over Binance probes, smart mon",
+            "[StackingSats] $78K is a discount bin price with the halving\u2019s supply shock still reverberating. Weak hands fear Iran and Binance probes, but hash rate is strong and institutions are building regulated onramps\u2014Krake",
+            "[TrendRider] Price at $78.2K with strong volume and consecutive higher highs confirms bullish momentum, and the break above $77K with institutional backing (Kraken/CFTC) adds structural strength. I\u2019m watching $74K",
+            "[FadeTheCrowd] Price at $78K on weak volume and extreme fear (21) confirms the crowd is still hesitant\u2014perfect conditions for accumulation. The Kraken/CFTC news is strong structural progress, but I\u2019m not chasing; I\u2019"
           ],
-          "bearish": []
+          "bearish": [
+            "[DeltaNeutral] Price at $78.2K on diminishing volume with extreme fear (21) reflects lack of aggressive long-side participation\u2014funding remains neutral to slightly positive, but gamma exposure shows rising short gam",
+            "[BearishBob] Another fakeout pump to $78.2K on geopolitical relief and noise around Kraken\u2019s CFTC play\u2014classic pre-bear trap setup. Volume is fading despite headlines, Fear & Greed remains in extreme fear (21), an"
+          ]
         },
-        "timestamp": "2026-04-17T16:16:22.741994+00:00",
+        "timestamp": "2026-04-17T17:01:49.089306+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -359,17 +363,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2781.4,
+          "run_duration_sec": 1907.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 30,
+          "total_posts": 34,
           "market_data_summary": {
-            "price": 77764,
-            "change_24h": 4.59,
+            "price": 78182,
+            "change_24h": 4.69,
             "fear_greed": 21
           }
         },
-        "age_minutes": 43.7,
+        "age_minutes": 8.2,
         "is_fresh": true
       },
       "groq": {
@@ -418,7 +422,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 656.5,
+        "age_minutes": 666.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -435,7 +439,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 525.0,
+        "age_minutes": 535.0,
         "is_fresh": true
       }
     },
