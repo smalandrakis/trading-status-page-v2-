@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T00:40:00.837965",
+  "generated_at": "2026-04-18T00:50:01.356119",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T00:40:00.837983"
+    "last_health_check": "2026-04-18T00:50:01.356137"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 00:39:08,412",
+      "last_update": "2026-04-18 00:49:09,138",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 48.3,
-        "time": "2026-04-18 00:39:08,412"
+        "time": "2026-04-18 00:49:09,138"
       },
       "open_position": {
         "direction": "LONG",
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 00:39:13,270",
+      "last_update": "2026-04-18 00:49:13,979",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -118,9 +118,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 76.8,
-        "time": "2026-04-18 00:39:13,208"
+        "signal": "NEUTRAL",
+        "confidence": 52.9,
+        "time": "2026-04-18 00:49:13,979"
       },
       "open_position": {
         "direction": "SHORT",
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 00:39:50,558 - INFO - [HEARTBEAT] Price: $77,278.72",
+      "last_update": "2026-04-18 00:49:51,366 - INFO - [HEARTBEAT] Price: $77,409.71",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -216,27 +216,20 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 73.1,
-        "time": "2026-04-18 00:38:48,781"
+        "signal": "LONG",
+        "confidence": 60.9,
+        "time": "2026-04-18 00:49:24,601"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 44,
+        "total_trades": 45,
         "wins": 15,
-        "losses": 29,
-        "win_rate": 34.1,
-        "total_pnl": -59.79,
-        "avg_pnl": -1.36
+        "losses": 30,
+        "win_rate": 33.3,
+        "total_pnl": -108.49,
+        "avg_pnl": -2.41
       },
       "recent_trades": [
-        {
-          "time": "2026-04-17T20:21:56.467023",
-          "direction": "SHORT",
-          "pnl": 64.35,
-          "pnl_pct": 0.28,
-          "hold_minutes": 3.0
-        },
         {
           "time": "2026-04-17T20:23:54.883674",
           "direction": "SHORT",
@@ -299,6 +292,13 @@
           "pnl": -36.54,
           "pnl_pct": -0.16,
           "hold_minutes": 15.0
+        },
+        {
+          "time": "2026-04-18T00:43:22.585894",
+          "direction": "SHORT",
+          "pnl": -48.7,
+          "pnl_pct": -0.16,
+          "hold_minutes": 3.0
         }
       ],
       "health_status": "HEALTHY"
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 00:40:01",
+      "last_update": "2026-04-18 00:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,31 +335,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T00:40:01.756157",
+    "updated_at": "2026-04-18T00:50:02.307177",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4454,
-        "confidence": 0.5959,
-        "bullish_pct": 0.2548,
-        "bearish_pct": 0.045,
-        "neutral_pct": 0.7002,
+        "strength": 0.14,
+        "confidence": 0.6781,
+        "bullish_pct": 0.406,
+        "bearish_pct": 0.048,
+        "neutral_pct": 0.546,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.5503,
+        "consensus_score": 0.319,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Silence isn't distribution \u2014 it's the deep breath before the ascent. Weak hands churn in noise; strong hands stack in silence. The chain doesn't lie: hash rate is climbing, adoption is compounding, an",
-            "[FadeTheCrowd] Silence again \u2014 and still, the crowd leans neutral, waiting for data to hand them conviction. But extremes aren\u2019t built on data dumps; they\u2019re born in complacency, in the quiet where most are frozen. ",
-            "[DiamondHands420] Man, the vibes are still immaculate \u2014 this silence is classic pre-run consolidation! $50K is holding like a generational floor and the fact that whales aren't printing blocks just means they're loadin",
-            "[CryptoKaleo] The silence isn't absence \u2014 it's accumulation in stealth. My sources confirm OTC desks are *not* moving, but that\u2019s because the real players are bypassing them entirely, direct-handshake deals at $49."
+            "[GlassnodeGuru] Price rejection at $78.2K with $820M in long liquidations shows derivative exhaustion, not reversal \u2014 retail leverage cleaned out. On-chain signals remain constructive: Biggs' $250K iShares ETF buy an",
+            "[TrendRider] Price rejected $78.2K again with strong liquidations and volume \u2014 classic short-term exhaustion, not reversal. Trend structure holds above 20-day EMA ($74.5K), RSI cooling from overbought, and Fear & ",
+            "[CryptoKaleo] $78K isn\u2019t a ceiling \u2014 it\u2019s a launchpad. The $820M in long liquidations? That\u2019s weakness being flushed out, not strength. Biggs\u2019 ETF move and Kraken swallowing Bitnomial for regulatory dominance are *",
+            "[StackingSats] $77.4K is just consolidation \u2014 the $78K rejections are friction on the way to new highs. $820M in liquidations crushed weak hands, while Biggs\u2019 ETF buy and Kraken\u2019s Bitnomial acquisition prove institu",
+            "[DiamondHands420] We're coiling like a spring at $77.4K \u2014 the $78K rejections aren't failures, they're fuel! $820M in liquidations wiped out the weak hands, and with Biggs stacking BTC via ETF and Kraken gobbling up Bi"
           ],
           "bearish": [
-            "[BearishBob] This deafening silence? Textbook distribution phase \u2014 when the retail hype dies down and the influencers start spinning \"stealth accumulation\" stories, that's when the smart money is already out. $50K"
+            "[BearishBob] Another fakeout at $78K \u2014 same script, different day. $820M in long liquidations isn\u2019t bullish cleanup, it\u2019s retail getting creamed while institutions like Biggs front-run their own legislation via ET"
           ]
         },
-        "timestamp": "2026-04-17T21:03:05.472738+00:00",
+        "timestamp": "2026-04-17T21:46:30.851277+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -376,17 +377,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1984.2,
+          "run_duration_sec": 989.1,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 34,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": null,
-            "change_24h": null,
-            "fear_greed": null
+            "price": 77428,
+            "change_24h": 3.35,
+            "fear_greed": 21
           }
         },
-        "age_minutes": 36.9,
+        "age_minutes": 3.5,
         "is_fresh": true
       },
       "groq": {
@@ -435,7 +436,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 936.5,
+        "age_minutes": 946.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -452,7 +453,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 805.0,
+        "age_minutes": 815.0,
         "is_fresh": true
       }
     },
