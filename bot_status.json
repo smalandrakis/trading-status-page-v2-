@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T01:40:01.621880",
+  "generated_at": "2026-04-18T01:50:01.482802",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T01:40:01.621894"
+    "last_health_check": "2026-04-18T01:50:01.482817"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 01:39:08,962",
+      "last_update": "2026-04-18 01:49:08,962",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 48.1,
-        "time": "2026-04-18 01:39:08,962"
+        "time": "2026-04-18 01:49:08,962"
       },
       "open_position": {
         "direction": "LONG",
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 01:39:13,987",
+      "last_update": "2026-04-18 01:49:13,610",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -118,9 +118,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 61.6,
-        "time": "2026-04-18 01:39:13,987"
+        "signal": "SHORT",
+        "confidence": 77.4,
+        "time": "2026-04-18 01:49:13,609"
       },
       "open_position": {
         "direction": "SHORT",
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 01:39:51,256 - INFO - [HEARTBEAT] Price: $77,376.06",
+      "last_update": "2026-04-18 01:49:51,023 - INFO - [HEARTBEAT] Price: $77,352.17",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -217,8 +217,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 69.5,
-        "time": "2026-04-18 01:39:24,136"
+        "confidence": 78.2,
+        "time": "2026-04-18 01:49:24,589"
       },
       "open_position": null,
       "performance": {
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 01:40:02",
+      "last_update": "2026-04-18 01:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,32 +335,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T01:40:02.530855",
+    "updated_at": "2026-04-18T01:50:02.497469",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.14,
-        "confidence": 0.6781,
-        "bullish_pct": 0.406,
-        "bearish_pct": 0.048,
-        "neutral_pct": 0.546,
+        "strength": 0.0025,
+        "confidence": 0.6733,
+        "bullish_pct": 0.4765,
+        "bearish_pct": 0.0446,
+        "neutral_pct": 0.479,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.319,
+        "stance_shifts": 0,
+        "consensus_score": 0.2185,
         "key_arguments": {
           "bullish": [
-            "[GlassnodeGuru] Price rejection at $78.2K with $820M in long liquidations shows derivative exhaustion, not reversal \u2014 retail leverage cleaned out. On-chain signals remain constructive: Biggs' $250K iShares ETF buy an",
-            "[TrendRider] Price rejected $78.2K again with strong liquidations and volume \u2014 classic short-term exhaustion, not reversal. Trend structure holds above 20-day EMA ($74.5K), RSI cooling from overbought, and Fear & ",
-            "[CryptoKaleo] $78K isn\u2019t a ceiling \u2014 it\u2019s a launchpad. The $820M in long liquidations? That\u2019s weakness being flushed out, not strength. Biggs\u2019 ETF move and Kraken swallowing Bitnomial for regulatory dominance are *",
-            "[StackingSats] $77.4K is just consolidation \u2014 the $78K rejections are friction on the way to new highs. $820M in liquidations crushed weak hands, while Biggs\u2019 ETF buy and Kraken\u2019s Bitnomial acquisition prove institu",
-            "[DiamondHands420] We're coiling like a spring at $77.4K \u2014 the $78K rejections aren't failures, they're fuel! $820M in liquidations wiped out the weak hands, and with Biggs stacking BTC via ETF and Kraken gobbling up Bi"
+            "[FadeTheCrowd] Another $820M in long liquidations at extreme fear (21) is not a red flag\u2014it's a clearance sale. Regulatory noise from Russia and Binance scrutiny is old playbook FUD; meanwhile, real demand hides in ",
+            "[StackingSats] Every dip under $75K was a gift, and this retest at $77.4K with $820M in long liquidations is a clearance sale for weak hands\u2014just 4 months from the halving. ETF inflows accelerate, on-chain accumulat",
+            "[DeepPockets] Price at $77.4K with $820M in liquidations and extreme fear (21) confirms a shakeout of weak hands, not euphoric top formation. Regulatory noise from Russia and Binance scrutiny are priced in, while E",
+            "[DiamondHands420] $77.4K? That\u2019s not a red flag \u2014 that\u2019s a golden entry zone! $820M in liquidations crushed the weak hands, Fear at 21 is screaming FOMO, and Congresswoman Biggs just put $250K into IBIT \u2014 that\u2019s a poli",
+            "[TrendRider] Price at $77.4K with a strong volume breakout and $820M in liquidations signals a momentum flush\u2014weak hands out, trend resuming. The Fear & Greed Index at 21 confirms irrational fear, while ETF adopti"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $78K \u2014 same script, different day. $820M in long liquidations isn\u2019t bullish cleanup, it\u2019s retail getting creamed while institutions like Biggs front-run their own legislation via ET"
+            "[BearishBob] Another fakeout into regulatory crosshairs\u2014Russia criminalizing crypto services and Binance under fresh sanctions fire should be down 20%, not pumping to $78K. $820M in long liquidations isn't a clear"
           ]
         },
-        "timestamp": "2026-04-17T21:46:30.851277+00:00",
+        "timestamp": "2026-04-17T22:44:40.452728+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -377,17 +377,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 989.1,
+          "run_duration_sec": 878.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77428,
-            "change_24h": 3.35,
+            "price": 77440,
+            "change_24h": 3.33,
             "fear_greed": 21
           }
         },
-        "age_minutes": 53.5,
+        "age_minutes": 5.4,
         "is_fresh": true
       },
       "groq": {
@@ -436,7 +436,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 996.5,
+        "age_minutes": 1006.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -453,7 +453,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 865.0,
+        "age_minutes": 875.0,
         "is_fresh": true
       }
     },
