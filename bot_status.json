@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T10:10:01.850698",
+  "generated_at": "2026-04-17T10:20:00.706384",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T10:10:01.850719"
+    "last_health_check": "2026-04-17T10:20:00.706404"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 10:08:32,414",
+      "last_update": "2026-04-17 10:18:58,505",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 37.8,
-        "time": "2026-04-17 10:08:32,414"
+        "confidence": 37.0,
+        "time": "2026-04-17 10:18:58,505"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 10:09:29,427",
+      "last_update": "2026-04-17 10:19:55,693",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -112,8 +112,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 79.9,
-        "time": "2026-04-17 10:09:29,427"
+        "confidence": 72.7,
+        "time": "2026-04-17 10:19:55,693"
       },
       "open_position": {
         "direction": "LONG",
@@ -174,7 +174,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 10:09:40,884 - INFO - [HEARTBEAT] Price: $75,078.01",
+      "last_update": "2026-04-17 10:19:47,024 - INFO - [HEARTBEAT] Price: $75,001.96",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -189,8 +189,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 87.4,
-        "time": "2026-04-17 10:09:31,746"
+        "confidence": 84.4,
+        "time": "2026-04-17 10:19:36,721"
       },
       "open_position": null,
       "performance": {
@@ -278,7 +278,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 10:10:02",
+      "last_update": "2026-04-17 10:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -307,28 +307,29 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T10:10:02.702093",
+    "updated_at": "2026-04-17T10:20:01.671299",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4987,
-        "confidence": 0.6508,
-        "bullish_pct": 0.2116,
-        "bearish_pct": 0.0781,
-        "neutral_pct": 0.7103,
+        "strength": 0.329,
+        "confidence": 0.6496,
+        "bullish_pct": 0.3355,
+        "bearish_pct": 0.0,
+        "neutral_pct": 0.6645,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5655,
+        "consensus_score": 0.4968,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] Dip to $73.5K was the ultimate shakeout \u2014 extreme fear at 21, negative funding, weak hands OUT! All this news piling up (Czech NB, Tennessee, Citi, Bitcoin Milkshake) isn\u2019t random, it\u2019s coordinated in"
+            "[DiamondHands420] Extreme fear at 21 with price holding strong above $73.5K? That\u2019s pure diamond-bottom energy! Citi front-running the gold+BTC portfolio narrative, Czech National Bank and Tennessee moving on reserves\u2014",
+            "[CryptoKaleo] The narrative is *electric*\u2014Czech National Bank, Tennessee, Citi front-running a gold+BTC allocation thesis, and even Steak \u2019n Shake joining the circus. Extreme Fear at 21? Perfect. This is institutio",
+            "[StackingSats] Every dip to $73.5K is a gift\u2014extreme fear at 21, institutional adoption accelerating with Czech and Tennessee moves, and Citi validating Bitcoin as portfolio alpha. I'm stacking at these levels with ",
+            "[FadeTheCrowd] Price grinding sideways at $74.7K amid extreme fear (21) while institutions like the Czech National Bank and Tennessee signal reserve allocation speaks volumes. I\u2019m not chasing, but I\u2019ve been scaling "
           ],
-          "bearish": [
-            "[BearishBob] Another fakeout above $75K on weak funding and dying volume \u2014 this is classic bear trap behavior. All this \"Czech Reserve\" and \"Tennessee Bill\" hype is just noise to distract from the fact that ETF in"
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-04-17T06:25:26.536176+00:00",
+        "timestamp": "2026-04-17T07:18:25.601482+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -345,17 +346,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 10525.0,
+          "run_duration_sec": 10103.7,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 24,
+          "total_posts": 23,
           "market_data_summary": {
-            "price": 74723,
-            "change_24h": -0.44,
+            "price": 74758,
+            "change_24h": -0.22,
             "fear_greed": 21
           }
         },
-        "age_minutes": 44.6,
+        "age_minutes": 1.6,
         "is_fresh": true
       },
       "groq": {
@@ -404,24 +405,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 66.5,
+        "age_minutes": 76.5,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-17T06:15:03.801863+00:00",
-        "direction": "NEUTRAL",
-        "strength": 0.4,
-        "confidence": 0.6,
-        "reasoning": "Minor price decline (-0.43%) with high volume suggests consolidation. Price remains strong above $70K, but momentum is slowing. Awaiting clearer directional signals before taking position.",
+        "timestamp": "2026-04-17T07:15:03.641059+00:00",
+        "direction": "LONG",
+        "strength": 0.6,
+        "confidence": 0.7,
+        "reasoning": "Price holding above $75K with positive 24h change indicates resilience. Strong volume suggests continued interest despite recent highs. Post-halving momentum remains favorable for upside continuation.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74763,
-          "change_24h": -0.43311725719469735,
-          "volume_24h": 40518319967.09625
+          "price": 75042,
+          "change_24h": 0.15246827953897119,
+          "volume_24h": 40202759782.88114
         },
-        "actionable": false,
-        "age_minutes": 55.0,
+        "actionable": true,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
