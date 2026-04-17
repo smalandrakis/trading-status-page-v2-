@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T08:10:01.682889",
+  "generated_at": "2026-04-17T08:20:01.699013",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T08:10:01.682909"
+    "last_health_check": "2026-04-17T08:20:01.699037"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 08:08:06,111",
+      "last_update": "2026-04-17 08:18:08,294",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 38.8,
-        "time": "2026-04-17 08:08:06,111"
+        "time": "2026-04-17 08:18:08,294"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 08:09:01,371",
+      "last_update": "2026-04-17 08:19:03,912",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -112,8 +112,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 78.0,
-        "time": "2026-04-17 08:09:01,371"
+        "confidence": 68.4,
+        "time": "2026-04-17 08:19:03,912"
       },
       "open_position": {
         "direction": "LONG",
@@ -174,7 +174,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 08:09:39,380 - INFO - [HEARTBEAT] Price: $74,622.00",
+      "last_update": "2026-04-17 08:19:39,492 - INFO - [HEARTBEAT] Price: $74,635.95",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -189,8 +189,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 66.2,
-        "time": "2026-04-17 08:08:19,662"
+        "confidence": 64.0,
+        "time": "2026-04-17 08:18:25,589"
       },
       "open_position": null,
       "performance": {
@@ -278,7 +278,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 08:10:02",
+      "last_update": "2026-04-17 08:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -307,27 +307,27 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T08:10:02.518193",
+    "updated_at": "2026-04-17T08:20:02.416481",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5172,
-        "confidence": 0.6545,
-        "bullish_pct": 0.2202,
-        "bearish_pct": 0.0424,
-        "neutral_pct": 0.7374,
+        "strength": 0.354,
+        "confidence": 0.6868,
+        "bullish_pct": 0.2666,
+        "bearish_pct": 0.1129,
+        "neutral_pct": 0.6206,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6061,
+        "consensus_score": 0.4308,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Every dip to $73.5K is a gift\u2014extreme fear and negative funding rates prove weak hands are capitulating while institutions quietly accumulate. The Czech CB, Tennessee, Citi, and K\u201312 Bitcoin education",
-            "[CryptoKaleo] We\u2019re in the *perfect* pre-launch setup \u2014 extreme fear, negative funding rates, and weak hands sweating while institutions like Citi and Czech CB stack. The narrative is heating up with Tennessee, Bit"
+            "[StackingSats] Another dip to stack. Negative funding rates in a bull market? That\u2019s fear\u2014exactly when we buy. The Czech Republic, Tennessee, and Citi all validate the thesis: Bitcoin is reserve asset 1.0. $74.6K is",
+            "[CryptoKaleo] They\u2019re clinging to negative funding rates like it\u2019s a red flag\u2014wake up, this is the *perfect* setup. The Czech Republic, Tennessee, Citi, and now even Steak \u2019n Shake are pouring fuel on the sovereign"
           ],
           "bearish": []
         },
-        "timestamp": "2026-04-17T04:25:06.868195+00:00",
+        "timestamp": "2026-04-17T05:19:46.349445+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -344,17 +344,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 10505.3,
+          "run_duration_sec": 10184.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 20,
+          "total_posts": 22,
           "market_data_summary": {
-            "price": 74750,
-            "change_24h": 0.18,
+            "price": 74637,
+            "change_24h": -0.24,
             "fear_greed": 21
           }
         },
-        "age_minutes": 44.9,
+        "age_minutes": 0.3,
         "is_fresh": true
       },
       "groq": {
@@ -405,24 +405,24 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2826.3,
+        "age_minutes": 2836.3,
         "is_fresh": false
       },
       "mirofish_full": {
-        "timestamp": "2026-04-17T04:15:04.033752+00:00",
+        "timestamp": "2026-04-17T05:15:04.647223+00:00",
         "direction": "NEUTRAL",
         "strength": 0.4,
-        "confidence": 0.6,
-        "reasoning": "Price near ATH with slight pullback (-0.38%) on moderate volume. Market consolidating after recent rally. Need clearer directional catalyst. Sideways movement likely short-term.",
+        "confidence": 0.65,
+        "reasoning": "Price showing minor pullback (-0.44%) with decent volume but no strong directional bias. Consolidation near ATHs suggests caution. Market likely awaiting catalyst for next major move.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74669,
-          "change_24h": -0.3840016271054622,
-          "volume_24h": 42797858486.99684
+          "price": 74607,
+          "change_24h": -0.44456119955095796,
+          "volume_24h": 42326123792.99945
         },
-        "actionable": false,
-        "age_minutes": 55.0,
+        "actionable": true,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
