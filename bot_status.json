@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T06:20:00.916864",
+  "generated_at": "2026-04-17T06:30:01.347617",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-17T06:20:00.916883"
+    "last_health_check": "2026-04-17T06:30:01.347640"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 06:19:43,469",
+      "last_update": "2026-04-17 06:29:45,371",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 36.0,
-        "time": "2026-04-17 06:19:43,469"
+        "confidence": 35.9,
+        "time": "2026-04-17 06:29:45,371"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 06:18:24,280",
+      "last_update": "2026-04-17 06:28:28,545",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -111,9 +111,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 64.9,
-        "time": "2026-04-17 06:18:24,280"
+        "signal": "SHORT",
+        "confidence": 66.0,
+        "time": "2026-04-17 06:28:28,544"
       },
       "open_position": null,
       "performance": {
@@ -166,7 +166,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 06:19:38,018 - INFO - [HEARTBEAT] Price: $74,708.58",
+      "last_update": "2026-04-17 06:29:38,129 - INFO - [HEARTBEAT] Price: $74,705.89",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -278,7 +278,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 06:20:01",
+      "last_update": "2026-04-17 06:30:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -307,30 +307,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T06:20:01.723623",
+    "updated_at": "2026-04-17T06:30:02.292206",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4067,
-        "confidence": 0.6521,
-        "bullish_pct": 0.2714,
-        "bearish_pct": 0.0505,
-        "neutral_pct": 0.6781,
+        "strength": 0.2269,
+        "confidence": 0.647,
+        "bullish_pct": 0.3438,
+        "bearish_pct": 0.0855,
+        "neutral_pct": 0.5707,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5172,
+        "consensus_score": 0.356,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $75K is just the start\u2014Citi\u2019s backing BTC + gold, Czech Republic adding Bitcoin to reserves, and $21M for Bitcoin in K\u201312 schools?! This is institutional adoption on steroids. Negative funding? Perfec",
-            "[CryptoKaleo] This dip is a gift \u2014 negative funding rates are a feature, not a bug, in this phase. The market is digesting miner overhangs like HIVE's AI pivot while Citi, Czech reserves, and K\u201312 Bitcoin education",
-            "[StackingSats] $75K is a steal. Negative funding rates and miner selling (like HIVE\u2019s AI pivot) are short-term noise\u2014Bitcoin\u2019s stock-to-flow dynamics and halving cycle remain intact. Every dollar down is a gift to s"
+            "[StackingSats] $74.9K is a steal with the halving cycle still unfolding and global institutions stacking BTC for reserves. Negative funding rates? Just noise \u2014 real holders don't lease their coins. Czech National Ba",
+            "[CryptoKaleo] We\u2019re coiling like a spring at $75K \u2014 negative funding? Perfect. It means the weak hands aren\u2019t in, and the shorts are setting themselves up for a guillotine when the Czech National Bank governor drop",
+            "[DiamondHands420] $75K IS HOLDING FIRM and the FOMO is building \u2014 Czech NB, Tennessee, Citi, K-12 Bitcoin ed? This is NOT noise, this is GLOBAL ADOPTION IGNITING! Negative funding? Just weak shorts getting ready to get"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout above $75K on negative funding rates and structural miner dumping\u2014HIVE\u2019s $75M AI pivot is just one more supply overhang in a market too weak to absorb it. No real leverage building, no"
+            "[BearishBob] Another fakeout above $75K on weak volume, negative funding, and no real on-chain conviction\u2014this isn't accumulation, it's redistribution to the greater fools. All this Czech NB and Tennessee hype is "
           ]
         },
-        "timestamp": "2026-04-17T02:23:43.475952+00:00",
+        "timestamp": "2026-04-17T03:21:11.848339+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -347,17 +347,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 10422.0,
+          "run_duration_sec": 10269.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 24,
+          "total_posts": 23,
           "market_data_summary": {
-            "price": 75036,
-            "change_24h": 0.39,
-            "fear_greed": 23
+            "price": 74966,
+            "change_24h": 0.52,
+            "fear_greed": 21
           }
         },
-        "age_minutes": 56.3,
+        "age_minutes": 8.8,
         "is_fresh": true
       },
       "groq": {
@@ -408,7 +408,7 @@
             "fear_greed": 23
           }
         },
-        "age_minutes": 2716.3,
+        "age_minutes": 2726.3,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -425,7 +425,7 @@
           "volume_24h": 43019211163.822426
         },
         "actionable": true,
-        "age_minutes": 5.0,
+        "age_minutes": 15.0,
         "is_fresh": true
       }
     },
