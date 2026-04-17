@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T00:00:01.253545",
+  "generated_at": "2026-04-18T00:10:01.307824",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T00:00:01.253569"
+    "last_health_check": "2026-04-18T00:10:01.307836"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 23:59:08,970",
+      "last_update": "2026-04-18 00:09:09,156",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 47.9,
-        "time": "2026-04-17 23:59:08,970"
+        "confidence": 48.3,
+        "time": "2026-04-18 00:09:09,156"
       },
       "open_position": {
         "direction": "LONG",
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 23:59:14,924",
+      "last_update": "2026-04-18 00:09:13,718",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -118,9 +118,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 72.9,
-        "time": "2026-04-17 23:59:14,923"
+        "signal": "NEUTRAL",
+        "confidence": 54.8,
+        "time": "2026-04-18 00:09:13,718"
       },
       "open_position": {
         "direction": "SHORT",
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 23:59:50,694 - INFO - [HEARTBEAT] Price: $77,345.52",
+      "last_update": "2026-04-18 00:09:50,654 - INFO - [HEARTBEAT] Price: $77,353.50",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -217,8 +217,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 62.8,
-        "time": "2026-04-17 23:58:13,046"
+        "confidence": 65.8,
+        "time": "2026-04-18 00:09:24,147"
       },
       "open_position": null,
       "performance": {
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 00:00:02",
+      "last_update": "2026-04-18 00:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,33 +335,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T00:00:02.423093",
+    "updated_at": "2026-04-18T00:10:02.131777",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3513,
-        "confidence": 0.6666,
-        "bullish_pct": 0.245,
-        "bearish_pct": 0.1587,
-        "neutral_pct": 0.5963,
+        "strength": 0.4454,
+        "confidence": 0.5959,
+        "bullish_pct": 0.2548,
+        "bearish_pct": 0.045,
+        "neutral_pct": 0.7002,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.3945,
+        "stance_shifts": 1,
+        "consensus_score": 0.5503,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $77.3K is not a retreat \u2014 it\u2019s a reload. The $820M liquidation massacre at $78K wasn\u2019t a bear signal, it was *necessary surgery* to purge weak longs and flush out fear. Kraken\u2019s $550M Bitnomial play p",
-            "[StackingSats] Every $77K dip is a gift \u2014 the $820M liquidations at $78K flushed out weak hands, not strong holders. Kraken\u2019s $550M Bitnomial acquisition and political BTC buys via ETFs signal institutional accumula",
-            "[FadeTheCrowd] Price tapping $77.3K after $820M in long liquidations amid Extreme Fear (21) is classic capitulation \u2014 the weak longs are out, and the setup favors a counter-trend institutional accumulation phase. Kr",
-            "[DiamondHands420] $77.3K is a golden buying opportunity after $820M in longs got wiped out\u2014this is textbook FOMO fuel! Kraken buying Bitnomial for $550M and Congress stacking BTC via ETFs screams institutional adoption"
+            "[StackingSats] Silence isn't distribution \u2014 it's the deep breath before the ascent. Weak hands churn in noise; strong hands stack in silence. The chain doesn't lie: hash rate is climbing, adoption is compounding, an",
+            "[FadeTheCrowd] Silence again \u2014 and still, the crowd leans neutral, waiting for data to hand them conviction. But extremes aren\u2019t built on data dumps; they\u2019re born in complacency, in the quiet where most are frozen. ",
+            "[DiamondHands420] Man, the vibes are still immaculate \u2014 this silence is classic pre-run consolidation! $50K is holding like a generational floor and the fact that whales aren't printing blocks just means they're loadin",
+            "[CryptoKaleo] The silence isn't absence \u2014 it's accumulation in stealth. My sources confirm OTC desks are *not* moving, but that\u2019s because the real players are bypassing them entirely, direct-handshake deals at $49."
           ],
           "bearish": [
-            "[AlphaQuant] Price rejection at $78.2K with $820M in long liquidations and declining volume into highs indicates leverage exhaustion, not institutional accumulation. Order book depth remains thin above $78K, and g",
-            "[BearishBob] Another fakeout to $78K on paper volume, crushing $820M in longs\u2014this isn\u2019t cleansing, it\u2019s a bear trap feasting on hopium. Kraken\u2019s Bitnomial buy doesn\u2019t offset macro headwinds or the lack of real on",
-            "[DeltaNeutral] Price rejection at $78.2k with $820M in long liquidations confirms leverage exhaustion, reinforced by thin order book depth above and peak gamma resistance at $78.5k. Funding has normalized but invent"
+            "[BearishBob] This deafening silence? Textbook distribution phase \u2014 when the retail hype dies down and the influencers start spinning \"stealth accumulation\" stories, that's when the smart money is already out. $50K"
           ]
         },
-        "timestamp": "2026-04-17T19:57:54.829464+00:00",
+        "timestamp": "2026-04-17T21:03:05.472738+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -378,17 +376,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1673.1,
+          "run_duration_sec": 1984.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 34,
           "market_data_summary": {
-            "price": 77336,
-            "change_24h": 3.09,
-            "fear_greed": 21
+            "price": null,
+            "change_24h": null,
+            "fear_greed": null
           }
         },
-        "age_minutes": 62.1,
+        "age_minutes": 6.9,
         "is_fresh": true
       },
       "groq": {
@@ -437,7 +435,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 896.5,
+        "age_minutes": 906.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -454,7 +452,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 765.0,
+        "age_minutes": 775.0,
         "is_fresh": true
       }
     },
