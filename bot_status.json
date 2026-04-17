@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T19:10:01.888119",
+  "generated_at": "2026-04-17T19:20:01.439290",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T19:10:01.888139"
+    "last_health_check": "2026-04-17T19:20:01.439309"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 19:08:21,867",
+      "last_update": "2026-04-17 19:18:23,734",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 40.3,
-        "time": "2026-04-17 19:08:21,867"
+        "confidence": 41.8,
+        "time": "2026-04-17 19:18:23,734"
       },
       "open_position": null,
       "performance": {
@@ -99,7 +99,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 19:08:17,044",
+      "last_update": "2026-04-17 19:18:21,689",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -111,8 +111,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 68.1,
-        "time": "2026-04-17 19:08:17,043"
+        "confidence": 66.0,
+        "time": "2026-04-17 19:18:21,688"
       },
       "open_position": null,
       "performance": {
@@ -179,7 +179,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 19:10:01,756 - INFO - [HEARTBEAT] Price: $77,868.14",
+      "last_update": "2026-04-17 19:19:31,868 - INFO - [HEARTBEAT] Price: $77,973.91",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -291,7 +291,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 19:10:02",
+      "last_update": "2026-04-17 19:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -320,33 +320,29 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T19:10:02.783461",
+    "updated_at": "2026-04-17T19:20:02.345701",
     "signals": {
       "cerebras": {
-        "direction": "LONG",
-        "strength": 0.3119,
-        "confidence": 0.6879,
-        "bullish_pct": 0.4528,
-        "bearish_pct": 0.1408,
-        "neutral_pct": 0.4064,
+        "direction": "NEUTRAL",
+        "strength": 0.4049,
+        "confidence": 0.632,
+        "bullish_pct": 0.2846,
+        "bearish_pct": 0.0259,
+        "neutral_pct": 0.6895,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.1792,
+        "stance_shifts": 0,
+        "consensus_score": 0.5342,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price rejected $73.7K with a sharp 5.4% daily candle, volume spiked, and we\u2019re still in extreme fear (21) despite the squeeze \u2014 classic late-stage capitulation. The Czech NB narrative and Strait of Ho",
-            "[TrendRider] Price reclaimed $77.5K on strong volume with clear catalysts\u2014geopolitical de-risking and institutional infrastructure growth (Kraken x Bitnomial, MSTR surge). The move has momentum, but we're testing ",
-            "[CryptoKaleo] This rally is building a perfect storm \u2014 $77.8K is the gateway to $84K. The Czech NB speakout, Kraken\u2019s CFTC-backed derivatives dominance, and Iran de-escalation aren\u2019t noise, they\u2019re narrative rocket",
-            "[DiamondHands420] $77.6K IS A LAUNCHPAD, NOT A CEILING \u2014 CZECH RESERVE FOMO, STRAIT OF HORMUZ OPEN, AND KRACKEN'S $550M CFTC-APPROVED DERIVS STACK ARE INSTITUTIONAL FIREPOWER. MSTR +12%? THAT'S WHALE SIGNAL. I'M DYING ",
-            "[StackingSats] $77.6K isn\u2019t resistance \u2014 it\u2019s confirmation. The Czech National Bank\u2019s imminent reveal on Bitcoin reserve diversification, coupled with Kraken securing full CFTC derivatives licensing, signals institu"
+            "[DiamondHands420] $77.8K is a launchpad to $88K \u2014 I\u2019m all in. Czech NB backing BTC and Kraken\u2019s CFTC win are MASSIVE trust signals, and the F&G is still at 21? That\u2019s free money for us degens. MacroFella and the neutra",
+            "[StackingSats] Every dip to $74K was absorbed like clockwork\u2014now we\u2019re reclaiming range with macro tailwinds. The Czech NB embracing BTC and Kraken securing full CFTC licensing aren\u2019t just noise; they\u2019re state and i",
+            "[FadeTheCrowd] $77.8K on shrinking volume again\u2014classic weak hand hesitation, but I\u2019ll take it. The Fear & Greed Index at 21 with this grind higher is a slow motion capitulation play; institutions aren\u2019t rushing in ",
+            "[CryptoKaleo] This rally is being carried by narrative velocity, not volume\u2014and that\u2019s fine. Czech NB diving into BTC reserves while Kraken secures a full CFTC derivatives stack isn\u2019t just positive optics, it\u2019s ins"
           ],
-          "bearish": [
-            "[DeltaNeutral] Price at $77,651 approaches $77.8K structural supply where order book depth shows clustered resting sell orders. Despite news-driven momentum and short-term geopolitical flows, gamma exposure turns ne",
-            "[BearishBob] $77.6K is a graveyard for bulls \u2014 same fakeout level as every rally since ATH. Czech CB \"diversification\" is theater, not real demand, and Iran de-escalation is priced-in FUD fading. Volume's spiking "
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-04-17T15:19:54.755208+00:00",
+        "timestamp": "2026-04-17T16:16:22.741994+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -363,17 +359,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2992.9,
+          "run_duration_sec": 2781.4,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 33,
+          "total_posts": 30,
           "market_data_summary": {
-            "price": 77651,
-            "change_24h": 5.36,
+            "price": 77764,
+            "change_24h": 4.59,
             "fear_greed": 21
           }
         },
-        "age_minutes": 50.1,
+        "age_minutes": 3.7,
         "is_fresh": true
       },
       "groq": {
@@ -422,7 +418,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 606.5,
+        "age_minutes": 616.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -439,7 +435,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 475.0,
+        "age_minutes": 485.0,
         "is_fresh": true
       }
     },
