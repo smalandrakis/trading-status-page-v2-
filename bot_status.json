@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T12:00:01.747561",
+  "generated_at": "2026-04-17T15:50:01.318220",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T12:00:01.747584"
+    "last_health_check": "2026-04-17T15:50:01.318241"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 11:59:44,047",
+      "last_update": "2026-04-17 15:49:34,479",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,25 +24,17 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 39.7,
-        "time": "2026-04-17 11:59:44,047"
+        "confidence": 37.1,
+        "time": "2026-04-17 15:49:34,479"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 1,
-        "entry_price": 75197.54,
-        "tp_price": 77077.47849999998,
-        "sl_price": 74445.5646,
-        "entry_time": "unknown",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 7,
+        "total_trades": 8,
         "wins": 1,
-        "losses": 6,
-        "win_rate": 14.3,
-        "total_pnl": -1735.69,
-        "avg_pnl": -247.96
+        "losses": 7,
+        "win_rate": 12.5,
+        "total_pnl": -2436.74,
+        "avg_pnl": -304.59
       },
       "recent_trades": [
         {
@@ -93,6 +85,13 @@
           "pnl": -715.73,
           "pnl_pct": -1.07,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-17 15:47:33",
+          "direction": "SHORT",
+          "pnl": -701.06,
+          "pnl_pct": -1.03,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -100,7 +99,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 11:58:45,904",
+      "last_update": "2026-04-17 15:49:16,356",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -112,10 +111,18 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 79.3,
-        "time": "2026-04-17 11:58:45,903"
+        "confidence": 74.2,
+        "time": "2026-04-17 15:49:16,356"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 2,
+        "entry_price": 76085.88,
+        "tp_price": 76846.7388,
+        "sl_price": 75705.45060000001,
+        "entry_time": "2026-04-17 15:49:16",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 6,
         "wins": 1,
@@ -173,7 +180,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 11:59:36,879 - INFO - [HEARTBEAT] Price: $75,745.05",
+      "last_update": "2026-04-17 15:49:59,447 - INFO - [HEARTBEAT] Price: $76,144.91",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -187,11 +194,19 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 80.1,
-        "time": "2026-04-17 11:58:42,050"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 4,
+        "entry_price": 76048.0,
+        "tp_price": 76428.23999999999,
+        "sl_price": 75933.928,
+        "entry_time": "2026-04-17 15:47:50",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 28,
         "wins": 10,
@@ -272,12 +287,12 @@
           "hold_minutes": 28.0
         }
       ],
-      "health_status": "HEALTHY"
+      "health_status": "CRITICAL"
     },
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 12:00:02",
+      "last_update": "2026-04-17 15:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -306,32 +321,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T12:00:02.588448",
+    "updated_at": "2026-04-17T15:50:02.158718",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.0228,
-        "confidence": 0.6296,
-        "bullish_pct": 0.4746,
-        "bearish_pct": 0.0281,
-        "neutral_pct": 0.4973,
+        "strength": 0.5595,
+        "confidence": 0.6194,
+        "bullish_pct": 0.1421,
+        "bearish_pct": 0.1492,
+        "neutral_pct": 0.7087,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.246,
+        "stance_shifts": 0,
+        "consensus_score": 0.563,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Every dip is a gift. $73.5K held firm again\u2014this is becoming a legendary accumulation zone. With the Czech National Bank, Tennessee, and Citi validating Bitcoin as reserve and portfolio assets, we're ",
-            "[FadeTheCrowd] Price grinding near $73.5K with persistent Extreme Fear (21) despite mounting institutional validation\u2014Czech NB, Tennessee, Citi\u2014is textbook pre-breakout apathy. I\u2019m scaling in here, targeting $73.5K\u2013",
-            "[CryptoKaleo] The $73.5K floor is now institutional grade\u2014Czech NB, Tennessee, Citi all pouring gasoline on the narrative fire. Steak \u2019n Shake\u2019s \"Bitcoin Milkshake\" isn\u2019t just marketing, it\u2019s cultural penetration. ",
-            "[TrendRider] Price is consolidating within the $73.5K\u2013$75.4K range, but the repeated defense of support and strong institutional narrative (Czech NB, Tennessee, Citi) reinforce the bullish bias. Volume holds firm ",
-            "[DeepPockets] Price holding firm at $73.5K with institutional tailwinds\u2014Czech NB, Tennessee, Citi\u2014validates my cost basis anchor. I\u2019m adding modestly into this $73.5K\u2013$74.8K range, treating it as a structural floor"
+            "[DiamondHands420] $75K is holding like a rock and we\u2019re cooking in extreme fear again \u2014 Czech Republic, Tennessee, Citi, and Bitcoin in schools? This isn\u2019t hype, it\u2019s the blueprint for the next leg up! Volume will expl",
+            "[StackingSats] Every $73.5K dip is a sovereign accumulation zone \u2014 Citi\u2019s BTC+gold endorsement and Czech/Tennessee reserve moves aren\u2019t press releases, they\u2019re structural demand signals. Extreme fear at 21, declinin"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $75.4K is a brick wall, and every pump to this level gets sold\u2014just like the last three attempts. All this \"institutional FOMO\" noise (Czech NB, Tennessee, Citi) is "
+            "[FadeTheCrowd] Price is still trapped in the same narrow range with fading volume, and this wave of sovereign-adoption hype \u2014 Czech Republic, Tennessee, Citi reports \u2014 isn\u2019t translating into real buying pressure. Ex",
+            "[BearishBob] Another fakeout rally into \"sovereign adoption\" headlines \u2014 Czech Republic and Tennessee mean nothing until actual reserve buys hit the tape. Citi pushing BTC+gold is recycled 2021 FOMO, and volume is"
           ]
         },
-        "timestamp": "2026-04-17T08:42:49.737635+00:00",
+        "timestamp": "2026-04-17T09:02:46.398408+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -348,17 +361,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 7968.2,
+          "run_duration_sec": 5564.5,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 25,
+          "total_posts": 32,
           "market_data_summary": {
-            "price": 74798,
-            "change_24h": -0.33,
+            "price": 74967,
+            "change_24h": 0.09,
             "fear_greed": 21
           }
         },
-        "age_minutes": 17.2,
+        "age_minutes": 227.3,
         "is_fresh": true
       },
       "groq": {
@@ -407,7 +420,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 176.5,
+        "age_minutes": 406.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -424,7 +437,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 45.0,
+        "age_minutes": 275.0,
         "is_fresh": true
       }
     },
