@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T17:00:03.134553",
+  "generated_at": "2026-04-17T17:10:01.354135",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T17:00:03.134568"
+    "last_health_check": "2026-04-17T17:10:01.354159"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 16:59:56,870",
+      "last_update": "2026-04-17 17:09:59,345",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 31.3,
-        "time": "2026-04-17 16:59:56,870"
+        "confidence": 35.2,
+        "time": "2026-04-17 17:09:59,345"
       },
       "open_position": null,
       "performance": {
@@ -99,7 +99,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 16:59:42,777",
+      "last_update": "2026-04-17 17:09:46,075",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -111,8 +111,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.3,
-        "time": "2026-04-17 16:59:42,777"
+        "confidence": 50.4,
+        "time": "2026-04-17 17:09:46,075"
       },
       "open_position": null,
       "performance": {
@@ -179,7 +179,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 17:00:00,158 - INFO - [HEARTBEAT] Price: $77,340.12",
+      "last_update": "2026-04-17 17:10:00,241 - INFO - [HEARTBEAT] Price: $77,168.68",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -194,8 +194,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 55.2,
-        "time": "2026-04-17 16:58:52,763"
+        "confidence": 55.9,
+        "time": "2026-04-17 17:08:55,060"
       },
       "open_position": null,
       "performance": {
@@ -283,7 +283,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 17:00:03",
+      "last_update": "2026-04-17 17:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -312,30 +312,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T17:00:04.187868",
+    "updated_at": "2026-04-17T17:10:02.235327",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5595,
-        "confidence": 0.6194,
-        "bullish_pct": 0.1421,
-        "bearish_pct": 0.1492,
-        "neutral_pct": 0.7087,
+        "strength": 0.4243,
+        "confidence": 0.6444,
+        "bullish_pct": 0.259,
+        "bearish_pct": 0.0578,
+        "neutral_pct": 0.6833,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.563,
+        "consensus_score": 0.5249,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $75K is holding like a rock and we\u2019re cooking in extreme fear again \u2014 Czech Republic, Tennessee, Citi, and Bitcoin in schools? This isn\u2019t hype, it\u2019s the blueprint for the next leg up! Volume will expl",
-            "[StackingSats] Every $73.5K dip is a sovereign accumulation zone \u2014 Citi\u2019s BTC+gold endorsement and Czech/Tennessee reserve moves aren\u2019t press releases, they\u2019re structural demand signals. Extreme fear at 21, declinin"
+            "[FadeTheCrowd] Extreme Fear at 21 with price grinding near range highs tells me weak hands are being shaken out. I'm adding small size below $77K\u2014liquidity is thin above, but the wall of fundamental news (Czech NB, ",
+            "[CryptoKaleo] We\u2019re not just building momentum\u2014we\u2019re building a movement. Czech National Bank on stage at Bitcoin 2026, Tennessee moving on a state reserve, Citi endorsing BTC+gold as alpha, and now *K\u201312 Bitcoin e",
+            "[DiamondHands420] $76.6K is a joke when the Czech National Bank and Tennessee are both moving on BTC reserves! Citi saying \"BTC + gold\" is portfolio alpha? That\u2019s your Wall Street stamp of approval. With K\u201312 Bitcoin e",
+            "[StackingSats] Dip? Still a buying opportunity. $76K is nothing when central banks whisper BTC reserves, Wall Street blesses Bitcoin + gold, and K\u201312 kids learn about halvings before calculus. On-chain noise fades\u2014a"
           ],
           "bearish": [
-            "[FadeTheCrowd] Price is still trapped in the same narrow range with fading volume, and this wave of sovereign-adoption hype \u2014 Czech Republic, Tennessee, Citi reports \u2014 isn\u2019t translating into real buying pressure. Ex",
-            "[BearishBob] Another fakeout rally into \"sovereign adoption\" headlines \u2014 Czech Republic and Tennessee mean nothing until actual reserve buys hit the tape. Citi pushing BTC+gold is recycled 2021 FOMO, and volume is"
+            "[BearishBob] Another fakeout rally built on hype and headlines. $76.8K is a magnet for distribution, not a breakout\u2014volume is inflated by noise, not real demand. Czech National Bank? Tennessee? Just talk. No actua"
           ]
         },
-        "timestamp": "2026-04-17T09:02:46.398408+00:00",
+        "timestamp": "2026-04-17T14:07:40.882563+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -352,17 +353,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 5564.5,
+          "run_duration_sec": 2259.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 32,
           "market_data_summary": {
-            "price": 74967,
-            "change_24h": 0.09,
+            "price": 76654,
+            "change_24h": 2.25,
             "fear_greed": 21
           }
         },
-        "age_minutes": 297.3,
+        "age_minutes": 2.4,
         "is_fresh": true
       },
       "groq": {
@@ -411,7 +412,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 476.5,
+        "age_minutes": 486.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -428,7 +429,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 345.0,
+        "age_minutes": 355.0,
         "is_fresh": true
       }
     },
