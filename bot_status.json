@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T18:10:01.261912",
+  "generated_at": "2026-04-17T18:20:00.966298",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T18:10:01.261922"
+    "last_health_check": "2026-04-17T18:20:00.966312"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 18:08:10,484",
+      "last_update": "2026-04-17 18:18:12,233",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 35.8,
-        "time": "2026-04-17 18:08:10,484"
+        "confidence": 34.5,
+        "time": "2026-04-17 18:18:12,233"
       },
       "open_position": null,
       "performance": {
@@ -99,7 +99,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 18:09:59,645",
+      "last_update": "2026-04-17 18:18:01,439",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -111,8 +111,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.4,
-        "time": "2026-04-17 18:09:59,645"
+        "confidence": 52.2,
+        "time": "2026-04-17 18:18:01,439"
       },
       "open_position": null,
       "performance": {
@@ -179,7 +179,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 18:10:00,949 - INFO - [HEARTBEAT] Price: $77,810.88",
+      "last_update": "2026-04-17 18:19:31,102 - INFO - [HEARTBEAT] Price: $77,799.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -194,26 +194,19 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 64.3,
-        "time": "2026-04-17 18:09:27,466"
+        "confidence": 65.0,
+        "time": "2026-04-17 18:18:58,426"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 30,
+        "total_trades": 31,
         "wins": 11,
-        "losses": 19,
-        "win_rate": 36.7,
-        "total_pnl": 132.37,
-        "avg_pnl": 4.41
+        "losses": 20,
+        "win_rate": 35.5,
+        "total_pnl": 95.72,
+        "avg_pnl": 3.09
       },
       "recent_trades": [
-        {
-          "time": "2026-04-17T00:20:09.616556",
-          "direction": "LONG",
-          "pnl": -37.94,
-          "pnl_pct": -0.17,
-          "hold_minutes": 30.0
-        },
         {
           "time": "2026-04-17T00:35:02.456752",
           "direction": "SHORT",
@@ -276,6 +269,13 @@
           "pnl": -45.36,
           "pnl_pct": -0.2,
           "hold_minutes": 0.0
+        },
+        {
+          "time": "2026-04-17T18:14:54.674381",
+          "direction": "LONG",
+          "pnl": -36.64,
+          "pnl_pct": -0.16,
+          "hold_minutes": 3.0
         }
       ],
       "health_status": "HEALTHY"
@@ -283,7 +283,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 18:10:01",
+      "last_update": "2026-04-17 18:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -312,31 +312,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T18:10:02.097889",
+    "updated_at": "2026-04-17T18:20:01.944671",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.4243,
-        "confidence": 0.6444,
-        "bullish_pct": 0.259,
-        "bearish_pct": 0.0578,
-        "neutral_pct": 0.6833,
+        "direction": "LONG",
+        "strength": 0.3119,
+        "confidence": 0.6879,
+        "bullish_pct": 0.4528,
+        "bearish_pct": 0.1408,
+        "neutral_pct": 0.4064,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5249,
+        "stance_shifts": 1,
+        "consensus_score": 0.1792,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Extreme Fear at 21 with price grinding near range highs tells me weak hands are being shaken out. I'm adding small size below $77K\u2014liquidity is thin above, but the wall of fundamental news (Czech NB, ",
-            "[CryptoKaleo] We\u2019re not just building momentum\u2014we\u2019re building a movement. Czech National Bank on stage at Bitcoin 2026, Tennessee moving on a state reserve, Citi endorsing BTC+gold as alpha, and now *K\u201312 Bitcoin e",
-            "[DiamondHands420] $76.6K is a joke when the Czech National Bank and Tennessee are both moving on BTC reserves! Citi saying \"BTC + gold\" is portfolio alpha? That\u2019s your Wall Street stamp of approval. With K\u201312 Bitcoin e",
-            "[StackingSats] Dip? Still a buying opportunity. $76K is nothing when central banks whisper BTC reserves, Wall Street blesses Bitcoin + gold, and K\u201312 kids learn about halvings before calculus. On-chain noise fades\u2014a"
+            "[FadeTheCrowd] Price rejected $73.7K with a sharp 5.4% daily candle, volume spiked, and we\u2019re still in extreme fear (21) despite the squeeze \u2014 classic late-stage capitulation. The Czech NB narrative and Strait of Ho",
+            "[TrendRider] Price reclaimed $77.5K on strong volume with clear catalysts\u2014geopolitical de-risking and institutional infrastructure growth (Kraken x Bitnomial, MSTR surge). The move has momentum, but we're testing ",
+            "[CryptoKaleo] This rally is building a perfect storm \u2014 $77.8K is the gateway to $84K. The Czech NB speakout, Kraken\u2019s CFTC-backed derivatives dominance, and Iran de-escalation aren\u2019t noise, they\u2019re narrative rocket",
+            "[DiamondHands420] $77.6K IS A LAUNCHPAD, NOT A CEILING \u2014 CZECH RESERVE FOMO, STRAIT OF HORMUZ OPEN, AND KRACKEN'S $550M CFTC-APPROVED DERIVS STACK ARE INSTITUTIONAL FIREPOWER. MSTR +12%? THAT'S WHALE SIGNAL. I'M DYING ",
+            "[StackingSats] $77.6K isn\u2019t resistance \u2014 it\u2019s confirmation. The Czech National Bank\u2019s imminent reveal on Bitcoin reserve diversification, coupled with Kraken securing full CFTC derivatives licensing, signals institu"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally built on hype and headlines. $76.8K is a magnet for distribution, not a breakout\u2014volume is inflated by noise, not real demand. Czech National Bank? Tennessee? Just talk. No actua"
+            "[DeltaNeutral] Price at $77,651 approaches $77.8K structural supply where order book depth shows clustered resting sell orders. Despite news-driven momentum and short-term geopolitical flows, gamma exposure turns ne",
+            "[BearishBob] $77.6K is a graveyard for bulls \u2014 same fakeout level as every rally since ATH. Czech CB \"diversification\" is theater, not real demand, and Iran de-escalation is priced-in FUD fading. Volume's spiking "
           ]
         },
-        "timestamp": "2026-04-17T14:07:40.882563+00:00",
+        "timestamp": "2026-04-17T15:19:54.755208+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -353,17 +355,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2259.2,
+          "run_duration_sec": 2992.9,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 32,
+          "total_posts": 33,
           "market_data_summary": {
-            "price": 76654,
-            "change_24h": 2.25,
+            "price": 77651,
+            "change_24h": 5.36,
             "fear_greed": 21
           }
         },
-        "age_minutes": 62.4,
+        "age_minutes": 0.1,
         "is_fresh": true
       },
       "groq": {
@@ -412,7 +414,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 546.5,
+        "age_minutes": 556.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -429,7 +431,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 415.0,
+        "age_minutes": 425.0,
         "is_fresh": true
       }
     },
