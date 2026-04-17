@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-17T09:10:01.040493",
+  "generated_at": "2026-04-17T09:20:01.529168",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-17T09:10:01.040514"
+    "last_health_check": "2026-04-17T09:20:01.529189"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-17 09:08:18,268",
+      "last_update": "2026-04-17 09:18:20,206",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 38.8,
-        "time": "2026-04-17 09:08:18,268"
+        "time": "2026-04-17 09:18:20,206"
       },
       "open_position": {
         "direction": "LONG",
@@ -100,7 +100,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-17 09:09:15,573",
+      "last_update": "2026-04-17 09:19:17,828",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -112,8 +112,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 67.4,
-        "time": "2026-04-17 09:09:15,573"
+        "confidence": 72.1,
+        "time": "2026-04-17 09:19:17,828"
       },
       "open_position": {
         "direction": "LONG",
@@ -174,7 +174,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-17 09:09:40,148 - INFO - [HEARTBEAT] Price: $74,724.22",
+      "last_update": "2026-04-17 09:19:40,268 - INFO - [HEARTBEAT] Price: $74,780.84",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -189,8 +189,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 76.0,
-        "time": "2026-04-17 09:08:56,278"
+        "confidence": 79.8,
+        "time": "2026-04-17 09:19:02,113"
       },
       "open_position": null,
       "performance": {
@@ -278,7 +278,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-17 09:10:01",
+      "last_update": "2026-04-17 09:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -307,7 +307,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-17T09:10:01.863153",
+    "updated_at": "2026-04-17T09:20:02.384696",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -354,7 +354,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 50.3,
+        "age_minutes": 60.3,
         "is_fresh": true
       },
       "groq": {
@@ -403,24 +403,24 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 6.5,
+        "age_minutes": 16.5,
         "is_fresh": true
       },
       "mirofish_full": {
-        "timestamp": "2026-04-17T05:15:04.647223+00:00",
+        "timestamp": "2026-04-17T06:15:03.801863+00:00",
         "direction": "NEUTRAL",
         "strength": 0.4,
-        "confidence": 0.65,
-        "reasoning": "Price showing minor pullback (-0.44%) with decent volume but no strong directional bias. Consolidation near ATHs suggests caution. Market likely awaiting catalyst for next major move.",
+        "confidence": 0.6,
+        "reasoning": "Minor price decline (-0.43%) with high volume suggests consolidation. Price remains strong above $70K, but momentum is slowing. Awaiting clearer directional signals before taking position.",
         "source": "mirofish-simple",
         "model_id": "claude-3.5-sonnet",
         "market_data": {
-          "price": 74607,
-          "change_24h": -0.44456119955095796,
-          "volume_24h": 42326123792.99945
+          "price": 74763,
+          "change_24h": -0.43311725719469735,
+          "volume_24h": 40518319967.09625
         },
-        "actionable": true,
-        "age_minutes": 55.0,
+        "actionable": false,
+        "age_minutes": 5.0,
         "is_fresh": true
       }
     },
