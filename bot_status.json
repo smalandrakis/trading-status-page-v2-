@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T05:30:01.326769",
+  "generated_at": "2026-04-18T05:40:01.268950",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T05:30:01.326787"
+    "last_health_check": "2026-04-18T05:40:01.268962"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 05:29:08,465",
+      "last_update": "2026-04-18 05:39:08,190",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 32.8,
-        "time": "2026-04-18 05:29:08,465"
+        "time": "2026-04-18 05:39:08,190"
       },
       "open_position": {
         "direction": "LONG",
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 05:29:13,572",
+      "last_update": "2026-04-18 05:39:12,953",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -119,8 +119,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 79.3,
-        "time": "2026-04-18 05:29:13,572"
+        "confidence": 78.0,
+        "time": "2026-04-18 05:39:12,953"
       },
       "open_position": {
         "direction": "SHORT",
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 05:29:50,537 - INFO - [HEARTBEAT] Price: $77,326.27",
+      "last_update": "2026-04-18 05:39:50,259 - INFO - [HEARTBEAT] Price: $77,358.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -217,8 +217,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 84.2,
-        "time": "2026-04-18 05:29:24,511"
+        "confidence": 85.0,
+        "time": "2026-04-18 05:39:23,083"
       },
       "open_position": null,
       "performance": {
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 05:30:02",
+      "last_update": "2026-04-18 05:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,31 +335,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T05:30:02.264366",
+    "updated_at": "2026-04-18T05:40:02.271531",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4309,
-        "confidence": 0.6361,
-        "bullish_pct": 0.2615,
-        "bearish_pct": 0.046,
-        "neutral_pct": 0.6925,
+        "strength": 0.4216,
+        "confidence": 0.6389,
+        "bullish_pct": 0.2644,
+        "bearish_pct": 0.0496,
+        "neutral_pct": 0.686,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5387,
+        "consensus_score": 0.529,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Price holding firm above $77K on strong volume confirms institutional accumulation \u2014 noise from Russia and Binance is irrelevant long-term. The halving cycle math still points to new ATH, and dips lik",
-            "[FadeTheCrowd] Price holding above $76.5K with Fear & Greed stagnant at 26 confirms fear persists \u2014 ideal for a contrarian build. Regulatory noise from Russia and Binance is priced-in FUD, not fundamentals. I\u2019m scal",
-            "[CryptoKaleo] $77K hold with volume? That\u2019s not luck \u2014 that\u2019s conviction. Binance scrutiny and Russia\u2019s power grab are FUD waves breaking against a wall of institutional demand. Polymarket pricing de-escalation, ET",
-            "[DiamondHands420] Love the green! $77K holding with volume again \u2014 that\u2019s demand stepping in hard, just like after the halving. Biggs\u2019 $250K ETF buy + Polymarket cooling Hormuz fears = more fuel for the rocket. Binance"
+            "[DiamondHands420] We\u2019re grinding toward $78.2K and Biggs buying BTC via ETF is a MASSIVE signal \u2014 politicians don\u2019t front-run, they follow the money! Fear at 26? Perfect. This is the last leg of accumulation before the",
+            "[StackingSats] Every dip to $74.6K was a springboard\u2014long-term holders are accumulating, exchanges keep bleeding BTC, and the hash rate is climbing. Biggs buying via ETF is a signal of growing institutional trust, n",
+            "[FadeTheCrowd] Price grinding higher from $74.6K to $77.3K on fear-driven sentiment (26) confirms a late-stage washout \u2014 exactly where I want to be accumulating. Institutional bids below $75K (per OTC flows), Biggs\u2019",
+            "[CryptoKaleo] Biggs\u2019 $250K ETF buy isn\u2019t political theater\u2014it\u2019s a torch passed to the next wave of institutional adoption. The market\u2019s grinding past $77K on fear-drenched sentiment (26) while Polymarket lights up "
           ],
           "bearish": [
-            "[BearishBob] Another relief rally into the $78K supply zone, and the bulls are celebrating crumbs. Binance under SEC scrutiny, Russia criminalizing crypto, and Polymarket pricing in de-escalation too fast \u2014 this i"
+            "[BearishBob] Another fakeout into $78K on weak volume\u2014this rally is just more distribution in disguise. Biggs\u2019 ETF buy is classic political theater to front-run retail, and the market is ignoring real risks: quant"
           ]
         },
-        "timestamp": "2026-04-18T01:39:32.636188+00:00",
+        "timestamp": "2026-04-18T02:39:46.238741+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -376,17 +376,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 570.4,
+          "run_duration_sec": 584.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77312,
-            "change_24h": 3.42,
+            "price": 77351,
+            "change_24h": 3.64,
             "fear_greed": 26
           }
         },
-        "age_minutes": 50.5,
+        "age_minutes": 0.3,
         "is_fresh": true
       },
       "groq": {
@@ -435,7 +435,7 @@
             "fear_greed": 21
           }
         },
-        "age_minutes": 1226.5,
+        "age_minutes": 1236.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -452,7 +452,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 1095.0,
+        "age_minutes": 1105.0,
         "is_fresh": true
       }
     },
