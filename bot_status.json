@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T12:20:01.420792",
+  "generated_at": "2026-04-18T12:30:01.160160",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T12:20:01.420810"
+    "last_health_check": "2026-04-18T12:30:01.160177"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 12:15:33,874",
+      "last_update": "2026-04-18 12:25:33,807",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 12:15:33,473",
+      "last_update": "2026-04-18 12:25:33,307",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 12:20:01",
+      "last_update": "2026-04-18 12:30:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 12:20:02",
+      "last_update": "2026-04-18 12:30:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,7 +335,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T12:20:02.513084",
+    "updated_at": "2026-04-18T12:30:02.473419",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -384,7 +384,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 66.3,
+        "age_minutes": 76.3,
         "is_fresh": true
       },
       "groq": {
@@ -435,7 +435,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 196.3,
+        "age_minutes": 206.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -452,7 +452,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 1505.0,
+        "age_minutes": 1515.0,
         "is_fresh": false
       }
     },
