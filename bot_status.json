@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-19T01:30:01.761526",
+  "generated_at": "2026-04-19T01:40:01.305605",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-19T01:30:01.761546"
+    "last_health_check": "2026-04-19T01:40:01.305625"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-19 01:29:09,701",
+      "last_update": "2026-04-19 01:39:09,430",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 41.9,
-        "time": "2026-04-19 01:29:09,701"
+        "confidence": 42.7,
+        "time": "2026-04-19 01:39:09,430"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-19 01:29:14,224",
+      "last_update": "2026-04-19 01:39:14,663",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 63.5,
-        "time": "2026-04-19 01:29:14,224"
+        "signal": "LONG",
+        "confidence": 66.6,
+        "time": "2026-04-19 01:39:14,662"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-19 01:29:51,229 - INFO - [HEARTBEAT] Price: $75,707.10",
+      "last_update": "2026-04-19 01:39:50,935 - INFO - [HEARTBEAT] Price: $75,809.28",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,9 +222,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 50.9,
-        "time": "2026-04-19 01:29:24,445"
+        "signal": "LONG",
+        "confidence": 69.6,
+        "time": "2026-04-19 01:39:24,702"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-19 01:30:02",
+      "last_update": "2026-04-19 01:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,31 +341,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-19T01:30:02.724723",
+    "updated_at": "2026-04-19T01:40:02.241438",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4322,
-        "confidence": 0.6251,
-        "bullish_pct": 0.2584,
-        "bearish_pct": 0.051,
-        "neutral_pct": 0.6906,
+        "strength": 0.2586,
+        "confidence": 0.6619,
+        "bullish_pct": 0.3466,
+        "bearish_pct": 0.0482,
+        "neutral_pct": 0.6052,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.5359,
+        "stance_shifts": 0,
+        "consensus_score": 0.4078,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price holding above $75,500 with tightening range and strong volume support confirms trend structure remains intact despite short-term weakness. RSI cooling from overbought levels and mining difficult",
-            "[StackingSats] $75,500 hold confirms strength\u2014this dip is fuel for the 2028 halving rally. Mining difficulty reset means hash rate will rebound in 4-year cycle rhythm, ETF inflows like Biggs\u2019 $250K buy signal growin",
-            "[DiamondHands420] Love the dip! $75.5K holding strong with Fear & Greed at 26 \u2014 classic accumulation zone. Congresswoman Biggs buying BTC via ETF is a massive green flag for adoption, and mining difficulty resetting ju",
-            "[CryptoKaleo] $75.5K isn\u2019t just support \u2014 it\u2019s a spring-loaded trap for bears. The mining difficulty dip is a gift, forcing weak miners out while smart money like Biggs loads via ETF under the radar, and Iran eyein"
+            "[FadeTheCrowd] Price hugging $75.5K with repeated volume spikes in fear territory (F&G: 26) is classic capitulation theater\u2014weak hands panic, strong hands load. Miners adapting to difficulty dip, Iran\u2019s BTC signalin",
+            "[CryptoKaleo] BTC bouncing hard off $75,547 with volume spiking in fear territory? This is not weakness \u2014 it's a trap for shorts. Iran\u2019s BTC-for-oil narrative is gaining steam, miners are adapting, and now Congress",
+            "[StackingSats] Another dip defended at $75.5K with massive volume\u2014this is accumulation, not weakness. Miners are adapting, hash rate remains strong, and every failed breakdown at support tightens the spring ahead of",
+            "[DiamondHands420] $75.5K holding STRONG again with monster volume \u2014 this is not a dip, it's a spring coiling! Iran\u2019s BTC-for-oil narrative is heating up, miners adapting, and now Congresswoman Biggs bags $250K in BTC E",
+            "[TrendRider] Price is still respecting the $75,547 support with strong volume \u2014 a level I've now seen hold multiple times. The rejection at $77.4K is frustrating, but until we break lower, the trend remains up on "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building\u2014$75.5K \"support\" is just a distribution floor while weak hands think they\u2019re buying the dip. Mining difficulty dip? That\u2019s not a reset, it\u2019s hash death spiral prep. Biggs\u2019 ETF"
+            "[BearishBob] Another fakeout at $77.4K, rejected again\u2014this time on shrinking follow-through volume. The \"support\" hold at $75.5K is just redistribution; fear feeds the narrative, but institutions are using this t"
           ]
         },
-        "timestamp": "2026-04-18T21:40:24.351796+00:00",
+        "timestamp": "2026-04-18T22:38:31.715957+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -382,17 +383,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 622.3,
+          "run_duration_sec": 509.7,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 75700,
-            "change_24h": -2.25,
+            "price": 75718,
+            "change_24h": -2.22,
             "fear_greed": 26
           }
         },
-        "age_minutes": 49.6,
+        "age_minutes": 1.5,
         "is_fresh": true
       },
       "groq": {
@@ -443,7 +444,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 986.3,
+        "age_minutes": 996.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -460,7 +461,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 2295.0,
+        "age_minutes": 2305.0,
         "is_fresh": false
       }
     },
