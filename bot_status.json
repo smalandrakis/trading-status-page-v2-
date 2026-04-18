@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T22:10:01.524069",
+  "generated_at": "2026-04-18T22:20:01.645625",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T22:10:01.524090"
+    "last_health_check": "2026-04-18T22:20:01.645646"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 22:09:09,830",
+      "last_update": "2026-04-18 22:19:09,454",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 42.2,
-        "time": "2026-04-18 22:09:09,830"
+        "time": "2026-04-18 22:19:09,454"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 22:09:14,184",
+      "last_update": "2026-04-18 22:19:13,815",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 59.9,
-        "time": "2026-04-18 22:09:14,184"
+        "confidence": 56.4,
+        "time": "2026-04-18 22:19:13,815"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 22:09:49,694 - INFO - [HEARTBEAT] Price: $75,742.00",
+      "last_update": "2026-04-18 22:19:49,670 - INFO - [HEARTBEAT] Price: $75,756.92",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,8 +223,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 60.5,
-        "time": "2026-04-18 22:09:24,205"
+        "confidence": 60.7,
+        "time": "2026-04-18 22:19:24,849"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 22:10:02",
+      "last_update": "2026-04-18 22:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,7 +341,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T22:10:02.873657",
+    "updated_at": "2026-04-18T22:20:02.702422",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -392,7 +392,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 30.0,
+        "age_minutes": 40.0,
         "is_fresh": true
       },
       "groq": {
@@ -443,7 +443,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 786.3,
+        "age_minutes": 796.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -460,7 +460,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 2095.0,
+        "age_minutes": 2105.0,
         "is_fresh": false
       }
     },
