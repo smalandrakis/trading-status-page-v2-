@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T18:40:01.790141",
+  "generated_at": "2026-04-18T18:50:01.480612",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T18:40:01.790161"
+    "last_health_check": "2026-04-18T18:50:01.480634"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 18:39:09,737",
+      "last_update": "2026-04-18 18:49:09,221",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 36.1,
-        "time": "2026-04-18 18:39:09,737"
+        "confidence": 35.4,
+        "time": "2026-04-18 18:49:09,221"
       },
       "open_position": {
         "direction": "LONG",
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 18:39:13,901",
+      "last_update": "2026-04-18 18:49:13,642",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -118,9 +118,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 57.9,
-        "time": "2026-04-18 18:39:13,901"
+        "signal": "SHORT",
+        "confidence": 75.3,
+        "time": "2026-04-18 18:49:13,641"
       },
       "open_position": {
         "direction": "SHORT",
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 18:39:50,868 - INFO - [HEARTBEAT] Price: $76,186.85",
+      "last_update": "2026-04-18 18:49:50,805 - INFO - [HEARTBEAT] Price: $76,112.03",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -217,8 +217,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 58.7,
-        "time": "2026-04-18 18:39:24,488"
+        "confidence": 71.7,
+        "time": "2026-04-18 18:49:24,367"
       },
       "open_position": null,
       "performance": {
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 18:40:02",
+      "last_update": "2026-04-18 18:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,31 +335,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T18:40:02.722030",
+    "updated_at": "2026-04-18T18:50:02.397187",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4091,
-        "confidence": 0.6581,
-        "bullish_pct": 0.2707,
-        "bearish_pct": 0.0495,
-        "neutral_pct": 0.6798,
+        "strength": 0.4403,
+        "confidence": 0.6475,
+        "bullish_pct": 0.2574,
+        "bearish_pct": 0.0449,
+        "neutral_pct": 0.6977,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5197,
+        "consensus_score": 0.5466,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Dip confirmed. $76K is prime stacking territory with $1B weekly ETF inflows and Congresswoman Biggs publicly backing BTC \u2014 this is institutional and political conviction in action. 1 BTC = 1 BTC, and ",
-            "[DiamondHands420] Big news \u2014 Congresswoman Sheri Biggs just disclosed up to $250K in BTC via iShares ETF! That\u2019s HUGE for political adoption and FUD busted. With $1B weekly ETF inflows and price holding strong above $7",
-            "[FadeTheCrowd] Price testing $75,819 support on Fear & Greed of 26 is textbook capitulation \u2014 perfect for contrarian accumulation. The $1B ETF inflows and Biggs\u2019 disclosure confirm structural demand is building whil",
-            "[CryptoKaleo] This pullback is pure theater\u2014$1B in ETF inflows and Congresswoman Biggs going public with her BTC ETF buy is undeniable fuel for the next leg up. We\u2019re coiling at $75.8K support like a spring, and ev"
+            "[FadeTheCrowd] Price holding firm above $75,819 with nearly $1B in weekly ETF inflows\u2014amid Fear (26) and political adoption like Biggs\u2019 ETF buy\u2014reinforces accumulation by informed players. I see this as a slow roll-",
+            "[CryptoKaleo] This dip is a gift. $1B into Bitcoin ETFs last week \u2014 led by political adoption like Rep. Biggs going public \u2014 isn\u2019t just accumulation, it\u2019s a flashing beacon for the next leg up. Fear at 26? Perfect.",
+            "[StackingSats] $75.8K is the new floor \u2014 tested twice and held with $1B in ETF inflows, now confirmed by political adoption like Rep. Biggs\u2019 ETF purchase. This is institutional accumulation in plain sight during fea",
+            "[DiamondHands420] Dip to $75.8K held strong \u2014 that\u2019s a *confirmed floor* with $1B in ETF inflows and now Congresswoman Biggs going public with her iShares BTC ETF buy! This is not luck, this is **institutional and poli"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rejection at $78.2K on weak volume \u2014 same script as January. The $1B ETF inflows are just paper hands chasing headlines while whales dump into the rally. Biggs\u2019 disclosure is political"
+            "[BearishBob] Another fakeout waiting to happen. $1B in ETF inflows? That's just paper hands chasing a dead cat bounce while the real sellers \u2014 miners, insiders, early whales \u2014 quietly distribute at these levels. W"
           ]
         },
-        "timestamp": "2026-04-18T14:38:27.779298+00:00",
+        "timestamp": "2026-04-18T15:40:44.378961+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -376,17 +376,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 506.3,
+          "run_duration_sec": 642.5,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 76154,
-            "change_24h": -1.94,
+            "price": 76223,
+            "change_24h": -1.98,
             "fear_greed": 26
           }
         },
-        "age_minutes": 61.6,
+        "age_minutes": 9.3,
         "is_fresh": true
       },
       "groq": {
@@ -437,7 +437,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 576.3,
+        "age_minutes": 586.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -454,7 +454,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 1885.0,
+        "age_minutes": 1895.0,
         "is_fresh": false
       }
     },
