@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T22:30:01.310415",
+  "generated_at": "2026-04-18T22:40:00.985387",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T22:30:01.310431"
+    "last_health_check": "2026-04-18T22:40:00.985398"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 22:29:09,766",
+      "last_update": "2026-04-18 22:39:10,200",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,25 +25,18 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 42.2,
-        "time": "2026-04-18 22:29:09,766"
+        "time": "2026-04-18 22:39:10,200"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 12,
-        "wins": 5,
+        "total_trades": 13,
+        "wins": 6,
         "losses": 7,
-        "win_rate": 41.7,
-        "total_pnl": 4000.92,
-        "avg_pnl": 333.41
+        "win_rate": 46.2,
+        "total_pnl": 5596.81,
+        "avg_pnl": 430.52
       },
       "recent_trades": [
-        {
-          "time": "2026-04-15 10:19:17",
-          "direction": "LONG",
-          "pnl": -155.97,
-          "pnl_pct": -1.05,
-          "hold_minutes": 196.0
-        },
         {
           "time": "2026-04-15 22:06:28",
           "direction": "SHORT",
@@ -106,6 +99,13 @@
           "pnl": 1620.51,
           "pnl_pct": 2.61,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-18 22:37:08",
+          "direction": "SHORT",
+          "pnl": 1595.89,
+          "pnl_pct": 2.57,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 22:29:16,070",
+      "last_update": "2026-04-18 22:39:13,655",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 74.0,
-        "time": "2026-04-18 22:29:16,070"
+        "confidence": 82.2,
+        "time": "2026-04-18 22:39:13,655"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 22:29:50,038 - INFO - [HEARTBEAT] Price: $75,693.97",
+      "last_update": "2026-04-18 22:39:49,519 - INFO - [HEARTBEAT] Price: $75,590.60",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,8 +223,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 70.5,
-        "time": "2026-04-18 22:29:24,119"
+        "confidence": 80.3,
+        "time": "2026-04-18 22:39:25,194"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 22:30:02",
+      "last_update": "2026-04-18 22:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,31 +341,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T22:30:02.283065",
+    "updated_at": "2026-04-18T22:40:01.828489",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4409,
-        "confidence": 0.6508,
-        "bullish_pct": 0.2556,
-        "bearish_pct": 0.0478,
-        "neutral_pct": 0.6966,
+        "strength": 0.525,
+        "confidence": 0.6492,
+        "bullish_pct": 0.2143,
+        "bearish_pct": 0.0463,
+        "neutral_pct": 0.7393,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5448,
+        "stance_shifts": 1,
+        "consensus_score": 0.609,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] This dip is pure theater. $1B in ETF inflows with a U.S. Congresswoman publicly stacking BTC? That\u2019s not just demand \u2014 it\u2019s political cover for the next wave of institutional adoption. Fear at 26? Per",
-            "[FadeTheCrowd] Price grinding sideways at $75.6K on $1B ETF inflows while Fear & Greed lingers at 26 is textbook pre-launch conditions. Weak hands keep expecting breakdowns, but institutional accumulation via ETFs \u2014",
-            "[StackingSats] Another dip to $75.6K on institutional inflows near $1B? This is accumulation, plain and simple. Congresswoman Biggs going public with her iShares BTC ETF purchase is a signal \u2014 the political class no",
-            "[DiamondHands420] Dip to $75.6K on nearly $1B in ETF inflows? That\u2019s institutional accumulation in plain sight! Congresswoman Biggs going public with her BTC ETF buy is massive \u2014 political cover + crypto adoption = roc"
+            "[DiamondHands420] We\u2019re coiling like a spring at $75.5K \u2014 that\u2019s a magnet for buyers, not sellers. $1B in ETF inflows, Sheri Biggs front-running the narrative, and Iran stacking BTC for oil? This is institutional FUD w",
+            "[FadeTheCrowd] Price holding at $75.5K with Fear & Greed at 26 confirms capitulation zone \u2014 exactly where smart money accumulates. ETF inflows near $1B and political adoption (Biggs, Iran) are structural bids being ",
+            "[StackingSats] Dip at $75.5K? Still stacking. $1B in weekly ETF inflows confirm institutional demand is accelerating, and political adoption\u2014Sheri Biggs, Iran\u2019s strategic BTC use\u2014validates long-term sovereignty narr",
+            "[CryptoKaleo] This dip into $75.5K is institutional accumulation disguised as fear. $1B in ETF inflows doesn\u2019t lie \u2014 that\u2019s real demand meeting political catalysts: Sheri Biggs going public and Iran\u2019s strategic BTC"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally fueled by ETF noise. $1B inflows? That's just Wall Street front-running retail again. Every pump since the $126K ATH has been distribution \u2014 this \"dip\" to $75.6K is just the ramp"
+            "[BearishBob] Another fakeout waiting to happen. $1B in ETF inflows? Great \u2014 but price can't even reclaim $77.6K, let alone break it. Iran talk is noise, not volume, and Sheri Biggs is just political theater. We're"
           ]
         },
-        "timestamp": "2026-04-18T18:40:02.837703+00:00",
+        "timestamp": "2026-04-18T19:37:03.686314+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -382,17 +382,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 600.6,
+          "run_duration_sec": 422.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75683,
-            "change_24h": -2.03,
+            "price": 75695,
+            "change_24h": -2.07,
             "fear_greed": 26
           }
         },
-        "age_minutes": 50.0,
+        "age_minutes": 3.0,
         "is_fresh": true
       },
       "groq": {
@@ -443,7 +443,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 806.3,
+        "age_minutes": 816.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -460,7 +460,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 2115.0,
+        "age_minutes": 2125.0,
         "is_fresh": false
       }
     },
