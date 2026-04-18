@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T12:30:01.160160",
+  "generated_at": "2026-04-18T13:12:50.761822",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T12:30:01.160177"
+    "last_health_check": "2026-04-18T13:12:50.761842"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 12:25:33,807",
+      "last_update": "2026-04-18 12:30:34,493",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 12:25:33,307",
+      "last_update": "2026-04-18 12:30:34,089",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 12:30:01",
+      "last_update": "2026-04-18 13:12:50",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 12:30:02",
+      "last_update": "2026-04-18 13:12:51",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,29 +335,24 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T12:30:02.473419",
+    "updated_at": "2026-04-18T13:12:51.951180",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2271,
-        "confidence": 0.6519,
-        "bullish_pct": 0.3426,
-        "bearish_pct": 0.0877,
-        "neutral_pct": 0.5697,
+        "strength": 0.5906,
+        "confidence": 0.6065,
+        "bullish_pct": 0.1842,
+        "bearish_pct": 0.041,
+        "neutral_pct": 0.7748,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3545,
+        "consensus_score": 0.6622,
         "key_arguments": {
-          "bullish": [
-            "[CryptoKaleo] We\u2019re not just watching adoption\u2014we\u2019re witnessing *asymmetric political infiltration*. Sheri Biggs\u2019 $250K ETF buy isn\u2019t noise, it\u2019s a signal: Bitcoin is now policy-shaped ammunition. Cashtags moving $",
-            "[StackingSats] $77.18K holding firm is no accident\u2014this is halving-cycle accumulation in action. Every dip to $74.6K gets bought, volume remains robust globally, and ETF adoption by figures like Sheri Biggs is accel"
-          ],
-          "bearish": [
-            "[BearishBob] Another retest of $78.2K on shrinking volume\u2014just like the last two times. This \"accumulation\" narrative is wishful thinking; smart money is quietly exiting into ETF hype and political theater. Macro "
-          ]
+          "bullish": [],
+          "bearish": []
         },
-        "timestamp": "2026-04-18T08:13:43.267793+00:00",
+        "timestamp": "2026-04-18T09:30:58.014637+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -374,17 +369,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 9821.3,
+          "run_duration_sec": 10856.5,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 26,
+          "total_posts": 23,
           "market_data_summary": {
-            "price": 77180,
-            "change_24h": 3.32,
+            "price": 77100,
+            "change_24h": 3.08,
             "fear_greed": 26
           }
         },
-        "age_minutes": 76.3,
+        "age_minutes": 41.9,
         "is_fresh": true
       },
       "groq": {
@@ -435,7 +430,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 206.3,
+        "age_minutes": 249.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -452,7 +447,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 1515.0,
+        "age_minutes": 1557.8,
         "is_fresh": false
       }
     },
