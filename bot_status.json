@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-19T02:40:02.057228",
+  "generated_at": "2026-04-19T02:50:01.843981",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-19T02:40:02.057248"
+    "last_health_check": "2026-04-19T02:50:01.844000"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-19 02:39:09,023",
+      "last_update": "2026-04-19 02:49:09,083",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 37.9,
-        "time": "2026-04-19 02:39:09,023"
+        "time": "2026-04-19 02:49:09,083"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-19 02:39:13,678",
+      "last_update": "2026-04-19 02:49:13,892",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 70.2,
-        "time": "2026-04-19 02:39:13,608"
+        "signal": "NEUTRAL",
+        "confidence": 57.7,
+        "time": "2026-04-19 02:49:13,892"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-19 02:39:50,448 - INFO - [HEARTBEAT] Price: $75,698.71",
+      "last_update": "2026-04-19 02:49:50,059 - INFO - [HEARTBEAT] Price: $75,763.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,9 +222,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 61.6,
-        "time": "2026-04-19 02:39:24,525"
+        "signal": "LONG",
+        "confidence": 57.9,
+        "time": "2026-04-19 02:49:23,779"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-19 02:40:02",
+      "last_update": "2026-04-19 02:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,32 +341,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-19T02:40:02.980542",
+    "updated_at": "2026-04-19T02:50:02.733850",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2586,
-        "confidence": 0.6619,
-        "bullish_pct": 0.3466,
-        "bearish_pct": 0.0482,
-        "neutral_pct": 0.6052,
+        "strength": 0.108,
+        "confidence": 0.6378,
+        "bullish_pct": 0.4213,
+        "bearish_pct": 0.0494,
+        "neutral_pct": 0.5293,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.4078,
+        "stance_shifts": 3,
+        "consensus_score": 0.2939,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price hugging $75.5K with repeated volume spikes in fear territory (F&G: 26) is classic capitulation theater\u2014weak hands panic, strong hands load. Miners adapting to difficulty dip, Iran\u2019s BTC signalin",
-            "[CryptoKaleo] BTC bouncing hard off $75,547 with volume spiking in fear territory? This is not weakness \u2014 it's a trap for shorts. Iran\u2019s BTC-for-oil narrative is gaining steam, miners are adapting, and now Congress",
-            "[StackingSats] Another dip defended at $75.5K with massive volume\u2014this is accumulation, not weakness. Miners are adapting, hash rate remains strong, and every failed breakdown at support tightens the spring ahead of",
-            "[DiamondHands420] $75.5K holding STRONG again with monster volume \u2014 this is not a dip, it's a spring coiling! Iran\u2019s BTC-for-oil narrative is heating up, miners adapting, and now Congresswoman Biggs bags $250K in BTC E",
-            "[TrendRider] Price is still respecting the $75,547 support with strong volume \u2014 a level I've now seen hold multiple times. The rejection at $77.4K is frustrating, but until we break lower, the trend remains up on "
+            "[StackingSats] $75,547 held\u2014another gift to stack. The Kelp exploit is altcoin decay, not Bitcoin contagion; hash rate strong, ETF inflows steady, and Iran\u2019s strategic adoption confirms sound money demand. 1 BTC = 1",
+            "[CryptoKaleo] Fear at 26? Still a golden buying zone. The Kelp bleed is altcoin cancer, not Bitcoin pathology \u2014 BTC\u2019s hash rate and ETF inflows are rock solid while Iran\u2019s strategic adoption and Sheri Biggs\u2019 $250K ",
+            "[DiamondHands420] Fear at 26 again? Absolute diamond hands moment! $75.5K held strong \u2014 that\u2019s institutional support right there. Kelp\u2019s implosion is just altcoin contagion, not a BTC problem; hash rate\u2019s solid, ETF in",
+            "[TrendRider] Price holding above $75.5K with reduced volatility and stabilizing volume confirms accumulation, not weakness. The Kelp exploit is alt-sector noise\u2014BTC\u2019s fundamentals (ETF inflows, hash rate, Iran's s",
+            "[FadeTheCrowd] Price holding above $75.5K with Fear at 26 confirms emotional bottoming \u2014 exactly where contrarians thrive. The Kelp exploit is altcoin leverage unwinding, not a BTC rail failure; hash rate, ETF flows"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $77.4K, rejected again\u2014this time on shrinking follow-through volume. The \"support\" hold at $75.5K is just redistribution; fear feeds the narrative, but institutions are using this t"
+            "[BearishBob] Another fakeout bounce. $75.5K isn\u2019t support\u2014it\u2019s a trap for suckers front-running the next leg down. Kelp\u2019s $293M implosion exposes the rot in restaking, and this \"Fear\" print is just prelude to forc"
           ]
         },
-        "timestamp": "2026-04-18T22:38:31.715957+00:00",
+        "timestamp": "2026-04-18T23:42:08.720989+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -383,17 +383,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 509.7,
+          "run_duration_sec": 727.4,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75718,
-            "change_24h": -2.22,
+            "price": 75843,
+            "change_24h": -1.58,
             "fear_greed": 26
           }
         },
-        "age_minutes": 61.5,
+        "age_minutes": 7.9,
         "is_fresh": true
       },
       "groq": {
@@ -444,7 +444,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 1056.3,
+        "age_minutes": 1066.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -461,7 +461,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 2365.0,
+        "age_minutes": 2375.0,
         "is_fresh": false
       }
     },
