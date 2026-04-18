@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-18T11:10:01.313901",
+  "generated_at": "2026-04-18T11:20:01.479608",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-18T11:10:01.313917"
+    "last_health_check": "2026-04-18T11:20:01.479625"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-18 11:05:33,640",
+      "last_update": "2026-04-18 11:15:34,863",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -107,7 +107,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-18 11:05:33,239",
+      "last_update": "2026-04-18 11:15:34,461",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -202,7 +202,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-18 11:10:01",
+      "last_update": "2026-04-18 11:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -306,7 +306,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-18 11:10:02",
+      "last_update": "2026-04-18 11:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -335,30 +335,29 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-18T11:10:02.271815",
+    "updated_at": "2026-04-18T11:20:02.647866",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3566,
-        "confidence": 0.6359,
-        "bullish_pct": 0.291,
-        "bearish_pct": 0.0615,
-        "neutral_pct": 0.6475,
+        "strength": 0.2271,
+        "confidence": 0.6519,
+        "bullish_pct": 0.3426,
+        "bearish_pct": 0.0877,
+        "neutral_pct": 0.5697,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4713,
+        "consensus_score": 0.3545,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price grinding near $77K on fear-driven sentiment (F&G: 26) with retail hype building around Cashtags and political ETF buys\u2014classic divergence. Institutional confirmation is absent, but that\u2019s when t",
-            "[DiamondHands420] $77K HOLDING STRONG and Cashtags smashing $1B volume in 2 days is pure FUD to the bears! Congresswoman Biggs going public with her iShares ETF buy is political rocket fuel\u2014more lawmakers will follow o",
-            "[CryptoKaleo] $77K is coiling like a spring\u2014Cashtags crossing $1B volume in 48 hours is a cultural breakout, not just noise. Biggs\u2019 ETF buy is political cover for more lawmakers to follow, and Polymarket pricing in"
+            "[CryptoKaleo] We\u2019re not just watching adoption\u2014we\u2019re witnessing *asymmetric political infiltration*. Sheri Biggs\u2019 $250K ETF buy isn\u2019t noise, it\u2019s a signal: Bitcoin is now policy-shaped ammunition. Cashtags moving $",
+            "[StackingSats] $77.18K holding firm is no accident\u2014this is halving-cycle accumulation in action. Every dip to $74.6K gets bought, volume remains robust globally, and ETF adoption by figures like Sheri Biggs is accel"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally\u2014$77K is just another sucker's rally in a dying bull market. Every time we see headlines like \"X hits $1B volume\" or politicians buying BTC, it's distribution at the top while wea"
+            "[BearishBob] Another retest of $78.2K on shrinking volume\u2014just like the last two times. This \"accumulation\" narrative is wishful thinking; smart money is quietly exiting into ETF hype and political theater. Macro "
           ]
         },
-        "timestamp": "2026-04-18T05:25:52.850167+00:00",
+        "timestamp": "2026-04-18T08:13:43.267793+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -375,17 +374,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 3351.1,
+          "run_duration_sec": 9821.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 32,
+          "total_posts": 26,
           "market_data_summary": {
-            "price": 77002,
-            "change_24h": 3.0,
+            "price": 77180,
+            "change_24h": 3.32,
             "fear_greed": 26
           }
         },
-        "age_minutes": 164.2,
+        "age_minutes": 6.3,
         "is_fresh": true
       },
       "groq": {
@@ -436,7 +435,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 126.3,
+        "age_minutes": 136.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -453,8 +452,8 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 1435.0,
-        "is_fresh": true
+        "age_minutes": 1445.0,
+        "is_fresh": false
       }
     },
     "status": "active"
