@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-19T14:40:01.362601",
+  "generated_at": "2026-04-19T14:50:01.312327",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-19T14:40:01.362620"
+    "last_health_check": "2026-04-19T14:50:01.312345"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-19 14:39:10,216",
+      "last_update": "2026-04-19 14:49:09,079",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,33 +24,19 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 37.4,
-        "time": "2026-04-19 14:39:10,216"
+        "confidence": 36.5,
+        "time": "2026-04-19 14:49:09,079"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 124,
-        "wins": 117,
+        "total_trades": 126,
+        "wins": 119,
         "losses": 7,
         "win_rate": 94.4,
-        "total_pnl": 205121.37,
-        "avg_pnl": 1654.2
+        "total_pnl": 208484.45,
+        "avg_pnl": 1654.64
       },
       "recent_trades": [
-        {
-          "time": "2026-04-19 13:50:08",
-          "direction": "SHORT",
-          "pnl": 1973.51,
-          "pnl_pct": 3.18,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-19 13:55:07",
-          "direction": "SHORT",
-          "pnl": 1922.55,
-          "pnl_pct": 3.1,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-19 14:00:07",
           "direction": "SHORT",
@@ -106,6 +92,20 @@
           "pnl": 1735.42,
           "pnl_pct": 2.8,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 14:40:07",
+          "direction": "SHORT",
+          "pnl": 1698.76,
+          "pnl_pct": 2.74,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 14:45:06",
+          "direction": "SHORT",
+          "pnl": 1664.33,
+          "pnl_pct": 2.68,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-19 14:39:13,828",
+      "last_update": "2026-04-19 14:49:13,835",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 71.0,
-        "time": "2026-04-19 14:39:13,828"
+        "confidence": 71.4,
+        "time": "2026-04-19 14:49:13,835"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-19 14:39:50,406 - INFO - [HEARTBEAT] Price: $75,465.00",
+      "last_update": "2026-04-19 14:49:50,359 - INFO - [HEARTBEAT] Price: $75,542.45",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,8 +223,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 70.3,
-        "time": "2026-04-19 14:39:24,137"
+        "confidence": 76.0,
+        "time": "2026-04-19 14:49:24,325"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-19 14:40:02",
+      "last_update": "2026-04-19 14:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -337,11 +337,11 @@
         "avg_pnl": 0
       },
       "recent_trades": [],
-      "health_status": "CRITICAL"
+      "health_status": "HEALTHY"
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-19T14:40:02.324869",
+    "updated_at": "2026-04-19T14:50:02.256812",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -392,7 +392,7 @@
             "fear_greed": 27
           }
         },
-        "age_minutes": 1.1,
+        "age_minutes": 11.1,
         "is_fresh": true
       },
       "groq": {
@@ -443,7 +443,7 @@
             "fear_greed": 27
           }
         },
-        "age_minutes": 336.3,
+        "age_minutes": 346.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -460,7 +460,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 3085.0,
+        "age_minutes": 3095.0,
         "is_fresh": false
       }
     },
