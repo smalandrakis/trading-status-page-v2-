@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-19T04:30:01.402774",
+  "generated_at": "2026-04-19T04:40:01.502095",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-19T04:30:01.402793"
+    "last_health_check": "2026-04-19T04:40:01.502113"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-19 04:29:10,507",
+      "last_update": "2026-04-19 04:39:10,420",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,33 +24,19 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 36.3,
-        "time": "2026-04-19 04:29:10,507"
+        "confidence": 31.8,
+        "time": "2026-04-19 04:39:10,420"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 20,
-        "wins": 13,
+        "total_trades": 22,
+        "wins": 15,
         "losses": 7,
-        "win_rate": 65.0,
-        "total_pnl": 16779.07,
-        "avg_pnl": 838.95
+        "win_rate": 68.2,
+        "total_pnl": 20051.09,
+        "avg_pnl": 911.41
       },
       "recent_trades": [
-        {
-          "time": "2026-04-18 21:45:07",
-          "direction": "SHORT",
-          "pnl": 1591.72,
-          "pnl_pct": 2.57,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-18 21:55:08",
-          "direction": "SHORT",
-          "pnl": 1620.51,
-          "pnl_pct": 2.61,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-18 22:37:08",
           "direction": "SHORT",
@@ -106,6 +92,20 @@
           "pnl": 1594.18,
           "pnl_pct": 2.57,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 04:30:08",
+          "direction": "SHORT",
+          "pnl": 1626.59,
+          "pnl_pct": 2.62,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 04:35:08",
+          "direction": "SHORT",
+          "pnl": 1645.43,
+          "pnl_pct": 2.65,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-19 04:29:14,054",
+      "last_update": "2026-04-19 04:39:13,682",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 72.2,
-        "time": "2026-04-19 04:29:14,054"
+        "confidence": 69.3,
+        "time": "2026-04-19 04:39:13,682"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-19 04:29:50,885 - INFO - [HEARTBEAT] Price: $75,544.78",
+      "last_update": "2026-04-19 04:39:50,224 - INFO - [HEARTBEAT] Price: $75,550.61",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,9 +222,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 55.4,
-        "time": "2026-04-19 04:29:23,823"
+        "signal": "LONG",
+        "confidence": 53.5,
+        "time": "2026-04-19 04:39:24,547"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-19 04:30:02",
+      "last_update": "2026-04-19 04:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,32 +341,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-19T04:30:02.369171",
+    "updated_at": "2026-04-19T04:40:02.398654",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.0617,
-        "confidence": 0.6544,
-        "bullish_pct": 0.4456,
+        "strength": 0.25,
+        "confidence": 0.6503,
+        "bullish_pct": 0.3515,
         "bearish_pct": 0.0471,
-        "neutral_pct": 0.5073,
+        "neutral_pct": 0.6015,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.261,
+        "stance_shifts": 0,
+        "consensus_score": 0.4022,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $75.5K is HOLDING HARD \u2014 this is pure accumulation mode! Congresswoman Biggs pumping $250K into BTC ETF while Iran stacks Bitcoin for oil? That\u2019s nation-state energy! Kelp exploit is altcoin cancer, n",
-            "[TrendRider] Price is holding $75.5K with strong volume absorption and repeated rejections at the low \u2014 this is not weakness, it's consolidation within an uptrend. The Kelp exploit is noise for Bitcoin; altcoin co",
-            "[CryptoKaleo] $75.5K isn\u2019t just holding \u2014 it\u2019s magnetizing price like a gravitational core. The Kelp exploit? Pure altcoin toxicity, not a Bitcoin stress test \u2014 smart money knows the difference and is piling into E",
-            "[StackingSats] $75.5K is a fortress \u2014 another textbook test of the accumulation zone. The Kelp exploit is altseason fallout, not a Bitcoin risk; hash rate and mining difficulty confirm network strength. Institutiona",
-            "[DeepPockets] Price holding at $75.5K confirms my accumulation zone, with OTC inflows and institutional bid support anchoring the floor. The Kelp exploit is contained altcoin leverage unwinding\u2014BTC\u2019s fundamentals, "
+            "[DiamondHands420] Dip to $75.5K held like a rock with massive volume \u2014 that\u2019s not weakness, that\u2019s accumulation! Kelp getting rekt? Just DeFi trash getting flushed, not Bitcoin. Iran adopting BTC for oil tolls, congres",
+            "[StackingSats] Dip to $75.5K is a joke to fear \u2014 volume confirms strength, not capitulation. Kelp\u2019s collapse is DeFi bloat being purged, not a Bitcoin risk; hash rate and adoption keep marching higher. Iran embracin",
+            "[TrendRider] Price holding firm at $75.5K with strong volume absorption confirms demand is stepping in\u2014this level remains critical for the higher-low structure. The Kelp exploit, while concerning for DeFi leverage",
+            "[FadeTheCrowd] Fear at 27, price holding $75.5K on strong volume, and Kelp\u2019s contagion isolated to restaking\u2014not BTC fundamentals\u2014creates a classic overreaction. I\u2019m adding exposure here with a target of $82K over t",
+            "[CryptoKaleo] The $75.5K floor is granite \u2014 we\u2019re not just holding, we\u2019re absorbing fear like fuel. Kelp\u2019s implosion? Another DeFi circus burning down, not a Bitcoin problem. Iran adopting BTC for oil tolls, politi"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $75.5K looks like a bear trap setup with all this \"quiet accumulation\" chatter, but the Kelp exploit ($293M!) shows fragility in the ecosystem\u2014cross-protocol contagi"
+            "[BearishBob] Another fakeout bounce on thin volume\u2014$75.5K isn\u2019t support, it\u2019s a trap for suckers. Kelp\u2019s $293M implosion shows restaking rot is spreading, and Iran using BTC for oil tolls? Just propaganda; stablec"
           ]
         },
-        "timestamp": "2026-04-19T00:37:24.628750+00:00",
+        "timestamp": "2026-04-19T01:38:49.969781+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -383,17 +383,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 443.4,
+          "run_duration_sec": 528.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75622,
-            "change_24h": -2.08,
+            "price": 75595,
+            "change_24h": -2.22,
             "fear_greed": 27
           }
         },
-        "age_minutes": 52.6,
+        "age_minutes": 1.2,
         "is_fresh": true
       },
       "groq": {
@@ -444,7 +444,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 1166.3,
+        "age_minutes": 1176.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -461,7 +461,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 2475.0,
+        "age_minutes": 2485.0,
         "is_fresh": false
       }
     },
