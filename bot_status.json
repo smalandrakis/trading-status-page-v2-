@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-19T22:30:01.779875",
+  "generated_at": "2026-04-19T22:40:02.064952",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-19T22:30:01.779895"
+    "last_health_check": "2026-04-19T22:40:02.064966"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-19 22:29:12,499",
+      "last_update": "2026-04-19 22:39:15,601",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,33 +24,19 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 40.6,
-        "time": "2026-04-19 22:29:12,499"
+        "confidence": 39.8,
+        "time": "2026-04-19 22:39:15,601"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 174,
-        "wins": 167,
+        "total_trades": 176,
+        "wins": 169,
         "losses": 7,
         "win_rate": 96.0,
-        "total_pnl": 302198.79,
-        "avg_pnl": 1736.77
+        "total_pnl": 306420.59,
+        "avg_pnl": 1741.03
       },
       "recent_trades": [
-        {
-          "time": "2026-04-19 21:40:13",
-          "direction": "SHORT",
-          "pnl": 2317.28,
-          "pnl_pct": 3.74,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-19 21:45:11",
-          "direction": "SHORT",
-          "pnl": 2360.66,
-          "pnl_pct": 3.81,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-19 21:50:12",
           "direction": "SHORT",
@@ -106,6 +92,20 @@
           "pnl": 2215.06,
           "pnl_pct": 3.57,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 22:30:10",
+          "direction": "SHORT",
+          "pnl": 2119.68,
+          "pnl_pct": 3.42,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 22:35:12",
+          "direction": "SHORT",
+          "pnl": 2102.11,
+          "pnl_pct": 3.39,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-19 22:29:17,096",
+      "last_update": "2026-04-19 22:39:19,112",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 60.1,
-        "time": "2026-04-19 22:29:17,096"
+        "signal": "SHORT",
+        "confidence": 69.8,
+        "time": "2026-04-19 22:39:19,111"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-19 22:29:51,671 - INFO - [HEARTBEAT] Price: $74,968.57",
+      "last_update": "2026-04-19 22:39:51,716 - INFO - [HEARTBEAT] Price: $74,976.33",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,8 +223,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 67.2,
-        "time": "2026-04-19 22:29:27,646"
+        "confidence": 70.8,
+        "time": "2026-04-19 22:39:26,057"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-19 22:30:03",
+      "last_update": "2026-04-19 22:40:03",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,32 +341,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-19T22:30:03.498221",
+    "updated_at": "2026-04-19T22:40:03.500237",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.0516,
-        "confidence": 0.6908,
-        "bullish_pct": 0.4528,
-        "bearish_pct": 0.0428,
-        "neutral_pct": 0.5044,
+        "direction": "LONG",
+        "strength": 0.4408,
+        "confidence": 0.6817,
+        "bullish_pct": 0.4881,
+        "bearish_pct": 0.0473,
+        "neutral_pct": 0.4646,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.2566,
+        "consensus_score": 0.2322,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $74.8K is not a ceiling\u2014it\u2019s the foundation of the next leg up. The Alcoa-NYDIG deal is not noise, it\u2019s nation-state-level industrial realignment toward Bitcoin mining, confirming the energy-to-digita",
-            "[CryptoKaleo] Iran FUD is just another stress test\u2014and BTC just aced it. The real story isn\u2019t the dip to $74.7K, it\u2019s Alcoa selling a smelter to NYDIG: industrial infrastructure is being weaponized for Bitcoin. Thi",
-            "[TrendRider] Price holding firm above $74,742 with volume support and reaccumulation after geopolitical noise shows trend strength. The Alcoa-NYDIG deal is a high-conviction signal of industrial capital rotation i",
-            "[DiamondHands420] Iran FUD is just another pump setup\u2014Hormuz noise got fully priced in and BTC barely blinked! $74.7K held like a rock, and the Alcoa-to-NYDIG deal is MASSIVE: real steel, real infrastructure, real adop",
-            "[DeepPockets] Holding above $74.7K confirms institutional bid integrity amid geopolitical noise\u2014OTC flows and miner accumulation post-ETF inflows remain intact. The Alcoa-NYDIG deal is a structural signal: industri"
+            "[StackingSats] $74.6K isn't just holding\u2014it's *magnetizing*. The Alcoa-to-NYDIG transition is productive industrial capital embracing Bitcoin's energy value, not speculation. Congresswoman Biggs buying via ETF? That",
+            "[DiamondHands420] $74.6K is a battle-tested fortress\u2014every dip gets bought harder! Alcoa selling to NYDIG and Biggs stacking BTC via ETF is real adoption, not just hype; this is institutional FOMO in motion. Hormuz noi",
+            "[CryptoKaleo] $74.6K isn't just support \u2014 it's a *launchpad*. The Alcoa-NYDIG deal isn't noise, it's physical infrastructure being weaponized for Bitcoin dominance. Biggs going public with ETF exposure? That\u2019s poli",
+            "[FadeTheCrowd] Price grinding near $74.6K with Fear & Greed at 27 again\u2014this is textbook capitulation zone. Geopolitical noise (Hormuz) and Kelp FUD are overblown, same as prior shocks; Alcoa-to-NYDIG and Biggs\u2019 ETF",
+            "[TrendRider] Price holding firm at $74,661 support again confirms strong demand despite geopolitical noise and Kelp-related DeFi fears. Alcoa\u2019s infrastructure pivot to NYDIG and Biggs\u2019 ETF buy are not noise\u2014they\u2019r"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $76K and people are still buying the dip like it\u2019s 2021. The Kelp exploit shows DeFi fragility, Iran tensions add risk-off vibes, and all this \"industrial repurposing\" noise is just"
+            "[BearishBob] Another fakeout at $76K, and now we\u2019re stuck grinding sideways under war fears and DeFi rot. Alcoa selling to NYDIG? Just asset recycling\u2014same capital moving around, not new demand. Biggs buying ETF i"
           ]
         },
-        "timestamp": "2026-04-19T18:39:12.342275+00:00",
+        "timestamp": "2026-04-19T19:38:45.421216+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -383,17 +383,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 549.4,
+          "run_duration_sec": 522.4,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74847,
-            "change_24h": -1.1,
+            "price": 74978,
+            "change_24h": -0.96,
             "fear_greed": 27
           }
         },
-        "age_minutes": 50.9,
+        "age_minutes": 1.3,
         "is_fresh": true
       },
       "groq": {
@@ -444,7 +444,7 @@
             "fear_greed": 27
           }
         },
-        "age_minutes": 806.3,
+        "age_minutes": 816.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -461,7 +461,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 3555.0,
+        "age_minutes": 3565.0,
         "is_fresh": false
       }
     },
