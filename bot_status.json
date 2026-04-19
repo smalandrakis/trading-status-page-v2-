@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-19T14:30:01.575209",
+  "generated_at": "2026-04-19T14:40:01.362601",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-19T14:30:01.575231"
+    "last_health_check": "2026-04-19T14:40:01.362620"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-19 14:29:09,910",
+      "last_update": "2026-04-19 14:39:10,216",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,32 +25,18 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 37.4,
-        "time": "2026-04-19 14:29:09,910"
+        "time": "2026-04-19 14:39:10,216"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 122,
-        "wins": 115,
+        "total_trades": 124,
+        "wins": 117,
         "losses": 7,
-        "win_rate": 94.3,
-        "total_pnl": 201612.76,
-        "avg_pnl": 1652.56
+        "win_rate": 94.4,
+        "total_pnl": 205121.37,
+        "avg_pnl": 1654.2
       },
       "recent_trades": [
-        {
-          "time": "2026-04-19 13:40:08",
-          "direction": "SHORT",
-          "pnl": 2031.61,
-          "pnl_pct": 3.28,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-19 13:45:07",
-          "direction": "SHORT",
-          "pnl": 2012.93,
-          "pnl_pct": 3.25,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-19 13:50:08",
           "direction": "SHORT",
@@ -106,6 +92,20 @@
           "pnl": 1757.08,
           "pnl_pct": 2.83,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 14:30:08",
+          "direction": "SHORT",
+          "pnl": 1773.18,
+          "pnl_pct": 2.86,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 14:35:07",
+          "direction": "SHORT",
+          "pnl": 1735.42,
+          "pnl_pct": 2.8,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-19 14:29:14,098",
+      "last_update": "2026-04-19 14:39:13,828",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 56.0,
-        "time": "2026-04-19 14:29:14,098"
+        "signal": "LONG",
+        "confidence": 71.0,
+        "time": "2026-04-19 14:39:13,828"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-19 14:29:51,138 - INFO - [HEARTBEAT] Price: $75,377.99",
+      "last_update": "2026-04-19 14:39:50,406 - INFO - [HEARTBEAT] Price: $75,465.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,8 +223,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 64.4,
-        "time": "2026-04-19 14:29:24,872"
+        "confidence": 70.3,
+        "time": "2026-04-19 14:39:24,137"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-19 14:30:02",
+      "last_update": "2026-04-19 14:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,31 +341,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-19T14:30:02.529126",
+    "updated_at": "2026-04-19T14:40:02.324869",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4085,
-        "confidence": 0.6222,
-        "bullish_pct": 0.2702,
-        "bearish_pct": 0.0511,
-        "neutral_pct": 0.6787,
+        "strength": 0.4374,
+        "confidence": 0.605,
+        "bullish_pct": 0.2579,
+        "bearish_pct": 0.0469,
+        "neutral_pct": 0.6952,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5181,
+        "consensus_score": 0.5429,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $75K holding AGAIN\u2014this is not luck, this is accumulation! Congresswoman Biggs pumping $250K into IBIT while F&G sits at 27 is pure FIRE, and Schwab/Citadel eyeing prediction markets? That\u2019s instituti",
-            "[CryptoKaleo] $75K isn't just holding \u2014 it's *loading*. The fear at 27, Warren\u2019s political circus, and RaveDAO noise are all distractions while Biggs\u2019 $250K IBIT buy signals quiet institutional accumulation. Schwab",
-            "[FadeTheCrowd] Price hugging $75K on low volume with Fear & Greed at 27 is textbook capitulation zone\u2014exactly where I want to be accumulating. Regulatory noise and memecoin distractions are overhyped, masking quiet ",
-            "[StackingSats] $75K is not a trap\u2014it's a gift. The dip to $74.9K flushed out fear-driven holders, and with negative exchange netflow (-8,200 BTC) and Congresswoman Biggs' $250K IBIT purchase, the smart money is quie"
+            "[StackingSats] Every dip to $74,988 has been a buying opportunity\u2014this level is now structural support. Industrial adoption (Alcoa \u2192 NYDIG) and political conviction (Biggs\u2019 $250K ETF buy) confirm quiet accumulation.",
+            "[FadeTheCrowd] Price holding firm at $74,988 again underlines that this level is a magnet for accumulation, not capitulation. Fear at 27 persists despite positive headlines, meaning emotional exhaustion is setting i",
+            "[CryptoKaleo] This dip to $74,988 is pure theater\u2014Biggs\u2019 $250K ETF buy isn\u2019t political noise, it\u2019s insider-grade signal fire. Alcoa\u2019s smelter flip to NYDIG confirms industrial capital is pivoting hard into Bitcoin,",
+            "[DiamondHands420] Biggs buying BTC via ETF is HUGE\u2014politicians don\u2019t bet $250K unless they see a rally coming! Alcoa deal shows real-world adoption is accelerating, and this dip to $75.3K is a gift. FOMO building fast\u2014"
           ],
           "bearish": [
-            "[BearishBob] $75K holding is classic bear trap behavior\u2014every squeeze like this lures in the weak hands while insiders quietly distribute. Congresswoman Biggs' $250K IBIT buy is political theater, not real accumul"
+            "[BearishBob] Another fakeout rally propped up by retail FOMO and institutional theater. All this \"news\" is noise\u2014Alcoa selling a smelter means nothing when BTC can't even reclaim $76.5K, and that Fear & Greed prin"
           ]
         },
-        "timestamp": "2026-04-19T10:38:09.661277+00:00",
+        "timestamp": "2026-04-19T11:38:56.018962+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -382,17 +382,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 487.5,
+          "run_duration_sec": 534.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75075,
-            "change_24h": -1.65,
+            "price": 75390,
+            "change_24h": -0.88,
             "fear_greed": 27
           }
         },
-        "age_minutes": 51.9,
+        "age_minutes": 1.1,
         "is_fresh": true
       },
       "groq": {
@@ -443,7 +443,7 @@
             "fear_greed": 27
           }
         },
-        "age_minutes": 326.3,
+        "age_minutes": 336.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -460,7 +460,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 3075.0,
+        "age_minutes": 3085.0,
         "is_fresh": false
       }
     },
