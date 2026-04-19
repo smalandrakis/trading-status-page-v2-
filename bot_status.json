@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-19T06:30:01.779847",
+  "generated_at": "2026-04-19T06:40:01.303809",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-19T06:30:01.779871"
+    "last_health_check": "2026-04-19T06:40:01.303829"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-19 06:29:09,690",
+      "last_update": "2026-04-19 06:39:10,621",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,32 +25,18 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 34.9,
-        "time": "2026-04-19 06:29:09,690"
+        "time": "2026-04-19 06:39:10,621"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 39,
-        "wins": 32,
+        "total_trades": 41,
+        "wins": 34,
         "losses": 7,
-        "win_rate": 82.1,
-        "total_pnl": 48033.14,
-        "avg_pnl": 1231.62
+        "win_rate": 82.9,
+        "total_pnl": 51293.67,
+        "avg_pnl": 1251.07
       },
       "recent_trades": [
-        {
-          "time": "2026-04-19 05:40:08",
-          "direction": "SHORT",
-          "pnl": 1622.19,
-          "pnl_pct": 2.62,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-19 05:49:23",
-          "direction": "SHORT",
-          "pnl": 1598.24,
-          "pnl_pct": 2.58,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-19 05:50:08",
           "direction": "SHORT",
@@ -106,6 +92,20 @@
           "pnl": 1681.36,
           "pnl_pct": 2.71,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 06:30:07",
+          "direction": "SHORT",
+          "pnl": 1643.39,
+          "pnl_pct": 2.65,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 06:35:08",
+          "direction": "SHORT",
+          "pnl": 1617.13,
+          "pnl_pct": 2.61,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-19 06:29:13,602",
+      "last_update": "2026-04-19 06:39:13,933",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 67.0,
-        "time": "2026-04-19 06:29:13,602"
+        "signal": "NEUTRAL",
+        "confidence": 56.8,
+        "time": "2026-04-19 06:39:13,933"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-19 06:29:50,428 - INFO - [HEARTBEAT] Price: $75,512.87",
+      "last_update": "2026-04-19 06:39:50,723 - INFO - [HEARTBEAT] Price: $75,565.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,9 +222,9 @@
         "model": "Separate LONG/SHORT XGBoost"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 50.7,
-        "time": "2026-04-19 06:29:24,405"
+        "signal": "LONG",
+        "confidence": 68.1,
+        "time": "2026-04-19 06:39:25,398"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-19 06:30:02",
+      "last_update": "2026-04-19 06:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,32 +341,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-19T06:30:02.947707",
+    "updated_at": "2026-04-19T06:40:02.272285",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1629,
-        "confidence": 0.64,
-        "bullish_pct": 0.3952,
-        "bearish_pct": 0.0468,
-        "neutral_pct": 0.5581,
+        "strength": 0.1781,
+        "confidence": 0.6336,
+        "bullish_pct": 0.333,
+        "bearish_pct": 0.1558,
+        "neutral_pct": 0.5111,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.3371,
+        "stance_shifts": 1,
+        "consensus_score": 0.2667,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Dip is a gift. $75.5K is noise in the 4-year cycle\u2014hash rate remains strong and stock-to-flow still points north post-halving. Kelp exploit? Irrelevant. Solana futures? Not Bitcoin. Quantum fears? FUD",
-            "[DiamondHands420] Kelp exploit FUD is a total overreaction\u2014BTC holding $75.5K like a brick wall proves institutional hands are stepping in! Fear & Greed at 27 with consolidation near support is the perfect setup for a ",
-            "[DeepPockets] Kelp exploit fallout remains contained\u2014OTC desks report no forced BTC selling, and institutional bid persists near $75.5K. I\u2019m adding modest size here, anchoring to my $74K cost basis, as this dip ref",
-            "[FadeTheCrowd] Price hugging $75.5K after the $293M Kelp exploit is not weakness\u2014it\u2019s absorption. Fear at 27 with no breakdown means sellers are capitulating into a wall of institutional bids, likely ETF-driven. Thi",
-            "[CryptoKaleo] The Kelp exploit was a fire drill the market just passed with flying colors\u2014$75.5K is now a proven institutional bid zone. ETF flows remain strong, mining difficulty is spiking, and political tailwind"
+            "[TrendRider] Price continues to respect the $75.4K\u2013$75K support zone despite the Kelp exploit shock and negative headlines\u2014this is classic trend-absorption behavior. Repeated rejections at $77.2K suggest short-ter",
+            "[CryptoKaleo] The Kelp exploit is FUD fuel for normies\u2014Bitcoin\u2019s price holding firm at $75.4K on massive volume proves institutional demand is real. With Biggs front-running the ETF wave and mining difficulty reset",
+            "[DiamondHands420] Kelp exploit FUD is already priced in\u2014altcoins getting rekt just pushes more capital into Bitcoin! Price holding $75.4K on massive volume with Biggs pumping $250K into BTC ETF? That\u2019s a bull signal. W",
+            "[FadeTheCrowd] Price holding firm at $75.4K despite the $293M Kelp exploit and cascading protocol stress is textbook capitulation resilience. Funding rates are neutral, Fear & Greed remains in fear (27), and the lac",
+            "[StackingSats] Dip at $75.5K on fear-driven sentiment is a gift\u2014Kelp exploit is an altcoin problem, not a Bitcoin problem. Hash rate remains strong, stock-to-flow model still tracking post-halving scarcity, and $75K"
           ],
           "bearish": [
-            "[BearishBob] $75.5K holding isn't resilience\u2014it's a bear trap. The Kelp exploit\u2019s $293M contagion hasn\u2019t fully flushed out leveraged longs, and with BTC stuck under $77.4K resistance again, this \"institutional bid"
+            "[AlphaQuant] Price rejection at $77.2k on declining volume confirms lack of upside follow-through; $75.4k hold is structurally neutral but not bullish without accumulation signals. Kelp exploit introduces systemic",
+            "[BearishBob] Another fakeout rejection at $77.2K\u2014price can't clear resistance, same as the last three attempts. The Kelp exploit isn\u2019t \u201ccontained,\u201d it\u2019s a stress test exposing systemic fragility in restaking that "
           ]
         },
-        "timestamp": "2026-04-19T02:40:23.796941+00:00",
+        "timestamp": "2026-04-19T03:37:59.793642+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -383,17 +384,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 622.0,
+          "run_duration_sec": 477.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75516,
-            "change_24h": -2.37,
+            "price": 75524,
+            "change_24h": -2.18,
             "fear_greed": 27
           }
         },
-        "age_minutes": 49.7,
+        "age_minutes": 2.0,
         "is_fresh": true
       },
       "groq": {
@@ -444,7 +445,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 1286.3,
+        "age_minutes": 1296.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -461,7 +462,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 2595.0,
+        "age_minutes": 2605.0,
         "is_fresh": false
       }
     },
