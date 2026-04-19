@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-19T09:00:01.696749",
+  "generated_at": "2026-04-19T09:10:01.392032",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-19T09:00:01.696762"
+    "last_health_check": "2026-04-19T09:10:01.392053"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-19 08:59:10,564",
+      "last_update": "2026-04-19 09:09:10,432",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,33 +24,19 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 38.3,
-        "time": "2026-04-19 08:59:10,564"
+        "confidence": 38.5,
+        "time": "2026-04-19 09:09:10,432"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 56,
-        "wins": 49,
+        "total_trades": 58,
+        "wins": 51,
         "losses": 7,
-        "win_rate": 87.5,
-        "total_pnl": 75614.65,
-        "avg_pnl": 1350.26
+        "win_rate": 87.9,
+        "total_pnl": 78939.91,
+        "avg_pnl": 1361.03
       },
       "recent_trades": [
-        {
-          "time": "2026-04-19 08:04:08",
-          "direction": "SHORT",
-          "pnl": 1627.06,
-          "pnl_pct": 2.62,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-19 08:05:08",
-          "direction": "SHORT",
-          "pnl": 1627.05,
-          "pnl_pct": 2.62,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-19 08:10:08",
           "direction": "SHORT",
@@ -106,6 +92,20 @@
           "pnl": 1621.34,
           "pnl_pct": 2.61,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 09:00:07",
+          "direction": "SHORT",
+          "pnl": 1634.63,
+          "pnl_pct": 2.64,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-19 09:05:08",
+          "direction": "SHORT",
+          "pnl": 1690.63,
+          "pnl_pct": 2.73,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-19 08:59:13,841",
+      "last_update": "2026-04-19 09:09:14,487",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 64.2,
-        "time": "2026-04-19 08:59:13,841"
+        "signal": "SHORT",
+        "confidence": 71.5,
+        "time": "2026-04-19 09:09:14,487"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-19 08:59:50,329 - INFO - [HEARTBEAT] Price: $75,545.59",
+      "last_update": "2026-04-19 09:09:50,764 - INFO - [HEARTBEAT] Price: $75,413.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,8 +223,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 58.2,
-        "time": "2026-04-19 08:59:24,512"
+        "confidence": 66.2,
+        "time": "2026-04-19 09:09:24,916"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-19 09:00:02",
+      "last_update": "2026-04-19 09:10:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,7 +341,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-19T09:00:02.887270",
+    "updated_at": "2026-04-19T09:10:02.536581",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -392,31 +392,31 @@
             "fear_greed": 27
           }
         },
-        "age_minutes": 20.8,
+        "age_minutes": 30.8,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.6962,
-        "confidence": 0.5444,
-        "bullish_pct": 0.1265,
-        "bearish_pct": 0.0508,
-        "neutral_pct": 0.8227,
+        "strength": 0.6016,
+        "confidence": 0.5425,
+        "bullish_pct": 0.1741,
+        "bearish_pct": 0.0503,
+        "neutral_pct": 0.7757,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.7341,
+        "stance_shifts": 0,
+        "consensus_score": 0.6635,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] The Fear & Greed Index is still low at 26, but I'm seeing some amazing bullish signals with the recent surge in USDC transfers and X's Cashtags feature driving $1B in trading volume. This, combined wi",
-            "[CryptoKaleo] The fear and greed index is still at 26, a clear sign that the market is undervaluing Bitcoin, and with the recent surge in USDC transfers and X's Cashtags feature driving $1B in trading volume, I'm c",
-            "[StackingSats] The Fear & Greed Index at 26 is a clear buying opportunity, and the recent surge in USDC transfers and X's Cashtags feature driving $1B in trading volume only reinforces my conviction. I'm not concern"
+            "[StackingSats] The fear in the market is palpable, but I remain unfazed. The 7d and 30d changes are still positive, and the hash rate continues to climb, indicating strong network fundamentals. The interest from Cha",
+            "[DiamondHands420] I'm still feeling the bullish vibes, despite the Fear & Greed Index at 27, the recent 2% drop in BTC price is just a minor correction. The 7d and 30d changes are still positive, and with Charles Schwa",
+            "[FadeTheCrowd] The Fear & Greed Index at 27 indicates fear in the market, which I believe is a buying opportunity. The interest from Charles Schwab and Citadel Securities, along with the positive 7d and 30d changes,"
           ],
           "bearish": [
-            "[BearishBob] I'm not convinced by the recent price action, and the Fear & Greed Index at 26 suggests to me that the market is due for a pullback. The surge in USDC transfers and X's Cashtags feature driving $1B in"
+            "[BearishBob] The recent 2% drop in BTC price and the Fear & Greed Index at 27 only reinforce my bearish stance, as I believe the market is still vulnerable to a further downturn. The fact that we're still 40% off "
           ]
         },
-        "timestamp": "2026-04-18T06:03:43.176056+00:00",
+        "timestamp": "2026-04-19T06:03:45.042752+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -433,17 +433,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 221.0,
+          "run_duration_sec": 222.9,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77153,
-            "change_24h": 3.33,
-            "fear_greed": 26
+            "price": 75573,
+            "change_24h": -2.05,
+            "fear_greed": 27
           }
         },
-        "age_minutes": 1436.3,
+        "age_minutes": 6.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -460,7 +460,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 2745.0,
+        "age_minutes": 2755.0,
         "is_fresh": false
       }
     },
