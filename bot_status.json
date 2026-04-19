@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-20T02:30:01.683445",
+  "generated_at": "2026-04-20T02:40:02.359813",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-20T02:30:01.683459"
+    "last_health_check": "2026-04-20T02:40:02.359828"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-20 02:29:11,728",
+      "last_update": "2026-04-20 02:39:14,462",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 36.8,
-        "time": "2026-04-20 02:29:11,728"
+        "time": "2026-04-20 02:39:14,462"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-20 02:29:17,992",
+      "last_update": "2026-04-20 02:39:23,149",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,16 +125,16 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 76.7,
-        "time": "2026-04-20 02:29:17,991"
+        "confidence": 78.3,
+        "time": "2026-04-20 02:39:23,149"
       },
       "open_position": {
         "direction": "SHORT",
         "size": 3,
-        "entry_price": 73929.99,
-        "tp_price": 73190.6901,
-        "sl_price": 74299.63995,
-        "entry_time": "2026-04-20 02:02:19",
+        "entry_price": 73866.73,
+        "tp_price": 73128.0627,
+        "sl_price": 74236.06364999998,
+        "entry_time": "2026-04-20 02:39:22",
         "adopted": false
       },
       "performance": {
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-20 02:29:52,048 - INFO - [HEARTBEAT] Price: $73,882.07",
+      "last_update": "2026-04-20 02:39:52,868 - INFO - [HEARTBEAT] Price: $73,871.03",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,8 +223,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 57.2,
-        "time": "2026-04-20 02:29:27,473"
+        "confidence": 57.6,
+        "time": "2026-04-20 02:39:29,754"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-20 02:30:03",
+      "last_update": "2026-04-20 02:40:04",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,32 +341,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-20T02:30:04.161102",
+    "updated_at": "2026-04-20T02:40:04.955184",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.1945,
-        "confidence": 0.6411,
-        "bullish_pct": 0.3772,
-        "bearish_pct": 0.0512,
-        "neutral_pct": 0.5717,
+        "direction": "LONG",
+        "strength": 0.4932,
+        "confidence": 0.6556,
+        "bullish_pct": 0.5373,
+        "bearish_pct": 0.0441,
+        "neutral_pct": 0.4186,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 3,
-        "consensus_score": 0.3575,
+        "stance_shifts": 1,
+        "consensus_score": 0.306,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price is holding the $73.5K\u2013$74K support zone on reduced volume, typical of a healthy pullback within an uptrend. The rejection at $76.165 lacks follow-through, and with OTC interest and political con",
-            "[DeepPockets] Price holding above $73,800 confirms quiet accumulation continues\u2014OTC desks report steady bids in the $73.5K\u2013$74K zone, and Biggs\u2019 ETF disclosure adds political cover, not just retail FOMO. Geopolitic",
-            "[CryptoKaleo] This dip is a manufactured fear play \u2014 Biggs\u2019 $250K ETF buy is a political shot across the bow, and institutions are quietly stacking at $73.5K\u2013$74K. Hormuz noise is overblown and already priced in, w",
-            "[FadeTheCrowd] Price holding above $73,8K with Fear & Greed stuck at 27 amid geopolitical noise and fading macro headlines is classic late-stage capitulation. OTC bids persisting in the $73.5K\u2013$74K zone, now reinfor",
-            "[DiamondHands420] HODL HARD! $73.5K\u2013$74K is a fortress\u2014Biggs buying BTC via ETF is MASSIVE political FOMO fuel, OTC bids stacking, and Fear at 27 is a golden BUY signal. Hormuz noise is just another fakeout to shake we"
+            "[StackingSats] Another dip bought. $73.8K holds as critical support \u2014 hash rate at ATHs, institutions like Biggs are accumulating via ETF, and this Fear & Greed at 27 is classic capitulation ahead of the next leg up",
+            "[DiamondHands420] Dips are a gift! $73.8K held like a rock again\u2014this is institutional accumulation zone, not weakness. Biggs buying $250K via ETF is a massive FUD fade, and Fear & Greed at 27 means normies are scared ",
+            "[TrendRider] Price holding at $73.8K is a strong signal \u2014 this level is now both a prior breakout and a confluence of volume-supported accumulation. The dip on Hormuz fears was sharp but shallow, and with volume d",
+            "[DeepPockets] Price holding at $73.8K again confirms this zone as a high-conviction anchor level\u2014our cost basis from prior accumulation. OTC flow shows institutions absorbing retail panic post-Hormuz dip, and the l",
+            "[DeltaNeutral] Price holding at $73.8K aligns with dense order book support and repeated swing low respecion, while neutral funding rates and absence of extreme long skew suggest limited dealer hedging pressure. Geo"
           ],
           "bearish": [
-            "[BearishBob] Another dip into $73.9K? Please. We just got faked out to $76K on war-driven volume, now it's leaking lower on silence. Biggs' ETF buy is political theater\u2014not real holder conviction\u2014and OTC \"bids\" ar"
+            "[BearishBob] Another fakeout dip to sell the news. $73.8K held only because whales want to dump on retail panic \u2014 Hormuz fear is overblown but perfect for offloading bags accumulated at higher levels. Every \"accum"
           ]
         },
-        "timestamp": "2026-04-19T22:39:25.598799+00:00",
+        "timestamp": "2026-04-19T23:37:41.054314+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -383,17 +383,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 561.2,
+          "run_duration_sec": 457.0,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 73947,
-            "change_24h": -2.35,
+            "price": 73924,
+            "change_24h": -2.53,
             "fear_greed": 27
           }
         },
-        "age_minutes": 50.6,
+        "age_minutes": 2.4,
         "is_fresh": true
       },
       "groq": {
@@ -444,7 +444,7 @@
             "fear_greed": 27
           }
         },
-        "age_minutes": 1046.3,
+        "age_minutes": 1056.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -461,7 +461,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 3795.0,
+        "age_minutes": 3805.0,
         "is_fresh": false
       }
     },
