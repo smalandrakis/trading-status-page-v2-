@@ -100,17 +100,17 @@
 
         function createBotCard(bot) {
             const perf = bot.performance || {};
-            const trades = (perf.total_trades !== undefined) ? perf.total_trades : 0;
-            const wr = (perf.win_rate !== undefined) ? perf.win_rate : 0;
-            const pnl = (perf.total_pnl !== undefined) ? perf.total_pnl : 0;
+            const trades = Number(perf.total_trades) || 0;
+            const wr = Number(perf.win_rate) || 0;
+            const pnl = Number(perf.total_pnl) || 0;
 
             const isRunning = bot.status === 'running';
             const statusColor = isRunning ? 'green' : 'red';
             const statusText = isRunning ? 'Running' : 'Stopped';
 
             const pnlColor = pnl >= 0 ? 'text-green-400' : 'text-red-400';
-            const signal = bot.current_signal?.signal || 'UNKNOWN';
-            const conf = bot.current_signal?.confidence || 0;
+            const signal = (bot.current_signal && bot.current_signal.signal) ? bot.current_signal.signal : 'UNKNOWN';
+            const conf = Number(bot.current_signal?.confidence) || 0;
 
             // Determine bot icon
             let icon = '📊';
@@ -162,14 +162,14 @@
             const p050 = bot050.performance || {};
             const p060 = bot060.performance || {};
 
-            const trades050 = p050.total_trades || 0;
-            const trades060 = p060.total_trades || 0;
-            const wr050 = p050.win_rate || 0;
-            const wr060 = p060.win_rate || 0;
-            const pnl050 = p050.total_pnl || 0;
-            const pnl060 = p060.total_pnl || 0;
-            const avg050 = p050.avg_pnl || 0;
-            const avg060 = p060.avg_pnl || 0;
+            const trades050 = Number(p050.total_trades) || 0;
+            const trades060 = Number(p060.total_trades) || 0;
+            const wr050 = Number(p050.win_rate) || 0;
+            const wr060 = Number(p060.win_rate) || 0;
+            const pnl050 = Number(p050.total_pnl) || 0;
+            const pnl060 = Number(p060.total_pnl) || 0;
+            const avg050 = Number(p050.avg_pnl) || 0;
+            const avg060 = Number(p060.avg_pnl) || 0;
 
             document.getElementById('compTrades').textContent =
                 `${trades050.toLocaleString()} vs ${trades060.toLocaleString()}`;
