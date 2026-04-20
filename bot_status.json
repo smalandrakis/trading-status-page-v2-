@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-20T10:30:01.881188",
+  "generated_at": "2026-04-20T10:40:01.786302",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-20T10:30:01.881209"
+    "last_health_check": "2026-04-20T10:40:01.786319"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-20 10:29:08,593",
+      "last_update": "2026-04-20 10:39:08,361",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 35.7,
-        "time": "2026-04-20 10:29:08,593"
+        "confidence": 35.2,
+        "time": "2026-04-20 10:39:08,361"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-20 10:29:14,289",
+      "last_update": "2026-04-20 10:39:13,617",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 65.9,
-        "time": "2026-04-20 10:29:14,289"
+        "signal": "NEUTRAL",
+        "confidence": 51.9,
+        "time": "2026-04-20 10:39:13,617"
       },
       "open_position": {
         "direction": "LONG",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Micro-Movement V2 (0.5/0.15) [LONG/SHORT Models]",
       "status": "running",
-      "last_update": "2026-04-20 10:29:50,282 - INFO - [HEARTBEAT] Price: $75,194.02",
+      "last_update": "2026-04-20 10:39:49,658 - INFO - [HEARTBEAT] Price: $74,932.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,8 +223,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 50.6,
-        "time": "2026-04-20 10:29:22,631"
+        "confidence": 54.8,
+        "time": "2026-04-20 10:39:23,883"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     {
       "name": "BTC Ensemble Bot (0.5/0.25)",
       "status": "running",
-      "last_update": "2026-04-20 10:30:02",
+      "last_update": "2026-04-20 10:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.25,
@@ -341,31 +341,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-20T10:30:03.082310",
+    "updated_at": "2026-04-20T10:40:02.963527",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4575,
-        "confidence": 0.6472,
-        "bullish_pct": 0.246,
-        "bearish_pct": 0.0504,
-        "neutral_pct": 0.7036,
+        "strength": 0.4312,
+        "confidence": 0.6186,
+        "bullish_pct": 0.2597,
+        "bearish_pct": 0.0494,
+        "neutral_pct": 0.6909,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.5554,
+        "stance_shifts": 0,
+        "consensus_score": 0.5363,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price holding above $73.8K with declining volume confirms support is sticky\u2014bullish rejection pattern maturing. Aave\u2019s issues are contained, no cascade, and geopolitical fears priced out quickly; tren",
-            "[CryptoKaleo] BTC holding $74.3K after the Iran scare and Aave shock is power move\u2014this isn\u2019t fear, it\u2019s accumulation. Polymarket\u2019s $15B buzz and Biggs\u2019 ETF buy are catalysts the market is understating; we\u2019re coili",
-            "[StackingSats] Another dip defended at $73.8K\u2014textbook accumulation zone. Aave\u2019s collapse is an altcoin contagion, not a Bitcoin risk; BTC continues to decouple from DeFi drama. Geopolitical noise and domain hacks a",
-            "[DiamondHands420] Holding $73.8K again? That\u2019s not luck\u2014that\u2019s *law*. Iran FUD, Aave panic, domain hacks\u2014everything thrown at BTC and it\u2019s still standing. Polymarket\u2019s $15B buzz and Congresswoman Biggs stacking BTC via"
+            "[DiamondHands420] Blood on the streets at $75K with F&G at 29? That\u2019s a flashing buy signal! Congresswoman Biggs\u2019 $250K BTC ETF play is elite political FOMO fuel, and Coinbase AI agents going live on Slack? That\u2019s the ",
+            "[CryptoKaleo] We\u2019re in the eye of the storm \u2014 $75K hold with F&G at 29? Classic fear bottom. Biggs\u2019 ETF buy isn\u2019t just optics, it\u2019s a Trojan horse for mainstream political adoption. AI agents transacting onchain vi",
+            "[StackingSats] $75K hold during halving scarcity with Fear & Greed at 29 is a textbook accumulation zone \u2014 weak hands fear, strong hands stack. Congresswoman Biggs\u2019 ETF purchase via iShares is institutional adoption",
+            "[FadeTheCrowd] Fear at 29 with price grinding near $75K on low volume is textbook mid-cycle accumulation \u2014 exactly when others are most hesitant. The AI agent narrative and Biggs' ETF buy aren\u2019t distractions; they\u2019r"
           ],
           "bearish": [
-            "[BearishBob] Another failed breakdown below $73.8K? Classic bear trap setup \u2014 but don\u2019t blink: that Aave bleed isn\u2019t contained, it\u2019s just getting started. $8B gone in 24 hours, fading volume on \u201chold\u201d, and Polymar"
+            "[BearishBob] Another fakeout at $76K rejected, volume still flatlining \u2014 this \"accumulation\" is just a meat grinder for longs. AI hype and political theater (Biggs) are distractions while the real sellers quietly "
           ]
         },
-        "timestamp": "2026-04-20T06:40:02.956059+00:00",
+        "timestamp": "2026-04-20T07:39:08.661586+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -382,17 +382,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 601.4,
+          "run_duration_sec": 547.4,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74376,
-            "change_24h": -1.42,
+            "price": 75205,
+            "change_24h": 0.21,
             "fear_greed": 29
           }
         },
-        "age_minutes": 50.0,
+        "age_minutes": 0.9,
         "is_fresh": true
       },
       "groq": {
@@ -442,7 +442,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 86.3,
+        "age_minutes": 96.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -459,7 +459,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 4275.0,
+        "age_minutes": 4285.0,
         "is_fresh": false
       }
     },
