@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-20T23:40:00.934462",
+  "generated_at": "2026-04-20T23:50:00.862782",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-20T23:40:00.934481"
+    "last_health_check": "2026-04-20T23:50:00.862792"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-20 23:39:08,643",
+      "last_update": "2026-04-20 23:49:08,468",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 56.3,
-        "time": "2026-04-20 23:39:08,643"
+        "time": "2026-04-20 23:49:08,468"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-20 23:39:13,812",
+      "last_update": "2026-04-20 23:49:13,907",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 62.4,
-        "time": "2026-04-20 23:39:13,812"
+        "confidence": 62.5,
+        "time": "2026-04-20 23:49:13,907"
       },
       "open_position": {
         "direction": "LONG",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 23:40:01",
+      "last_update": "2026-04-20 23:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -224,8 +224,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 52.7,
-        "time": "2026-04-20 23:39:46,277"
+        "confidence": 51.7,
+        "time": "2026-04-20 23:49:52,255"
       },
       "open_position": null,
       "performance": {
@@ -278,7 +278,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 23:40:01",
+      "last_update": "2026-04-20 23:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -294,8 +294,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 58.3,
-        "time": "2026-04-20 23:39:55,843"
+        "confidence": 52.7,
+        "time": "2026-04-20 23:50:00,729"
       },
       "open_position": null,
       "performance": {
@@ -311,31 +311,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-20T23:40:01.367142",
+    "updated_at": "2026-04-20T23:50:01.279568",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5216,
-        "confidence": 0.6697,
-        "bullish_pct": 0.215,
-        "bearish_pct": 0.0483,
-        "neutral_pct": 0.7367,
+        "strength": 0.4578,
+        "confidence": 0.6397,
+        "bullish_pct": 0.2475,
+        "bearish_pct": 0.0473,
+        "neutral_pct": 0.7053,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.605,
+        "consensus_score": 0.5579,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] LOL at BearishBob still crying resistance while Tether, Capital B, and NYDIG stack BTC and build the damn power grid for mining! $76.5K? We\u2019re blowing through that like it\u2019s nothing\u2014Alcoa smelter deal",
-            "[CryptoKaleo] This dip is a trap \u2014 institutions aren\u2019t just buying, they\u2019re building an empire. Tether locking into Antalpha, NYDIG weaponizing Alcoa\u2019s smelter, and Capital B quietly hoarding? This is silent war pr",
-            "[StackingSats] Every dip to $73.8K is a national treasure hunt\u2014Tether\u2019s stake in Antalpha, NYDIG\u2019s Alcoa smelter acquisition, and Capital B\u2019s relentless accumulation prove institutions are securing hard money infras",
-            "[TrendRider] Price is testing $76.5K again on strong volume and institutional tailwinds\u2014Tether\u2019s Antalpha play, NYDIG\u2019s Alcoa smelter move, and Capital B\u2019s steady buys all fuel structural demand. Repeated rejectio"
+            "[CryptoKaleo] $76.4K isn\u2019t just holding \u2014 it\u2019s loading. Iran tensions, oil swings, and now Lowery inside Indo-Pacific Command? This is strategic absorption. Tether backing Antalpha and NYDIG flipping smelters isn\u2019t",
+            "[DiamondHands420] $76.5K HOLDING STRONG AGAIN \u2014 this is not luck, this is **demand**. Iran chaos, NYDIG flipping smelters, Tether backing Antalpha, and Lowery in Indo-Pacific Command? This trifecta is screaming $80K co",
+            "[FadeTheCrowd] Still in the quiet accumulation phase\u2014$76.4K hold on moderate volume with Fear & Greed stuck at 29 is ideal. Iran noise is a catalyst, not the cause; real strength is in Tether and NYDIG building mini",
+            "[StackingSats] $76.4K hold on fear-driven volume? Perfect accumulation. Iran tensions, oil swings, and now Bitcoin hardening national defense via Lowery\u2019s Indo-Pacific role \u2014 this isn\u2019t noise, it\u2019s onboarding. NYDIG"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building toward $76.5K on weak follow-through volume\u2014same trap as before. All this \"strategic accumulation\" hype from Tether and Capital B is just noise; price can't clear resistance, "
+            "[BearishBob] Another fakeout above $76K on thin volume\u2014classic bull trap forming. Iran noise and smelter deals don\u2019t move the needle; $80K is a brick wall and we\u2019re already seeing exhaustion above $77K. This \"infr"
           ]
         },
-        "timestamp": "2026-04-20T19:37:16.380080+00:00",
+        "timestamp": "2026-04-20T20:40:02.139274+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -352,17 +352,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 434.9,
+          "run_duration_sec": 600.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 76212,
-            "change_24h": 1.65,
+            "price": 76390,
+            "change_24h": 2.18,
             "fear_greed": 29
           }
         },
-        "age_minutes": 62.7,
+        "age_minutes": 10.0,
         "is_fresh": true
       },
       "groq": {
@@ -412,7 +412,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 876.2,
+        "age_minutes": 886.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -429,7 +429,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 5065.0,
+        "age_minutes": 5075.0,
         "is_fresh": false
       }
     },
