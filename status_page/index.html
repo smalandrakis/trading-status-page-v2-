@@ -25,10 +25,7 @@
         </div>
 
         <!-- All Bots Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
-            <!-- Dynamic bot cards will be inserted here -->
-            <div id="botsContainer"></div>
-        </div>
+        <div id="botsContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6"></div>
 
         <!-- Dual Bot A/B Test Section -->
         <div class="card rounded-xl p-6 mb-6">
@@ -68,21 +65,34 @@
     </div>
 
     <script>
+        function safeNumber(val) {
+            if (val === null || val === undefined || val === '' || isNaN(val)) return 0;
+            return Number(val);
+        }
+
+        function safeString(val) {
+            if (val === null || val === undefined) return '';
+            return String(val);
+        }
+
         async function loadBotStatus() {
             try {
                 const response = await fetch('status.json?' + Date.now());
+                if (!response.ok) {
+                    throw new Error('HTTP ' + response.status);
+                }
                 const data = await response.json();
                 updateDashboard(data);
             } catch (e) {
                 console.error('Error loading status:', e);
                 document.getElementById('lastUpdate').innerHTML =
-                    '<span class="text-red-400"><i class="fas fa-exclamation-triangle mr-1"></i>Error loading data</span>';
+                    '<span class="text-red-400"><i class="fas fa-exclamation-triangle mr-1"></i>Error: ' + e.message + '</span>';
             }
         }
 
         function updateDashboard(data) {
             document.getElementById('lastUpdate').innerHTML =
-                `<i class="fas fa-clock mr-1"></i>Last update: ${data.generated_at || 'Never'}`;
+                '<i class="fas fa-clock mr-1"></i>Last update: ' + (data.generated_at || 'Never');
 
             const bots = data.bots || [];
 
@@ -91,40 +101,41 @@
             document.getElementById('botsContainer').innerHTML = botsHtml;
 
             // Update comparison (BOT_050 vs BOT_060)
-            const bot050 = bots.find(b => b.name.includes('0.50 threshold'));
-            const bot060 = bots.find(b => b.name.includes('0.60 threshold'));
+            const bot050 = bots.find(b => safeString(b.name).includes('0.50 threshold'));
+            const bot060 = bots.find(b => safeString(b.name).includes('0.60 threshold'));
             if (bot050 && bot060) {
                 updateComparison(bot050, bot060);
             }
         }
 
         function createBotCard(bot) {
-            const perf = bot?.performance || {};
-            const trades = (perf.total_trades !== undefined && perf.total_trades !== null) ? Number(perf.total_trades) : 0;
-            const wr = (perf.win_rate !== undefined && perf.win_rate !== null) ? Number(perf.win_rate) : 0;
-            const pnl = (perf.total_pnl !== undefined && perf.total_pnl !== null) ? Number(perf.total_pnl) : 0;
+            const perf = bot.performance || {};
+            const trades = safeNumber(perf.total_trades);
+            const wr = safeNumber(perf.win_rate);
+            const pnl = safeNumber(perf.total_pnl);
 
-            const isRunning = bot?.status === 'running';
+            const isRunning = safeString(bot.status) === 'running';
             const statusColor = isRunning ? 'green' : 'red';
             const statusText = isRunning ? 'Running' : 'Stopped';
 
             const pnlColor = pnl >= 0 ? 'text-green-400' : 'text-red-400';
-            const signal = (bot?.current_signal?.signal) || 'UNKNOWN';
-            const conf = (bot?.current_signal?.confidence !== undefined && bot?.current_signal?.confidence !== null) ? Number(bot.current_signal.confidence) : 0;
+            const signal = (bot.current_signal && bot.current_signal.signal) ? safeString(bot.current_signal.signal) : 'UNKNOWN';
+            const conf = safeNumber((bot.current_signal || {}).confidence);
 
             // Determine bot icon
+            const name = safeString(bot.name);
             let icon = '📊';
-            if (bot.name.includes('Swing')) icon = '🎯';
-            if (bot.name.includes('High Frequency')) icon = '⚡';
-            if (bot.name.includes('0.50 threshold')) icon = '📈';
-            if (bot.name.includes('0.60 threshold')) icon = '🎯';
+            if (name.includes('Swing')) icon = '🎯';
+            if (name.includes('High Frequency')) icon = '⚡';
+            if (name.includes('0.50 threshold')) icon = '📈';
+            if (name.includes('0.60 threshold')) icon = '🎯';
 
             return `
                 <div class="card rounded-xl p-4">
                     <div class="flex items-center justify-between mb-3">
                         <div class="flex items-center">
                             <span class="text-2xl mr-2">${icon}</span>
-                            <span class="text-sm font-bold">${bot.name}</span>
+                            <span class="text-sm font-bold">${name}</span>
                         </div>
                         <div class="flex items-center">
                             <span class="w-2 h-2 rounded-full bg-${statusColor}-500 mr-1 ${isRunning ? 'pulse' : ''}"></span>
@@ -159,38 +170,38 @@
         }
 
         function updateComparison(bot050, bot060) {
-            const p050 = bot050?.performance || {};
-            const p060 = bot060?.performance || {};
+            const p050 = bot050.performance || {};
+            const p060 = bot060.performance || {};
 
-            const trades050 = (p050.total_trades !== undefined && p050.total_trades !== null) ? Number(p050.total_trades) : 0;
-            const trades060 = (p060.total_trades !== undefined && p060.total_trades !== null) ? Number(p060.total_trades) : 0;
-            const wr050 = (p050.win_rate !== undefined && p050.win_rate !== null) ? Number(p050.win_rate) : 0;
-            const wr060 = (p060.win_rate !== undefined && p060.win_rate !== null) ? Number(p060.win_rate) : 0;
-            const pnl050 = (p050.total_pnl !== undefined && p050.total_pnl !== null) ? Number(p050.total_pnl) : 0;
-            const pnl060 = (p060.total_pnl !== undefined && p060.total_pnl !== null) ? Number(p060.total_pnl) : 0;
-            const avg050 = (p050.avg_pnl !== undefined && p050.avg_pnl !== null) ? Number(p050.avg_pnl) : 0;
-            const avg060 = (p060.avg_pnl !== undefined && p060.avg_pnl !== null) ? Number(p060.avg_pnl) : 0;
+            const trades050 = safeNumber(p050.total_trades);
+            const trades060 = safeNumber(p060.total_trades);
+            const wr050 = safeNumber(p050.win_rate);
+            const wr060 = safeNumber(p060.win_rate);
+            const pnl050 = safeNumber(p050.total_pnl);
+            const pnl060 = safeNumber(p060.total_pnl);
+            const avg050 = safeNumber(p050.avg_pnl);
+            const avg060 = safeNumber(p060.avg_pnl);
 
             document.getElementById('compTrades').textContent =
-                `${trades050.toLocaleString()} vs ${trades060.toLocaleString()}`;
+                trades050.toLocaleString() + ' vs ' + trades060.toLocaleString();
             document.getElementById('compTradesWinner').textContent =
                 trades050 > trades060 ? 'BOT_050 leads' :
                 trades060 > trades050 ? 'BOT_060 leads' : 'Tied';
 
             document.getElementById('compWR').textContent =
-                `${wr050.toFixed(1)}% vs ${wr060.toFixed(1)}%`;
+                wr050.toFixed(1) + '% vs ' + wr060.toFixed(1) + '%';
             document.getElementById('compWRWinner').textContent =
                 wr050 > wr060 ? 'BOT_050 higher' :
                 wr060 > wr050 ? 'BOT_060 higher' : 'Tied';
 
             document.getElementById('compPnL').textContent =
-                `$${pnl050.toLocaleString()} vs $${pnl060.toLocaleString()}`;
+                '$' + pnl050.toLocaleString() + ' vs $' + pnl060.toLocaleString();
             document.getElementById('compPnLWinner').innerHTML =
                 pnl050 > pnl060 ? '<span class="text-green-400">BOT_050 wins</span>' :
                 pnl060 > pnl050 ? '<span class="text-purple-400">BOT_060 wins</span>' : 'Tied';
 
             document.getElementById('compAvgPnL').textContent =
-                `$${avg050.toFixed(2)} vs $${avg060.toFixed(2)}`;
+                '$' + avg050.toFixed(2) + ' vs $' + avg060.toFixed(2);
             document.getElementById('compAvgPnLWinner').textContent =
                 avg050 > avg060 ? 'BOT_050 higher' :
                 avg060 > avg050 ? 'BOT_060 higher' : 'Tied';
