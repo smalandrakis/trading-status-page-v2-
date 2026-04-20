@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-20T18:40:02.461221",
+  "generated_at": "2026-04-20T18:50:01.431624",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-20T18:40:02.461235"
+    "last_health_check": "2026-04-20T18:50:01.431648"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-20 18:39:09,795",
+      "last_update": "2026-04-20 18:49:08,895",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 39.8,
-        "time": "2026-04-20 18:39:09,795"
+        "time": "2026-04-20 18:49:08,895"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-20 18:39:14,874",
+      "last_update": "2026-04-20 18:49:14,228",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.1,
-        "time": "2026-04-20 18:39:14,874"
+        "confidence": 51.0,
+        "time": "2026-04-20 18:49:14,228"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 18:39:37,323 - INFO - [HEARTBEAT] Price: $75,567.57",
+      "last_update": "2026-04-20 18:49:37,491 - INFO - [HEARTBEAT] Price: $75,581.52",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -224,8 +224,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 50.5,
-        "time": "2026-04-20 18:38:14,447"
+        "confidence": 51.6,
+        "time": "2026-04-20 18:48:19,582"
       },
       "open_position": null,
       "performance": {
@@ -271,7 +271,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 18:39:37,599 - INFO - [HEARTBEAT] Price: $75,567.57",
+      "last_update": "2026-04-20 18:49:37,757 - INFO - [HEARTBEAT] Price: $75,581.52",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -287,8 +287,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.1,
-        "time": "2026-04-20 18:39:15,050"
+        "confidence": 50.5,
+        "time": "2026-04-20 18:49:19,848"
       },
       "open_position": null,
       "performance": {
@@ -304,24 +304,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-20T18:40:02.905423",
+    "updated_at": "2026-04-20T18:50:01.880147",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.6494,
-        "confidence": 0.6056,
-        "bullish_pct": 0.1423,
-        "bearish_pct": 0.066,
-        "neutral_pct": 0.7917,
+        "strength": 0.1179,
+        "confidence": 0.6769,
+        "bullish_pct": 0.4171,
+        "bearish_pct": 0.0479,
+        "neutral_pct": 0.535,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6875,
+        "stance_shifts": 1,
+        "consensus_score": 0.3025,
         "key_arguments": {
-          "bullish": [],
-          "bearish": []
+          "bullish": [
+            "[TrendRider] Price is respecting the $73.8k support with MSTR\u2019s $2.54B buy and ETF inflows near $1B confirming institutional demand. We\u2019re range-bound between $73.8k\u2013$76k, but the tight consolidation on strong vol",
+            "[DiamondHands420] This dip to $75.6K is a total steal \u2014 MSTR\u2019s $2.54B nuke and ETFs nearing $1B inflows are FUEL. Institutions are buying while weak hands panic at 40% off ATH, and Fear & Greed at 29 is pure candy. Bit",
+            "[CryptoKaleo] This $75.6K handle is a springboard, not a ceiling \u2014 MSTR\u2019s $2.54B nuclear buy isn\u2019t just capital, it\u2019s *psychological dominance*. With ETFs flooding in at $1B and Bitmine gobbling ETH like it\u2019s pre-2",
+            "[DeepPockets] Price is grinding higher on strong institutional signals\u2014MSTR\u2019s $2.54B buy and ETF inflows near $1B aren't noise, they're conviction. I'm anchored to $73.8k as key support, and with flows persisting d",
+            "[StackingSats] Every dip to $75.6K is a gift \u2014 40% off ATH with Fear & Greed at 29 is a fire sale. MSTR's $2.54B nuke and ETF inflows near $1B scream institutional accumulation; hash rate and stock-to-flow still poi"
+          ],
+          "bearish": [
+            "[BearishBob] $76k rejected again \u2014 this consolidation is just slower distribution. MSTR\u2019s $2.54B buy is front-running retail via dilution, not strength, and ETF inflows are recycling hot money while real yields gr"
+          ]
         },
-        "timestamp": "2026-04-20T13:35:54.835130+00:00",
+        "timestamp": "2026-04-20T15:43:20.616547+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -338,17 +346,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 11152.2,
+          "run_duration_sec": 797.9,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 9,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 75303,
-            "change_24h": 0.28,
+            "price": 75653,
+            "change_24h": -0.46,
             "fear_greed": 29
           }
         },
-        "age_minutes": 124.1,
+        "age_minutes": 6.7,
         "is_fresh": true
       },
       "groq": {
@@ -398,7 +406,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 576.2,
+        "age_minutes": 586.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -415,7 +423,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 4765.0,
+        "age_minutes": 4775.0,
         "is_fresh": false
       }
     },
