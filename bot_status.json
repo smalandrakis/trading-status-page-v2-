@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-20T23:10:01.589813",
+  "generated_at": "2026-04-20T23:20:01.718388",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-20T23:10:01.589832"
+    "last_health_check": "2026-04-20T23:20:01.718403"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-20 23:09:09,728",
+      "last_update": "2026-04-20 23:19:09,792",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 55.1,
-        "time": "2026-04-20 23:09:09,728"
+        "confidence": 54.7,
+        "time": "2026-04-20 23:19:09,792"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-20 23:09:15,412",
+      "last_update": "2026-04-20 23:19:16,970",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,16 +125,16 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 75.2,
-        "time": "2026-04-20 23:09:15,412"
+        "confidence": 82.2,
+        "time": "2026-04-20 23:19:16,970"
       },
       "open_position": {
         "direction": "LONG",
-        "size": 2,
-        "entry_price": 76249.53,
-        "tp_price": 77012.0253,
-        "sl_price": 75868.28235,
-        "entry_time": "2026-04-20 22:52:16",
+        "size": 4,
+        "entry_price": 76332.5,
+        "tp_price": 77095.825,
+        "sl_price": 75950.8375,
+        "entry_time": "2026-04-20 23:17:16",
         "adopted": false
       },
       "performance": {
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 23:09:35,852 - INFO - [HEARTBEAT] Price: $76,276.85",
+      "last_update": "2026-04-20 23:19:36,013 - INFO - [HEARTBEAT] Price: $76,380.52",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,9 +223,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 51.4,
-        "time": "2026-04-20 23:09:29,482"
+        "signal": "LONG",
+        "confidence": 52.7,
+        "time": "2026-04-20 23:19:34,558"
       },
       "open_position": null,
       "performance": {
@@ -278,7 +278,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 23:09:48,069 - INFO - [HEARTBEAT] Price: $76,259.17",
+      "last_update": "2026-04-20 23:19:48,252 - INFO - [HEARTBEAT] Price: $76,391.88",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -294,8 +294,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.4,
-        "time": "2026-04-20 23:09:40,840"
+        "confidence": 51.1,
+        "time": "2026-04-20 23:19:45,919"
       },
       "open_position": null,
       "performance": {
@@ -311,7 +311,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-20T23:10:01.993285",
+    "updated_at": "2026-04-20T23:20:02.145414",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -362,7 +362,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 32.8,
+        "age_minutes": 42.8,
         "is_fresh": true
       },
       "groq": {
@@ -412,7 +412,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 846.2,
+        "age_minutes": 856.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -429,7 +429,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 5035.0,
+        "age_minutes": 5045.0,
         "is_fresh": false
       }
     },
