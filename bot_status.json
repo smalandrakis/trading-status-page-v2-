@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-20T13:30:01.844968",
+  "generated_at": "2026-04-20T17:40:01.452671",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-20T13:30:01.844992"
+    "last_health_check": "2026-04-20T17:40:01.452696"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-20 13:29:09,529",
+      "last_update": "2026-04-20 17:37:21,019",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -23,9 +23,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 35.9,
-        "time": "2026-04-20 13:29:09,529"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-20 13:29:15,862",
+      "last_update": "2026-04-20 14:28:38,828",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 74.1,
-        "time": "2026-04-20 13:29:15,862"
+        "signal": "NEUTRAL",
+        "confidence": 54.6,
+        "time": "2026-04-20 13:34:42,140"
       },
       "open_position": {
         "direction": "LONG",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 13:29:36,334 - INFO - [HEARTBEAT] Price: $75,307.01",
+      "last_update": "2026-04-20 17:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,11 +223,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 53.5,
-        "time": "2026-04-20 13:28:50,210"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 3,
+        "entry_price": 75530.1,
+        "tp_price": 75907.7505,
+        "sl_price": 75416.80485000001,
+        "entry_time": "2026-04-20 17:37:35",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 2,
         "wins": 1,
@@ -257,7 +265,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 13:30:02",
+      "last_update": "2026-04-20 17:39:36,713 - INFO - [HEARTBEAT] Price: $75,461.80",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -273,8 +281,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 55.1,
-        "time": "2026-04-20 13:29:50,381"
+        "confidence": 50.9,
+        "time": "2026-04-20 17:38:44,215"
       },
       "open_position": null,
       "performance": {
@@ -290,31 +298,24 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-20T13:30:02.406098",
+    "updated_at": "2026-04-20T17:40:01.944176",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5045,
-        "confidence": 0.62,
-        "bullish_pct": 0.2227,
-        "bearish_pct": 0.05,
-        "neutral_pct": 0.7273,
+        "strength": 0.6494,
+        "confidence": 0.6056,
+        "bullish_pct": 0.1423,
+        "bearish_pct": 0.066,
+        "neutral_pct": 0.7917,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.5909,
+        "stance_shifts": 0,
+        "consensus_score": 0.6875,
         "key_arguments": {
-          "bullish": [
-            "[CryptoKaleo] Saylor doesn\u2019t whisper \u2014 he drops bombs. \"Think Even Bigger\" isn\u2019t rhetoric, it\u2019s a roadmap: MicroStrategy\u2019s next $1B buy will ignite corporate FOMO, and Lydian\u2019s Visa card is the trojan horse for mas",
-            "[FadeTheCrowd] Fear at 29 with price grinding sideways? Perfect. Saylor\u2019s \u201cThink Even Bigger\u201d isn\u2019t for the crowd\u2014it\u2019s a stress test for weak hands. This range ($73.8K\u2013$76.2K) is a loading zone, not a trap. Accumula",
-            "[StackingSats] $75K is not resistance\u2014it\u2019s a springboard. Saylor\u2019s \"Think Even Bigger\" isn\u2019t speculation; it\u2019s confirmation of corporate treasury rotation into BTC. The dip to $73.8K on low volume was accumulation, ",
-            "[DiamondHands420] $75K is a myth \u2014 we\u2019re breaking out! Saylor\u2019s \"Think Even Bigger\" means MicroStrategy\u2019s buying $2B+ this month, and Lydian\u2019s Visa card is *real* adoption hitting the streets. AI agents on Coinbase? Th"
-          ],
-          "bearish": [
-            "[BearishBob] Another fakeout at $76K and you're all still chasing Saylor's shadow. Volume is flat, price rejected at the same level again, and \"Think Even Bigger\" is just pump script while real adoption lags \u2014 Lyd"
-          ]
+          "bullish": [],
+          "bearish": []
         },
-        "timestamp": "2026-04-20T09:39:20.464841+00:00",
+        "timestamp": "2026-04-20T13:35:54.835130+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -331,17 +332,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 559.2,
+          "run_duration_sec": 11152.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 9,
           "market_data_summary": {
-            "price": 75042,
-            "change_24h": -0.1,
+            "price": 75303,
+            "change_24h": 0.28,
             "fear_greed": 29
           }
         },
-        "age_minutes": 50.7,
+        "age_minutes": 64.1,
         "is_fresh": true
       },
       "groq": {
@@ -391,7 +392,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 266.2,
+        "age_minutes": 516.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -408,7 +409,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 4455.0,
+        "age_minutes": 4705.0,
         "is_fresh": false
       }
     },
