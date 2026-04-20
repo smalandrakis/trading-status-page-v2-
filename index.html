@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trading Bots Status - Live Monitor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); min-height: 100vh; }
+        .card { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .pulse { animation: pulse 2s infinite; }
+        @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    </style>
+</head>
+<body class="text-white p-4 md:p-8">
+    <div class="max-w-7xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">
+                <i class="fas fa-chart-line mr-2"></i>Trading Bots Monitor
+            </h1>
+            <p class="text-gray-400">Live Status Dashboard - All Active Bots</p>
+            <div id="lastUpdate" class="text-sm text-gray-500 mt-2"></div>
+        </div>
+
+        <!-- All Bots Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+            <!-- Dynamic bot cards will be inserted here -->
+            <div id="botsContainer"></div>
+        </div>
+
+        <!-- Dual Bot A/B Test Section -->
+        <div class="card rounded-xl p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-4">
+                <i class="fas fa-flask mr-2"></i>A/B Test: Threshold Optimization
+            </h2>
+            <p class="text-gray-400 mb-6">Comparing 0.50 (Volume) vs 0.60 (Precision) thresholds</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
+                <div class="bg-gray-800/30 rounded-lg p-4">
+                    <div class="text-gray-400 text-sm mb-2">Total Trades</div>
+                    <div id="compTrades" class="text-2xl font-bold">-- vs --</div>
+                    <div id="compTradesWinner" class="text-xs text-gray-500 mt-1">--</div>
+                </div>
+                <div class="bg-gray-800/30 rounded-lg p-4">
+                    <div class="text-gray-400 text-sm mb-2">Win Rate</div>
+                    <div id="compWR" class="text-2xl font-bold">--% vs --%</div>
+                    <div id="compWRWinner" class="text-xs text-gray-500 mt-1">--</div>
+                </div>
+                <div class="bg-gray-800/30 rounded-lg p-4">
+                    <div class="text-gray-400 text-sm mb-2">Total P&L</div>
+                    <div id="compPnL" class="text-2xl font-bold">-- vs --</div>
+                    <div id="compPnLWinner" class="text-xs text-gray-500 mt-1">--</div>
+                </div>
+                <div class="bg-gray-800/30 rounded-lg p-4">
+                    <div class="text-gray-400 text-sm mb-2">EV/Trade</div>
+                    <div id="compAvgPnL" class="text-2xl font-bold">-- vs --</div>
+                    <div id="compAvgPnLWinner" class="text-xs text-gray-500 mt-1">--</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="text-center text-gray-500 text-sm">
+            <p>Auto-refreshes every 30 seconds | Live Trading System</p>
+        </div>
+    </div>
+
+    <script>
+        async function loadBotStatus() {
+            try {
+                const response = await fetch('status.json?' + Date.now());
+                const data = await response.json();
+                updateDashboard(data);
+            } catch (e) {
+                console.error('Error loading status:', e);
+                document.getElementById('lastUpdate').innerHTML =
+                    '<span class="text-red-400"><i class="fas fa-exclamation-triangle mr-1"></i>Error loading data</span>';
+            }
+        }
+
+        function updateDashboard(data) {
+            document.getElementById('lastUpdate').innerHTML =
+                `<i class="fas fa-clock mr-1"></i>Last update: ${data.generated_at || 'Never'}`;
+
+            const bots = data.bots || [];
+
+            // Render all bot cards
+            const botsHtml = bots.map(bot => createBotCard(bot)).join('');
+            document.getElementById('botsContainer').innerHTML = botsHtml;
+
+            // Update comparison (BOT_050 vs BOT_060)
+            const bot050 = bots.find(b => b.name.includes('0.50 threshold'));
+            const bot060 = bots.find(b => b.name.includes('0.60 threshold'));
+            if (bot050 && bot060) {
+                updateComparison(bot050, bot060);
+            }
+        }
+
+        function createBotCard(bot) {
+            const perf = bot.performance || {};
+            const trades = Number(perf.total_trades) || 0;
+            const wr = Number(perf.win_rate) || 0;
+            const pnl = Number(perf.total_pnl) || 0;
+
+            const isRunning = bot.status === 'running';
+            const statusColor = isRunning ? 'green' : 'red';
+            const statusText = isRunning ? 'Running' : 'Stopped';
+
+            const pnlColor = pnl >= 0 ? 'text-green-400' : 'text-red-400';
+            const signal = (bot.current_signal && bot.current_signal.signal) ? bot.current_signal.signal : 'UNKNOWN';
+            const conf = Number(bot.current_signal?.confidence) || 0;
+
+            // Determine bot icon
+            let icon = '📊';
+            if (bot.name.includes('Swing')) icon = '🎯';
+            if (bot.name.includes('High Frequency')) icon = '⚡';
+            if (bot.name.includes('0.50 threshold')) icon = '📈';
+            if (bot.name.includes('0.60 threshold')) icon = '🎯';
+
+            return `
+                <div class="card rounded-xl p-4">
+                    <div class="flex items-center justify-between mb-3">
+                        <div class="flex items-center">
+                            <span class="text-2xl mr-2">${icon}</span>
+                            <span class="text-sm font-bold">${bot.name}</span>
+                        </div>
+                        <div class="flex items-center">
+                            <span class="w-2 h-2 rounded-full bg-${statusColor}-500 mr-1 ${isRunning ? 'pulse' : ''}"></span>
+                            <span class="text-xs text-${statusColor}-400">${statusText}</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-2 text-xs">
+                        <div class="bg-gray-800/50 rounded p-2">
+                            <div class="text-gray-400">Signal</div>
+                            <div class="font-bold">${signal} ${conf.toFixed(1)}%</div>
+                        </div>
+
+                        <div class="grid grid-cols-2 gap-2">
+                            <div class="bg-gray-800/50 rounded p-2">
+                                <div class="text-gray-400">Trades</div>
+                                <div class="font-bold">${trades.toLocaleString()}</div>
+                            </div>
+                            <div class="bg-gray-800/50 rounded p-2">
+                                <div class="text-gray-400">Win Rate</div>
+                                <div class="font-bold">${wr.toFixed(1)}%</div>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800/50 rounded p-2">
+                            <div class="text-gray-400">Total P&L</div>
+                            <div class="text-lg font-bold ${pnlColor}">$${pnl.toLocaleString()}</div>
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateComparison(bot050, bot060) {
+            const p050 = bot050.performance || {};
+            const p060 = bot060.performance || {};
+
+            const trades050 = Number(p050.total_trades) || 0;
+            const trades060 = Number(p060.total_trades) || 0;
+            const wr050 = Number(p050.win_rate) || 0;
+            const wr060 = Number(p060.win_rate) || 0;
+            const pnl050 = Number(p050.total_pnl) || 0;
+            const pnl060 = Number(p060.total_pnl) || 0;
+            const avg050 = Number(p050.avg_pnl) || 0;
+            const avg060 = Number(p060.avg_pnl) || 0;
+
+            document.getElementById('compTrades').textContent =
+                `${trades050.toLocaleString()} vs ${trades060.toLocaleString()}`;
+            document.getElementById('compTradesWinner').textContent =
+                trades050 > trades060 ? 'BOT_050 leads' :
+                trades060 > trades050 ? 'BOT_060 leads' : 'Tied';
+
+            document.getElementById('compWR').textContent =
+                `${wr050.toFixed(1)}% vs ${wr060.toFixed(1)}%`;
+            document.getElementById('compWRWinner').textContent =
+                wr050 > wr060 ? 'BOT_050 higher' :
+                wr060 > wr050 ? 'BOT_060 higher' : 'Tied';
+
+            document.getElementById('compPnL').textContent =
+                `$${pnl050.toLocaleString()} vs $${pnl060.toLocaleString()}`;
+            document.getElementById('compPnLWinner').innerHTML =
+                pnl050 > pnl060 ? '<span class="text-green-400">BOT_050 wins</span>' :
+                pnl060 > pnl050 ? '<span class="text-purple-400">BOT_060 wins</span>' : 'Tied';
+
+            document.getElementById('compAvgPnL').textContent =
+                `$${avg050.toFixed(2)} vs $${avg060.toFixed(2)}`;
+            document.getElementById('compAvgPnLWinner').textContent =
+                avg050 > avg060 ? 'BOT_050 higher' :
+                avg060 > avg050 ? 'BOT_060 higher' : 'Tied';
+        }
+
+        // Load on page load and refresh every 30 seconds
+        loadBotStatus();
+        setInterval(loadBotStatus, 30000);
+    </script>
+</body>
+</html>
