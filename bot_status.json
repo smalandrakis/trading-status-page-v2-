@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T00:40:01.797019",
+  "generated_at": "2026-04-21T00:50:01.242614",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T00:40:01.797033"
+    "last_health_check": "2026-04-21T00:50:01.242632"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 00:39:07,925",
+      "last_update": "2026-04-21 00:49:09,157",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 53.5,
-        "time": "2026-04-21 00:39:07,925"
+        "time": "2026-04-21 00:49:09,157"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 00:39:14,098",
+      "last_update": "2026-04-21 00:49:17,364",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,16 +125,16 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 78.9,
-        "time": "2026-04-21 00:39:14,098"
+        "confidence": 78.8,
+        "time": "2026-04-21 00:49:17,364"
       },
       "open_position": {
         "direction": "SHORT",
         "size": 3,
-        "entry_price": 75831.63,
-        "tp_price": 75073.3137,
-        "sl_price": 76210.78815,
-        "entry_time": "2026-04-21 00:34:16",
+        "entry_price": 75895.09,
+        "tp_price": 75136.1391,
+        "sl_price": 76274.56545,
+        "entry_time": "2026-04-21 00:49:17",
         "adopted": false
       },
       "performance": {
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 00:39:37,350 - INFO - [HEARTBEAT] Price: $75,891.77",
+      "last_update": "2026-04-21 00:49:59,666 - INFO -   SHORT",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -224,10 +224,18 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 54.6,
-        "time": "2026-04-21 00:38:18,112"
+        "confidence": 53.1,
+        "time": "2026-04-21 00:49:06,204"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 75895.1,
+        "tp_price": 75515.6245,
+        "sl_price": 76008.94265000001,
+        "entry_time": "2026-04-21 00:49:07",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 5,
         "wins": 2,
@@ -278,7 +286,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 00:39:49,500 - INFO - [HEARTBEAT] Price: $75,891.31",
+      "last_update": "2026-04-21 00:49:31,641 - INFO - [HEARTBEAT] Price: $75,895.09",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -294,8 +302,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.7,
-        "time": "2026-04-21 00:39:18,831"
+        "confidence": 52.8,
+        "time": "2026-04-21 00:48:03,048"
       },
       "open_position": null,
       "performance": {
@@ -319,7 +327,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T00:40:02.196032",
+    "updated_at": "2026-04-21T00:50:01.716808",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -370,7 +378,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 2.3,
+        "age_minutes": 12.3,
         "is_fresh": true
       },
       "groq": {
@@ -420,7 +428,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 936.2,
+        "age_minutes": 946.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -437,7 +445,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 5125.0,
+        "age_minutes": 5135.0,
         "is_fresh": false
       }
     },
