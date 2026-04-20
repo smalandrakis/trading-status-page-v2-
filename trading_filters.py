@@ -34,11 +34,20 @@ class TradingFilters:
         # Filter thresholds
         self.MAX_CONSECUTIVE_LOSSES = 10
         self.MAX_DAILY_TRADES = 15
-        self.SLIPPAGE_SAFETY_RATIO = 2.0
+
+        # Adaptive slippage safety ratio based on TP/SL size
+        # For tight targets (<1.5% TP), slippage is inherent cost - use lower threshold
+        if tp_pct < 1.5:
+            self.SLIPPAGE_SAFETY_RATIO = 1.0  # HF bots (1.0%/0.5%)
+        elif tp_pct < 2.0:
+            self.SLIPPAGE_SAFETY_RATIO = 1.5  # Mid-frequency bots
+        else:
+            self.SLIPPAGE_SAFETY_RATIO = 2.0  # Swing bots (2.5%+)
+
         self.SR_PROXIMITY_PCT = 0.002  # 0.2%
         self.POSITION_SIZE_CAP = 8  # Max 8x contracts
         self.MAX_VOLATILITY_MULTIPLIER = 3.0
-        self.LOW_LIQUIDITY_HOURS = [(2, 6)]  # 2am-6am ET
+        self.LOW_LIQUIDITY_HOURS = []  # DISABLED - was [(2, 6)] for 2am-6am ET
 
         logger.info("TradingFilters initialized:")
         logger.info(f"  TP/SL: {tp_pct}% / {sl_pct}%")
@@ -53,36 +62,34 @@ class TradingFilters:
             (pass, reason) - (True, None) if all pass, (False, reason) if any fail
         """
 
-        # Tier 1 Filters (Essential)
-        pass_filter, reason = self.check_slippage_safety(signal, current_price, position_size)
-        if not pass_filter:
-            return False, f"[SLIPPAGE] {reason}"
+        # ALL FILTERS DISABLED - Pure backtest replication (no filters, trust the model)
+        # pass_filter, reason = self.check_slippage_safety(signal, current_price, position_size)
+        # if not pass_filter:
+        #     return False, f"[SLIPPAGE] {reason}"
 
-        pass_filter, reason = self.check_consecutive_losses()
-        if not pass_filter:
-            return False, f"[KILL-SWITCH] {reason}"
+        # pass_filter, reason = self.check_consecutive_losses()
+        # if not pass_filter:
+        #     return False, f"[KILL-SWITCH] {reason}"
 
-        pass_filter, reason = self.check_support_resistance(signal, current_price, df)
-        if not pass_filter:
-            return False, f"[S/R] {reason}"
+        # pass_filter, reason = self.check_support_resistance(signal, current_price, df)
+        # if not pass_filter:
+        #     return False, f"[S/R] {reason}"
 
-        # Tier 2 Filters (Valuable)
-        pass_filter, reason = self.check_time_of_day()
-        if not pass_filter:
-            return False, f"[TIME] {reason}"
+        # pass_filter, reason = self.check_time_of_day()
+        # if not pass_filter:
+        #     return False, f"[TIME] {reason}"
 
-        pass_filter, reason = self.check_volatility_regime(df)
-        if not pass_filter:
-            return False, f"[VOLATILITY] {reason}"
+        # pass_filter, reason = self.check_volatility_regime(df)
+        # if not pass_filter:
+        #     return False, f"[VOLATILITY] {reason}"
 
-        pass_filter, reason = self.check_daily_trade_limit()
-        if not pass_filter:
-            return False, f"[DAILY-LIMIT] {reason}"
+        # pass_filter, reason = self.check_daily_trade_limit()
+        # if not pass_filter:
+        #     return False, f"[DAILY-LIMIT] {reason}"
 
-        # Tier 3 Filters (Nice-to-Have)
-        pass_filter, reason = self.check_position_accumulation(position_size)
-        if not pass_filter:
-            return False, f"[POSITION-CAP] {reason}"
+        # pass_filter, reason = self.check_position_accumulation(position_size)
+        # if not pass_filter:
+        #     return False, f"[POSITION-CAP] {reason}"
 
         return True, None
 
