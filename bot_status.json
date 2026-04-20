@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-20T12:30:00.930196",
+  "generated_at": "2026-04-20T12:40:01.932505",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-20T12:30:00.930218"
+    "last_health_check": "2026-04-20T12:40:01.932527"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-20 12:29:10,614",
+      "last_update": "2026-04-20 12:39:10,255",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 35.1,
-        "time": "2026-04-20 12:29:10,614"
+        "time": "2026-04-20 12:39:10,255"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-20 12:29:16,054",
+      "last_update": "2026-04-20 12:39:15,187",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 58.1,
-        "time": "2026-04-20 12:29:16,054"
+        "signal": "LONG",
+        "confidence": 83.3,
+        "time": "2026-04-20 12:39:15,186"
       },
       "open_position": {
         "direction": "LONG",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 12:29:35,719 - INFO - [HEARTBEAT] Price: $75,000.00",
+      "last_update": "2026-04-20 12:39:35,878 - INFO - [HEARTBEAT] Price: $75,120.44",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -258,7 +258,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 12:29:35,692 - INFO - [HEARTBEAT] Price: $75,000.00",
+      "last_update": "2026-04-20 12:39:35,875 - INFO - [HEARTBEAT] Price: $75,120.44",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -274,8 +274,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.3,
-        "time": "2026-04-20 12:29:21,567"
+        "confidence": 53.4,
+        "time": "2026-04-20 12:39:26,951"
       },
       "open_position": null,
       "performance": {
@@ -291,32 +291,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-20T12:30:01.272591",
+    "updated_at": "2026-04-20T12:40:02.322349",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3379,
-        "confidence": 0.6514,
-        "bullish_pct": 0.3082,
-        "bearish_pct": 0.0457,
-        "neutral_pct": 0.6461,
+        "strength": 0.5045,
+        "confidence": 0.62,
+        "bullish_pct": 0.2227,
+        "bearish_pct": 0.05,
+        "neutral_pct": 0.7273,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.4692,
+        "consensus_score": 0.5909,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price still trapped below $76.2K, but $73.8K holding again on low Fear & Greed (29) and persistent ETF inflows tells me sellers are exhausted. Saylor\u2019s \u201cThink Even Bigger\u201d isn\u2019t noise\u2014it\u2019s a signal to",
-            "[TrendRider] Price is still grinding within the $73.8K\u2013$76.2K range, but the repeated hold at support and Saylor\u2019s \"Think Even Bigger\" reinforce institutional demand. Volume may be thin, but ETF inflows and politi",
-            "[CryptoKaleo] Every dip is a launchpad when the smart money is this coordinated. Saylor\u2019s \u201cThink Even Bigger\u201d isn\u2019t just messaging\u2014it\u2019s market-moving ops. Biggs going public with her BTC ETF buy isn\u2019t political cov",
-            "[StackingSats] Dip to $73.8K held firm\u2014yet another institutional shakeout completed. Saylor\u2019s \u201cThink Even Bigger\u201d and Biggs\u2019 ETF disclosure confirm elite accumulation is accelerating; halving supply shock remains un",
-            "[DiamondHands420] $74.8K? Just a pit stop\u2014Saylor\u2019s \u201cThink Even Bigger\u201d after $1B in buys + Biggs front-running the ETF wave means institutions and lawmakers are ALL IN. Every dip gets bought harder, and $76.2K breaks s"
+            "[CryptoKaleo] Saylor doesn\u2019t whisper \u2014 he drops bombs. \"Think Even Bigger\" isn\u2019t rhetoric, it\u2019s a roadmap: MicroStrategy\u2019s next $1B buy will ignite corporate FOMO, and Lydian\u2019s Visa card is the trojan horse for mas",
+            "[FadeTheCrowd] Fear at 29 with price grinding sideways? Perfect. Saylor\u2019s \u201cThink Even Bigger\u201d isn\u2019t for the crowd\u2014it\u2019s a stress test for weak hands. This range ($73.8K\u2013$76.2K) is a loading zone, not a trap. Accumula",
+            "[StackingSats] $75K is not resistance\u2014it\u2019s a springboard. Saylor\u2019s \"Think Even Bigger\" isn\u2019t speculation; it\u2019s confirmation of corporate treasury rotation into BTC. The dip to $73.8K on low volume was accumulation, ",
+            "[DiamondHands420] $75K is a myth \u2014 we\u2019re breaking out! Saylor\u2019s \"Think Even Bigger\" means MicroStrategy\u2019s buying $2B+ this month, and Lydian\u2019s Visa card is *real* adoption hitting the streets. AI agents on Coinbase? Th"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $76K rejected, just like last week. Saylor's \"Think Even Bigger\" is theater\u2014ETF inflows are slowing, volume is dying, and AI agent hype distracts from weak momentum. $73.8K may hold"
+            "[BearishBob] Another fakeout at $76K and you're all still chasing Saylor's shadow. Volume is flat, price rejected at the same level again, and \"Think Even Bigger\" is just pump script while real adoption lags \u2014 Lyd"
           ]
         },
-        "timestamp": "2026-04-20T08:40:25.611523+00:00",
+        "timestamp": "2026-04-20T09:39:20.464841+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -333,17 +332,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 623.7,
+          "run_duration_sec": 559.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74808,
-            "change_24h": -0.55,
+            "price": 75042,
+            "change_24h": -0.1,
             "fear_greed": 29
           }
         },
-        "age_minutes": 49.6,
+        "age_minutes": 0.7,
         "is_fresh": true
       },
       "groq": {
@@ -393,7 +392,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 206.2,
+        "age_minutes": 216.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -410,7 +409,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 4395.0,
+        "age_minutes": 4405.0,
         "is_fresh": false
       }
     },
