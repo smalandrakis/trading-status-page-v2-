@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-20T20:50:01.201486",
+  "generated_at": "2026-04-20T21:00:01.929051",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-20T20:50:01.201506"
+    "last_health_check": "2026-04-20T21:00:01.929069"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-20 20:49:07,943",
+      "last_update": "2026-04-20 20:59:08,368",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 42.5,
-        "time": "2026-04-20 20:49:07,943"
+        "confidence": 42.9,
+        "time": "2026-04-20 20:59:08,368"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-20 20:49:14,415",
+      "last_update": "2026-04-20 20:59:16,125",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,16 +125,16 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 76.7,
-        "time": "2026-04-20 20:49:14,415"
+        "confidence": 79.7,
+        "time": "2026-04-20 20:59:16,125"
       },
       "open_position": {
         "direction": "LONG",
         "size": 2,
-        "entry_price": 75815.57,
-        "tp_price": 76573.72570000001,
-        "sl_price": 75436.49215,
-        "entry_time": "2026-04-20 20:42:16",
+        "entry_price": 75866.01,
+        "tp_price": 76624.67009999999,
+        "sl_price": 75486.67994999999,
+        "entry_time": "2026-04-20 20:57:15",
         "adopted": false
       },
       "performance": {
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 20:49:33,579 - INFO - [HEARTBEAT] Price: $75,884.00",
+      "last_update": "2026-04-20 20:59:33,732 - INFO - [HEARTBEAT] Price: $75,913.42",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -224,8 +224,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 53.5,
-        "time": "2026-04-20 20:48:16,814"
+        "confidence": 60.4,
+        "time": "2026-04-20 20:58:22,097"
       },
       "open_position": null,
       "performance": {
@@ -278,7 +278,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-20 20:49:45,765 - INFO - [HEARTBEAT] Price: $75,882.60",
+      "last_update": "2026-04-20 20:59:45,924 - INFO - [HEARTBEAT] Price: $75,898.13",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -293,9 +293,9 @@
         "strategy": "Precision Sniper - maximize quality"
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 53.6,
-        "time": "2026-04-20 20:48:27,693"
+        "signal": "SHORT",
+        "confidence": 60.7,
+        "time": "2026-04-20 20:58:32,999"
       },
       "open_position": null,
       "performance": {
@@ -311,32 +311,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-20T20:50:01.545883",
+    "updated_at": "2026-04-20T21:00:02.326221",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2571,
-        "confidence": 0.6792,
-        "bullish_pct": 0.3488,
-        "bearish_pct": 0.0454,
-        "neutral_pct": 0.6059,
+        "strength": 0.4162,
+        "confidence": 0.6743,
+        "bullish_pct": 0.2737,
+        "bearish_pct": 0.0364,
+        "neutral_pct": 0.6899,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4088,
+        "consensus_score": 0.5349,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Another dip? Still $75K \u2014 barely a ripple. MSTR\u2019s $2.54B buy and ETF inflows near $1B are warping supply; miners and institutions stack while fear lingers at 29. This is textbook pre-halving accumulat",
-            "[TrendRider] Price holding firm at $75.4K on near-$1B ETF inflows and MSTR\u2019s $2.54B buy shows strong structural demand despite fear sentiment and lateral movement \u2014 this is accumulation under the radar. The trend ",
-            "[FadeTheCrowd] Price grinding sideways at $75.4K while Fear & Greed sits at 29 is textbook capitulation-phase accumulation. MSTR\u2019s $2.54B buy and ETF inflows nearing $1B aren\u2019t noise\u2014they\u2019re structural demand absorb",
-            "[DiamondHands420] MSTR's $2.54B nuke and ETFs sucking up $1B last week? That\u2019s WAR. Price holding $75K on Fear & Greed of 29 means weak hands are broken \u2014 this is accumulation on steroids. We\u2019re retesting the base befo",
-            "[CryptoKaleo] We\u2019re in the eye of the storm \u2014 MSTR\u2019s $2.54B nuke and ETFs sucking up $1B in inflows aren\u2019t just buying pressure, they\u2019re a full-blown institutional takeover. Price holding $75K on Fear & Greed of 29"
+            "[StackingSats] Every dip to $73.8K was a gift \u2014 MSTR\u2019s $2.54B buy and $1B weekly ETF inflows are war machines loading for the next leg up. This sideways grind is classic accumulation phase behavior; whales absorb su",
+            "[TrendRider] Price holding above $73.8K with MSTR's $2.54B buy and $1B ETF inflows confirms strong structural demand \u2014 this is not a weak market, it's consolidating with intent. The lack of breakout follow-through",
+            "[DiamondHands420] Loving the grind! We\u2019re coiling like a spring at $75.8K \u2014 MSTR\u2019s $2.54B war chest and $1B ETF inflows are rocket fuel, and whales are stacking ETH too? This is just the calm before the FOMO explosion.",
+            "[CryptoKaleo] This dip is a setup, not a stall. MSTR's $2.54B nuclear buy and ETFs clearing $1B weekly aren't just demand \u2014 they're a systemic absorption of supply while weak hands fret over ranges. We\u2019re not break"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. MSTR's $2.54B buy is just fuel for the pump-and-dump machine \u2014 they\u2019re buying at the top again, not a bottom signal. ETF inflows are great for headlines, but price c"
+            "[BearishBob] Another fakeout waiting to happen. $75.8K is a trap \u2014 we've seen zero follow-through after MSTR's $2.54B print and $1B ETF inflows, which should\u2019ve smashed resistance if this were real strength. Volum"
           ]
         },
-        "timestamp": "2026-04-20T16:39:19.491336+00:00",
+        "timestamp": "2026-04-20T17:51:16.321911+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -353,17 +352,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 557.2,
+          "run_duration_sec": 1275.0,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 35,
           "market_data_summary": {
-            "price": 75384,
-            "change_24h": -0.38,
+            "price": 75752,
+            "change_24h": 0.7,
             "fear_greed": 29
           }
         },
-        "age_minutes": 70.7,
+        "age_minutes": 8.8,
         "is_fresh": true
       },
       "groq": {
@@ -413,7 +412,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 706.2,
+        "age_minutes": 716.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -430,7 +429,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 4895.0,
+        "age_minutes": 4905.0,
         "is_fresh": false
       }
     },
