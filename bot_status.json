@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T21:40:01.471627",
+  "generated_at": "2026-04-21T21:50:01.107721",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T21:40:01.471638"
+    "last_health_check": "2026-04-21T21:50:01.107735"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 21:39:07,838",
+      "last_update": "2026-04-21 21:49:08,669",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 46.8,
-        "time": "2026-04-21 21:39:07,838"
+        "confidence": 47.2,
+        "time": "2026-04-21 21:49:08,669"
       },
       "open_position": null,
       "performance": {
@@ -42,7 +42,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 21:39:17,449",
+      "last_update": "2026-04-21 21:49:16,573",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -54,16 +54,16 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 70.8,
-        "time": "2026-04-21 21:39:17,449"
+        "confidence": 69.3,
+        "time": "2026-04-21 21:49:16,573"
       },
       "open_position": {
         "direction": "SHORT",
         "size": 2,
-        "entry_price": 75259.76,
-        "tp_price": 74507.1624,
-        "sl_price": 75636.05879999998,
-        "entry_time": "2026-04-21 21:39:17",
+        "entry_price": 74900.46,
+        "tp_price": 74151.4554,
+        "sl_price": 75274.9623,
+        "entry_time": "2026-04-21 21:47:15",
         "adopted": false
       },
       "performance": {
@@ -137,7 +137,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 21:39:50,493 - INFO - [HEARTBEAT] Price: $75,230.80",
+      "last_update": "2026-04-21 21:49:50,591 - INFO - [HEARTBEAT] Price: $74,990.41",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -152,11 +152,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 50.4,
-        "time": "2026-04-21 21:38:33,439"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 75019.53,
+        "tp_price": 74644.43235,
+        "sl_price": 75132.059295,
+        "entry_time": "2026-04-21 21:42:38",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 4,
         "wins": 2,
@@ -200,7 +208,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 21:39:52,497 - INFO - [HEARTBEAT] Price: $75,236.22",
+      "last_update": "2026-04-21 21:49:52,585 - INFO - [HEARTBEAT] Price: $74,990.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -216,8 +224,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.4,
-        "time": "2026-04-21 21:39:17,184"
+        "confidence": 51.7,
+        "time": "2026-04-21 21:49:21,034"
       },
       "open_position": null,
       "performance": {
@@ -233,32 +241,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T21:40:01.848975",
+    "updated_at": "2026-04-21T21:50:01.783494",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.302,
-        "confidence": 0.6882,
-        "bullish_pct": 0.3261,
-        "bearish_pct": 0.0457,
-        "neutral_pct": 0.6281,
+        "strength": 0.4326,
+        "confidence": 0.6592,
+        "bullish_pct": 0.2601,
+        "bearish_pct": 0.0471,
+        "neutral_pct": 0.6927,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4422,
+        "consensus_score": 0.5391,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price is holding firm at $75.2K support with clear whale accumulation and negative funding rates\u2014a classic coiled spring setup. The rejection at $76.8K lacks follow-through to the downside, and volume",
-            "[DiamondHands420] Loving this \"fear\" at $75.4K \u2014 perfect accumulation zone! Whale buying 45K BTC doesn\u2019t lie, and with Paparo & Warsh signaling Bitcoin\u2019s strategic importance, this dip is pure institutional FUD. Negati",
-            "[CryptoKaleo] This dip to $75.4K is pure institutional theater \u2014 whales are stacking 45K BTC while shorts sleep at the wheel with negative funding at $78K. The Paparo and Warsh narratives are just accelerating the ",
-            "[FadeTheCrowd] Price hovers near $75.2K with whales accumulating 45K BTC, negative funding persisting despite upward pressure, and institutional chatter heating up\u2014exactly the quiet before a contrarian move. The $76",
-            "[StackingSats] Dip to $75.2K is institutional accumulation in motion \u2014 whales don\u2019t lie, and 45K BTC bought on weakness is a war chest buildout ahead of the halving cycle apex. $84K isn\u2019t a ceiling, it\u2019s a magnet; n"
+            "[DiamondHands420] Love the fear in the market \u2014 33 on Fear & Greed is pure diamond-bottom energy! $75.8K holding strong, Kalshi and Polymarket launching perps is a narrative nuke, and Nium adopting USDC shows real-worl",
+            "[CryptoKaleo] The narrative is exploding \u2014 Kalshi and Polymarket launching perps isn\u2019t just innovation, it\u2019s cultural dominance. Regulatory heat on Coinbase and Gemini? Expected friction, not a fracture. Nium adopt",
+            "[StackingSats] Dip is a gift. $75.8K is nothing but a minor pullback in the upward march\u2014hash rate at all-time highs, stock-to-flow model still tracking, and exchange outflows confirm accumulation. $84K isn't a cap,",
+            "[FadeTheCrowd] Regulatory noise around Coinbase and Gemini is already priced in\u2014fear at 33 and fading Binance inflows confirm weak hands are shaken out. I'm adding below $76K, targeting $84K+ as ETF cost basis becom"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally built on hype and whale theater. $76.8K rejected again, volume drying up, and all they're selling is military soundbites and a stablecoin integration? Please. The $84K \"wall\" is "
+            "[BearishBob] Another fakeout waiting to happen. $84K ETF cost basis? That's not support \u2014 it's a magnet for distribution. Regulatory crackdowns aren't noise, they're the first domino. NY going after Coinbase and G"
           ]
         },
-        "timestamp": "2026-04-21T18:59:37.822491+00:00",
+        "timestamp": "2026-04-21T19:45:36.705754+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -275,17 +282,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1775.7,
+          "run_duration_sec": 935.0,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 34,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 75424,
-            "change_24h": -0.96,
+            "price": 75834,
+            "change_24h": -0.5,
             "fear_greed": 33
           }
         },
-        "age_minutes": 40.4,
+        "age_minutes": 4.4,
         "is_fresh": true
       },
       "groq": {
@@ -336,7 +343,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 816.2,
+        "age_minutes": 826.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -353,7 +360,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 6445.0,
+        "age_minutes": 6455.0,
         "is_fresh": false
       }
     },
