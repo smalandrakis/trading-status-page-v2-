@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T23:30:01.700281",
+  "generated_at": "2026-04-21T23:40:01.510701",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T23:30:01.700293"
+    "last_health_check": "2026-04-21T23:40:01.510719"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 23:29:09,765",
+      "last_update": "2026-04-21 23:39:09,403",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 47.3,
-        "time": "2026-04-21 23:29:09,765"
+        "time": "2026-04-21 23:39:09,403"
       },
       "open_position": null,
       "performance": {
@@ -42,7 +42,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 23:29:14,884",
+      "last_update": "2026-04-21 23:39:14,351",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -54,8 +54,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 56.5,
-        "time": "2026-04-21 23:29:14,884"
+        "confidence": 52.4,
+        "time": "2026-04-21 23:39:14,351"
       },
       "open_position": {
         "direction": "SHORT",
@@ -137,7 +137,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 23:29:52,050 - INFO - [HEARTBEAT] Price: $75,550.11",
+      "last_update": "2026-04-21 23:39:52,227 - INFO - [HEARTBEAT] Price: $75,604.55",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -229,7 +229,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 23:30:02",
+      "last_update": "2026-04-21 23:39:54,165 - INFO - [HEARTBEAT] Price: $75,604.55",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -245,8 +245,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.6,
-        "time": "2026-04-21 23:30:01,558"
+        "confidence": 52.1,
+        "time": "2026-04-21 23:38:04,884"
       },
       "open_position": null,
       "performance": {
@@ -262,7 +262,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T23:30:02.468226",
+    "updated_at": "2026-04-21T23:40:02.163036",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -314,7 +314,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 41.0,
+        "age_minutes": 51.0,
         "is_fresh": true
       },
       "groq": {
@@ -365,7 +365,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 926.2,
+        "age_minutes": 936.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -382,7 +382,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 6555.0,
+        "age_minutes": 6565.0,
         "is_fresh": false
       }
     },
