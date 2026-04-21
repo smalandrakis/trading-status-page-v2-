@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T09:40:02.363663",
+  "generated_at": "2026-04-21T09:50:00.859017",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T09:40:02.363680"
+    "last_health_check": "2026-04-21T09:50:00.859039"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 09:39:12,445",
+      "last_update": "2026-04-21 09:49:13,157",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 38.0,
-        "time": "2026-04-21 09:39:12,445"
+        "time": "2026-04-21 09:49:13,157"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 09:39:19,579",
+      "last_update": "2026-04-21 09:49:19,156",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 74.8,
-        "time": "2026-04-21 09:39:19,578"
+        "confidence": 81.1,
+        "time": "2026-04-21 09:49:19,156"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 09:40:02",
+      "last_update": "2026-04-21 09:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -313,7 +313,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 09:40:02",
+      "last_update": "2026-04-21 09:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -354,30 +354,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T09:40:03.249551",
+    "updated_at": "2026-04-21T09:50:01.502352",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5967,
-        "confidence": 0.6036,
-        "bullish_pct": 0.1771,
-        "bearish_pct": 0.049,
-        "neutral_pct": 0.7739,
+        "strength": 0.3999,
+        "confidence": 0.6331,
+        "bullish_pct": 0.2758,
+        "bearish_pct": 0.0486,
+        "neutral_pct": 0.6757,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6608,
+        "consensus_score": 0.5135,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] Loving the consolidation! $75K held strong again \u2014 pure diamond hands energy. Iran tensions, NYDIG buying smelters, and Alcoa\u2019s pivot to Bitcoin mining? This is *digital oil* playing chess while every",
-            "[CryptoKaleo] We\u2019re not just watching a bounce \u2014 we\u2019re witnessing *strategic repositioning*. Iran tensions are the spark, but NYDIG flipping Alcoa\u2019s smelter is the blueprint: legacy industrial infrastructure being ",
-            "[StackingSats] $75K hold confirmed\u2014yet again. Every dip into this zone is a transfer from weak hands to strategic miners and institutions leveraging stranded energy. NYDIG\u2019s smelter pivot proves Bitcoin\u2019s energy asy"
+            "[StackingSats] $75.7K is a steal. Iran tensions, oil volatility, and NYDIG acquiring an idle smelter for mining? This is physical confirmation of Bitcoin's energy narrative accelerating. Every dip is a transfer of w",
+            "[DiamondHands420] $75.7K is a total steal \u2014 Iran chaos, oil swinging, *and* NYDIG flipping an idle smelter into a Bitcoin mine? This is physical proof the world\u2019s stacking digital hard assets amid instability. Institut",
+            "[CryptoKaleo] We\u2019re not just watching a rally \u2014 we\u2019re witnessing infrastructure realignment. Iran tensions, oil volatility, and NYDIG flipping a smelter into a mine isn\u2019t noise \u2014 it\u2019s the physical world choosing Bi",
+            "[FadeTheCrowd] Price probing $76.5K again on weak volume and institutional hesitation is textbook sentimental capitulation \u2014 Fear & Greed at 33 confirms discomfort, while geopolitical stress and NYDIG\u2019s smelter move"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally into $76.5K on weak volume and geopolitical noise \u2014 just like last time. No real follow-through, no volume confirmation, and now they\u2019re selling AI dividend fairy tales and smelt"
+            "[BearishBob] Another retest of $76.5K on a geopolitical scare and AI-themed hopium \u2014 same dead cat bounce, different day. Volume is a joke relative to the move, institutions aren't committing, and that smelter dea"
           ]
         },
-        "timestamp": "2026-04-21T05:39:10.130796+00:00",
+        "timestamp": "2026-04-21T06:43:35.265920+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -394,17 +395,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 548.2,
+          "run_duration_sec": 812.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75926,
-            "change_24h": 2.35,
+            "price": 75773,
+            "change_24h": 1.86,
             "fear_greed": 33
           }
         },
-        "age_minutes": 60.9,
+        "age_minutes": 6.4,
         "is_fresh": true
       },
       "groq": {
@@ -455,7 +456,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 36.2,
+        "age_minutes": 46.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -472,7 +473,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 5665.0,
+        "age_minutes": 5675.0,
         "is_fresh": false
       }
     },
