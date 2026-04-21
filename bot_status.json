@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T17:51:56.538701",
+  "generated_at": "2026-04-21T18:30:00.861099",
   "binance_connection": {
-    "status": "disconnected",
-    "message": "HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/ping (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10a261310>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))"
+    "status": "connected",
+    "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T17:51:56.538713"
+    "last_health_check": "2026-04-21T18:30:00.861123"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 12:45:05,521",
+      "last_update": "2026-04-21 17:58:55,579",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 12:45:10,174",
+      "last_update": "2026-04-21 17:58:56,458",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 17:51:56",
+      "last_update": "2026-04-21 18:29:46,411 - INFO - [HEARTBEAT] Price: $75,872.12",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,35 +223,20 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "SHORT",
+        "confidence": 54.5,
+        "time": "2026-04-21 18:58:36,048"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 3,
-        "entry_price": 76292.77,
-        "tp_price": 76674.23384999999,
-        "sl_price": 76178.330845,
-        "entry_time": "2026-04-21 12:42:56",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 20,
+        "total_trades": 21,
         "wins": 6,
-        "losses": 14,
-        "win_rate": 30.0,
-        "total_pnl": -123.27,
-        "avg_pnl": -6.16
+        "losses": 15,
+        "win_rate": 28.6,
+        "total_pnl": -270.92,
+        "avg_pnl": -12.9
       },
       "recent_trades": [
-        {
-          "time": "2026-04-21T06:02:23.539561",
-          "direction": "LONG",
-          "pnl": -41.65,
-          "pnl_pct": -0.18,
-          "hold_minutes": 16.0
-        },
         {
           "time": "2026-04-21T06:49:40.657515",
           "direction": "SHORT",
@@ -314,6 +299,13 @@
           "pnl": -35.22,
           "pnl_pct": -0.15,
           "hold_minutes": 73.0
+        },
+        {
+          "time": "2026-04-21T18:58:32.793535",
+          "direction": "LONG",
+          "pnl": -147.65,
+          "pnl_pct": -0.65,
+          "hold_minutes": 376.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -321,7 +313,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 17:51:56",
+      "last_update": "2026-04-21 18:29:50,418 - INFO - [HEARTBEAT] Price: $75,868.50",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -362,7 +354,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T17:51:57.045594",
+    "updated_at": "2026-04-21T18:30:01.461503",
     "signals": {
       "cerebras": {
         "direction": "LONG",
@@ -406,7 +398,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 315.5,
+        "age_minutes": 413.6,
         "is_fresh": true
       },
       "groq": {
@@ -457,7 +449,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 528.1,
+        "age_minutes": 626.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -474,7 +466,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 6156.9,
+        "age_minutes": 6255.0,
         "is_fresh": false
       }
     },
