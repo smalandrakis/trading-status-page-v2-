@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T09:00:01.481895",
+  "generated_at": "2026-04-21T09:10:01.274641",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T09:00:01.481917"
+    "last_health_check": "2026-04-21T09:10:01.274658"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 08:59:11,760",
+      "last_update": "2026-04-21 09:09:11,532",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 38.5,
-        "time": "2026-04-21 08:59:11,760"
+        "confidence": 37.8,
+        "time": "2026-04-21 09:09:11,532"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 08:59:17,646",
+      "last_update": "2026-04-21 09:09:16,695",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.1,
-        "time": "2026-04-21 08:59:17,646"
+        "confidence": 56.0,
+        "time": "2026-04-21 09:09:16,695"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 09:00:00,674 - INFO - [HEARTBEAT] Price: $75,802.00",
+      "last_update": "2026-04-21 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -223,9 +223,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 52.1,
-        "time": "2026-04-21 08:59:12,330"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
       "open_position": null,
       "performance": {
@@ -313,7 +313,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 09:00:01,218 - INFO - [HEARTBEAT] Price: $75,802.00",
+      "last_update": "2026-04-21 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -328,9 +328,9 @@
         "strategy": "Precision Sniper - maximize quality"
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 53.4,
-        "time": "2026-04-21 08:59:53,068"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
       "open_position": null,
       "performance": {
@@ -354,7 +354,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T09:00:01.987161",
+    "updated_at": "2026-04-21T09:10:01.710508",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -404,30 +404,31 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 20.9,
+        "age_minutes": 30.9,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.7148,
-        "confidence": 0.5417,
-        "bullish_pct": 0.1174,
+        "strength": 0.5902,
+        "confidence": 0.5472,
+        "bullish_pct": 0.1798,
         "bearish_pct": 0.0503,
-        "neutral_pct": 0.8323,
+        "neutral_pct": 0.7699,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.7484,
+        "stance_shifts": 1,
+        "consensus_score": 0.6549,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] I'm still feeling that FOMO, bro, and I think the current price dip is a buying opportunity. The Fear & Greed Index at 29 is a screaming buy signal, and with Congresswoman Sheri Biggs investing $250,0",
-            "[CryptoKaleo] The fear is still palpable, but I believe the market is ripe for a turnaround. The recent price dip and Polymarket's potential $15B valuation are just minor corrections, and with the Fear & Greed Inde"
+            "[FadeTheCrowd] The fear in the market is music to my contrarian ears, with the Fear & Greed Index still at 33. I'm seeing a 2.1% increase in the last 24 hours and a 9.4% gain over the past 30 days, which suggests a ",
+            "[StackingSats] The fear in the market is music to my ears, a perfect opportunity to stack more sats. With the price still 40% away from the ATH, I see this as a great buying opportunity, and the recent news about Co",
+            "[DiamondHands420] The fear is still palpable, but I'm not buying into it - HODL! With Bitcoin holding above $75,000 and a 2.1% increase in the last 24 hours, I'm seeing a lot of positive news, like Coinbase's new AI pa"
           ],
           "bearish": [
-            "[BearishBob] The recent price dip and erased weekend gains are just another indication of a weakening momentum to me. The Fear & Greed Index at 29 may be seen as a buying signal by some, but I believe it's a trap,"
+            "[BearishBob] The recent 2.1% increase in the last 24 hours and 9.4% gain over the past 30 days are just a trap, a dead cat bounce. The Fear & Greed Index is still at 33, indicating fear in the market, and I'm not "
           ]
         },
-        "timestamp": "2026-04-20T06:03:48.021676+00:00",
+        "timestamp": "2026-04-21T06:03:51.673429+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -444,17 +445,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 226.9,
+          "run_duration_sec": 230.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 74278,
-            "change_24h": -1.71,
-            "fear_greed": 29
+            "price": 75833,
+            "change_24h": 2.09,
+            "fear_greed": 33
           }
         },
-        "age_minutes": 1436.2,
+        "age_minutes": 6.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -471,7 +472,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 5625.0,
+        "age_minutes": 5635.0,
         "is_fresh": false
       }
     },
