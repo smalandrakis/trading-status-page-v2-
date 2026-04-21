@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T21:30:00.971996",
+  "generated_at": "2026-04-21T21:40:01.471627",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T21:30:00.972013"
+    "last_health_check": "2026-04-21T21:40:01.471638"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 21:29:07,578",
+      "last_update": "2026-04-21 21:39:07,838",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 46.9,
-        "time": "2026-04-21 21:29:07,578"
+        "confidence": 46.8,
+        "time": "2026-04-21 21:39:07,838"
       },
       "open_position": null,
       "performance": {
@@ -42,7 +42,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 21:29:12,512",
+      "last_update": "2026-04-21 21:39:17,449",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -53,17 +53,17 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 56.9,
-        "time": "2026-04-21 21:29:12,512"
+        "signal": "SHORT",
+        "confidence": 70.8,
+        "time": "2026-04-21 21:39:17,449"
       },
       "open_position": {
         "direction": "SHORT",
-        "size": 1,
-        "entry_price": 75593.63,
-        "tp_price": 74837.6937,
-        "sl_price": 75971.59814999999,
-        "entry_time": "2026-04-21 21:17:14",
+        "size": 2,
+        "entry_price": 75259.76,
+        "tp_price": 74507.1624,
+        "sl_price": 75636.05879999998,
+        "entry_time": "2026-04-21 21:39:17",
         "adopted": false
       },
       "performance": {
@@ -137,7 +137,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 21:29:50,368 - INFO - [HEARTBEAT] Price: $75,766.05",
+      "last_update": "2026-04-21 21:39:50,493 - INFO - [HEARTBEAT] Price: $75,230.80",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -152,9 +152,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 52.5,
-        "time": "2026-04-21 21:28:29,060"
+        "signal": "LONG",
+        "confidence": 50.4,
+        "time": "2026-04-21 21:38:33,439"
       },
       "open_position": null,
       "performance": {
@@ -200,7 +200,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 21:29:52,380 - INFO - [HEARTBEAT] Price: $75,766.05",
+      "last_update": "2026-04-21 21:39:52,497 - INFO - [HEARTBEAT] Price: $75,236.22",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -216,8 +216,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.9,
-        "time": "2026-04-21 21:29:13,460"
+        "confidence": 50.4,
+        "time": "2026-04-21 21:39:17,184"
       },
       "open_position": null,
       "performance": {
@@ -233,7 +233,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T21:30:01.422768",
+    "updated_at": "2026-04-21T21:40:01.848975",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -285,7 +285,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 30.4,
+        "age_minutes": 40.4,
         "is_fresh": true
       },
       "groq": {
@@ -336,7 +336,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 806.2,
+        "age_minutes": 816.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -353,7 +353,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 6435.0,
+        "age_minutes": 6445.0,
         "is_fresh": false
       }
     },
