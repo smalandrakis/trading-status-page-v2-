@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T19:40:01.530316",
+  "generated_at": "2026-04-21T19:50:01.597871",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T19:40:01.530330"
+    "last_health_check": "2026-04-21T19:50:01.597890"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 19:39:08,104",
+      "last_update": "2026-04-21 19:49:08,826",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 43.5,
-        "time": "2026-04-21 19:39:08,104"
+        "time": "2026-04-21 19:49:08,826"
       },
       "open_position": null,
       "performance": {
@@ -42,7 +42,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 19:39:14,307",
+      "last_update": "2026-04-21 19:49:13,560",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -53,9 +53,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 69.5,
-        "time": "2026-04-21 19:39:14,307"
+        "signal": "NEUTRAL",
+        "confidence": 63.5,
+        "time": "2026-04-21 19:49:13,560"
       },
       "open_position": {
         "direction": "SHORT",
@@ -137,7 +137,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 19:39:47,274 - INFO - [HEARTBEAT] Price: $75,569.53",
+      "last_update": "2026-04-21 19:49:47,429 - INFO - [HEARTBEAT] Price: $75,713.46",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -152,11 +152,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 52.3,
-        "time": "2026-04-21 19:39:06,886"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 75669.91,
+        "tp_price": 75291.56045,
+        "sl_price": 75783.41486500001,
+        "entry_time": "2026-04-21 19:47:38",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 1,
         "wins": 0,
@@ -179,7 +187,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 19:39:51,321 - INFO - [HEARTBEAT] Price: $75,578.19",
+      "last_update": "2026-04-21 19:49:51,458 - INFO - [HEARTBEAT] Price: $75,713.46",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -195,8 +203,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.1,
-        "time": "2026-04-21 19:38:40,959"
+        "confidence": 52.2,
+        "time": "2026-04-21 19:48:45,654"
       },
       "open_position": null,
       "performance": {
@@ -212,31 +220,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T19:40:02.033450",
+    "updated_at": "2026-04-21T19:50:02.163942",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.3827,
-        "confidence": 0.6375,
-        "bullish_pct": 0.2858,
-        "bearish_pct": 0.0457,
-        "neutral_pct": 0.6685,
+        "direction": "LONG",
+        "strength": 0.4658,
+        "confidence": 0.6764,
+        "bullish_pct": 0.5103,
+        "bearish_pct": 0.0445,
+        "neutral_pct": 0.4452,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5028,
+        "stance_shifts": 2,
+        "consensus_score": 0.2654,
         "key_arguments": {
           "bullish": [
-            "[GlassnodeGuru] Whale accumulation of 45,000 BTC remains a strong on-chain signal of supply tightening, supported by rising institutional rhetoric and military endorsement\u2014key markers of long-term confidence. However",
-            "[StackingSats] $75.9K is not a top\u2014it\u2019s a springboard. Whale accumulation of 45,000 BTC amid military validation and institutional silence is classic pre-halving stealth mode. Range-bound price? Yes. But every day s",
-            "[DiamondHands420] $75.9K is pure accumulation fuel \u2014 whales are loading up 45K BTC while U.S. military brass calls Bitcoin strategic infrastructure! Poland\u2019s MiCA fail and EU brain drain just prove America is winning t",
-            "[CryptoKaleo] The $75.9K print is a silent detonation \u2014 whales are clearing the float with 45K BTC absorbed while U.S. Pacific Command legitimates Bitcoin as national infrastructure. This isn\u2019t accumulation, it\u2019s *"
+            "[DeepPockets] Price holding near $75.2K on negative funding and steady Coinbase inflows confirms structural demand, not noise. I\u2019m anchoring to my cost basis below $74K and adding modestly via OTC, viewing the shor",
+            "[TrendRider] Price holding at $75.2K on negative funding rates with $517M Coinbase-driven volume and 45,000 BTC whale accumulation confirms strong structural demand. The trend is range-bound but building energy\u2014wh",
+            "[CryptoKaleo] We\u2019re not just holding \u2014 we\u2019re coiling. $75K is a launchpad now, not a floor, with 45K BTC whale accumulation, negative funding rates, and $517M Coinbase volume screaming institutional stealth bid. Th",
+            "[DiamondHands420] $75K IS HOLDING STRONG \u2014 DIAMOND HANDS ZONE CONFIRMED! Whales are STACKING 45K BTC, Pentagon admiral shilling Bitcoin, and Coinbase pumping $517M volume? This dip is a gift. Negative funding means sho",
+            "[FadeTheCrowd] Price hugging $75K on continued negative funding and fear (33) with whale accumulation now confirmed at 45K BTC and Coinbase inflows spiking is textbook pre-breakout conditions. Others see range-bound"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $76K is a magnet for suckers \u2014 every push higher on \"whale accumulation\" headlines ignores the 45,000 BTC could be old bags repositioning or even forced OTC dumps. V"
+            "[BearishBob] $75K holding isn\u2019t strength\u2014it\u2019s suppression. Whales \"accumulating\" while Core Scientific burns cash on AI is a joke; this is distribution in disguise. Negative funding + fake volume spikes = perfect "
           ]
         },
-        "timestamp": "2026-04-21T16:42:42.613301+00:00",
+        "timestamp": "2026-04-21T17:41:20.740968+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -253,17 +262,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 760.9,
+          "run_duration_sec": 678.4,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75932,
-            "change_24h": 0.71,
+            "price": 75289,
+            "change_24h": -0.67,
             "fear_greed": 33
           }
         },
-        "age_minutes": 57.3,
+        "age_minutes": 8.7,
         "is_fresh": true
       },
       "groq": {
@@ -314,7 +323,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 696.2,
+        "age_minutes": 706.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -331,7 +340,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 6325.0,
+        "age_minutes": 6335.0,
         "is_fresh": false
       }
     },
