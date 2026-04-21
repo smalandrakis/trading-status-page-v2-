@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T22:40:02.069968",
+  "generated_at": "2026-04-21T22:50:00.935037",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T22:40:02.069976"
+    "last_health_check": "2026-04-21T22:50:00.935049"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 22:39:08,443",
+      "last_update": "2026-04-21 22:49:08,635",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 48.5,
-        "time": "2026-04-21 22:39:08,443"
+        "confidence": 48.7,
+        "time": "2026-04-21 22:49:08,635"
       },
       "open_position": null,
       "performance": {
@@ -42,7 +42,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 22:39:14,265",
+      "last_update": "2026-04-21 22:49:14,023",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -54,8 +54,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.0,
-        "time": "2026-04-21 22:39:14,265"
+        "confidence": 51.3,
+        "time": "2026-04-21 22:49:14,023"
       },
       "open_position": {
         "direction": "SHORT",
@@ -137,7 +137,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 22:39:51,284 - INFO - [HEARTBEAT] Price: $75,745.13",
+      "last_update": "2026-04-21 22:49:51,459 - INFO - [HEARTBEAT] Price: $75,732.33",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -229,7 +229,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 22:39:53,252 - INFO - [HEARTBEAT] Price: $75,745.13",
+      "last_update": "2026-04-21 22:49:53,434 - INFO - [HEARTBEAT] Price: $75,732.32",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -245,8 +245,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.4,
-        "time": "2026-04-21 22:39:40,826"
+        "confidence": 52.3,
+        "time": "2026-04-21 22:49:44,903"
       },
       "open_position": null,
       "performance": {
@@ -262,31 +262,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T22:40:02.474554",
+    "updated_at": "2026-04-21T22:50:01.533084",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4326,
-        "confidence": 0.6592,
-        "bullish_pct": 0.2601,
-        "bearish_pct": 0.0471,
-        "neutral_pct": 0.6927,
+        "strength": 0.2488,
+        "confidence": 0.6678,
+        "bullish_pct": 0.3514,
+        "bearish_pct": 0.0484,
+        "neutral_pct": 0.6002,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5391,
+        "stance_shifts": 1,
+        "consensus_score": 0.4003,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] Love the fear in the market \u2014 33 on Fear & Greed is pure diamond-bottom energy! $75.8K holding strong, Kalshi and Polymarket launching perps is a narrative nuke, and Nium adopting USDC shows real-worl",
-            "[CryptoKaleo] The narrative is exploding \u2014 Kalshi and Polymarket launching perps isn\u2019t just innovation, it\u2019s cultural dominance. Regulatory heat on Coinbase and Gemini? Expected friction, not a fracture. Nium adopt",
-            "[StackingSats] Dip is a gift. $75.8K is nothing but a minor pullback in the upward march\u2014hash rate at all-time highs, stock-to-flow model still tracking, and exchange outflows confirm accumulation. $84K isn't a cap,",
-            "[FadeTheCrowd] Regulatory noise around Coinbase and Gemini is already priced in\u2014fear at 33 and fading Binance inflows confirm weak hands are shaken out. I'm adding below $76K, targeting $84K+ as ETF cost basis becom"
+            "[StackingSats] Dip into $74.9K was a gift\u2014halving cycle math still points to $100K+ in 2026. Regulatory noise from NY is just FUD; Bitcoin marches on. USDC adoption via Coinbase? More fuel for the rocket. Stacking s",
+            "[DiamondHands420] Love the consolidation at $75.7K \u2014 this is not a dip, it's a spring coiling for the next leg up! All this FUD from NY is just noise, same as always, while the real story is USDC going global with Nium",
+            "[FadeTheCrowd] Fear at 33 persists with Binance outflows confirming capitulation fatigue \u2014 regulatory FUD from NY is overblown and mirrors past crackdown theater. Nium\u2019s USDC integration via Coinbase adds quiet but ",
+            "[CryptoKaleo] We\u2019re in the final act of accumulation \u2014 $75.7K is a fortress, Binance inflows at 2023 lows scream whale stealth mode, and NY\u2019s attack on Coinbase/Gemini? Just another chapter in the state\u2019s losing wa",
+            "[DeepPockets] Price holding firm above $74.9K with Binance inflows at multi-year lows confirms weak hands are exhausted. I\u2019m adding to longs below $76K, targeting $84K\u2014ETF cost basis remains a magnet for institutio"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $84K ETF cost basis? That's not support \u2014 it's a magnet for distribution. Regulatory crackdowns aren't noise, they're the first domino. NY going after Coinbase and G"
+            "[BearishBob] Another fakeout range building toward $76.8K while the sheeple cheer \"accumulation.\" NY crackdown is just the tip of the spear \u2014 regulatory noose tightening, and $84K cap is a coffin nail, not a targe"
           ]
         },
-        "timestamp": "2026-04-21T19:45:36.705754+00:00",
+        "timestamp": "2026-04-21T20:49:04.675216+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -303,17 +304,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 935.0,
+          "run_duration_sec": 1142.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75834,
-            "change_24h": -0.5,
+            "price": 75744,
+            "change_24h": -0.82,
             "fear_greed": 33
           }
         },
-        "age_minutes": 54.4,
+        "age_minutes": 0.9,
         "is_fresh": true
       },
       "groq": {
@@ -364,7 +365,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 876.2,
+        "age_minutes": 886.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -381,7 +382,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 6505.0,
+        "age_minutes": 6515.0,
         "is_fresh": false
       }
     },
