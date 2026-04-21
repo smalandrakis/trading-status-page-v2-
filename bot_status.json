@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T06:30:01.310260",
+  "generated_at": "2026-04-21T06:40:01.623598",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T06:30:01.310277"
+    "last_health_check": "2026-04-21T06:40:01.623608"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 06:29:09,050",
+      "last_update": "2026-04-21 06:39:08,634",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 34.5,
-        "time": "2026-04-21 06:29:09,050"
+        "time": "2026-04-21 06:39:08,634"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 06:29:15,799",
+      "last_update": "2026-04-21 06:39:15,049",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 75.1,
-        "time": "2026-04-21 06:29:15,799"
+        "confidence": 83.7,
+        "time": "2026-04-21 06:39:15,049"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 06:29:58,337 - INFO - [HEARTBEAT] Price: $75,630.58",
+      "last_update": "2026-04-21 06:39:58,493 - INFO - [HEARTBEAT] Price: $75,533.08",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -224,8 +224,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 50.8,
-        "time": "2026-04-21 06:28:37,109"
+        "confidence": 54.2,
+        "time": "2026-04-21 06:38:42,198"
       },
       "open_position": null,
       "performance": {
@@ -313,7 +313,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 06:29:58,836 - INFO - [HEARTBEAT] Price: $75,630.58",
+      "last_update": "2026-04-21 06:39:59,012 - INFO - [HEARTBEAT] Price: $75,533.08",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -329,8 +329,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.8,
-        "time": "2026-04-21 06:28:37,182"
+        "confidence": 54.2,
+        "time": "2026-04-21 06:38:42,215"
       },
       "open_position": null,
       "performance": {
@@ -354,31 +354,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T06:30:01.808472",
+    "updated_at": "2026-04-21T06:40:02.009211",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4027,
-        "confidence": 0.6294,
-        "bullish_pct": 0.2741,
-        "bearish_pct": 0.049,
-        "neutral_pct": 0.6768,
+        "strength": 0.4149,
+        "confidence": 0.6278,
+        "bullish_pct": 0.2672,
+        "bearish_pct": 0.0507,
+        "neutral_pct": 0.6821,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5153,
+        "consensus_score": 0.5232,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $75.7K is a gift amid geopolitical fire and oil volatility\u2014Bitcoin is the ultimate bearer asset. NYDIG acquiring smelters and Lowery\u2019s strategic Pentagon role confirm state-level recognition of Bitcoi",
-            "[CryptoKaleo] Iran tensions are escalating, oil is jittery, and the Pentagon just placed a Bitcoin strategist in Indo-Pacific Command \u2014 this isn\u2019t noise, it\u2019s signal. NYDIG\u2019s smelter acquisition proves energy-bound",
-            "[FadeTheCrowd] Price holding $75.7K on subdued volume amid Fear & Greed at 33 fits the late-stage accumulation pattern\u2014we\u2019re coiling beneath $76.5K resistance as geopolitical stress and strategic mining moves (NYDIG",
-            "[DiamondHands420] Iran tensions spiking, oil on edge, and now NYDIG locking in strategic energy assets with the Alcoa smelter play? This is not hype\u2014this is hard infrastructure being built while the weak hands panic at"
+            "[FadeTheCrowd] Price grinding near $76.5K on weak volume with Fear & Greed still at 33 \u2014 classic late-stage capitulation zone. Geopolitical noise and mining adoption (Alcoa, Lowery) aren\u2019t priced in yet, and lack of",
+            "[CryptoKaleo] We\u2019re not just retesting resistance\u2014$76.5K is now a narrative ignition point. Iran tensions, Alcoa\u2019s smelter pivot to BTC mining, and Lowery embedded in Indo-Pacific Command? This isn\u2019t speculation, i",
+            "[DiamondHands420] Lads, we\u2019re *right there* \u2014 $76.5K is not resistance anymore, it\u2019s launchpad! Iran heating up, oil spiking, Alcoa\u2019s smelter going full BTC, and now Lowery embedded in Indo-Pacific Command? This is *st",
+            "[StackingSats] Every dip to $74K was a gift, and this retest of $76.5K on geopolitics, energy volatility, and *real* industrial repurposing\u2014Alcoa\u2019s smelter flipping to BTC mining, Lowery in Indo-Pacific Command\u2014is n"
           ],
           "bearish": [
-            "[BearishBob] Another retest of $76.5K on weak volume \u2014 same script as every time since the ATH. Institutions are using geopolitical noise and hype around NYDIG, Lowery, and smelter deals to distribute to retail. $"
+            "[BearishBob] Another retest of $76.5K on weak volume, fear-driven F&G, and geopolitical noise\u2014exactly how bear traps spring. All this narrative heat (Iran, Alcoa, Lowery) is distraction; real demand would show in "
           ]
         },
-        "timestamp": "2026-04-21T02:37:06.735774+00:00",
+        "timestamp": "2026-04-21T03:38:29.232087+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -395,17 +395,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 424.4,
+          "run_duration_sec": 507.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75766,
-            "change_24h": 1.73,
+            "price": 75649,
+            "change_24h": 1.47,
             "fear_greed": 33
           }
         },
-        "age_minutes": 52.9,
+        "age_minutes": 1.5,
         "is_fresh": true
       },
       "groq": {
@@ -455,7 +455,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 1286.2,
+        "age_minutes": 1296.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -472,7 +472,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 5475.0,
+        "age_minutes": 5485.0,
         "is_fresh": false
       }
     },
