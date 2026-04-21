@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-21T03:40:01.032461",
+  "generated_at": "2026-04-21T03:50:01.468714",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-21T03:40:01.032480"
+    "last_health_check": "2026-04-21T03:50:01.468735"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-21 03:39:08,121",
+      "last_update": "2026-04-21 03:49:08,560",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 25.7,
-        "time": "2026-04-21 03:39:08,121"
+        "confidence": 25.8,
+        "time": "2026-04-21 03:49:08,560"
       },
       "open_position": null,
       "performance": {
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-21 03:39:13,312",
+      "last_update": "2026-04-21 03:49:13,735",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 64.6,
-        "time": "2026-04-21 03:39:13,312"
+        "signal": "LONG",
+        "confidence": 73.6,
+        "time": "2026-04-21 03:49:13,664"
       },
       "open_position": {
         "direction": "SHORT",
@@ -208,7 +208,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 03:39:55,522 - INFO - [HEARTBEAT] Price: $75,946.69",
+      "last_update": "2026-04-21 03:49:55,688 - INFO - [HEARTBEAT] Price: $76,026.78",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -224,8 +224,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 59.1,
-        "time": "2026-04-21 03:39:17,989"
+        "confidence": 53.7,
+        "time": "2026-04-21 03:49:22,898"
       },
       "open_position": null,
       "performance": {
@@ -299,7 +299,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-21 03:39:56,007 - INFO - [HEARTBEAT] Price: $75,946.69",
+      "last_update": "2026-04-21 03:49:56,174 - INFO - [HEARTBEAT] Price: $76,026.78",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -315,8 +315,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.4,
-        "time": "2026-04-21 03:39:10,183"
+        "confidence": 53.7,
+        "time": "2026-04-21 03:49:15,328"
       },
       "open_position": null,
       "performance": {
@@ -340,33 +340,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-21T03:40:01.463739",
+    "updated_at": "2026-04-21T03:50:01.908485",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3305,
-        "confidence": 0.6514,
-        "bullish_pct": 0.269,
-        "bearish_pct": 0.1315,
-        "neutral_pct": 0.5995,
+        "strength": 0.4505,
+        "confidence": 0.6258,
+        "bullish_pct": 0.2511,
+        "bearish_pct": 0.0473,
+        "neutral_pct": 0.7016,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.3993,
+        "stance_shifts": 0,
+        "consensus_score": 0.5524,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] This retest at $76.5K on low volume isn\u2019t weakness\u2014it\u2019s stealth accumulation while the weak hands fret over Iran, oil, and John Oliver. The Alcoa smelter deal with NYDIG is symbolic: legacy infrastruc",
-            "[DiamondHands420] Love this! Weak hands are scared by fakeouts but I'm loading up \u2014 $76.5K hold with Iran chaos & oil spiking is strength. CT influencers and Reddit are buzzing about Alcoa x NYDIG being a mega-bullish ",
-            "[StackingSats] $75.6K hold on low volume amid geopolitical chaos and oil volatility is another textbook accumulation phase \u2014 Iran tensions and Alcoa repurposing a smelter for mining confirm Bitcoin\u2019s macro hedge nar",
-            "[FadeTheCrowd] Price holding near $76K on weak volume and fading geopolitical fear is classic late-stage capitulation. Fear & Greed still at 29, no real institutional conviction yet, and the failed $76.5K retest ali"
+            "[DiamondHands420] We\u2019re coiling like a spring at $76.5K\u2014same resistance, sure, but this time it\u2019s different: Iran chaos, oil jitters, AND Alcoa flipping a smelter? This is institutional-grade adoption meeting macro ins",
+            "[FadeTheCrowd] We\u2019re once again knocking on the door of $76.5K with weak volume and a Fear & Greed reading of 33 \u2014 classic \u201csell the news\u201d behavior. Iran tensions and smelter-to-mining headlines are just narrative d",
+            "[StackingSats] $75.8K to $76.5K? Just another lap in the accumulation phase\u2014weak volume is irrelevant, this is *smart money* absorbing offers before the halving-powered run to $120K. Iran tensions, oil volatility, a",
+            "[CryptoKaleo] Iran tensions, oil volatility, Alcoa flipping a smelter to bitcoin mining, *and* Jason Lowery embedded in Indo-Pacific Command? This isn't just narrative \u2014 it's convergence. The smart money is loading"
           ],
           "bearish": [
-            "[BearishBob] Another fake retest at $76.5K on weak volume\u2014same script as last month. Geopolitical fear porn and mining hype are paper-thin excuses to pump and dump; institutions aren't biting, on-chain shows no ac",
-            "[AlphaQuant] Price retesting $76,500 on declining volume again\u2014now three failed attempts\u2014confirms distribution. Geopolitical noise (Iran, oil) fails to trigger sustained bid, and mining-related headlines (Alcoa/NY",
-            "[DeltaNeutral] Price retesting $76.5K on weak volume into negative gamma structure confirms lack of institutional bid\u2014geopolitical noise and mining headlines don\u2019t offset weak flow signals. OI buildup remains short-"
+            "[BearishBob] Another retest of $76.5K on smoke and mirrors \u2014 Iran headlines are old news, mining hype is fully priced in, and volume is still pathetic relative to the move. Every dip gets bought, but institutions "
           ]
         },
-        "timestamp": "2026-04-20T23:36:59.580970+00:00",
+        "timestamp": "2026-04-21T00:41:41.792173+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -383,17 +381,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 417.3,
+          "run_duration_sec": 700.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75693,
-            "change_24h": 2.39,
-            "fear_greed": 29
+            "price": 75866,
+            "change_24h": 2.17,
+            "fear_greed": 33
           }
         },
-        "age_minutes": 63.0,
+        "age_minutes": 8.3,
         "is_fresh": true
       },
       "groq": {
@@ -443,7 +441,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 1116.2,
+        "age_minutes": 1126.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -460,7 +458,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 5305.0,
+        "age_minutes": 5315.0,
         "is_fresh": false
       }
     },
