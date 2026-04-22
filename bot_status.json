@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T16:50:01.767809",
+  "generated_at": "2026-04-22T17:00:03.006965",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T16:50:01.767820"
+    "last_health_check": "2026-04-22T17:00:03.006977"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 16:49:50,634",
+      "last_update": "2026-04-22 16:59:08,388",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 40.4,
-        "time": "2026-04-22 16:49:50,634"
+        "confidence": 41.4,
+        "time": "2026-04-22 16:59:08,388"
       },
       "open_position": null,
       "performance": {
@@ -45,12 +45,12 @@
           "hold_minutes": 0
         }
       ],
-      "health_status": "WARNING"
+      "health_status": "HEALTHY"
     },
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 16:49:51,573",
+      "last_update": "2026-04-22 16:59:13,122",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,8 +62,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.5,
-        "time": "2026-04-22 16:49:51,573"
+        "confidence": 59.5,
+        "time": "2026-04-22 16:59:13,122"
       },
       "open_position": {
         "direction": "LONG",
@@ -140,12 +140,12 @@
           "hold_minutes": 50.0
         }
       ],
-      "health_status": "WARNING"
+      "health_status": "HEALTHY"
     },
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 16:49:46,811 - INFO - [HEARTBEAT] Price: $78,852.66",
+      "last_update": "2026-04-22 17:00:03,334 - INFO -   LONG",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -160,105 +160,34 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 50.4,
+        "time": "2026-04-22 16:59:51,217"
       },
       "open_position": {
-        "direction": "SHORT",
+        "direction": "LONG",
         "size": 3,
-        "entry_price": 78906.94,
-        "tp_price": 78512.4053,
-        "sl_price": 79025.30041000001,
-        "entry_time": "2026-04-22 16:30:35",
+        "entry_price": 79054.0,
+        "tp_price": 79449.26999999999,
+        "sl_price": 78935.41900000001,
+        "entry_time": "2026-04-22 16:59:51",
         "adopted": false
       },
       "performance": {
-        "total_trades": 38,
-        "wins": 7,
-        "losses": 31,
-        "win_rate": 18.4,
-        "total_pnl": -311.24,
-        "avg_pnl": -8.19
+        "total_trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate": 0,
+        "total_pnl": 0,
+        "avg_pnl": 0
       },
-      "recent_trades": [
-        {
-          "time": "2026-04-22T11:53:22.163439",
-          "direction": "LONG",
-          "pnl": -36.13,
-          "pnl_pct": -0.15,
-          "hold_minutes": 10.0
-        },
-        {
-          "time": "2026-04-22T14:02:37.337512",
-          "direction": "SHORT",
-          "pnl": -37.36,
-          "pnl_pct": -0.16,
-          "hold_minutes": 26.0
-        },
-        {
-          "time": "2026-04-22T14:11:23.069478",
-          "direction": "SHORT",
-          "pnl": -37.94,
-          "pnl_pct": -0.16,
-          "hold_minutes": 5.0
-        },
-        {
-          "time": "2026-04-22T15:31:23.064060",
-          "direction": "SHORT",
-          "pnl": -36.39,
-          "pnl_pct": -0.15,
-          "hold_minutes": 73.0
-        },
-        {
-          "time": "2026-04-22T15:41:25.686691",
-          "direction": "SHORT",
-          "pnl": -38.46,
-          "pnl_pct": -0.16,
-          "hold_minutes": 9.0
-        },
-        {
-          "time": "2026-04-22T15:50:12.706391",
-          "direction": "SHORT",
-          "pnl": -36.99,
-          "pnl_pct": -0.16,
-          "hold_minutes": 2.0
-        },
-        {
-          "time": "2026-04-22T15:52:30.800376",
-          "direction": "SHORT",
-          "pnl": -38.24,
-          "pnl_pct": -0.16,
-          "hold_minutes": 2.0
-        },
-        {
-          "time": "2026-04-22T16:10:47.706768",
-          "direction": "SHORT",
-          "pnl": -37.57,
-          "pnl_pct": -0.16,
-          "hold_minutes": 5.0
-        },
-        {
-          "time": "2026-04-22T16:22:31.246177",
-          "direction": "SHORT",
-          "pnl": -41.15,
-          "pnl_pct": -0.17,
-          "hold_minutes": 6.0
-        },
-        {
-          "time": "2026-04-22T16:30:21.133589",
-          "direction": "LONG",
-          "pnl": -40.32,
-          "pnl_pct": -0.17,
-          "hold_minutes": 8.0
-        }
-      ],
+      "recent_trades": [],
       "health_status": "UNKNOWN"
     },
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 16:49:52,323 - INFO - [HEARTBEAT] Price: $78,883.77",
+      "last_update": "2026-04-22 17:00:03",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -277,97 +206,47 @@
         "confidence": 0,
         "time": null
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 3,
-        "entry_price": 78807.88,
-        "tp_price": 79201.9194,
-        "sl_price": 78689.66818000001,
-        "entry_time": "2026-04-22 16:47:34",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 6,
+        "total_trades": 0,
         "wins": 0,
-        "losses": 6,
-        "win_rate": 0.0,
-        "total_pnl": -241.13,
-        "avg_pnl": -40.19
+        "losses": 0,
+        "win_rate": 0,
+        "total_pnl": 0,
+        "avg_pnl": 0
       },
-      "recent_trades": [
-        {
-          "time": "2026-04-22T14:11:22.102485",
-          "direction": "SHORT",
-          "pnl": -38.72,
-          "pnl_pct": -0.16,
-          "hold_minutes": 5.0
-        },
-        {
-          "time": "2026-04-22T15:31:41.529350",
-          "direction": "SHORT",
-          "pnl": -54.85,
-          "pnl_pct": -0.23,
-          "hold_minutes": 5.0
-        },
-        {
-          "time": "2026-04-22T15:41:25.671916",
-          "direction": "SHORT",
-          "pnl": -35.61,
-          "pnl_pct": -0.15,
-          "hold_minutes": 9.0
-        },
-        {
-          "time": "2026-04-22T15:50:06.691714",
-          "direction": "SHORT",
-          "pnl": -36.42,
-          "pnl_pct": -0.15,
-          "hold_minutes": 1.0
-        },
-        {
-          "time": "2026-04-22T16:10:44.415197",
-          "direction": "SHORT",
-          "pnl": -36.17,
-          "pnl_pct": -0.15,
-          "hold_minutes": 4.0
-        },
-        {
-          "time": "2026-04-22T16:22:32.636925",
-          "direction": "SHORT",
-          "pnl": -39.36,
-          "pnl_pct": -0.17,
-          "hold_minutes": 6.0
-        }
-      ],
+      "recent_trades": [],
       "health_status": "UNKNOWN"
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T16:50:02.340481",
+    "updated_at": "2026-04-22T17:00:03.831893",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.4273,
-        "confidence": 0.6286,
-        "bullish_pct": 0.2198,
-        "bearish_pct": 0.1331,
-        "neutral_pct": 0.6471,
+        "direction": "LONG",
+        "strength": 0.399,
+        "confidence": 0.6919,
+        "bullish_pct": 0.4835,
+        "bearish_pct": 0.0846,
+        "neutral_pct": 0.4319,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.4706,
+        "consensus_score": 0.2253,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We're vibrating at the edge of explosion \u2014 $78.5K is just a pause, not a peak. The SEC's tokenized securities pivot is a *massive* institutional onramp narrative, and markets are shrugging off Kelp DA",
-            "[TrendRider] Price is grinding toward $80K on solid volume, and the Bollinger Bands call for a \"powerful move\" \u2014 I respect that. RSI is creeping up but not yet overbought, and we're seeing follow-through after cle",
-            "[StackingSats] $78.5K is a discount bin price with the halving\u2019s supply shock still reverberating. Every dip near $75K gets bought\u2014hash rate is at all-time highs, ETF inflows are steady, and the Kelp DAO exploit is ",
-            "[DiamondHands420] $78.5K is a total steal\u2014ETF flows are strong, halving supply shock is still pumping, and that Bollinger Bands \"powerful move\" call is screaming $80K breakout any minute. All this FUD around North Kore"
+            "[FadeTheCrowd] Price action above $78K on strong volume amid DeFi panic and regulatory noise is textbook fear-driven accumulation. The Fear & Greed Index at 32 and MSTR\u2019s 25% surge confirm institutions are buying wh",
+            "[DeepPockets] Price holding above $78K on strong volume with MSTR surging 25% confirms institutional demand is absorbing panic-driven selling from DeFi and regulatory overhangs. OTC desks report consistent block bu",
+            "[DiamondHands420] MSTR up 25% again? That\u2019s not a fluke \u2014 that\u2019s the signal! Institutions are loading while everyone\u2019s distracted by DeFi exploits and MiCA FUD. $79K breakout with volume? We\u2019re printing a new range, ey",
+            "[StackingSats] Another dip absorbed, another signal ignored. $79K is just a number\u2014$76.8K held as support, volume confirms real demand, and MSTR\u2019s 25% surge is institutions stacking sats while fear mongers fixate on",
+            "[TrendRider] Price holding firm above $78K on strong volume with MSTR surging 25% confirms institutional accumulation amid retail fear (F&G: 32). DeFi outflows and regulatory noise are distractions\u2014the trend shows"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally into $80K. Every time we approach this level it's just slow drip accumulation for the next dump\u2014SEC \"progress\" is noise, and that $578M Kelp DAO hack shows the ecosystem is still",
-            "[FadeTheCrowd] Still hovering in fear territory (32 F&G) and failing to clear $80K\u2014now four attempts rejected. The market\u2019s ignoring Kelp DAO and North Korean heists like it did in 2021\u2019s melt-up, but without real c"
+            "[BearishBob] $79K is not a breakout\u2014it's a trap. MSTR pumping while DeFi implodes and North Korea steals $578M shows capital rotating into centralized, manipulated plays, not organic demand. Volume is a smokescree",
+            "[AlphaQuant] Price at $79.076K tests structural resistance with thin order book depth above and declining volatility, increasing risk of a false breakout despite elevated volume. MSTR\u2019s 25% surge reflects institut"
           ]
         },
-        "timestamp": "2026-04-22T13:46:54.856943+00:00",
+        "timestamp": "2026-04-22T14:52:57.661119+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -384,17 +263,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1012.1,
+          "run_duration_sec": 1375.7,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78467,
-            "change_24h": 3.17,
+            "price": 79076,
+            "change_24h": 3.85,
             "fear_greed": 32
           }
         },
-        "age_minutes": 63.1,
+        "age_minutes": 7.1,
         "is_fresh": true
       },
       "groq": {
@@ -443,7 +322,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 461.2,
+        "age_minutes": 471.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -460,7 +339,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 7595.0,
+        "age_minutes": 7605.0,
         "is_fresh": false
       }
     },
