@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T21:50:01.552707",
+  "generated_at": "2026-04-22T22:00:00.966921",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T21:50:01.552724"
+    "last_health_check": "2026-04-22T22:00:00.966935"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 21:49:08,240",
+      "last_update": "2026-04-22 21:59:08,834",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "LONG",
         "confidence": 48.8,
-        "time": "2026-04-22 21:49:08,240"
+        "time": "2026-04-22 21:59:08,834"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 21:49:16,099",
+      "last_update": "2026-04-22 21:59:13,604",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -61,9 +61,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 76.2,
-        "time": "2026-04-22 21:49:16,099"
+        "signal": "NEUTRAL",
+        "confidence": 51.9,
+        "time": "2026-04-22 21:59:13,604"
       },
       "open_position": {
         "direction": "SHORT",
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 21:49:34,580 - INFO - [HEARTBEAT] Price: $78,882.00",
+      "last_update": "2026-04-22 21:59:35,865 - INFO - [HEARTBEAT] Price: $78,879.42",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -161,8 +161,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 53.2,
-        "time": "2026-04-22 21:49:07,948"
+        "confidence": 54.5,
+        "time": "2026-04-22 21:59:10,679"
       },
       "open_position": null,
       "performance": {
@@ -201,7 +201,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 21:49:56,489 - INFO - [HEARTBEAT] Price: $78,884.20",
+      "last_update": "2026-04-22 21:59:56,581 - INFO - [HEARTBEAT] Price: $78,843.19",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -217,8 +217,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.2,
-        "time": "2026-04-22 21:49:24,482"
+        "confidence": 50.3,
+        "time": "2026-04-22 21:59:27,857"
       },
       "open_position": null,
       "performance": {
@@ -242,34 +242,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T21:50:02.118095",
+    "updated_at": "2026-04-22T22:00:01.479770",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1092,
-        "confidence": 0.6608,
-        "bullish_pct": 0.3642,
-        "bearish_pct": 0.1624,
-        "neutral_pct": 0.4734,
+        "strength": 0.4793,
+        "confidence": 0.6357,
+        "bullish_pct": 0.2366,
+        "bearish_pct": 0.0474,
+        "neutral_pct": 0.7159,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.2101,
+        "stance_shifts": 0,
+        "consensus_score": 0.5739,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $78,944 is accumulation in the final stretch before the 2028 halving. Every dip near $75K is a gift\u2014Sberbank entering, Kraken pushing tax clarity, and ABTC adding 11K miners prove institutional demand",
-            "[FadeTheCrowd] Price grinding toward $80K on fear (32) while institutions edge closer to participation\u2014Sberbank, Kraken, ABTC miners\u2014all building quietly. Lack of euphoria and modest volume keeps the trap well-set; ",
-            "[CryptoKaleo] $78,944? This is just a pit stop. The $80K level isn\u2019t a ceiling\u2014it\u2019s a narrative catalyst. Sberbank going live, Kraken nuking tax friction, and ABTC flooding the network with 11K miners? That\u2019s not n",
-            "[DiamondHands420] We\u2019re LITERALLY bouncing off $75K support AGAIN\u2014this is the same playbook as every dip! Sberbank going crypto, Kraken nuking tax hurdles, and ABTC spiking 11K miners ONLINE? That\u2019s FUEL for the $80K B",
-            "[GlassnodeGuru] Price resilience at $78.9K with repeated defense of $75K support remains constructive. On-chain, flat exchange netflows and stable SOPR confirm no distribution, while ABTC\u2019s 11K miner ramp signals lon"
+            "[CryptoKaleo] We\u2019re not just testing resistance \u2014 we\u2019re building a catalyst confluence. The U.S. Treasury pushing legislation, Kraken and Bitcoin Magazine weaponizing de minimis tax reform, and now Sberbank enterin",
+            "[StackingSats] Every dip remains a gift, and every regulatory headline\u2014whether tax clarity or Sberbank entering\u2014is merely catching up to Bitcoin\u2019s organic, halving-driven scarcity. $74.9k held as multi-cycle support",
+            "[DiamondHands420] We\u2019re *this close* to punching through $79.4K \u2014 that level isn\u2019t resistance, it\u2019s a psychological doorstep to the moon! With the U.S. Treasury pushing real legislation, Kraken and Bitcoin Magazine ral"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally into $80K\u2014classic bear trap forming. All this \"positive\" news (tax bills, Sberbank, Kraken) is just noise to distract from structural weakness: BTC can't even clear $80K on blow-",
-            "[AlphaQuant] Price at $78,944 shows repeated failure to clear $80K with declining relative volume, confirming resistance strength. Liquidity structure remains short gamma above $79.5K, increasing risk of a sweep-d",
-            "[DeltaNeutral] Price at $78,944 faces persistent resistance at $80K, where shallow bid depth and negative gamma exposure above $79.5K increase dealer hedging pressure. Despite supportive news flow, funding remains n"
+            "[BearishBob] Another rally into regulatory hallucinations\u2014$79.4k holds as unbreakable resistance, not a launchpad. All this de minimis tax chatter and Sberbank FOMO is just noise while real yields grind higher and"
           ]
         },
-        "timestamp": "2026-04-22T18:43:40.827450+00:00",
+        "timestamp": "2026-04-22T19:56:39.868980+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -286,17 +282,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 818.9,
+          "run_duration_sec": 1597.4,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 35,
           "market_data_summary": {
-            "price": 78944,
-            "change_24h": 4.67,
+            "price": 79027,
+            "change_24h": 4.24,
             "fear_greed": 32
           }
         },
-        "age_minutes": 66.4,
+        "age_minutes": 3.4,
         "is_fresh": true
       },
       "groq": {
@@ -345,7 +341,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 761.2,
+        "age_minutes": 771.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -362,7 +358,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 7895.0,
+        "age_minutes": 7905.0,
         "is_fresh": false
       }
     },
