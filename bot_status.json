@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T07:30:01.409154",
+  "generated_at": "2026-04-22T07:40:01.154550",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T07:30:01.409173"
+    "last_health_check": "2026-04-22T07:40:01.154572"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 07:29:08,110",
+      "last_update": "2026-04-22 07:39:09,234",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 47.0,
-        "time": "2026-04-22 07:29:08,110"
+        "confidence": 49.1,
+        "time": "2026-04-22 07:39:09,234"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 07:29:16,692",
+      "last_update": "2026-04-22 07:39:15,466",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -61,17 +61,17 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 72.4,
-        "time": "2026-04-22 07:29:16,692"
+        "signal": "NEUTRAL",
+        "confidence": 52.5,
+        "time": "2026-04-22 07:39:15,466"
       },
       "open_position": {
         "direction": "LONG",
         "size": 2,
-        "entry_price": 78274.5,
-        "tp_price": 79057.245,
-        "sl_price": 77883.1275,
-        "entry_time": "2026-04-22 07:29:16",
+        "entry_price": 78259.2,
+        "tp_price": 79041.792,
+        "sl_price": 77867.904,
+        "entry_time": "2026-04-22 07:34:17",
         "adopted": false
       },
       "performance": {
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 07:29:35,087 - INFO - [HEARTBEAT] Price: $78,258.00",
+      "last_update": "2026-04-22 07:39:35,238 - INFO - [HEARTBEAT] Price: $78,046.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -160,11 +160,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 52.0,
-        "time": "2026-04-22 07:28:24,312"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 78196.39,
+        "tp_price": 77805.40805,
+        "sl_price": 78313.68458500001,
+        "entry_time": "2026-04-22 07:32:55",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 26,
         "wins": 7,
@@ -250,7 +258,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 07:29:36,994 - INFO - [HEARTBEAT] Price: $78,257.99",
+      "last_update": "2026-04-22 07:39:37,135 - INFO - [HEARTBEAT] Price: $78,046.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -266,8 +274,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.9,
-        "time": "2026-04-22 07:28:55,872"
+        "confidence": 50.2,
+        "time": "2026-04-22 07:39:00,030"
       },
       "open_position": null,
       "performance": {
@@ -312,31 +320,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T07:30:02.185866",
+    "updated_at": "2026-04-22T07:40:01.796581",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4245,
-        "confidence": 0.6075,
-        "bullish_pct": 0.2636,
-        "bearish_pct": 0.0483,
-        "neutral_pct": 0.6881,
+        "strength": 0.4372,
+        "confidence": 0.6364,
+        "bullish_pct": 0.2556,
+        "bearish_pct": 0.0516,
+        "neutral_pct": 0.6928,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5322,
+        "stance_shifts": 1,
+        "consensus_score": 0.5392,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We\u2019re coiling like a spring at $77.5K\u2014$74.9K is now a battle-tested springboard, not a breaking point. RLUSD in MAS sandbox, DoorDash slamming stablecoins into payments, Kalshi prepping perps, and now",
-            "[DiamondHands420] $77.5K holding strong and we\u2019re *this close* to $80K \u2014 RLUSD in MAS sandbox, DoorDash slamming stablecoins into real-world payments, and now a US admiral fronting Bitcoin\u2019s PoW? This is 2017 energy al",
-            "[FadeTheCrowd] Price holding above $74.9K again with Fear & Greed stuck at 32 confirms this is a grinding accumulation phase. Retail is getting excited (DiamondHands420), but volume stays flat \u2014 that\u2019s not a flaw, i",
-            "[StackingSats] $77.5K is just noise \u2014 the real story is $74.9K holding as granite support, exactly where March 2026 bottomed. Every dip gets bought, and PoW endorsement by a US admiral proves Bitcoin's strategic val"
+            "[CryptoKaleo] $78.2K isn\u2019t a plateau\u2014it\u2019s a springboard. The Admiral\u2019s POW endorsement isn\u2019t just rhetoric, it\u2019s geopolitical validation, and Kalshi\u2019s perp futures move confirms regulated U.S. derivatives are accel",
+            "[DiamondHands420] $78.2K on strong volume with an Admiral blessing Bitcoin as national infrastructure? That\u2019s not just bullish\u2014that\u2019s a full military drill on $100K. RLUSD in MAS sandbox + Kalshi perps launching? Insti",
+            "[TrendRider] Price holds firm at $78.2K on strong volume, retesting the breakout zone with momentum building\u2014this is not distribution, it's consolidation ahead of the climb. The 20W MA convergence, military endors",
+            "[StackingSats] $78.2K is not resistance\u2014it\u2019s a structural buy zone with 38% discount to ATH while hash rate, institutional adoption, and geopolitical validation accelerate. The Admiral\u2019s POW endorsement and Kalshi\u2019s"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout into $77.5K on hype from stablecoin doodoo and admiral soundbites. Volume is weak, ATH is still $48K away, and institutions are quietly distributing\u2014this range is a bear trap for weak "
+            "[BearishBob] Another fakeout at $78.2K on hollow volume\u2014this \"accumulation\" narrative is pure fantasy. The Admiral\u2019s soundbite and Kalshi rumors are just noise to mask distribution; RLUSD is vaporware in a sandbox"
           ]
         },
-        "timestamp": "2026-04-22T04:39:12.823080+00:00",
+        "timestamp": "2026-04-22T05:38:33.864487+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -353,17 +361,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 549.9,
+          "run_duration_sec": 510.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77516,
-            "change_24h": 2.43,
+            "price": 78223,
+            "change_24h": 3.03,
             "fear_greed": 32
           }
         },
-        "age_minutes": 50.8,
+        "age_minutes": 1.5,
         "is_fresh": true
       },
       "groq": {
@@ -414,7 +422,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 1406.2,
+        "age_minutes": 1416.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -431,7 +439,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 7035.0,
+        "age_minutes": 7045.0,
         "is_fresh": false
       }
     },
