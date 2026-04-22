@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T22:40:00.715744",
+  "generated_at": "2026-04-22T22:50:01.117760",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T22:40:00.715761"
+    "last_health_check": "2026-04-22T22:50:01.117778"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 22:39:09,070",
+      "last_update": "2026-04-22 22:49:10,073",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 55.4,
-        "time": "2026-04-22 22:39:09,070"
+        "confidence": 55.2,
+        "time": "2026-04-22 22:49:10,073"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 22:39:13,850",
+      "last_update": "2026-04-22 22:49:16,118",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,16 +62,16 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 81.3,
-        "time": "2026-04-22 22:39:13,850"
+        "confidence": 82.9,
+        "time": "2026-04-22 22:49:16,118"
       },
       "open_position": {
         "direction": "SHORT",
         "size": 4,
-        "entry_price": 78586.82,
-        "tp_price": 77800.95180000001,
-        "sl_price": 78979.7541,
-        "entry_time": "2026-04-22 22:27:15",
+        "entry_price": 78502.23,
+        "tp_price": 77717.2077,
+        "sl_price": 78894.74114999999,
+        "entry_time": "2026-04-22 22:49:15",
         "adopted": false
       },
       "performance": {
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 22:39:41,368 - INFO - [HEARTBEAT] Price: $78,522.81",
+      "last_update": "2026-04-22 22:49:42,677 - INFO - [HEARTBEAT] Price: $78,495.85",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -161,8 +161,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 52.1,
-        "time": "2026-04-22 22:39:23,139"
+        "confidence": 51.2,
+        "time": "2026-04-22 22:49:25,931"
       },
       "open_position": null,
       "performance": {
@@ -201,7 +201,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 22:39:56,989 - INFO - [HEARTBEAT] Price: $78,522.80",
+      "last_update": "2026-04-22 22:49:57,085 - INFO - [HEARTBEAT] Price: $78,495.84",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -217,8 +217,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.1,
-        "time": "2026-04-22 22:39:41,600"
+        "confidence": 51.2,
+        "time": "2026-04-22 22:49:44,649"
       },
       "open_position": null,
       "performance": {
@@ -242,30 +242,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T22:40:01.249710",
+    "updated_at": "2026-04-22T22:50:01.623148",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4793,
-        "confidence": 0.6357,
-        "bullish_pct": 0.2366,
-        "bearish_pct": 0.0474,
-        "neutral_pct": 0.7159,
+        "strength": 0.4093,
+        "confidence": 0.6681,
+        "bullish_pct": 0.2715,
+        "bearish_pct": 0.0476,
+        "neutral_pct": 0.6809,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5739,
+        "consensus_score": 0.5213,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We\u2019re not just testing resistance \u2014 we\u2019re building a catalyst confluence. The U.S. Treasury pushing legislation, Kraken and Bitcoin Magazine weaponizing de minimis tax reform, and now Sberbank enterin",
-            "[StackingSats] Every dip remains a gift, and every regulatory headline\u2014whether tax clarity or Sberbank entering\u2014is merely catching up to Bitcoin\u2019s organic, halving-driven scarcity. $74.9k held as multi-cycle support",
-            "[DiamondHands420] We\u2019re *this close* to punching through $79.4K \u2014 that level isn\u2019t resistance, it\u2019s a psychological doorstep to the moon! With the U.S. Treasury pushing real legislation, Kraken and Bitcoin Magazine ral"
+            "[StackingSats] Every dip to $75.3K is sacred\u2014this range is now institutional floor, not just technical support. The FBI ending its war on Bitcoin, the military running nodes, and the Treasury pushing legislation con",
+            "[DiamondHands420] We\u2019re bouncing hard off $75.3K again\u2014this isn\u2019t luck, it\u2019s institutional floor! FBI ending the war, military running nodes, Treasury pushing legislation\u2026 this is coordinated adoption. $79.4K breaks so",
+            "[CryptoKaleo] This isn't just hype\u2014this is regime change. The FBI ending its war on Bitcoin, the military running nodes, and the Treasury pushing legislation isn't coincidence, it's coordination. $75.3K is the new ",
+            "[FadeTheCrowd] Price grinds higher amid deep fear (32) and stalled momentum at $79.4K\u2014classic late-stage accumulation. The institutional narrative wave (FBI, military, Treasury) is strong, but not yet reflected in p"
           ],
           "bearish": [
-            "[BearishBob] Another rally into regulatory hallucinations\u2014$79.4k holds as unbreakable resistance, not a launchpad. All this de minimis tax chatter and Sberbank FOMO is just noise while real yields grind higher and"
+            "[BearishBob] Another fakeout waiting to happen. $79.4K has held firm as resistance, and every push higher on volume gets sold\u2014classic distribution. All this FBI and military node hype is noise to distract from the"
           ]
         },
-        "timestamp": "2026-04-22T19:56:39.868980+00:00",
+        "timestamp": "2026-04-22T20:44:38.045192+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -282,17 +283,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1597.4,
+          "run_duration_sec": 875.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 79027,
-            "change_24h": 4.24,
+            "price": 78608,
+            "change_24h": 3.81,
             "fear_greed": 32
           }
         },
-        "age_minutes": 43.4,
+        "age_minutes": 5.4,
         "is_fresh": true
       },
       "groq": {
@@ -341,7 +342,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 811.2,
+        "age_minutes": 821.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -358,7 +359,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 7945.0,
+        "age_minutes": 7955.0,
         "is_fresh": false
       }
     },
