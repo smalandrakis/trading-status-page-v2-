@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T11:50:01.654720",
+  "generated_at": "2026-04-22T12:00:01.128222",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T11:50:01.654737"
+    "last_health_check": "2026-04-22T12:00:01.128238"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 11:49:08,245",
+      "last_update": "2026-04-22 11:59:08,036",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 38.6,
-        "time": "2026-04-22 11:49:08,245"
+        "time": "2026-04-22 11:59:08,036"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 11:49:14,590",
+      "last_update": "2026-04-22 11:59:12,938",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -61,9 +61,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 78.8,
-        "time": "2026-04-22 11:49:14,590"
+        "signal": "NEUTRAL",
+        "confidence": 52.5,
+        "time": "2026-04-22 11:59:12,938"
       },
       "open_position": {
         "direction": "LONG",
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 11:49:48,675 - INFO - [HEARTBEAT] Price: $78,108.11",
+      "last_update": "2026-04-22 11:59:48,762 - INFO - [HEARTBEAT] Price: $78,024.49",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -160,35 +160,20 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 53.6,
+        "time": "2026-04-22 11:59:26,509"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 3,
-        "entry_price": 78151.13,
-        "tp_price": 78541.88565,
-        "sl_price": 78033.90330500001,
-        "entry_time": "2026-04-22 11:43:49",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 28,
+        "total_trades": 29,
         "wins": 7,
-        "losses": 21,
-        "win_rate": 25.0,
-        "total_pnl": 69.3,
-        "avg_pnl": 2.48
+        "losses": 22,
+        "win_rate": 24.1,
+        "total_pnl": 33.17,
+        "avg_pnl": 1.14
       },
       "recent_trades": [
-        {
-          "time": "2026-04-22T05:16:24.529204",
-          "direction": "LONG",
-          "pnl": -35.45,
-          "pnl_pct": -0.15,
-          "hold_minutes": 7.0
-        },
         {
           "time": "2026-04-22T05:26:21.172218",
           "direction": "SHORT",
@@ -251,6 +236,13 @@
           "pnl": -6.45,
           "pnl_pct": -0.03,
           "hold_minutes": 240.0
+        },
+        {
+          "time": "2026-04-22T11:53:22.163439",
+          "direction": "LONG",
+          "pnl": -36.13,
+          "pnl_pct": -0.15,
+          "hold_minutes": 10.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -258,7 +250,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 11:50:02",
+      "last_update": "2026-04-22 12:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -274,8 +266,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.4,
-        "time": "2026-04-22 11:49:51,346"
+        "confidence": 51.9,
+        "time": "2026-04-22 11:59:54,822"
       },
       "open_position": null,
       "performance": {
@@ -320,30 +312,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T11:50:02.258351",
+    "updated_at": "2026-04-22T12:00:01.639438",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4845,
-        "confidence": 0.6276,
-        "bullish_pct": 0.2319,
-        "bearish_pct": 0.0516,
-        "neutral_pct": 0.7165,
+        "strength": 0.418,
+        "confidence": 0.6347,
+        "bullish_pct": 0.2659,
+        "bearish_pct": 0.0501,
+        "neutral_pct": 0.6839,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.5747,
+        "stance_shifts": 0,
+        "consensus_score": 0.5259,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $78K holding strong\u2014yet again\u2014proving this is accumulation territory. Weak hands keep fearing $74.9K breaks, but the halving supply shock is already priced in, and adoption via regulated perps on Kals",
-            "[FadeTheCrowd] Price retesting $78.2K on modest volume doesn\u2019t faze me\u2014the Fear & Greed still at 32 confirms apathy, not euphoria, and $74.9K holding twice is a tell: weak hands are being shaken out, not breaking. I",
-            "[CryptoKaleo] $78K holding firm AGAIN is no coincidence \u2014 this is institutional-grade accumulation while the media screams \"bull trap.\" The Kalshi and Polymarket perp launches are catalytic: regulated, cash-settled"
+            "[DiamondHands420] $78K hold is holding firm and we\u2019re spring loading again\u2014Kalshi launching BTC perpetuals is a massive narrative catalyst, just like my CT and YouTube gurus are saying. Every retest at $78.2K shakes ou",
+            "[StackingSats] $78K is just another pit stop\u2014$75K remains unbreakable support and every retest of $78.2K weakens the bears. The hash rate is at all-time highs, on-chain fundamentals are strong, and Kalshi launching ",
+            "[FadeTheCrowd] Price holding $75K through multiple tests remains a silent signal of institutional support, while the failed $78.2K breakouts on weak volume reflect absence of retail FOMO\u2014exactly the environment I wa",
+            "[CryptoKaleo] We're coiling at $78.2K \u2014 the same level that crushed weak hands last cycle. Kalshi and Polymarket launching perpetuals isn't just hype, it's a *narrative explosion* primed to ignite retail FOMO, and "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally to $78K on thin volume\u2014typical bull trap. The market\u2019s ignoring macro rot: DXY still elevated, real yields stagnant, and on-chain data shows HODLers quietly dumping. This \"accumu"
+            "[BearishBob] Another retest at $78.2K on weak volume\u2014same script, different day. This \"support\" at $75K is just a liquidity magnet for late buyers before the next leg down, and all this Kalshi/perpetuals noise is "
           ]
         },
-        "timestamp": "2026-04-22T08:58:28.669758+00:00",
+        "timestamp": "2026-04-22T09:51:21.656508+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -360,17 +353,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1706.9,
+          "run_duration_sec": 1279.7,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 33,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 78055,
-            "change_24h": 2.2,
+            "price": 78094,
+            "change_24h": 2.33,
             "fear_greed": 32
           }
         },
-        "age_minutes": 51.6,
+        "age_minutes": 8.7,
         "is_fresh": true
       },
       "groq": {
@@ -419,7 +412,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 161.2,
+        "age_minutes": 171.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -436,7 +429,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 7295.0,
+        "age_minutes": 7305.0,
         "is_fresh": false
       }
     },
