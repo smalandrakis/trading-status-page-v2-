@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T14:30:00.924654",
+  "generated_at": "2026-04-22T14:40:02.157182",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T14:30:00.924672"
+    "last_health_check": "2026-04-22T14:40:02.157196"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 14:29:08,646",
+      "last_update": "2026-04-22 14:39:09,466",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 38.5,
-        "time": "2026-04-22 14:29:08,646"
+        "time": "2026-04-22 14:39:09,466"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 14:29:13,862",
+      "last_update": "2026-04-22 14:39:13,237",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,8 +62,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.2,
-        "time": "2026-04-22 14:29:13,862"
+        "confidence": 55.4,
+        "time": "2026-04-22 14:39:13,237"
       },
       "open_position": {
         "direction": "LONG",
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 14:29:46,498 - INFO - [HEARTBEAT] Price: $78,193.68",
+      "last_update": "2026-04-22 14:39:46,597 - INFO - [HEARTBEAT] Price: $78,224.20",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -258,7 +258,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 14:29:51,990 - INFO - [HEARTBEAT] Price: $78,185.36",
+      "last_update": "2026-04-22 14:39:52,104 - INFO - [HEARTBEAT] Price: $78,219.50",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -274,8 +274,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.7,
-        "time": "2026-04-22 14:29:29,211"
+        "confidence": 52.6,
+        "time": "2026-04-22 14:39:32,150"
       },
       "open_position": null,
       "performance": {
@@ -299,7 +299,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T14:30:01.606095",
+    "updated_at": "2026-04-22T14:40:02.762837",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -349,7 +349,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 39.9,
+        "age_minutes": 49.9,
         "is_fresh": true
       },
       "groq": {
@@ -398,7 +398,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 321.2,
+        "age_minutes": 331.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -415,7 +415,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 7455.0,
+        "age_minutes": 7465.0,
         "is_fresh": false
       }
     },
