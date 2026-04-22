@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T10:50:00.984607",
+  "generated_at": "2026-04-22T11:00:02.008496",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T10:50:00.984632"
+    "last_health_check": "2026-04-22T11:00:02.008527"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 10:49:07,325",
+      "last_update": "2026-04-22 10:59:07,716",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 45.0,
-        "time": "2026-04-22 10:49:07,325"
+        "confidence": 42.2,
+        "time": "2026-04-22 10:59:07,716"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 10:49:13,260",
+      "last_update": "2026-04-22 10:59:13,954",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -61,9 +61,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 52.9,
-        "time": "2026-04-22 10:49:13,260"
+        "signal": "LONG",
+        "confidence": 74.9,
+        "time": "2026-04-22 10:59:13,953"
       },
       "open_position": {
         "direction": "LONG",
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 10:49:48,169 - INFO - [HEARTBEAT] Price: $77,978.96",
+      "last_update": "2026-04-22 10:59:48,245 - INFO - [HEARTBEAT] Price: $78,063.18",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -258,7 +258,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 10:49:50,497 - INFO - [HEARTBEAT] Price: $77,978.96",
+      "last_update": "2026-04-22 10:59:50,599 - INFO - [HEARTBEAT] Price: $78,044.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -274,8 +274,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.3,
-        "time": "2026-04-22 10:49:31,699"
+        "confidence": 52.3,
+        "time": "2026-04-22 10:59:35,442"
       },
       "open_position": null,
       "performance": {
@@ -320,30 +320,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T10:50:01.503878",
+    "updated_at": "2026-04-22T11:00:02.601167",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5849,
-        "confidence": 0.6278,
-        "bullish_pct": 0.1838,
-        "bearish_pct": 0.0475,
-        "neutral_pct": 0.7687,
+        "strength": 0.4845,
+        "confidence": 0.6276,
+        "bullish_pct": 0.2319,
+        "bearish_pct": 0.0516,
+        "neutral_pct": 0.7165,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.653,
+        "stance_shifts": 1,
+        "consensus_score": 0.5747,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] Love this consolidation! $77.8K is a screaming buy with Kalshi and Polymarket pushing BTC perpetuals and Coinbase backing quantum-resistant chains\u2014this is pre-runup accumulation. Bulls are quietly sta",
-            "[StackingSats] $77.8K is not resistance\u2014it\u2019s foundation. The $74.9K low holds, whales accumulate onchain, and 32 Fear is ideal for the next leg up; halving cycle math still targets $150K+ by 2026. Noise like Umbra e",
-            "[CryptoKaleo] We\u2019re not just coiling\u2014we\u2019re compressing like a supernova about to detonate. $77.8K isn\u2019t a wall, it\u2019s a springboard, and every failed breakdown at $74.9K fuels the eventual blowout. Kalshi and Polyma"
+            "[StackingSats] $78K holding strong\u2014yet again\u2014proving this is accumulation territory. Weak hands keep fearing $74.9K breaks, but the halving supply shock is already priced in, and adoption via regulated perps on Kals",
+            "[FadeTheCrowd] Price retesting $78.2K on modest volume doesn\u2019t faze me\u2014the Fear & Greed still at 32 confirms apathy, not euphoria, and $74.9K holding twice is a tell: weak hands are being shaken out, not breaking. I",
+            "[CryptoKaleo] $78K holding firm AGAIN is no coincidence \u2014 this is institutional-grade accumulation while the media screams \"bull trap.\" The Kalshi and Polymarket perp launches are catalytic: regulated, cash-settled"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building toward $78.5K on weak volume\u2014same trap as last week. The Fear & Greed Index at 32 isn\u2019t panic, it\u2019s complacency, and without a washout below $74K, this range just feeds the sh"
+            "[BearishBob] Another fakeout rally to $78K on thin volume\u2014typical bull trap. The market\u2019s ignoring macro rot: DXY still elevated, real yields stagnant, and on-chain data shows HODLers quietly dumping. This \"accumu"
           ]
         },
-        "timestamp": "2026-04-22T07:42:17.497349+00:00",
+        "timestamp": "2026-04-22T08:58:28.669758+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -360,17 +360,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 735.7,
+          "run_duration_sec": 1706.9,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 33,
           "market_data_summary": {
-            "price": 77857,
-            "change_24h": 2.19,
+            "price": 78055,
+            "change_24h": 2.2,
             "fear_greed": 32
           }
         },
-        "age_minutes": 67.7,
+        "age_minutes": 1.6,
         "is_fresh": true
       },
       "groq": {
@@ -419,7 +419,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 101.2,
+        "age_minutes": 111.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -436,7 +436,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 7235.0,
+        "age_minutes": 7245.0,
         "is_fresh": false
       }
     },
