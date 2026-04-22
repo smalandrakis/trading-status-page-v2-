@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T09:03:06.045703",
+  "generated_at": "2026-04-22T09:10:01.013134",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T09:03:06.045722"
+    "last_health_check": "2026-04-22T09:10:01.013152"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 08:56:56,499",
+      "last_update": "2026-04-22 09:08:04,697",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -23,9 +23,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 49.1,
-        "time": "2026-04-22 08:20:06,836"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
       "open_position": null,
       "performance": {
@@ -45,12 +45,12 @@
           "hold_minutes": 0
         }
       ],
-      "health_status": "HEALTHY"
+      "health_status": "WARNING"
     },
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 08:56:56,441",
+      "last_update": "2026-04-22 09:08:04,296",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -61,9 +61,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 61.3,
-        "time": "2026-04-22 08:20:12,380"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
       "open_position": {
         "direction": "LONG",
@@ -140,12 +140,12 @@
           "hold_minutes": 50.0
         }
       ],
-      "health_status": "HEALTHY"
+      "health_status": "WARNING"
     },
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 09:03:06",
+      "last_update": "2026-04-22 09:09:43,960 - INFO - [HEARTBEAT] Price: $78,042.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -258,7 +258,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 09:03:06",
+      "last_update": "2026-04-22 09:09:45,889 - INFO - [HEARTBEAT] Price: $78,042.39",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -274,8 +274,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.9,
-        "time": "2026-04-22 09:02:47,339"
+        "confidence": 54.4,
+        "time": "2026-04-22 09:08:48,750"
       },
       "open_position": null,
       "performance": {
@@ -320,7 +320,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T09:03:06.645932",
+    "updated_at": "2026-04-22T09:10:01.534436",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -371,31 +371,29 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 84.5,
+        "age_minutes": 91.5,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.5902,
-        "confidence": 0.5472,
-        "bullish_pct": 0.1798,
-        "bearish_pct": 0.0503,
-        "neutral_pct": 0.7699,
+        "strength": 0.8127,
+        "confidence": 0.5231,
+        "bullish_pct": 0.0677,
+        "bearish_pct": 0.0518,
+        "neutral_pct": 0.8804,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.6549,
+        "consensus_score": 0.8206,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] The fear in the market is music to my contrarian ears, with the Fear & Greed Index still at 33. I'm seeing a 2.1% increase in the last 24 hours and a 9.4% gain over the past 30 days, which suggests a ",
-            "[StackingSats] The fear in the market is music to my ears, a perfect opportunity to stack more sats. With the price still 40% away from the ATH, I see this as a great buying opportunity, and the recent news about Co",
-            "[DiamondHands420] The fear is still palpable, but I'm not buying into it - HODL! With Bitcoin holding above $75,000 and a 2.1% increase in the last 24 hours, I'm seeing a lot of positive news, like Coinbase's new AI pa"
+            "[FadeTheCrowd] The overwhelming neutral stance from other participants only strengthens my contrarian view. With the Fear & Greed Index at 32, I believe the market is overly cautious, presenting a buying opportunity"
           ],
           "bearish": [
-            "[BearishBob] The recent 2.1% increase in the last 24 hours and 9.4% gain over the past 30 days are just a trap, a dead cat bounce. The Fear & Greed Index is still at 33, indicating fear in the market, and I'm not "
+            "[BearishBob] The recent 2.8% increase in the last 24 hours is just a dead cat bounce, and the Fear & Greed Index at 32 confirms my bearish bias. I'm not convinced by the chatter about a potential bullish breakout "
           ]
         },
-        "timestamp": "2026-04-21T06:03:51.673429+00:00",
+        "timestamp": "2026-04-22T07:08:51.917869+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -412,18 +410,18 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 230.2,
+          "run_duration_sec": 345.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75833,
-            "change_24h": 2.09,
-            "fear_greed": 33
+            "price": 78002,
+            "change_24h": 2.78,
+            "fear_greed": 32
           }
         },
-        "age_minutes": 1499.2,
-        "is_fresh": false
+        "age_minutes": 1.2,
+        "is_fresh": true
       },
       "mirofish_full": {
         "timestamp": "2026-04-17T08:15:04.161193+00:00",
@@ -439,7 +437,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 7128.0,
+        "age_minutes": 7135.0,
         "is_fresh": false
       }
     },
