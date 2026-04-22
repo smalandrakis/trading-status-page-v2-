@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T01:40:01.415684",
+  "generated_at": "2026-04-23T01:50:08.311600",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T01:40:01.415701"
+    "last_health_check": "2026-04-23T01:50:08.311628"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 01:39:08,749",
+      "last_update": "2026-04-23 01:49:42,579",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 45.5,
-        "time": "2026-04-23 01:39:08,749"
+        "confidence": 45.1,
+        "time": "2026-04-23 01:49:42,579"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 01:39:14,561",
+      "last_update": "2026-04-23 01:49:44,147",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -63,7 +63,7 @@
       "current_signal": {
         "signal": "SHORT",
         "confidence": 84.6,
-        "time": "2026-04-23 01:39:14,561"
+        "time": "2026-04-23 01:49:44,102"
       },
       "open_position": {
         "direction": "SHORT",
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 01:40:00,052 - INFO - [HEARTBEAT] Price: $78,261.00",
+      "last_update": "2026-04-23 01:50:02,920 - INFO - [HEARTBEAT] Price: $78,272.88",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -216,7 +216,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 01:40:01,496 - INFO - [HEARTBEAT] Price: $78,246.43",
+      "last_update": "2026-04-23 01:50:01,670 - INFO - [HEARTBEAT] Price: $78,272.88",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -265,30 +265,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T01:40:02.042964",
+    "updated_at": "2026-04-23T01:50:09.686970",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5875,
-        "confidence": 0.6192,
-        "bullish_pct": 0.1801,
-        "bearish_pct": 0.0524,
-        "neutral_pct": 0.7676,
+        "strength": 0.2666,
+        "confidence": 0.6686,
+        "bullish_pct": 0.275,
+        "bearish_pct": 0.1834,
+        "neutral_pct": 0.5416,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6513,
+        "stance_shifts": 2,
+        "consensus_score": 0.3124,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We're not just retesting $79.4K\u2014we're lighting the fuse. The U.S. military running a node, FBI Director endorsing Bitcoin at 2026, Trump-linked miners powering up 11k ASICs, and PUSD expanding on ADI ",
-            "[StackingSats] Every dip has been a launchpad, and this grind toward $79.4K is no different. The U.S. military running a node and the FBI Director speaking at Bitcoin 2026 are not coincidences\u2014they're proof of insti",
-            "[DiamondHands420] $79.4K? Resistance is a suggestion! The U.S. military running a Bitcoin node, Trump-linked miners powering up 11k+ ASICs, and the FBI Director speaking at Bitcoin 2026 about ending the war on BTC \u2014 th"
+            "[StackingSats] Every dip has been crushed \u2014 the $78.3K breakout on strong volume confirms accumulation is over. The U.S. military running a node and FBI Director speaking at Bitcoin 2026 are not coincidences; they\u2019r",
+            "[TrendRider] Price reclaimed $78,333 with strong volume and is now holding firm \u2014 that breakout is valid. The FBI and U.S. military developments aren't noise; they're institutional momentum in disguise, and I trus",
+            "[CryptoKaleo] The $78.3K breakout is holding with heat \u2014 this isn\u2019t just price, it\u2019s narrative ignition. FBI Director speaking at Bitcoin 2026, U.S. military running a node, *and* \u201cBitcoin as Everyday Money\u201d gainin",
+            "[DiamondHands420] $78.3K breakout is HOLDING with strong volume\u2014this is not luck, this is destiny! FBI Director speaking at Bitcoin 2026, U.S. military running a node, AND a de minimis tax push? This is the institution"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building into $79.4K on weak volume\u2014$50B is clown money compared to real breakout levels. All this \"military node\" and \"FBI support\" propaganda is textbook pump-and-dump opex to offloa"
+            "[FadeTheCrowd] Still too much bullish narrative buildup around symbolic news \u2014 the Fear & Greed Index at 32 usually marks capitulation, not the start of a parabolic leg. Price action into $79.4K faces clear structur",
+            "[DeltaNeutral] Price probing $78.3K lacks follow-through above $79.4K, where order book depth thins and gamma exposure turns negative\u2014structural resistance remains intact. Funding rates neutral, but DXY and yield pr",
+            "[BearishBob] Another fakeout into thin liquidity\u2014$78.3K means nothing when volume fades after the spike and Glassnode shows zero smart money accumulation. All this \"military node\" and \"FBI speech\" FOMO is just noi"
           ]
         },
-        "timestamp": "2026-04-22T22:41:44.192140+00:00",
+        "timestamp": "2026-04-22T23:40:36.847681+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -305,17 +308,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 701.9,
+          "run_duration_sec": 609.4,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78556,
-            "change_24h": 4.22,
+            "price": 78349,
+            "change_24h": 3.31,
             "fear_greed": 32
           }
         },
-        "age_minutes": 58.3,
+        "age_minutes": 9.5,
         "is_fresh": true
       },
       "groq": {
@@ -364,7 +367,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 991.2,
+        "age_minutes": 1001.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -381,7 +384,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 8125.0,
+        "age_minutes": 8135.1,
         "is_fresh": false
       }
     },
