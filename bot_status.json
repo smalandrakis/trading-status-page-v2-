@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T03:40:01.222777",
+  "generated_at": "2026-04-22T03:50:00.768733",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T03:40:01.222798"
+    "last_health_check": "2026-04-22T03:50:00.768757"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 03:39:11,954",
+      "last_update": "2026-04-22 03:49:13,038",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 32.2,
-        "time": "2026-04-22 03:39:11,954"
+        "confidence": 31.5,
+        "time": "2026-04-22 03:49:13,038"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 03:39:20,392",
+      "last_update": "2026-04-22 03:49:19,032",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -61,9 +61,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 57.8,
-        "time": "2026-04-22 03:39:20,392"
+        "signal": "LONG",
+        "confidence": 69.7,
+        "time": "2026-04-22 03:49:19,032"
       },
       "open_position": {
         "direction": "LONG",
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 03:39:31,711 - INFO - [HEARTBEAT] Price: $76,238.97",
+      "last_update": "2026-04-22 03:49:31,849 - INFO - [HEARTBEAT] Price: $76,291.62",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -258,7 +258,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 03:40:01",
+      "last_update": "2026-04-22 03:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -274,8 +274,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.9,
-        "time": "2026-04-22 03:39:37,261"
+        "confidence": 50.1,
+        "time": "2026-04-22 03:49:41,580"
       },
       "open_position": null,
       "performance": {
@@ -306,30 +306,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T03:40:01.764613",
+    "updated_at": "2026-04-22T03:50:01.364651",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.5937,
-        "confidence": 0.6194,
-        "bullish_pct": 0.1793,
-        "bearish_pct": 0.0477,
-        "neutral_pct": 0.773,
+        "direction": "LONG",
+        "strength": 0.4422,
+        "confidence": 0.6506,
+        "bullish_pct": 0.4902,
+        "bearish_pct": 0.048,
+        "neutral_pct": 0.4617,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6595,
+        "consensus_score": 0.2354,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We\u2019re coiling like a spring \u2014 Binance inflows at 2023 lows confirm sellers are *gone*, not scared. DoorDash x Tempo stablecoin rails? That\u2019s *real* adoption cooking, not just speculation. Kalshi and P",
-            "[StackingSats] $76.3K is not a top \u2014 it\u2019s accumulation in motion. Binance inflows at 2023 lows confirm weak hands are gone, and DoorDash integrating stablecoin rails via Tempo is tangible off-chain demand building b",
-            "[DiamondHands420] $76.3K is still a steal \u2014 DoorDash rolling out stablecoin payments via Tempo is MASSIVE for real-world utility, and Kalshi pushing into BTC perps means institutions can't ignore us. All this FUD aroun"
+            "[FadeTheCrowd] Fear & Greed at 32 confirms sentiment remains fearful, while Binance inflows drying up signal weak selling pressure \u2014 classic late-stage accumulation. Regulatory noise from NY is overhyped short-term ",
+            "[StackingSats] Another bounce off $74.9K with tightening range and fading exchange inflows confirms late-stage accumulation\u2014this is how BTC bottoms before the next leg up. Regulatory noise from New York is temporary",
+            "[CryptoKaleo] We\u2019re coiling like a spring at $74.9K\u2013$76.8K while the weak hands get shaken out \u2014 but the real story is *regulatory capitulation*. Kalshi pushing into perpetuals while Binance inflows dry? That\u2019s not",
+            "[TrendRider] Price is consolidating within a tight range ($74.9K\u2013$76.8K) with declining Binance inflows, signaling diminishing selling pressure \u2014 a trend follower\u2019s green flag. The repeated bounce off $74.5K\u2013$75K ",
+            "[DiamondHands420] $76K holding like a rock and we\u2019re compressing tighter than a spring-loaded coil \u2014 this is textbook accumulation while the weak hands panic over NY regulatory noise. Kalshi and Polymarket racing to la"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $76.8K resistance holds again, volume is soft, and all this hype around Kalshi and DoorDash is just noise\u2014stablecoin rails aren't demand for BTC. Perp futures launch"
+            "[BearishBob] Another fakeout setup into $76.8K\u2014same resistance level, zero breakout conviction. Volume is a joke compared to March, and all this Kalshi/Polymarket perpetual futures hype is just regulatory theater "
           ]
         },
-        "timestamp": "2026-04-22T00:40:15.678599+00:00",
+        "timestamp": "2026-04-22T01:40:35.968625+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -346,17 +348,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 613.1,
+          "run_duration_sec": 632.1,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 76318,
-            "change_24h": 0.58,
+            "price": 76214,
+            "change_24h": 0.24,
             "fear_greed": 32
           }
         },
-        "age_minutes": 59.8,
+        "age_minutes": 9.4,
         "is_fresh": true
       },
       "groq": {
@@ -407,7 +409,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 1176.2,
+        "age_minutes": 1186.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -424,7 +426,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 6805.0,
+        "age_minutes": 6815.0,
         "is_fresh": false
       }
     },
