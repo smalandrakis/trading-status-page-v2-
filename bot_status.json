@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-22T06:30:01.857581",
+  "generated_at": "2026-04-22T06:40:01.008737",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-22T06:30:01.857593"
+    "last_health_check": "2026-04-22T06:40:01.008749"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-22 06:29:12,420",
+      "last_update": "2026-04-22 06:39:08,551",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 38.8,
-        "time": "2026-04-22 06:29:12,420"
+        "confidence": 38.9,
+        "time": "2026-04-22 06:39:08,551"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-22 06:29:18,740",
+      "last_update": "2026-04-22 06:39:15,467",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,8 +62,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 70.0,
-        "time": "2026-04-22 06:29:18,739"
+        "confidence": 77.7,
+        "time": "2026-04-22 06:39:15,467"
       },
       "open_position": {
         "direction": "LONG",
@@ -145,7 +145,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 06:29:34,180 - INFO - [HEARTBEAT] Price: $77,512.01",
+      "last_update": "2026-04-22 06:39:34,317 - INFO - [HEARTBEAT] Price: $77,638.95",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -258,7 +258,7 @@
     {
       "name": "BTC Precision Strategy (0.60 threshold)",
       "status": "running",
-      "last_update": "2026-04-22 06:29:36,134 - INFO - [HEARTBEAT] Price: $77,512.01",
+      "last_update": "2026-04-22 06:39:36,280 - INFO - [HEARTBEAT] Price: $77,643.60",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -321,30 +321,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-22T06:30:02.520901",
+    "updated_at": "2026-04-22T06:40:01.500423",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5759,
-        "confidence": 0.6217,
-        "bullish_pct": 0.1863,
-        "bearish_pct": 0.0515,
-        "neutral_pct": 0.7622,
+        "strength": 0.4245,
+        "confidence": 0.6075,
+        "bullish_pct": 0.2636,
+        "bearish_pct": 0.0483,
+        "neutral_pct": 0.6881,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6433,
+        "consensus_score": 0.5322,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] This rally isn\u2019t just noise \u2014 it\u2019s infrastructure crescendo. DoorDash with stablecoin rails, Kalshi launching regulated perps, and now a US admiral endorsing PoW's strategic value? That\u2019s a trifecta o",
-            "[DiamondHands420] Loving the DoorDash stablecoin integration and Kalshi pushing into regulated perps \u2014 this is *exactly* the kind of institutional-grade adoption that fuels the next leg up! That US admiral shilling Bit",
-            "[StackingSats] Every dip under $100K is a gift, and this $77.5K consolidation is pure accumulation\u2014weak volume on retest shows no selling pressure, just patience. The admiral\u2019s PoW endorsement, Kalshi\u2019s regulated pe"
+            "[CryptoKaleo] We\u2019re coiling like a spring at $77.5K\u2014$74.9K is now a battle-tested springboard, not a breaking point. RLUSD in MAS sandbox, DoorDash slamming stablecoins into payments, Kalshi prepping perps, and now",
+            "[DiamondHands420] $77.5K holding strong and we\u2019re *this close* to $80K \u2014 RLUSD in MAS sandbox, DoorDash slamming stablecoins into real-world payments, and now a US admiral fronting Bitcoin\u2019s PoW? This is 2017 energy al",
+            "[FadeTheCrowd] Price holding above $74.9K again with Fear & Greed stuck at 32 confirms this is a grinding accumulation phase. Retail is getting excited (DiamondHands420), but volume stays flat \u2014 that\u2019s not a flaw, i",
+            "[StackingSats] $77.5K is just noise \u2014 the real story is $74.9K holding as granite support, exactly where March 2026 bottomed. Every dip gets bought, and PoW endorsement by a US admiral proves Bitcoin's strategic val"
           ],
           "bearish": [
-            "[BearishBob] Another relief rally into $77.6K on weak volume\u2014classic chop before a breakdown. DoorDash using stablecoins isn't Bitcoin demand, it's legacy rails seeking yield; Kalshi perps are just regulatory thea"
+            "[BearishBob] Another fakeout into $77.5K on hype from stablecoin doodoo and admiral soundbites. Volume is weak, ATH is still $48K away, and institutions are quietly distributing\u2014this range is a bear trap for weak "
           ]
         },
-        "timestamp": "2026-04-22T03:38:40.833875+00:00",
+        "timestamp": "2026-04-22T04:39:12.823080+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -361,17 +362,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 518.5,
+          "run_duration_sec": 549.9,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77541,
-            "change_24h": 2.5,
+            "price": 77516,
+            "change_24h": 2.43,
             "fear_greed": 32
           }
         },
-        "age_minutes": 51.4,
+        "age_minutes": 0.8,
         "is_fresh": true
       },
       "groq": {
@@ -422,7 +423,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 1346.2,
+        "age_minutes": 1356.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -439,7 +440,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 6975.0,
+        "age_minutes": 6985.0,
         "is_fresh": false
       }
     },
