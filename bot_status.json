@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T14:50:01.556586",
+  "generated_at": "2026-04-23T15:00:01.408328",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T14:50:01.556600"
+    "last_health_check": "2026-04-23T15:00:01.408344"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 14:49:09,026",
+      "last_update": "2026-04-23 14:59:08,265",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 38.2,
-        "time": "2026-04-23 14:49:09,026"
+        "confidence": 38.3,
+        "time": "2026-04-23 14:59:08,265"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 14:49:13,326",
+      "last_update": "2026-04-23 14:59:13,262",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -61,9 +61,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 59.6,
-        "time": "2026-04-23 14:49:13,326"
+        "signal": "LONG",
+        "confidence": 70.8,
+        "time": "2026-04-23 14:59:13,193"
       },
       "open_position": {
         "direction": "SHORT",
@@ -152,7 +152,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 14:49:35,357 - INFO - [HEARTBEAT] Price: $77,683.99",
+      "last_update": "2026-04-23 14:59:36,909 - INFO - [HEARTBEAT] Price: $77,825.44",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -168,8 +168,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 55.8,
-        "time": "2026-04-23 14:49:31,376"
+        "confidence": 58.1,
+        "time": "2026-04-23 14:59:33,921"
       },
       "open_position": null,
       "performance": {
@@ -257,7 +257,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 14:49:51,323 - INFO - [HEARTBEAT] Price: $77,685.50",
+      "last_update": "2026-04-23 14:59:51,402 - INFO - [HEARTBEAT] Price: $77,861.88",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -273,8 +273,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 57.2,
-        "time": "2026-04-23 14:49:43,955"
+        "confidence": 58.9,
+        "time": "2026-04-23 14:59:47,023"
       },
       "open_position": null,
       "performance": {
@@ -347,30 +347,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T14:50:02.157065",
+    "updated_at": "2026-04-23T15:00:01.999222",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5935,
-        "confidence": 0.64,
-        "bullish_pct": 0.1795,
-        "bearish_pct": 0.0476,
-        "neutral_pct": 0.773,
+        "strength": 0.2808,
+        "confidence": 0.6653,
+        "bullish_pct": 0.2523,
+        "bearish_pct": 0.2146,
+        "neutral_pct": 0.5331,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6594,
+        "stance_shifts": 1,
+        "consensus_score": 0.2996,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] The $77.2K floor is holding with warrior-level conviction\u2014every dip gets crushed by whales and institutions stacking. With the FBI, U.S. military, and Treasury all signaling pro-Bitcoin moves, this is",
-            "[StackingSats] Dip confirmed and held\u2014$77.2K is now institutional granite. U.S. military running a node, FBI speaking to ending the war, Treasury pushing legislation? This isn't noise, it's capitulation of the old g",
-            "[DiamondHands420] $77.2K IS HOLDING LIKE A ROCK\u2014military running a node, FBI SPEAKING AT BITCOIN 2026, Sberbank jumping in, and now Treasury pushing real legislation? THIS ISN\u2019T HOPE, THIS IS HISTORICAL CONVERGENCE! I\u2019"
+            "[DiamondHands420] Massive bullish vibes! We\u2019re shaking off weak hands at $77.2K while the FBI, military, and Treasury all signal pro-Bitcoin policies \u2014 Sberbank jumping in is just more fuel. $79K is a matter of *when*,",
+            "[StackingSats] Another dip, another buy. $77.2K is a gift \u2014 the military runs a node, the FBI declares peace, Sberbank enters, and the Treasury pushes clarity \u2014 this is the quiet before the storm. Halving supply sho",
+            "[CryptoKaleo] The tape doesn\u2019t lie\u2014but narratives *accelerate*. Weak hands get shaken out at $77.2K while institutions align: FBI ending the war, military stress-testing Bitcoin, Sberbank charging in. This isn\u2019t mo",
+            "[FadeTheCrowd] Price rejecting at $79.4K three times on declining volume is classic pre-breakout compression \u2014 not distribution. The Fear & Greed Index stuck at 46 despite mounting institutional alignment (FBI, mili"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout setup in motion. $77.2K \"support\" is just the belly of the bear trap\u2014volume\u2019s collapsing, ATH rejection at $79.4K still unbroken, and all this FBI/military node circus is state co-opta"
+            "[AlphaQuant] Price rejected $79,389 twice on declining volume, confirming persistent supply at $79.2K\u2013$79.4K. Despite bullish headlines (FBI, military node, Sberbank), volume profile and order book depth show no a",
+            "[TrendRider] Price is rejecting into major resistance at $79.4K for the third time on declining volume \u2014 textbook distribution pattern. Bullish headlines are echoing but not confirming in the tape; we're seeing ze",
+            "[BearishBob] Every rally into $79K gets sold into\u2014now three rejections on declining volume. All this \"pro-Bitcoin\" narrative with the FBI, military, and Sberbank is just noise distracting from the lack of follow-t"
           ]
         },
-        "timestamp": "2026-04-23T11:53:35.123781+00:00",
+        "timestamp": "2026-04-23T12:51:53.112977+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -387,17 +390,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1413.1,
+          "run_duration_sec": 1310.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77491,
-            "change_24h": -1.02,
+            "price": 77736,
+            "change_24h": -0.59,
             "fear_greed": 46
           }
         },
-        "age_minutes": 56.5,
+        "age_minutes": 8.1,
         "is_fresh": true
       },
       "groq": {
@@ -446,7 +449,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 346.4,
+        "age_minutes": 356.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -463,7 +466,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 8915.0,
+        "age_minutes": 8925.0,
         "is_fresh": false
       }
     },
