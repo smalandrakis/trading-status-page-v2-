@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T02:30:01.348607",
+  "generated_at": "2026-04-23T02:40:07.694379",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T02:30:01.348683"
+    "last_health_check": "2026-04-23T02:40:07.694396"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 02:29:43,065",
+      "last_update": "2026-04-23 02:39:09,123",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 30.4,
-        "time": "2026-04-23 02:29:43,065"
+        "time": "2026-04-23 02:39:09,123"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 02:29:45,007",
+      "last_update": "2026-04-23 02:39:13,849",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,8 +62,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.1,
-        "time": "2026-04-23 02:29:45,007"
+        "confidence": 55.7,
+        "time": "2026-04-23 02:39:13,849"
       },
       "open_position": null,
       "performance": {
@@ -144,7 +144,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 02:29:44,650 - INFO - [HEARTBEAT] Price: $78,456.65",
+      "last_update": "2026-04-23 02:39:47,219 - INFO - [HEARTBEAT] Price: $78,505.69",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -159,18 +159,26 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 55.1,
-        "time": "2026-04-23 02:28:45,900"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 3,
+        "entry_price": 78390.0,
+        "tp_price": 78781.95,
+        "sl_price": 78272.41500000001,
+        "entry_time": "2026-04-23 02:35:21",
+        "adopted": false
+      },
       "performance": {
-        "total_trades": 5,
+        "total_trades": 6,
         "wins": 2,
-        "losses": 3,
-        "win_rate": 40.0,
-        "total_pnl": 124.64,
-        "avg_pnl": 24.93
+        "losses": 4,
+        "win_rate": 33.3,
+        "total_pnl": 87.72,
+        "avg_pnl": 14.62
       },
       "recent_trades": [
         {
@@ -207,6 +215,13 @@
           "pnl": 119.66,
           "pnl_pct": 0.51,
           "hold_minutes": 66.0
+        },
+        {
+          "time": "2026-04-23T02:31:57.289452",
+          "direction": "LONG",
+          "pnl": -36.92,
+          "pnl_pct": -0.16,
+          "hold_minutes": 1.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -214,7 +229,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 02:29:32,420 - INFO - [HEARTBEAT] Price: $78,409.99",
+      "last_update": "2026-04-23 02:40:02,593 - INFO - [HEARTBEAT] Price: $78,474.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -229,9 +244,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 55.1,
-        "time": "2026-04-23 02:28:52,203"
+        "signal": "NEUTRAL",
+        "confidence": 51.5,
+        "time": "2026-04-23 02:38:56,631"
       },
       "open_position": null,
       "performance": {
@@ -262,7 +277,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T02:30:02.064022",
+    "updated_at": "2026-04-23T02:40:08.870877",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -315,7 +330,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 49.4,
+        "age_minutes": 59.5,
         "is_fresh": true
       },
       "groq": {
@@ -364,7 +379,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 1041.2,
+        "age_minutes": 1051.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -381,7 +396,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 8175.0,
+        "age_minutes": 8185.1,
         "is_fresh": false
       }
     },
