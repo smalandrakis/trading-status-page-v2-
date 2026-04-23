@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T19:40:00.939500",
+  "generated_at": "2026-04-23T19:50:01.636615",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T19:40:00.939515"
+    "last_health_check": "2026-04-23T19:50:01.636633"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 19:39:11,188",
+      "last_update": "2026-04-23 19:49:09,738",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -23,9 +23,9 @@
         "expected_pnl_2yr": 16577
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 45.3,
-        "time": "2026-04-23 19:39:11,188"
+        "signal": "NEUTRAL",
+        "confidence": 43.4,
+        "time": "2026-04-23 19:49:09,738"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 19:39:16,516",
+      "last_update": "2026-04-23 19:49:15,986",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,16 +76,16 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 77.1,
-        "time": "2026-04-23 19:39:16,516"
+        "confidence": 71.7,
+        "time": "2026-04-23 19:49:15,985"
       },
       "open_position": {
         "direction": "SHORT",
-        "size": 3,
-        "entry_price": 77460.79,
-        "tp_price": 76686.18209999999,
-        "sl_price": 77848.09394999998,
-        "entry_time": "2026-04-23 19:37:15",
+        "size": 2,
+        "entry_price": 77012.0,
+        "tp_price": 76241.88,
+        "sl_price": 77397.06,
+        "entry_time": "2026-04-23 19:42:15",
         "adopted": false
       },
       "performance": {
@@ -166,7 +166,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 19:40:01",
+      "last_update": "2026-04-23 19:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -181,9 +181,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 55.8,
-        "time": "2026-04-23 19:39:52,651"
+        "signal": "SHORT",
+        "confidence": 53.4,
+        "time": "2026-04-23 19:49:57,782"
       },
       "open_position": null,
       "performance": {
@@ -271,7 +271,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 19:40:01",
+      "last_update": "2026-04-23 19:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -286,9 +286,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 55.8,
-        "time": "2026-04-23 19:39:48,931"
+        "signal": "NEUTRAL",
+        "confidence": 53.1,
+        "time": "2026-04-23 19:49:52,471"
       },
       "open_position": null,
       "performance": {
@@ -375,31 +375,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T19:40:01.671362",
+    "updated_at": "2026-04-23T19:50:02.381106",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4383,
-        "confidence": 0.6367,
-        "bullish_pct": 0.2573,
-        "bearish_pct": 0.047,
-        "neutral_pct": 0.6957,
+        "strength": 0.4115,
+        "confidence": 0.6481,
+        "bullish_pct": 0.2692,
+        "bearish_pct": 0.0502,
+        "neutral_pct": 0.6806,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5435,
+        "consensus_score": 0.521,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] This dip is institutional accumulation in disguise. The FBI keynote, military node ops, and 100+ firms pushing the Clarity Act aren\u2019t noise \u2014 they\u2019re the scaffolding for regulatory resolution and macr",
-            "[StackingSats] Every dip to $77.2K is a institutional accumulation zone\u2014confirmed again. The military running a node, FBI leadership speaking at Bitcoin 2026, and 100+ firms demanding the Clarity Act show *deep stru",
-            "[DiamondHands420] HODL HARDER! We\u2019re brushing $80K like it\u2019s nothing \u2014 every rejection is just setting up the hypercharged breakout. The U.S. military running a node and the FBI director speaking at Bitcoin 2026? That\u2019",
-            "[FadeTheCrowd] Still in the fear zone at 46, and the $80K rejection has washed out weak hands \u2014 classic accumulation behavior. The military node and FBI engagement aren\u2019t hype; they\u2019re slow-motion validation of Bitc"
+            "[CryptoKaleo] The $77.2K floor is holding with military precision\u2014literally. With the FBI declaring peace on Bitcoin, the U.S. military running a node, and policymakers pushing de minimis tax relief, this isn\u2019t jus",
+            "[FadeTheCrowd] The $77.2K support holding is no accident\u2014it\u2019s a magnet for contrarians as the Fear & Greed Index hovers at 46, just shy of true capitulation. While others fixate on the failed $80K retest, I see inst",
+            "[DiamondHands420] We\u2019re still locked in on that $77.2K fortress\u2014military node, FBI truce, and tax reform coming? This is the setup for a moonshot! Weak weekly close is just noise; they\u2019re all FOMO-ing back in next week",
+            "[StackingSats] Every dip is a gift \u2014 $77,228 continues to hold as absolute support, a true bull market floor. The U.S. military running a node and the FBI declaring peace on Bitcoin confirm irreversible institutiona"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $80K denied \u2014 price can't even close the weekly candle above it, just like the last three attempts. All this FBI and military node hype is narrative fluff to\u63a9\u76d6 the fact that we're s"
+            "[BearishBob] Another fakeout at $80K and you're all hypnotized by FBI speeches and military cosplay? This is not adoption\u2014it's theater. The weak weekly close, fading volume, and exchange inflows scream distributio"
           ]
         },
-        "timestamp": "2026-04-23T16:49:18.403955+00:00",
+        "timestamp": "2026-04-23T17:40:47.007618+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -416,17 +416,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1143.0,
+          "run_duration_sec": 643.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78385,
-            "change_24h": -0.74,
+            "price": 77706,
+            "change_24h": -1.5,
             "fear_greed": 46
           }
         },
-        "age_minutes": 50.7,
+        "age_minutes": 9.3,
         "is_fresh": true
       },
       "groq": {
@@ -475,7 +475,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 636.4,
+        "age_minutes": 646.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -492,7 +492,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 9205.0,
+        "age_minutes": 9215.0,
         "is_fresh": false
       }
     },
