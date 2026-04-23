@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T10:40:01.395719",
+  "generated_at": "2026-04-23T10:50:01.333754",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T10:40:01.395736"
+    "last_health_check": "2026-04-23T10:50:01.333776"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 10:39:09,340",
+      "last_update": "2026-04-23 10:49:08,833",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 38.0,
-        "time": "2026-04-23 10:39:09,340"
+        "confidence": 39.5,
+        "time": "2026-04-23 10:49:08,833"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 10:39:15,541",
+      "last_update": "2026-04-23 10:49:14,729",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,16 +62,16 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 79.9,
-        "time": "2026-04-23 10:39:15,541"
+        "confidence": 80.3,
+        "time": "2026-04-23 10:49:14,729"
       },
       "open_position": {
         "direction": "SHORT",
         "size": 4,
-        "entry_price": 77888.01,
-        "tp_price": 77109.1299,
-        "sl_price": 78277.45004999998,
-        "entry_time": "2026-04-23 10:34:17",
+        "entry_price": 77772.07,
+        "tp_price": 76994.3493,
+        "sl_price": 78160.93035,
+        "entry_time": "2026-04-23 10:42:17",
         "adopted": false
       },
       "performance": {
@@ -152,7 +152,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 10:39:48,098 - INFO - [HEARTBEAT] Price: $77,828.93",
+      "last_update": "2026-04-23 10:49:49,419 - INFO - [HEARTBEAT] Price: $77,805.66",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -174,28 +174,21 @@
       "open_position": {
         "direction": "SHORT",
         "size": 3,
-        "entry_price": 78146.87,
-        "tp_price": 77756.13565,
-        "sl_price": 78264.090305,
-        "entry_time": "2026-04-23 09:31:10",
+        "entry_price": 77774.61,
+        "tp_price": 77385.73695,
+        "sl_price": 77891.271915,
+        "entry_time": "2026-04-23 10:41:16",
         "adopted": false
       },
       "performance": {
-        "total_trades": 13,
-        "wins": 3,
+        "total_trades": 14,
+        "wins": 4,
         "losses": 10,
-        "win_rate": 23.1,
-        "total_pnl": -19.45,
-        "avg_pnl": -1.5
+        "win_rate": 28.6,
+        "total_pnl": 99.01,
+        "avg_pnl": 7.07
       },
       "recent_trades": [
-        {
-          "time": "2026-04-22T23:11:59.912336",
-          "direction": "SHORT",
-          "pnl": -39.53,
-          "pnl_pct": -0.17,
-          "hold_minutes": 19.0
-        },
         {
           "time": "2026-04-23T02:10:43.238901",
           "direction": "SHORT",
@@ -258,6 +251,13 @@
           "pnl": -40.18,
           "pnl_pct": -0.17,
           "hold_minutes": 8.0
+        },
+        {
+          "time": "2026-04-23T10:41:03.432664",
+          "direction": "SHORT",
+          "pnl": 118.46,
+          "pnl_pct": 0.51,
+          "hold_minutes": 70.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -265,7 +265,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 10:39:42,381 - INFO - [HEARTBEAT] Price: $77,823.36",
+      "last_update": "2026-04-23 10:49:42,455 - INFO - [HEARTBEAT] Price: $77,797.94",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -287,19 +287,19 @@
       "open_position": {
         "direction": "SHORT",
         "size": 3,
-        "entry_price": 78149.09,
-        "tp_price": 77758.34455,
-        "sl_price": 78266.313635,
-        "entry_time": "2026-04-23 09:30:28",
+        "entry_price": 77774.61,
+        "tp_price": 77385.73695,
+        "sl_price": 77891.271915,
+        "entry_time": "2026-04-23 10:41:16",
         "adopted": false
       },
       "performance": {
-        "total_trades": 3,
-        "wins": 2,
+        "total_trades": 4,
+        "wins": 3,
         "losses": 1,
-        "win_rate": 66.7,
-        "total_pnl": 198.75,
-        "avg_pnl": 66.25
+        "win_rate": 75.0,
+        "total_pnl": 316.77,
+        "avg_pnl": 79.19
       },
       "recent_trades": [
         {
@@ -322,37 +322,45 @@
           "pnl": -41.38,
           "pnl_pct": -0.18,
           "hold_minutes": 115.0
+        },
+        {
+          "time": "2026-04-23T10:41:04.300977",
+          "direction": "SHORT",
+          "pnl": 118.01,
+          "pnl_pct": 0.5,
+          "hold_minutes": 71.0
         }
       ],
       "health_status": "UNKNOWN"
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T10:40:02.089583",
+    "updated_at": "2026-04-23T10:50:01.945240",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4211,
-        "confidence": 0.655,
-        "bullish_pct": 0.2647,
-        "bearish_pct": 0.0494,
-        "neutral_pct": 0.6858,
+        "strength": 0.0565,
+        "confidence": 0.6433,
+        "bullish_pct": 0.4478,
+        "bearish_pct": 0.048,
+        "neutral_pct": 0.5043,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5287,
+        "stance_shifts": 1,
+        "consensus_score": 0.2564,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price is digesting at resistance with institutional adoption accelerating\u2014military node, Treasury pushing legislation, Sberbank entering\u2014while sentiment stays fearful at 46. This dissonance between fu",
-            "[StackingSats] Every dip to $77K is being bought hard \u2014 the institutional floor is forming. The U.S. military running a node, FBI leadership embracing Bitcoin, Sberbank entering, and Treasury pushing legislation are",
-            "[CryptoKaleo] We're in the eye of the storm\u2014BTC holding $77K with the U.S. military running a node, FBI leadership embracing Bitcoin, and Sberbank entering? This is not speculation, this is *real-world adoption* ac",
-            "[DiamondHands420] We are PUMPING \u2014 $77K is a fortress with the U.S. military running a node, FBI leadership going pro-Bitcoin, and Sberbank entering! This dip is a scam to shake out weak hands while real institutions a"
+            "[DiamondHands420] LOVE THIS! $78K holding STRONG with the U.S. military running nodes, FBI ending the war on Bitcoin, AND Treasury pushing real legislation? This is FULLY COORDINATED ACCELERATION. Dip = divine interven",
+            "[DeepPockets] Price holding at $78K on muted volume confirms range-bound behavior, but the confluence of military node ops, Treasury pushing legislation, and de minimis tax momentum reinforces structural accumulati",
+            "[FadeTheCrowd] Price hugging $78K on persistent fear (46 on Fear & Greed) while institutions quietly align\u2014military nodes, FBI outreach, Treasury pushing legislation\u2014tells me accumulation is happening in the shadows",
+            "[CryptoKaleo] This isn't just bullish \u2014 it's *orchestrated legitimacy*. The FBI, U.S. military, and Treasury all converging on Bitcoin in public? That\u2019s not narrative \u2014 it\u2019s nation-state adoption in motion. $78K is",
+            "[StackingSats] Every dip to $78K is a national security-level buying opportunity. The U.S. military running nodes, the FBI declaring peace, and the Treasury pushing legislation isn't just bullish \u2014 it's the blueprin"
           ],
           "bearish": [
-            "[BearishBob] $79.4K is a recurring trap\u2014another fakeout will crush the dip-buyers again. All this \"adoption\" noise (military node, FBI, Sberbank) is coordinated theater to lure weak hands while smart money distrib"
+            "[BearishBob] Another orchestrated pump with state-level theater\u2014military nodes, FBI love letters, Treasury promises\u2014all smoke while volume stagnates and NVT stays in the danger zone at 58. $78K is a trap, not a fl"
           ]
         },
-        "timestamp": "2026-04-23T07:40:38.469763+00:00",
+        "timestamp": "2026-04-23T08:46:14.953291+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -369,17 +377,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 636.2,
+          "run_duration_sec": 971.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78161,
-            "change_24h": 0.39,
+            "price": 78017,
+            "change_24h": -0.02,
             "fear_greed": 46
           }
         },
-        "age_minutes": 59.4,
+        "age_minutes": 3.8,
         "is_fresh": true
       },
       "groq": {
@@ -428,7 +436,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 96.4,
+        "age_minutes": 106.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -445,7 +453,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 8665.0,
+        "age_minutes": 8675.0,
         "is_fresh": false
       }
     },
