@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T09:40:01.674571",
+  "generated_at": "2026-04-23T09:50:01.334941",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T09:40:01.674584"
+    "last_health_check": "2026-04-23T09:50:01.334954"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 09:39:09,266",
+      "last_update": "2026-04-23 09:49:08,160",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,7 +25,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 37.7,
-        "time": "2026-04-23 09:39:09,266"
+        "time": "2026-04-23 09:49:08,160"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 09:39:14,915",
+      "last_update": "2026-04-23 09:49:13,323",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,8 +62,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 57.6,
-        "time": "2026-04-23 09:39:14,915"
+        "confidence": 56.3,
+        "time": "2026-04-23 09:49:13,323"
       },
       "open_position": {
         "direction": "LONG",
@@ -152,7 +152,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 09:39:38,409 - INFO - [HEARTBEAT] Price: $78,128.06",
+      "last_update": "2026-04-23 09:49:40,869 - INFO - [HEARTBEAT] Price: $78,074.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -265,7 +265,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 09:39:43,286 - INFO - [HEARTBEAT] Price: $78,128.06",
+      "last_update": "2026-04-23 09:49:43,428 - INFO - [HEARTBEAT] Price: $78,074.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -328,31 +328,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T09:40:02.200586",
+    "updated_at": "2026-04-23T09:50:01.879054",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4208,
-        "confidence": 0.6325,
-        "bullish_pct": 0.2641,
-        "bearish_pct": 0.0511,
-        "neutral_pct": 0.6848,
+        "strength": 0.4211,
+        "confidence": 0.655,
+        "bullish_pct": 0.2647,
+        "bearish_pct": 0.0494,
+        "neutral_pct": 0.6858,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5273,
+        "consensus_score": 0.5287,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] Massive bullish vibes here! FBI, U.S. military, AND Treasury all pushing pro-Bitcoin narratives? This isn't just hype \u2014 it's full-systemic adoption accelerating in real time. $77.5K is a fortress, eve",
-            "[StackingSats] Another dip defended at $77.5K\u2014this is not luck, it's law. The U.S. military running a node, FBI advocating for Bitcoin, and Treasury pushing clear regulation? This is the institutional adoption wave ",
-            "[CryptoKaleo] This isn\u2019t just support holding\u2014this is *institutional capitulation* in real time. The FBI, U.S. military, and Treasury all signaling alignment? That\u2019s not narrative fluff, that\u2019s regime-level endorse",
-            "[FadeTheCrowd] The dip to $77.5K again held, and with Fear & Greed still at 46, the crowd remains uncomfortable\u2014just how I like it. All this \"noise\" from the FBI, military, and Treasury isn\u2019t hype, it\u2019s a slow-motio"
+            "[FadeTheCrowd] Price is digesting at resistance with institutional adoption accelerating\u2014military node, Treasury pushing legislation, Sberbank entering\u2014while sentiment stays fearful at 46. This dissonance between fu",
+            "[StackingSats] Every dip to $77K is being bought hard \u2014 the institutional floor is forming. The U.S. military running a node, FBI leadership embracing Bitcoin, Sberbank entering, and Treasury pushing legislation are",
+            "[CryptoKaleo] We're in the eye of the storm\u2014BTC holding $77K with the U.S. military running a node, FBI leadership embracing Bitcoin, and Sberbank entering? This is not speculation, this is *real-world adoption* ac",
+            "[DiamondHands420] We are PUMPING \u2014 $77K is a fortress with the U.S. military running a node, FBI leadership going pro-Bitcoin, and Sberbank entering! This dip is a scam to shake out weak hands while real institutions a"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building\u2014price can't clear $79.4K despite all the FBI and military node hype, which is just noise to mask weak conviction. Volume\u2019s flat, macro\u2019s unchanged, and we\u2019re still 38% off ATH"
+            "[BearishBob] $79.4K is a recurring trap\u2014another fakeout will crush the dip-buyers again. All this \"adoption\" noise (military node, FBI, Sberbank) is coordinated theater to lure weak hands while smart money distrib"
           ]
         },
-        "timestamp": "2026-04-23T05:39:53.869677+00:00",
+        "timestamp": "2026-04-23T07:40:38.469763+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -369,17 +369,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 591.4,
+          "run_duration_sec": 636.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77916,
-            "change_24h": -0.43,
+            "price": 78161,
+            "change_24h": 0.39,
             "fear_greed": 46
           }
         },
-        "age_minutes": 120.1,
+        "age_minutes": 9.4,
         "is_fresh": true
       },
       "groq": {
@@ -428,7 +428,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 36.4,
+        "age_minutes": 46.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -445,7 +445,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 8605.0,
+        "age_minutes": 8615.0,
         "is_fresh": false
       }
     },
