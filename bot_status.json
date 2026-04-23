@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T04:40:01.836344",
+  "generated_at": "2026-04-23T04:50:07.825214",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T04:40:01.836350"
+    "last_health_check": "2026-04-23T04:50:07.825239"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 04:39:45,911",
+      "last_update": "2026-04-23 04:49:09,632",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 35.9,
-        "time": "2026-04-23 04:39:45,911"
+        "confidence": 35.5,
+        "time": "2026-04-23 04:49:09,632"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 04:39:49,950",
+      "last_update": "2026-04-23 04:49:16,497",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -63,15 +63,15 @@
       "current_signal": {
         "signal": "SHORT",
         "confidence": 83.7,
-        "time": "2026-04-23 04:39:49,950"
+        "time": "2026-04-23 04:49:16,497"
       },
       "open_position": {
         "direction": "SHORT",
         "size": 4,
-        "entry_price": 77852.49,
-        "tp_price": 77073.9651,
-        "sl_price": 78241.75245,
-        "entry_time": "2026-04-23 04:39:49",
+        "entry_price": 77818.31,
+        "tp_price": 77040.1269,
+        "sl_price": 78207.40155,
+        "entry_time": "2026-04-23 04:49:16",
         "adopted": false
       },
       "performance": {
@@ -152,7 +152,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 04:39:50,348 - INFO - [HEARTBEAT] Price: $77,861.08",
+      "last_update": "2026-04-23 04:49:53,039 - INFO - [HEARTBEAT] Price: $77,827.10",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -265,7 +265,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 04:40:02",
+      "last_update": "2026-04-23 04:50:04,944 - INFO - [HEARTBEAT] Price: $77,826.66",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -281,8 +281,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.5,
-        "time": "2026-04-23 04:39:47,411"
+        "confidence": 54.9,
+        "time": "2026-04-23 04:49:51,129"
       },
       "open_position": null,
       "performance": {
@@ -313,30 +313,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T04:40:02.683759",
+    "updated_at": "2026-04-23T04:50:09.038175",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5776,
-        "confidence": 0.6222,
-        "bullish_pct": 0.1864,
-        "bearish_pct": 0.0495,
-        "neutral_pct": 0.7641,
+        "strength": 0.5122,
+        "confidence": 0.6125,
+        "bullish_pct": 0.1858,
+        "bearish_pct": 0.1163,
+        "neutral_pct": 0.6979,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6461,
+        "stance_shifts": 1,
+        "consensus_score": 0.5469,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] We\u2019re SO CLOSE to breaking $78,333\u2014it\u2019s a sacred number now! With the U.S. military running a node, Sberbank going full crypto, and the FBI director speaking at Bitcoin 2026 about ending the war on BT",
-            "[StackingSats] Price testing $78,333 again is not a weakness \u2014 it's confirmation of institutional accumulation. The U.S. military running a node, Sberbank entering, and the FBI director speaking about ending the war",
-            "[CryptoKaleo] They\u2019re missing the narrative tsunami in real-time. $78,333 isn\u2019t resistance\u2014it\u2019s a psychological springboard, and the U.S. military running a node + Sberbank going live + the FBI director declaring p"
+            "[StackingSats] $78K holds as strong support \u2014 every dip is met with relentless accumulation. The U.S. military running a node and Sberbank\u2019s entry are not hype; they\u2019re hash rate-level fundamentals signaling macro a",
+            "[DiamondHands420] $78K holding strong\u2014bulls are absorbing all the weak-hand panic! The U.S. military running a node and Sberbank jumping in isn't just hype, it's institutional adoption on steroids. $78.3K broke, CoinTe",
+            "[CryptoKaleo] We\u2019re not just flirting with $78.3K\u2014we\u2019ve claimed it. The U.S. military running a node, Sberbank\u2019s imminent entry, and Patel headlining Bitcoin 2026 aren\u2019t side notes\u2014they\u2019re the main event, signaling"
           ],
           "bearish": [
-            "[BearishBob] Another failed test at $78,333 with weak volume\u2014same fakeout pattern as before. All this \"bullish\" news (military node, Sberbank, FBI director) is just narrative smoke meant to\u63a9\u62a4 the whales dumping. W"
+            "[BearishBob] Another fakeout into $79.4K with fading volume\u2014same script, different day. All this \"military node\" and \"Patel speaking\" hype is noise to mask distribution; real accumulation doesn\u2019t happen sideways a",
+            "[FadeTheCrowd] Still hesitant at $78K\u2014three failed tests of $79.4K on weak volume, Fear & Greed stuck at 46, and no negative funding to flush weak hands. This consolidation feels like a trap; I'm waiting for a washo"
           ]
         },
-        "timestamp": "2026-04-23T01:37:20.605734+00:00",
+        "timestamp": "2026-04-23T02:42:48.049523+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -353,17 +354,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 432.4,
+          "run_duration_sec": 742.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78229,
-            "change_24h": 2.67,
+            "price": 78066,
+            "change_24h": 1.15,
             "fear_greed": 46
           }
         },
-        "age_minutes": 62.7,
+        "age_minutes": 7.3,
         "is_fresh": true
       },
       "groq": {
@@ -412,7 +413,7 @@
             "fear_greed": 32
           }
         },
-        "age_minutes": 1171.2,
+        "age_minutes": 1181.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -429,7 +430,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 8305.0,
+        "age_minutes": 8315.1,
         "is_fresh": false
       }
     },
