@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T09:00:00.985206",
+  "generated_at": "2026-04-23T09:10:07.531641",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T09:00:00.985224"
+    "last_health_check": "2026-04-23T09:10:07.531652"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 08:59:06,394",
+      "last_update": "2026-04-23 09:07:54,715",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 39.8,
-        "time": "2026-04-23 08:59:06,394"
+        "confidence": 38.0,
+        "time": "2026-04-23 09:07:54,715"
       },
       "open_position": null,
       "performance": {
@@ -45,12 +45,12 @@
           "hold_minutes": 0
         }
       ],
-      "health_status": "WARNING"
+      "health_status": "HEALTHY"
     },
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 08:59:06,616",
+      "last_update": "2026-04-23 09:07:59,368",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,8 +62,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 66.8,
-        "time": "2026-04-23 08:59:06,512"
+        "confidence": 68.5,
+        "time": "2026-04-23 09:07:58,783"
       },
       "open_position": {
         "direction": "LONG",
@@ -147,12 +147,12 @@
           "hold_minutes": 2.0
         }
       ],
-      "health_status": "WARNING"
+      "health_status": "HEALTHY"
     },
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 09:00:00,179 - INFO - [HEARTBEAT] Price: $78,211.43",
+      "last_update": "2026-04-23 09:10:01,482 - INFO - [HEARTBEAT] Price: $78,176.56",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -168,8 +168,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 62.4,
-        "time": "2026-04-23 08:58:17,679"
+        "confidence": 52.2,
+        "time": "2026-04-23 09:08:26,528"
       },
       "open_position": null,
       "performance": {
@@ -257,7 +257,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 08:59:42,784 - INFO - [HEARTBEAT] Price: $78,211.42",
+      "last_update": "2026-04-23 09:09:42,912 - INFO - [HEARTBEAT] Price: $78,225.32",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -272,9 +272,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 62.4,
-        "time": "2026-04-23 08:58:18,254"
+        "signal": "NEUTRAL",
+        "confidence": 52.2,
+        "time": "2026-04-23 09:08:23,199"
       },
       "open_position": null,
       "performance": {
@@ -312,7 +312,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T09:00:01.619955",
+    "updated_at": "2026-04-23T09:10:08.944405",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -363,29 +363,29 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 80.1,
+        "age_minutes": 90.3,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.8127,
-        "confidence": 0.5231,
-        "bullish_pct": 0.0677,
-        "bearish_pct": 0.0518,
-        "neutral_pct": 0.8804,
+        "strength": 0.8484,
+        "confidence": 0.5361,
+        "bullish_pct": 0.0505,
+        "bearish_pct": 0.0505,
+        "neutral_pct": 0.8989,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.8206,
+        "stance_shifts": 0,
+        "consensus_score": 0.8484,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] The overwhelming neutral stance from other participants only strengthens my contrarian view. With the Fear & Greed Index at 32, I believe the market is overly cautious, presenting a buying opportunity"
+            "[DiamondHands420] The news just keeps getting better and better - the U.S. military running a Bitcoin node and the Treasury Secretary pressing for crypto market structure legislation is huge validation for Bitcoin. I'm"
           ],
           "bearish": [
-            "[BearishBob] The recent 2.8% increase in the last 24 hours is just a dead cat bounce, and the Fear & Greed Index at 32 confirms my bearish bias. I'm not convinced by the chatter about a potential bullish breakout "
+            "[BearishBob] The recent news may seem positive, but I'm not buying into the hype. The Fear & Greed Index is still in the \"Fear\" zone, and the price action is relatively stable, which suggests to me that this is ju"
           ]
         },
-        "timestamp": "2026-04-22T07:08:51.917869+00:00",
+        "timestamp": "2026-04-23T07:03:40.460054+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -402,17 +402,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 345.2,
+          "run_duration_sec": 218.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78002,
-            "change_24h": 2.78,
-            "fear_greed": 32
+            "price": 78223,
+            "change_24h": 0.3,
+            "fear_greed": 46
           }
         },
-        "age_minutes": 1431.2,
+        "age_minutes": 6.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -429,7 +429,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 8565.0,
+        "age_minutes": 8575.1,
         "is_fresh": false
       }
     },
