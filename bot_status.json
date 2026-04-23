@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T23:40:01.146550",
+  "generated_at": "2026-04-23T23:50:10.072984",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T23:40:01.146565"
+    "last_health_check": "2026-04-23T23:50:10.072994"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 23:35:04,930",
+      "last_update": "2026-04-23 23:45:34,225",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 23:35:09,311",
+      "last_update": "2026-04-23 23:45:33,991",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -166,7 +166,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 23:39:39,908 - INFO - [HEARTBEAT] Price: $78,011.99",
+      "last_update": "2026-04-23 23:49:42,752 - INFO - [HEARTBEAT] Price: $78,032.45",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -279,7 +279,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 23:40:01",
+      "last_update": "2026-04-23 23:50:11",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -383,31 +383,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T23:40:01.839535",
+    "updated_at": "2026-04-23T23:50:12.002764",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4187,
-        "confidence": 0.6453,
-        "bullish_pct": 0.2655,
-        "bearish_pct": 0.0502,
-        "neutral_pct": 0.6843,
+        "strength": 0.5924,
+        "confidence": 0.6297,
+        "bullish_pct": 0.1805,
+        "bearish_pct": 0.0466,
+        "neutral_pct": 0.7729,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5264,
+        "consensus_score": 0.6593,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] The FBI speaking at Bitcoin 2026 and the U.S. military running a Bitcoin node isn't just symbolism\u2014it's structural adoption accelerating in real time. With $7.5B in USDC reserves fueling on-ramps and ",
-            "[DiamondHands420] Feds and the feds talking peace + military running a node? This is MASSIVE \u2014 we\u2019re seeing full-spectrum institutional embrace! $77K is a steal with $7.5B USDC loading the cannons and the Fear & Greed ",
-            "[StackingSats] Every dip to $77K is a gift\u2014this range is institutional accumulation territory. The FBI speaking at Bitcoin 2026 and the U.S. military running a node confirm structural adoption is accelerating; $7.5B",
-            "[FadeTheCrowd] The Fear & Greed Index at 46 and negative funding rates confirm apathy\u2014perfect for a contrarian rebuild. Institutional skepticism (Tether freeze, regulatory pushes) is priced in, while military/FBI en"
+            "[DiamondHands420] $77.8K is a total steal \u2014 the FBI speaking at Bitcoin 2026 about ending the war on BTC? MASSIVE bullish signal! Fold's employer bonus program + Tether freeze (shows compliance!) = institutional onboar",
+            "[CryptoKaleo] The FBI Director speaking at Bitcoin 2026 about \"ending the war\" is not just symbolism \u2014 it's a full-blown narrative rocket. Combined with Fold\u2019s employer Bitcoin bonus program and Tether enforcing co",
+            "[StackingSats] Another dip? Just a heartbeat in the 4-year cycle. $77.8K is a steal with the halving\u2019s supply shock still unfolding and adoption accelerating\u2014Fold\u2019s employer bonuses, FBI engagement, and policy pushe"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $77K\u2013$78.8K range is a bear trap being dressed up as \"accumulation\" \u2014 volume is dying, funding is negative, and all this FBI/military node chatter is just noise to d"
+            "[BearishBob] Every \"bullish\" headline \u2014 FBI speeches, Fold bonuses, Tether compliance \u2014 gets priced in with zero follow-through. Price is stuck below $78K, volume is shrinking, and we\u2019re still 38% off ATH with no "
           ]
         },
-        "timestamp": "2026-04-23T20:41:14.031101+00:00",
+        "timestamp": "2026-04-23T21:42:09.172325+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -424,17 +423,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 643.5,
+          "run_duration_sec": 700.4,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77763,
-            "change_24h": -1.09,
+            "price": 77892,
+            "change_24h": -0.89,
             "fear_greed": 46
           }
         },
-        "age_minutes": 58.8,
+        "age_minutes": 8.0,
         "is_fresh": true
       },
       "groq": {
@@ -483,7 +482,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 876.4,
+        "age_minutes": 886.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -500,7 +499,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 9445.0,
+        "age_minutes": 9455.1,
         "is_fresh": false
       }
     },
