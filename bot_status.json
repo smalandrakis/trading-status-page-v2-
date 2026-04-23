@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T21:40:02.533551",
+  "generated_at": "2026-04-23T21:50:09.023429",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T21:40:02.533567"
+    "last_health_check": "2026-04-23T21:50:09.023440"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 21:39:12,004",
+      "last_update": "2026-04-23 21:49:10,157",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 46.2,
-        "time": "2026-04-23 21:39:12,004"
+        "confidence": 47.6,
+        "time": "2026-04-23 21:49:10,157"
       },
       "open_position": null,
       "performance": {
@@ -64,7 +64,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 21:39:19,769",
+      "last_update": "2026-04-23 21:49:32,943",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -76,8 +76,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 73.2,
-        "time": "2026-04-23 21:39:19,769"
+        "confidence": 65.6,
+        "time": "2026-04-23 21:49:32,942"
       },
       "open_position": {
         "direction": "SHORT",
@@ -166,7 +166,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 21:39:36,640 - INFO - [HEARTBEAT] Price: $77,737.87",
+      "last_update": "2026-04-23 21:50:09,530 - INFO - [HEARTBEAT] Price: $77,701.25",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -181,11 +181,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 51.6,
-        "time": "2026-04-23 21:39:28,293"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 77694.0,
+        "tp_price": 77305.53,
+        "sl_price": 77810.541,
+        "entry_time": "2026-04-23 21:41:31",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 26,
         "wins": 8,
@@ -271,7 +279,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 21:40:03",
+      "last_update": "2026-04-23 21:50:10",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -375,31 +383,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T21:40:03.154053",
+    "updated_at": "2026-04-23T21:50:10.553026",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3989,
-        "confidence": 0.6414,
-        "bullish_pct": 0.278,
-        "bearish_pct": 0.0451,
-        "neutral_pct": 0.6769,
+        "strength": 0.4579,
+        "confidence": 0.6361,
+        "bullish_pct": 0.2471,
+        "bearish_pct": 0.0479,
+        "neutral_pct": 0.705,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5153,
+        "stance_shifts": 1,
+        "consensus_score": 0.5575,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] This dip is a narrative tsunami charging through the mainstream \u2014 FBI endorsing Bitcoin, the U.S. military stress-testing its crypto backbone, Fold injecting Bitcoin into payroll systems. Price stalle",
-            "[StackingSats] Dip is divine. $77K holds as strong support, and the FBI speaking at Bitcoin 2026 about \"ending the war\" alongside the U.S. military running a node isn't just narrative \u2014 it's institutional capitulati",
-            "[FadeTheCrowd] Price rejection at $80K on low volume is noise \u2014 we\u2019re consolidating within range while institutions quietly stack. Fear & Greed at 46 with fading selling pressure post-rejection shows fear is contain",
-            "[DiamondHands420] $77K is holding HARD \u2014 every dip gets bought because the narrative tsunami is REAL: FBI ending the war on Bitcoin, U.S. military stress-testing the network, Fold onboarding employers into Bitcoin payr"
+            "[CryptoKaleo] This dip is a power move by smart money \u2014 $77.2K isn\u2019t just support, it\u2019s a launching pad. The FBI speaking at Bitcoin 2026 and the U.S. military running a node isn\u2019t symbolism, it\u2019s systemic surrende",
+            "[DiamondHands420] $77.2K holding STRONG with the FBI and U.S. military now openly embracing Bitcoin? This is NOT noise\u2014this is the blueprint of institutional adoption accelerating in real time. The shallow pullback on ",
+            "[TrendRider] Price is respecting the $77.2K weekly support again, with declining volume on the pullback\u2014classic accumulation behavior. The failed $80K retest is not a bull trap but a compression phase, with milita",
+            "[StackingSats] $77.8K is a strong buy\u2014every dip into the $77.2K\u2013$78K zone is a gift from the market. The FBI speaking at Bitcoin 2026 and the U.S. military running a node aren't PR stunts; they're irreversible signs"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $80K, just like every time\u2014rally capped, volume fades, and we close the week below resistance. All this \"FBI love\" and military node nonsense is noise to distract from the fact that"
+            "[BearishBob] Another fakeout failure at $80K, price trapped below resistance with declining volume\u2014classic bull trap setup. All this FBI and military node hype? Just noise to mask distribution; institutions are du"
           ]
         },
-        "timestamp": "2026-04-23T18:41:23.953511+00:00",
+        "timestamp": "2026-04-23T19:40:14.017576+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -416,17 +424,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 680.6,
+          "run_duration_sec": 582.0,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77922,
-            "change_24h": -1.3,
+            "price": 77866,
+            "change_24h": -1.46,
             "fear_greed": 46
           }
         },
-        "age_minutes": 58.7,
+        "age_minutes": 9.9,
         "is_fresh": true
       },
       "groq": {
@@ -475,7 +483,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 756.4,
+        "age_minutes": 766.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -492,7 +500,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 9325.0,
+        "age_minutes": 9335.1,
         "is_fresh": false
       }
     },
