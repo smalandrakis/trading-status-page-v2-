@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-23T16:50:01.993037",
+  "generated_at": "2026-04-23T17:00:41.933541",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-23T16:50:01.993051"
+    "last_health_check": "2026-04-23T17:00:41.933557"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-23 16:49:08,609",
+      "last_update": "2026-04-23 16:59:49,403",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,8 +24,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 37.3,
-        "time": "2026-04-23 16:49:08,609"
+        "confidence": 36.1,
+        "time": "2026-04-23 16:59:49,403"
       },
       "open_position": null,
       "performance": {
@@ -50,7 +50,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-23 16:49:15,681",
+      "last_update": "2026-04-23 16:59:57,622",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -62,16 +62,16 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 68.8,
-        "time": "2026-04-23 16:49:15,681"
+        "confidence": 70.9,
+        "time": "2026-04-23 16:59:57,622"
       },
       "open_position": {
         "direction": "LONG",
-        "size": 1,
-        "entry_price": 77964.62,
-        "tp_price": 78744.2662,
-        "sl_price": 77574.7969,
-        "entry_time": "2026-04-23 16:47:15",
+        "size": 2,
+        "entry_price": 77993.65,
+        "tp_price": 78773.58649999999,
+        "sl_price": 77603.68174999999,
+        "entry_time": "2026-04-23 16:54:16",
         "adopted": false
       },
       "performance": {
@@ -152,7 +152,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 16:49:54,422 - INFO - [HEARTBEAT] Price: $77,898.55",
+      "last_update": "2026-04-23 17:00:41,245 - INFO -   LONG",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -265,7 +265,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-23 16:49:52,554 - INFO - [HEARTBEAT] Price: $77,900.24",
+      "last_update": "2026-04-23 17:00:33,641 - INFO - [HEARTBEAT] Price: $78,179.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -363,32 +363,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-23T16:50:02.614919",
+    "updated_at": "2026-04-23T17:00:42.584448",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2848,
-        "confidence": 0.6581,
-        "bullish_pct": 0.3348,
-        "bearish_pct": 0.0455,
-        "neutral_pct": 0.6196,
+        "strength": 0.2782,
+        "confidence": 0.6753,
+        "bullish_pct": 0.3367,
+        "bearish_pct": 0.0484,
+        "neutral_pct": 0.6149,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.4294,
+        "consensus_score": 0.4224,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price holding at $77.2K on $1.9B ETF inflows with Fear & Greed at 46\u2014this is not capitulation, it\u2019s compression. Institutional demand is structural, but premature longs are getting shaken out before t",
-            "[TrendRider] Price is respecting the $77.2K\u2013$79.4K range with strong institutional backing\u2014$1.9B ETF inflows, U.S. military node, Treasury pushing legislation\u2014all reinforcing accumulation. The tight range after a ",
-            "[CryptoKaleo] This dip to $77.2K is a joke\u2014absolute capitulation theater while the FBI, U.S. military, and Treasury all publicly align with Bitcoin. BlackRock\u2019s $1.9B ETF inflow streak isn\u2019t noise\u2014it\u2019s a goddamn av",
-            "[DiamondHands420] We\u2019re $77.6K\u2014barely off the $77.2K fortress! This is not a pullback, it\u2019s a spring coiling! FBI speaking at Bitcoin 2026, U.S. military running nodes, Treasury pushing pro-crypto legislation, AND $1.9",
-            "[StackingSats] $77.2K held firm\u2014another fakeout to shake weak hands while institutions stack. ETF inflows ($1.9B/7d), U.S. military node, FBI engagement, and Treasury pushing legislation confirm systemic adoption. T"
+            "[TrendRider] Price is consolidating with purpose\u2014three tests of $79.4K aren\u2019t rejection, they\u2019re reconnaissance. The $1.9B in ETF inflows on top of military, Treasury, and FBI engagement isn\u2019t noise, it\u2019s a slow-m",
+            "[FadeTheCrowd] Price is grinding sideways, but the Fear & Greed Index at 46 amid $1.9B in ETF inflows and now *FBI, military, and Treasury* engagement tells me accumulation is happening while sentiment stays restrai",
+            "[DiamondHands420] We're still coiling at $77.2K\u2013$79.4K, but the FOMO is building\u2014FBI, military, Treasury, 100+ firms pushing Clarity Act? This is *the* institutional adoption climax. ETF inflows at $1.9B in a week on t",
+            "[StackingSats] $77.8K is a discounted entry in a halving year with the U.S. military, FBI, and Treasury all aligning with Bitcoin\u2019s infrastructure and policy momentum. The $1.9B in ETF inflows over 7 days reflects s",
+            "[CryptoKaleo] This dip is a narrative-powered spring load \u2014 the FBI, military, and Treasury aren\u2019t just showing up, they\u2019re *endorsing*. Three rejections at $79.4K? That\u2019s not weakness, it\u2019s compression before expl"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout setup at $79.4K\u2014just like Q4 2025. All this \"positive\" news (FBI, military node, Treasury) is noise to distract from macro headwinds and the fact we\u2019re still 38% off ATH. ETF inflows a"
+            "[BearishBob] Another fakeout setup at $79.4K\u2014three rejections are not \"reconnaissance,\" they're rejection. All this FBI, military, and Treasury love-in is theater while the real money distributes into hype; $1.9B "
           ]
         },
-        "timestamp": "2026-04-23T13:47:41.183221+00:00",
+        "timestamp": "2026-04-23T14:50:41.132612+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -405,17 +405,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1058.9,
+          "run_duration_sec": 1239.5,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77639,
-            "change_24h": -1.06,
+            "price": 77858,
+            "change_24h": -1.53,
             "fear_greed": 46
           }
         },
-        "age_minutes": 62.4,
+        "age_minutes": 10.0,
         "is_fresh": true
       },
       "groq": {
@@ -464,7 +464,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 466.4,
+        "age_minutes": 477.0,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -481,7 +481,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 9035.0,
+        "age_minutes": 9045.6,
         "is_fresh": false
       }
     },
