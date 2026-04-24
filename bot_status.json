@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T08:40:08.011495",
+  "generated_at": "2026-04-24T08:40:26.790289",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T08:40:08.011504"
+    "last_health_check": "2026-04-24T08:40:26.790303"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-24 08:39:54,347",
+      "last_update": "2026-04-24 08:40:24,672",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-24 08:39:56,350",
+      "last_update": "2026-04-24 08:40:24,726",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -424,7 +424,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T08:40:09.098814",
+    "updated_at": "2026-04-24T08:40:27.085027",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -476,7 +476,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 0.3,
+        "age_minutes": 0.6,
         "is_fresh": true
       },
       "groq": {
@@ -525,7 +525,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 1416.5,
+        "age_minutes": 1416.8,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -542,7 +542,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 9985.1,
+        "age_minutes": 9985.4,
         "is_fresh": false
       }
     },
