@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T14:50:01.759771",
+  "generated_at": "2026-04-24T15:00:01.445768",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T14:50:01.759781"
+    "last_health_check": "2026-04-24T15:00:01.445779"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-24 14:49:10,098",
+      "last_update": "2026-04-24 14:59:09,551",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,33 +24,19 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 36.7,
-        "time": "2026-04-24 14:49:10,098"
+        "confidence": 36.0,
+        "time": "2026-04-24 14:59:09,551"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 179,
-        "wins": 177,
+        "total_trades": 181,
+        "wins": 179,
         "losses": 2,
         "win_rate": 98.9,
-        "total_pnl": 216430.4,
-        "avg_pnl": 1209.11
+        "total_pnl": 219042.39,
+        "avg_pnl": 1210.18
       },
       "recent_trades": [
-        {
-          "time": "2026-04-24 14:00:07",
-          "direction": "LONG",
-          "pnl": 1388.71,
-          "pnl_pct": 3.68,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-24 14:05:07",
-          "direction": "LONG",
-          "pnl": 1384.7,
-          "pnl_pct": 3.67,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-24 14:10:07",
           "direction": "LONG",
@@ -106,6 +92,20 @@
           "pnl": 1362.83,
           "pnl_pct": 3.61,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 14:50:07",
+          "direction": "LONG",
+          "pnl": 1316.37,
+          "pnl_pct": 3.49,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 14:55:07",
+          "direction": "LONG",
+          "pnl": 1295.62,
+          "pnl_pct": 3.43,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-24 14:49:14,301",
+      "last_update": "2026-04-24 14:59:13,410",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 70.6,
-        "time": "2026-04-24 14:49:14,301"
+        "confidence": 68.5,
+        "time": "2026-04-24 14:59:13,356"
       },
       "open_position": {
         "direction": "LONG",
@@ -215,7 +215,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 14:49:44,006 - INFO - [HEARTBEAT] Price: $78,143.75",
+      "last_update": "2026-04-24 14:59:45,159 - INFO - [HEARTBEAT] Price: $78,257.35",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -328,7 +328,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 14:50:00,631 - INFO - [HEARTBEAT] Price: $78,130.64",
+      "last_update": "2026-04-24 15:00:00,747 - INFO - [HEARTBEAT] Price: $78,275.66",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -440,31 +440,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T14:50:02.430656",
+    "updated_at": "2026-04-24T15:00:02.063743",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3996,
-        "confidence": 0.6375,
-        "bullish_pct": 0.2747,
-        "bearish_pct": 0.051,
-        "neutral_pct": 0.6743,
+        "strength": 0.4187,
+        "confidence": 0.6292,
+        "bullish_pct": 0.2639,
+        "bearish_pct": 0.0535,
+        "neutral_pct": 0.6826,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5114,
+        "consensus_score": 0.5238,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price stuck at $78.5K with fading volume? Perfect. Third retest of resistance amid apathy (Fear & Greed still 39) while regulatory overhangs quietly resolve\u2014FBI speaking at BTC conf and Clarity Act pu",
-            "[CryptoKaleo] FBI speaking at Bitcoin 2026? Trump headlining a memecoin gala? This is narrative gasoline on a dry tinderbox. Regulatory FUD is flipping to FOMO \u2014 the Clarity Act push and Pantera drama are just nois",
-            "[StackingSats] $78.3K is accumulation in motion\u2014three tests of $78.5K mean nothing when the halving\u2019s post-shock supply squeeze is just ramping. FBI speaking at BTC2026? Clarity Act momentum? This is structural vali",
-            "[DiamondHands420] We're LITERALLY three tests away from a massive breakout \u2014 $78.5k is holding but every dip gets bought! FBI speaking at BTC2026, Trump at a memecoin gala, Clarity Act push? This is REGULATORY FOMO IGN"
+            "[StackingSats] $78.5K resistance? Just another speed bump on the way to new ATHs. Institutions like Metaplanet deploying zero-interest bond strategies prove smart money is stacking, not selling. The Clarity Act push",
+            "[FadeTheCrowd] Price is grinding sideways at key resistance ($78.5K) on low volume and fear (39 F&G), but the narrative is shifting\u2014Metaplanet\u2019s $50M zero-interest bond play and Pantera urging capitulation are oppos",
+            "[DiamondHands420] $78.5K resistance is a joke\u2014price is primed to blow past it on FOMO alone. Patel speaking at Bitcoin 2026? That\u2019s FUD reversal. Metaplanet stacking BTC with $50M zero-interest bonds? More fuel. I\u2019m lo",
+            "[CryptoKaleo] We're staring down the barrel of a narrative supernova\u2014$78.5K isn't a ceiling, it's a coiled spring. Patel headlining Bitcoin 2026? That\u2019s not just regulatory thaw, it\u2019s regime shift fuel. Metaplanet\u2019"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout into event-driven hype\u2014FBI speaking at a conference is theater, not policy change. $78.5k has rejected price three times; volume is soft, and the Pantera dump call is just the start of"
+            "[BearishBob] Another fakeout at $78.5K resistance \u2014 volume is dying and the only \"bullish\" fuel is political circus theater and desperate corporate gimmicks like zero-interest bond stunts. Metaplanet\u2019s dumb play j"
           ]
         },
-        "timestamp": "2026-04-24T11:46:33.256022+00:00",
+        "timestamp": "2026-04-24T12:59:19.993496+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -481,17 +481,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 991.0,
+          "run_duration_sec": 1757.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78300,
-            "change_24h": 1.05,
+            "price": 78276,
+            "change_24h": 0.68,
             "fear_greed": 39
           }
         },
-        "age_minutes": 63.5,
+        "age_minutes": 0.7,
         "is_fresh": true
       },
       "groq": {
@@ -540,7 +540,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 346.3,
+        "age_minutes": 356.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -557,7 +557,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 10355.0,
+        "age_minutes": 10365.0,
         "is_fresh": false
       }
     },
