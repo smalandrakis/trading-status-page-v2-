@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T02:20:08.659410",
+  "generated_at": "2026-04-24T02:30:00.952847",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T02:20:08.659440"
+    "last_health_check": "2026-04-24T02:30:00.952870"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-24 02:19:42,764",
+      "last_update": "2026-04-24 02:29:47,862",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,33 +24,19 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 34.1,
-        "time": "2026-04-24 02:19:42,764"
+        "confidence": 28.5,
+        "time": "2026-04-24 02:29:47,862"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 30,
-        "wins": 28,
+        "total_trades": 32,
+        "wins": 30,
         "losses": 2,
-        "win_rate": 93.3,
-        "total_pnl": 33674.27,
-        "avg_pnl": 1122.48
+        "win_rate": 93.8,
+        "total_pnl": 36603.11,
+        "avg_pnl": 1143.85
       },
       "recent_trades": [
-        {
-          "time": "2026-04-24 01:30:50",
-          "direction": "LONG",
-          "pnl": 1353.9,
-          "pnl_pct": 3.59,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-24 01:35:50",
-          "direction": "LONG",
-          "pnl": 1364.06,
-          "pnl_pct": 3.62,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-24 01:40:07",
           "direction": "LONG",
@@ -106,6 +92,20 @@
           "pnl": 1425.54,
           "pnl_pct": 3.78,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 02:20:45",
+          "direction": "LONG",
+          "pnl": 1475.43,
+          "pnl_pct": 3.91,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 02:25:45",
+          "direction": "LONG",
+          "pnl": 1453.4,
+          "pnl_pct": 3.85,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-24 02:19:43,917",
+      "last_update": "2026-04-24 02:29:47,826",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,16 +125,16 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 80.0,
-        "time": "2026-04-24 02:19:43,917"
+        "confidence": 81.1,
+        "time": "2026-04-24 02:29:47,825"
       },
       "open_position": {
         "direction": "LONG",
         "size": 3,
-        "entry_price": 78301.65,
-        "tp_price": 79084.66649999999,
-        "sl_price": 77910.14175,
-        "entry_time": "2026-04-24 02:12:44",
+        "entry_price": 78375.27,
+        "tp_price": 79159.0227,
+        "sl_price": 77983.39365,
+        "entry_time": "2026-04-24 02:22:48",
         "adopted": false
       },
       "performance": {
@@ -215,7 +215,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 02:19:52,813 - INFO - [HEARTBEAT] Price: $78,364.06",
+      "last_update": "2026-04-24 02:29:55,579 - INFO - [HEARTBEAT] Price: $78,407.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -231,8 +231,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 65.2,
-        "time": "2026-04-24 02:18:29,678"
+        "confidence": 63.3,
+        "time": "2026-04-24 02:28:37,794"
       },
       "open_position": null,
       "performance": {
@@ -320,7 +320,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 02:19:56,659 - INFO - [HEARTBEAT] Price: $78,364.05",
+      "last_update": "2026-04-24 02:29:56,853 - INFO - [HEARTBEAT] Price: $78,408.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -336,8 +336,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 66.4,
-        "time": "2026-04-24 02:18:54,700"
+        "confidence": 63.4,
+        "time": "2026-04-24 02:28:59,157"
       },
       "open_position": null,
       "performance": {
@@ -424,7 +424,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T02:20:09.639934",
+    "updated_at": "2026-04-24T02:30:01.651520",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -475,7 +475,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 42.2,
+        "age_minutes": 52.1,
         "is_fresh": true
       },
       "groq": {
@@ -524,7 +524,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 1036.5,
+        "age_minutes": 1046.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -541,7 +541,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 9605.1,
+        "age_minutes": 9615.0,
         "is_fresh": false
       }
     },
