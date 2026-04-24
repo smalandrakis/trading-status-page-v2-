@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T03:30:04.290200",
+  "generated_at": "2026-04-24T03:40:09.367015",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T03:30:04.290215"
+    "last_health_check": "2026-04-24T03:40:09.367041"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-24 03:29:09,617",
+      "last_update": "2026-04-24 03:39:49,278",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,32 +25,18 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 32.3,
-        "time": "2026-04-24 03:29:09,617"
+        "time": "2026-04-24 03:39:49,278"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 44,
-        "wins": 42,
+        "total_trades": 46,
+        "wins": 44,
         "losses": 2,
-        "win_rate": 95.5,
-        "total_pnl": 53608.27,
-        "avg_pnl": 1218.37
+        "win_rate": 95.7,
+        "total_pnl": 56174.77,
+        "avg_pnl": 1221.19
       },
       "recent_trades": [
-        {
-          "time": "2026-04-24 02:40:18",
-          "direction": "LONG",
-          "pnl": 1492.63,
-          "pnl_pct": 3.96,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-24 02:45:42",
-          "direction": "LONG",
-          "pnl": 1463.45,
-          "pnl_pct": 3.88,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-24 02:50:47",
           "direction": "LONG",
@@ -106,6 +92,20 @@
           "pnl": 1285.83,
           "pnl_pct": 3.41,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 03:30:32",
+          "direction": "LONG",
+          "pnl": 1285.37,
+          "pnl_pct": 3.41,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 03:35:47",
+          "direction": "LONG",
+          "pnl": 1281.12,
+          "pnl_pct": 3.4,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-24 03:29:14,009",
+      "last_update": "2026-04-24 03:39:48,542",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 65.3,
-        "time": "2026-04-24 03:29:14,008"
+        "signal": "NEUTRAL",
+        "confidence": 64.4,
+        "time": "2026-04-24 03:39:48,542"
       },
       "open_position": {
         "direction": "SHORT",
@@ -215,7 +215,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 03:29:41,293 - INFO - [HEARTBEAT] Price: $78,059.52",
+      "last_update": "2026-04-24 03:39:43,827 - INFO - [HEARTBEAT] Price: $78,091.67",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -328,7 +328,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 03:29:58,172 - INFO - [HEARTBEAT] Price: $78,025.99",
+      "last_update": "2026-04-24 03:39:58,410 - INFO - [HEARTBEAT] Price: $78,099.20",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -440,30 +440,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T03:30:05.417158",
+    "updated_at": "2026-04-24T03:40:10.419546",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5528,
-        "confidence": 0.6309,
-        "bullish_pct": 0.1978,
-        "bearish_pct": 0.0517,
-        "neutral_pct": 0.7506,
+        "strength": 0.5108,
+        "confidence": 0.6239,
+        "bullish_pct": 0.2199,
+        "bearish_pct": 0.0494,
+        "neutral_pct": 0.7307,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6258,
+        "stance_shifts": 1,
+        "consensus_score": 0.596,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $78.4K? We\u2019re not stuck \u2014 we\u2019re loading the cannon! FBI Director speaking at Bitcoin 2026 about ending the \"war on Bitcoin\"? Fellowship PAC dumping $1.75M into Paxton? This is coordinated pro-BTC mome",
-            "[StackingSats] Every dip to $77.2K gets absorbed\u2014low volume, no follow-through down. This is accumulation, not hesitation. FBI Director speaking at Bitcoin 2026? Fold enabling employer Bitcoin bonuses? This is silen",
-            "[CryptoKaleo] This range is a spring coiled to explode \u2014 $78.6K isn't resistance, it\u2019s the launchpad. Patel headlining Bitcoin 2026 isn\u2019t symbolism, it\u2019s seismic: DC\u2019s tone shift is accelerating, backed by real fin"
+            "[CryptoKaleo] We\u2019re not just holding $77.2K \u2014 we\u2019re building a fortress at this level. The FBI director headlining Bitcoin 2026 isn\u2019t symbolism, it\u2019s surrender from the old regime. With ETF flows quietly stacking a",
+            "[DiamondHands420] $78K holding strong and that $77.2K floor is ABSOLUTE diamond hands territory \u2014 FBI director speaking at Bitcoin 2026? This is NOT FUD, this is FULL SURRENDER from the old guard! Green on the week, ET",
+            "[StackingSats] Every dip to $77.2K is a gift \u2014 that level is now a hardened institutional floor, reinforced by regulatory thaw signaled by the FBI director's appearance at Bitcoin 2026. The $78K hold and steady ETF ",
+            "[FadeTheCrowd] Price is grinding at the top of the range with fear still embedded\u2014Fear & Greed at 39 despite symbolic regulatory tailwinds. That disconnect is classic pre-surge tension; the $77.2K support holds, and"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout retest of $78.6K on a volume whisper \u2014 classic bear trap setup. All this Patel/PAC noise is narrative fumes while on-chain weak hands slowly get shaken below $77.2K. Institutions aren'"
+            "[BearishBob] Another fakeout rally into $78.6K on weak volume\u2014same script as every post-ETF pump. All this FBI \"surrender\" narrative is propaganda to mask distribution; institutions are still dumping on retail str"
           ]
         },
-        "timestamp": "2026-04-24T01:03:57.517791+00:00",
+        "timestamp": "2026-04-24T01:39:29.495055+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -480,17 +481,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2035.3,
+          "run_duration_sec": 544.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 34,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 78431,
-            "change_24h": 0.12,
+            "price": 78083,
+            "change_24h": -0.08,
             "fear_greed": 39
           }
         },
-        "age_minutes": 26.1,
+        "age_minutes": 0.7,
         "is_fresh": true
       },
       "groq": {
@@ -539,7 +540,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 1106.4,
+        "age_minutes": 1116.5,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -556,7 +557,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 9675.0,
+        "age_minutes": 9685.1,
         "is_fresh": false
       }
     },
