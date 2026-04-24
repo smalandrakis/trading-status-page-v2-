@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-24T12:19:54.024306",
+  "generated_at": "2026-04-24T12:20:01.121527",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T12:19:54.024320"
+    "last_health_check": "2026-04-24T12:20:01.121550"
   },
   "bots": [
     {
@@ -328,7 +328,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 12:19:28,692 - INFO - [HEARTBEAT] Price: $77,574.00",
+      "last_update": "2026-04-24 12:19:58,697 - INFO - [HEARTBEAT] Price: $77,574.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -440,7 +440,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T12:19:54.294650",
+    "updated_at": "2026-04-24T12:20:01.952937",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -491,7 +491,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 34.6,
+        "age_minutes": 34.7,
         "is_fresh": true
       },
       "groq": {
@@ -540,7 +540,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 196.2,
+        "age_minutes": 196.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -557,7 +557,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 10204.8,
+        "age_minutes": 10205.0,
         "is_fresh": false
       }
     },
