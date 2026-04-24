@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T09:00:01.711323",
+  "generated_at": "2026-04-24T09:10:07.749339",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T09:00:01.711341"
+    "last_health_check": "2026-04-24T09:10:07.749359"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-24 08:59:20,420",
+      "last_update": "2026-04-24 09:09:13,146",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,33 +24,19 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 39.0,
-        "time": "2026-04-24 08:59:20,420"
+        "confidence": 37.2,
+        "time": "2026-04-24 09:09:13,146"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 109,
-        "wins": 107,
+        "total_trades": 111,
+        "wins": 109,
         "losses": 2,
         "win_rate": 98.2,
-        "total_pnl": 133554.4,
-        "avg_pnl": 1225.27
+        "total_pnl": 135875.87,
+        "avg_pnl": 1224.11
       },
       "recent_trades": [
-        {
-          "time": "2026-04-24 08:10:11",
-          "direction": "LONG",
-          "pnl": 1235.73,
-          "pnl_pct": 3.27,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-24 08:15:16",
-          "direction": "LONG",
-          "pnl": 1239.34,
-          "pnl_pct": 3.28,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-24 08:20:11",
           "direction": "LONG",
@@ -106,6 +92,20 @@
           "pnl": 1202.17,
           "pnl_pct": 3.19,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 09:00:12",
+          "direction": "LONG",
+          "pnl": 1159.95,
+          "pnl_pct": 3.07,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 09:05:11",
+          "direction": "LONG",
+          "pnl": 1161.53,
+          "pnl_pct": 3.08,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-24 08:59:21,233",
+      "last_update": "2026-04-24 09:09:17,537",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -124,9 +124,9 @@
         "expected_pnl_2yr": 11689
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 65.1,
-        "time": "2026-04-24 08:59:21,108"
+        "signal": "NEUTRAL",
+        "confidence": 62.1,
+        "time": "2026-04-24 09:09:17,537"
       },
       "open_position": {
         "direction": "SHORT",
@@ -215,7 +215,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 08:59:38,219 - INFO - [HEARTBEAT] Price: $77,782.96",
+      "last_update": "2026-04-24 09:09:40,384 - INFO - [HEARTBEAT] Price: $77,811.62",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -230,11 +230,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 51.5,
-        "time": "2026-04-24 08:58:46,695"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 77796.35,
+        "tp_price": 77407.36825,
+        "sl_price": 77913.044525,
+        "entry_time": "2026-04-24 09:00:58",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 35,
         "wins": 10,
@@ -320,7 +328,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 08:59:36,162 - INFO - [HEARTBEAT] Price: $77,782.97",
+      "last_update": "2026-04-24 09:10:06,292 - INFO - [HEARTBEAT] Price: $77,815.55",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -335,11 +343,19 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 50.5,
-        "time": "2026-04-24 08:59:27,212"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 77796.34,
+        "tp_price": 77407.35829999999,
+        "sl_price": 77913.03451,
+        "entry_time": "2026-04-24 09:01:28",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 14,
         "wins": 6,
@@ -424,7 +440,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T09:00:02.772580",
+    "updated_at": "2026-04-24T09:10:09.278159",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -476,29 +492,29 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 20.2,
+        "age_minutes": 30.3,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.8484,
+        "strength": 0.8487,
         "confidence": 0.5361,
-        "bullish_pct": 0.0505,
-        "bearish_pct": 0.0505,
-        "neutral_pct": 0.8989,
+        "bullish_pct": 0.0504,
+        "bearish_pct": 0.0504,
+        "neutral_pct": 0.8991,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.8484,
+        "consensus_score": 0.8487,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] The news just keeps getting better and better - the U.S. military running a Bitcoin node and the Treasury Secretary pressing for crypto market structure legislation is huge validation for Bitcoin. I'm"
+            "[DiamondHands420] The FBI Director speaking at the Bitcoin 2026 Conference is a massive deal, it's a sign of adoption and less war on Bitcoin. I'm getting a bit excited with all the bullish news, and I think we'll see "
           ],
           "bearish": [
-            "[BearishBob] The recent news may seem positive, but I'm not buying into the hype. The Fear & Greed Index is still in the \"Fear\" zone, and the price action is relatively stable, which suggests to me that this is ju"
+            "[BearishBob] The recent price action is lackluster, and the Fear & Greed Index at 39 confirms my bearish suspicions. The news about the FBI Director speaking at the Bitcoin 2026 Conference is likely a desperate at"
           ]
         },
-        "timestamp": "2026-04-23T07:03:40.460054+00:00",
+        "timestamp": "2026-04-24T07:03:44.165772+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -515,17 +531,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 218.6,
+          "run_duration_sec": 221.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78223,
-            "change_24h": 0.3,
-            "fear_greed": 46
+            "price": 77828,
+            "change_24h": -0.51,
+            "fear_greed": 39
           }
         },
-        "age_minutes": 1436.4,
+        "age_minutes": 6.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -542,7 +558,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 10005.0,
+        "age_minutes": 10015.1,
         "is_fresh": false
       }
     },
