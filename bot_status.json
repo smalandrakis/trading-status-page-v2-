@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T20:10:01.182224",
+  "generated_at": "2026-04-24T20:20:00.749436",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T20:10:01.182232"
+    "last_health_check": "2026-04-24T20:20:00.749452"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-24 20:09:09,899",
+      "last_update": "2026-04-24 20:19:11,292",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -24,33 +24,27 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 43.0,
-        "time": "2026-04-24 20:09:09,899"
+        "confidence": 42.5,
+        "time": "2026-04-24 20:19:11,292"
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 1,
+        "entry_price": 77519.26,
+        "tp_price": 79457.24149999999,
+        "sl_price": 76744.0674,
+        "entry_time": "unknown",
+        "adopted": false
+      },
       "performance": {
-        "total_trades": 243,
-        "wins": 241,
+        "total_trades": 245,
+        "wins": 243,
         "losses": 2,
         "win_rate": 99.2,
-        "total_pnl": 294135.48,
-        "avg_pnl": 1210.43
+        "total_pnl": 296244.91,
+        "avg_pnl": 1209.16
       },
       "recent_trades": [
-        {
-          "time": "2026-04-24 19:20:07",
-          "direction": "LONG",
-          "pnl": 1083.01,
-          "pnl_pct": 2.87,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-24 19:25:07",
-          "direction": "LONG",
-          "pnl": 1076.46,
-          "pnl_pct": 2.85,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-24 19:30:07",
           "direction": "LONG",
@@ -106,6 +100,20 @@
           "pnl": 1089.72,
           "pnl_pct": 2.89,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 20:10:07",
+          "direction": "LONG",
+          "pnl": 1082.4,
+          "pnl_pct": 2.87,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 20:15:07",
+          "direction": "LONG",
+          "pnl": 1027.03,
+          "pnl_pct": 2.72,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +121,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-24 20:09:14,611",
+      "last_update": "2026-04-24 20:19:15,549",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 82.8,
-        "time": "2026-04-24 20:09:14,610"
+        "confidence": 85.3,
+        "time": "2026-04-24 20:19:15,548"
       },
       "open_position": {
         "direction": "SHORT",
@@ -215,7 +223,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 20:09:58,370 - INFO - [HEARTBEAT] Price: $77,630.00",
+      "last_update": "2026-04-24 20:19:59,947 - INFO - [HEARTBEAT] Price: $77,415.79",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -328,7 +336,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 20:09:34,868 - INFO - [HEARTBEAT] Price: $77,608.94",
+      "last_update": "2026-04-24 20:19:34,966 - INFO - [HEARTBEAT] Price: $77,451.35",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -441,7 +449,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-24 20:09:36,714 - INFO - [HEARTBEAT] Price: $77,608.95",
+      "last_update": "2026-04-24 20:19:38,321 - INFO - [HEARTBEAT] Price: $77,456.86",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -475,31 +483,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T20:10:01.837009",
+    "updated_at": "2026-04-24T20:20:01.618367",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4034,
-        "confidence": 0.6286,
-        "bullish_pct": 0.2723,
-        "bearish_pct": 0.052,
-        "neutral_pct": 0.6757,
+        "strength": 0.4779,
+        "confidence": 0.6253,
+        "bullish_pct": 0.2345,
+        "bearish_pct": 0.0531,
+        "neutral_pct": 0.7124,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5136,
+        "stance_shifts": 1,
+        "consensus_score": 0.5686,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $77K holding firm on low volume with Fear & Greed at 39 is textbook accumulation\u2014every chop is a gift to stack sats. MSTR\u2019s 25% surge confirms smart money is front-running retail apathy ahead of the h",
-            "[DiamondHands420] $77K is not a meat grinder\u2014it\u2019s a spring coiling! MSTR up 25% while BTC dips? That\u2019s institutional stealth mode, loading through equity vehicles while retail sleeps. Fold\u2019s Bitcoin bonuses + Nakamoto\u2019",
-            "[CryptoKaleo] MSTR up 25% while BTC grinds sideways at $77K on low volume isn\u2019t a red flag\u2014it\u2019s a five-alarm bullish signal being ignored. Smart money is front-running the halving\u2019s gamma squeeze through equities a",
-            "[FadeTheCrowd] Price hugging $77.2K on low volume with Fear & Greed at 39 isn\u2019t apathy\u2014it\u2019s accumulation in disguise. MSTR\u2019s 25% surge, Fold\u2019s employer Bitcoin bonuses, and Nakamoto\u2019s volatility play are early signa"
+            "[FadeTheCrowd] Price remains compressed at $77.2K\u2013$78.5K with F&G stuck at 39\u2014perfect fear, perfect opportunity. MSTR's outperformance and Nakamoto\u2019s hedging aren\u2019t noise, they\u2019re stealth accumulation and risk optim",
+            "[CryptoKaleo] $77.6K isn\u2019t just holding \u2014 it\u2019s coiling. The Powell probe drop removes a political sword of Damocles, and Nakamoto hedging via Kraken/Bitwise? That\u2019s not fear, that\u2019s elite capital engineering. MSTR ",
+            "[StackingSats] $77.2K\u2013$78.5K isn't a trap \u2014 it's a spring coiling ahead of the halving-fed rally. MSTR pumping and Nakamoto hedging aren't noise, they're smart capital preparing for 1 BTC = 1 BTC in a supply-constra"
           ],
           "bearish": [
-            "[BearishBob] $77K is still a meat grinder\u2014low volume, no spot follow-through, and MSTR pumping in isolation screams equity-driven distribution, not real demand. Fold and Nakamoto noise are distractions; China and "
+            "[BearishBob] $77.6K is still just a chop zone\u2014tight range, high volume, no follow-through. MSTR pumping? Classic retail trap. Nakamoto hedging isn't \"engineering,\" it's risk-off positioning. Solana's MACD signal a"
           ]
         },
-        "timestamp": "2026-04-24T16:40:35.628825+00:00",
+        "timestamp": "2026-04-24T18:18:52.664293+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -516,17 +523,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 633.2,
+          "run_duration_sec": 2930.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 34,
           "market_data_summary": {
-            "price": 77762,
-            "change_24h": -0.79,
+            "price": 77692,
+            "change_24h": 0.01,
             "fear_greed": 39
           }
         },
-        "age_minutes": 89.4,
+        "age_minutes": 1.1,
         "is_fresh": true
       },
       "groq": {
@@ -575,7 +582,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 666.3,
+        "age_minutes": 676.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -592,7 +599,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 10675.0,
+        "age_minutes": 10685.0,
         "is_fresh": false
       }
     },
