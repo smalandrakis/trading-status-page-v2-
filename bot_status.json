@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T23:40:01.721437",
+  "generated_at": "2026-04-24T23:50:01.309910",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T23:40:01.721451"
+    "last_health_check": "2026-04-24T23:50:01.309922"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 23:39:34,716 - INFO - [HEARTBEAT] Price: $77,603.30",
+      "last_update": "2026-04-24 23:49:35,341 - INFO - [HEARTBEAT] Price: $77,562.71",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 23:39:39,991 - INFO - [HEARTBEAT] Price: $77,603.29",
+      "last_update": "2026-04-24 23:49:40,656 - INFO - [HEARTBEAT] Price: $77,562.72",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-24 23:39:45,273 - INFO - [HEARTBEAT] Price: $77,599.19",
+      "last_update": "2026-04-24 23:49:45,970 - INFO - [HEARTBEAT] Price: $77,566.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,7 +256,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-24 23:39:16,691"
+        "time": "2026-04-24 23:49:17,471"
       },
       "open_position": null,
       "performance": {
@@ -272,31 +272,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T23:40:01.920608",
+    "updated_at": "2026-04-24T23:50:01.509599",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4136,
-        "confidence": 0.6286,
-        "bullish_pct": 0.2674,
-        "bearish_pct": 0.0515,
-        "neutral_pct": 0.681,
+        "strength": 0.1817,
+        "confidence": 0.6519,
+        "bullish_pct": 0.386,
+        "bearish_pct": 0.0464,
+        "neutral_pct": 0.5677,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5216,
+        "stance_shifts": 2,
+        "consensus_score": 0.3515,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $77.4K isn\u2019t just holding \u2014 it\u2019s *fortified*. Quantum FUD is a narrative weapon to flush weak hands while whales accumulate under the radar; Solana\u2019s MACD flash is a precursor to altseason ignition, a",
-            "[FadeTheCrowd] Price clinging to $77.4K on fading volume with Fear & Greed stuck at 39 is classic pre-breakout stagnation\u2014quantum FUD is being weaponized to manufacture doubt while UTXO consolidation quietly acceler",
-            "[DiamondHands420] $77.5K holding STRONG\u2014this is pure accumulation drama while the weak hands sweat quantum FUD! Solana\u2019s MACD lighting up + altseason whispers mean we\u2019re coiling for a squeeze, and BTC never stays flat ",
-            "[StackingSats] $77.5K holding firm is no accident\u2014this is *strategic* accumulation territory pre-halving. Quantum FUD is noise peddled to spook normies while smart money loads up; UTXO consolidation and hash rate hi"
+            "[CryptoKaleo] We\u2019re coiling at $77.6K like a spring-loaded trap \u2014 negative funding? Perfect. Hash rate dip? Miners capitulating into the hands of the strongest hands. VanEck\u2019s right: this is *the* accumulation phas",
+            "[TrendRider] Price holding at $77.4K\u2013$78.5K with negative funding and declining hash rate confirms late-stage accumulation \u2014 I\u2019ve seen this before ahead of explosive moves. The market is tight, fear is palpable, b",
+            "[DiamondHands420] We're still coiling at $77.6K \u2014 this range is just shaking out weak hands before the next parabolic move. Negative funding? Perfect. Hash rate dip? Miners capitulating into the strongest hands. VanEck",
+            "[FadeTheCrowd] Price hugging $77.5K with negative funding and Fear & Greed at 39 is textbook accumulation \u2014 the quantum noise and oil-linked risk-off are just excuses for weak hands to sell. VanEck\u2019s right: this tre",
+            "[DeepPockets] Price holding firm above $77.4K with persistent negative funding rates and a declining hash rate confirms my thesis of quiet, deliberate accumulation\u2014this is the same grind I\u2019ve seen ahead of prior in"
           ],
           "bearish": [
-            "[BearishBob] $77.5K holding? More like $77.5K *trapped*. Every \"hold\" narrative ignores the volume collapse and failed retests\u2014this isn\u2019t accumulation, it\u2019s stagnation before breakdown. Solana\u2019s MACD pop is noise,"
+            "[BearishBob] Another fakeout at $78K rejected \u2014 this \"accumulation\" is just slow leakage from weak hands before the next leg down. Negative funding rates aren't bullish, they're a trap for shorts ahead of a miner "
           ]
         },
-        "timestamp": "2026-04-24T20:46:21.048321+00:00",
+        "timestamp": "2026-04-24T21:41:36.086326+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -313,17 +314,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 979.7,
+          "run_duration_sec": 693.9,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77511,
-            "change_24h": -0.31,
+            "price": 77638,
+            "change_24h": -0.33,
             "fear_greed": 39
           }
         },
-        "age_minutes": 53.7,
+        "age_minutes": 8.4,
         "is_fresh": true
       },
       "groq": {
@@ -372,7 +373,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 876.3,
+        "age_minutes": 886.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -389,7 +390,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 10885.0,
+        "age_minutes": 10895.0,
         "is_fresh": false
       }
     },
