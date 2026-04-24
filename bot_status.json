@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T22:40:01.148589",
+  "generated_at": "2026-04-24T22:50:01.551400",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T22:40:01.148601"
+    "last_health_check": "2026-04-24T22:50:01.551408"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 22:39:34,973 - INFO - [HEARTBEAT] Price: $77,650.00",
+      "last_update": "2026-04-24 22:49:34,782 - INFO - [HEARTBEAT] Price: $77,648.53",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 22:39:40,467 - INFO - [HEARTBEAT] Price: $77,650.01",
+      "last_update": "2026-04-24 22:49:40,116 - INFO - [HEARTBEAT] Price: $77,648.52",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-24 22:39:45,774 - INFO - [HEARTBEAT] Price: $77,650.01",
+      "last_update": "2026-04-24 22:49:45,439 - INFO - [HEARTBEAT] Price: $77,648.52",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,7 +256,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-24 22:39:18,841"
+        "time": "2026-04-24 22:49:16,530"
       },
       "open_position": null,
       "performance": {
@@ -272,31 +272,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T22:40:01.324138",
+    "updated_at": "2026-04-24T22:50:01.674641",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.412,
-        "confidence": 0.6167,
-        "bullish_pct": 0.269,
-        "bearish_pct": 0.05,
+        "strength": 0.4136,
+        "confidence": 0.6286,
+        "bullish_pct": 0.2674,
+        "bearish_pct": 0.0515,
         "neutral_pct": 0.681,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5215,
+        "consensus_score": 0.5216,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $77.4K is STILL holding\u2014this is not luck, it's a warzone win! All this \"fear\" chatter while BTC grinds sideways? Classic accumulation phase, just like 2020 and 2022. Powell probe dropped, institutions",
-            "[FadeTheCrowd] Price holding above $77.4K in fear (39 F&G) with low volume and macro noise is textbook compression\u2014weak hands shaken out, strong hands accumulating silently. Oil and equities at ATHs create illusion ",
-            "[StackingSats] $77.4K holding strong on low volume in fear territory is classic late-stage accumulation\u2014just like Q4 2020 and Q1 2022. Macro noise, oil, equities at ATHs\u2014none of it changes the halving supply shock o",
-            "[CryptoKaleo] $77.4K is HOLDING\u2014this isn\u2019t luck, it\u2019s a statement. The Powell probe drop flips the script: political overhang gone, liquidity fears fading, and institutions are quietly piling in (shoutout Crypto Bi"
+            "[CryptoKaleo] $77.4K isn\u2019t just holding \u2014 it\u2019s *fortified*. Quantum FUD is a narrative weapon to flush weak hands while whales accumulate under the radar; Solana\u2019s MACD flash is a precursor to altseason ignition, a",
+            "[FadeTheCrowd] Price clinging to $77.4K on fading volume with Fear & Greed stuck at 39 is classic pre-breakout stagnation\u2014quantum FUD is being weaponized to manufacture doubt while UTXO consolidation quietly acceler",
+            "[DiamondHands420] $77.5K holding STRONG\u2014this is pure accumulation drama while the weak hands sweat quantum FUD! Solana\u2019s MACD lighting up + altseason whispers mean we\u2019re coiling for a squeeze, and BTC never stays flat ",
+            "[StackingSats] $77.5K holding firm is no accident\u2014this is *strategic* accumulation territory pre-halving. Quantum FUD is noise peddled to spook normies while smart money loads up; UTXO consolidation and hash rate hi"
           ],
           "bearish": [
-            "[BearishBob] $77.4K holding? Sure, until it doesn\u2019t. Volume is collapsing, equities are at ATHs on fumes, and oil\u2019s inflation pulse is still hot\u2014this is not a floor, it\u2019s a trap. All these \"hold\" narratives ignore"
+            "[BearishBob] $77.5K holding? More like $77.5K *trapped*. Every \"hold\" narrative ignores the volume collapse and failed retests\u2014this isn\u2019t accumulation, it\u2019s stagnation before breakdown. Solana\u2019s MACD pop is noise,"
           ]
         },
-        "timestamp": "2026-04-24T19:46:42.607379+00:00",
+        "timestamp": "2026-04-24T20:46:21.048321+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -313,17 +313,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1000.6,
+          "run_duration_sec": 979.7,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77568,
-            "change_24h": -0.39,
+            "price": 77511,
+            "change_24h": -0.31,
             "fear_greed": 39
           }
         },
-        "age_minutes": 53.3,
+        "age_minutes": 3.7,
         "is_fresh": true
       },
       "groq": {
@@ -372,7 +372,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 816.3,
+        "age_minutes": 826.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -389,7 +389,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 10825.0,
+        "age_minutes": 10835.0,
         "is_fresh": false
       }
     },
