@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-24T04:40:07.750626",
+  "generated_at": "2026-04-24T04:50:01.824679",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-24T04:40:07.750650"
+    "last_health_check": "2026-04-24T04:50:01.824693"
   },
   "bots": [
     {
       "name": "BTC Swing Bot (2.5/1.0)",
       "status": "running",
-      "last_update": "2026-04-24 04:39:48,561",
+      "last_update": "2026-04-24 04:49:51,186",
       "config": {
         "tp_pct": 2.5,
         "sl_pct": 1.0,
@@ -25,32 +25,18 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 35.2,
-        "time": "2026-04-24 04:39:48,561"
+        "time": "2026-04-24 04:49:51,186"
       },
       "open_position": null,
       "performance": {
-        "total_trades": 58,
-        "wins": 56,
+        "total_trades": 60,
+        "wins": 58,
         "losses": 2,
-        "win_rate": 96.6,
-        "total_pnl": 73201.04,
-        "avg_pnl": 1262.09
+        "win_rate": 96.7,
+        "total_pnl": 76113.5,
+        "avg_pnl": 1268.56
       },
       "recent_trades": [
-        {
-          "time": "2026-04-24 03:50:08",
-          "direction": "LONG",
-          "pnl": 1425.82,
-          "pnl_pct": 3.78,
-          "hold_minutes": 0
-        },
-        {
-          "time": "2026-04-24 03:55:08",
-          "direction": "LONG",
-          "pnl": 1465.47,
-          "pnl_pct": 3.88,
-          "hold_minutes": 0
-        },
         {
           "time": "2026-04-24 04:00:45",
           "direction": "LONG",
@@ -106,6 +92,20 @@
           "pnl": 1423.74,
           "pnl_pct": 3.77,
           "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 04:40:43",
+          "direction": "LONG",
+          "pnl": 1431.4,
+          "pnl_pct": 3.79,
+          "hold_minutes": 0
+        },
+        {
+          "time": "2026-04-24 04:45:44",
+          "direction": "LONG",
+          "pnl": 1481.06,
+          "pnl_pct": 3.93,
+          "hold_minutes": 0
         }
       ],
       "health_status": "HEALTHY"
@@ -113,7 +113,7 @@
     {
       "name": "BTC High Frequency (1.0/0.5)",
       "status": "running",
-      "last_update": "2026-04-24 04:39:48,807",
+      "last_update": "2026-04-24 04:49:51,922",
       "config": {
         "tp_pct": 1.0,
         "sl_pct": 0.5,
@@ -125,8 +125,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 74.5,
-        "time": "2026-04-24 04:39:48,807"
+        "confidence": 67.0,
+        "time": "2026-04-24 04:49:51,921"
       },
       "open_position": {
         "direction": "LONG",
@@ -215,7 +215,7 @@
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 04:40:00,526 - INFO - [HEARTBEAT] Price: $78,324.48",
+      "last_update": "2026-04-24 04:49:33,005 - INFO - [HEARTBEAT] Price: $78,360.39",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -328,7 +328,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-24 04:39:59,728 - INFO - [HEARTBEAT] Price: $78,336.99",
+      "last_update": "2026-04-24 04:49:59,966 - INFO - [HEARTBEAT] Price: $78,372.59",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -344,8 +344,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.4,
-        "time": "2026-04-24 04:38:35,939"
+        "confidence": 51.6,
+        "time": "2026-04-24 04:48:40,610"
       },
       "open_position": null,
       "performance": {
@@ -432,31 +432,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-24T04:40:08.921081",
+    "updated_at": "2026-04-24T04:50:02.678070",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5108,
-        "confidence": 0.6239,
-        "bullish_pct": 0.2199,
-        "bearish_pct": 0.0494,
-        "neutral_pct": 0.7307,
+        "strength": 0.356,
+        "confidence": 0.6392,
+        "bullish_pct": 0.2961,
+        "bearish_pct": 0.0517,
+        "neutral_pct": 0.6522,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.596,
+        "consensus_score": 0.4782,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We\u2019re not just holding $77.2K \u2014 we\u2019re building a fortress at this level. The FBI director headlining Bitcoin 2026 isn\u2019t symbolism, it\u2019s surrender from the old regime. With ETF flows quietly stacking a",
-            "[DiamondHands420] $78K holding strong and that $77.2K floor is ABSOLUTE diamond hands territory \u2014 FBI director speaking at Bitcoin 2026? This is NOT FUD, this is FULL SURRENDER from the old guard! Green on the week, ET",
-            "[StackingSats] Every dip to $77.2K is a gift \u2014 that level is now a hardened institutional floor, reinforced by regulatory thaw signaled by the FBI director's appearance at Bitcoin 2026. The $78K hold and steady ETF ",
-            "[FadeTheCrowd] Price is grinding at the top of the range with fear still embedded\u2014Fear & Greed at 39 despite symbolic regulatory tailwinds. That disconnect is classic pre-surge tension; the $77.2K support holds, and"
+            "[StackingSats] $78.2K is a gift. The Fear & Greed Index at 39 confirms emotional capitulation, and weak hands are dumping into the jaws of accumulation. FBI leadership speaking at Bitcoin 2026 about ending the \"war ",
+            "[DiamondHands420] $78.3K is a massive steal with Fear & Greed at 39 \u2014 pure capitulation zone! FBI Director speaking at Bitcoin 2026 about ending the \"war on BTC\"? That\u2019s not noise, that\u2019s legacy system surrender! ETH E",
+            "[DeepPockets] Price holding at $78.3K on muted volume still aligns with accumulation phase dynamics\u2014exchange flows flat, SOPR neutral, and Fear & Greed at 39 keeps retail weak hands in check. The FBI director\u2019s app",
+            "[CryptoKaleo] $78.3K isn\u2019t resistance \u2014 it\u2019s a launchpad. The FBI Director headlining Bitcoin 2026 with \"ending the war on Bitcoin\" rhetoric isn't just symbolism, it's political cover for institutional deployment. "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout rally into $78.6K on weak volume\u2014same script as every post-ETF pump. All this FBI \"surrender\" narrative is propaganda to mask distribution; institutions are still dumping on retail str"
+            "[BearishBob] Another fakeout rally trapped the weak hands at $78.5K \u2014 volume is declining and macro remains tight with real yields at 1.8%. All this FBI hype is just narrative theater; institutions are quietly dis"
           ]
         },
-        "timestamp": "2026-04-24T01:39:29.495055+00:00",
+        "timestamp": "2026-04-24T02:41:04.192619+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -473,17 +473,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 544.6,
+          "run_duration_sec": 638.7,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78083,
-            "change_24h": -0.08,
+            "price": 78287,
+            "change_24h": 0.28,
             "fear_greed": 39
           }
         },
-        "age_minutes": 60.7,
+        "age_minutes": 9.0,
         "is_fresh": true
       },
       "groq": {
@@ -532,7 +532,7 @@
             "fear_greed": 46
           }
         },
-        "age_minutes": 1176.5,
+        "age_minutes": 1186.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -549,7 +549,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 9745.1,
+        "age_minutes": 9755.0,
         "is_fresh": false
       }
     },
