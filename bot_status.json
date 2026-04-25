@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-25T09:50:00.856300",
+  "generated_at": "2026-04-25T10:00:01.550986",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-25T09:50:00.856313"
+    "last_health_check": "2026-04-25T10:00:01.551001"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 09:50:00",
+      "last_update": "2026-04-25 10:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 09:50:00",
+      "last_update": "2026-04-25 10:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-25 09:50:00",
+      "last_update": "2026-04-25 10:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,7 +256,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-25T09:50:01.099183",
+    "updated_at": "2026-04-25T10:00:01.825183",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -308,7 +308,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 12.0,
+        "age_minutes": 22.0,
         "is_fresh": true
       },
       "groq": {
@@ -360,7 +360,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 46.3,
+        "age_minutes": 56.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -377,7 +377,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 11494.9,
+        "age_minutes": 11505.0,
         "is_fresh": false
       }
     },
