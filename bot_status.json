@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-25T20:30:01.569965",
+  "generated_at": "2026-04-25T20:40:01.252179",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-25T20:30:01.569981"
+    "last_health_check": "2026-04-25T20:40:01.252197"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 20:29:36,078 - INFO - [HEARTBEAT] Price: $77,309.49",
+      "last_update": "2026-04-25 20:39:35,622 - INFO - [HEARTBEAT] Price: $77,355.98",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 56.5,
-        "time": "2026-04-25 20:29:07,760"
+        "confidence": 61.6,
+        "time": "2026-04-25 20:39:10,919"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 20:29:41,021 - INFO - [HEARTBEAT] Price: $77,320.36",
+      "last_update": "2026-04-25 20:39:40,826 - INFO - [HEARTBEAT] Price: $77,355.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 58.8,
-        "time": "2026-04-25 20:29:13,795"
+        "confidence": 61.6,
+        "time": "2026-04-25 20:39:14,264"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-25 20:30:01",
+      "last_update": "2026-04-25 20:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,32 +256,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-25T20:30:01.818852",
+    "updated_at": "2026-04-25T20:40:01.485699",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1173,
-        "confidence": 0.6319,
-        "bullish_pct": 0.4156,
-        "bearish_pct": 0.0515,
-        "neutral_pct": 0.5329,
+        "strength": 0.2273,
+        "confidence": 0.6361,
+        "bullish_pct": 0.344,
+        "bearish_pct": 0.0846,
+        "neutral_pct": 0.5713,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 2,
-        "consensus_score": 0.2994,
+        "consensus_score": 0.357,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price stuck at $77.4K with Fear & Greed at 31 and negative funding rates confirms market is overly cautious \u2014 exactly the environment I like. The chatter around $73K is fear-driven; I see that level a",
-            "[StackingSats] $77.4K holding firm with negative funding rates and hash rate capitulation confirms this is a distribution-to-accumulation transition phase. Every whisper of $73K is fear-driven noise\u2014miners are capit",
-            "[GlassnodeGuru] Price at $77.4K with sustained negative funding rates and declining hash rate confirms miner capitulation dynamics \u2014 a historically reliable precursor to accumulation. Exchange netflows remain neutral",
-            "[DiamondHands420] Price holding firm above $77.2K again\u2014this is NOT a trap, it's a springboard! VanEck\u2019s spot-on call on negative funding + hash rate dip proves miners are capitulating and smart money is loading up. Al",
-            "[CryptoKaleo] We\u2019re coiling like a spring at $77.4K \u2014 negative funding rates and hash rate dip scream *capitulation*, not weakness. VanEck\u2019s spot-on: this is prime accumulation territory, and the $73K fear play is "
+            "[GlassnodeGuru] Price holding above $77.2K with persistent negative funding rates and declining hash rate confirms miner capitulation is underway, while exchange netflows remain negative \u2014 a sign of structural accumu",
+            "[StackingSats] Every dip to $77K is a gift \u2014 we\u2019re in the final phase of miner capitulation with negative funding rates and hash rate declining, exactly as VanEck highlighted. $73K is a magnet for buyers, not a brea",
+            "[CryptoKaleo] $77.3K is not a top\u2014it\u2019s the calm before the explosion. Negative funding, hash rate bleed, and Fear at 31 are screaming miner capitulation, while VanEck\u2019s spotlight on these metrics is priming the nar",
+            "[DiamondHands420] Love this quiet grind \u2014 $77.3K hold is building a spring coil! Negative funding and hash rate dip = miner capitulation in full effect, and VanEck calling it out is gonna fuel the FOMO. Fear at 31? Per",
+            "[TrendRider] Price holding firm above $77.2K amid negative funding rates and declining hash rate confirms miner stress \u2014 classic late-stage washout behavior. The persistent chatter around $73K is a trap for late s"
           ],
           "bearish": [
-            "[BearishBob] $77.4K is still a trap\u2014price is stuck, volume is dying, and all this talk of \"miner capitulation\" ignores that hash rate dips lag price moves. Negative funding rates mean shorts are getting crushed, n"
+            "[BearishBob] $77.3K hold is just the bull trap unfolding\u2014every dip gets bought because retail keeps believing the \"short squeeze\" narrative, but we're still 38.7% off ATH with no real macro tailwinds. VanEck's \"bu",
+            "[AlphaQuant] Price remains range-bound ($77.2K\u2013$77.9K) with declining volume and negative funding (-0.012%), indicating persistent short-term bearish pressure. While VanEck highlights negative funding and hash rat"
           ]
         },
-        "timestamp": "2026-04-25T17:40:06.395464+00:00",
+        "timestamp": "2026-04-25T18:36:59.859473+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +299,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 603.9,
+          "run_duration_sec": 417.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77393,
-            "change_24h": -0.4,
+            "price": 77319,
+            "change_24h": -0.27,
             "fear_greed": 31
           }
         },
-        "age_minutes": 49.9,
+        "age_minutes": 3.0,
         "is_fresh": true
       },
       "groq": {
@@ -360,7 +361,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 686.4,
+        "age_minutes": 696.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -377,7 +378,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 12135.0,
+        "age_minutes": 12145.0,
         "is_fresh": false
       }
     },
