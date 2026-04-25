@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-25T09:00:01.239686",
+  "generated_at": "2026-04-25T09:10:01.773533",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-25T09:00:01.239702"
+    "last_health_check": "2026-04-25T09:10:01.773548"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 09:00:01",
+      "last_update": "2026-04-25 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 09:00:01",
+      "last_update": "2026-04-25 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-25 09:00:01",
+      "last_update": "2026-04-25 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,7 +256,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-25T09:00:01.552796",
+    "updated_at": "2026-04-25T09:10:02.067255",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -308,29 +308,32 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 21.9,
+        "age_minutes": 31.9,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.8487,
-        "confidence": 0.5361,
-        "bullish_pct": 0.0504,
-        "bearish_pct": 0.0504,
-        "neutral_pct": 0.8991,
+        "strength": 0.4795,
+        "confidence": 0.5514,
+        "bullish_pct": 0.2372,
+        "bearish_pct": 0.0462,
+        "neutral_pct": 0.7167,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.8487,
+        "stance_shifts": 1,
+        "consensus_score": 0.575,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] The FBI Director speaking at the Bitcoin 2026 Conference is a massive deal, it's a sign of adoption and less war on Bitcoin. I'm getting a bit excited with all the bullish news, and I think we'll see "
+            "[StackingSats] The Fear & Greed Index at 31 is a clear buying opportunity, and the large short position held by the Hyperliquid whale is a contrarian signal that reinforces my bullish bias. The current price of $77,",
+            "[DiamondHands420] The Fear & Greed Index is at 31, a clear sign of fear in the market, and that's a buying opportunity if you ask me. The large short position held by the Hyperliquid whale is a contrarian signal that r",
+            "[CryptoKaleo] The fear is still palpable, and I'm loving every minute of it. The Hyperliquid whale's large short position is a contrarian signal to me, and with the Fear & Greed Index at 31, I believe we're due for",
+            "[FadeTheCrowd] The Fear & Greed Index at 31 indicates a fearful market, which I believe is a buying opportunity. The large short position held by the Hyperliquid whale is a contrarian signal that reinforces my bulli"
           ],
           "bearish": [
-            "[BearishBob] The recent price action is lackluster, and the Fear & Greed Index at 39 confirms my bearish suspicions. The news about the FBI Director speaking at the Bitcoin 2026 Conference is likely a desperate at"
+            "[BearishBob] I'm not convinced by the bullish sentiment expressed by some participants, as the Fear & Greed Index at 31 can also indicate a market on edge, waiting for a catalyst to drop. The large short position "
           ]
         },
-        "timestamp": "2026-04-24T07:03:44.165772+00:00",
+        "timestamp": "2026-04-25T07:03:40.170828+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -347,17 +350,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 221.2,
+          "run_duration_sec": 218.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77828,
-            "change_24h": -0.51,
-            "fear_greed": 39
+            "price": 77545,
+            "change_24h": -0.35,
+            "fear_greed": 31
           }
         },
-        "age_minutes": 1436.3,
+        "age_minutes": 6.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -374,7 +377,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 11445.0,
+        "age_minutes": 11455.0,
         "is_fresh": false
       }
     },
