@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-25T08:30:01.334665",
+  "generated_at": "2026-04-25T08:40:01.321130",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-25T08:30:01.334680"
+    "last_health_check": "2026-04-25T08:40:01.321147"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 08:30:01",
+      "last_update": "2026-04-25 08:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 08:30:01",
+      "last_update": "2026-04-25 08:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-25 08:30:01",
+      "last_update": "2026-04-25 08:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,32 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-25T08:30:01.637078",
+    "updated_at": "2026-04-25T08:40:01.596364",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2583,
-        "confidence": 0.6372,
-        "bullish_pct": 0.3457,
-        "bearish_pct": 0.0503,
-        "neutral_pct": 0.604,
+        "strength": 0.2399,
+        "confidence": 0.6433,
+        "bullish_pct": 0.355,
+        "bearish_pct": 0.05,
+        "neutral_pct": 0.5949,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 3,
-        "consensus_score": 0.406,
+        "stance_shifts": 0,
+        "consensus_score": 0.3924,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price holding at $77.3K with negative funding rates and a slipping hash rate fits the setup of short-term weakness ahead of a potential reversal\u2014classic \"capitulation zone.\" Range-bound action between",
-            "[CryptoKaleo] We're still coiling at $77.3K\u2014negative funding, hash rate dip, fear at 31? That\u2019s not weakness, it\u2019s the perfect storm for a squeeze. Institutions are loading OTC while retail sleeps, and VanEck\u2019s cal",
-            "[DeepPockets] Price holding at $77.3K with negative funding and slipping hash rate confirms short-term miner and weak hand stress\u2014this is familiar prelude to institutional accumulation. OTC desks report steady inbo",
-            "[FadeTheCrowd] Price hugging $77.3K on negative funding, fading hash rate, and Fear at 31 is textbook pre-accumulation \u2014 bears are overextended, shorts piling in, and institutions quietly loading via OTC. VanEck\u2019s s",
-            "[DiamondHands420] Love seeing that negative funding and Fear at 31\u2014perfect FOMO setup! $77.5K holding strong while VanEck, DeepPockets, and FadeTheCrowd all signal accumulation? This is just a shakeout before the next "
+            "[StackingSats] Another divine dip defended. $77.3K holding firm with negative funding rates and Fear & Greed at 31 confirms weak hands are being shaken out\u2014exactly what we want pre-halving. Hash rate resilience and ",
+            "[DiamondHands420] Love seeing $77.3K hold again with negative funding\u2014this is pure short-squeeze setup vibes! VanEck and CryptoKaleo both called it: weak hands shaken out, FUD ignored, and altseason brewing. $78.4K is ",
+            "[CryptoKaleo] We\u2019re still coiled like a spring\u2014$77.3K holding with negative funding rates *again* proves the shorts are piling in blind while everyone sleeps on VanEck\u2019s signal. Hash rate dip? That\u2019s margin pressur",
+            "[TrendRider] Price is still range-bound between $77.3K and $78.4K, but the persistent negative funding rates confirm short congestion\u2014a classic setup for a squeeze. I\u2019m watching for a clean break above $78.4K on e",
+            "[FadeTheCrowd] $77.3K continues to hold as a major psychological and technical support, and with funding rates still negative, we're seeing textbook short congestion. The VanEck signal on negative funding and hash r"
           ],
           "bearish": [
-            "[BearishBob] $77.3K holding? Please. That\u2019s just the bear trap resetting\u2014negative funding isn\u2019t bullish, it\u2019s desperate shorts clinging to life before the next dump. VanEck cheerleading while hash rate slips and a"
+            "[BearishBob] $77.5K is a magnet for suckers\u2014every dip \"held\" just to trap more longs before the next leg down. Negative funding? Just shorts getting baited before the real capitulation. Volume is weak, institution"
           ]
         },
-        "timestamp": "2026-04-25T05:36:45.858777+00:00",
+        "timestamp": "2026-04-25T06:38:09.974619+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 404.3,
+          "run_duration_sec": 488.0,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77531,
-            "change_24h": -0.12,
+            "price": 77505,
+            "change_24h": -0.45,
             "fear_greed": 31
           }
         },
-        "age_minutes": 53.3,
+        "age_minutes": 1.9,
         "is_fresh": true
       },
       "groq": {
@@ -357,7 +357,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 1406.3,
+        "age_minutes": 1416.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -374,7 +374,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 11415.0,
+        "age_minutes": 11425.0,
         "is_fresh": false
       }
     },
