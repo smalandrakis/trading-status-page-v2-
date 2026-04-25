@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-25T14:30:01.634785",
+  "generated_at": "2026-04-25T14:40:01.628071",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-25T14:30:01.634799"
+    "last_health_check": "2026-04-25T14:40:01.628087"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 14:29:34,926 - INFO - [HEARTBEAT] Price: $77,632.32",
+      "last_update": "2026-04-25 14:39:34,770 - INFO - [HEARTBEAT] Price: $77,568.47",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 53.1,
-        "time": "2026-04-25 14:29:07,954"
+        "confidence": 53.3,
+        "time": "2026-04-25 14:39:06,516"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 14:29:40,291 - INFO - [HEARTBEAT] Price: $77,629.39",
+      "last_update": "2026-04-25 14:39:39,993 - INFO - [HEARTBEAT] Price: $77,568.48",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.1,
-        "time": "2026-04-25 14:29:14,362"
+        "confidence": 53.3,
+        "time": "2026-04-25 14:39:13,551"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-25 14:29:45,602 - INFO - [HEARTBEAT] Price: $77,629.38",
+      "last_update": "2026-04-25 14:39:45,340 - INFO - [HEARTBEAT] Price: $77,568.48",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-25 14:29:17,606"
+        "time": "2026-04-25 14:39:16,583"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-25T14:30:01.862896",
+    "updated_at": "2026-04-25T14:40:01.826110",
     "signals": {
       "cerebras": {
-        "direction": "LONG",
-        "strength": 0.4836,
-        "confidence": 0.6756,
-        "bullish_pct": 0.5308,
-        "bearish_pct": 0.0473,
-        "neutral_pct": 0.4219,
+        "direction": "NEUTRAL",
+        "strength": 0.0115,
+        "confidence": 0.6528,
+        "bullish_pct": 0.4731,
+        "bearish_pct": 0.0424,
+        "neutral_pct": 0.4846,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.2963,
+        "stance_shifts": 0,
+        "consensus_score": 0.2269,
         "key_arguments": {
           "bullish": [
-            "[GlassnodeGuru] Persistent ETF inflows ($2.12B/9d) confirm institutional accumulation, while negative funding rates and low Fear & Greed (31) reflect derisking of leveraged longs\u2014this is a healthy consolidation after",
-            "[FadeTheCrowd] Price holding above $77,321 with persistent ETF inflows ($2.12B/9d), negative funding, and Fear at 31 confirms this is a derisking phase, not a reversal. The market is once again testing whether this ",
-            "[StackingSats] $77.3k is a fortress\u2014ETF inflows of $2.12B in 9 days confirm institutional accumulation, and negative funding rates mean the market is washing out weak hands. The XRP noise and Hyperliquid short are d",
-            "[DiamondHands420] BTC is grinding the face off this dip like a true champion \u2014 $77.3k holding hard with $2.12B in ETF inflows? That's a FIRE sale for institutions loading up while weak hands panic. Negative funding rat",
-            "[CryptoKaleo] This is the most beautiful kind of dip \u2014 quiet, fearful, and absolutely stuffed with institutional accumulation. $2.12B in ETF inflows over 9 days while funding dives negative? That\u2019s not a correction"
+            "[DeepPockets] Price holding above $77.3K on continued ETF inflows ($2.12B over nine days) confirms institutional accumulation, while negative funding rates and fear sentiment (31) show speculators are subdued\u2014class",
+            "[TrendRider] Price holds firm above $77,300 with persistent ETF inflows ($2.12B, 9-day streak) and negative funding rates \u2014 a classic sign of institutional accumulation amid retail fear (Fear & Greed: 31). The ran",
+            "[FadeTheCrowd] Price grinding near $77.3K with persistent ETF inflows ($2.12B over 9 days), negative funding, and Fear & Greed at 31 confirms quiet institutional accumulation amid retail apathy. This is late-stage b",
+            "[CryptoKaleo] BTC at $77.6K is coiling like a spring \u2014 the $2.12B ETF inflow streak is institutional dominance in motion, and negative funding with Fear at 31 means the crowd is frozen, exactly when the next leg up",
+            "[StackingSats] Dip confirmed, accumulation intensified. $77.3K is holding as a fortress\u2014$2.12B in ETF inflows over nine days isn't noise, it's napkin math for institutional dominance. Negative funding rates? Just wh"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout in the making. $77.3k is just a magnet for stops, not a fortress\u2014ETF inflows are a smokescreen masking whale distribution, and that $38M Hyperliquid short will get triggered only after"
+            "[BearishBob] Another fakeout waiting to happen. $2.12B in ETF inflows? Just noise\u2014market's still capped at $78.5K, volume is weak, and negative funding means whales are primed to dump on any rally. Fear at 31 is n"
           ]
         },
-        "timestamp": "2026-04-25T11:42:38.643615+00:00",
+        "timestamp": "2026-04-25T12:37:39.238114+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 756.7,
+          "run_duration_sec": 456.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77685,
-            "change_24h": -0.78,
+            "price": 77673,
+            "change_24h": -0.75,
             "fear_greed": 31
           }
         },
-        "age_minutes": 47.4,
+        "age_minutes": 2.4,
         "is_fresh": true
       },
       "groq": {
@@ -360,7 +360,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 326.4,
+        "age_minutes": 336.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -377,7 +377,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 11775.0,
+        "age_minutes": 11785.0,
         "is_fresh": false
       }
     },
