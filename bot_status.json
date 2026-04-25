@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-25T16:40:01.312146",
+  "generated_at": "2026-04-25T16:50:01.194897",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-25T16:40:01.312164"
+    "last_health_check": "2026-04-25T16:50:01.194915"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 16:39:34,880 - INFO - [HEARTBEAT] Price: $77,737.20",
+      "last_update": "2026-04-25 16:49:35,567 - INFO - [HEARTBEAT] Price: $77,738.88",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 51.1,
-        "time": "2026-04-25 16:39:07,743"
+        "signal": "SHORT",
+        "confidence": 50.1,
+        "time": "2026-04-25 16:49:08,933"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-25 16:39:39,997 - INFO - [HEARTBEAT] Price: $77,740.27",
+      "last_update": "2026-04-25 16:49:40,559 - INFO - [HEARTBEAT] Price: $77,749.11",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.1,
-        "time": "2026-04-25 16:39:11,817"
+        "confidence": 50.5,
+        "time": "2026-04-25 16:49:15,415"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-25 16:39:45,177 - INFO - [HEARTBEAT] Price: $77,740.27",
+      "last_update": "2026-04-25 16:49:46,050 - INFO - [HEARTBEAT] Price: $77,752.53",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-25 16:39:19,517"
+        "time": "2026-04-25 16:49:19,011"
       },
       "open_position": null,
       "performance": {
@@ -256,7 +256,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-25T16:40:01.526469",
+    "updated_at": "2026-04-25T16:50:01.404283",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -308,7 +308,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 1.8,
+        "age_minutes": 11.8,
         "is_fresh": true
       },
       "groq": {
@@ -360,7 +360,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 456.4,
+        "age_minutes": 466.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -377,7 +377,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 11905.0,
+        "age_minutes": 11915.0,
         "is_fresh": false
       }
     },
