@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-26T19:10:01.267588",
+  "generated_at": "2026-04-26T19:20:01.514025",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-26T19:10:01.267606"
+    "last_health_check": "2026-04-26T19:20:01.514038"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-26 19:10:01",
+      "last_update": "2026-04-26 19:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-26 19:10:01",
+      "last_update": "2026-04-26 19:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-26 19:10:01",
+      "last_update": "2026-04-26 19:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,32 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-26T19:10:01.542526",
+    "updated_at": "2026-04-26T19:20:01.790343",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2841,
-        "confidence": 0.6444,
-        "bullish_pct": 0.3312,
-        "bearish_pct": 0.0536,
-        "neutral_pct": 0.6152,
+        "strength": 0.2231,
+        "confidence": 0.6433,
+        "bullish_pct": 0.3625,
+        "bearish_pct": 0.0518,
+        "neutral_pct": 0.5857,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.4229,
+        "stance_shifts": 2,
+        "consensus_score": 0.3785,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $77.9K is a gift. Negative funding? Shorts are primed for annihilation. Hash rate dip? Just miners rebalancing\u2014post-halving churn, not capitulation. This is textbook accumulation phase behavior: weak ",
-            "[TrendRider] Price holding firm at $77.9K with negative funding (-0.05%) and slipping hash rate confirms short-term bearish exhaustion\u2014a classic pre-breakout setup. Weak volume keeps me cautious on timing, but the",
-            "[CryptoKaleo] We\u2019re coiling at $78K like a spring \u2014 negative funding rates are *screaming* shorts are primed to get rekt, and that hash rate dip? Just miners rebalancing post-halving chaos, not capitulation. VanEck",
-            "[DiamondHands420] $77,986 is STILL a screaming buy! Fear & Greed at 33? Textbook panic bottom. Negative funding = shorts about to get absolutely wrecked, hash rate dip = weak miners gone, leaving only the diamond-hande",
-            "[FadeTheCrowd] Price grinding sideways at $78K with negative funding rates and fear sentiment fits the classic late-stage accumulation setup. VanEck\u2019s call isn\u2019t enough alone, but combined with hash rate slippage\u2014li"
+            "[DeepPockets] Price holding above $77.2K with persistent negative funding rates confirms we're in a quiet accumulation phase \u2014 institutions are absorbing supply while retail remains paralyzed by fear. VanEck\u2019s sign",
+            "[CryptoKaleo] We\u2019re still coiling \u2014 $77.2K is a fortress, and negative funding rates aren\u2019t a red flag, they\u2019re a flashing buy signal. VanEck doesn\u2019t miss, and when whales stack in silence while memecoins bleed out",
+            "[StackingSats] $77.2K support holding strong amid negative funding rates is textbook pre-parabolic accumulation. While memecoins and ETH stumble, Bitcoin\u2019s hash rate stability and vanishing leverage scream instituti",
+            "[TrendRider] Price is still consolidating within the $77.2K\u2013$78.2K range, but the persistence of negative funding rates amid strong support at $77.2K suggests shorts are being squeezed and institutional buying is ",
+            "[FadeTheCrowd] Price grinding sideways near $77.8K with negative funding rates and Fear & Greed at 33 fits the classic \"capitulation before launch\" setup. VanEck\u2019s call on bullish divergence aligns with my contraria"
           ],
           "bearish": [
-            "[BearishBob] $78K is a trap\u2014price is stuck, volume is a joke, and that \"negative funding\" just means the shorts are already squeezed dry. VanEck pumping their own narrative while hash rate rolls over? That\u2019s not b"
+            "[BearishBob] $77.8K is a redistribution zone, not accumulation \u2014 volume is flat, momentum is dead, and VanEck\u2019s \u201cbullish\u201d take ignores that negative funding rates are a symptom of bear market capitulation, not str"
           ]
         },
-        "timestamp": "2026-04-26T13:25:39.991817+00:00",
+        "timestamp": "2026-04-26T17:18:11.108951+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 3291.0,
+          "run_duration_sec": 13668.0,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77986,
-            "change_24h": 0.48,
+            "price": 77879,
+            "change_24h": 0.32,
             "fear_greed": 33
           }
         },
-        "age_minutes": 224.4,
+        "age_minutes": 1.8,
         "is_fresh": true
       },
       "groq": {
@@ -360,7 +360,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 2046.4,
+        "age_minutes": 2056.4,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -377,7 +377,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 13495.0,
+        "age_minutes": 13505.0,
         "is_fresh": false
       }
     },
