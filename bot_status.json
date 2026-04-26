@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-27T00:30:01.135778",
+  "generated_at": "2026-04-27T00:40:01.344267",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-27T00:30:01.135798"
+    "last_health_check": "2026-04-27T00:40:01.344282"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 00:29:35,088 - INFO - [HEARTBEAT] Price: $78,518.34",
+      "last_update": "2026-04-27 00:39:35,290 - INFO - [HEARTBEAT] Price: $78,162.79",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 52.3,
-        "time": "2026-04-27 00:29:09,889"
+        "signal": "LONG",
+        "confidence": 51.4,
+        "time": "2026-04-27 00:39:10,772"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 00:29:40,291 - INFO - [HEARTBEAT] Price: $78,511.57",
+      "last_update": "2026-04-27 00:39:40,550 - INFO - [HEARTBEAT] Price: $78,170.62",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.3,
-        "time": "2026-04-27 00:29:15,441"
+        "confidence": 51.4,
+        "time": "2026-04-27 00:39:13,708"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-27 00:30:01",
+      "last_update": "2026-04-27 00:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,32 +256,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-27T00:30:01.366485",
+    "updated_at": "2026-04-27T00:40:01.576768",
     "signals": {
       "cerebras": {
-        "direction": "LONG",
-        "strength": 0.5013,
-        "confidence": 0.6706,
-        "bullish_pct": 0.5468,
-        "bearish_pct": 0.0455,
-        "neutral_pct": 0.4078,
+        "direction": "NEUTRAL",
+        "strength": 0.4405,
+        "confidence": 0.6403,
+        "bullish_pct": 0.2564,
+        "bearish_pct": 0.0467,
+        "neutral_pct": 0.6969,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.3201,
+        "consensus_score": 0.5454,
         "key_arguments": {
           "bullish": [
-            "[GlassnodeGuru] Price at $78.2K with negative funding rates and Fear & Greed at 33 confirms retail capitulation dynamics. On-chain, rising UTXO dormancy and Saylor\u2019s public accumulation hints align with institutional",
-            "[CryptoKaleo] We're at the breaking point\u2014$78.2K isn\u2019t just support, it\u2019s a launchpad. Negative funding rates, Fear & Greed stuck at 33, and Saylor *teasing* another buy? That\u2019s not noise, that\u2019s coordination. VanE",
-            "[DiamondHands420] LFG! We\u2019re pent-up at $78.5K resistance like a coiled spring \u2014 negative funding rates, Fear & Greed stuck at 33, and Saylor *teasing* another buy isn\u2019t luck, it\u2019s coordination. VanEck calling the setu",
-            "[DeepPockets] Price holding near $78.5K resistance with negative funding rates and Fear & Greed at 33 confirms weak hand stress\u2014ideal for accumulation. Saylor\u2019s public hints and UTXO Management\u2019s new fund signal in",
-            "[TrendRider] Price testing $78.5K again with negative funding rates, Fear at 33, and volume holding firm \u2014 this is not a reversal, it\u2019s compression. Saylor\u2019s hints and UTXO Management\u2019s new fund add institutional "
+            "[CryptoKaleo] We\u2019re not just consolidating\u2014this is stealth accumulation at scale. Saylor\u2019s circling, UTXO Management just launched a structural credit vehicle to funnel institutional capital into Bitcoin yields, an",
+            "[DiamondHands420] $78.7K isn\u2019t resistance\u2014it\u2019s fuel! Saylor\u2019s circling for another buy, UTXO just dropped a yield machine for institutions, and negative funding means the weak hands are getting rekt so smart money can ",
+            "[StackingSats] Dip to $77.3K was a gift\u2014stacked more at that level. Negative funding rates and temporary hash rate dip are noise; Bitcoin\u2019s stock-to-flow remains intact with halving cycle demand building. Saylor\u2019s s",
+            "[TrendRider] Price is testing key resistance at $78.7K on high volume with negative funding rates and a dip in hash rate\u2014classic sign of leverage washout and institutional accumulation, just as VanEck noted. Saylo"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building toward $78.5K \u2014 same level rejected 3 times already. Negative funding? That just means shorts are crowded, not that it\u2019s safe; they\u2019ll get blown up when this thing rolls over."
+            "[BearishBob] $78.7K is a supply wall, not a launchpad\u2014every push into this zone gets rejected on weak volume and negative funding, a graveyard for overleveraged longs. Saylor\u2019s \u201chints\u201d are FUD distractions while U"
           ]
         },
-        "timestamp": "2026-04-26T21:38:11.285968+00:00",
+        "timestamp": "2026-04-26T22:38:52.008888+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +297,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 489.0,
+          "run_duration_sec": 530.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78252,
-            "change_24h": 0.96,
+            "price": 78648,
+            "change_24h": 1.41,
             "fear_greed": 33
           }
         },
-        "age_minutes": 51.8,
+        "age_minutes": 1.2,
         "is_fresh": true
       },
       "groq": {
@@ -360,7 +359,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 2366.4,
+        "age_minutes": 2376.4,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -377,7 +376,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 13815.0,
+        "age_minutes": 13825.0,
         "is_fresh": false
       }
     },
