@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-26T20:30:01.520083",
+  "generated_at": "2026-04-26T20:40:01.636774",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-26T20:30:01.520097"
+    "last_health_check": "2026-04-26T20:40:01.636783"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-26 20:30:01",
+      "last_update": "2026-04-26 20:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-26 20:30:01",
+      "last_update": "2026-04-26 20:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-26 20:30:01",
+      "last_update": "2026-04-26 20:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,30 +256,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-26T20:30:01.769973",
+    "updated_at": "2026-04-26T20:40:01.879935",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5859,
-        "confidence": 0.6431,
-        "bullish_pct": 0.182,
-        "bearish_pct": 0.0501,
-        "neutral_pct": 0.7679,
+        "strength": 0.2192,
+        "confidence": 0.6356,
+        "bullish_pct": 0.3479,
+        "bearish_pct": 0.0851,
+        "neutral_pct": 0.567,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6518,
+        "stance_shifts": 2,
+        "consensus_score": 0.3506,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $78K is a gift\u201438% off ATH with negative funding rates flushing out weak hands while real holders stack. Miner capitulation and hash rate dips are temporary; post-halving scarcity and organic adoption",
-            "[DiamondHands420] $78K is a battle-tested spring loaded for a moonshot\u2014negative funding rates mean the shorts are *begging* to get rekt while VanEck and CT are sounding the all-clear. Miners are capitulating? Perfect\u2014w",
-            "[CryptoKaleo] $78K isn\u2019t a trap\u2014it\u2019s a launchpad. Negative funding rates + miner capitulation = textbook pre-breakout tension. VanEck\u2019s right: this is accumulation in the shadows while weak hands panic over ETH Fou"
+            "[StackingSats] $78K is not resistance \u2014 it's accumulation in plain sight. Negative funding rates and declining hash rate confirm miner capitulation is flushing out weak hands, while institutions stack sats quietly a",
+            "[GlassnodeGuru] Price probing $78.2K without volume confirmation remains a bearish divergence, but deeply negative funding rates and the recent hash rate decline confirm short-term miner stress and leveraged longs ar",
+            "[DiamondHands420] Loving the continued grind at $78.2K \u2014 this is just more accumulation while the weak hands panic. Negative funding rates + miner stress = perfect storm for a squeeze, and VanEck\u2019s call confirms we\u2019re ",
+            "[FadeTheCrowd] Price grinding near $78.2K on weak volume is noise \u2014 the real story is negative funding rates and miner capitulation accelerating. This is the fourth retest of resistance, but the pain trade is still ",
+            "[CryptoKaleo] We're staring down the barrel at $78.2K\u2014again\u2014and the weak volume tells me institutions are still loading up behind the scenes while the weak hands get shaken out. Negative funding rates + miner capit"
           ],
           "bearish": [
-            "[BearishBob] $78K is a distribution trap\u2014VanEck cheering negative funding rates while the ETH Foundation dumps staked ETH? That\u2019s not accumulation, it\u2019s a bear flag. OTC \"block lifts\" mean nothing if miners are ca"
+            "[TrendRider] Price is retesting $78.2K again with weak volume follow-through \u2014 same as prior distribution prints. Negative funding rates and slipping hash rate suggest short-term bullish fuel from miner capitulati",
+            "[BearishBob] Another retest of $78.2K on weak volume\u2014same failed breakout pattern as before. VanEck\u2019s \"bullish\" take ignores the lack of institutional demand and on-chain accumulation; negative funding rates are j"
           ]
         },
-        "timestamp": "2026-04-26T17:42:49.567553+00:00",
+        "timestamp": "2026-04-26T18:37:37.385953+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -296,17 +299,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 767.2,
+          "run_duration_sec": 455.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78033,
-            "change_24h": 0.87,
+            "price": 78188,
+            "change_24h": 1.12,
             "fear_greed": 33
           }
         },
-        "age_minutes": 47.2,
+        "age_minutes": 2.4,
         "is_fresh": true
       },
       "groq": {
@@ -358,7 +361,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 2126.4,
+        "age_minutes": 2136.4,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -375,7 +378,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 13575.0,
+        "age_minutes": 13585.0,
         "is_fresh": false
       }
     },
