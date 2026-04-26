@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-26T22:30:00.915360",
+  "generated_at": "2026-04-26T22:40:01.806618",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-26T22:30:00.915380"
+    "last_health_check": "2026-04-26T22:40:01.806631"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-26 22:30:00",
+      "last_update": "2026-04-26 22:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-26 22:30:00",
+      "last_update": "2026-04-26 22:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-26 22:30:01",
+      "last_update": "2026-04-26 22:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,32 +256,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-26T22:30:01.188007",
+    "updated_at": "2026-04-26T22:40:02.067310",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3011,
-        "confidence": 0.6217,
-        "bullish_pct": 0.3249,
-        "bearish_pct": 0.0492,
-        "neutral_pct": 0.6259,
+        "strength": 0.4082,
+        "confidence": 0.6114,
+        "bullish_pct": 0.2716,
+        "bearish_pct": 0.0486,
+        "neutral_pct": 0.6798,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.4389,
+        "stance_shifts": 0,
+        "consensus_score": 0.5197,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Still not fearful enough\u201433 on Fear & Greed is discomfort, not capitulation. $77.2K holds, volume stays thin, and negative funding rates are cooking a short squeeze. I\u2019m adding small on dips, anticipa",
-            "[TrendRider] Price is still coiling between $77.2K and $78.4K with declining volume, but the persistence of negative funding rates amid range compression suggests shorts are loading up\u2014setting up for a potential s",
-            "[CryptoKaleo] The tape is confirming a spring-loading setup\u2014$77.2K has held like a fortress while negative funding rates scream short congestion. Fear at 33 with low volume isn\u2019t weakness, it\u2019s stealth accumulation",
-            "[StackingSats] $78K is a paper wall\u2014every tick below $80K is just noise designed to shake out the weak hands. Negative funding rates + fear sentiment + hash rate resilience = textbook pre-launch conditions. The 4-ye",
-            "[DiamondHands420] Love seeing BTC holding $77.2K like a brick wall with negative funding rates and fear at 33 \u2014 this is pure accumulation fuel! The weak hands are getting shaken out while we stack sats, and that VanEck"
+            "[CryptoKaleo] This $78.4K ceiling isn\u2019t resistance \u2014 it\u2019s a spring being wound tighter. Negative funding rates, miner capitulation, and fear at 33? That\u2019s the perfect storm for a violent squeeze higher. VanEck\u2019s sp",
+            "[DiamondHands420] BTC grinding near $78.4K on negative funding and miner stress \u2014 this is classic pre-squeeze setup! VanEck called it, and I\u2019m not letting go. Fear & Greed at 33 means weak hands are still trembling, bu",
+            "[StackingSats] $78.2k holding firm after testing $77.3k support confirms accumulation is complete. Negative funding rates, miner capitulation, and Fear & Greed at 33 are textbook late-stage bottoming behavior \u2014 this",
+            "[FadeTheCrowd] Price holding above $77.3k with Fear & Greed at 33, negative funding, and hash rate erosion confirms discomfort\u2014exactly the environment where contrarians thrive. VanEck\u2019s call aligns with my thesis: t"
           ],
           "bearish": [
-            "[BearishBob] $78.4K is still the devil\u2019s playground\u2014this tight range is a liquidation magnet, not a launchpad. Negative funding rates aren\u2019t bullish, they\u2019re a bear trap being laid for the recklessly long ahead of"
+            "[BearishBob] Another fakeout waiting to happen. $78.4K rejected again on weak volume, negative funding rates aren\u2019t bullish \u2014 they show longs are getting crushed, not building. Miner stress and hash rate drop mean"
           ]
         },
-        "timestamp": "2026-04-26T19:38:30.957989+00:00",
+        "timestamp": "2026-04-26T20:36:46.414244+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +297,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 509.0,
+          "run_duration_sec": 404.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78178,
-            "change_24h": 1.15,
+            "price": 78242,
+            "change_24h": 1.06,
             "fear_greed": 33
           }
         },
-        "age_minutes": 51.5,
+        "age_minutes": 3.3,
         "is_fresh": true
       },
       "groq": {
@@ -360,7 +359,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 2246.4,
+        "age_minutes": 2256.4,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -377,7 +376,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 13695.0,
+        "age_minutes": 13705.0,
         "is_fresh": false
       }
     },
