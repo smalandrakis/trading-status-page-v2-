@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-27T09:00:01.421081",
+  "generated_at": "2026-04-27T09:10:01.390404",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-27T09:00:01.421094"
+    "last_health_check": "2026-04-27T09:10:01.390420"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 08:59:35,280 - INFO - [HEARTBEAT] Price: $77,735.71",
+      "last_update": "2026-04-27 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 73.9,
-        "time": "2026-04-27 08:59:10,620"
+        "confidence": 65.0,
+        "time": "2026-04-27 09:09:08,457"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 08:59:40,515 - INFO - [HEARTBEAT] Price: $77,735.71",
+      "last_update": "2026-04-27 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 74.2,
-        "time": "2026-04-27 08:59:15,239"
+        "confidence": 65.0,
+        "time": "2026-04-27 09:09:13,707"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-27 09:00:01",
+      "last_update": "2026-04-27 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,7 +256,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-27T09:00:01.688486",
+    "updated_at": "2026-04-27T09:10:01.615415",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -308,32 +308,27 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 0.2,
+        "age_minutes": 10.2,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.4795,
-        "confidence": 0.5514,
-        "bullish_pct": 0.2372,
-        "bearish_pct": 0.0462,
-        "neutral_pct": 0.7167,
+        "strength": 0.8964,
+        "confidence": 0.5222,
+        "bullish_pct": 0.0,
+        "bearish_pct": 0.0518,
+        "neutral_pct": 0.9482,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.575,
+        "stance_shifts": 0,
+        "consensus_score": 0.9223,
         "key_arguments": {
-          "bullish": [
-            "[StackingSats] The Fear & Greed Index at 31 is a clear buying opportunity, and the large short position held by the Hyperliquid whale is a contrarian signal that reinforces my bullish bias. The current price of $77,",
-            "[DiamondHands420] The Fear & Greed Index is at 31, a clear sign of fear in the market, and that's a buying opportunity if you ask me. The large short position held by the Hyperliquid whale is a contrarian signal that r",
-            "[CryptoKaleo] The fear is still palpable, and I'm loving every minute of it. The Hyperliquid whale's large short position is a contrarian signal to me, and with the Fear & Greed Index at 31, I believe we're due for",
-            "[FadeTheCrowd] The Fear & Greed Index at 31 indicates a fearful market, which I believe is a buying opportunity. The large short position held by the Hyperliquid whale is a contrarian signal that reinforces my bulli"
-          ],
+          "bullish": [],
           "bearish": [
-            "[BearishBob] I'm not convinced by the bullish sentiment expressed by some participants, as the Fear & Greed Index at 31 can also indicate a market on edge, waiting for a catalyst to drop. The large short position "
+            "[BearishBob] I'm not convinced by the recent rally, and the rejection from $80,000 is a clear sign of weakness. The fact that we're still 38.4% away from the ATH is a major red flag, and I think we'll see a pullba"
           ]
         },
-        "timestamp": "2026-04-25T07:03:40.170828+00:00",
+        "timestamp": "2026-04-27T07:03:41.230911+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -350,18 +345,18 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 218.3,
+          "run_duration_sec": 219.0,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77545,
+            "price": 77728,
             "change_24h": -0.35,
-            "fear_greed": 31
+            "fear_greed": 47
           }
         },
-        "age_minutes": 2876.4,
-        "is_fresh": false
+        "age_minutes": 6.3,
+        "is_fresh": true
       },
       "mirofish_full": {
         "timestamp": "2026-04-17T08:15:04.161193+00:00",
@@ -377,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 14325.0,
+        "age_minutes": 14335.0,
         "is_fresh": false
       }
     },
