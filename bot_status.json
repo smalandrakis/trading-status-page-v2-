@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-27T21:20:01.538787",
+  "generated_at": "2026-04-27T21:30:01.240033",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-27T21:20:01.538803"
+    "last_health_check": "2026-04-27T21:30:01.240058"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 21:20:01",
+      "last_update": "2026-04-27 21:29:52,941 - INFO - [HEARTBEAT] Price: $76,630.89",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,11 +27,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 57.9,
-        "time": "2026-04-27 21:16:03,426"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 76826.8,
+        "tp_price": 76442.666,
+        "sl_price": 76942.0402,
+        "entry_time": "2026-04-27 21:21:01",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 52,
         "wins": 13,
@@ -117,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 21:19:55,971 - INFO - [HEARTBEAT] Price: $76,804.73",
+      "last_update": "2026-04-27 21:29:58,116 - INFO - [HEARTBEAT] Price: $76,627.56",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +141,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.2,
-        "time": "2026-04-27 21:19:44,220"
+        "confidence": 50.8,
+        "time": "2026-04-27 21:29:52,361"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-27 21:20:01",
+      "last_update": "2026-04-27 21:30:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +248,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-27 21:19:43,294"
+        "time": "2026-04-27 21:30:00,232"
       },
       "open_position": null,
       "performance": {
@@ -256,30 +264,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-27T21:20:01.862340",
+    "updated_at": "2026-04-27T21:30:01.554481",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5744,
-        "confidence": 0.6517,
-        "bullish_pct": 0.1886,
-        "bearish_pct": 0.0485,
-        "neutral_pct": 0.7629,
+        "strength": 0.2298,
+        "confidence": 0.6803,
+        "bullish_pct": 0.3537,
+        "bearish_pct": 0.0628,
+        "neutral_pct": 0.5835,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6444,
+        "consensus_score": 0.3752,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] Dip to $76.7K is a total gift \u2014 MSTR and Strive buying $316M of BTC at $78K is NOT CHUMP CHANGE! Block\u2019s Bitkey news is accelerating mass adoption, and this consolidation is just coil compression befo",
-            "[StackingSats] Dip to $76.7K is a gift \u2014 MSTR, Strive, and Block are buying *aggressively* at $78K, proving long-term conviction. Every dollar spent below $80K is a subsidy to weak hands; 1 BTC = 1 BTC. This consoli",
-            "[CryptoKaleo] MSTR and Strive buying $316M of BTC at $78K isn\u2019t financial gymnastics\u2014it\u2019s a full-scale assault on paper hands. The $76.7K dip was a precision-guided accumulation zone, and with Block\u2019s Bitkey turboc"
+            "[CryptoKaleo] The $76.5K floor is a fortress \u2014 MSTR and Strive aren\u2019t buying because of hope, they\u2019re buying because they *know* what\u2019s coming post-halving. This is not accumulation in fear, this is accumulation in",
+            "[DiamondHands420] MSTR dropping $255M and Strive $61M in fresh buys at $78K is NOT a sign of weakness\u2014it\u2019s dominance! Price hugging $76.5K with insane volume proves the floor is institutional-grade. We\u2019re coiling like ",
+            "[FadeTheCrowd] Price holding firm at $76.5K on massive volume while MSTR and Strive absorb supply at $78K is textbook silent accumulation\u2014fear persists (47 Fear & Greed), but the smart money isn\u2019t hesitating. Instit",
+            "[StackingSats] Every dip to $76.5K is a generational buy \u2014 MSTR and Strive\u2019s $316M in accumulation at $78K isn\u2019t speculation, it\u2019s conviction. The halving\u2019s behind us, hash rate is at all-time highs, and institution"
           ],
           "bearish": [
-            "[BearishBob] Every \"strong signal\" at $78K looks like yield-driven desperation \u2014 MSTR and Strive loading up with 9.6% debt is financial gymnastics, not conviction. Price rejected at $79.4K and can't clear resistan"
+            "[BearishBob] Every rally into $78K\u2013$79.4K remains a trap\u2014MSTR and Strive buying here isn\u2019t strength, it\u2019s forced accumulation in a dying uptrend. With Treasury yields spiking to 9.6%, real rates are shredding risk"
           ]
         },
-        "timestamp": "2026-04-27T17:28:03.679804+00:00",
+        "timestamp": "2026-04-27T19:29:26.200018+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -296,17 +305,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 3481.4,
+          "run_duration_sec": 7163.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 31,
           "market_data_summary": {
-            "price": 76764,
-            "change_24h": -1.64,
+            "price": 76845,
+            "change_24h": -1.53,
             "fear_greed": 47
           }
         },
-        "age_minutes": 112.0,
+        "age_minutes": 0.6,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +362,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 736.3,
+        "age_minutes": 746.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +379,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15065.0,
+        "age_minutes": 15075.0,
         "is_fresh": false
       }
     },
