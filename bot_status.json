@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T00:50:02.424193",
+  "generated_at": "2026-04-28T01:00:00.837440",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T00:50:02.424208"
+    "last_health_check": "2026-04-28T01:00:00.837448"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 00:49:56,837 - INFO - [HEARTBEAT] Price: $77,069.35",
+      "last_update": "2026-04-28 00:59:57,010 - INFO - [HEARTBEAT] Price: $77,058.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 50.6,
-        "time": "2026-04-28 00:45:48,846"
+        "signal": "SHORT",
+        "confidence": 57.4,
+        "time": "2026-04-28 00:55:51,955"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 00:50:02,431 - INFO - [HEARTBEAT] Price: $77,069.35",
+      "last_update": "2026-04-28 00:59:32,611 - INFO - [HEARTBEAT] Price: $77,058.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.7,
-        "time": "2026-04-28 00:48:19,505"
+        "confidence": 52.7,
+        "time": "2026-04-28 00:58:23,674"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 00:50:02",
+      "last_update": "2026-04-28 01:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.1,
-        "time": "2026-04-28 00:49:33,996"
+        "confidence": 0.2,
+        "time": "2026-04-28 00:59:38,249"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T00:50:02.726281",
+    "updated_at": "2026-04-28T01:00:01.151870",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2955,
-        "confidence": 0.6344,
-        "bullish_pct": 0.3403,
-        "bearish_pct": 0.0238,
-        "neutral_pct": 0.6359,
+        "strength": 0.5997,
+        "confidence": 0.6331,
+        "bullish_pct": 0.1764,
+        "bearish_pct": 0.0475,
+        "neutral_pct": 0.7761,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.4538,
+        "stance_shifts": 0,
+        "consensus_score": 0.6642,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We're building a new financial system on Bitcoin\u2014Kalshi, Aven, USDb\u2014this isn't speculation, it's infrastructure. The $76.5K support holds because smart money knows we\u2019re structuring a higher base amid",
-            "[FadeTheCrowd] Price grinding at $76.5K with neutral sentiment and fading volume? Classic \"no one wants to go first\" moment\u2014exactly when I want to be loading. Regulatory catalysts (Aven, USDb, SEC/CFTC shift) are un",
-            "[StackingSats] $76.5K holds\u2014this is accumulation territory post-halving. Regulatory clarity, Aven\u2019s non-custodial credit, and USDb on Bitcoin rails signal real institutional adoption. Every dip is a buy for the 2028",
-            "[TrendRider] Price is holding key support at $76,595 with declining volume\u2014classic bull flag formation after a strong 30-day run. Regulatory catalysts (Aven, USDb, SEC/CFTC shift) add structural bullish conviction",
-            "[DiamondHands420] $76.5K is HOLDING like a fortress\u2014this isn't fear, this is FUD being absorbed by the smart money! With Aven\u2019s non-custodial Visa card, USDb on B2B rails, and the SEC/CFTC finally aligning, we're build"
+            "[StackingSats] $76.5K is sacred ground\u2014three tests, zero breaks. This isn't weakness; it's a spring being coiled by weak hands fearing headlines they don\u2019t understand. Aven\u2019s Bitcoin-backed Visa, SEC/CFTC alignment,",
+            "[CryptoKaleo] $76.5K isn\u2019t just holding \u2014 it\u2019s *hardening* as institutional accumulation intensifies beneath the surface. All this regulatory clarity \u2014 Aven\u2019s Visa play, Kalshi\u2019s new model, SEC/CFTC alignment \u2014 isn",
+            "[DiamondHands420] $76.5K is HOLDING STRONG again\u2014weak hands panic, diamond hands load up OTC! Aven\u2019s Bitcoin Visa card and SEC/CFTC alignment are GAME CHANGERS, and Kalshi\u2019s new model proves financialization is acceler"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $79.4K rejected\u2014classic bull trap setup. All this regulatory cheerleading (SEC/CFTC lovefest, Aven, USDb) is just noise to mask weak hands accumulating before the next leg down. Vol"
+            "[BearishBob] Another retest of $76.5K\u2014same song, different day. All this regulatory cheerleading is just noise to mask the fact that BTC can't break $80K and keeps dumping on every headline; real money is exiting,"
           ]
         },
-        "timestamp": "2026-04-27T22:48:47.972886+00:00",
+        "timestamp": "2026-04-27T22:52:08.365565+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +296,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 4726.3,
+          "run_duration_sec": 1326.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 32,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 76897,
-            "change_24h": -1.72,
+            "price": 76888,
+            "change_24h": -2.18,
             "fear_greed": 47
           }
         },
-        "age_minutes": 1.2,
+        "age_minutes": 7.9,
         "is_fresh": true
       },
       "groq": {
@@ -355,7 +353,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 946.4,
+        "age_minutes": 956.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -372,7 +370,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15275.0,
+        "age_minutes": 15284.9,
         "is_fresh": false
       }
     },
