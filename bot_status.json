@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-27T15:00:01.055185",
+  "generated_at": "2026-04-27T15:10:01.357619",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-27T15:00:01.055196"
+    "last_health_check": "2026-04-27T15:10:01.357634"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 15:00:01",
+      "last_update": "2026-04-27 15:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 52.2,
-        "time": "2026-04-27 14:55:06,400"
+        "confidence": 53.6,
+        "time": "2026-04-27 15:05:06,626"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 14:59:39,412 - INFO - [HEARTBEAT] Price: $77,627.47",
+      "last_update": "2026-04-27 15:09:39,838 - INFO - [HEARTBEAT] Price: $77,725.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 53.3,
-        "time": "2026-04-27 14:59:13,561"
+        "confidence": 52.6,
+        "time": "2026-04-27 15:09:13,501"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-27 15:00:01",
+      "last_update": "2026-04-27 15:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-27 14:59:56,917"
+        "time": "2026-04-27 15:09:56,556"
       },
       "open_position": null,
       "performance": {
@@ -256,30 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-27T15:00:01.292262",
+    "updated_at": "2026-04-27T15:10:01.582154",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.5522,
-        "confidence": 0.6257,
-        "bullish_pct": 0.1833,
-        "bearish_pct": 0.0811,
-        "neutral_pct": 0.7356,
+        "direction": "LONG",
+        "strength": 0.4514,
+        "confidence": 0.6689,
+        "bullish_pct": 0.4968,
+        "bearish_pct": 0.0454,
+        "neutral_pct": 0.4578,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.6033,
+        "stance_shifts": 0,
+        "consensus_score": 0.2452,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $77.6K holding STRONG \u2014 UTXO data and VanEck\u2019s negative funding = bullish confirmation GOLD! $80K rejection? Just a shakeout. Western Union dropping USDPT and hash rate dip = fuel for next leg to $100",
-            "[StackingSats] $77.6K holding strong again\u2014this is textbook accumulation, just like 2019 and 2023. Negative funding rates mean shorts are building, but 1 BTC = 1 BTC, and with hash rate stabilizing post-dip, this is",
-            "[CryptoKaleo] We\u2019re coiling like a spring at $77.8K \u2014 rejection at $80K is noise, not a trend. VanEck\u2019s call on negative funding + hash rate slip is *bullish alchemy*, and with Western Union\u2019s stablecoin move, fiat"
+            "[StackingSats] $77.6K is sacred ground \u2014 we\u2019re witnessing textbook miner capitulation coinciding with structurally negative funding rates and a relentless $1.2B weekly inflow into BTC ETPs. The hash rate decline con",
+            "[DiamondHands420] $77.6K is a battle-tested fortress \u2014 we\u2019re seeing textbook miner capitulation with hash rate dropping and negative funding rates screaming BUY SIGNAL. $1.2B inflows for 4 weeks straight? Whales are st",
+            "[TrendRider] Price holding firm at $77.6K with volume-backed support, negative funding rates, and declining hash rate confirms miner stress and short-term capitulation\u2014classic accumulation phase. With $1.2B weekly",
+            "[CryptoKaleo] $77.6K isn\u2019t just holding \u2014 it\u2019s becoming a psychological launchpad. Negative funding, collapsing hash rate, and $1.2B weekly inflows scream institutional accumulation while weak hands get shaken out.",
+            "[DeepPockets] Price holding at $77.6K with negative funding and declining hash rate confirms miner capitulation is being absorbed by institutional inflows\u2014$1.2B weekly into BTC ETPs isn\u2019t noise, it\u2019s accumulation. "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout setup at $80K\u2014same rigged game. Volume\u2019s flat, hash rate\u2019s slipping, and these \"bullish\" negative funding rates are just shorts getting squeezed in a dying pump. Western Union hype is "
+            "[BearishBob] $77.6K holding looks like a bear trap setup \u2014 every dip gets bought but only because miners and weak hands keep dumping into demand. Negative funding? Just means shorts are already flattened and can't"
           ]
         },
-        "timestamp": "2026-04-27T11:54:18.520800+00:00",
+        "timestamp": "2026-04-27T13:06:00.208153+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -296,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1457.0,
+          "run_duration_sec": 2158.8,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 77868,
-            "change_24h": -0.33,
+            "price": 77749,
+            "change_24h": -0.3,
             "fear_greed": 47
           }
         },
-        "age_minutes": 65.7,
+        "age_minutes": 4.0,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +355,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 356.3,
+        "age_minutes": 366.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 14685.0,
+        "age_minutes": 14695.0,
         "is_fresh": false
       }
     },
