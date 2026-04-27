@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-27T17:00:01.213119",
+  "generated_at": "2026-04-27T17:10:00.967055",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-27T17:00:01.213134"
+    "last_health_check": "2026-04-27T17:10:00.967076"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 17:00:01",
+      "last_update": "2026-04-27 17:09:34,907 - INFO - [HEARTBEAT] Price: $77,460.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 51.1,
-        "time": "2026-04-27 16:55:06,435"
+        "confidence": 52.5,
+        "time": "2026-04-27 17:05:06,188"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 16:59:40,452 - INFO - [HEARTBEAT] Price: $77,827.17",
+      "last_update": "2026-04-27 17:09:40,115 - INFO - [HEARTBEAT] Price: $77,460.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.5,
-        "time": "2026-04-27 16:59:13,659"
+        "confidence": 51.5,
+        "time": "2026-04-27 17:09:15,432"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-27 17:00:01",
+      "last_update": "2026-04-27 17:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.4,
-        "time": "2026-04-27 16:59:55,571"
+        "confidence": 0,
+        "time": "2026-04-27 17:09:49,753"
       },
       "open_position": null,
       "performance": {
@@ -256,30 +256,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-27T17:00:01.480859",
+    "updated_at": "2026-04-27T17:10:01.228886",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5953,
-        "confidence": 0.6421,
-        "bullish_pct": 0.1761,
-        "bearish_pct": 0.0525,
-        "neutral_pct": 0.7714,
+        "strength": 0.1706,
+        "confidence": 0.6544,
+        "bullish_pct": 0.389,
+        "bearish_pct": 0.0515,
+        "neutral_pct": 0.5595,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6571,
+        "consensus_score": 0.3393,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] We\u2019re holding strong above $77.5K and that $1.2B inflow is NO JOKE\u2014this is real institutional accumulation, not passive garbage. Reclaiming the 21-week MA for four straight weeks means the smart money",
-            "[CryptoKaleo] We're in accumulation mode and the smart money is loading \u2014 $1.2B weekly inflows for four straight weeks isn\u2019t passive, it\u2019s strategic. The 21-week MA reclaim is a *massive* signal, especially after f",
-            "[StackingSats] Dip to $77.6K fully expected and perfectly healthy\u2014UTXO-age accumulation + $1.2B inflows for four straight weeks confirm institutional stacking is accelerating post-halving. Reclaiming the 21-week MA "
+            "[StackingSats] Every dip is a gift\u2014$77.6K held firm as institutional demand from MSTR and Strive absorbs supply. The 21-week MA reclaim confirms trend reversal, and with halving cycle momentum building, this range-b",
+            "[TrendRider] Price reclaiming the 21-week MA is a high-conviction signal\u2014\u201cthe trend is your friend until it bends.\u201d MSTR and Strive\u2019s aggressive accumulation ($316M+ last week) adds fuel, and volume supports conti",
+            "[DiamondHands420] LOVING the resilience at $77.5K\u2014MSTR and Strive ain\u2019t just buying, they\u2019re YOLO-ing $316M into this dip like it\u2019s 2021 all over again! Reclaiming the 21-week MA with strong volume? That\u2019s not a bounce",
+            "[DeepPockets] Price holding above $77.5K with MSTR and Strive absorbing supply confirms structural demand\u2014this aligns with my cost basis anchoring near $75K. The 21-week MA reclaim is meaningful, but I'm wary of ov"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout above the 21-week MA\u2014this reclaim is a joke without follow-through. Price is retesting the lows at $77.6K on weak volume, the $1.2B inflows are passive ETP dribble, and we're still stu"
+            "[BearishBob] Another fakeout above the 21-week MA\u2014price can't even hold $79K, let alone break it. MSTR and Strive are papering over weakness with debt-fueled buys at 9.6% yields, front-running their own share dilu"
           ]
         },
-        "timestamp": "2026-04-27T14:08:24.824026+00:00",
+        "timestamp": "2026-04-27T15:08:22.722755+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -296,17 +297,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2303.2,
+          "run_duration_sec": 2301.1,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 33,
+          "total_posts": 34,
           "market_data_summary": {
-            "price": 77690,
-            "change_24h": -0.24,
+            "price": 77885,
+            "change_24h": -0.21,
             "fear_greed": 47
           }
         },
-        "age_minutes": 51.6,
+        "age_minutes": 1.6,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +354,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 476.3,
+        "age_minutes": 486.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +371,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 14805.0,
+        "age_minutes": 14815.0,
         "is_fresh": false
       }
     },
