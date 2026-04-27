@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T01:40:01.109602",
+  "generated_at": "2026-04-28T01:50:01.597447",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T01:40:01.109617"
+    "last_health_check": "2026-04-28T01:50:01.597463"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 01:39:57,590 - INFO - [HEARTBEAT] Price: $77,220.05",
+      "last_update": "2026-04-28 01:49:57,744 - INFO - [HEARTBEAT] Price: $77,345.67",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,11 +27,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 51.4,
-        "time": "2026-04-28 01:36:04,110"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "LONG",
+        "size": 3,
+        "entry_price": 77250.0,
+        "tp_price": 77636.24999999999,
+        "sl_price": 77134.125,
+        "entry_time": "2026-04-28 01:42:18",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 56,
         "wins": 13,
@@ -117,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 01:39:33,146 - INFO - [HEARTBEAT] Price: $77,220.05",
+      "last_update": "2026-04-28 01:49:33,296 - INFO - [HEARTBEAT] Price: $77,329.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -132,9 +140,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 50.3,
-        "time": "2026-04-28 01:38:40,337"
+        "signal": "SHORT",
+        "confidence": 57.0,
+        "time": "2026-04-28 01:48:44,617"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 01:40:01",
+      "last_update": "2026-04-28 01:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.1,
-        "time": "2026-04-28 01:39:55,265"
+        "confidence": 0.6,
+        "time": "2026-04-28 01:49:59,425"
       },
       "open_position": null,
       "performance": {
@@ -256,30 +264,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T01:40:01.411389",
+    "updated_at": "2026-04-28T01:50:01.896383",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5997,
-        "confidence": 0.6331,
-        "bullish_pct": 0.1764,
-        "bearish_pct": 0.0475,
-        "neutral_pct": 0.7761,
+        "strength": 0.6021,
+        "confidence": 0.6356,
+        "bullish_pct": 0.1737,
+        "bearish_pct": 0.0505,
+        "neutral_pct": 0.7758,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6642,
+        "consensus_score": 0.6637,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $76.5K is sacred ground\u2014three tests, zero breaks. This isn't weakness; it's a spring being coiled by weak hands fearing headlines they don\u2019t understand. Aven\u2019s Bitcoin-backed Visa, SEC/CFTC alignment,",
-            "[CryptoKaleo] $76.5K isn\u2019t just holding \u2014 it\u2019s *hardening* as institutional accumulation intensifies beneath the surface. All this regulatory clarity \u2014 Aven\u2019s Visa play, Kalshi\u2019s new model, SEC/CFTC alignment \u2014 isn",
-            "[DiamondHands420] $76.5K is HOLDING STRONG again\u2014weak hands panic, diamond hands load up OTC! Aven\u2019s Bitcoin Visa card and SEC/CFTC alignment are GAME CHANGERS, and Kalshi\u2019s new model proves financialization is acceler"
+            "[StackingSats] $77.1K is textbook mid-cycle consolidation\u2014$76.5K remains unbroken, whales are loading, and exchange outflows confirm supply is vanishing. Regulatory noise is short-term FUD; Bitcoin\u2019s fundamentals\u2014ha",
+            "[CryptoKaleo] The $76.5K floor holds firm\u2014whales are feasting while the weak hands panic over ATM bans and political noise. This consolidation is coiling like a spring: every failed dip fuels the next leg up, and $",
+            "[DiamondHands420] $77.1K holding strong and that $76.5K floor is literal bedrock\u2014whales are gorging themselves while normies panic over some kiosk bans and donation noise. All this \"regulatory FUD\" is just prelude to t"
           ],
           "bearish": [
-            "[BearishBob] Another retest of $76.5K\u2014same song, different day. All this regulatory cheerleading is just noise to mask the fact that BTC can't break $80K and keeps dumping on every headline; real money is exiting,"
+            "[BearishBob] Another fakeout waiting to happen. $79.4K rejected twice on weak volume, and this \"whale accumulation\" narrative is just covering for lack of real buying pressure\u2014price can't even hold $77K on a suppo"
           ]
         },
-        "timestamp": "2026-04-27T22:52:08.365565+00:00",
+        "timestamp": "2026-04-27T23:48:29.926666+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -296,17 +304,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1326.3,
+          "run_duration_sec": 1108.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 76888,
-            "change_24h": -2.18,
+            "price": 77125,
+            "change_24h": -1.53,
             "fear_greed": 47
           }
         },
-        "age_minutes": 47.9,
+        "age_minutes": 1.5,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +361,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 996.3,
+        "age_minutes": 1006.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +378,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15325.0,
+        "age_minutes": 15335.0,
         "is_fresh": false
       }
     },
