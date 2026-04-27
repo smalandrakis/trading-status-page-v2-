@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-27T02:40:01.645958",
+  "generated_at": "2026-04-27T02:50:01.208400",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "MISMATCH",
-    "last_health_check": "2026-04-27T02:40:01.646923"
+    "last_health_check": "2026-04-27T02:50:01.208417"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 02:40:01",
+      "last_update": "2026-04-27 02:49:34,977 - INFO - [HEARTBEAT] Price: $78,824.33",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 51.9,
-        "time": "2026-04-27 02:39:07,953"
+        "signal": "SHORT",
+        "confidence": 51.0,
+        "time": "2026-04-27 02:49:08,510"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 02:39:39,923 - INFO - [HEARTBEAT] Price: $78,644.24",
+      "last_update": "2026-04-27 02:49:40,442 - INFO - [HEARTBEAT] Price: $78,820.80",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.9,
-        "time": "2026-04-27 02:39:13,175"
+        "confidence": 51.0,
+        "time": "2026-04-27 02:49:15,115"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-27 02:40:01",
+      "last_update": "2026-04-27 02:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,31 +256,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-27T02:40:01.887278",
+    "updated_at": "2026-04-27T02:50:01.436770",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4102,
-        "confidence": 0.6469,
-        "bullish_pct": 0.2697,
-        "bearish_pct": 0.0504,
-        "neutral_pct": 0.6799,
+        "strength": 0.3231,
+        "confidence": 0.6314,
+        "bullish_pct": 0.2459,
+        "bearish_pct": 0.1851,
+        "neutral_pct": 0.569,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5198,
+        "stance_shifts": 2,
+        "consensus_score": 0.3535,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Price rejection at $80K on weak volume with negative funding rates fits the \"capitulation at resistance\" pattern\u2014fear is present (F&G: 33), but not panic. Saylor accumulating and the hash rate dip sug",
-            "[DiamondHands420] $78K holding strong and we\u2019re coiling like a spring! The \"rejection\" at $80K is just fear porn\u2014negative funding rates mean shorts are piling in ahead of the halving squeeze, and Saylor\u2019s still buying!",
-            "[CryptoKaleo] They're calling $57K the \"bottom\"? That\u2019s a grave. We\u2019re not digging\u2014we\u2019re ascending. $80K isn\u2019t resistance, it\u2019s a psychological speed bump before the vertical lift-off. Saylor loading again? Hash ra",
-            "[StackingSats] $78K is accumulation territory\u2014every dip is a gift. The $80K \"rejection\" is a myth; we're building momentum for the post-halving surge, and negative funding rates mean shorts are setting up for a brut"
+            "[StackingSats] $78.5K is prime accumulation territory\u2014another dip to stack sats. The $57K \"bottom\" narrative is noise; 1 BTC = 1 BTC, and halving supply shock remains underpriced vs. prior cycles. Negative funding +",
+            "[DiamondHands420] $78.5K is a total steal after the halving and with Saylor primed to buy again\u2014this dip is just weak hands getting shaken out. Negative funding and hash rate dip are screaming accumulation, and $80K re",
+            "[FadeTheCrowd] Price holding above $77,350 with negative funding rates and Saylor signaling accumulation confirms quiet strength amid public fear\u2014perfect setup for a spring-loaded move toward $80K+. The $57K bottom ",
+            "[CryptoKaleo] We\u2019re not just coiling\u2014we\u2019re loading the cannon. $78.5K is a magnet for accumulation, not rejection. Saylor\u2019s signaling again, funding rates are screaming capitulation, and the hash rate dip confirms "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout probing $80K on weak volume\u2014same script as last month. Negative funding rates aren't bullish, they're a trap for clueless longs; Saylor's buying is fully priced in, and $57K remains th"
+            "[DeltaNeutral] Price remains trapped below key resistance at $79,200\u2013$80,500 with dense order book offers and no structural break in supply. Negative funding rates suggest short-side leverage, but lack of follow-thr",
+            "[BearishBob] Another retest of $78.5K on weak volume\u2014same script as last week. Saylor noise and negative funding can't overcome persistent resistance at $80K, heavy supply overhead, and still-loose macro (DXY 104.",
+            "[AlphaQuant] Price retest at $78.5K lacks volume conviction and fails to clear descending order book resistance between $79.2K\u2013$80.5K. Negative funding rates and Saylor noise provide minor short-term support, but "
           ]
         },
-        "timestamp": "2026-04-26T23:37:24.053372+00:00",
+        "timestamp": "2026-04-27T00:42:40.788876+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -297,17 +299,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 441.9,
+          "run_duration_sec": 758.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78343,
-            "change_24h": 0.96,
-            "fear_greed": 33
+            "price": 78501,
+            "change_24h": 1.31,
+            "fear_greed": 47
           }
         },
-        "age_minutes": 62.6,
+        "age_minutes": 7.3,
         "is_fresh": true
       },
       "groq": {
@@ -359,7 +361,7 @@
             "fear_greed": 31
           }
         },
-        "age_minutes": 2496.4,
+        "age_minutes": 2506.4,
         "is_fresh": false
       },
       "mirofish_full": {
@@ -376,7 +378,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 13945.0,
+        "age_minutes": 13955.0,
         "is_fresh": false
       }
     },
