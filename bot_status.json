@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-27T16:00:00.731656",
+  "generated_at": "2026-04-27T16:10:01.072136",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-27T16:00:00.731675"
+    "last_health_check": "2026-04-27T16:10:01.072149"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 16:00:00",
+      "last_update": "2026-04-27 16:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 51.3,
-        "time": "2026-04-27 15:55:06,097"
+        "confidence": 53.4,
+        "time": "2026-04-27 16:05:06,688"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-27 15:59:40,050 - INFO - [HEARTBEAT] Price: $77,747.61",
+      "last_update": "2026-04-27 16:09:40,462 - INFO - [HEARTBEAT] Price: $77,837.62",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.6,
-        "time": "2026-04-27 15:59:13,391"
+        "confidence": 50.9,
+        "time": "2026-04-27 16:09:12,040"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-27 16:00:00",
+      "last_update": "2026-04-27 16:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.3,
-        "time": "2026-04-27 15:59:53,091"
+        "confidence": 0.7,
+        "time": "2026-04-27 16:09:48,346"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-27T16:00:01.000446",
+    "updated_at": "2026-04-27T16:10:01.324993",
     "signals": {
       "cerebras": {
-        "direction": "LONG",
-        "strength": 0.4514,
-        "confidence": 0.6689,
-        "bullish_pct": 0.4968,
-        "bearish_pct": 0.0454,
-        "neutral_pct": 0.4578,
+        "direction": "NEUTRAL",
+        "strength": 0.5953,
+        "confidence": 0.6421,
+        "bullish_pct": 0.1761,
+        "bearish_pct": 0.0525,
+        "neutral_pct": 0.7714,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.2452,
+        "consensus_score": 0.6571,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $77.6K is sacred ground \u2014 we\u2019re witnessing textbook miner capitulation coinciding with structurally negative funding rates and a relentless $1.2B weekly inflow into BTC ETPs. The hash rate decline con",
-            "[DiamondHands420] $77.6K is a battle-tested fortress \u2014 we\u2019re seeing textbook miner capitulation with hash rate dropping and negative funding rates screaming BUY SIGNAL. $1.2B inflows for 4 weeks straight? Whales are st",
-            "[TrendRider] Price holding firm at $77.6K with volume-backed support, negative funding rates, and declining hash rate confirms miner stress and short-term capitulation\u2014classic accumulation phase. With $1.2B weekly",
-            "[CryptoKaleo] $77.6K isn\u2019t just holding \u2014 it\u2019s becoming a psychological launchpad. Negative funding, collapsing hash rate, and $1.2B weekly inflows scream institutional accumulation while weak hands get shaken out.",
-            "[DeepPockets] Price holding at $77.6K with negative funding and declining hash rate confirms miner capitulation is being absorbed by institutional inflows\u2014$1.2B weekly into BTC ETPs isn\u2019t noise, it\u2019s accumulation. "
+            "[DiamondHands420] We\u2019re holding strong above $77.5K and that $1.2B inflow is NO JOKE\u2014this is real institutional accumulation, not passive garbage. Reclaiming the 21-week MA for four straight weeks means the smart money",
+            "[CryptoKaleo] We're in accumulation mode and the smart money is loading \u2014 $1.2B weekly inflows for four straight weeks isn\u2019t passive, it\u2019s strategic. The 21-week MA reclaim is a *massive* signal, especially after f",
+            "[StackingSats] Dip to $77.6K fully expected and perfectly healthy\u2014UTXO-age accumulation + $1.2B inflows for four straight weeks confirm institutional stacking is accelerating post-halving. Reclaiming the 21-week MA "
           ],
           "bearish": [
-            "[BearishBob] $77.6K holding looks like a bear trap setup \u2014 every dip gets bought but only because miners and weak hands keep dumping into demand. Negative funding? Just means shorts are already flattened and can't"
+            "[BearishBob] Another fakeout above the 21-week MA\u2014this reclaim is a joke without follow-through. Price is retesting the lows at $77.6K on weak volume, the $1.2B inflows are passive ETP dribble, and we're still stu"
           ]
         },
-        "timestamp": "2026-04-27T13:06:00.208153+00:00",
+        "timestamp": "2026-04-27T14:08:24.824026+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +296,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2158.8,
+          "run_duration_sec": 2303.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 33,
           "market_data_summary": {
-            "price": 77749,
-            "change_24h": -0.3,
+            "price": 77690,
+            "change_24h": -0.24,
             "fear_greed": 47
           }
         },
-        "age_minutes": 54.0,
+        "age_minutes": 1.6,
         "is_fresh": true
       },
       "groq": {
@@ -355,7 +353,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 416.3,
+        "age_minutes": 426.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -372,7 +370,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 14744.9,
+        "age_minutes": 14755.0,
         "is_fresh": false
       }
     },
