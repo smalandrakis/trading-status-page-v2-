@@ -1,0 +1,387 @@
+{
+  "generated_at": "2026-04-27T03:20:01.064184",
+  "binance_connection": {
+    "status": "connected",
+    "message": "Binance API accessible"
+  },
+  "system_health": {
+    "reconciliation": "MISMATCH",
+    "last_health_check": "2026-04-27T03:20:01.064193"
+  },
+  "bots": [
+    {
+      "name": "BTC Volume Strategy (0.50 threshold)",
+      "status": "running",
+      "last_update": "2026-04-27 03:20:01",
+      "config": {
+        "tp_pct": 0.5,
+        "sl_pct": 0.15,
+        "threshold": 0.5,
+        "position_sizing": "3x-6x",
+        "expected_trades_per_month": "20,000",
+        "expected_win_rate": 24.52,
+        "expected_ev_per_trade": 4.53,
+        "expected_pnl_15mo": 1350544,
+        "features": "41 (D2 feature set)",
+        "model": "D2 HGB Optimized",
+        "strategy": "Volume King - maximize total P&L"
+      },
+      "current_signal": {
+        "signal": "LONG",
+        "confidence": 51.7,
+        "time": "2026-04-27 03:19:10,589"
+      },
+      "open_position": null,
+      "performance": {
+        "total_trades": 49,
+        "wins": 13,
+        "losses": 36,
+        "win_rate": 26.5,
+        "total_pnl": 139.03,
+        "avg_pnl": 2.84
+      },
+      "recent_trades": [
+        {
+          "time": "2026-04-24T15:00:14.619762",
+          "direction": "SHORT",
+          "pnl": -37.15,
+          "pnl_pct": -0.16,
+          "hold_minutes": 25.0
+        },
+        {
+          "time": "2026-04-24T17:06:43.716366",
+          "direction": "SHORT",
+          "pnl": 121.19,
+          "pnl_pct": 0.52,
+          "hold_minutes": 65.0
+        },
+        {
+          "time": "2026-04-24T17:11:40.711902",
+          "direction": "SHORT",
+          "pnl": -44.75,
+          "pnl_pct": -0.19,
+          "hold_minutes": 5.0
+        },
+        {
+          "time": "2026-04-24T17:23:23.551527",
+          "direction": "SHORT",
+          "pnl": -40.45,
+          "pnl_pct": -0.17,
+          "hold_minutes": 5.0
+        },
+        {
+          "time": "2026-04-24T17:44:44.282550",
+          "direction": "SHORT",
+          "pnl": -42.05,
+          "pnl_pct": -0.18,
+          "hold_minutes": 7.0
+        },
+        {
+          "time": "2026-04-24T18:33:22.661715",
+          "direction": "SHORT",
+          "pnl": -37.85,
+          "pnl_pct": -0.16,
+          "hold_minutes": 3.0
+        },
+        {
+          "time": "2026-04-24T18:46:43.383579",
+          "direction": "SHORT",
+          "pnl": -34.94,
+          "pnl_pct": -0.15,
+          "hold_minutes": 5.0
+        },
+        {
+          "time": "2026-04-24T18:59:42.080693",
+          "direction": "SHORT",
+          "pnl": -35.28,
+          "pnl_pct": -0.15,
+          "hold_minutes": 9.0
+        },
+        {
+          "time": "2026-04-24T19:54:45.127904",
+          "direction": "SHORT",
+          "pnl": -44.17,
+          "pnl_pct": -0.19,
+          "hold_minutes": 50.0
+        },
+        {
+          "time": "2026-04-24T23:59:44.537368",
+          "direction": "SHORT",
+          "pnl": 39.51,
+          "pnl_pct": 0.17,
+          "hold_minutes": 240.0
+        }
+      ],
+      "health_status": "UNKNOWN"
+    },
+    {
+      "name": "BTC Balanced Strategy (0.55 threshold)",
+      "status": "running",
+      "last_update": "2026-04-27 03:19:40,244 - INFO - [HEARTBEAT] Price: $79,039.16",
+      "config": {
+        "tp_pct": 0.5,
+        "sl_pct": 0.15,
+        "threshold": 0.55,
+        "position_sizing": "3x-6x",
+        "expected_trades_per_month": "3,000",
+        "expected_win_rate": 37.25,
+        "expected_ev_per_trade": 24.04,
+        "expected_pnl_13mo": 71240,
+        "features": "41 (D2 feature set)",
+        "model": "D2 HGB Optimized",
+        "strategy": "Balanced Quality - optimize quality \u00d7 volume"
+      },
+      "current_signal": {
+        "signal": "NEUTRAL",
+        "confidence": 51.4,
+        "time": "2026-04-27 03:19:15,457"
+      },
+      "open_position": null,
+      "performance": {
+        "total_trades": 22,
+        "wins": 7,
+        "losses": 15,
+        "win_rate": 31.8,
+        "total_pnl": 231.41,
+        "avg_pnl": 10.52
+      },
+      "recent_trades": [
+        {
+          "time": "2026-04-24T05:24:40.325875",
+          "direction": "SHORT",
+          "pnl": 117.89,
+          "pnl_pct": 0.5,
+          "hold_minutes": 31.0
+        },
+        {
+          "time": "2026-04-24T07:50:57.221896",
+          "direction": "SHORT",
+          "pnl": -36.56,
+          "pnl_pct": -0.16,
+          "hold_minutes": 140.0
+        },
+        {
+          "time": "2026-04-24T10:20:48.294894",
+          "direction": "SHORT",
+          "pnl": -36.17,
+          "pnl_pct": -0.15,
+          "hold_minutes": 79.0
+        },
+        {
+          "time": "2026-04-24T11:15:11.918058",
+          "direction": "SHORT",
+          "pnl": -36.93,
+          "pnl_pct": -0.16,
+          "hold_minutes": 6.0
+        },
+        {
+          "time": "2026-04-24T12:24:51.566720",
+          "direction": "SHORT",
+          "pnl": -37.86,
+          "pnl_pct": -0.16,
+          "hold_minutes": 28.0
+        },
+        {
+          "time": "2026-04-24T15:00:15.200084",
+          "direction": "SHORT",
+          "pnl": -38.68,
+          "pnl_pct": -0.16,
+          "hold_minutes": 25.0
+        },
+        {
+          "time": "2026-04-24T17:23:20.127563",
+          "direction": "SHORT",
+          "pnl": -36.41,
+          "pnl_pct": -0.16,
+          "hold_minutes": 17.0
+        },
+        {
+          "time": "2026-04-24T18:33:17.980836",
+          "direction": "SHORT",
+          "pnl": -35.35,
+          "pnl_pct": -0.15,
+          "hold_minutes": 6.0
+        },
+        {
+          "time": "2026-04-24T19:54:46.627819",
+          "direction": "SHORT",
+          "pnl": -41.69,
+          "pnl_pct": -0.18,
+          "hold_minutes": 49.0
+        },
+        {
+          "time": "2026-04-24T23:59:43.352896",
+          "direction": "SHORT",
+          "pnl": 39.51,
+          "pnl_pct": 0.17,
+          "hold_minutes": 240.0
+        }
+      ],
+      "health_status": "UNKNOWN"
+    },
+    {
+      "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
+      "status": "running",
+      "last_update": "2026-04-27 03:20:01",
+      "config": {
+        "tp_pct": 0.5,
+        "sl_pct": 0.15,
+        "threshold": 0.7,
+        "position_sizing": "3x-6x",
+        "expected_trades_per_month": "1,830",
+        "expected_win_rate": 51.26,
+        "expected_ev_per_trade": 73,
+        "expected_pnl_160d": 716280,
+        "features": "92 (D2 + Price Action)",
+        "model": "Every 25th Tick + MTF Filter",
+        "strategy": "Ultra Selective - highest quality only",
+        "filter": "Multi-Timeframe Aligned (1h + 4h bullish)"
+      },
+      "current_signal": {
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
+      },
+      "open_position": null,
+      "performance": {
+        "total_trades": 0,
+        "wins": 0,
+        "losses": 0,
+        "win_rate": 0,
+        "total_pnl": 0,
+        "avg_pnl": 0
+      },
+      "recent_trades": [],
+      "health_status": "UNKNOWN"
+    }
+  ],
+  "mirofish_predictions": {
+    "updated_at": "2026-04-27T03:20:01.300322",
+    "signals": {
+      "cerebras": {
+        "direction": "NEUTRAL",
+        "strength": 0.3231,
+        "confidence": 0.6314,
+        "bullish_pct": 0.2459,
+        "bearish_pct": 0.1851,
+        "neutral_pct": 0.569,
+        "agent_count": 12,
+        "round_count": 3,
+        "stance_shifts": 2,
+        "consensus_score": 0.3535,
+        "key_arguments": {
+          "bullish": [
+            "[StackingSats] $78.5K is prime accumulation territory\u2014another dip to stack sats. The $57K \"bottom\" narrative is noise; 1 BTC = 1 BTC, and halving supply shock remains underpriced vs. prior cycles. Negative funding +",
+            "[DiamondHands420] $78.5K is a total steal after the halving and with Saylor primed to buy again\u2014this dip is just weak hands getting shaken out. Negative funding and hash rate dip are screaming accumulation, and $80K re",
+            "[FadeTheCrowd] Price holding above $77,350 with negative funding rates and Saylor signaling accumulation confirms quiet strength amid public fear\u2014perfect setup for a spring-loaded move toward $80K+. The $57K bottom ",
+            "[CryptoKaleo] We\u2019re not just coiling\u2014we\u2019re loading the cannon. $78.5K is a magnet for accumulation, not rejection. Saylor\u2019s signaling again, funding rates are screaming capitulation, and the hash rate dip confirms "
+          ],
+          "bearish": [
+            "[DeltaNeutral] Price remains trapped below key resistance at $79,200\u2013$80,500 with dense order book offers and no structural break in supply. Negative funding rates suggest short-side leverage, but lack of follow-thr",
+            "[BearishBob] Another retest of $78.5K on weak volume\u2014same script as last week. Saylor noise and negative funding can't overcome persistent resistance at $80K, heavy supply overhead, and still-loose macro (DXY 104.",
+            "[AlphaQuant] Price retest at $78.5K lacks volume conviction and fails to clear descending order book resistance between $79.2K\u2013$80.5K. Negative funding rates and Saylor noise provide minor short-term support, but "
+          ]
+        },
+        "timestamp": "2026-04-27T00:42:40.788876+00:00",
+        "metadata": {
+          "role_weights": {
+            "whale": 2.0,
+            "institutional": 2.0,
+            "macro_analyst": 1.8,
+            "on_chain_analyst": 1.5,
+            "quant": 1.5,
+            "market_maker": 1.3,
+            "contrarian": 1.2,
+            "momentum_trader": 1.2,
+            "ct_influencer": 0.8,
+            "retail_bull": 0.6,
+            "retail_bear": 0.6,
+            "hodler": 0.5
+          },
+          "round_weight_decay": 0.6,
+          "run_duration_sec": 758.6,
+          "num_agents": 12,
+          "num_rounds": 3,
+          "total_posts": 36,
+          "market_data_summary": {
+            "price": 78501,
+            "change_24h": 1.31,
+            "fear_greed": 47
+          }
+        },
+        "age_minutes": 37.3,
+        "is_fresh": true
+      },
+      "groq": {
+        "direction": "NEUTRAL",
+        "strength": 0.4795,
+        "confidence": 0.5514,
+        "bullish_pct": 0.2372,
+        "bearish_pct": 0.0462,
+        "neutral_pct": 0.7167,
+        "agent_count": 12,
+        "round_count": 3,
+        "stance_shifts": 1,
+        "consensus_score": 0.575,
+        "key_arguments": {
+          "bullish": [
+            "[StackingSats] The Fear & Greed Index at 31 is a clear buying opportunity, and the large short position held by the Hyperliquid whale is a contrarian signal that reinforces my bullish bias. The current price of $77,",
+            "[DiamondHands420] The Fear & Greed Index is at 31, a clear sign of fear in the market, and that's a buying opportunity if you ask me. The large short position held by the Hyperliquid whale is a contrarian signal that r",
+            "[CryptoKaleo] The fear is still palpable, and I'm loving every minute of it. The Hyperliquid whale's large short position is a contrarian signal to me, and with the Fear & Greed Index at 31, I believe we're due for",
+            "[FadeTheCrowd] The Fear & Greed Index at 31 indicates a fearful market, which I believe is a buying opportunity. The large short position held by the Hyperliquid whale is a contrarian signal that reinforces my bulli"
+          ],
+          "bearish": [
+            "[BearishBob] I'm not convinced by the bullish sentiment expressed by some participants, as the Fear & Greed Index at 31 can also indicate a market on edge, waiting for a catalyst to drop. The large short position "
+          ]
+        },
+        "timestamp": "2026-04-25T07:03:40.170828+00:00",
+        "metadata": {
+          "role_weights": {
+            "whale": 2.0,
+            "institutional": 2.0,
+            "macro_analyst": 1.8,
+            "on_chain_analyst": 1.5,
+            "quant": 1.5,
+            "market_maker": 1.3,
+            "contrarian": 1.2,
+            "momentum_trader": 1.2,
+            "ct_influencer": 0.8,
+            "retail_bull": 0.6,
+            "retail_bear": 0.6,
+            "hodler": 0.5
+          },
+          "round_weight_decay": 0.6,
+          "run_duration_sec": 218.3,
+          "num_agents": 12,
+          "num_rounds": 3,
+          "total_posts": 36,
+          "market_data_summary": {
+            "price": 77545,
+            "change_24h": -0.35,
+            "fear_greed": 31
+          }
+        },
+        "age_minutes": 2536.4,
+        "is_fresh": false
+      },
+      "mirofish_full": {
+        "timestamp": "2026-04-17T08:15:04.161193+00:00",
+        "direction": "LONG",
+        "strength": 0.68,
+        "confidence": 0.75,
+        "reasoning": "Price showing positive momentum with healthy volume and continued uptrend above $75k. Recent 24h gain suggests buying pressure, though approaching ATH levels might increase volatility.",
+        "source": "mirofish-simple",
+        "model_id": "claude-3.5-sonnet",
+        "market_data": {
+          "price": 75096,
+          "change_24h": 0.7127492206423682,
+          "volume_24h": 40022993903.52663
+        },
+        "actionable": true,
+        "age_minutes": 13985.0,
+        "is_fresh": false
+      }
+    },
+    "status": "active"
+  }
+}
