@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T15:10:01.563029",
+  "generated_at": "2026-04-28T15:20:01.549822",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T15:10:01.563038"
+    "last_health_check": "2026-04-28T15:20:01.549831"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 15:09:51,579 - INFO - [HEARTBEAT] Price: $76,126.01",
+      "last_update": "2026-04-28 15:19:53,156 - INFO - [HEARTBEAT] Price: $76,125.02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 15:09:44,228 - INFO - [HEARTBEAT] Price: $76,155.41",
+      "last_update": "2026-04-28 15:19:44,329 - INFO - [HEARTBEAT] Price: $76,135.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 15:10:01",
+      "last_update": "2026-04-28 15:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -272,32 +272,35 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T15:10:01.804904",
+    "updated_at": "2026-04-28T15:20:01.799850",
     "signals": {
       "cerebras": {
-        "direction": "LONG",
-        "strength": 0.5052,
-        "confidence": 0.695,
-        "bullish_pct": 0.5481,
-        "bearish_pct": 0.0428,
-        "neutral_pct": 0.4091,
+        "direction": "NEUTRAL",
+        "strength": 0.0557,
+        "confidence": 0.6612,
+        "bullish_pct": 0.3238,
+        "bearish_pct": 0.2967,
+        "neutral_pct": 0.3795,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.3221,
+        "stance_shifts": 2,
+        "consensus_score": 0.0693,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $76.5K HOLDING STRONG\u2014this is pure accumulation FOMO fuel! With Trump flipping on crypto, DOJ saying \"code is not a crime,\" banks now free to dive in, and Block's proof-of-reserves going live, this di",
-            "[GlassnodeGuru] Price holding at $76.4K confirms strong on-chain support, with exchange net outflows accelerating and entity-adjusted SOPR rising\u2014indicating accumulation by informed holders. Regulatory clarity from t",
-            "[CryptoKaleo] We\u2019re not just holding \u2014 we\u2019re building a launchpad. $76.4K is a generational flip zone where regulation bends to innovation: DOJ\u2019s \"code is not a crime\" nukes prosecutorial overreach, banks are unsha",
-            "[DeepPockets] $76.4K continues to hold as a pivotal level, and with OTC desks confirming large-size buying interest, I\u2019m treating this as a strategic accumulation zone. Regulatory clarity\u2014from the DOJ\u2019s developer g",
-            "[FadeTheCrowd] Price hugging $76.4K with Fear & Greed stuck at 33 confirms this is a capitulation zone \u2014 perfect for patient accumulation. Regulatory overhangs are dissolving (DOJ, banks, politics), and Block\u2019s PoR "
+            "[DiamondHands420] $76.1K holding HARD again \u2014 that\u2019s Fort Knox level support! ETF outflows are just FUD, meanwhile BlackRock\u2019s BUIDL being used as collateral on OKX is MASSIVE adoption signaling. Miners pivoting to AI?",
+            "[StackingSats] Every dip to $76K is a gift \u2014 support holding confirms accumulation. ETF outflows are noise; the real story is BUIDL being used as collateral and miners like Core Scientific pivoting to AI, proving Bi",
+            "[TrendRider] Price holding firm at $76.1K again confirms strong structural support, and the BUIDL collateral integration adds meaningful institutional utility\u2014this isn't just speculation, it's infrastructure build",
+            "[FadeTheCrowd] $76K holding again amid fear and ETF outflows is classic capitulation behavior\u2014perfect setup for a spring surprise. BUIDL as collateral and miners pivoting to AI aren't flashy, but they're building re",
+            "[CryptoKaleo] This dip is a narrative trap\u2014$76K is now a fortress, tested and proven. The BUIDL collateral move isn\u2019t just bullish, it\u2019s *revolutionary*: TradFi rails are being fused with crypto markets right under"
           ],
           "bearish": [
-            "[BearishBob] Every single \"clarity\" headline is priced in and now fading\u2014$76.4K is a trap, not a floor. Whales are dumping into the OTC buzz while retail chases narratives like DOJ\u2019s \"code is not a crime\" theater."
+            "[AlphaQuant] Price rejection at $78.2k and failure to breach $80k confirms overhead supply; $263M ETF outflows and thinning liquidity below $76.1k increase tail risk. BUIDL integration is structurally positive but",
+            "[DeltaNeutral] Price rejected at $78.2K twice with increasing volume, and $263M in ETF outflows confirm lack of institutional demand. Order book depth eroding below $76.1K, and gamma exposure shifts suggest dealer h",
+            "[BearishBob] Another fake bounce. $76K \u201cholding\u201d is just a slow bleed\u2014every dip gets bought by clueless bulls while ETF outflows scream real money is exiting. BUIDL as collateral? That\u2019s not adoption, it\u2019s leverag",
+            "[GlassnodeGuru] Price rejection at $78.2K and failure to reclaim $80K aligns with negative exchange netflow trends and $263M ETF outflows, signaling distribution pressure. On-chain, NUPL remains elevated at 0.68 and "
           ]
         },
-        "timestamp": "2026-04-28T10:41:44.784893+00:00",
+        "timestamp": "2026-04-28T13:12:58.651040+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -314,17 +317,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 703.3,
+          "run_duration_sec": 2577.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 32,
           "market_data_summary": {
-            "price": 76514,
-            "change_24h": -1.65,
+            "price": 76213,
+            "change_24h": -1.95,
             "fear_greed": 33
           }
         },
-        "age_minutes": 148.3,
+        "age_minutes": 7.1,
         "is_fresh": true
       },
       "groq": {
@@ -371,7 +374,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 366.4,
+        "age_minutes": 376.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -388,7 +391,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 16135.0,
+        "age_minutes": 16145.0,
         "is_fresh": false
       }
     },
