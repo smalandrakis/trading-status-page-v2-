@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T09:00:05.185867",
+  "generated_at": "2026-04-28T09:10:01.559739",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T09:00:05.185882"
+    "last_health_check": "2026-04-28T09:10:01.559752"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 09:00:04,527 - INFO - [HEARTBEAT] Price: $76,693.64",
+      "last_update": "2026-04-28 09:09:34,669 - INFO - [HEARTBEAT] Price: $76,621.33",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,11 +27,19 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 50.2,
-        "time": "2026-04-28 08:55:53,207"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
-      "open_position": null,
+      "open_position": {
+        "direction": "SHORT",
+        "size": 3,
+        "entry_price": 76666.04,
+        "tp_price": 76282.7098,
+        "sl_price": 76781.03906,
+        "entry_time": "2026-04-28 09:01:57",
+        "adopted": false
+      },
       "performance": {
         "total_trades": 61,
         "wins": 14,
@@ -117,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 08:59:39,932 - INFO - [HEARTBEAT] Price: $76,715.68",
+      "last_update": "2026-04-28 09:09:40,103 - INFO - [HEARTBEAT] Price: $76,619.73",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +141,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.2,
-        "time": "2026-04-28 08:58:54,053"
+        "confidence": 51.7,
+        "time": "2026-04-28 09:08:58,545"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 09:00:05",
+      "last_update": "2026-04-28 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +248,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-28 08:59:57,443"
+        "time": "2026-04-28 09:10:01,557"
       },
       "open_position": null,
       "performance": {
@@ -256,7 +264,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T09:00:05.481331",
+    "updated_at": "2026-04-28T09:10:01.874851",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -307,27 +315,27 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 19.6,
+        "age_minutes": 29.5,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.8964,
-        "confidence": 0.5222,
+        "strength": 0.8957,
+        "confidence": 0.5194,
         "bullish_pct": 0.0,
-        "bearish_pct": 0.0518,
-        "neutral_pct": 0.9482,
+        "bearish_pct": 0.0522,
+        "neutral_pct": 0.9478,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.9223,
+        "consensus_score": 0.9218,
         "key_arguments": {
           "bullish": [],
           "bearish": [
-            "[BearishBob] I'm not convinced by the recent rally, and the rejection from $80,000 is a clear sign of weakness. The fact that we're still 38.4% away from the ATH is a major red flag, and I think we'll see a pullba"
+            "[BearishBob] The recent news cycle is just a cleverly crafted trap to lure in unsuspecting buyers, and I'm not buying into it. The Fear & Greed Index is still in fear territory, and we're 39.1% off the ATH, which "
           ]
         },
-        "timestamp": "2026-04-27T07:03:41.230911+00:00",
+        "timestamp": "2026-04-28T07:03:36.403932+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -344,17 +352,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 219.0,
+          "run_duration_sec": 214.5,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77728,
-            "change_24h": -0.35,
-            "fear_greed": 47
+            "price": 76723,
+            "change_24h": -1.29,
+            "fear_greed": 33
           }
         },
-        "age_minutes": 1436.4,
+        "age_minutes": 6.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -371,7 +379,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15765.0,
+        "age_minutes": 15775.0,
         "is_fresh": false
       }
     },
