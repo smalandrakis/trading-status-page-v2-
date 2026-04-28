@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T17:40:01.116639",
+  "generated_at": "2026-04-28T17:50:00.725258",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T17:40:01.116650"
+    "last_health_check": "2026-04-28T17:50:00.725276"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 17:39:34,445 - INFO - [HEARTBEAT] Price: $76,000.00",
+      "last_update": "2026-04-28 17:49:35,806 - INFO - [HEARTBEAT] Price: $75,936.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 17:39:41,456 - INFO - [HEARTBEAT] Price: $76,001.86",
+      "last_update": "2026-04-28 17:49:41,537 - INFO - [HEARTBEAT] Price: $75,936.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 17:40:01",
+      "last_update": "2026-04-28 17:50:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -272,7 +272,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T17:40:01.441270",
+    "updated_at": "2026-04-28T17:50:01.127898",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -323,7 +323,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 85.3,
+        "age_minutes": 95.2,
         "is_fresh": true
       },
       "groq": {
@@ -370,7 +370,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 516.4,
+        "age_minutes": 526.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -387,7 +387,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 16285.0,
+        "age_minutes": 16294.9,
         "is_fresh": false
       }
     },
