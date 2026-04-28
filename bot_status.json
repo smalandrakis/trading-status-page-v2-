@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T14:50:01.309439",
+  "generated_at": "2026-04-28T15:02:47.972267",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T14:50:01.309449"
+    "last_health_check": "2026-04-28T15:02:47.972277"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 14:50:01",
+      "last_update": "2026-04-28 15:02:48",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,35 +27,20 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "SHORT",
+        "confidence": 66.7,
+        "time": "2026-04-28 15:02:39,760"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 76192.8845,
-        "tp_price": 75811.9200775,
-        "sl_price": 76307.17382675,
-        "entry_time": "2026-04-28 13:50:34",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 66,
+        "total_trades": 67,
         "wins": 16,
-        "losses": 50,
-        "win_rate": 24.2,
-        "total_pnl": -98.96,
-        "avg_pnl": -1.5
+        "losses": 51,
+        "win_rate": 23.9,
+        "total_pnl": -163.16,
+        "avg_pnl": -2.44
       },
       "recent_trades": [
-        {
-          "time": "2026-04-28T03:34:02.168513",
-          "direction": "LONG",
-          "pnl": -35.4,
-          "pnl_pct": -0.15,
-          "hold_minutes": 112.0
-        },
         {
           "time": "2026-04-28T03:34:07.155664",
           "direction": "LONG",
@@ -118,6 +103,13 @@
           "pnl": 114.82,
           "pnl_pct": 0.5,
           "hold_minutes": 12.0
+        },
+        {
+          "time": "2026-04-28T14:50:04.809235",
+          "direction": "SHORT",
+          "pnl": -64.21,
+          "pnl_pct": -0.28,
+          "hold_minutes": 60.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -125,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 14:49:47,146 - INFO - [HEARTBEAT] Price: $76,369.89",
+      "last_update": "2026-04-28 15:02:48",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -141,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 58.5,
-        "time": "2026-04-28 14:48:08,761"
+        "confidence": 66.7,
+        "time": "2026-04-28 15:02:45,800"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 14:50:01",
+      "last_update": "2026-04-28 15:02:48",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -247,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0,
-        "time": "2026-04-28 14:49:35,084"
+        "confidence": 0.3,
+        "time": "2026-04-28 14:56:30,898"
       },
       "open_position": null,
       "performance": {
@@ -264,7 +256,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T14:50:01.587704",
+    "updated_at": "2026-04-28T15:02:48.220452",
     "signals": {
       "cerebras": {
         "direction": "LONG",
@@ -316,7 +308,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 128.3,
+        "age_minutes": 141.1,
         "is_fresh": true
       },
       "groq": {
@@ -363,7 +355,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 346.4,
+        "age_minutes": 359.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -380,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 16115.0,
+        "age_minutes": 16127.7,
         "is_fresh": false
       }
     },
