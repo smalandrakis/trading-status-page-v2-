@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T03:50:01.389882",
+  "generated_at": "2026-04-28T04:00:00.870258",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T03:50:01.389897"
+    "last_health_check": "2026-04-28T04:00:00.870276"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 03:49:59,694 - INFO - [HEARTBEAT] Price: $77,108.65",
+      "last_update": "2026-04-28 03:59:59,849 - INFO - [HEARTBEAT] Price: $77,084.24",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 51.1,
-        "time": "2026-04-28 03:46:14,624"
+        "signal": "LONG",
+        "confidence": 50.6,
+        "time": "2026-04-28 03:56:16,429"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 03:49:35,069 - INFO - [HEARTBEAT] Price: $77,106.55",
+      "last_update": "2026-04-28 03:59:35,229 - INFO - [HEARTBEAT] Price: $77,084.68",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 03:50:01",
+      "last_update": "2026-04-28 04:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -248,7 +248,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-28 03:49:49,607"
+        "time": "2026-04-28 03:59:53,753"
       },
       "open_position": null,
       "performance": {
@@ -264,7 +264,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T03:50:01.715868",
+    "updated_at": "2026-04-28T04:00:01.220762",
     "signals": {
       "cerebras": {
         "direction": "LONG",
@@ -316,7 +316,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 10.7,
+        "age_minutes": 20.7,
         "is_fresh": true
       },
       "groq": {
@@ -363,7 +363,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 1126.3,
+        "age_minutes": 1136.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -380,7 +380,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15455.0,
+        "age_minutes": 15465.0,
         "is_fresh": false
       }
     },
