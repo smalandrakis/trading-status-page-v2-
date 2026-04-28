@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T12:40:01.430761",
+  "generated_at": "2026-04-28T12:50:01.013571",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T12:40:01.430776"
+    "last_health_check": "2026-04-28T12:50:01.013585"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 12:39:35,104 - INFO - [HEARTBEAT] Price: $76,553.69",
+      "last_update": "2026-04-28 12:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -31,31 +31,16 @@
         "confidence": 0,
         "time": null
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 76495.44314500001,
-        "tp_price": 76112.96592927501,
-        "sl_price": 76610.18630971752,
-        "entry_time": "2026-04-28 12:16:00",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 63,
+        "total_trades": 64,
         "wins": 14,
-        "losses": 49,
-        "win_rate": 22.2,
-        "total_pnl": -293.74,
-        "avg_pnl": -4.66
+        "losses": 50,
+        "win_rate": 21.9,
+        "total_pnl": -328.65,
+        "avg_pnl": -5.14
       },
       "recent_trades": [
-        {
-          "time": "2026-04-27T23:12:03.967420",
-          "direction": "LONG",
-          "pnl": -36.73,
-          "pnl_pct": -0.16,
-          "hold_minutes": 65.0
-        },
         {
           "time": "2026-04-27T23:34:29.543094",
           "direction": "SHORT",
@@ -118,6 +103,13 @@
           "pnl": -36.32,
           "pnl_pct": -0.16,
           "hold_minutes": 114.0
+        },
+        {
+          "time": "2026-04-28T12:41:44.108308",
+          "direction": "SHORT",
+          "pnl": -34.92,
+          "pnl_pct": -0.15,
+          "hold_minutes": 26.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -125,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 12:39:42,651 - INFO - [HEARTBEAT] Price: $76,553.68",
+      "last_update": "2026-04-28 12:49:42,758 - INFO - [HEARTBEAT] Price: $76,620.03",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -141,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.8,
-        "time": "2026-04-28 12:38:23,659"
+        "confidence": 54.7,
+        "time": "2026-04-28 12:48:27,021"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 12:40:01",
+      "last_update": "2026-04-28 12:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -248,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-28 12:39:58,384"
+        "time": "2026-04-28 12:49:48,832"
       },
       "open_position": null,
       "performance": {
@@ -264,32 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T12:40:01.733509",
+    "updated_at": "2026-04-28T12:50:01.324582",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.1083,
-        "confidence": 0.67,
-        "bullish_pct": 0.4224,
-        "bearish_pct": 0.0469,
-        "neutral_pct": 0.5307,
+        "direction": "LONG",
+        "strength": 0.5052,
+        "confidence": 0.695,
+        "bullish_pct": 0.5481,
+        "bearish_pct": 0.0428,
+        "neutral_pct": 0.4091,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.296,
+        "consensus_score": 0.3221,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We\u2019re coiling at the launchpad \u2014 $76.5K is not just support, it\u2019s a spring-loaded floor. The DOJ\u2019s \u201ccode is not a crime\u201d slam dunk, Block\u2019s provable $680M BTC stack, and Trump flipping on prediction m",
-            "[FadeTheCrowd] Price grinding near $76.48K with Fear & Greed at 33 and no panic capitulation is ideal for gradual accumulation\u2014this is a stealthy base forming under regulatory tailwinds. The market is ignoring profo",
-            "[DeepPockets] Price holding above $76.48K with repeated confirmation of regulatory de-risking\u2014DOJ\u2019s \u201ccode is not a crime,\u201d OCC/FDIC moves, and now political tailwinds from both Trump and House Republicans\u2014validates",
-            "[StackingSats] Another dip, another divine setup. $76.5K is holding as strong structural support, and the DOJ\u2019s \"code is not a crime\" pivot, Block\u2019s provable $680M BTC reserve, and bipartisan regulatory clarity are ",
-            "[TrendRider] Price is holding firm above $76,481 with strong institutional and regulatory tailwinds\u2014DOJ\u2019s \u201ccode is not a crime,\u201d Block\u2019s proof-of-reserves, and pro-crypto messaging from both parties signal trend s"
+            "[DiamondHands420] $76.5K HOLDING STRONG\u2014this is pure accumulation FOMO fuel! With Trump flipping on crypto, DOJ saying \"code is not a crime,\" banks now free to dive in, and Block's proof-of-reserves going live, this di",
+            "[GlassnodeGuru] Price holding at $76.4K confirms strong on-chain support, with exchange net outflows accelerating and entity-adjusted SOPR rising\u2014indicating accumulation by informed holders. Regulatory clarity from t",
+            "[CryptoKaleo] We\u2019re not just holding \u2014 we\u2019re building a launchpad. $76.4K is a generational flip zone where regulation bends to innovation: DOJ\u2019s \"code is not a crime\" nukes prosecutorial overreach, banks are unsha",
+            "[DeepPockets] $76.4K continues to hold as a pivotal level, and with OTC desks confirming large-size buying interest, I\u2019m treating this as a strategic accumulation zone. Regulatory clarity\u2014from the DOJ\u2019s developer g",
+            "[FadeTheCrowd] Price hugging $76.4K with Fear & Greed stuck at 33 confirms this is a capitulation zone \u2014 perfect for patient accumulation. Regulatory overhangs are dissolving (DOJ, banks, politics), and Block\u2019s PoR "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $76.48K looks like support but it's just the trap\u2014every rally into $78K since January got sold, and now they're pumping narratives with DOJ soundbites and Block's PR"
+            "[BearishBob] Every single \"clarity\" headline is priced in and now fading\u2014$76.4K is a trap, not a floor. Whales are dumping into the OTC buzz while retail chases narratives like DOJ\u2019s \"code is not a crime\" theater."
           ]
         },
-        "timestamp": "2026-04-28T09:48:46.033979+00:00",
+        "timestamp": "2026-04-28T10:41:44.784893+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -306,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1123.9,
+          "run_duration_sec": 703.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 76746,
-            "change_24h": -1.32,
+            "price": 76514,
+            "change_24h": -1.65,
             "fear_greed": 33
           }
         },
-        "age_minutes": 51.3,
+        "age_minutes": 8.3,
         "is_fresh": true
       },
       "groq": {
@@ -363,7 +355,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 216.4,
+        "age_minutes": 226.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -380,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15985.0,
+        "age_minutes": 15995.0,
         "is_fresh": false
       }
     },
