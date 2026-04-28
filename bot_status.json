@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T18:20:01.548277",
+  "generated_at": "2026-04-28T18:30:01.456766",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T18:20:01.548285"
+    "last_health_check": "2026-04-28T18:30:01.456775"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 18:19:55,531 - INFO - [HEARTBEAT] Price: $75,982.55",
+      "last_update": "2026-04-28 18:29:57,315 - INFO - [HEARTBEAT] Price: $75,954.58",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 18:19:53,857 - INFO - [HEARTBEAT] Price: $75,982.54",
+      "last_update": "2026-04-28 18:29:54,008 - INFO - [HEARTBEAT] Price: $75,954.58",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 18:20:01",
+      "last_update": "2026-04-28 18:30:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -272,31 +272,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T18:20:01.806734",
+    "updated_at": "2026-04-28T18:30:01.739112",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.393,
-        "confidence": 0.6306,
-        "bullish_pct": 0.2778,
-        "bearish_pct": 0.0513,
-        "neutral_pct": 0.6708,
+        "strength": 0.3651,
+        "confidence": 0.6423,
+        "bullish_pct": 0.2847,
+        "bearish_pct": 0.0655,
+        "neutral_pct": 0.6498,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5063,
+        "consensus_score": 0.4747,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Dip to $76K is textbook accumulation\u2014ETF outflows on a minor pullback are noise, not a trend. $75K holds as strong support in this halving cycle; weak hands fear \"distribution,\" but miners, institutio",
-            "[FadeTheCrowd] Fear at 33 with price holding above $75K despite ETF outflows confirms this is a reaccumulation phase, not a reversal. The repeated rejection at $78K is noise\u2014smart money stacks via BUIDL collateral a",
-            "[DiamondHands420] $76K is a total steal after that minor pullback\u2014Draper\u2019s right, you *should* be scared if you don\u2019t own BTC right now. ETF outflows? Just noise\u2014Republicans pushing pro-crypto policy and institutions a",
-            "[CryptoKaleo] We're being tested \u2014 $76K holds for now, and that\u2019s bullish. The Draper narrative is red-hot, GOP crypto momentum is accelerating, and BUIDL collateral usage will offset ETF outflows faster than the m"
+            "[StackingSats] Another shakeout at $75K\u2014exactly where paper hands sweat and strong hands stack. Draper\u2019s fear call, political urgency around U.S. Bitcoin dominance, and BUIDL being used as collateral on OKX signal a",
+            "[DiamondHands420] Dip into $75K again? Perfect! This is just another shakeout\u2014$75K is a fortress now. Draper\u2019s FUD is pure FOMO fuel, Congress is finally waking up to the China threat, and BUIDL as collateral on OKX? T",
+            "[FadeTheCrowd] Price holding at $75K on low volume in fear territory (33 F&G) is textbook accumulation zone\u2014exactly where I want to be building exposure. The stablecoin transfer drop worries others, but institutions"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $78K with ETFs dumping $263M in outflows\u2014this isn't reaccumulation, it's distribution masked by Draper hype and political theater. $75K is a thin line; break it and we accelerate to"
+            "[BearishBob] $75K holding? Sure\u2014because weak hands keep getting shaken out while the smart money quietly distributes into the dead cat bounce. Stablecoin transfer volume down 19% with rising supply? That\u2019s not acc"
           ]
         },
-        "timestamp": "2026-04-28T14:14:46.241529+00:00",
+        "timestamp": "2026-04-28T16:27:32.249839+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -313,17 +312,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2518.9,
+          "run_duration_sec": 7050.7,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 31,
           "market_data_summary": {
-            "price": 76114,
-            "change_24h": -2.1,
+            "price": 75858,
+            "change_24h": -2.6,
             "fear_greed": 33
           }
         },
-        "age_minutes": 125.3,
+        "age_minutes": 2.5,
         "is_fresh": true
       },
       "groq": {
@@ -370,7 +369,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 556.4,
+        "age_minutes": 566.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -387,7 +386,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 16325.0,
+        "age_minutes": 16335.0,
         "is_fresh": false
       }
     },
