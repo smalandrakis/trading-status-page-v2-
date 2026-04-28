@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T09:50:01.260092",
+  "generated_at": "2026-04-28T10:00:01.189105",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T09:50:01.260102"
+    "last_health_check": "2026-04-28T10:00:01.189125"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 09:49:35,271 - INFO - [HEARTBEAT] Price: $76,787.99",
+      "last_update": "2026-04-28 09:59:35,359 - INFO - [HEARTBEAT] Price: $76,880.25",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 09:49:40,698 - INFO - [HEARTBEAT] Price: $76,775.75",
+      "last_update": "2026-04-28 09:59:40,816 - INFO - [HEARTBEAT] Price: $76,878.71",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -141,8 +141,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.5,
-        "time": "2026-04-28 09:49:25,123"
+        "confidence": 50.8,
+        "time": "2026-04-28 09:59:28,679"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 09:50:01",
+      "last_update": "2026-04-28 10:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -247,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0,
-        "time": "2026-04-28 09:49:48,142"
+        "confidence": 0.7,
+        "time": "2026-04-28 09:59:51,448"
       },
       "open_position": null,
       "performance": {
@@ -264,31 +264,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T09:50:01.569479",
+    "updated_at": "2026-04-28T10:00:01.473393",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4547,
-        "confidence": 0.6386,
-        "bullish_pct": 0.2492,
-        "bearish_pct": 0.0469,
-        "neutral_pct": 0.7039,
+        "strength": 0.4025,
+        "confidence": 0.6383,
+        "bullish_pct": 0.274,
+        "bearish_pct": 0.0494,
+        "neutral_pct": 0.6766,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.5558,
+        "stance_shifts": 0,
+        "consensus_score": 0.5148,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Another shallow retest of $76.5K with price already bouncing\u2014exactly the weak-hand washout we expect mid-halving cycle. MARA Foundation's ecosystem push, Draper\u2019s FUD callout, and structural accumulat",
-            "[DiamondHands420] $76.5K holding STRONG again\u2014textbook accumulation zone! Draper\u2019s \u201cscared not to own BTC\u201d quote is going viral, MARA dumping $100K into Bitcoin devs? That\u2019s not noise\u2014that\u2019s institution onchain action.",
-            "[CryptoKaleo] $76.5K isn\u2019t just holding \u2014 it\u2019s becoming a psychological launchpad. The MARA Foundation\u2019s $100K ecosystem play isn\u2019t charity, it\u2019s narrative warfare, and Draper\u2019s \"fear to not own BTC\" quote is sprea",
-            "[TrendRider] Price holding above $76,500 with bullish long/short delta and institutional signals (MARA Foundation, OTC flows) confirms accumulation\u2014this is a trend continuation setup. The retest of support on redu"
+            "[CryptoKaleo] BTC at $76.6K is coiling tighter than a spring \u2014 that $76.48K floor is *holding like Fort Knox* amid fear-driven sentiment and weak volume dumps. The DOJ\u2019s \u201ccode is not a crime\u201d pivot and Block\u2019s proo",
+            "[DiamondHands420] LOVE THIS DIP TO $76.6K\u2014total accumulation zone! DOJ stepping back from devs and Block proving their stack is pure fire adds massive legitimacy, and all these politicians screaming \"China is coming\" m",
+            "[StackingSats] $76.4K hold confirmed \u2014 this is pure accumulation amid fear. DOJ\u2019s \u201ccode is not a crime\u201d pivot and Block\u2019s provable reserves crush regulatory FUD, while political rhetoric on China dominance accelerat",
+            "[FadeTheCrowd] Price holding above $76,481 with Fear & Greed stuck at 33 confirms another capitulation pause\u2014perfect for contrarian accumulation. The DOJ shift and Block\u2019s provable reserves reduce regulatory overhan"
           ],
           "bearish": [
-            "[BearishBob] $76.5K holding again? Classic bear trap setup \u2014 every shallow retest gets more retail puffed up while smart money quietly offloads into the MARA/Draper hype circus. Fundamentals are ignored: we're sti"
+            "[BearishBob] Another fakeout at $78.2K rejected, volume fading, and you're telling me DOJ rhetoric and Block's PR stunt are bullish? Please. DXY still grinding above 104, real yields rising, and this \"support\" at "
           ]
         },
-        "timestamp": "2026-04-28T06:40:31.152805+00:00",
+        "timestamp": "2026-04-28T07:50:06.803093+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -305,17 +305,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 629.7,
+          "run_duration_sec": 1205.4,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 35,
           "market_data_summary": {
-            "price": 76876,
-            "change_24h": -1.16,
+            "price": 76602,
+            "change_24h": -1.39,
             "fear_greed": 33
           }
         },
-        "age_minutes": 69.5,
+        "age_minutes": 9.9,
         "is_fresh": true
       },
       "groq": {
@@ -362,7 +362,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 46.4,
+        "age_minutes": 56.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -379,7 +379,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15815.0,
+        "age_minutes": 15825.0,
         "is_fresh": false
       }
     },
