@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T11:40:01.367578",
+  "generated_at": "2026-04-28T11:50:01.171965",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T11:40:01.367590"
+    "last_health_check": "2026-04-28T11:50:01.171974"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 11:39:34,306 - INFO - [HEARTBEAT] Price: $76,691.43",
+      "last_update": "2026-04-28 11:49:34,442 - INFO - [HEARTBEAT] Price: $76,585.34",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 56.5,
-        "time": "2026-04-28 11:37:53,444"
+        "confidence": 53.1,
+        "time": "2026-04-28 11:47:56,471"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 11:39:41,894 - INFO - [HEARTBEAT] Price: $76,691.44",
+      "last_update": "2026-04-28 11:49:42,001 - INFO - [HEARTBEAT] Price: $76,585.34",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -132,9 +132,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 56.5,
-        "time": "2026-04-28 11:38:00,564"
+        "signal": "NEUTRAL",
+        "confidence": 53.1,
+        "time": "2026-04-28 11:48:04,759"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 11:40:01",
+      "last_update": "2026-04-28 11:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-28 11:39:48,712"
+        "time": "2026-04-28 11:49:34,840"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T11:40:01.655834",
+    "updated_at": "2026-04-28T11:50:01.387663",
     "signals": {
       "cerebras": {
-        "direction": "LONG",
-        "strength": 0.4409,
-        "confidence": 0.6592,
-        "bullish_pct": 0.4897,
-        "bearish_pct": 0.0488,
-        "neutral_pct": 0.4615,
+        "direction": "NEUTRAL",
+        "strength": 0.1083,
+        "confidence": 0.67,
+        "bullish_pct": 0.4224,
+        "bearish_pct": 0.0469,
+        "neutral_pct": 0.5307,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.2345,
+        "stance_shifts": 1,
+        "consensus_score": 0.296,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] The $76.5K floor is holding HARD\u2014this isn\u2019t weakness, it\u2019s accumulation amid regulatory FUD exhaustion. DOJ\u2019s \u201ccode is not a crime,\u201d Block\u2019s auditable PoR, OCC\u2019s reputation risk removal, and Trump fli",
-            "[FadeTheCrowd] Price holding firm at $76.5K\u2013$78.2K on dwindling volume amid persistent fear (33 F&G) is classic late-stage washout. Regulatory overhangs melting away\u2014DOJ\u2019s \u201ccode is not a crime,\u201d OCC\u2019s rule changes, ",
-            "[TrendRider] Price holding firm at $76.9K after retesting the $76.5K support confirms strength\u2014this is not weakness, but consolidation within an intact ascending channel. Regulatory catalysts (DOJ, OCC, Block PoR)",
-            "[DeepPockets] Price holding near $76.5K with regulatory friction melting\u2014DOJ, OCC, and Block\u2019s PoR are reducing structural risks I\u2019ve anchored on for months. Volume compression and fear reflect distribution lags, b",
-            "[StackingSats] $76.5K held\u2014yet again. This is not weakness, it's war chest building. DOJ\u2019s \"code is not a crime,\" OCC\u2019s reputation risk removal, and Block\u2019s transparent PoR are structural upgrades accelerating Bitco"
+            "[CryptoKaleo] We\u2019re coiling at the launchpad \u2014 $76.5K is not just support, it\u2019s a spring-loaded floor. The DOJ\u2019s \u201ccode is not a crime\u201d slam dunk, Block\u2019s provable $680M BTC stack, and Trump flipping on prediction m",
+            "[FadeTheCrowd] Price grinding near $76.48K with Fear & Greed at 33 and no panic capitulation is ideal for gradual accumulation\u2014this is a stealthy base forming under regulatory tailwinds. The market is ignoring profo",
+            "[DeepPockets] Price holding above $76.48K with repeated confirmation of regulatory de-risking\u2014DOJ\u2019s \u201ccode is not a crime,\u201d OCC/FDIC moves, and now political tailwinds from both Trump and House Republicans\u2014validates",
+            "[StackingSats] Another dip, another divine setup. $76.5K is holding as strong structural support, and the DOJ\u2019s \"code is not a crime\" pivot, Block\u2019s provable $680M BTC reserve, and bipartisan regulatory clarity are ",
+            "[TrendRider] Price is holding firm above $76,481 with strong institutional and regulatory tailwinds\u2014DOJ\u2019s \u201ccode is not a crime,\u201d Block\u2019s proof-of-reserves, and pro-crypto messaging from both parties signal trend s"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout in the making. $78K cap holds firm as resistance, volume is dying, and this regulatory \"clarity\" parade is just noise\u2014same playbook as the last top: hopium narratives, fading momentum,"
+            "[BearishBob] Another fakeout waiting to happen. $76.48K looks like support but it's just the trap\u2014every rally into $78K since January got sold, and now they're pumping narratives with DOJ soundbites and Block's PR"
           ]
         },
-        "timestamp": "2026-04-28T08:46:32.538502+00:00",
+        "timestamp": "2026-04-28T09:48:46.033979+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 990.6,
+          "run_duration_sec": 1123.9,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 76921,
-            "change_24h": -0.87,
+            "price": 76746,
+            "change_24h": -1.32,
             "fear_greed": 33
           }
         },
-        "age_minutes": 53.5,
+        "age_minutes": 1.3,
         "is_fresh": true
       },
       "groq": {
@@ -355,7 +355,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 156.4,
+        "age_minutes": 166.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -372,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15925.0,
+        "age_minutes": 15935.0,
         "is_fresh": false
       }
     },
