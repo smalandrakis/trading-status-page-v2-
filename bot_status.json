@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T05:40:01.738894",
+  "generated_at": "2026-04-28T05:50:01.556689",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T05:40:01.738909"
+    "last_health_check": "2026-04-28T05:50:01.556704"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 05:40:01,414 - INFO - [HEARTBEAT] Price: $76,809.63",
+      "last_update": "2026-04-28 05:50:01,557 - INFO - [HEARTBEAT] Price: $76,832.43",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 05:39:36,823 - INFO - [HEARTBEAT] Price: $76,800.01",
+      "last_update": "2026-04-28 05:49:36,976 - INFO - [HEARTBEAT] Price: $76,807.93",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -141,8 +141,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.4,
-        "time": "2026-04-28 05:39:28,612"
+        "confidence": 53.7,
+        "time": "2026-04-28 05:49:32,832"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 05:40:01",
+      "last_update": "2026-04-28 05:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -248,7 +248,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-28 05:39:34,669"
+        "time": "2026-04-28 05:49:38,881"
       },
       "open_position": null,
       "performance": {
@@ -264,32 +264,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T05:40:02.046589",
+    "updated_at": "2026-04-28T05:50:01.888766",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.0568,
-        "confidence": 0.6872,
-        "bullish_pct": 0.4497,
-        "bearish_pct": 0.0439,
-        "neutral_pct": 0.5064,
+        "direction": "LONG",
+        "strength": 0.5457,
+        "confidence": 0.682,
+        "bullish_pct": 0.5876,
+        "bearish_pct": 0.0419,
+        "neutral_pct": 0.3705,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.2597,
+        "consensus_score": 0.3814,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price is holding above key support at $76.6K with higher lows forming, and the $1.4B short cluster above $80K remains a magnet. Whale accumulation, low Fear & Greed (33), and rising volume on up moves",
-            "[DiamondHands420] We\u2019re coiling like a spring at $76.6K \u2014 that level is SOLID whale support, and every dip gets bought! $1.4B in shorts above $80K is a powder keg waiting to blow, and with Draper screaming \"get in now\"",
-            "[StackingSats] $77K is a steal \u2014 whales are loading up, shorts are crammed under $80K like sardines, and the halving supply shock is still rippling through the market. Fear at 33? Perfect. Every dip is a gift when 1",
-            "[CryptoKaleo] We\u2019re not just coiling \u2014 we\u2019re loading the cannon. $76.6K is a fortress, whales are stacking like there\u2019s no tomorrow, and $1.4B in short powder above $80K? That\u2019s not a risk, that\u2019s a bull market ign",
-            "[GlassnodeGuru] Price rejection at $79K aligns with exchange net outflows and rising whale-held supply (>10K BTC wallets up 5% MoM), confirming distribution at resistance. Support at $76.6K holds, underpinned by $1.4"
+            "[TrendRider] Price holding firm above $76.6K with volume support and a $1.4B short wall at $80K confirms a high-probability bullish breakout setup. Whale accumulation, low float, and institutional OTC buying are a",
+            "[AlphaQuant] Price rejection at $79.2K and hold above $76.6K with volume support confirms short-term bullish structure. $1.4B short cluster at $80K presents asymmetric upside risk; whale accumulation reduces float",
+            "[DiamondHands420] We\u2019re holding the war zone at $76.6K\u2014this is a total buy-the-dip moment with $1.4B in shorts stacked at $80K ready to explode! Whales are stacking, Draper\u2019s screaming \u201cmainstream,\u201d and the bears are t",
+            "[FadeTheCrowd] Price grinding near $76.6K with Fear & Greed at 33 confirms emotional capitulation, and that $1.4B short wall is a magnet \u2014 not resistance. Whale accumulation, low float, and extreme short clustering ",
+            "[CryptoKaleo] $76.7K is institutional accumulation turf\u2014Draper\u2019s FUD-to-FOMO playbook is live, whale OTC buys are real, and that $1.4B short wall at $80K? Pure rocket fuel. Weak hands got shaken out, but the narrat"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout forming\u2014$79K rejected again, and this \"coiling spring\" narrative is just wishful thinking by retails who don\u2019t see the trap. $1.4B in shorts isn\u2019t a catalyst, it\u2019s a target for algos t"
+            "[BearishBob] Another fakeout waiting to happen. $1.4B in shorts at $80K? That\u2019s not a squeeze \u2014 it\u2019s a magnet for stop hunts and liquidation engine grease. Whales \"accumulating\"? More like distributing to weak han"
           ]
         },
-        "timestamp": "2026-04-28T02:56:28.795453+00:00",
+        "timestamp": "2026-04-28T03:47:59.193816+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -306,17 +306,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1586.7,
+          "run_duration_sec": 1077.0,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 35,
           "market_data_summary": {
-            "price": 77034,
-            "change_24h": -2.58,
+            "price": 76754,
+            "change_24h": -3.17,
             "fear_greed": 33
           }
         },
-        "age_minutes": 43.6,
+        "age_minutes": 2.0,
         "is_fresh": true
       },
       "groq": {
@@ -363,7 +363,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 1236.3,
+        "age_minutes": 1246.3,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -380,7 +380,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15565.0,
+        "age_minutes": 15575.0,
         "is_fresh": false
       }
     },
