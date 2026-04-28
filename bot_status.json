@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T23:10:00.969116",
+  "generated_at": "2026-04-28T23:20:01.860821",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T23:10:00.969124"
+    "last_health_check": "2026-04-28T23:20:01.860836"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 23:09:59,378 - INFO -   SHORT",
+      "last_update": "2026-04-28 23:19:45,644 - INFO - [HEARTBEAT] Price: $76,355.83",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 23:09:41,654 - INFO - [HEARTBEAT] Price: $76,400.00",
+      "last_update": "2026-04-28 23:19:43,148 - INFO - [HEARTBEAT] Price: $76,355.83",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 23:10:01",
+      "last_update": "2026-04-28 23:20:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -272,26 +272,27 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T23:10:01.230046",
+    "updated_at": "2026-04-28T23:20:02.271199",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.7485,
-        "confidence": 0.5971,
-        "bullish_pct": 0.0881,
-        "bearish_pct": 0.0754,
-        "neutral_pct": 0.8365,
+        "strength": 0.4235,
+        "confidence": 0.6215,
+        "bullish_pct": 0.2479,
+        "bearish_pct": 0.0807,
+        "neutral_pct": 0.6714,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.7548,
+        "consensus_score": 0.5071,
         "key_arguments": {
-          "bullish": [],
-          "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $77.5k rejected twice now, volume drying up, and all this \"infrastructure\" hype ignores the macro rot \u2014 DXY rising, yields stuck, and Galaxy losing $216M tells you i"
-          ]
+          "bullish": [
+            "[CryptoKaleo] We're at a pivotal moment \u2014 $76K is holding, but the narrative war is raging. I see the Jade Core launch and RailsX activation as *massive* foundational wins for Bitcoin\u2019s utility; this isn't just hyp",
+            "[DiamondHands420] Dip is a gift! $76K holding strong and we\u2019ve got fresh Bitcoin adoption news from Block and self-custody upgrades with Jade Core + RailsX \u2013 this is exactly what fuels the next leg up. I\u2019m stacking sat"
+          ],
+          "bearish": []
         },
-        "timestamp": "2026-04-28T20:00:50.539629+00:00",
+        "timestamp": "2026-04-28T21:10:50.426830+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -308,17 +309,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 12648.4,
+          "run_duration_sec": 13247.9,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 17,
+          "total_posts": 13,
           "market_data_summary": {
-            "price": 75962,
-            "change_24h": -1.03,
+            "price": 76088,
+            "change_24h": -0.98,
             "fear_greed": 33
           }
         },
-        "age_minutes": 69.2,
+        "age_minutes": 9.2,
         "is_fresh": true
       },
       "groq": {
@@ -365,7 +366,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 846.4,
+        "age_minutes": 856.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -382,7 +383,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 16615.0,
+        "age_minutes": 16625.0,
         "is_fresh": false
       }
     },
