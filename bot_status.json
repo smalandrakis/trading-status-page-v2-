@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T10:40:01.191761",
+  "generated_at": "2026-04-28T10:50:00.781750",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T10:40:01.191774"
+    "last_health_check": "2026-04-28T10:50:00.781764"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 10:39:58,861 - INFO -   LONG",
+      "last_update": "2026-04-28 10:49:41,202 - INFO - [HEARTBEAT] Price: $76,820.52",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 10:40:01",
+      "last_update": "2026-04-28 10:50:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -141,8 +141,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 52.7,
-        "time": "2026-04-28 10:39:42,833"
+        "confidence": 52.1,
+        "time": "2026-04-28 10:49:46,677"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 10:40:01",
+      "last_update": "2026-04-28 10:50:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -247,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.3,
-        "time": "2026-04-28 10:34:33,423"
+        "confidence": 0,
+        "time": "2026-04-28 10:49:50,332"
       },
       "open_position": null,
       "performance": {
@@ -264,31 +264,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T10:40:01.521215",
+    "updated_at": "2026-04-28T10:50:01.088113",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.4025,
-        "confidence": 0.6383,
-        "bullish_pct": 0.274,
-        "bearish_pct": 0.0494,
-        "neutral_pct": 0.6766,
+        "direction": "LONG",
+        "strength": 0.4409,
+        "confidence": 0.6592,
+        "bullish_pct": 0.4897,
+        "bearish_pct": 0.0488,
+        "neutral_pct": 0.4615,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5148,
+        "consensus_score": 0.2345,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] BTC at $76.6K is coiling tighter than a spring \u2014 that $76.48K floor is *holding like Fort Knox* amid fear-driven sentiment and weak volume dumps. The DOJ\u2019s \u201ccode is not a crime\u201d pivot and Block\u2019s proo",
-            "[DiamondHands420] LOVE THIS DIP TO $76.6K\u2014total accumulation zone! DOJ stepping back from devs and Block proving their stack is pure fire adds massive legitimacy, and all these politicians screaming \"China is coming\" m",
-            "[StackingSats] $76.4K hold confirmed \u2014 this is pure accumulation amid fear. DOJ\u2019s \u201ccode is not a crime\u201d pivot and Block\u2019s provable reserves crush regulatory FUD, while political rhetoric on China dominance accelerat",
-            "[FadeTheCrowd] Price holding above $76,481 with Fear & Greed stuck at 33 confirms another capitulation pause\u2014perfect for contrarian accumulation. The DOJ shift and Block\u2019s provable reserves reduce regulatory overhan"
+            "[CryptoKaleo] The $76.5K floor is holding HARD\u2014this isn\u2019t weakness, it\u2019s accumulation amid regulatory FUD exhaustion. DOJ\u2019s \u201ccode is not a crime,\u201d Block\u2019s auditable PoR, OCC\u2019s reputation risk removal, and Trump fli",
+            "[FadeTheCrowd] Price holding firm at $76.5K\u2013$78.2K on dwindling volume amid persistent fear (33 F&G) is classic late-stage washout. Regulatory overhangs melting away\u2014DOJ\u2019s \u201ccode is not a crime,\u201d OCC\u2019s rule changes, ",
+            "[TrendRider] Price holding firm at $76.9K after retesting the $76.5K support confirms strength\u2014this is not weakness, but consolidation within an intact ascending channel. Regulatory catalysts (DOJ, OCC, Block PoR)",
+            "[DeepPockets] Price holding near $76.5K with regulatory friction melting\u2014DOJ, OCC, and Block\u2019s PoR are reducing structural risks I\u2019ve anchored on for months. Volume compression and fear reflect distribution lags, b",
+            "[StackingSats] $76.5K held\u2014yet again. This is not weakness, it's war chest building. DOJ\u2019s \"code is not a crime,\" OCC\u2019s reputation risk removal, and Block\u2019s transparent PoR are structural upgrades accelerating Bitco"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $78.2K rejected, volume fading, and you're telling me DOJ rhetoric and Block's PR stunt are bullish? Please. DXY still grinding above 104, real yields rising, and this \"support\" at "
+            "[BearishBob] Another fakeout in the making. $78K cap holds firm as resistance, volume is dying, and this regulatory \"clarity\" parade is just noise\u2014same playbook as the last top: hopium narratives, fading momentum,"
           ]
         },
-        "timestamp": "2026-04-28T07:50:06.803093+00:00",
+        "timestamp": "2026-04-28T08:46:32.538502+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -305,17 +306,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1205.4,
+          "run_duration_sec": 990.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 76602,
-            "change_24h": -1.39,
+            "price": 76921,
+            "change_24h": -0.87,
             "fear_greed": 33
           }
         },
-        "age_minutes": 49.9,
+        "age_minutes": 3.5,
         "is_fresh": true
       },
       "groq": {
@@ -362,7 +363,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 96.4,
+        "age_minutes": 106.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -379,7 +380,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 15865.0,
+        "age_minutes": 15874.9,
         "is_fresh": false
       }
     },
