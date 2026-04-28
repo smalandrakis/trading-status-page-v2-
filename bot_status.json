@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T20:40:01.295613",
+  "generated_at": "2026-04-28T20:50:00.833822",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T20:40:01.295629"
+    "last_health_check": "2026-04-28T20:50:00.833832"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 20:39:52,628 - INFO - [HEARTBEAT] Price: $76,205.10",
+      "last_update": "2026-04-28 20:49:53,873 - INFO - [HEARTBEAT] Price: $76,179.11",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 20:39:48,506 - INFO - [HEARTBEAT] Price: $76,205.10",
+      "last_update": "2026-04-28 20:49:49,787 - INFO - [HEARTBEAT] Price: $76,179.12",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 20:40:01",
+      "last_update": "2026-04-28 20:50:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,7 +256,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-28 20:39:41,130"
+        "time": "2026-04-28 20:49:32,314"
       },
       "open_position": null,
       "performance": {
@@ -272,7 +272,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T20:40:01.632501",
+    "updated_at": "2026-04-28T20:50:01.059391",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -322,7 +322,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 86.8,
+        "age_minutes": 96.8,
         "is_fresh": true
       },
       "groq": {
@@ -369,7 +369,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 696.4,
+        "age_minutes": 706.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -386,7 +386,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 16465.0,
+        "age_minutes": 16474.9,
         "is_fresh": false
       }
     },
