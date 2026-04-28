@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-28T22:00:01.246916",
+  "generated_at": "2026-04-28T22:10:01.634527",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-28T22:00:01.246924"
+    "last_health_check": "2026-04-28T22:10:01.634535"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 22:00:01",
+      "last_update": "2026-04-28 22:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 61.0,
-        "time": "2026-04-28 21:59:36,522"
+        "confidence": 59.6,
+        "time": "2026-04-28 22:09:39,343"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-28 22:00:01",
+      "last_update": "2026-04-28 22:09:32,633 - INFO - [HEARTBEAT] Price: $76,341.33",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -132,35 +132,20 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "SHORT",
+        "confidence": 58.8,
+        "time": "2026-04-28 22:09:04,374"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 76329.09,
-        "tp_price": 75947.44455,
-        "sl_price": 76443.583635,
-        "entry_time": "2026-04-28 21:55:38",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 32,
+        "total_trades": 33,
         "wins": 8,
-        "losses": 24,
-        "win_rate": 25.0,
-        "total_pnl": -1.76,
-        "avg_pnl": -0.05
+        "losses": 25,
+        "win_rate": 24.2,
+        "total_pnl": -37.04,
+        "avg_pnl": -1.12
       },
       "recent_trades": [
-        {
-          "time": "2026-04-27T23:35:47.395786",
-          "direction": "SHORT",
-          "pnl": -34.65,
-          "pnl_pct": -0.15,
-          "hold_minutes": 22.0
-        },
         {
           "time": "2026-04-28T02:38:31.240681",
           "direction": "SHORT",
@@ -223,6 +208,13 @@
           "pnl": -35.23,
           "pnl_pct": -0.15,
           "hold_minutes": 72.0
+        },
+        {
+          "time": "2026-04-28T22:05:01.362509",
+          "direction": "SHORT",
+          "pnl": -35.29,
+          "pnl_pct": -0.15,
+          "hold_minutes": 9.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -230,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-28 22:00:01",
+      "last_update": "2026-04-28 22:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -264,30 +256,26 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-28T22:00:01.564431",
+    "updated_at": "2026-04-28T22:10:01.909360",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3956,
-        "confidence": 0.6334,
-        "bullish_pct": 0.2733,
-        "bearish_pct": 0.0579,
-        "neutral_pct": 0.6688,
+        "strength": 0.7485,
+        "confidence": 0.5971,
+        "bullish_pct": 0.0881,
+        "bearish_pct": 0.0754,
+        "neutral_pct": 0.8365,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.5033,
+        "stance_shifts": 0,
+        "consensus_score": 0.7548,
         "key_arguments": {
-          "bullish": [
-            "[TrendRider] Price is still coiling between $75.7K and $77.5K with diminishing volatility and volume \u2014 classic compression ahead of a breakout. I see the repeated rejection at $77.5K as resistance, but the lack of",
-            "[DiamondHands420] Love this dip! $75.7K is holding hard and we\u2019ve got Draper sounding the alarm, RailsX going live, and Congress waking up to the China threat \u2014 this is *the* narrative buildup to a massive breakout. I\u2019",
-            "[StackingSats] Another dip, another accumulation opportunity \u2014 $75.7K is holding like a fortress. RailsX live, Draper speaking truth, and Congress waking up to Bitcoin\u2019s strategic importance? This is narrative and i"
-          ],
+          "bullish": [],
           "bearish": [
-            "[BearishBob] Price is rejected again at $77.5K \u2014 same level that killed the last three rallies. Volume is drying up, fear is creeping higher, and all this \"RailsX\" and \"Draper\" hype is just noise to paper over wea"
+            "[BearishBob] Another fakeout waiting to happen. $77.5k rejected twice now, volume drying up, and all this \"infrastructure\" hype ignores the macro rot \u2014 DXY rising, yields stuck, and Galaxy losing $216M tells you i"
           ]
         },
-        "timestamp": "2026-04-28T17:13:12.762319+00:00",
+        "timestamp": "2026-04-28T20:00:50.539629+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -304,17 +292,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 6190.3,
+          "run_duration_sec": 12648.4,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 29,
+          "total_posts": 17,
           "market_data_summary": {
-            "price": 75974,
-            "change_24h": -1.02,
+            "price": 75962,
+            "change_24h": -1.03,
             "fear_greed": 33
           }
         },
-        "age_minutes": 166.8,
+        "age_minutes": 9.2,
         "is_fresh": true
       },
       "groq": {
@@ -361,7 +349,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 776.4,
+        "age_minutes": 786.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -378,7 +366,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 16545.0,
+        "age_minutes": 16555.0,
         "is_fresh": false
       }
     },
