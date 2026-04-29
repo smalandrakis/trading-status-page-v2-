@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-30T00:50:00.834357",
+  "generated_at": "2026-04-30T01:00:01.269457",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-30T00:50:00.834370"
+    "last_health_check": "2026-04-30T01:00:01.269471"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 00:49:58,691 - INFO - [HEARTBEAT] Price: $75,917.03",
+      "last_update": "2026-04-30 00:59:58,857 - INFO - [HEARTBEAT] Price: $75,927.37",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 58.3,
-        "time": "2026-04-30 00:48:18,527"
+        "confidence": 50.7,
+        "time": "2026-04-30 00:58:21,534"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 00:50:00",
+      "last_update": "2026-04-30 01:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 58.5,
-        "time": "2026-04-30 00:49:44,943"
+        "confidence": 57.2,
+        "time": "2026-04-30 00:59:49,101"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-30 00:50:01",
+      "last_update": "2026-04-30 01:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.6,
-        "time": "2026-04-30 00:49:57,852"
+        "confidence": 0.2,
+        "time": "2026-04-30 00:59:51,213"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-30T00:50:01.127304",
+    "updated_at": "2026-04-30T01:00:01.601496",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2588,
-        "confidence": 0.6344,
-        "bullish_pct": 0.3468,
-        "bearish_pct": 0.0476,
-        "neutral_pct": 0.6056,
+        "strength": 0.5824,
+        "confidence": 0.6342,
+        "bullish_pct": 0.1844,
+        "bearish_pct": 0.0488,
+        "neutral_pct": 0.7668,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4084,
+        "consensus_score": 0.6502,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $75K is not just support \u2014 it's a spring coil loaded with real adoption fuel. Steak \u2018n Shake saving $6M, Bitcoin-backed homes, Eric Trump screaming $1M BTC \u2014 this isn\u2019t speculation, it\u2019s systemic tran",
-            "[StackingSats] Another test of resolve, not a breakdown. $75K holding strong on elevated volume, FOMC fear priced in, and real utility compounds daily\u2014Steak \u2018n Shake saving $6M, Bitcoin-backed homes, tokenized Treas",
-            "[FadeTheCrowd] Price hugging $75K on fear (26) with FOMC noise is textbook capitulation zone \u2014 institutions are quietly accumulating while the weak hands panic. I\u2019m adding small size here, expecting $70K to hold as ",
-            "[DiamondHands420] $75K IS HOLDING LIKE A BEAST AGAIN\u2014this is not luck, it's DESTINY! Steak \u2018n Shake saving $6M, Eric Trump calling for $1M BTC, and now Bitcoin-backed homes? This is REAL adoption, not hype. FOMC fear i",
-            "[TrendRider] Price is holding above key $75K support with strong volume, showing institutional backstop ahead of FOMC\u2014typical consolidation before momentum resumes. Rejection at $77.8K is minor; trend remains inta"
+            "[StackingSats] $75.8K is a gift. Dip = buy. FOMC noise fades, but hash rate and adoption don\u2019t\u2014Bitcoin is money, and $1M is inevitable. Steak \u2018n Shake saving $6M, real estate onchain, tokenized Treasuries? This is t",
+            "[CryptoKaleo] The $75K floor is holding because the *narrative tsunami* is already in motion \u2014 Eric Trump screaming $1M BTC, Steak \u2018n Shake saving $6M, real estate onchain, tokenized Treasuries going prime time. FO",
+            "[DiamondHands420] Yo, $75.8K is a spring-loaded floor! All this FOMO fuel \u2014 Steak \u2018n Shake saving $6M, Eric Trump calling $1M BTC, real estate and tokenized Treasuries going live \u2014 it\u2019s not noise, it\u2019s the foundation o"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout forming\u2014$77.8K rejected again and price grinding lower into FOMC. All this \"adoption\" noise (Steak \u2018n Shake, Trump, loans) is just retail distraction while ETF flows stall and volume f"
+            "[BearishBob] $75.8K is a magnet for suckers\u2014every fake \u201cadoption\u201d headline (Steak \u2018n Shake, Trump, tokenized T-bills) is just noise to mask distribution at the top. FOMC will expose this phony support, and weak ha"
           ]
         },
-        "timestamp": "2026-04-29T21:50:25.725702+00:00",
+        "timestamp": "2026-04-29T22:50:55.821970+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +296,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1223.8,
+          "run_duration_sec": 1254.0,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75822,
-            "change_24h": -0.63,
+            "price": 75858,
+            "change_24h": -0.61,
             "fear_greed": 26
           }
         },
-        "age_minutes": 59.6,
+        "age_minutes": 9.1,
         "is_fresh": true
       },
       "groq": {
@@ -357,7 +355,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 946.3,
+        "age_minutes": 956.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -374,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 18154.9,
+        "age_minutes": 18165.0,
         "is_fresh": false
       }
     },
