@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T14:40:01.469244",
+  "generated_at": "2026-04-29T14:50:01.460336",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-29T14:40:01.469255"
+    "last_health_check": "2026-04-29T14:50:01.460359"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 14:39:49,128 - INFO - [HEARTBEAT] Price: $77,096.67",
+      "last_update": "2026-04-29 14:49:49,214 - INFO - [HEARTBEAT] Price: $77,139.28",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 57.3,
-        "time": "2026-04-29 14:37:49,347"
+        "confidence": 66.0,
+        "time": "2026-04-29 14:47:51,199"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 14:39:50,052 - INFO - [HEARTBEAT] Price: $77,096.67",
+      "last_update": "2026-04-29 14:49:50,144 - INFO - [HEARTBEAT] Price: $77,139.28",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -132,9 +132,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 55.3,
-        "time": "2026-04-29 14:39:08,855"
+        "signal": "NEUTRAL",
+        "confidence": 53.5,
+        "time": "2026-04-29 14:49:11,694"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-29 14:40:01",
+      "last_update": "2026-04-29 14:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.3,
-        "time": "2026-04-29 14:39:47,697"
+        "confidence": 0.6,
+        "time": "2026-04-29 14:49:50,895"
       },
       "open_position": null,
       "performance": {
@@ -256,30 +256,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-29T14:40:01.755986",
+    "updated_at": "2026-04-29T14:50:01.807128",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5918,
-        "confidence": 0.6433,
-        "bullish_pct": 0.1808,
-        "bearish_pct": 0.0466,
-        "neutral_pct": 0.7726,
+        "strength": 0.4239,
+        "confidence": 0.6292,
+        "bullish_pct": 0.2639,
+        "bearish_pct": 0.0483,
+        "neutral_pct": 0.6878,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6589,
+        "consensus_score": 0.5317,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $77.8K isn\u2019t resistance\u2014it\u2019s a psychological launchpad heating up as the STRC narrative goes supernova. Weak hands obsess over Warsh and Canada\u2019s ATM ban, but smart money knows MSTR\u2019s $8.5B run-up sig",
-            "[DiamondHands420] Love the fear at $77.5K! Warsh hype and Canada\u2019s ATM ban are just noise\u2014MSTR\u2019s $8.5B run-up and Saylor going viral means smart money is loading up. This dip is a gift before the next leg up to $90K, a",
-            "[StackingSats] Every dip under $78K is a gift\u2014$77.5K means nothing in the 4-year cycle. Warsh fears? Canada ATM ban? Noise. Hash rate is at all-time highs, MSTR\u2019s buying $1B monthly, ETF inflows are relentless, and "
+            "[CryptoKaleo] We\u2019re vibrating at the edge of a breakout\u2014$77.8K isn\u2019t resistance, it\u2019s *magnetism*. Saylor\u2019s STRC blitz is igniting institutional FOMO, Korea\u2019s live remittance rails prove Bitcoin\u2019s now embedded in g",
+            "[FadeTheCrowd] Price grinding near $77.8K on low volume with Fear & Greed stuck at 26 \u2014 textbook capitulation phase. Macro noise from Warsh and real yields are scaring weak hands, but Korea\u2019s live remittance go-live",
+            "[StackingSats] $77.1K is a gift. The $77.8K rejections are just market noise\u2014accumulation is intensifying as Korea\u2019s live remittance rails and Saylor\u2019s STRC blitz signal real institutional adoption. Fear at 26 confi",
+            "[DiamondHands420] $77.1K holding strong with Korea's remittance going live and Saylor's STRC blowing up \u2014 this is institutional adoption *in motion*. Weak hands are scared by Warsh noise, but F&G at 26 means maximum ac"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout push to $77.8K on weak volume\u2014same script, different day. The Warsh Fed risk is being ignored, MSTR shill cycle is peaking, and that $8.5B run-up is just paper gains from leverage. ATH"
+            "[BearishBob] Another fakeout setup at $77.8K \u2014 volume is weak, Warsh at the Fed means tighter financial conditions, and all this Saylor/STRC hype is just recycled 2021-era FOMO. Korea\u2019s remittance pilot won\u2019t move"
           ]
         },
-        "timestamp": "2026-04-29T11:50:17.687322+00:00",
+        "timestamp": "2026-04-29T12:43:29.905355+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -296,17 +297,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1215.0,
+          "run_duration_sec": 807.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77495,
-            "change_24h": 1.55,
+            "price": 77120,
+            "change_24h": 1.19,
             "fear_greed": 26
           }
         },
-        "age_minutes": 49.7,
+        "age_minutes": 6.5,
         "is_fresh": true
       },
       "groq": {
@@ -355,7 +356,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 336.4,
+        "age_minutes": 346.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -372,7 +373,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 17545.0,
+        "age_minutes": 17555.0,
         "is_fresh": false
       }
     },
