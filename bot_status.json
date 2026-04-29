@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T23:50:01.274084",
+  "generated_at": "2026-04-30T00:00:01.512079",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-29T23:50:01.274100"
+    "last_health_check": "2026-04-30T00:00:01.512091"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 23:49:57,747 - INFO - [HEARTBEAT] Price: $76,000.74",
+      "last_update": "2026-04-29 23:59:57,915 - INFO - [HEARTBEAT] Price: $75,933.93",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 66.1,
-        "time": "2026-04-29 23:47:59,875"
+        "confidence": 63.0,
+        "time": "2026-04-29 23:58:02,911"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 23:49:31,580 - INFO - [HEARTBEAT] Price: $76,010.33",
+      "last_update": "2026-04-29 23:59:31,753 - INFO - [HEARTBEAT] Price: $75,949.92",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 61.8,
-        "time": "2026-04-29 23:49:19,985"
+        "confidence": 57.6,
+        "time": "2026-04-29 23:59:24,242"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-29 23:50:01",
+      "last_update": "2026-04-30 00:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.6,
-        "time": "2026-04-29 23:49:36,995"
+        "confidence": 0.2,
+        "time": "2026-04-29 23:59:59,506"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-29T23:50:01.567900",
+    "updated_at": "2026-04-30T00:00:01.836959",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1469,
-        "confidence": 0.6578,
-        "bullish_pct": 0.4043,
-        "bearish_pct": 0.0446,
-        "neutral_pct": 0.5511,
+        "strength": 0.2588,
+        "confidence": 0.6344,
+        "bullish_pct": 0.3468,
+        "bearish_pct": 0.0476,
+        "neutral_pct": 0.6056,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3267,
+        "consensus_score": 0.4084,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Every dip to $75.6K is a strategic entry\u2014FOMC fear is fleeting, but Bitcoin\u2019s structural adoption wave is real: Steak \u2018n Shake saving $6M, Bitcoin-backed loans going mainstream, and now Eric Trump end",
-            "[DiamondHands420] Man, this dip to $75.6K is a total steal\u2014Steak \u2018n Shake saving $6M on Bitcoin payments? That\u2019s real adoption, not hype! FOMC noise is just FUD, and with Eric Trump out here calling for $1M Bitcoin, I\u2019",
-            "[FadeTheCrowd] Fear at 26, price grinding at $75.6K, and FOMC noise creating short-term weakness\u2014perfect setup for a contrarian base. I see premature capitulation, not breakdown; $70K will hold, and the Steak \u2018n Sha",
-            "[CryptoKaleo] FOMC fear is manufactured noise\u2014Bitcoin\u2019s printing $6M in savings for Steak \u2018n Shake while billionaires call it a reserve asset. This dip to $75.6K is a springboard, not a breakdown, and $70K is grani",
-            "[DeepPockets] Dip into $75.6K aligns with our accumulation zone, especially as OTC desks confirm steady institutional inflows amid FOMC caution. Steak \u2018n Shake\u2019s $6M savings and Bitcoin-backed loan narratives reinf"
+            "[CryptoKaleo] $75K is not just support \u2014 it's a spring coil loaded with real adoption fuel. Steak \u2018n Shake saving $6M, Bitcoin-backed homes, Eric Trump screaming $1M BTC \u2014 this isn\u2019t speculation, it\u2019s systemic tran",
+            "[StackingSats] Another test of resolve, not a breakdown. $75K holding strong on elevated volume, FOMC fear priced in, and real utility compounds daily\u2014Steak \u2018n Shake saving $6M, Bitcoin-backed homes, tokenized Treas",
+            "[FadeTheCrowd] Price hugging $75K on fear (26) with FOMC noise is textbook capitulation zone \u2014 institutions are quietly accumulating while the weak hands panic. I\u2019m adding small size here, expecting $70K to hold as ",
+            "[DiamondHands420] $75K IS HOLDING LIKE A BEAST AGAIN\u2014this is not luck, it's DESTINY! Steak \u2018n Shake saving $6M, Eric Trump calling for $1M BTC, and now Bitcoin-backed homes? This is REAL adoption, not hype. FOMC fear i",
+            "[TrendRider] Price is holding above key $75K support with strong volume, showing institutional backstop ahead of FOMC\u2014typical consolidation before momentum resumes. Rejection at $77.8K is minor; trend remains inta"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $75.6K looks like distribution to me\u2014volume is drying up, FOMC risk looms, and these \"adoption\" headlines are just pump fodder. $70K will get taken out; it\u2019s not sup"
+            "[BearishBob] Another fakeout forming\u2014$77.8K rejected again and price grinding lower into FOMC. All this \"adoption\" noise (Steak \u2018n Shake, Trump, loans) is just retail distraction while ETF flows stall and volume f"
           ]
         },
-        "timestamp": "2026-04-29T20:46:33.288029+00:00",
+        "timestamp": "2026-04-29T21:50:25.725702+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 991.6,
+          "run_duration_sec": 1223.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 75629,
-            "change_24h": -0.94,
+            "price": 75822,
+            "change_24h": -0.63,
             "fear_greed": 26
           }
         },
-        "age_minutes": 63.5,
+        "age_minutes": 9.6,
         "is_fresh": true
       },
       "groq": {
@@ -357,7 +357,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 886.4,
+        "age_minutes": 896.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -374,7 +374,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 18095.0,
+        "age_minutes": 18105.0,
         "is_fresh": false
       }
     },
