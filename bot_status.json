@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T00:53:58.827709",
+  "generated_at": "2026-04-29T08:00:01.042217",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-29T00:53:58.827729"
+    "last_health_check": "2026-04-29T08:00:01.042228"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 00:53:58",
+      "last_update": "2026-04-29 07:59:54,028 - INFO - [HEARTBEAT] Price: $77,271.62",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -32,37 +32,23 @@
         "time": null
       },
       "open_position": {
-        "direction": "SHORT",
+        "direction": "LONG",
         "size": 3,
-        "entry_price": 76434.25375500001,
-        "tp_price": 76052.08248622502,
-        "sl_price": 76548.90513563252,
-        "entry_time": "2026-04-28 23:08:59",
+        "entry_price": 77294.4279,
+        "tp_price": 77680.90003949999,
+        "sl_price": 77178.48625815,
+        "entry_time": "2026-04-29 07:24:47",
         "adopted": false
       },
       "performance": {
-        "total_trades": 76,
-        "wins": 17,
+        "total_trades": 78,
+        "wins": 19,
         "losses": 59,
-        "win_rate": 22.4,
-        "total_pnl": -371.64,
-        "avg_pnl": -4.89
+        "win_rate": 24.4,
+        "total_pnl": -201.5,
+        "avg_pnl": -2.58
       },
       "recent_trades": [
-        {
-          "time": "2026-04-28T14:50:04.809235",
-          "direction": "SHORT",
-          "pnl": -64.21,
-          "pnl_pct": -0.28,
-          "hold_minutes": 60.0
-        },
-        {
-          "time": "2026-04-28T15:38:03.819455",
-          "direction": "SHORT",
-          "pnl": -39.87,
-          "pnl_pct": -0.17,
-          "hold_minutes": 30.0
-        },
         {
           "time": "2026-04-28T16:23:30.484751",
           "direction": "SHORT",
@@ -118,6 +104,20 @@
           "pnl": -37.25,
           "pnl_pct": -0.16,
           "hold_minutes": 72.0
+        },
+        {
+          "time": "2026-04-29T03:14:34.672756",
+          "direction": "SHORT",
+          "pnl": 22.38,
+          "pnl_pct": 0.1,
+          "hold_minutes": 246.0
+        },
+        {
+          "time": "2026-04-29T06:12:27.749226",
+          "direction": "LONG",
+          "pnl": 147.77,
+          "pnl_pct": 0.64,
+          "hold_minutes": 117.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 00:53:59",
+      "last_update": "2026-04-29 07:59:54,060 - INFO - [HEARTBEAT] Price: $77,271.62",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -140,35 +140,20 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "NEUTRAL",
+        "confidence": 54.4,
+        "time": "2026-04-29 07:58:32,411"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 76479.92,
-        "tp_price": 76097.5204,
-        "sl_price": 76594.63988,
-        "entry_time": "2026-04-28 23:01:12",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 33,
-        "wins": 8,
+        "total_trades": 34,
+        "wins": 9,
         "losses": 25,
-        "win_rate": 24.2,
-        "total_pnl": -37.04,
-        "avg_pnl": -1.12
+        "win_rate": 26.5,
+        "total_pnl": -0.97,
+        "avg_pnl": -0.03
       },
       "recent_trades": [
-        {
-          "time": "2026-04-28T02:38:31.240681",
-          "direction": "SHORT",
-          "pnl": -37.44,
-          "pnl_pct": -0.16,
-          "hold_minutes": 3.0
-        },
         {
           "time": "2026-04-28T04:39:00.974232",
           "direction": "SHORT",
@@ -231,6 +216,13 @@
           "pnl": -35.29,
           "pnl_pct": -0.15,
           "hold_minutes": 9.0
+        },
+        {
+          "time": "2026-04-29T03:14:33.845952",
+          "direction": "SHORT",
+          "pnl": 36.08,
+          "pnl_pct": 0.16,
+          "hold_minutes": 253.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -238,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-29 00:53:59",
+      "last_update": "2026-04-29 08:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -272,27 +264,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-29T00:53:59.309408",
+    "updated_at": "2026-04-29T08:00:01.345748",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4235,
-        "confidence": 0.6215,
-        "bullish_pct": 0.2479,
-        "bearish_pct": 0.0807,
-        "neutral_pct": 0.6714,
+        "strength": 0.1524,
+        "confidence": 0.6422,
+        "bullish_pct": 0.4045,
+        "bearish_pct": 0.0385,
+        "neutral_pct": 0.557,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.5071,
+        "consensus_score": 0.3354,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] We're at a pivotal moment \u2014 $76K is holding, but the narrative war is raging. I see the Jade Core launch and RailsX activation as *massive* foundational wins for Bitcoin\u2019s utility; this isn't just hyp",
-            "[DiamondHands420] Dip is a gift! $76K holding strong and we\u2019ve got fresh Bitcoin adoption news from Block and self-custody upgrades with Jade Core + RailsX \u2013 this is exactly what fuels the next leg up. I\u2019m stacking sat"
+            "[TrendRider] Price holding at $75.7K support with strong volume absorption confirms institutional accumulation, aligning with my trend continuation bias. Negative Coinbase Premium and oil-driven macro fears are sh",
+            "[CryptoKaleo] This dip is a narrative trap \u2014 $75.7K holding strong despite $100 oil and negative Coinbase Premium screams *institutional accumulation*. Czech CB backing 1% BTC reserves, Block's 800K merchant push, ",
+            "[DiamondHands420] Dip is STILL a gift \u2014 $75.7K held AGAIN, oil fears are overdone and temporary, but Czech CB backing 1% BTC reserves and Block onboarding 800K merchants? This is MODELING PHASE ignition. Institutions a",
+            "[DeepPockets] Price holding above $75.7K again confirms this as a valid accumulation zone, and the Czech CB narrative\u2014while symbolic\u2014anchors institutional curiosity. Negative Coinbase Premium and oil-driven macro f",
+            "[StackingSats] Dip is divine \u2014 $75.7K holding strong again proves this is prime accumulation territory. Czech CB endorsing 1% BTC reserves is a crack in the dam, and with Block pushing 800K merchants, the real econo"
           ],
-          "bearish": []
+          "bearish": [
+            "[BearishBob] Another fake bounce. $76.3K means nothing \u2014 we\u2019re still trapped under $77.5K resistance, and that negative Coinbase Premium proves weak hands are losing faith. Czech CB noise is just theater, and $100"
+          ]
         },
-        "timestamp": "2026-04-28T21:10:50.426830+00:00",
+        "timestamp": "2026-04-29T05:25:29.798700+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -309,17 +306,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 13247.9,
+          "run_duration_sec": 28527.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 13,
+          "total_posts": 32,
           "market_data_summary": {
-            "price": 76088,
-            "change_24h": -0.98,
+            "price": 76296,
+            "change_24h": -0.8,
             "fear_greed": 33
           }
         },
-        "age_minutes": 103.1,
+        "age_minutes": 34.5,
         "is_fresh": true
       },
       "groq": {
@@ -366,7 +363,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 950.4,
+        "age_minutes": 1376.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -383,7 +380,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 16718.9,
+        "age_minutes": 17145.0,
         "is_fresh": false
       }
     },
