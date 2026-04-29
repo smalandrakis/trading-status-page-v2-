@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T08:20:01.279512",
+  "generated_at": "2026-04-29T08:30:01.554505",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-29T08:20:01.279524"
+    "last_health_check": "2026-04-29T08:30:01.554517"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 08:19:56,666 - INFO - [HEARTBEAT] Price: $77,207.38",
+      "last_update": "2026-04-29 08:29:58,215 - INFO - [HEARTBEAT] Price: $77,083.38",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,35 +27,20 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 66.7,
+        "time": "2026-04-29 08:29:11,328"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 3,
-        "entry_price": 77294.4279,
-        "tp_price": 77680.90003949999,
-        "sl_price": 77178.48625815,
-        "entry_time": "2026-04-29 07:24:47",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 78,
+        "total_trades": 79,
         "wins": 19,
-        "losses": 59,
-        "win_rate": 24.4,
-        "total_pnl": -201.5,
-        "avg_pnl": -2.58
+        "losses": 60,
+        "win_rate": 24.1,
+        "total_pnl": -238.38,
+        "avg_pnl": -3.02
       },
       "recent_trades": [
-        {
-          "time": "2026-04-28T16:23:30.484751",
-          "direction": "SHORT",
-          "pnl": 114.46,
-          "pnl_pct": 0.5,
-          "hold_minutes": 44.0
-        },
         {
           "time": "2026-04-28T17:03:17.571466",
           "direction": "SHORT",
@@ -118,6 +103,13 @@
           "pnl": 147.77,
           "pnl_pct": 0.64,
           "hold_minutes": 117.0
+        },
+        {
+          "time": "2026-04-29T08:24:06.938862",
+          "direction": "LONG",
+          "pnl": -36.88,
+          "pnl_pct": -0.16,
+          "hold_minutes": 59.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -125,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 08:19:56,771 - INFO - [HEARTBEAT] Price: $77,207.38",
+      "last_update": "2026-04-29 08:29:58,285 - INFO - [HEARTBEAT] Price: $77,083.38",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-29 08:20:01",
+      "last_update": "2026-04-29 08:30:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -272,7 +264,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-29T08:20:01.643989",
+    "updated_at": "2026-04-29T08:30:01.850294",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -324,7 +316,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 54.5,
+        "age_minutes": 64.5,
         "is_fresh": true
       },
       "groq": {
@@ -371,7 +363,7 @@
             "fear_greed": 33
           }
         },
-        "age_minutes": 1396.4,
+        "age_minutes": 1406.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -388,7 +380,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 17165.0,
+        "age_minutes": 17175.0,
         "is_fresh": false
       }
     },
