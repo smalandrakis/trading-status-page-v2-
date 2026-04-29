@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T10:00:01.750453",
+  "generated_at": "2026-04-29T10:10:01.305782",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-29T10:00:01.750472"
+    "last_health_check": "2026-04-29T10:10:01.305800"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 09:59:18,869 - INFO - [HEARTBEAT] Price: $77,050.89",
+      "last_update": "2026-04-29 10:09:33,696 - INFO - [HEARTBEAT] Price: $77,023.27",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 09:59:48,853 - INFO - [HEARTBEAT] Price: $77,060.33",
+      "last_update": "2026-04-29 10:09:50,109 - INFO - [HEARTBEAT] Price: $76,994.42",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-29 10:00:01",
+      "last_update": "2026-04-29 10:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -254,9 +254,9 @@
         "filter": "Multi-Timeframe Aligned (1h + 4h bullish)"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "NEUTRAL",
+        "confidence": 0.6,
+        "time": "2026-04-29 10:09:36,512"
       },
       "open_position": null,
       "performance": {
@@ -272,31 +272,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-29T10:00:02.147072",
+    "updated_at": "2026-04-29T10:10:01.609861",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4157,
-        "confidence": 0.6492,
-        "bullish_pct": 0.2672,
-        "bearish_pct": 0.0498,
-        "neutral_pct": 0.683,
+        "strength": 0.2789,
+        "confidence": 0.662,
+        "bullish_pct": 0.3355,
+        "bearish_pct": 0.0501,
+        "neutral_pct": 0.6144,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5245,
+        "stance_shifts": 1,
+        "consensus_score": 0.4216,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Fear & Greed at 26 with price grinding sideways at $77K reeks of capitulation\u2014exactly where contrarians load up. Saylor\u2019s relentless Strategy buys and the viral STRC narrative are laying groundwork wh",
-            "[CryptoKaleo] The $77K floor is holding because Saylor\u2019s Strategy isn\u2019t just buying \u2014 they\u2019re weaponizing Bitcoin as a corporate treasury reserve asset, and STRC going viral is the blueprint. All eyes on AI and CLA",
-            "[StackingSats] $77K is a bargain bin price \u2014 Saylor\u2019s relentless accumulation via Strategy signals long-term conviction, and STRC going viral is just the beginning of the corporate BTC takeover narrative. The AI sec",
-            "[DiamondHands420] $77K is holding strong \u2014 Saylor\u2019s Strategy buying $8.5B of BTC-backed STRC and going viral means corporate America is all-in! AI dip and CLARITY delays are just FUD, same playbook as every cycle. Volu"
+            "[CryptoKaleo] We\u2019re not just holding \u2014 we\u2019re coiling. The $75.7K floor is institutional steel, forged by Saylor\u2019s war chest at Strategy, now supercharged with STRC \u201cgoing viral.\u201d Fear at 26? Perfect. While AI stumb",
+            "[FadeTheCrowd] Price holding firm above $75.7K with Fear & Greed stagnant at 26 confirms a grinding institutional accumulation phase \u2014 retail is scared, but Saylor\u2019s relentless buys through Strategy create a deep, i",
+            "[StackingSats] Another test of $75.7K holds \u2014 textbook halving-cycle accumulation. Saylor\u2019s war chest at Strategy continues to absorb supply, turning fear into foundation; $77K is nothing, we\u2019re priced for $126K+. S",
+            "[TrendRider] Price is respecting the $75.7K\u2013$77.3K range with tight consolidation, typical of a healthy pullback after a rally. Saylor\u2019s persistent accumulation via Strategy provides strong structural demand, acti",
+            "[DiamondHands420] Saylor's STRC going viral and buying $8.5B of BTC is institutional FOMO on steroids \u2014 this range is just a shakeout before the next leg up! $77K holding strong and AI fading means capital will rotate "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout trapped beneath $77.5K \u2014 volume is crumbling and AI sector rot is dragging down risk assets. Saylor\u2019s MSTR paper hands can't offset the fading CLARITY Act hopes and collapsing Robinhoo"
+            "[BearishBob] Another fakeout above $77K on life support from Saylor\u2019s MSTR ponzi\u2014this isn\u2019t strength, it\u2019s desperation. Volume\u2019s dying, AI rot is spreading, and the only thing propping BTC up is dilutive corporate"
           ]
         },
-        "timestamp": "2026-04-29T06:43:25.873617+00:00",
+        "timestamp": "2026-04-29T08:01:45.098533+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -313,17 +314,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 803.4,
+          "run_duration_sec": 1902.9,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 35,
           "market_data_summary": {
-            "price": 77089,
-            "change_24h": 0.28,
+            "price": 77061,
+            "change_24h": 0.58,
             "fear_greed": 26
           }
         },
-        "age_minutes": 76.6,
+        "age_minutes": 8.3,
         "is_fresh": true
       },
       "groq": {
@@ -372,7 +373,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 56.4,
+        "age_minutes": 66.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -389,7 +390,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 17265.0,
+        "age_minutes": 17275.0,
         "is_fresh": false
       }
     },
