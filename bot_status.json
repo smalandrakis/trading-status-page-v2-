@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T11:40:01.568883",
+  "generated_at": "2026-04-29T11:50:01.869962",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-29T11:40:01.568893"
+    "last_health_check": "2026-04-29T11:50:01.869977"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 11:39:46,587 - INFO - [HEARTBEAT] Price: $77,219.03",
+      "last_update": "2026-04-29 11:50:01,064 - INFO -   LONG",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 11:39:47,595 - INFO - [HEARTBEAT] Price: $77,218.84",
+      "last_update": "2026-04-29 11:49:47,750 - INFO - [HEARTBEAT] Price: $77,665.93",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -140,35 +140,20 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "SHORT",
+        "confidence": 61.2,
+        "time": "2026-04-29 11:48:40,683"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 77292.09,
-        "tp_price": 76905.62955,
-        "sl_price": 77408.028135,
-        "entry_time": "2026-04-29 08:00:32",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 34,
+        "total_trades": 35,
         "wins": 9,
-        "losses": 25,
-        "win_rate": 26.5,
-        "total_pnl": -0.97,
-        "avg_pnl": -0.03
+        "losses": 26,
+        "win_rate": 25.7,
+        "total_pnl": -38.16,
+        "avg_pnl": -1.09
       },
       "recent_trades": [
-        {
-          "time": "2026-04-28T04:39:00.974232",
-          "direction": "SHORT",
-          "pnl": 116.83,
-          "pnl_pct": 0.5,
-          "hold_minutes": 78.0
-        },
         {
           "time": "2026-04-28T09:21:12.894932",
           "direction": "SHORT",
@@ -231,6 +216,13 @@
           "pnl": 36.08,
           "pnl_pct": 0.16,
           "hold_minutes": 253.0
+        },
+        {
+          "time": "2026-04-29T11:48:39.133017",
+          "direction": "SHORT",
+          "pnl": -37.19,
+          "pnl_pct": -0.16,
+          "hold_minutes": 228.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -238,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-29 11:40:01",
+      "last_update": "2026-04-29 11:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -255,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 1.1,
-        "time": "2026-04-29 11:39:55,260"
+        "confidence": 0.6,
+        "time": "2026-04-29 11:49:59,408"
       },
       "open_position": null,
       "performance": {
@@ -272,32 +264,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-29T11:40:01.851340",
+    "updated_at": "2026-04-29T11:50:02.208939",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2113,
-        "confidence": 0.6531,
-        "bullish_pct": 0.3683,
-        "bearish_pct": 0.0521,
-        "neutral_pct": 0.5796,
+        "strength": 0.4111,
+        "confidence": 0.6475,
+        "bullish_pct": 0.2685,
+        "bearish_pct": 0.0519,
+        "neutral_pct": 0.6796,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3694,
+        "consensus_score": 0.5194,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $77K is accumulation territory\u2014weak hands fret over pennies while Saylor burns $8.5B into STRC, proving institutional demand is accelerating. Robinhood\u2019s woes? Noise. The real market is onchain, where",
-            "[DiamondHands420] Love the fear! 26 on Fear & Greed? Perfect. Saylor\u2019s buying like there\u2019s no tomorrow through Strategy \u2014 $8.5B run-up in STRC is NOT a coincidence. Robinhood missing earnings is just noise; institution",
-            "[GlassnodeGuru] Price consolidation at $77K persists amid fear-driven sentiment (26 F&G) and declining spot volume, classic hallmarks of accumulation-phase behavior. On-chain, persistent MSTR/Strategy buying absorbs ",
-            "[FadeTheCrowd] Fear at 26, price grinding near $77K, and Robinhood\u2019s miss amplifying retail despair \u2014 perfect setup for contrarian accumulation. Strategy\u2019s $8.5B STRC run-up isn\u2019t noise; it\u2019s a relentless structural",
-            "[CryptoKaleo] This $77K hold is not coincidence \u2014 it's conviction. Saylor\u2019s $8.5B STRC surge isn\u2019t just a bid, it\u2019s a *beacon* drawing institutions while Fear & Greed screams panic at 26. Robinhood\u2019s miss? Weak han"
+            "[CryptoKaleo] The $77.3K ceiling isn\u2019t resistance \u2014 it\u2019s a psychological launchpad being\u592f\u5b9e by Saylor\u2019s war chest. Every \"failed\" test fuels the STRC narrative, and with institutional momentum shifting, weak hands c",
+            "[FadeTheCrowd] Fear at 26, price grinding below $77.3K on weak volume \u2014 this is late-stage capitulation, not weakness. Saylor\u2019s relentless buying creates a structural floor, and the lack of breakout conviction is ex",
+            "[DiamondHands420] $77.1K is just pre-liftoff fuel \u2014 Saylor\u2019s buying STRC like there\u2019s no tomorrow and that\u2019s the only chart I need. Weak hands keep doubting, but this is classic accumulation under fear, and with Polyma",
+            "[StackingSats] Another false ceiling, another accumulation checkpoint\u2014$77.3K isn\u2019t resistance, it\u2019s a psychological speed bump being\u592f\u5b9e by Saylor\u2019s relentless $8.5B STRC engine. The Fear & Greed Index at 26 confirms "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $77.3K on a volume coffin\u2014this entire rally is propped up by Saylor\u2019s infinite printing press, not organic demand. Robinhood\u2019s crypto revenue halving confirms retail is dead, and th"
+            "[BearishBob] Another fakeout at $77.3K with dying volume\u2014classic bear trap setup. Saylor's buying is just giving smart money the perfect cover to offload into weak-handed longs chasing \"institutional conviction.\" "
           ]
         },
-        "timestamp": "2026-04-29T08:44:16.701638+00:00",
+        "timestamp": "2026-04-29T09:42:07.850167+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -314,17 +305,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 855.2,
+          "run_duration_sec": 726.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77102,
-            "change_24h": 0.21,
+            "price": 77112,
+            "change_24h": 0.48,
             "fear_greed": 26
           }
         },
-        "age_minutes": 55.8,
+        "age_minutes": 7.9,
         "is_fresh": true
       },
       "groq": {
@@ -373,7 +364,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 156.4,
+        "age_minutes": 166.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -390,7 +381,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 17365.0,
+        "age_minutes": 17375.0,
         "is_fresh": false
       }
     },
