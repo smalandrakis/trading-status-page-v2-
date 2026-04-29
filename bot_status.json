@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T18:40:02.061024",
+  "generated_at": "2026-04-29T18:50:01.682311",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-29T18:40:02.061035"
+    "last_health_check": "2026-04-29T18:50:01.682321"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 18:39:40,178 - INFO - [HEARTBEAT] Price: $75,823.14",
+      "last_update": "2026-04-29 18:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 57.0,
-        "time": "2026-04-29 18:35:53,511"
+        "confidence": 55.9,
+        "time": "2026-04-29 18:45:56,029"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 18:39:41,135 - INFO - [HEARTBEAT] Price: $75,823.14",
+      "last_update": "2026-04-29 18:49:41,285 - INFO - [HEARTBEAT] Price: $75,839.56",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -132,9 +132,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 51.2,
-        "time": "2026-04-29 18:38:04,104"
+        "signal": "SHORT",
+        "confidence": 56.5,
+        "time": "2026-04-29 18:48:08,431"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-29 18:40:02",
+      "last_update": "2026-04-29 18:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0.2,
-        "time": "2026-04-29 18:39:36,415"
+        "time": "2026-04-29 18:49:40,633"
       },
       "open_position": null,
       "performance": {
@@ -256,7 +256,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-29T18:40:02.405411",
+    "updated_at": "2026-04-29T18:50:02.067765",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -307,7 +307,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 49.5,
+        "age_minutes": 59.5,
         "is_fresh": true
       },
       "groq": {
@@ -356,7 +356,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 576.4,
+        "age_minutes": 586.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -373,7 +373,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 17785.0,
+        "age_minutes": 17795.0,
         "is_fresh": false
       }
     },
