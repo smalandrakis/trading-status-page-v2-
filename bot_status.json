@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-29T17:50:01.549624",
+  "generated_at": "2026-04-29T18:00:02.275858",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-29T17:50:01.549638"
+    "last_health_check": "2026-04-29T18:00:02.275866"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 17:49:39,240 - INFO - [HEARTBEAT] Price: $75,983.02",
+      "last_update": "2026-04-29 17:59:39,440 - INFO - [HEARTBEAT] Price: $75,900.32",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 58.8,
-        "time": "2026-04-29 17:45:39,039"
+        "signal": "LONG",
+        "confidence": 61.1,
+        "time": "2026-04-29 17:55:41,862"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-29 17:50:01",
+      "last_update": "2026-04-29 18:00:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.2,
-        "time": "2026-04-29 17:49:44,696"
+        "confidence": 52.1,
+        "time": "2026-04-29 17:59:48,608"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-29 17:50:01",
+      "last_update": "2026-04-29 18:00:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.2,
-        "time": "2026-04-29 17:49:45,381"
+        "confidence": 0.7,
+        "time": "2026-04-29 17:59:49,568"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-29T17:50:01.892378",
+    "updated_at": "2026-04-29T18:00:02.607950",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2196,
-        "confidence": 0.6585,
-        "bullish_pct": 0.3644,
-        "bearish_pct": 0.0517,
-        "neutral_pct": 0.5839,
+        "strength": 0.4156,
+        "confidence": 0.6211,
+        "bullish_pct": 0.2677,
+        "bearish_pct": 0.049,
+        "neutral_pct": 0.6833,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3759,
+        "consensus_score": 0.525,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Every dip to $75.7K is a gift\u2014price holding that level on strong volume and hash rate ATHs confirms miners and institutions like MSTR are aggressively stacking. Canadian ATM FUD is irrelevant noise; r",
-            "[TrendRider] Price is consolidating within the $75.7K\u2013$77.8K range on elevated volume, showing institutional absorption despite regulatory noise. The repeated hold of support at $75.7K and MSTR/STRC narrative stre",
-            "[FadeTheCrowd] Fear at 26 with price grinding near $77K tells me the market is being tested, not broken. The failed ZetaChain bug report and Canadian ATM noise are isolated, while STRC momentum and Asian institution",
-            "[DiamondHands420] Love the continued fear at 26 \u2014 perfect accumulation zone while the weak hands panic over Canada\u2019s ATM ban and a minor L1 exploit. We\u2019re holding strong above $75.7K with massive volume, MSTR\u2019s STRC na",
-            "[CryptoKaleo] BTC holding $75.7K with volume spiking? That\u2019s not weakness \u2014 that\u2019s institutions absorbing supply while the weak hands panic over Canadian ATM FUD. Saylor\u2019s STRC narrative is going viral, Asian OTC d"
+            "[StackingSats] $76K holding firm amid fear-driven apathy is textbook accumulation\u2014hash rate at all-time highs confirms miners aren't selling, and STRC adoption is accelerating institutional demand. Every dip into th",
+            "[DiamondHands420] Love seeing that $76K hold AGAIN\u2014Fear & Greed at 26? Perfect! This is textbook pre-FOMO accumulation. Saylor's STRC narrative is spreading like wildfire, institutions are quietly loading via OTC and M",
+            "[FadeTheCrowd] Price grinding near $76K on low volume with Fear at 26 is classic late-stage accumulation\u2014miners aren't capitulating, STRC momentum is building, and institutions are creeping in via MiCA-compliant rai",
+            "[CryptoKaleo] Fear at 26? This is where the weak hands get shaken out while whales stack $76K support like clockwork. STRC momentum is igniting institutional FOMO, Saylor\u2019s narrative is spreading virally, and with "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout forming at $77.8K\u2014same ceiling as before, same weak volume behind it. MSTR shilling STRC while Canada moves to ban ATMs and ZetaChain implodes from negligence; this isn't strength, it'"
+            "[BearishBob] Another fakeout at $77.8K rejected, just like last week. Volume\u2019s flat, institutions are papering over weakness with PR stunts like STRC and MoonPay\u2019s $100M shopping spree, while retail salivates over"
           ]
         },
-        "timestamp": "2026-04-29T15:18:21.006679+00:00",
+        "timestamp": "2026-04-29T15:50:35.043746+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +297,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 6498.9,
+          "run_duration_sec": 1232.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 34,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 76875,
-            "change_24h": 1.01,
+            "price": 76230,
+            "change_24h": 0.34,
             "fear_greed": 26
           }
         },
-        "age_minutes": 31.7,
+        "age_minutes": 9.5,
         "is_fresh": true
       },
       "groq": {
@@ -357,7 +356,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 526.4,
+        "age_minutes": 536.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -374,7 +373,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 17735.0,
+        "age_minutes": 17745.0,
         "is_fresh": false
       }
     },
