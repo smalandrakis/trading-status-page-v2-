@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-30T09:00:01.706801",
+  "generated_at": "2026-04-30T09:10:01.474656",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-30T09:00:01.706818"
+    "last_health_check": "2026-04-30T09:10:01.474675"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 08:59:36,281 - INFO - [HEARTBEAT] Price: $75,759.67",
+      "last_update": "2026-04-30 09:09:36,408 - INFO - [HEARTBEAT] Price: $75,831.27",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 08:59:40,400 - INFO - [HEARTBEAT] Price: $75,759.66",
+      "last_update": "2026-04-30 09:09:40,565 - INFO - [HEARTBEAT] Price: $75,831.26",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-30 09:00:01",
+      "last_update": "2026-04-30 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -255,8 +255,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.2,
-        "time": "2026-04-30 08:59:34,043"
+        "confidence": 0.6,
+        "time": "2026-04-30 09:09:53,045"
       },
       "open_position": null,
       "performance": {
@@ -272,7 +272,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-30T09:00:02.056852",
+    "updated_at": "2026-04-30T09:10:01.806447",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -323,29 +323,31 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 15.7,
+        "age_minutes": 25.7,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.8352,
-        "confidence": 0.5453,
-        "bullish_pct": 0.0574,
-        "bearish_pct": 0.0499,
-        "neutral_pct": 0.8926,
+        "strength": 0.6521,
+        "confidence": 0.5422,
+        "bullish_pct": 0.1482,
+        "bearish_pct": 0.0515,
+        "neutral_pct": 0.8003,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.839,
+        "stance_shifts": 2,
+        "consensus_score": 0.7004,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] I'm still feeling that FOMO, folks, with Strategy's consistent buying and Michael Saylor's enthusiasm driving the rally. The fact that Bitcoin's price is holding above $76,000 despite the AI sector se"
+            "[StackingSats] The Fear & Greed Index at 29 is a clear indicator of fear in the market, which I believe is a bull trap. The recent comments from Eric Trump and John Koudounis calling Bitcoin a global reserve asset a",
+            "[FadeTheCrowd] The Fear & Greed Index at 29 indicates a fearful market, which I believe is a buying opportunity. The recent comments from Eric Trump and John Koudounis calling Bitcoin a global reserve asset and floa",
+            "[DiamondHands420] The Fear & Greed Index at 29 is a steal, and with Eric Trump and John Koudounis calling Bitcoin a global reserve asset and floating a $1M price target, I'm getting a strong feeling that we're due for "
           ],
           "bearish": [
-            "[BearishBob] The recent rally is still a trap in my eyes, fueled by Strategy's buying and not organic demand. The AI sector sell-off and slowed CLARITY Act negotiations are major red flags, and I'm expecting a dro"
+            "[BearishBob] The recent comments from Eric Trump and John Koudounis are just a desperate attempt to pump the market, and I'm not buying into it. The Fear & Greed Index at 29 indicates fear in the market, which I b"
           ]
         },
-        "timestamp": "2026-04-29T07:03:40.317308+00:00",
+        "timestamp": "2026-04-30T07:03:53.436457+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -362,17 +364,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 218.7,
+          "run_duration_sec": 231.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 76958,
-            "change_24h": 0.32,
-            "fear_greed": 26
+            "price": 75714,
+            "change_24h": -1.62,
+            "fear_greed": 29
           }
         },
-        "age_minutes": 1436.4,
+        "age_minutes": 6.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -389,7 +391,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 18645.0,
+        "age_minutes": 18655.0,
         "is_fresh": false
       }
     },
