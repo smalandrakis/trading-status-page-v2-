@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-30T18:30:01.610201",
+  "generated_at": "2026-04-30T18:40:00.732596",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-30T18:30:01.610216"
+    "last_health_check": "2026-04-30T18:40:00.732615"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 18:29:39,928 - INFO - [HEARTBEAT] Price: $76,327.11",
+      "last_update": "2026-04-30 18:39:40,018 - INFO - [HEARTBEAT] Price: $76,368.68",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 18:29:40,766 - INFO - [HEARTBEAT] Price: $76,327.12",
+      "last_update": "2026-04-30 18:39:40,847 - INFO - [HEARTBEAT] Price: $76,368.67",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -141,8 +141,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 56.3,
-        "time": "2026-04-30 18:28:09,074"
+        "confidence": 56.0,
+        "time": "2026-04-30 18:38:12,372"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-30 18:30:01",
+      "last_update": "2026-04-30 18:40:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -248,7 +248,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0.1,
-        "time": "2026-04-30 18:29:57,141"
+        "time": "2026-04-30 18:39:47,937"
       },
       "open_position": null,
       "performance": {
@@ -264,32 +264,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-30T18:30:01.980795",
+    "updated_at": "2026-04-30T18:40:01.070484",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.2789,
-        "confidence": 0.6524,
-        "bullish_pct": 0.333,
-        "bearish_pct": 0.0551,
-        "neutral_pct": 0.6119,
+        "strength": 0.2168,
+        "confidence": 0.6352,
+        "bullish_pct": 0.3589,
+        "bearish_pct": 0.0655,
+        "neutral_pct": 0.5756,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.4178,
+        "stance_shifts": 2,
+        "consensus_score": 0.3634,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] Love the fear at $76K \u2014 perfect accumulation zone! Trump fam and Morgan Stanley screaming \"$1M BTC\" while hacks create panic? That\u2019s FUD masking institutional FOMO. $75K is strong support, and with ET",
-            "[FadeTheCrowd] Fear at 29 with price hugging $76K is peak accumulation behavior \u2014 retail spooked by $630M in hacks and Iranian seizure headlines while institutions quietly lay groundwork for reserve asset adoption. ",
-            "[CryptoKaleo] The fear at 29 is a gift \u2014 while normies panic over $630M in DeFi hacks (irrelevant to Bitcoin\u2019s fundamentals), giants like Morgan Stanley, Eric Trump, and Koudounis are loudly positioning BTC as *glo",
-            "[TrendRider] Price holding above $75K with declining volume and fear sentiment confirms late-accumulation behavior \u2014 the trend remains up from $72K and institutional narratives (Morgan Stanley, Eric Trump, Blockst",
-            "[StackingSats] $76K is institutional accumulation territory \u2014 fear at 29, exchange outflows at 2.1K BTC/day, and hash rate ATHs confirm strong hands are stacking. Morgan Stanley, Eric Trump, and Koudounis screaming "
+            "[DeepPockets] Price holding above $75.1K with continued institutional accumulation\u2014Strategy\u2019s 56K BTC buy anchoring my cost basis\u2014and regulatory clarity emerging in the UK supports my neutral-to-bullish bias. I\u2019m n",
+            "[CryptoKaleo] We're still coiling at $76K \u2014 fear at 29, volume holding strong, and the war chest builds: Strategy\u2019s 56K BTC move isn't noise, it's a signal. Trump, Morgan Stanley, Blockstream, UK tokenized funds \u2014 ",
+            "[DiamondHands420] Another fear dip at $75K? Sign me up! Morgan Stanley and Eric Trump talking $1M Bitcoin is pure FOMO rocket fuel, and halving math doesn\u2019t lie \u2014 $167K by 2027 is a steal. I\u2019m HODLing hard and adding o"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout setting up at $76K \u2014 weak volume, -2% weekly, and all this \"institutional adoption\" hype ignores the rot in the ecosystem: $630M hacked in DeFi, Iranian seizures exposing regulatory ri"
+            "[BearishBob] $76K? More like $76K-trap. All this \"institutional accumulation\" noise from Strategy and Morgan Stanley is just bear market theater \u2014 same script as 2021: pump, distribute, dump. Volume\u2019s a mirage, NU"
           ]
         },
-        "timestamp": "2026-04-30T15:12:50.645743+00:00",
+        "timestamp": "2026-04-30T16:37:28.576283+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -306,17 +304,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 6169.1,
+          "run_duration_sec": 7646.7,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 34,
+          "total_posts": 31,
           "market_data_summary": {
-            "price": 76156,
-            "change_24h": -0.97,
+            "price": 76139,
+            "change_24h": -0.74,
             "fear_greed": 29
           }
         },
-        "age_minutes": 77.2,
+        "age_minutes": 2.5,
         "is_fresh": true
       },
       "groq": {
@@ -367,7 +365,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 566.1,
+        "age_minutes": 576.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -384,7 +382,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 19215.0,
+        "age_minutes": 19224.9,
         "is_fresh": false
       }
     },
