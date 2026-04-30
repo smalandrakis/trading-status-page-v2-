@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T01:10:00.783281",
+  "generated_at": "2026-05-01T01:20:01.299464",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T01:10:00.783296"
+    "last_health_check": "2026-05-01T01:20:01.299479"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 01:09:50,552 - INFO - [HEARTBEAT] Price: $76,285.53",
+      "last_update": "2026-05-01 01:19:50,727 - INFO - [HEARTBEAT] Price: $76,315.60",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 56.4,
-        "time": "2026-05-01 01:08:53,266"
+        "confidence": 68.3,
+        "time": "2026-05-01 01:18:56,345"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 01:09:54,324 - INFO - [HEARTBEAT] Price: $76,238.29",
+      "last_update": "2026-05-01 01:19:54,504 - INFO - [HEARTBEAT] Price: $76,315.60",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 01:10:00",
+      "last_update": "2026-05-01 01:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -247,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.2,
-        "time": "2026-05-01 01:09:47,846"
+        "confidence": 0.1,
+        "time": "2026-05-01 01:19:36,846"
       },
       "open_position": null,
       "performance": {
@@ -264,29 +264,26 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T01:10:01.104116",
+    "updated_at": "2026-05-01T01:20:01.646700",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3925,
-        "confidence": 0.5875,
-        "bullish_pct": 0.1149,
-        "bearish_pct": 0.2463,
-        "neutral_pct": 0.6388,
+        "strength": 0.1534,
+        "confidence": 0.6527,
+        "bullish_pct": 0.3952,
+        "bearish_pct": 0.0563,
+        "neutral_pct": 0.5485,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.4582,
+        "stance_shifts": 0,
+        "consensus_score": 0.3228,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $76K is the battleground \u2014 every dip gets bought, and the $1M narrative from Trump & Koudounis is pure FOMO jet fuel. Institutional whispers from Morgan Stanley and Jack Dorsey\u2019s new film only amplify"
+            "[CryptoKaleo] $76.5K is the gatekeeper \u2014 flip it with volume and we torch to $80K by May. All these $1M narratives from Eric Trump to Morgan Stanley aren't noise, they're fuel for the next retail blow-off top. I'm "
           ],
-          "bearish": [
-            "[BearishBob] Another fakeout waiting to happen. $76.5K is the January resistance all over again, and this time volume is drying up\u2014no way this \"institutional adoption\" hype fools me twice. Every pump into month-en",
-            "[AlphaQuant] Price remains trapped in a narrowing range ($75.1K\u2013$76.5K) on declining volume, mirroring the January bear flag setup. The lack of volume expansion into bullish news (e.g., Morgan Stanley, Trump $1M c"
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-04-30T21:57:55.923044+00:00",
+        "timestamp": "2026-04-30T23:15:12.981265+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -303,17 +300,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 12473.7,
+          "run_duration_sec": 13511.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 16,
+          "total_posts": 11,
           "market_data_summary": {
-            "price": 76295,
-            "change_24h": 1.56,
+            "price": 76457,
+            "change_24h": 1.27,
             "fear_greed": 29
           }
         },
-        "age_minutes": 72.1,
+        "age_minutes": 4.8,
         "is_fresh": true
       },
       "groq": {
@@ -364,7 +361,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 966.1,
+        "age_minutes": 976.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -381,7 +378,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 19614.9,
+        "age_minutes": 19625.0,
         "is_fresh": false
       }
     },
