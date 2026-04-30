@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-30T19:20:01.667287",
+  "generated_at": "2026-04-30T19:30:01.087233",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-30T19:20:01.667300"
+    "last_health_check": "2026-04-30T19:30:01.087248"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 19:19:37,856 - INFO - [HEARTBEAT] Price: $76,145.66",
+      "last_update": "2026-04-30 19:29:40,542 - INFO - [HEARTBEAT] Price: $76,149.40",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 53.6,
-        "time": "2026-04-30 19:17:07,277"
+        "confidence": 54.4,
+        "time": "2026-04-30 19:27:09,017"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 19:19:41,331 - INFO - [HEARTBEAT] Price: $76,145.65",
+      "last_update": "2026-04-30 19:29:41,493 - INFO - [HEARTBEAT] Price: $76,149.39",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 56.8,
-        "time": "2026-04-30 19:18:26,852"
+        "confidence": 57.1,
+        "time": "2026-04-30 19:28:30,802"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-30 19:20:01",
+      "last_update": "2026-04-30 19:30:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0.1,
-        "time": "2026-04-30 19:19:34,666"
+        "time": "2026-04-30 19:29:44,344"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,33 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-30T19:20:02.010884",
+    "updated_at": "2026-04-30T19:30:01.441679",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3365,
-        "confidence": 0.6536,
-        "bullish_pct": 0.2434,
-        "bearish_pct": 0.1767,
-        "neutral_pct": 0.5799,
+        "strength": 0.3037,
+        "confidence": 0.6556,
+        "bullish_pct": 0.2399,
+        "bearish_pct": 0.2166,
+        "neutral_pct": 0.5436,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.3698,
+        "stance_shifts": 2,
+        "consensus_score": 0.3154,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $76.4K is a steal \u2014 Morgan Stanley and Eric Trump are straight-up telling us $1M BTC is coming, and we\u2019re still early AF! All this FUD about overhead supply ignores the tsunami of new demand from inst",
-            "[StackingSats] $76.4K is another step in the post-halving accumulation phase\u2014$75.5K remains unbreakable support as whales absorb sell pressure from ETF outflows. Overhead supply at $78K is just paper resistance; rea",
-            "[FadeTheCrowd] Price holding above $75.5K on continued fear (29) and persistent ETF outflows is textbook capitulation setup. I\u2019m adding longs here\u2014weak hands are shaken out, overhead supply will take time to absorb,",
-            "[CryptoKaleo] This is *exactly* where the magic happens \u2014 $76.4K holding with fear at 29, ETF outflows slowing but still negative, and every \"smart money\" talking head saying resistance is impenetrable. But I see i"
+            "[FadeTheCrowd] Fear at 29 with price grinding near $75K\u2013$76K is textbook capitulation zone\u2014exactly where the next leg up begins. Overhead supply at $78K\u2013$82K keeps the weak hands scared, but ETF outflows and SOPR >1",
+            "[CryptoKaleo] The narrative tsunami is accelerating \u2014 Trump, Dorsey, Morgan Stanley, Blockstream all chanting \"reserve asset\" and $1M BTC like it\u2019s prophecy. Fear at 29? Perfect. Weak hands panic, strong hands stac",
+            "[DiamondHands420] $76K is a total steal\u2014Eric Trump and Morgan Stanley execs are right, we\u2019re STILL so early! Every dip into fear is a gift with the halving echo and institutional adoption accelerating. $80K? Just a spe",
+            "[StackingSats] $76.3K in fear conditions with institutional voices like Morgan Stanley and Eric Trump amplifying the \"still early\" narrative is a golden confluence. Overhead supply at $80K\u2013$82K? Just paper walls\u2014hal"
           ],
           "bearish": [
-            "[DeltaNeutral] Price probing $76.4K on low conviction and weak volume into persistent overhead supply at $80K confirms distribution regime. ETF outflows continue, negative gamma exposure near $78K enhances downside ",
-            "[BearishBob] Another fakeout toward $76.5K on weak volume\u2014classic bear trap setup. The $78K\u2013$80K supply wall is alive and well, 3.2M BTC waiting to dump, ETF outflows persist, and Morgan Stanley hype won\u2019t stop th"
+            "[AlphaQuant] Price at $76.3K remains trapped below the $78K\u2013$82K supply cluster with declining volume into resistance\u2014classic distribution behavior. ETF outflows have resumed, SOPR >1.02 confirms profit-taking, an",
+            "[DeltaNeutral] Price at $76.3K shows narrowing range and declining breakout conviction, with order book depth revealing strong resting sell orders between $78K\u2013$82K. Renewed ETF outflows and SOPR >1.02 confirm distr",
+            "[BearishBob] Every rally to $76K is just another exit ramp\u2014see the SOPR >1.02 and ETF outflows? Smart money\u2019s dumping into the Morgan Stanley and Trump hype. $80K remains a hard ceiling with weak volume and dense "
           ]
         },
-        "timestamp": "2026-04-30T17:19:34.649139+00:00",
+        "timestamp": "2026-04-30T17:24:31.816307+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +299,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 6572.1,
+          "run_duration_sec": 3269.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 28,
+          "total_posts": 34,
           "market_data_summary": {
-            "price": 76407,
-            "change_24h": 0.23,
+            "price": 76279,
+            "change_24h": 0.63,
             "fear_greed": 29
           }
         },
-        "age_minutes": 0.5,
+        "age_minutes": 5.5,
         "is_fresh": true
       },
       "groq": {
@@ -359,7 +360,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 616.1,
+        "age_minutes": 626.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -376,7 +377,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 19265.0,
+        "age_minutes": 19275.0,
         "is_fresh": false
       }
     },
