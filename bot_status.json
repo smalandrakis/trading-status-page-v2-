@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-30T14:10:02.022040",
+  "generated_at": "2026-04-30T15:10:00.837571",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-30T14:10:02.022058"
+    "last_health_check": "2026-04-30T15:10:00.837593"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 14:09:41,998 - INFO - [HEARTBEAT] Price: $76,113.84",
+      "last_update": "2026-04-30 15:10:00,039 - INFO - [HEARTBEAT] Price: $76,330.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 14:10:02",
+      "last_update": "2026-04-30 15:10:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -140,35 +140,20 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "SHORT",
+        "confidence": 57.3,
+        "time": "2026-04-30 15:09:43,585"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 76203.44,
-        "tp_price": 75822.4228,
-        "sl_price": 76317.74516,
-        "entry_time": "2026-04-30 11:41:21",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 51,
+        "total_trades": 52,
         "wins": 12,
-        "losses": 39,
-        "win_rate": 23.5,
-        "total_pnl": -178.15,
-        "avg_pnl": -3.49
+        "losses": 40,
+        "win_rate": 23.1,
+        "total_pnl": -216.68,
+        "avg_pnl": -4.17
       },
       "recent_trades": [
-        {
-          "time": "2026-04-29T22:19:52.732595",
-          "direction": "SHORT",
-          "pnl": -35.19,
-          "pnl_pct": -0.16,
-          "hold_minutes": 5.0
-        },
         {
           "time": "2026-04-29T23:13:03.895420",
           "direction": "SHORT",
@@ -231,6 +216,13 @@
           "pnl": -36.86,
           "pnl_pct": -0.16,
           "hold_minutes": 58.0
+        },
+        {
+          "time": "2026-04-30T15:09:43.219591",
+          "direction": "SHORT",
+          "pnl": -38.53,
+          "pnl_pct": -0.17,
+          "hold_minutes": 208.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -238,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-30 14:10:02",
+      "last_update": "2026-04-30 15:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,7 +248,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0,
-        "time": "2026-04-30 14:09:52,130"
+        "time": "2026-04-30 15:09:43,348"
       },
       "open_position": null,
       "performance": {
@@ -272,31 +264,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-30T14:10:02.348335",
+    "updated_at": "2026-04-30T15:10:01.157821",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4451,
-        "confidence": 0.6609,
-        "bullish_pct": 0.2535,
-        "bearish_pct": 0.0479,
-        "neutral_pct": 0.6986,
+        "strength": 0.4437,
+        "confidence": 0.6291,
+        "bullish_pct": 0.2575,
+        "bearish_pct": 0.0414,
+        "neutral_pct": 0.7011,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.548,
+        "stance_shifts": 0,
+        "consensus_score": 0.5517,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] LOVE the pullback to $76K! Another fakeout at $75.1K \u2014 institutions are accumulating hard while the weak hands panic. With Morgan Stanley, Eric Trump, Meta stablecoins, AND the CLARITY Act moving, we\u2019",
-            "[TrendRider] Price is defending $75.1K for the second time on strong volume, confirming institutional accumulation in the face of macro headwinds and fear-driven sentiment. With the CLARITY Act advancing, Morgan S",
-            "[StackingSats] Another textbook test of $75.1K holds\u2014precisely where weak hands panic and smart money stacks. With Morgan Stanley doubling down, Eric Trump pushing a $1M target, and the CLARITY Act advancing, instit",
-            "[CryptoKaleo] Another fakeout at $75.1K \u2014 pure theater to trap the weak hands while the smart money quietly accumulates. With Morgan Stanley doubling down, Eric Trump & Koudounis screaming \"$1M reserve asset\", and "
+            "[StackingSats] $75K is sacred ground \u2014 we\u2019re holding the floor with conviction. Every dip into this zone on minor hawkish noise or AI-driven social media slop is a generational accumulation opportunity. Morgan Stanl",
+            "[CryptoKaleo] $76K isn\u2019t a trap \u2014 it\u2019s a launchpad. The narrative trifecta is locked in: Eric Trump, Morgan Stanley, and now Jack Dorsey\u2019s film exposing the financial matrix? This is cultural penetration at scale. ",
+            "[FadeTheCrowd] $76K holding again on low volume and max fear is textbook accumulation setup \u2014 AI noise and muted chatter only deepen the quiet conviction zone. I\u2019ll take Eric Trump\u2019s $1M talk as entertainment, but M"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout at $75.1k? Please\u2014this is just the other side of the same bear trap at $77.8k. All this noise about Morgan Stanley and Eric Trump screaming \"$1M\" is classic top-tier FOMO engineering w"
+            "[BearishBob] $76K is a trap\u2014another fakeout zone built on celebrity hype and recycled bull narratives while macro burns. Eric Trump and Dorsey\u2019s film are noise; the real story is declining volume, negative funding"
           ]
         },
-        "timestamp": "2026-04-30T10:20:42.051157+00:00",
+        "timestamp": "2026-04-30T13:09:36.106512+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -313,17 +304,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 3039.8,
+          "run_duration_sec": 5974.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 34,
+          "total_posts": 33,
           "market_data_summary": {
-            "price": 76048,
-            "change_24h": -1.38,
+            "price": 76075,
+            "change_24h": -1.83,
             "fear_greed": 29
           }
         },
-        "age_minutes": 109.3,
+        "age_minutes": 0.4,
         "is_fresh": true
       },
       "groq": {
@@ -374,7 +365,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 306.1,
+        "age_minutes": 366.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -391,7 +382,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 18955.0,
+        "age_minutes": 19014.9,
         "is_fresh": false
       }
     },
