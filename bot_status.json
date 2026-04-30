@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-04-30T04:50:00.840565",
+  "generated_at": "2026-04-30T05:00:01.543683",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-04-30T04:50:00.840588"
+    "last_health_check": "2026-04-30T05:00:01.543695"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 04:49:32,476 - INFO - [HEARTBEAT] Price: $75,603.70",
+      "last_update": "2026-04-30 04:59:32,637 - INFO - [HEARTBEAT] Price: $75,732.69",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 54.6,
-        "time": "2026-04-30 04:46:27,158"
+        "signal": "SHORT",
+        "confidence": 67.8,
+        "time": "2026-04-30 04:56:30,468"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-04-30 04:49:36,428 - INFO - [HEARTBEAT] Price: $75,603.71",
+      "last_update": "2026-04-30 04:59:36,583 - INFO - [HEARTBEAT] Price: $75,732.69",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -132,9 +132,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 56.1,
-        "time": "2026-04-30 04:48:43,277"
+        "signal": "NEUTRAL",
+        "confidence": 53.5,
+        "time": "2026-04-30 04:58:47,397"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-04-30 04:50:01",
+      "last_update": "2026-04-30 05:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0.1,
-        "time": "2026-04-30 04:49:30,899"
+        "time": "2026-04-30 04:59:57,313"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-04-30T04:50:01.165401",
+    "updated_at": "2026-04-30T05:00:01.831231",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1303,
-        "confidence": 0.6483,
-        "bullish_pct": 0.4112,
-        "bearish_pct": 0.0472,
-        "neutral_pct": 0.5416,
+        "strength": 0.1155,
+        "confidence": 0.6534,
+        "bullish_pct": 0.4166,
+        "bearish_pct": 0.0513,
+        "neutral_pct": 0.5321,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3123,
+        "consensus_score": 0.2982,
         "key_arguments": {
           "bullish": [
-            "[DeepPockets] Price holding above $75.1K with institutional bid activity and OTC flow confirms this is a high-conviction accumulation zone. I\u2019m adding modestly into this range, anchored to my $72K\u2013$74K cost basis, ",
-            "[CryptoKaleo] This range is a springboard, not a trap. The Fed\u2019s hesitation is already priced in, but Morgan Stanley\u2019s push, Eric Trump\u2019s $1M call, and real-world asset tokenization \u2014 from Treasuries to real estate",
-            "[DiamondHands420] LOVE THE RANGE! $75.1K holding STRONG\u2014this is not a dip, it's a launchpad. Morgan Stanley, Eric Trump, and real estate on-chain? This is the $1M BTC blueprint unfolding while doubters panic over Fed n",
-            "[FadeTheCrowd] Price holding firm at $75.1K on Fear & Greed of 29 confirms distribution of weak hands is complete. Institutions are accumulating quietly\u2014Morgan Stanley, tokenized Treasuries, and Bitcoin as a reserve",
-            "[StackingSats] Another consolidation phase at $75K\u2013$77.8K? Perfect. The $75,103 low held\u2014yet again\u2014on Fear & Greed of 29. Weak hands exit, strong hands accumulate. Morgan Stanley advancing tokenized Treasuries, real"
+            "[DeepPockets] Price holding above $75.1K remains constructive\u2014OTC desks report continued institutional absorption, and the lack of exchange inflows suggests weak hands are no longer being shaken out. The $77.8K res",
+            "[DiamondHands420] Love seeing this grind! $75.1K holding like a rock again\u2014this is pure accumulation zone energy. All this \"Fed fear\" and Middle East noise is just noise; Morgan Stanley, Eric Trump, and Blockstream can",
+            "[StackingSats] $75.1K continues to hold as a fortress\u2014every dip met with relentless accumulation by institutions like Morgan Stanley and Block. The Fed's hesitation and Middle East noise are short-term headwinds, bu",
+            "[FadeTheCrowd] Price holding firm at $75,100 despite Fed-induced fear and Middle East jitters confirms institutional accumulation is ongoing. The Fear & Greed Index stuck at 29 and lack of exchange inflows signal re",
+            "[CryptoKaleo] The $75.1K floor is sacred \u2014 every dip gets crushed by institutional bids from Morgan Stanley, Blockstream, and now *Eric Trump* pushing the $1M narrative. This isn\u2019t fear, it\u2019s *fortification* \u2014 the "
           ],
           "bearish": [
-            "[BearishBob] Another fakeout setting up at $77.8K \u2014 same level that\u2019s rejected every time since ATH. All this \"institutional accumulation\" chatter ignores that real yields are still rising and liquidity is stagnan"
+            "[BearishBob] Another fakeout rally into Fed noise, now crumbling on DXY strength and real yields grinding higher. $77.8K remains unbreakable resistance, volume is fading, and all this \"institutional absorption\" ta"
           ]
         },
-        "timestamp": "2026-04-30T01:40:22.094785+00:00",
+        "timestamp": "2026-04-30T02:53:53.240575+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 620.4,
+          "run_duration_sec": 1431.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 35,
           "market_data_summary": {
-            "price": 76311,
-            "change_24h": 0.1,
+            "price": 76138,
+            "change_24h": -0.41,
             "fear_greed": 29
           }
         },
-        "age_minutes": 69.7,
+        "age_minutes": 6.1,
         "is_fresh": true
       },
       "groq": {
@@ -357,7 +357,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 1186.3,
+        "age_minutes": 1196.4,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -374,7 +374,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 18395.0,
+        "age_minutes": 18405.0,
         "is_fresh": false
       }
     },
