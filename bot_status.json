@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T09:20:00.970434",
+  "generated_at": "2026-05-01T09:30:01.876413",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T09:20:00.970453"
+    "last_health_check": "2026-05-01T09:30:01.876434"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 09:19:36,755 - INFO - [HEARTBEAT] Price: $77,077.77",
+      "last_update": "2026-05-01 09:29:51,497 - INFO -   SHORT",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 09:19:31,909 - INFO - [HEARTBEAT] Price: $77,077.76",
+      "last_update": "2026-05-01 09:29:32,044 - INFO - [HEARTBEAT] Price: $77,004.14",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 09:20:01",
+      "last_update": "2026-05-01 09:30:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -255,8 +255,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.1,
-        "time": "2026-05-01 09:19:39,108"
+        "confidence": 1.2,
+        "time": "2026-05-01 09:29:51,558"
       },
       "open_position": null,
       "performance": {
@@ -272,32 +272,24 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T09:20:01.293651",
+    "updated_at": "2026-05-01T09:30:02.318600",
     "signals": {
       "cerebras": {
-        "direction": "NEUTRAL",
-        "strength": 0.3342,
-        "confidence": 0.6714,
-        "bullish_pct": 0.2715,
-        "bearish_pct": 0.1229,
-        "neutral_pct": 0.6056,
+        "direction": "SHORT",
+        "strength": 0.2715,
+        "confidence": 0.6889,
+        "bullish_pct": 0.2369,
+        "bearish_pct": 0.5084,
+        "neutral_pct": 0.2547,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 1,
-        "consensus_score": 0.4085,
+        "consensus_score": 0.2626,
         "key_arguments": {
-          "bullish": [
-            "[DiamondHands420] $77K is just a launchpad \u2014 every rejection there is FOMO fuel! Normies panic at profit-taking, but we\u2019ve got Trump family, Koudounis, and Mallers screaming $1M while Morgan Stanley says we\u2019re *early*.",
-            "[FadeTheCrowd] Price rejection at $77K amid Fear & Greed of 26 and persistent $75K support is another brushfire scare\u2014weak hands exit, strong hands accumulate. Newsflow confirms institutional foothold (Morgan Stanle",
-            "[CryptoKaleo] We're coiling like a spring at $77K \u2014 every rejection is engineered fear to flush weak hands while the $75K bedrock holds like Fort Knox. Trump, Koudounis, and Mallers are igniting the $1M narrative b",
-            "[StackingSats] $77K rejections are friction, not failure \u2014 the $75K cost basis is holding like bedrock. Institutional adoption (Morgan Stanley, Blockstream, Strike) and macro narratives (Eric Trump, $1M target) conf"
-          ],
-          "bearish": [
-            "[DeltaNeutral] Price is stalling at $77K with repeated rejections, strong order book supply, and negative gamma exposure above $77.2K, while funding remains neutral\u2014no leveraged longs to squeeze. Profit-taking flows",
-            "[BearishBob] Another fakeout at $77K\u2014same script, different day. All this institutional FUD (Fear, Uncertainty, Doubt) wrapped in \"adoption\" narratives is just cover for weak hands to get rekt while smart money di"
-          ]
+          "bullish": [],
+          "bearish": []
         },
-        "timestamp": "2026-05-01T06:18:55.453383+00:00",
+        "timestamp": "2026-05-01T07:25:40.146316+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -314,17 +306,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 2934.1,
+          "run_duration_sec": 3338.8,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 18,
           "market_data_summary": {
-            "price": 77079,
-            "change_24h": 2.24,
+            "price": 77115,
+            "change_24h": 1.96,
             "fear_greed": 26
           }
         },
-        "age_minutes": 61.1,
+        "age_minutes": 4.4,
         "is_fresh": true
       },
       "groq": {
@@ -376,7 +368,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 16.1,
+        "age_minutes": 26.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -393,7 +385,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 20105.0,
+        "age_minutes": 20115.0,
         "is_fresh": false
       }
     },
