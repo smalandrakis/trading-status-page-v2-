@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T14:10:01.288067",
+  "generated_at": "2026-05-01T14:20:01.161072",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T14:10:01.288086"
+    "last_health_check": "2026-05-01T14:20:01.161086"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 14:10:00,500 - INFO - [HEARTBEAT] Price: $77,444.95",
+      "last_update": "2026-05-01 14:20:00,670 - INFO - [HEARTBEAT] Price: $77,691.14",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 14:09:36,093 - INFO - [HEARTBEAT] Price: $77,447.28",
+      "last_update": "2026-05-01 14:19:36,214 - INFO - [HEARTBEAT] Price: $77,699.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -140,35 +140,20 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "SHORT",
+        "confidence": 66.1,
+        "time": "2026-05-01 14:18:37,110"
       },
-      "open_position": {
-        "direction": "SHORT",
-        "size": 3,
-        "entry_price": 77474.79,
-        "tp_price": 77087.41605,
-        "sl_price": 77591.002185,
-        "entry_time": "2026-05-01 13:23:16",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 64,
+        "total_trades": 65,
         "wins": 13,
-        "losses": 51,
-        "win_rate": 20.3,
-        "total_pnl": -504.64,
-        "avg_pnl": -7.89
+        "losses": 52,
+        "win_rate": 20.0,
+        "total_pnl": -539.76,
+        "avg_pnl": -8.3
       },
       "recent_trades": [
-        {
-          "time": "2026-04-30T20:01:03.995682",
-          "direction": "SHORT",
-          "pnl": -36.3,
-          "pnl_pct": -0.16,
-          "hold_minutes": 6.0
-        },
         {
           "time": "2026-04-30T20:16:53.271268",
           "direction": "SHORT",
@@ -231,6 +216,13 @@
           "pnl": -38.42,
           "pnl_pct": -0.17,
           "hold_minutes": 125.0
+        },
+        {
+          "time": "2026-05-01T14:14:33.128271",
+          "direction": "SHORT",
+          "pnl": -35.12,
+          "pnl_pct": -0.15,
+          "hold_minutes": 51.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -238,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 14:10:01",
+      "last_update": "2026-05-01 14:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -255,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.9,
-        "time": "2026-05-01 14:09:58,613"
+        "confidence": 0.6,
+        "time": "2026-05-01 14:19:46,951"
       },
       "open_position": null,
       "performance": {
@@ -272,7 +264,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T14:10:01.623426",
+    "updated_at": "2026-05-01T14:20:01.518580",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -323,7 +315,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 38.4,
+        "age_minutes": 48.4,
         "is_fresh": true
       },
       "groq": {
@@ -375,7 +367,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 306.1,
+        "age_minutes": 316.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -392,7 +384,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 20395.0,
+        "age_minutes": 20405.0,
         "is_fresh": false
       }
     },
