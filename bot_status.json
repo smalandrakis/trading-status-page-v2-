@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-02T00:20:00.846511",
+  "generated_at": "2026-05-02T00:30:01.385025",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-02T00:20:00.846530"
+    "last_health_check": "2026-05-02T00:30:01.385045"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 00:19:43,257 - INFO - [HEARTBEAT] Price: $78,359.99",
+      "last_update": "2026-05-02 00:30:00,223 - INFO -   LONG",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 00:19:48,570 - INFO - [HEARTBEAT] Price: $78,360.00",
+      "last_update": "2026-05-02 00:29:48,706 - INFO - [HEARTBEAT] Price: $78,338.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -141,8 +141,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 57.6,
-        "time": "2026-05-02 00:18:12,232"
+        "confidence": 61.8,
+        "time": "2026-05-02 00:28:16,120"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-02 00:20:01",
+      "last_update": "2026-05-02 00:30:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -247,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.1,
-        "time": "2026-05-02 00:19:42,398"
+        "confidence": 0.7,
+        "time": "2026-05-02 00:29:57,887"
       },
       "open_position": null,
       "performance": {
@@ -264,7 +264,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-02T00:20:01.199945",
+    "updated_at": "2026-05-02T00:30:01.772479",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -312,7 +312,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 5.5,
+        "age_minutes": 15.6,
         "is_fresh": true
       },
       "groq": {
@@ -364,7 +364,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 916.0,
+        "age_minutes": 926.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -381,7 +381,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 21005.0,
+        "age_minutes": 21015.0,
         "is_fresh": false
       }
     },
