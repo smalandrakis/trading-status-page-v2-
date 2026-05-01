@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T09:40:00.968275",
+  "generated_at": "2026-05-01T09:50:00.743056",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T09:40:00.968291"
+    "last_health_check": "2026-05-01T09:50:00.743076"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 09:39:37,024 - INFO - [HEARTBEAT] Price: $77,010.59",
+      "last_update": "2026-05-01 09:49:37,094 - INFO - [HEARTBEAT] Price: $77,060.17",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 09:39:32,152 - INFO - [HEARTBEAT] Price: $77,010.60",
+      "last_update": "2026-05-01 09:49:32,211 - INFO - [HEARTBEAT] Price: $77,060.16",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 09:40:01",
+      "last_update": "2026-05-01 09:50:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -255,8 +255,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.4,
-        "time": "2026-05-01 09:39:37,990"
+        "confidence": 0.2,
+        "time": "2026-05-01 09:50:00,009"
       },
       "open_position": null,
       "performance": {
@@ -272,51 +272,36 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T09:40:01.293800",
+    "updated_at": "2026-05-01T09:50:01.089646",
     "signals": {
       "cerebras": {
-        "direction": "SHORT",
-        "strength": 0.2715,
-        "confidence": 0.6889,
-        "bullish_pct": 0.2369,
-        "bearish_pct": 0.5084,
-        "neutral_pct": 0.2547,
+        "direction": "NEUTRAL",
+        "strength": 0.0,
+        "confidence": 0.0,
+        "bullish_pct": 0.0,
+        "bearish_pct": 0.0,
+        "neutral_pct": 1.0,
         "agent_count": 12,
-        "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.2626,
+        "round_count": 0,
+        "stance_shifts": 0,
+        "consensus_score": 0.0,
         "key_arguments": {
           "bullish": [],
           "bearish": []
         },
-        "timestamp": "2026-05-01T07:25:40.146316+00:00",
+        "timestamp": "2026-05-01T07:48:45.636803+00:00",
         "metadata": {
-          "role_weights": {
-            "whale": 2.0,
-            "institutional": 2.0,
-            "macro_analyst": 1.8,
-            "on_chain_analyst": 1.5,
-            "quant": 1.5,
-            "market_maker": 1.3,
-            "contrarian": 1.2,
-            "momentum_trader": 1.2,
-            "ct_influencer": 0.8,
-            "retail_bull": 0.6,
-            "retail_bear": 0.6,
-            "hodler": 0.5
-          },
-          "round_weight_decay": 0.6,
-          "run_duration_sec": 3338.8,
+          "run_duration_sec": 1122.9,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 18,
+          "total_posts": 0,
           "market_data_summary": {
-            "price": 77115,
-            "change_24h": 1.96,
+            "price": 76971,
+            "change_24h": 1.5,
             "fear_greed": 26
           }
         },
-        "age_minutes": 14.4,
+        "age_minutes": 1.3,
         "is_fresh": true
       },
       "groq": {
@@ -368,7 +353,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 36.1,
+        "age_minutes": 46.0,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -385,7 +370,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 20125.0,
+        "age_minutes": 20134.9,
         "is_fresh": false
       }
     },
