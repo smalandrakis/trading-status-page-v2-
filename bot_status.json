@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-02T01:20:01.346753",
+  "generated_at": "2026-05-02T01:30:01.535630",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-02T01:20:01.346774"
+    "last_health_check": "2026-05-02T01:30:01.535652"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 01:19:44,211 - INFO - [HEARTBEAT] Price: $78,085.00",
+      "last_update": "2026-05-02 01:29:44,393 - INFO - [HEARTBEAT] Price: $78,050.01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,35 +27,20 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "UNKNOWN",
-        "confidence": 0,
-        "time": null
+        "signal": "LONG",
+        "confidence": 50.2,
+        "time": "2026-05-02 01:25:09,434"
       },
-      "open_position": {
-        "direction": "LONG",
-        "size": 3,
-        "entry_price": 78199.430175,
-        "tp_price": 78590.42732587499,
-        "sl_price": 78082.1310297375,
-        "entry_time": "2026-05-01 23:59:37",
-        "adopted": false
-      },
+      "open_position": null,
       "performance": {
-        "total_trades": 116,
+        "total_trades": 117,
         "wins": 29,
-        "losses": 87,
-        "win_rate": 25.0,
-        "total_pnl": 188.81,
-        "avg_pnl": 1.63
+        "losses": 88,
+        "win_rate": 24.8,
+        "total_pnl": 153.32,
+        "avg_pnl": 1.31
       },
       "recent_trades": [
-        {
-          "time": "2026-05-01T10:11:48.561435",
-          "direction": "SHORT",
-          "pnl": -36.47,
-          "pnl_pct": -0.16,
-          "hold_minutes": 73.0
-        },
         {
           "time": "2026-05-01T11:45:40.631966",
           "direction": "LONG",
@@ -118,6 +103,13 @@
           "pnl": -50.21,
           "pnl_pct": -0.16,
           "hold_minutes": 4.0
+        },
+        {
+          "time": "2026-05-02T01:20:05.615062",
+          "direction": "LONG",
+          "pnl": -35.49,
+          "pnl_pct": -0.15,
+          "hold_minutes": 80.0
         }
       ],
       "health_status": "UNKNOWN"
@@ -125,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 01:19:49,408 - INFO - [HEARTBEAT] Price: $78,085.00",
+      "last_update": "2026-05-02 01:29:49,578 - INFO - [HEARTBEAT] Price: $78,043.28",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -141,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 55.9,
-        "time": "2026-05-02 01:18:35,047"
+        "confidence": 56.0,
+        "time": "2026-05-02 01:28:38,831"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-02 01:20:01",
+      "last_update": "2026-05-02 01:30:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -247,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.7,
-        "time": "2026-05-02 01:20:00,273"
+        "confidence": 0.4,
+        "time": "2026-05-02 01:29:47,680"
       },
       "open_position": null,
       "performance": {
@@ -264,28 +256,24 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-02T01:20:01.729333",
+    "updated_at": "2026-05-02T01:30:01.951662",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.6476,
-        "confidence": 0.6217,
-        "bullish_pct": 0.1434,
-        "bearish_pct": 0.0656,
-        "neutral_pct": 0.791,
+        "strength": 0.7431,
+        "confidence": 0.6,
+        "bullish_pct": 0.1284,
+        "bearish_pct": 0.0,
+        "neutral_pct": 0.8716,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6866,
+        "consensus_score": 0.8073,
         "key_arguments": {
-          "bullish": [
-            "[DiamondHands420] Love the green! $78.5K holding strong with volume backing it and Morgan Stanley saying \u201cwe\u2019re still so early\u201d? That\u2019s pure diamond hands fuel. FOMO\u2019s real \u2014 institutions are quietly stacking and the F"
-          ],
-          "bearish": [
-            "[BearishBob] Another fakeout rally into resistance. $78.8K is a known maginflux zone and we're already seeing volume dry up \u2014 typical distribution behavior. Institutions aren't buying, they're prepping to dump; ev"
-          ]
+          "bullish": [],
+          "bearish": []
         },
-        "timestamp": "2026-05-01T22:14:28.577355+00:00",
+        "timestamp": "2026-05-01T23:25:33.955623+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -302,17 +290,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 13467.1,
+          "run_duration_sec": 14132.1,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 12,
+          "total_posts": 8,
           "market_data_summary": {
-            "price": 78553,
-            "change_24h": 2.96,
+            "price": 78414,
+            "change_24h": 2.56,
             "fear_greed": 26
           }
         },
-        "age_minutes": 65.6,
+        "age_minutes": 4.5,
         "is_fresh": true
       },
       "groq": {
@@ -364,7 +352,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 976.1,
+        "age_minutes": 986.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -381,7 +369,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 21065.0,
+        "age_minutes": 21075.0,
         "is_fresh": false
       }
     },
