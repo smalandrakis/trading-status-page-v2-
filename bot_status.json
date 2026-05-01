@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T03:50:00.831070",
+  "generated_at": "2026-05-01T04:00:01.416569",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T03:50:00.831085"
+    "last_health_check": "2026-05-01T04:00:01.416581"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 03:49:53,176 - INFO - [HEARTBEAT] Price: $76,712.78",
+      "last_update": "2026-05-01 03:59:53,321 - INFO - [HEARTBEAT] Price: $76,686.13",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 03:49:56,774 - INFO - [HEARTBEAT] Price: $76,700.24",
+      "last_update": "2026-05-01 03:59:56,924 - INFO - [HEARTBEAT] Price: $76,686.13",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -140,9 +140,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "NEUTRAL",
-        "confidence": 54.9,
-        "time": "2026-05-01 03:48:29,298"
+        "signal": "SHORT",
+        "confidence": 57.5,
+        "time": "2026-05-01 03:58:33,522"
       },
       "open_position": null,
       "performance": {
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 03:50:01",
+      "last_update": "2026-05-01 04:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -247,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.6,
-        "time": "2026-05-01 03:49:36,504"
+        "confidence": 0.8,
+        "time": "2026-05-01 03:59:55,089"
       },
       "open_position": null,
       "performance": {
@@ -264,28 +264,28 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T03:50:01.167831",
+    "updated_at": "2026-05-01T04:00:01.744946",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3519,
-        "confidence": 0.6264,
-        "bullish_pct": 0.2898,
-        "bearish_pct": 0.0684,
-        "neutral_pct": 0.6418,
+        "strength": 0.2099,
+        "confidence": 0.6893,
+        "bullish_pct": 0.3579,
+        "bearish_pct": 0.0743,
+        "neutral_pct": 0.5678,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4626,
+        "consensus_score": 0.3517,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $76.3K holding strong above the $75K cost basis is a massive green flag\u2014this is where weak hands get shaken out and real diamond hands load up! With Eric Trump calling for $1M Bitcoin and Morgan Stanl"
+            "[CryptoKaleo] We\u2019re coiling like a spring at $75K \u2014 a proven fortress backed by cost basis, ETF inflows, and now *institutional battle cries* from Morgan Stanley and Blockstream. Trump\u2019s $1M call isn\u2019t noise, it\u2019s ",
+            "[StackingSats] Price holding above $75K cost basis is sacred ground \u2014 this is where real hodlers stack sats. ETF flows, institutional whispers, and Trump\u2019s $1M call are just noise compared to the hash rate and halvi",
+            "[DiamondHands420] $75K is HOLDING and that\u2019s all I need to see\u2014Trump\u2019s $1M call, Morgan Stanley saying we\u2019re \u201cearly,\u201d and Blockstream building the future? This ain\u2019t noise, it\u2019s confirmation! We\u2019re coiling like a sprin"
           ],
-          "bearish": [
-            "[BearishBob] $76.3K is a trap\u2014everybody cheering \"support at $75K\" ignores that we're still 40% off ATH and stuck in a tight range with no follow-through volume. All this Morgan Stanley and Trump hype is noise; ET"
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-05-01T01:29:41.256079+00:00",
+        "timestamp": "2026-05-01T01:57:59.113950+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -302,17 +302,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 14379.4,
+          "run_duration_sec": 12477.6,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 14,
           "market_data_summary": {
-            "price": 76320,
-            "change_24h": 0.68,
+            "price": 76379,
+            "change_24h": 0.71,
             "fear_greed": 29
           }
         },
-        "age_minutes": 20.3,
+        "age_minutes": 2.0,
         "is_fresh": true
       },
       "groq": {
@@ -363,7 +363,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 1126.1,
+        "age_minutes": 1136.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -380,7 +380,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 19775.0,
+        "age_minutes": 19785.0,
         "is_fresh": false
       }
     },
