@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T19:20:00.714505",
+  "generated_at": "2026-05-01T19:30:00.761713",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T19:20:00.714522"
+    "last_health_check": "2026-05-01T19:30:00.761731"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 19:19:38,454 - INFO - [HEARTBEAT] Price: $78,320.05",
+      "last_update": "2026-05-01 19:29:38,634 - INFO - [HEARTBEAT] Price: $78,198.87",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 19:19:43,797 - INFO - [HEARTBEAT] Price: $78,320.05",
+      "last_update": "2026-05-01 19:29:43,963 - INFO - [HEARTBEAT] Price: $78,198.86",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -140,9 +140,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 55.2,
-        "time": "2026-05-01 19:17:26,033"
+        "signal": "UNKNOWN",
+        "confidence": 0,
+        "time": null
       },
       "open_position": {
         "direction": "SHORT",
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 19:20:00",
+      "last_update": "2026-05-01 19:30:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -256,7 +256,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0.3,
-        "time": "2026-05-01 19:19:40,324"
+        "time": "2026-05-01 19:29:31,150"
       },
       "open_position": null,
       "performance": {
@@ -272,28 +272,24 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T19:20:01.099425",
+    "updated_at": "2026-05-01T19:30:01.158600",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.212,
-        "confidence": 0.6289,
-        "bullish_pct": 0.3752,
-        "bearish_pct": 0.0376,
-        "neutral_pct": 0.5872,
+        "strength": 0.5451,
+        "confidence": 0.6755,
+        "bullish_pct": 0.2274,
+        "bearish_pct": 0.0,
+        "neutral_pct": 0.7726,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3808,
+        "consensus_score": 0.6588,
         "key_arguments": {
-          "bullish": [
-            "[CryptoKaleo] We're in the eye of the storm \u2014 $2B in ETF inflows, Morgan Stanley saying we're \"still so early\", Eric Trump screaming \"$1M BTC\", and Jack Mallers going full prophet with volatility-proof loans. Narra",
-            "[StackingSats] Another consolidation, another golden opportunity. $2B in ETF inflows in April\u2014highest this year\u2014while price dances below $78K? That\u2019s institutional accumulation masking as hesitation. Fear & Greed at",
-            "[FadeTheCrowd] Price holding above $76K with Fear & Greed stuck at 26 confirms weak hands are still shaken \u2014 perfect. $2B in ETF inflows and bullish institutional noise (Morgan Stanley, Eric Trump) amplify the disco"
-          ],
+          "bullish": [],
           "bearish": []
         },
-        "timestamp": "2026-05-01T14:32:59.854739+00:00",
+        "timestamp": "2026-05-01T17:21:45.131499+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -310,17 +306,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 7378.1,
+          "run_duration_sec": 13903.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 27,
+          "total_posts": 11,
           "market_data_summary": {
-            "price": 77749,
-            "change_24h": 1.89,
+            "price": 78293,
+            "change_24h": 2.82,
             "fear_greed": 26
           }
         },
-        "age_minutes": 167.0,
+        "age_minutes": 8.3,
         "is_fresh": true
       },
       "groq": {
@@ -372,7 +368,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 616.0,
+        "age_minutes": 626.0,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -389,7 +385,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 20704.9,
+        "age_minutes": 20714.9,
         "is_fresh": false
       }
     },
