@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T12:00:01.385513",
+  "generated_at": "2026-05-01T12:10:01.447061",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T12:00:01.385532"
+    "last_health_check": "2026-05-01T12:10:01.447077"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 11:59:58,477 - INFO - [HEARTBEAT] Price: $77,268.56",
+      "last_update": "2026-05-01 12:09:58,648 - INFO - [HEARTBEAT] Price: $77,221.95",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 61.3,
-        "time": "2026-05-01 11:55:44,729"
+        "confidence": 86.0,
+        "time": "2026-05-01 12:05:47,191"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 11:59:34,021 - INFO - [HEARTBEAT] Price: $77,268.55",
+      "last_update": "2026-05-01 12:09:34,181 - INFO - [HEARTBEAT] Price: $77,234.41",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -230,7 +230,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 12:00:01",
+      "last_update": "2026-05-01 12:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -247,8 +247,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.2,
-        "time": "2026-05-01 12:00:01,019"
+        "confidence": 0.3,
+        "time": "2026-05-01 12:09:47,957"
       },
       "open_position": null,
       "performance": {
@@ -264,35 +264,34 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T12:00:01.742983",
+    "updated_at": "2026-05-01T12:10:01.788317",
     "signals": {
       "cerebras": {
         "direction": "SHORT",
-        "strength": 0.3237,
-        "confidence": 0.6725,
-        "bullish_pct": 0.2315,
-        "bearish_pct": 0.5551,
-        "neutral_pct": 0.2134,
+        "strength": 0.3433,
+        "confidence": 0.6756,
+        "bullish_pct": 0.1705,
+        "bearish_pct": 0.5138,
+        "neutral_pct": 0.3157,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.3327,
+        "stance_shifts": 2,
+        "consensus_score": 0.2707,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] Fear dominates at 26 while futures noise triggers short-term price bumps \u2014 classic late-stage hesitation. Spot weakness is already priced in, and the chorus of bearish voices (DeltaNeutral, DeepPocket",
-            "[StackingSats] Another dip in the endless sea of FUD. $77.4K is a nothing level \u2014 we\u2019re measuring progress in adoption, not price. Morgan Stanley and Eric Trump signaling $1M BTC? That\u2019s the real chart. I\u2019m stacking",
-            "[DiamondHands420] Love seeing all this fear at $77.4K \u2014 absolute gem! Spot dip? Just a breather while the real players load up. Eric Trump and Morgan Stanley screaming \"$1M BTC\" while we consolidate? That\u2019s textbook ac",
-            "[CryptoKaleo] Fear at 26 with whales like DeepPockets still holding bags from $68K? That\u2019s a blood-in-the-streets moment brewing. All this futures-driven noise is just setting up the perfect squeeze \u2014 Jack Mallers "
+            "[CryptoKaleo] We're dancing on the edge of a breakout\u2014$77.4K isn't just resistance, it's a psychological launchpad primed to explode. All this \"spot weakness\" chatter ignores the narrative tsunami building: Eric Tr",
+            "[DiamondHands420] Futures kissed $77.4K again and we\u2019re all over it\u2014Eric Trump, Jack Mallers, and Dorsey are lighting the fuse on this $1M rocket! Spot weak? That\u2019s just FUD\u2014Morgan Stanley\u2019s in, institutions are waking",
+            "[StackingSats] Dip? What dip. $77K is accumulation territory\u2014futures noise and spot lull are just the market shaking out weak hands. Eric Trump, Morgan Stanley, and Jack Mallers aren\u2019t hype, they\u2019re confirmation of "
           ],
           "bearish": [
-            "[BearishBob] Another futures-fueled grind higher with fading spot demand\u2014exactly how this market tops out. $77.5K is a magnet for bagholders, and the lack of volume follow-through confirms this rally is being shor",
-            "[AlphaQuant] Price action remains trapped in a narrowing range ($75.9k\u2013$77.8k) with declining spot volume and persistent futures premium \u2014 a divergence that historically precedes downside breaks under illiquid con",
-            "[TrendRider] Price is testing resistance at $77.5K on weak spot volume, confirming CryptoQuant's warning of a futures-driven grind \u2014 classic late-stage behavior before a pullback. I respect the trend, but this lac",
-            "[DeltaNeutral] Price at $77.4k sits within a tight range ($75.9k\u2013$77.8k) with declining spot volume and elevated futures activity, creating asymmetric risk around current levels. Order book depth is thin above $77.8",
-            "[DeepPockets] Price holding near $77.4k on weak spot volume confirms distribution is still in play \u2014 I see no fresh accumulation, just futures-driven noise. My cost basis is anchored near $68k, so I\u2019m using these r"
+            "[DeepPockets] Price at $77.3K on fading spot momentum and negative funding rates confirms this is a distribution range, not a launchpad. I\u2019m anchored to my cost basis near $62K\u2014I don\u2019t need to sell, but I won\u2019t cha",
+            "[GlassnodeGuru] Price testing $77.4K again on fading spot volume and negative funding rates confirms a lack of on-chain demand\u2014this is a textbook futures-driven trap. Exchange netflows remain neutral, but declining S",
+            "[BearishBob] Another failed test at $77.4K \u2014 just like last week. Futures pump, spot fades, funding goes negative, and retail buys the Morgan Stanley/Jack Dorsey/Eric Trump hype like it\u2019s new. Institutions aren't ",
+            "[AlphaQuant] Price at $77.3k remains trapped in a resistance zone ($77.4k) with deteriorating confirmation: 24h volume lacks spot follow-through, futures-driven momentum is peaking, and negative funding rates indi",
+            "[DeltaNeutral] Price at $77.3k remains trapped under structural resistance with negative funding rates, thin order book depth, and no spot volume confirmation\u2014classic distribution behavior. The futures-driven move l"
           ]
         },
-        "timestamp": "2026-05-01T08:53:32.708156+00:00",
+        "timestamp": "2026-05-01T10:08:02.359847+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -309,17 +308,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 1410.6,
+          "run_duration_sec": 2280.8,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 20,
+          "total_posts": 34,
           "market_data_summary": {
-            "price": 77425,
-            "change_24h": 1.81,
+            "price": 77322,
+            "change_24h": 1.64,
             "fear_greed": 26
           }
         },
-        "age_minutes": 66.5,
+        "age_minutes": 2.0,
         "is_fresh": true
       },
       "groq": {
@@ -371,7 +370,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 176.1,
+        "age_minutes": 186.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -388,7 +387,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 20265.0,
+        "age_minutes": 20275.0,
         "is_fresh": false
       }
     },
