@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T21:40:00.980642",
+  "generated_at": "2026-05-01T21:50:01.953313",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T21:40:00.980663"
+    "last_health_check": "2026-05-01T21:50:01.953330"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 21:39:40,675 - INFO - [HEARTBEAT] Price: $78,343.60",
+      "last_update": "2026-05-01 21:49:40,830 - INFO - [HEARTBEAT] Price: $78,378.89",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 62.2,
-        "time": "2026-05-01 21:36:22,430"
+        "confidence": 50.2,
+        "time": "2026-05-01 21:46:23,302"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 21:39:46,015 - INFO - [HEARTBEAT] Price: $78,343.36",
+      "last_update": "2026-05-01 21:49:46,186 - INFO - [HEARTBEAT] Price: $78,376.56",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 51.9,
-        "time": "2026-05-01 21:39:05,062"
+        "confidence": 50.6,
+        "time": "2026-05-01 21:49:08,971"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 21:40:01",
+      "last_update": "2026-05-01 21:50:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 1.0,
-        "time": "2026-05-01 21:40:00,716"
+        "confidence": 0.2,
+        "time": "2026-05-01 21:49:47,732"
       },
       "open_position": null,
       "performance": {
@@ -256,24 +256,24 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T21:40:01.348478",
+    "updated_at": "2026-05-01T21:50:02.295830",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.8283,
-        "confidence": 0.5937,
-        "bullish_pct": 0.0621,
-        "bearish_pct": 0.0475,
-        "neutral_pct": 0.8904,
+        "strength": 0.83,
+        "confidence": 0.5917,
+        "bullish_pct": 0.085,
+        "bearish_pct": 0.0,
+        "neutral_pct": 0.915,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.8356,
+        "consensus_score": 0.8725,
         "key_arguments": {
           "bullish": [],
           "bearish": []
         },
-        "timestamp": "2026-05-01T18:45:05.518507+00:00",
+        "timestamp": "2026-05-01T19:47:32.236740+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -290,17 +290,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 15303.7,
+          "run_duration_sec": 15450.5,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 8,
+          "total_posts": 6,
           "market_data_summary": {
-            "price": 78257,
-            "change_24h": 2.69,
+            "price": 78537,
+            "change_24h": 2.79,
             "fear_greed": 26
           }
         },
-        "age_minutes": 54.9,
+        "age_minutes": 2.5,
         "is_fresh": true
       },
       "groq": {
@@ -352,7 +352,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 756.1,
+        "age_minutes": 766.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -369,7 +369,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 20845.0,
+        "age_minutes": 20855.0,
         "is_fresh": false
       }
     },
