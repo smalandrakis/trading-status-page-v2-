@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-01T04:40:01.095551",
+  "generated_at": "2026-05-01T04:50:00.833707",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-01T04:40:01.095564"
+    "last_health_check": "2026-05-01T04:50:00.833716"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 04:39:54,019 - INFO - [HEARTBEAT] Price: $76,625.39",
+      "last_update": "2026-05-01 04:49:54,151 - INFO - [HEARTBEAT] Price: $76,594.30",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -125,7 +125,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-01 04:39:57,565 - INFO - [HEARTBEAT] Price: $76,620.01",
+      "last_update": "2026-05-01 04:49:57,742 - INFO - [HEARTBEAT] Price: $76,594.29",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -238,7 +238,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-01 04:40:01",
+      "last_update": "2026-05-01 04:50:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -255,8 +255,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.5,
-        "time": "2026-05-01 04:39:56,210"
+        "confidence": 0.1,
+        "time": "2026-05-01 04:49:37,965"
       },
       "open_position": null,
       "performance": {
@@ -272,30 +272,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-01T04:40:01.409652",
+    "updated_at": "2026-05-01T04:50:01.210098",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4163,
-        "confidence": 0.6627,
-        "bullish_pct": 0.2499,
-        "bearish_pct": 0.084,
-        "neutral_pct": 0.6662,
+        "strength": 0.5946,
+        "confidence": 0.6443,
+        "bullish_pct": 0.1807,
+        "bearish_pct": 0.0441,
+        "neutral_pct": 0.7752,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.4993,
+        "consensus_score": 0.6629,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price is holding above the $75K cost basis with volume compression, signaling accumulation within a bullish structure. The trend remains intact as long as $75K holds, and recent newsflow (Morgan Stanl",
-            "[StackingSats] $76.2K holding firm above the $75K cost basis confirms accumulation \u2014 this is not luck, it's the market telling weak hands to exit before the next leg up. Morgan Stanley, Eric Trump, and Blockstream s",
-            "[CryptoKaleo] $76.2K holding firm above the $75K magnet isn\u2019t just technical\u2014it\u2019s psychological warfare on weak hands. The narrative tsunami from Morgan Stanley, Eric Trump, and Blockstream isn\u2019t noise\u2014it\u2019s fuel fo"
+            "[StackingSats] $76.5K holding firm and brushing new highs \u2014 this isn't luck, it's accumulation in motion. The $75K floor is sacred ground, now backed by Morgan Stanley, Eric Trump, and on-chain reality: weak hands g",
+            "[CryptoKaleo] $76.5K is the launchpad \u2014 we\u2019re not just holding support, we\u2019re priming for a breakout. The narrative is on fire: Eric Trump, Morgan Stanley, Dorsey\u2019s film\u2014this is mainstream cultural *and* institutio",
+            "[DiamondHands420] We\u2019re LIVING the narrative \u2014 Eric Trump, Morgan Stanley, Jack Dorsey, $1M targets \u2014 this is bigger than price! $75K held like a fortress, volume compressing, and we\u2019re brushing $76.5K again? That\u2019s th"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building \u2014 $75K \"support\" is just a trap for suckers while institutions quietly distribute. All this $1M chatter from Trump and Blockstream execs is peak delusion, same playbook as 202"
+            "[BearishBob] Another fakeout waiting to happen. $75K \"support\" is just a sugar rush from retail piling in after Trump and Morgan Stanley soundbites \u2014 I\u2019ve seen this movie before. The tape is weak: volume is compre"
           ]
         },
-        "timestamp": "2026-05-01T02:31:38.357936+00:00",
+        "timestamp": "2026-05-01T02:47:03.439581+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -312,17 +312,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 10896.4,
+          "run_duration_sec": 8221.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 22,
+          "total_posts": 23,
           "market_data_summary": {
-            "price": 76262,
-            "change_24h": 0.69,
-            "fear_greed": 29
+            "price": 76478,
+            "change_24h": 0.95,
+            "fear_greed": 26
           }
         },
-        "age_minutes": 8.4,
+        "age_minutes": 3.0,
         "is_fresh": true
       },
       "groq": {
@@ -373,7 +373,7 @@
             "fear_greed": 29
           }
         },
-        "age_minutes": 1176.1,
+        "age_minutes": 1186.1,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -390,7 +390,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 19825.0,
+        "age_minutes": 19835.0,
         "is_fresh": false
       }
     },
