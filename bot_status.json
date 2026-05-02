@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-02T06:00:01.474806",
+  "generated_at": "2026-05-02T06:10:00.771894",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-02T06:00:01.474824"
+    "last_health_check": "2026-05-02T06:10:00.771908"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 05:59:48,569 - INFO - [HEARTBEAT] Price: $78,444.21",
+      "last_update": "2026-05-02 06:09:48,740 - INFO - [HEARTBEAT] Price: $78,276.12",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 52.6,
-        "time": "2026-05-02 05:56:28,785"
+        "signal": "SHORT",
+        "confidence": 59.8,
+        "time": "2026-05-02 06:06:31,592"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 05:59:53,958 - INFO - [HEARTBEAT] Price: $78,421.10",
+      "last_update": "2026-05-02 06:09:54,122 - INFO - [HEARTBEAT] Price: $78,276.12",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 67.3,
-        "time": "2026-05-02 05:58:24,577"
+        "confidence": 56.7,
+        "time": "2026-05-02 06:08:28,356"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-02 06:00:01",
+      "last_update": "2026-05-02 06:10:00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.3,
-        "time": "2026-05-02 05:59:34,732"
+        "confidence": 2.6,
+        "time": "2026-05-02 06:09:53,327"
       },
       "open_position": null,
       "performance": {
@@ -256,26 +256,28 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-02T06:00:01.799785",
+    "updated_at": "2026-05-02T06:10:01.071707",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1662,
-        "confidence": 0.6387,
-        "bullish_pct": 0.4061,
-        "bearish_pct": 0.0215,
-        "neutral_pct": 0.5724,
+        "strength": 0.4602,
+        "confidence": 0.6311,
+        "bullish_pct": 0.2357,
+        "bearish_pct": 0.0683,
+        "neutral_pct": 0.6959,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3585,
+        "consensus_score": 0.5439,
         "key_arguments": {
           "bullish": [
-            "[TrendRider] Price is testing $78.7K again \u2014 a known resistance \u2014 but volume and MSTR\u2019s 9% pop show institutional appetite is returning. I respect the weekly close above $75K as a bullish filter, and with spot vol"
+            "[TrendRider] Price at $78.285K with volume supporting the climb and weekly close above $75K \u2014 a key level I respect \u2014 suggests trend strength. The MSTR pop and Mallers news add momentum, but $80K is a known magnet"
           ],
-          "bearish": []
+          "bearish": [
+            "[BearishBob] Another fakeout building toward $80K on weak volume follow-through \u2014 classic distribution zone. MSTR pumping again? That\u2019s just Michael Saylor front-running retail again, not real demand. Mallers\u2019 vap"
+          ]
         },
-        "timestamp": "2026-05-02T03:01:25.126433+00:00",
+        "timestamp": "2026-05-02T04:06:25.322405+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -292,17 +294,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 12682.6,
+          "run_duration_sec": 12983.2,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 16,
+          "total_posts": 18,
           "market_data_summary": {
-            "price": 78075,
-            "change_24h": 2.37,
-            "fear_greed": 26
+            "price": 78285,
+            "change_24h": 2.36,
+            "fear_greed": 39
           }
         },
-        "age_minutes": 58.6,
+        "age_minutes": 3.6,
         "is_fresh": true
       },
       "groq": {
@@ -354,7 +356,7 @@
             "fear_greed": 26
           }
         },
-        "age_minutes": 1256.1,
+        "age_minutes": 1266.0,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -371,7 +373,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 21345.0,
+        "age_minutes": 21354.9,
         "is_fresh": false
       }
     },
