@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-02T18:50:01.097629",
+  "generated_at": "2026-05-02T19:00:01.117698",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-02T18:50:01.097645"
+    "last_health_check": "2026-05-02T19:00:01.117711"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 18:50:01,039 - INFO - [HEARTBEAT] Price: $78,454.00",
+      "last_update": "2026-05-02 18:59:31,196 - INFO - [HEARTBEAT] Price: $78,455.02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -27,9 +27,9 @@
         "strategy": "Volume King - maximize total P&L"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 67.0,
-        "time": "2026-05-02 18:45:11,000"
+        "signal": "LONG",
+        "confidence": 59.7,
+        "time": "2026-05-02 18:55:13,870"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 18:49:36,174 - INFO - [HEARTBEAT] Price: $78,453.54",
+      "last_update": "2026-05-02 18:59:36,330 - INFO - [HEARTBEAT] Price: $78,455.02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 55.4,
-        "time": "2026-05-02 18:49:29,214"
+        "confidence": 58.2,
+        "time": "2026-05-02 18:59:33,018"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-02 18:50:01",
+      "last_update": "2026-05-02 19:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.6,
-        "time": "2026-05-02 18:49:51,899"
+        "confidence": 0.3,
+        "time": "2026-05-02 19:00:01,022"
       },
       "open_position": null,
       "performance": {
@@ -256,32 +256,27 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-02T18:50:01.444888",
+    "updated_at": "2026-05-02T19:00:01.478681",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.1533,
-        "confidence": 0.6526,
-        "bullish_pct": 0.3975,
-        "bearish_pct": 0.0518,
-        "neutral_pct": 0.5508,
+        "strength": 0.5935,
+        "confidence": 0.6227,
+        "bullish_pct": 0.1984,
+        "bearish_pct": 0.0096,
+        "neutral_pct": 0.7919,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 3,
-        "consensus_score": 0.3261,
+        "stance_shifts": 0,
+        "consensus_score": 0.6879,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] This range is not resistance \u2014 it\u2019s loading zone. MSTR popping 9%, Riot monetizing data centers, and Mallers backing a Tether-Bitcoin merger? That\u2019s not noise, it\u2019s narrative fuel. Institutions aren\u2019t",
-            "[DiamondHands420] $78K holding like a rock with MSTR up 9%, Riot\u2019s $33M data center flex, and Mallers backing a Tether merger \u2014 this is institutional-grade fuel! Fear & Greed at 39 means weak hands are still scared whi",
-            "[TrendRider] Price is testing range resistance at $78.8K with institutional fingerprints\u2014MSTR\u2019s 9% surge and Riot\u2019s $33M data center monetization signal strategic accumulation, not speculation. Volume remains supp",
-            "[StackingSats] $78K is hold-to-hold\u2014another test of resolve passed. MSTR up 9%, Riot's data center monetization, and Mallers pushing Tether into Bitcoin's orbit aren't side stories; they're chapters in the instituti",
-            "[FadeTheCrowd] Still grinding in the fear zone at 39\u2014no retail FOMO, muted volume, and options pricing $84K as a long shot. That\u2019s textbook setup for quiet accumulation: MSTR\u2019s 9% pop isn\u2019t noise, it\u2019s insider convi"
+            "[DiamondHands420] $78.3K is nothing\u2014pure accumulation zone! MSTR popping 9% *on zero news*? That's silent institutional stacking. Mallers backing a Tether merger is the catalyst that unlocks the next leg\u2014fiat onramps m",
+            "[StackingSats] $78.3K isn't resistance \u2014 it's accumulation in progress. MSTR up 9% and Riot pulling $33M from data centers proves corporate Bitcoin demand is maturing, not stalling. Weak hands fear range-bound actio"
           ],
-          "bearish": [
-            "[BearishBob] Another fakeout brewing at $78.8K\u2014volume is evaporating and the so-called \u201cinstitutional accumulation\u201d is just MSTR front-running itself again. Riot\u2019s data center revenue is a sideshow, and Mallers ba"
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-05-02T14:58:22.461059+00:00",
+        "timestamp": "2026-05-02T16:57:40.851066+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -298,17 +293,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 8900.2,
+          "run_duration_sec": 12459.0,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 30,
           "market_data_summary": {
-            "price": 78223,
-            "change_24h": 0.61,
+            "price": 78294,
+            "change_24h": 0.02,
             "fear_greed": 39
           }
         },
-        "age_minutes": 111.6,
+        "age_minutes": 2.3,
         "is_fresh": true
       },
       "groq": {
@@ -359,7 +354,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 586.2,
+        "age_minutes": 596.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -376,7 +371,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 22115.0,
+        "age_minutes": 22125.0,
         "is_fresh": false
       }
     },
