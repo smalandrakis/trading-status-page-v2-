@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T00:10:01.550619",
+  "generated_at": "2026-05-03T00:20:01.436859",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-03T00:10:01.550626"
+    "last_health_check": "2026-05-03T00:20:01.436867"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 00:09:36,070 - INFO - [HEARTBEAT] Price: $78,739.73",
+      "last_update": "2026-05-03 00:19:36,269 - INFO - [HEARTBEAT] Price: $78,677.79",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 53.0,
-        "time": "2026-05-03 00:06:41,971"
+        "confidence": 65.3,
+        "time": "2026-05-03 00:16:45,580"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 00:09:41,158 - INFO - [HEARTBEAT] Price: $78,743.71",
+      "last_update": "2026-05-03 00:19:41,357 - INFO - [HEARTBEAT] Price: $78,677.79",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -132,9 +132,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "SHORT",
-        "confidence": 56.1,
-        "time": "2026-05-03 00:09:35,610"
+        "signal": "NEUTRAL",
+        "confidence": 50.2,
+        "time": "2026-05-03 00:19:40,893"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-03 00:10:01",
+      "last_update": "2026-05-03 00:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.2,
-        "time": "2026-05-03 00:09:48,350"
+        "confidence": 0.7,
+        "time": "2026-05-03 00:19:34,948"
       },
       "open_position": null,
       "performance": {
@@ -256,31 +256,28 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-03T00:10:01.794546",
+    "updated_at": "2026-05-03T00:20:01.715344",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.3325,
-        "confidence": 0.6434,
-        "bullish_pct": 0.1515,
-        "bearish_pct": 0.258,
-        "neutral_pct": 0.5905,
+        "strength": 0.4921,
+        "confidence": 0.6064,
+        "bullish_pct": 0.2386,
+        "bearish_pct": 0.0307,
+        "neutral_pct": 0.7307,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.3858,
+        "consensus_score": 0.5961,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] This MSTR 9% pop isn\u2019t just a stock move \u2014 it\u2019s a beacon. Jack Mallers fronting Proof-of-Reserves lending and backing a Tether merger? That\u2019s institutional-grade infrastructure being built *on Bitcoin",
-            "[DiamondHands420] LOVING the MSTR move again \u2014 9% pop on any news is a glow-up in this market! Jack Mallers building Bitcoin-native financial rails with Proof-of-Reserves lending? That\u2019s the institutional adoption we\u2019v"
+            "[StackingSats] Dip into $77.8K was a final miner capitulation flush\u2014hash rate at ATH confirms strong hands are accumulating. MSTR up 9% and mining stocks leading is institutional demand playing out early in the cycl",
+            "[FadeTheCrowd] Price stuck below $78.5K on weak volume and Fear at 39 fits the late-stage accumulation playbook\u2014this is where discomfort breeds opportunity. MSTR\u2019s 9% pop and miner capitulation at $77.8K signal smar",
+            "[CryptoKaleo] We're in the eye of the storm \u2014 BTC retesting $78.5K with MSTR exploding 9% and mining equities like RIOT ripping on strong data center adoption. This isn't retail FOMO; it's institutions playing ches"
           ],
-          "bearish": [
-            "[FadeTheCrowd] Price probing $78.5K on weak volume, EF dumping ETH, and MSTR pumping again \u2014 this is classic late-stage retail FOMO. Mallers\u2019 announcements are hype, not infrastructure; real adoption doesn\u2019t front-r",
-            "[BearishBob] Another fakeout brewing at $78.5K \u2014 same level that rejected price twice already. MSTR's 9% pop is pure meme-driven leverage, not real demand, and EF dumping ETH while Tether talks merge is just noise",
-            "[DeltaNeutral] Price testing $78.5K for the third time on subpar volume, with no supportive flow from funding rates or options gamma \u2014 MSTR\u2019s move is isolated speculative leverage, not broad market strength. OTC flo"
-          ]
+          "bearish": []
         },
-        "timestamp": "2026-05-02T21:24:54.853154+00:00",
+        "timestamp": "2026-05-02T22:11:47.255806+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -297,17 +294,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 14093.2,
+          "run_duration_sec": 13305.7,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 32,
+          "total_posts": 28,
           "market_data_summary": {
-            "price": 78418,
-            "change_24h": 0.28,
+            "price": 78361,
+            "change_24h": -0.25,
             "fear_greed": 39
           }
         },
-        "age_minutes": 45.1,
+        "age_minutes": 8.2,
         "is_fresh": true
       },
       "groq": {
@@ -358,7 +355,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 906.2,
+        "age_minutes": 916.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -375,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 22435.0,
+        "age_minutes": 22445.0,
         "is_fresh": false
       }
     },
