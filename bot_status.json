@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-02T09:00:01.208595",
+  "generated_at": "2026-05-02T09:10:01.019440",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-02T09:00:01.208611"
+    "last_health_check": "2026-05-02T09:10:01.019454"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 08:59:51,558 - INFO - [HEARTBEAT] Price: $78,327.79",
+      "last_update": "2026-05-02 09:09:51,726 - INFO - [HEARTBEAT] Price: $78,315.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 80.5,
-        "time": "2026-05-02 08:57:20,988"
+        "confidence": 70.1,
+        "time": "2026-05-02 09:07:23,791"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 08:59:56,823 - INFO - [HEARTBEAT] Price: $78,327.80",
+      "last_update": "2026-05-02 09:09:57,001 - INFO - [HEARTBEAT] Price: $78,315.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 55.7,
-        "time": "2026-05-02 08:59:34,486"
+        "confidence": 59.7,
+        "time": "2026-05-02 09:09:38,242"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-02 09:00:01",
+      "last_update": "2026-05-02 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.5,
-        "time": "2026-05-02 08:59:39,616"
+        "confidence": 0.3,
+        "time": "2026-05-02 09:09:34,418"
       },
       "open_position": null,
       "performance": {
@@ -256,30 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-02T09:00:01.605097",
+    "updated_at": "2026-05-02T09:10:01.351236",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5577,
-        "confidence": 0.6442,
-        "bullish_pct": 0.1929,
-        "bearish_pct": 0.0565,
-        "neutral_pct": 0.7506,
+        "strength": 0.3464,
+        "confidence": 0.6382,
+        "bullish_pct": 0.2657,
+        "bearish_pct": 0.1223,
+        "neutral_pct": 0.6121,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6259,
+        "stance_shifts": 1,
+        "consensus_score": 0.4181,
         "key_arguments": {
           "bullish": [
-            "[CryptoKaleo] $78.2K isn\u2019t just holding\u2014this is *institutional re-entry* masked as consolidation. MSTR popping 9% *again* screams corporate conviction, and Mallers backing a Tether merger is a *trust-layer nuke*\u2014ma",
-            "[StackingSats] $78.2K hold confirmed \u2014 weekly close above $75K is foundation, and MSTR pumping 9% signals corporate hodler conviction. Spot volume rise + OI build = institutional re-engagement, not noise. $80K is in",
-            "[DiamondHands420] $78.2K holding firm with SPY futures up and MSTR popping 9% again? That\u2019s not luck\u2014that\u2019s the canary in the coal mine. Three on-chain signals, rising spot volume, and Mallers pushing a Tether merger? "
+            "[TrendRider] Price at $78.375 is pressing into key resistance at $78.8K with strong spot volume and a weekly close above $75K \u2014 that\u2019s bullish follow-through. MSTR\u2019s 9% pop signals institutional balance sheet conv",
+            "[DiamondHands420] $78.3K? We\u2019re breathing the $80K stratosphere soon \u2014 three data points screaming rally: volume pumping, NUPL recovery zone, and MSTR popping 9% shows the whales are loading! This isn\u2019t fakeout energy,",
+            "[CryptoKaleo] We're in the final act of the $80K breakout \u2014 volume is real, MSTR is screaming institutional conviction, and Mallers\u2019 Tether merger play adds explosive narrative fuel. The weak hands are frozen by Fe",
+            "[StackingSats] $78.3K is accumulation in motion \u2014 every dip to $75K was a buy zone, and we\u2019ve cleared that level weekly. MSTR pumping 9% isn\u2019t noise, it\u2019s leverage on Bitcoin\u2019s balance sheet working. Volume, outflow"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building toward $78.9K\u2014same resistance zone we've rejected at six times now. Volume is a joke compared to real bull cycles, MSTR pump is just gamma chase, and Mallers hyping Tether mer"
+            "[FadeTheCrowd] Another MSTR pump on thin news, fear persists at 39, and we\u2019re retesting $78.8K with weak funding rates \u2014 this rally keeps failing the conviction test. Spot volume and outflows are real, but without d",
+            "[BearishBob] Another fakeout push toward $78.8K on MSTR noise and recycled Mallers hype \u2014 zero macro catalysts, flat open interest, and funding rates still neutral. Volume is a mirage compared to real accumulation"
           ]
         },
-        "timestamp": "2026-05-02T05:05:28.400722+00:00",
+        "timestamp": "2026-05-02T07:02:41.375529+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -296,42 +298,41 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 9326.7,
+          "run_duration_sec": 12759.7,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 31,
+          "total_posts": 33,
           "market_data_summary": {
-            "price": 78257,
-            "change_24h": 2.16,
+            "price": 78375,
+            "change_24h": 1.46,
             "fear_greed": 39
           }
         },
-        "age_minutes": 114.6,
+        "age_minutes": 7.3,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.4816,
-        "confidence": 0.5625,
-        "bullish_pct": 0.2343,
-        "bearish_pct": 0.0498,
-        "neutral_pct": 0.7159,
+        "strength": 0.6741,
+        "confidence": 0.5389,
+        "bullish_pct": 0.1373,
+        "bearish_pct": 0.0514,
+        "neutral_pct": 0.8114,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 2,
-        "consensus_score": 0.5738,
+        "consensus_score": 0.717,
         "key_arguments": {
           "bullish": [
-            "[FadeTheCrowd] The Fear & Greed Index at 26 and the recent bullish statements from Morgan Stanley and Eric Trump's $1M price target are aligning with my contrarian view, indicating a buying opportunity. I'm looking ",
-            "[StackingSats] The fear and greed index is still at 26, indicating fear in the market, which I believe is a buying opportunity. The recent statements from Morgan Stanley and Eric Trump's $1M price target are bullish",
-            "[DiamondHands420] I'm getting that FOMO feeling, bro! With all these bullish signals from Morgan Stanley and Eric Trump's $1M price target, I'm thinking we're about to moon! The Fear & Greed Index is low, which is a gr",
-            "[CryptoKaleo] The bullish narratives are still resonating with me, and I'm loving the recent statements from Morgan Stanley and Eric Trump's $1M price target. The Fear & Greed Index at 26 indicates a buying opportu"
+            "[DiamondHands420] The FOMO is real, and I'm loving every minute of it. With Bitcoin's recent 18.1% gain over the past 30 days and the 1.6% increase in the last 24 hours, I'm convinced we're going to break $80K soon. Th",
+            "[StackingSats] The market is still pricing in caution, but I'm not deterred by the fear and greed index at 39. The 18.1% gain over the past 30 days and the recent 1.6% increase in the last 24 hours are bullish signs",
+            "[FadeTheCrowd] The fear and greed index remains at 39, indicating caution, and the lack of bullish leverage is a buying opportunity. With the recent 18.1% gain over the past 30 days and the 1.6% increase in the last"
           ],
           "bearish": [
-            "[BearishBob] I'm not impressed by the recent pump to $77,039, as it seems like a shallow attempt to lure in novice buyers. The Fear & Greed Index at 26 could be a sign of fear, but I believe it's a trap to get bul"
+            "[BearishBob] I'm not buying into this rally, it's just a trap to lure in weak hands. The fear and greed index at 39 indicates caution, and the lack of bullish leverage is a red flag. I expect the price to drop bac"
           ]
         },
-        "timestamp": "2026-05-01T07:03:58.281955+00:00",
+        "timestamp": "2026-05-02T07:03:52.286999+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -348,17 +349,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 236.6,
+          "run_duration_sec": 230.3,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 77039,
-            "change_24h": 1.75,
-            "fear_greed": 26
+            "price": 78298,
+            "change_24h": 1.64,
+            "fear_greed": 39
           }
         },
-        "age_minutes": 1436.1,
+        "age_minutes": 6.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -375,7 +376,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 21525.0,
+        "age_minutes": 21535.0,
         "is_fresh": false
       }
     },
