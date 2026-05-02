@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-02T16:50:01.422506",
+  "generated_at": "2026-05-02T17:00:01.563445",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-02T16:50:01.422517"
+    "last_health_check": "2026-05-02T17:00:01.563459"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 16:49:59,150 - INFO - [HEARTBEAT] Price: $78,433.30",
+      "last_update": "2026-05-02 16:59:59,304 - INFO - [HEARTBEAT] Price: $78,423.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 58.2,
-        "time": "2026-05-02 16:49:37,764"
+        "confidence": 57.5,
+        "time": "2026-05-02 16:59:40,614"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-02 16:49:34,291 - INFO - [HEARTBEAT] Price: $78,433.29",
+      "last_update": "2026-05-02 16:59:34,447 - INFO - [HEARTBEAT] Price: $78,426.24",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 55.4,
-        "time": "2026-05-02 16:48:40,908"
+        "confidence": 59.0,
+        "time": "2026-05-02 16:58:44,738"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-02 16:50:01",
+      "last_update": "2026-05-02 17:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.1,
-        "time": "2026-05-02 16:49:46,546"
+        "confidence": 0.4,
+        "time": "2026-05-02 16:59:39,186"
       },
       "open_position": null,
       "performance": {
@@ -256,30 +256,32 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-02T16:50:01.763374",
+    "updated_at": "2026-05-02T17:00:01.911558",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.4703,
-        "confidence": 0.62,
-        "bullish_pct": 0.2393,
-        "bearish_pct": 0.051,
-        "neutral_pct": 0.7096,
+        "strength": 0.1533,
+        "confidence": 0.6526,
+        "bullish_pct": 0.3975,
+        "bearish_pct": 0.0518,
+        "neutral_pct": 0.5508,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.5645,
+        "stance_shifts": 3,
+        "consensus_score": 0.3261,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] Every dip is still a gift\u2014$78K is just a pause in the march to $100K+. MSTR up 9% on OTC strength and Riot\u2019s $33M data center revenue prove miners are evolving, not capitulating. Institutions are stac",
-            "[FadeTheCrowd] Still sitting at Fear & Greed 39 \u2014 no overheating, no leverage, no euphoria. MSTR\u2019s 9% pop on OTC strength and Riot's pivot to data centers show real institutional demand and adaptation, not just spec",
-            "[DiamondHands420] MSTR pumping 9% again is a massive signal\u2014smart money\u2019s loading up and Mallers\u2019 Tether merger talk is the spark we need! $78.8K is the only resistance, and with F&G still at 39 (fear!), this is prime "
+            "[CryptoKaleo] This range is not resistance \u2014 it\u2019s loading zone. MSTR popping 9%, Riot monetizing data centers, and Mallers backing a Tether-Bitcoin merger? That\u2019s not noise, it\u2019s narrative fuel. Institutions aren\u2019t",
+            "[DiamondHands420] $78K holding like a rock with MSTR up 9%, Riot\u2019s $33M data center flex, and Mallers backing a Tether merger \u2014 this is institutional-grade fuel! Fear & Greed at 39 means weak hands are still scared whi",
+            "[TrendRider] Price is testing range resistance at $78.8K with institutional fingerprints\u2014MSTR\u2019s 9% surge and Riot\u2019s $33M data center monetization signal strategic accumulation, not speculation. Volume remains supp",
+            "[StackingSats] $78K is hold-to-hold\u2014another test of resolve passed. MSTR up 9%, Riot's data center monetization, and Mallers pushing Tether into Bitcoin's orbit aren't side stories; they're chapters in the instituti",
+            "[FadeTheCrowd] Still grinding in the fear zone at 39\u2014no retail FOMO, muted volume, and options pricing $84K as a long shot. That\u2019s textbook setup for quiet accumulation: MSTR\u2019s 9% pop isn\u2019t noise, it\u2019s insider convi"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout forming at $78.8K on weak follow-through\u2014Riot\u2019s revenue drop masked by data center noise, EF dumping ETH again, and MSTR pumping on gamma traps, not fundamentals. Volume is hollow, opt"
+            "[BearishBob] Another fakeout brewing at $78.8K\u2014volume is evaporating and the so-called \u201cinstitutional accumulation\u201d is just MSTR front-running itself again. Riot\u2019s data center revenue is a sideshow, and Mallers ba"
           ]
         },
-        "timestamp": "2026-05-02T13:46:11.538056+00:00",
+        "timestamp": "2026-05-02T14:58:22.461059+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -296,17 +298,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 8169.1,
+          "run_duration_sec": 8900.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 35,
           "market_data_summary": {
-            "price": 78205,
-            "change_24h": 1.13,
+            "price": 78223,
+            "change_24h": 0.61,
             "fear_greed": 39
           }
         },
-        "age_minutes": 63.8,
+        "age_minutes": 1.7,
         "is_fresh": true
       },
       "groq": {
@@ -357,7 +359,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 466.2,
+        "age_minutes": 476.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -374,7 +376,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 21995.0,
+        "age_minutes": 22005.0,
         "is_fresh": false
       }
     },
