@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T15:10:02.980263",
+  "generated_at": "2026-05-03T15:20:01.016255",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-03T15:10:02.980274"
+    "last_health_check": "2026-05-03T15:20:01.016282"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 15:09:52,231 - INFO - [HEARTBEAT] Price: $78,746.41",
+      "last_update": "2026-05-03 15:19:54,697 - INFO - [HEARTBEAT] Price: $78,672.47",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 63.9,
-        "time": "2026-05-03 15:06:03,032"
+        "confidence": 53.3,
+        "time": "2026-05-03 15:16:05,983"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 15:09:56,822 - INFO - [HEARTBEAT] Price: $78,750.74",
+      "last_update": "2026-05-03 15:19:58,919 - INFO - [HEARTBEAT] Price: $78,672.47",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 59.7,
-        "time": "2026-05-03 15:09:32,939"
+        "confidence": 57.8,
+        "time": "2026-05-03 15:19:37,306"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-03 15:10:03",
+      "last_update": "2026-05-03 15:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.2,
-        "time": "2026-05-03 15:09:55,799"
+        "confidence": 0.4,
+        "time": "2026-05-03 15:19:39,003"
       },
       "open_position": null,
       "performance": {
@@ -256,29 +256,31 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-03T15:10:03.617793",
+    "updated_at": "2026-05-03T15:20:01.384562",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.6376,
-        "confidence": 0.6054,
-        "bullish_pct": 0.1563,
-        "bearish_pct": 0.0499,
-        "neutral_pct": 0.7939,
+        "strength": 0.3871,
+        "confidence": 0.6274,
+        "bullish_pct": 0.2792,
+        "bearish_pct": 0.0545,
+        "neutral_pct": 0.6663,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 0,
-        "consensus_score": 0.6908,
+        "stance_shifts": 1,
+        "consensus_score": 0.4994,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $78.5K holding firm again\u2014this is not resistance, it's the new basement. MSTR up 9% on multiple fronts confirms institutions are still stacking, and Jack Mallers backing a Tether merger shows maturati",
-            "[CryptoKaleo] We're coiling like a spring at $78.5K\u2014MSTR popping 9% isn't noise, it's a signal that smart money still backs this rally. Jack Mallers pushing a Tether merger? That\u2019s systemic confidence. This range w"
+            "[TrendRider] Price holding firm at $78.1K\u2013$79K with MSTR surging 9% and Mallers advancing Bitcoin-native financial infrastructure signals quiet institutional accumulation. Volume is steady, not weak, and the tight",
+            "[CryptoKaleo] MSTR up 9% again, Mallers pushing Tether merger talks, and Exodus going all-in on self-custody as a lifestyle\u2014this isn\u2019t just momentum, it\u2019s narrative ignition. Institutions are quietly stacking while",
+            "[DiamondHands420] We're not just holding\u2014we're BUILDING. $78.5K is a springboard, not resistance! MSTR pumping 9% *again*, Mallers pushing Tether merger and Bitcoin lending rails, and Exodus making self-custody mainstr",
+            "[StackingSats] Price grinding near $78.4K on strong volume is accumulation \u2014 not indecision. MSTR up 9% confirms institutional demand, Mallers' Bitcoin-native finance push validates long-term utility, and self-custo"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout forming\u2014$78.5K is just another distribution level masked as consolidation. MSTR pumping again? That\u2019s dead cat bounce beta-chasing, not real demand. Volume is soft, F&G is neutral, and"
+            "[BearishBob] Another fakeout rally to $79K on weak volume \u2014 same script as last time. MSTR\u2019s 9% pop is just Saylor juicing his own stock again, and Mallers\u2019 vaporware lending products won\u2019t move the needle. Macro "
           ]
         },
-        "timestamp": "2026-05-03T13:00:19.369032+00:00",
+        "timestamp": "2026-05-03T13:14:20.399659+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -295,17 +297,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 5417.9,
+          "run_duration_sec": 9858.8,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 35,
+          "total_posts": 34,
           "market_data_summary": {
-            "price": 78493,
-            "change_24h": 0.38,
+            "price": 78434,
+            "change_24h": 0.28,
             "fear_greed": 47
           }
         },
-        "age_minutes": 9.7,
+        "age_minutes": 5.7,
         "is_fresh": true
       },
       "groq": {
@@ -354,7 +356,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 366.2,
+        "age_minutes": 376.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -371,7 +373,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 23335.0,
+        "age_minutes": 23345.0,
         "is_fresh": false
       }
     },
