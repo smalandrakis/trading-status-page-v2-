@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T09:00:01.684591",
+  "generated_at": "2026-05-03T09:10:00.855724",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-03T09:00:01.684611"
+    "last_health_check": "2026-05-03T09:10:00.855739"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 08:59:46,499 - INFO - [HEARTBEAT] Price: $78,288.29",
+      "last_update": "2026-05-03 09:09:46,681 - INFO - [HEARTBEAT] Price: $78,417.03",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 77.3,
-        "time": "2026-05-03 08:59:43,334"
+        "confidence": 81.7,
+        "time": "2026-05-03 09:09:46,254"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 08:59:51,663 - INFO - [HEARTBEAT] Price: $78,288.29",
+      "last_update": "2026-05-03 09:09:51,831 - INFO - [HEARTBEAT] Price: $78,397.26",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.7,
-        "time": "2026-05-03 08:59:43,464"
+        "confidence": 53.0,
+        "time": "2026-05-03 09:09:48,048"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-03 09:00:01",
+      "last_update": "2026-05-03 09:10:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.5,
-        "time": "2026-05-03 08:59:34,322"
+        "confidence": 0.7,
+        "time": "2026-05-03 09:09:49,970"
       },
       "open_position": null,
       "performance": {
@@ -256,7 +256,7 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-03T09:00:02.079285",
+    "updated_at": "2026-05-03T09:10:01.187855",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
@@ -307,31 +307,29 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 18.4,
+        "age_minutes": 28.4,
         "is_fresh": true
       },
       "groq": {
         "direction": "NEUTRAL",
-        "strength": 0.6741,
-        "confidence": 0.5389,
-        "bullish_pct": 0.1373,
-        "bearish_pct": 0.0514,
-        "neutral_pct": 0.8114,
+        "strength": 0.847,
+        "confidence": 0.5278,
+        "bullish_pct": 0.0517,
+        "bearish_pct": 0.0497,
+        "neutral_pct": 0.8986,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 2,
-        "consensus_score": 0.717,
+        "stance_shifts": 0,
+        "consensus_score": 0.848,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] The FOMO is real, and I'm loving every minute of it. With Bitcoin's recent 18.1% gain over the past 30 days and the 1.6% increase in the last 24 hours, I'm convinced we're going to break $80K soon. Th",
-            "[StackingSats] The market is still pricing in caution, but I'm not deterred by the fear and greed index at 39. The 18.1% gain over the past 30 days and the recent 1.6% increase in the last 24 hours are bullish signs",
-            "[FadeTheCrowd] The fear and greed index remains at 39, indicating caution, and the lack of bullish leverage is a buying opportunity. With the recent 18.1% gain over the past 30 days and the 1.6% increase in the last"
+            "[DiamondHands420] I'm still feeling the momentum from Strike CEO Jack Mallers' announcements and Bitcoin's best monthly performance in 12 months. The current price of $78,270 is holding strong, and I'm expecting a brea"
           ],
           "bearish": [
-            "[BearishBob] I'm not buying into this rally, it's just a trap to lure in weak hands. The fear and greed index at 39 indicates caution, and the lack of bullish leverage is a red flag. I expect the price to drop bac"
+            "[BearishBob] I'm still not buying into the recent hype, and the fact that Bitcoin is 37.9% off its ATH is a major concern for me. The Fear & Greed Index at 47 suggests the market is still indecisive, and I think t"
           ]
         },
-        "timestamp": "2026-05-02T07:03:52.286999+00:00",
+        "timestamp": "2026-05-03T07:03:48.917599+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -348,17 +346,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 230.3,
+          "run_duration_sec": 227.2,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 36,
           "market_data_summary": {
-            "price": 78298,
-            "change_24h": 1.64,
-            "fear_greed": 39
+            "price": 78270,
+            "change_24h": -0.05,
+            "fear_greed": 47
           }
         },
-        "age_minutes": 1436.2,
+        "age_minutes": 6.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -375,7 +373,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 22965.0,
+        "age_minutes": 22975.0,
         "is_fresh": false
       }
     },
