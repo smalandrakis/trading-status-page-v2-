@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T18:10:00.750692",
+  "generated_at": "2026-05-03T18:20:01.395222",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-03T18:10:00.750712"
+    "last_health_check": "2026-05-03T18:20:01.395238"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 18:09:38,138 - INFO - [HEARTBEAT] Price: $78,630.00",
+      "last_update": "2026-05-03 18:19:40,861 - INFO - [HEARTBEAT] Price: $78,636.00",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 56.4,
-        "time": "2026-05-03 18:06:50,979"
+        "confidence": 76.3,
+        "time": "2026-05-03 18:16:54,649"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 18:09:42,858 - INFO - [HEARTBEAT] Price: $78,630.00",
+      "last_update": "2026-05-03 18:19:45,608 - INFO - [HEARTBEAT] Price: $78,635.99",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 54.0,
-        "time": "2026-05-03 18:09:09,652"
+        "confidence": 53.1,
+        "time": "2026-05-03 18:19:13,922"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-03 18:10:00",
+      "last_update": "2026-05-03 18:20:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.9,
-        "time": "2026-05-03 18:09:43,501"
+        "confidence": 0.2,
+        "time": "2026-05-03 18:19:53,206"
       },
       "open_position": null,
       "performance": {
@@ -256,29 +256,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-03T18:10:01.099622",
+    "updated_at": "2026-05-03T18:20:01.735610",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5157,
-        "confidence": 0.6118,
-        "bullish_pct": 0.2178,
-        "bearish_pct": 0.0488,
-        "neutral_pct": 0.7335,
+        "strength": 0.5883,
+        "confidence": 0.6125,
+        "bullish_pct": 0.1808,
+        "bearish_pct": 0.0501,
+        "neutral_pct": 0.7691,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6002,
+        "consensus_score": 0.6537,
         "key_arguments": {
           "bullish": [
-            "[StackingSats] $78.6K is a national buy button \u2014 every grind near $78K is weak hands sweating before the next leg up. MSTR popping 9% on any volume is a signal: smart capital is stacking sats through equity proxies ",
-            "[TrendRider] Price is retesting $79K with MSTR leading the charge again\u2014equity market conviction often precedes spot volume follow-through. I trust the MSTR move as a proxy for institutional appetite, and the repe"
+            "[DiamondHands420] MSTR pumping 9% again on low volume? That\u2019s not a red flag\u2014that\u2019s stealth accumulation while weak hands panic over politico polls and minor fines. Jack Mallers backing a Tether merger is HUGE news\u2014thi",
+            "[CryptoKaleo] MSTR up 9% on zero volume follow-through? That\u2019s not a red flag \u2014 that\u2019s stealth accumulation by the smart money while normies get scared by political theater. Jack Mallers pushing a Tether merger is ",
+            "[StackingSats] $78.6K remains a rock-solid accumulation zone\u2014price holding firm despite political FUD and isolated regulatory theater. MSTR\u2019s 9% surge on low volume isn\u2019t a warning, it\u2019s stealth accumulation by corp"
           ],
           "bearish": [
-            "[BearishBob] $78.6K retest on a volume sniffle \u2014 this MSTR pump is pure vaporware. Institutions aren't stacking, they're front-running retail again. Every spike into $79K since March has been a liquidation magnet,"
+            "[BearishBob] Another fakeout into $79K on a volume whimper\u2014this entire rally is being front-run by MSTR gambling and empty Mallers hype. Regulatory noose tightens (Uphold fine, public distrust), and the macro back"
           ]
         },
-        "timestamp": "2026-05-03T15:18:44.618416+00:00",
+        "timestamp": "2026-05-03T16:14:53.496141+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -295,17 +296,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 6522.7,
+          "run_duration_sec": 6291.6,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 34,
+          "total_posts": 36,
           "market_data_summary": {
-            "price": 78628,
-            "change_24h": 0.43,
+            "price": 78653,
+            "change_24h": 0.32,
             "fear_greed": 47
           }
         },
-        "age_minutes": 51.3,
+        "age_minutes": 5.1,
         "is_fresh": true
       },
       "groq": {
@@ -354,7 +355,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 546.2,
+        "age_minutes": 556.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -371,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 23514.9,
+        "age_minutes": 23525.0,
         "is_fresh": false
       }
     },
