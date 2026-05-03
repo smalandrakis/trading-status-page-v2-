@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T04:30:01.121037",
+  "generated_at": "2026-05-03T04:40:01.856778",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-03T04:30:01.121048"
+    "last_health_check": "2026-05-03T04:40:01.856787"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 04:29:41,159 - INFO - [HEARTBEAT] Price: $78,113.06",
+      "last_update": "2026-05-03 04:39:41,392 - INFO - [HEARTBEAT] Price: $78,118.55",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 69.9,
-        "time": "2026-05-03 04:28:12,811"
+        "confidence": 75.7,
+        "time": "2026-05-03 04:38:16,392"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 04:29:46,319 - INFO - [HEARTBEAT] Price: $78,113.07",
+      "last_update": "2026-05-03 04:39:46,551 - INFO - [HEARTBEAT] Price: $78,118.55",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 50.4,
-        "time": "2026-05-03 04:29:37,652"
+        "confidence": 51.0,
+        "time": "2026-05-03 04:39:42,363"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-03 04:30:01",
+      "last_update": "2026-05-03 04:40:02",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.1,
-        "time": "2026-05-03 04:29:42,225"
+        "confidence": 0.4,
+        "time": "2026-05-03 04:39:31,131"
       },
       "open_position": null,
       "performance": {
@@ -256,24 +256,27 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-03T04:30:01.390053",
+    "updated_at": "2026-05-03T04:40:02.113798",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5679,
-        "confidence": 0.6127,
-        "bullish_pct": 0.2033,
-        "bearish_pct": 0.0255,
-        "neutral_pct": 0.7712,
+        "strength": 0.1191,
+        "confidence": 0.6756,
+        "bullish_pct": 0.428,
+        "bearish_pct": 0.0248,
+        "neutral_pct": 0.5472,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.6569,
+        "consensus_score": 0.3207,
         "key_arguments": {
-          "bullish": [],
+          "bullish": [
+            "[CryptoKaleo] The $78.7K hold is institutional steel \u2014 MSTR\u2019s 9% pop isn\u2019t price action, it\u2019s a declaration. Jack Mallers\u2019 Tether merger push and Strike\u2019s volatility-proof rails? That\u2019s dollar settlement dominance ",
+            "[DiamondHands420] LOVING the $78.7K hold \u2014 this is institutional steel, not retail FOMO! MSTR popping 9% again proves the smart money\u2019s still all-in, and with Jack Mallers pushing a Tether merger and volatility-proof l"
+          ],
           "bearish": []
         },
-        "timestamp": "2026-05-03T01:53:16.002271+00:00",
+        "timestamp": "2026-05-03T02:33:42.479032+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -290,17 +293,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 12194.4,
+          "run_duration_sec": 11021.3,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 15,
+          "total_posts": 16,
           "market_data_summary": {
-            "price": 78610,
-            "change_24h": 0.34,
+            "price": 78774,
+            "change_24h": 0.92,
             "fear_greed": 39
           }
         },
-        "age_minutes": 36.8,
+        "age_minutes": 6.3,
         "is_fresh": true
       },
       "groq": {
@@ -351,7 +354,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 1166.2,
+        "age_minutes": 1176.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -368,7 +371,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 22695.0,
+        "age_minutes": 22705.0,
         "is_fresh": false
       }
     },
