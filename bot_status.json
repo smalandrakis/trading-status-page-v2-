@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T06:50:01.188194",
+  "generated_at": "2026-05-03T07:00:01.064254",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-03T06:50:01.188202"
+    "last_health_check": "2026-05-03T07:00:01.064260"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 06:49:43,974 - INFO - [HEARTBEAT] Price: $78,150.00",
+      "last_update": "2026-05-03 06:59:44,180 - INFO - [HEARTBEAT] Price: $78,163.18",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 78.7,
-        "time": "2026-05-03 06:49:02,982"
+        "confidence": 75.2,
+        "time": "2026-05-03 06:59:06,593"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 06:49:49,162 - INFO - [HEARTBEAT] Price: $78,150.00",
+      "last_update": "2026-05-03 06:59:49,368 - INFO - [HEARTBEAT] Price: $78,163.18",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -132,9 +132,9 @@
         "strategy": "Balanced Quality - optimize quality \u00d7 volume"
       },
       "current_signal": {
-        "signal": "LONG",
-        "confidence": 56.9,
-        "time": "2026-05-03 06:48:42,657"
+        "signal": "NEUTRAL",
+        "confidence": 54.3,
+        "time": "2026-05-03 06:58:47,394"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-03 06:50:01",
+      "last_update": "2026-05-03 07:00:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -240,7 +240,7 @@
       "current_signal": {
         "signal": "NEUTRAL",
         "confidence": 0.4,
-        "time": "2026-05-03 06:49:41,646"
+        "time": "2026-05-03 06:59:51,116"
       },
       "open_position": null,
       "performance": {
@@ -256,26 +256,29 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-03T06:50:01.446221",
+    "updated_at": "2026-05-03T07:00:01.319333",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.8206,
-        "confidence": 0.5684,
-        "bullish_pct": 0.0504,
-        "bearish_pct": 0.0645,
-        "neutral_pct": 0.8851,
+        "strength": 0.533,
+        "confidence": 0.5842,
+        "bullish_pct": 0.2107,
+        "bearish_pct": 0.0456,
+        "neutral_pct": 0.7437,
         "agent_count": 12,
         "round_count": 3,
         "stance_shifts": 0,
-        "consensus_score": 0.8276,
+        "consensus_score": 0.6155,
         "key_arguments": {
-          "bullish": [],
+          "bullish": [
+            "[TrendRider] Price is holding firm above $78,000 with strong volume and MSTR flashing a bullish momentum signal\u2014classic trend resumption behavior after a pullback. The 30d +17% move shows underlying strength, and ",
+            "[StackingSats] $78K is a strong buy zone\u2014this dip is a gift. MSTR's 9% pop signals institutional appetite returning, and with Riot's data center diversification proving mining resilience, Bitcoin's fundamentals are "
+          ],
           "bearish": [
-            "[BearishBob] Another fakeout attempt at $79.2K gamma wall\u2014price can't sustain above it, volume is weak, and MSTR pumping while BTC drags is classic divergence. ETH Foundation's relentless OTC dumps flood the marke"
+            "[BearishBob] Another fakeout at $79K rejected, just like the last three times. MSTR pumping on no news is pure leverage-fueled speculation, not real demand\u2014Riot's pivot to data centers screams desperation as minin"
           ]
         },
-        "timestamp": "2026-05-03T03:36:41.655530+00:00",
+        "timestamp": "2026-05-03T04:54:25.429880+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -292,17 +295,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 11199.7,
+          "run_duration_sec": 12263.8,
           "num_agents": 12,
           "num_rounds": 3,
           "total_posts": 19,
           "market_data_summary": {
-            "price": 78606,
-            "change_24h": 0.43,
+            "price": 78269,
+            "change_24h": -0.08,
             "fear_greed": 47
           }
         },
-        "age_minutes": 73.3,
+        "age_minutes": 5.6,
         "is_fresh": true
       },
       "groq": {
@@ -353,7 +356,7 @@
             "fear_greed": 39
           }
         },
-        "age_minutes": 1306.2,
+        "age_minutes": 1316.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -370,7 +373,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 22835.0,
+        "age_minutes": 22845.0,
         "is_fresh": false
       }
     },
