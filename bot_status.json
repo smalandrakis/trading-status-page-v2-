@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-05-03T13:30:01.086000",
+  "generated_at": "2026-05-03T13:40:00.988385",
   "binance_connection": {
     "status": "connected",
     "message": "Binance API accessible"
   },
   "system_health": {
     "reconciliation": "OK",
-    "last_health_check": "2026-05-03T13:30:01.086008"
+    "last_health_check": "2026-05-03T13:40:00.988392"
   },
   "bots": [
     {
       "name": "BTC Volume Strategy (0.50 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 13:30:00,889 - INFO - [HEARTBEAT] Price: $78,508.70",
+      "last_update": "2026-05-03 13:39:33,417 - INFO - [HEARTBEAT] Price: $78,561.63",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -28,8 +28,8 @@
       },
       "current_signal": {
         "signal": "LONG",
-        "confidence": 58.6,
-        "time": "2026-05-03 13:25:38,889"
+        "confidence": 57.6,
+        "time": "2026-05-03 13:35:41,139"
       },
       "open_position": null,
       "performance": {
@@ -117,7 +117,7 @@
     {
       "name": "BTC Balanced Strategy (0.55 threshold)",
       "status": "running",
-      "last_update": "2026-05-03 13:29:36,893 - INFO - [HEARTBEAT] Price: $78,508.70",
+      "last_update": "2026-05-03 13:39:39,232 - INFO - [HEARTBEAT] Price: $78,561.63",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -133,8 +133,8 @@
       },
       "current_signal": {
         "signal": "SHORT",
-        "confidence": 56.2,
-        "time": "2026-05-03 13:28:25,774"
+        "confidence": 55.2,
+        "time": "2026-05-03 13:38:31,632"
       },
       "open_position": null,
       "performance": {
@@ -222,7 +222,7 @@
     {
       "name": "BTC Ultra Quality Strategy (0.70 threshold MTF)",
       "status": "running",
-      "last_update": "2026-05-03 13:30:01",
+      "last_update": "2026-05-03 13:40:01",
       "config": {
         "tp_pct": 0.5,
         "sl_pct": 0.15,
@@ -239,8 +239,8 @@
       },
       "current_signal": {
         "signal": "NEUTRAL",
-        "confidence": 0.1,
-        "time": "2026-05-03 13:29:56,079"
+        "confidence": 0.3,
+        "time": "2026-05-03 13:39:37,564"
       },
       "open_position": null,
       "performance": {
@@ -256,31 +256,30 @@
     }
   ],
   "mirofish_predictions": {
-    "updated_at": "2026-05-03T13:30:01.362385",
+    "updated_at": "2026-05-03T13:40:01.262538",
     "signals": {
       "cerebras": {
         "direction": "NEUTRAL",
-        "strength": 0.5476,
+        "strength": 0.5276,
         "confidence": 0.6197,
-        "bullish_pct": 0.1832,
-        "bearish_pct": 0.086,
-        "neutral_pct": 0.7308,
+        "bullish_pct": 0.209,
+        "bearish_pct": 0.0545,
+        "neutral_pct": 0.7366,
         "agent_count": 12,
         "round_count": 3,
-        "stance_shifts": 1,
-        "consensus_score": 0.5962,
+        "stance_shifts": 0,
+        "consensus_score": 0.6048,
         "key_arguments": {
           "bullish": [
-            "[DiamondHands420] $78.4k holding strong as accumulation zone\u2014MSTR pumping again shows smart money is loading! Strike and Exodus pushing self-custody + BTC up 17% in April? This consolidation is just a coiled spring rea",
-            "[CryptoKaleo] We're coiling like a spring at $78.4K\u2014MSTR's 9% pop isn't luck, it's leverage loading up again. Institutional conviction is building under the surface, and with Strike, Exodus, and a16z pushing the na",
-            "[StackingSats] $78.4k is prime accumulation territory\u2014yet again. MSTR\u2019s 9% surge isn\u2019t noise, it\u2019s a signal: institutions are stacking pre-halving amid tightening supply. Self-custody adoption (Exodus, Strike) and a"
+            "[StackingSats] $78.4K is a gift\u2014another dip to accumulate. MSTR up 9% confirms institutional conviction, and April\u2019s strong performance aligns with mid-cycle accumulation ahead of the next halving rally. I ignore no",
+            "[DiamondHands420] MSTR popping 9% again is a massive signal\u2014this isn't retail FOMO, it's institutions loading up quietly! $78.4K is a springboard, not resistance, and April\u2019s best monthly performance in a year proves m",
+            "[CryptoKaleo] MSTR ripping 9% twice in two days on ZERO news? That\u2019s not noise \u2014 that\u2019s a signal. Institutions are quietly building massive BTC exposure through proxies while the market sleeps. $78K is not resistan"
           ],
           "bearish": [
-            "[BearishBob] Another fakeout building toward $79k on stagnant volume\u2014this MSTR pump is pure leverage theater, not organic demand. The macro backdrop remains hostile with flat real yields and no liquidity expansion",
-            "[FadeTheCrowd] $78.4k grind on weak volume still screams distribution, not accumulation\u2014$79k supply wall holds, and MSTR's 9% pop is leverage-fueled noise, not organic demand. Fear & Greed at 47 confirms apathy, and"
+            "[BearishBob] Another dead cat bounce into $78.5K on fake volume \u2014 this \"positive\" print is just noise after the April pump. MSTR\u2019s 9% pop is a corporate vanity play, not organic demand, and the lack of volume foll"
           ]
         },
-        "timestamp": "2026-05-03T10:02:50.578814+00:00",
+        "timestamp": "2026-05-03T11:33:04.668889+00:00",
         "metadata": {
           "role_weights": {
             "whale": 2.0,
@@ -297,17 +296,17 @@
             "hodler": 0.5
           },
           "round_weight_decay": 0.6,
-          "run_duration_sec": 9168.7,
+          "run_duration_sec": 10982.9,
           "num_agents": 12,
           "num_rounds": 3,
-          "total_posts": 36,
+          "total_posts": 33,
           "market_data_summary": {
-            "price": 78423,
-            "change_24h": 0.15,
+            "price": 78415,
+            "change_24h": 0.19,
             "fear_greed": 47
           }
         },
-        "age_minutes": 87.2,
+        "age_minutes": 6.9,
         "is_fresh": true
       },
       "groq": {
@@ -356,7 +355,7 @@
             "fear_greed": 47
           }
         },
-        "age_minutes": 266.2,
+        "age_minutes": 276.2,
         "is_fresh": true
       },
       "mirofish_full": {
@@ -373,7 +372,7 @@
           "volume_24h": 40022993903.52663
         },
         "actionable": true,
-        "age_minutes": 23235.0,
+        "age_minutes": 23245.0,
         "is_fresh": false
       }
     },
